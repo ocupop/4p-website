@@ -1,0 +1,16 @@
+@import "./settings";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+// Global
+@import "./global/mixins";
+@import "./global/utilities";
+@import "./global/base";
+@import "./global/layout";
+@import "./global/typography";
+@import "./global/animations";
+
+// Pages
+@import "./pages/homepage";
+
+// Extra
+@import "./vendor/cognito";

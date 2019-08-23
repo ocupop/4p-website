@@ -1,0 +1,68 @@
+@mixin transition($duration: 0.3s, $property: all, $effect: ease-in-out) {
+  transition: $property $duration $effect;
+}
+
+@mixin animation($effect: fadeIn, $duration: 0.5s, $delay: 0s) {
+  animation-name: $effect;
+  animation-duration: $duration;
+  animation-fill-mode: both;
+  animation-delay: ($delay);
+}
+
+// // Framework grid generation
+// //
+// // Used only by Bootstrap to generate the correct number of grid classes given
+// // any value of `$grid-columns`.
+
+// @mixin make-card-col($size, $columns: $grid-columns, $gutter: $grid-gutter-width) {
+//   flex: 0 0 calc(percentage($size / $columns) - $gutter * 2);
+//   // Add a `max-width` to ensure content within each column does not blow out
+//   // the width of the column. Applies to IE10+ and Firefox. Chrome and Safari
+//   // do not appear to require this.
+//   max-width: calc(percentage($size / $columns) - $gutter * 2);
+// }
+
+// @mixin make-card-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+//   // Common properties for all breakpoints
+//   %grid-column {
+//     position: relative;
+//     width: 100%;
+//     padding-right: $gutter / 2;
+//     padding-left: $gutter / 2;
+//   }
+
+//   @each $breakpoint in map-keys($breakpoints) {
+//     $infix: breakpoint-infix($breakpoint, $breakpoints);
+
+//     // Allow columns to stretch full width below their breakpoints
+//     @for $i from 1 through $columns {
+//       .card-col#{$infix}-#{$i} {
+//         @extend %grid-column;
+//       }
+//     }
+//     .card-col#{$infix},
+//     .card-col#{$infix}-auto {
+//       @extend %grid-column;
+//     }
+
+//     @include media-breakpoint-up($breakpoint, $breakpoints) {
+//       // Provide basic `.col-{bp}` classes for equal-width flexbox columns
+//       .card-col#{$infix} {
+//         flex-basis: 0;
+//         flex-grow: 1;
+//         max-width: 100%;
+//       }
+//       .card-col#{$infix}-auto {
+//         flex: 0 0 auto;
+//         width: auto;
+//         max-width: 100%; // Reset earlier grid tiers
+//       }
+
+//       @for $i from 1 through $columns {
+//         .card-col#{$infix}-#{$i} {
+//           @include make-card-col($i, $columns);
+//         }
+//       }
+//     }
+//   }
+// }

@@ -45,18 +45,18 @@ module.exports = {
     `gatsby-plugin-playground`,
     `gatsby-plugin-layout`,
     `gatsby-plugin-styled-components`,
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `gatsby-starter-default`,
-    //     short_name: `starter`,
-    //     start_url: `/`,
-    //     background_color: `#663399`,
-    //     theme_color: `#663399`,
-    //     display: `minimal-ui`,
-    //     icon: `static/img/gatsby-icon.png`, // This path is relative to the root of the site.
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `static/img/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
     // {
     //   resolve: '@martinreiche/gatsby-firestore',
     //   options: {

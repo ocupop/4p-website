@@ -84,15 +84,15 @@ module.exports = {
               // vendor___NODE: doc.vendor.id,
             }),
           },
-          {
-            type: 'Vendor',
-            collection: 'vendors',
-            map: doc => ({
-              title: doc.title,
-              website: doc.website,
-              // products___NODE: doc.products.map(product => product.id),
-            }),
-          },
+          // {
+          //   type: 'Vendor',
+          //   collection: 'vendors',
+          //   map: doc => ({
+          //     title: doc.title,
+          //     website: doc.website,
+          //     // products___NODE: doc.products.map(product => product.id),
+          //   }),
+          // },
         ],
       },
     },

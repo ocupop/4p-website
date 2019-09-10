@@ -57,52 +57,41 @@ module.exports = {
     //     icon: `static/img/gatsby-icon.png`, // This path is relative to the root of the site.
     //   },
     // },
-    {
-      resolve: '@martinreiche/gatsby-firestore',
-      options: {
-        credential: {
-          "type": "service_account",
-          "project_id": process.env.FIREBASE_PROJECT_ID,
-          "private_key_id": process.env.FIREBASE_PRIVATE_KEY_ID,
-          "private_key": process.env.FIREBASE_PRIVATE_KEY,
-          "client_email": "firebase-adminsdk-3dxji@p-store-1e62e.iam.gserviceaccount.com",
-          "client_id": process.env.FIREBASE_CLIENT_ID,
-          "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-          "token_uri": "https://oauth2.googleapis.com/token",
-          "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-          "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-3dxji%40p-store-1e62e.iam.gserviceaccount.com"
-        },
-        types: [
-          {
-            type: 'Product',
-            collection: 'products',
-            map: doc => ({
-              name: doc.name,
-              vendor___NODE: doc.vendor.id,
-            }),
-            subCollections: [
-              {
-                type: `Vote`,
-                collection: `votes`,
-                map: doc => ({
-                  title: doc.title,
-                  date: doc.date.toDate(),
-                }),
-              },
-            ],
-          },
-          {
-            type: 'Vendor',
-            collection: 'vendors',
-            map: doc => ({
-              name: doc.name,
-              website: doc.website,
-              products___NODE: doc.products.map(product => product.id),
-            }),
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: '@martinreiche/gatsby-firestore',
+    //   options: {
+    //     credential: './firebaseConfig.json',
+    //     types: [
+    //       {
+    //         type: 'Product',
+    //         collection: 'products',
+    //         map: doc => ({
+    //           name: doc.name,
+    //           vendor___NODE: doc.vendor.id,
+    //         }),
+    //         subCollections: [
+    //           {
+    //             type: `Vote`,
+    //             collection: `votes`,
+    //             map: doc => ({
+    //               title: doc.title,
+    //               date: doc.date.toDate(),
+    //             }),
+    //           },
+    //         ],
+    //       },
+    //       {
+    //         type: 'Vendor',
+    //         collection: 'vendors',
+    //         map: doc => ({
+    //           name: doc.name,
+    //           website: doc.website,
+    //           products___NODE: doc.products.map(product => product.id),
+    //         }),
+    //       },
+    //     ],
+    //   },
+    // },
     {
       resolve: `gatsby-source-shopify2`,
       options: {

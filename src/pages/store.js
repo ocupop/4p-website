@@ -1,3 +1,4 @@
+import React from 'react'
 import Image from "../common/ui/image"
 import HEAD from "../common/ui/head"
 

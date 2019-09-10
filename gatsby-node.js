@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /**
  * Implement Gatsby's Node APIs in this file.
  *
@@ -35,17 +36,27 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
+      allProduct {
+        edges {
+          node {
+            id
+          }
+        }
+      }
     }
   `).then(result => {
     if (result.errors) {
       result.errors.forEach(e => console.error(e.toString()))
       return Promise.reject(result.errors)
     }
+    const shopifyProducts = result.data.allShopifyProduct.edges
+    const firestoreProducts = result.data.allProduct.edges
+    const posts = result.data.allMarkdownRemark.edges
 
-    result.data.allShopifyProduct.edges.forEach(({ node }) => {
+    shopifyProducts.forEach(({ node }) => {
       createPage({
-        path: `/shop/${node.handle}/`,
-        component: path.resolve(`./src/features/shop/ProductPage/index.js`),
+        path: `/shopify/${node.handle}/`,
+        component: path.resolve(`./src/features/shopify/ProductPage/index.js`),
         context: {
           // Data passed to context is available
           // in page queries as GraphQL variables.
@@ -54,15 +65,26 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
-    const posts = result.data.allMarkdownRemark.edges
-
-    posts.forEach(edge => {
-      const id = edge.node.id
+    firestoreProducts.forEach(({ node }) => {
       createPage({
-        path: edge.node.fields.slug,
-        tags: edge.node.frontmatter.tags,
+        path: `/firestore/${node.id}/`,
+        component: path.resolve(`./src/features/firestore/ProductPage/index.js`),
+        context: {
+          // Data passed to context is available
+          // in page queries as GraphQL variables.
+          // handle: node.handle,
+          id: node.id,
+        },
+      })
+    })
+
+    posts.forEach(({ node }) => {
+      const { id, fields, frontmatter } = node
+      createPage({
+        path: fields.slug,
+        tags: frontmatter.tags,
         component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+          `src/templates/${String(frontmatter.templateKey)}.js`
         ),
         // additional data can be passed via context
         context: {
@@ -109,6 +131,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value,
     })
   }
+
+
 }
 
 

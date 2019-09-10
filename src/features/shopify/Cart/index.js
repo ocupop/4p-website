@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 import StoreContext from '../StoreContext'
 import LineItem from './LineItem'
 
-const Cart = () => {
+export const Cart = () => {
   const context = useContext(StoreContext)
   const { checkout } = context
 
@@ -11,8 +11,8 @@ const Cart = () => {
     window.open(checkout.webUrl)
   }
 
-  const line_items = checkout.lineItems.map(line_item => {
-    return <LineItem key={line_item.id.toString()} line_item={line_item} />
+  const lineItems = checkout.lineItems.map(item => {
+    return <LineItem key={item.id.toString()} line_item={item} />
   })
 
   return (
@@ -21,7 +21,7 @@ const Cart = () => {
         <div className="row">
           <div className="col-12 col-sm-9">
             <ul>
-              {line_items}
+              {lineItems}
             </ul>
           </div>
           <div className="col-12 col-sm-3">
@@ -34,7 +34,7 @@ const Cart = () => {
             <h2>Total</h2>
             <p>$ {checkout.totalPrice}</p>
             <br />
-            <button onClick={handleCheckout}>Check out</button>
+            <button type="button" onClick={handleCheckout}>Check out</button>
           </div>
         </div>
       </div>
@@ -42,4 +42,3 @@ const Cart = () => {
   )
 }
 
-export default Cart

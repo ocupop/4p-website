@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react"
+
 import Image from "../common/ui/image"
 import HEAD from "../common/ui/head"
 
-import ProductGrid from '../features/shop/ProductGrid'
+import { ProductGrid as ShopifyProductGrid } from '../features/shopify/ProductGrid'
 
-const StorePage = () => (
+const IndexPage = () => (
   <>
     <HEAD title="Home" />
     <section>
@@ -22,8 +23,8 @@ const StorePage = () => (
         </div>
       </div>
     </section>
-    <ProductGrid />
+    <ShopifyProductGrid />
   </>
 )
 
-export default StorePage
+export default IndexPage

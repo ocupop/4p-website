@@ -3,7 +3,7 @@ import { useStaticQuery, graphql, Link } from 'gatsby'
 import Image from 'gatsby-image'
 
 
-const ProductGrid = () => {
+export const ProductGrid = () => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -48,7 +48,7 @@ const ProductGrid = () => {
         <div className="col-12">
           <div className="cards">
             {data.allShopifyProduct.edges.map(item => (
-              <Link key={item.node.id} className="card" to={`/shop/${item.node.handle}/`}>
+              <Link key={item.node.id} className="card" to={`/shopify/${item.node.handle}/`}>
                 <Image
                   className="card-img-top"
                   fluid={item.node.images[0].localFile.childImageSharp.fluid}
@@ -70,4 +70,3 @@ const ProductGrid = () => {
   )
 }
 
-export default ProductGrid

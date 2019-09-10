@@ -1,0 +1,18 @@
+---
+layout: default
+title: Website Pages
+permalink: /pages
+---
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ul>
+          {% for instance in site.webpages %}
+            <li><a href="{{ instance.url }}">{{ instance.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

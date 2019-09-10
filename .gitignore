@@ -73,3 +73,8 @@ yarn-error.log
 # Firebase Credentials
 firebaseConfig.json
 firebase.js
+
+
+# Cloudcannon Admin
+.jekyll-cache
+_site

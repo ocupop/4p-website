@@ -1,0 +1,46 @@
+# Site settings
+title: 4pFoods Website
+email: dev@ocupop.com
+url: "http://client_url.com"
+permalink: pretty
+
+# Social sharing
+description:
+socialshare:
+  featured_image: img/socialshare.png
+  twitter:
+    username:
+    image:
+
+# Google Analytics
+analytics_code:
+
+
+# Collections
+collections:
+  products:
+    output: true
+    layout: default
+    permalink: /products/:path/
+  webpages:
+    output: true
+    layout: default
+    permalink: /:title/
+
+# defaults:
+#   -
+#     scope:
+#       type: 'products'
+#     values:
+#       layout: product
+#       variable_name: value
+
+# Build settings
+safe: false
+sass:
+  # style: compressed
+  sass_dir: _scss
+plugins:
+  - jekyll-sitemap
+
+placeholder_image: https://via.placeholder.com/1000x1000/333333/000000?text=Placeholder

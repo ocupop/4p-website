@@ -62,6 +62,7 @@
     "lint": "eslint **/*.{js,jsx} --quiet",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "admin": "jekyll serve -s src/admin",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {

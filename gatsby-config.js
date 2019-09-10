@@ -81,7 +81,7 @@ module.exports = {
               featured: doc.featured,
               priceRange: doc.priceRange,
               tags: doc.tags,
-              vendor___NODE: doc.vendor.id,
+              // vendor___NODE: doc.vendor.id,
             }),
           },
           {
@@ -90,7 +90,7 @@ module.exports = {
             map: doc => ({
               title: doc.title,
               website: doc.website,
-              products___NODE: doc.products.map(product => product.id),
+              // products___NODE: doc.products.map(product => product.id),
             }),
           },
         ],

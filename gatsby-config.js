@@ -59,6 +59,7 @@ module.exports = {
     },
     {
       resolve: '@martinreiche/gatsby-firestore',
+      // resolve: 'gatsby-source-firestore',
       options: {
         // credential: './firebaseConfig.json',
         appConfig: {

@@ -76,6 +76,7 @@
     "lint": "eslint **/*.{js,jsx} --quiet",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "deploy": "npm run build && netlify deploy",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {

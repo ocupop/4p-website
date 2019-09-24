@@ -1,9 +1,8 @@
 import React from 'react'
-import { Cart as ShopifyCart } from '../features/shopify/Cart'
 
 const CartPage = () => (
   <>
-    <ShopifyCart />
+    <h1>Add Cart Page</h1>
   </>
 )
 

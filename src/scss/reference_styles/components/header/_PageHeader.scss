@@ -1,0 +1,14 @@
+.navbar {
+  padding: 0.5rem 0;
+}
+.nav-item {
+  .nav-link {
+    color: $gray-600;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+  }
+}
+.navbar-brand {
+  width: 200px;
+}

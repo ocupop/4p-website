@@ -1,81 +1,38 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import { useSiteMetadata } from "../hooks/useSiteMetadata"
 
-function HEAD({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-          }
-        }
-      }
-    `
-  )
+const HEAD = ({ pageDescription, pageTitle, pageAuthor }) => {
+  const { title, description, author, lang } = useSiteMetadata()
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaTitle = pageTitle || title
+  const metaDescription = pageDescription || description
+  const metaAuthor = pageAuthor || author
+
+
 
   return (
     <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
+      titleTemplate={`%s | ${metaTitle}`}
+      defaultTitle={title}
+    >
+      <html lang={lang} />
+      <body />
+      <meta name="description" content={metaDescription} />
+      <meta name="author" content={metaAuthor} />
+      {/* TODO - Add default metaData and logic for page overrides */}
+
+    </Helmet>
   )
 }
 
-HEAD.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-}
 
 HEAD.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  pageDescription: PropTypes.string,
+  pageAuthor: PropTypes.string,
+  // meta: PropTypes.arrayOf(PropTypes.object),
+  pageTitle: PropTypes.string,
 }
 
 export default HEAD

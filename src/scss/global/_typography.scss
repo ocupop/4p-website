@@ -15,3 +15,16 @@ p,
 a {
   @include transition();
 }
+
+h1,
+.h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h2,
+.h2 {
+  font-weight: 800;
+  font-size: 24px;
+  text-transform: uppercase;
+}

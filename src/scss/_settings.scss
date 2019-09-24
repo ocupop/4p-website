@@ -1,53 +1,56 @@
 // Color Palette
 $white: #ffffff !default;
 $gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
+$gray-200: #efebe5;
+$gray-300: #b3b3b3;
+$gray-400: #a7a9ac;
+$gray-500: #999999;
+$gray-600: #808080;
+$gray-700: #666666;
+$gray-800: #4d4d4d;
 $gray-900: #212529 !default;
 $black: #000000 !default;
 
-$blue: #25b0e8;
+$blue: #82dadb;
+$blue-mid: #71c7c7;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #e83e8c !default;
 $red: #dc3545 !default;
 $orange: #fd7e14 !default;
 $yellow: #f5c938;
-$green: #87a63e;
-$teal: #20c997 !default;
+$green: #5fb35e;
+$teal: #14585a;
 $cyan: #7dd0e8 !default;
+$beige: #f8f6ee;
 
-$primary: $blue;
-$secondary: #23405e;
+$primary: $green;
+$secondary: $blue;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
-$light: $gray-100;
-$dark: $gray-700;
+$light: $gray-300;
+$dark: $gray-800;
 
 $theme-colors: (
-  "primary": $yellow,
-  "secondary": $orange,
+  "primary": $green,
+  "secondary": $blue,
   "success": $green,
   "info": $cyan,
   "warning": $yellow,
   "danger": $red,
-  "light": $light,
-  "mid": $gray-400,
-  "dark": $dark,
-  "black": $gray-900
+  "light": $gray-300,
+  "dark": $gray-800,
+  "tan": $beige,
+  "notice": $teal
 );
 
 $body-bg: $white;
-$body-color: $dark;
+$body-color: $gray-700;
 
-$font-family-base: "Open Sans", sans-serif;
+$font-family-base: "Montserrat", sans-serif;
+$font-family-secondary: "Spectral", serif;
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg: ($font-size-base * 1.25) !default;
@@ -60,7 +63,7 @@ $font-weight-bold: 700 !default;
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;
 
-$h1-font-size: $font-size-base * 2.5 !default;
+$h1-font-size: $font-size-base * 2 !default;
 $h2-font-size: $font-size-base * 2 !default;
 $h3-font-size: $font-size-base * 1.75 !default;
 $h4-font-size: $font-size-base * 1.5 !default;
@@ -69,8 +72,8 @@ $h6-font-size: $font-size-base !default;
 
 $headings-font-family: $font-family-base;
 $headings-font-weight: 400;
-$headings-line-height: 1.2 !default;
-$headings-color: inherit !default;
+$headings-line-height: 1.5rem;
+$headings-color: $gray-600;
 
 $border-radius: 0;
 

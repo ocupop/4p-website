@@ -1,0 +1,46 @@
+.btn {
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 10px 30px;
+  @include transition(0.4s);
+  &:disabled {
+    background-color: $gray-200;
+    border-color: $gray-200;
+    color: $gray-300;
+    pointer-events: none;
+  }
+  &.btn-secondary {
+    &:hover {
+      background-color: $blue-mid;
+      color: $white;
+    }
+  }
+  &.btn-link {
+    color: $secondary;
+    padding: 0;
+    text-transform: none;
+  }
+}
+
+.btn-shop {
+  width: 50%;
+  background-color: $gray-200;
+  border: 0;
+  color: $gray-600;
+  padding: 10px 10px 10px 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+  position: relative;
+  &::before {
+    content: "+";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    transform: translateY(-50%);
+    font-size: 25px;
+    font-weight: 100;
+  }
+}

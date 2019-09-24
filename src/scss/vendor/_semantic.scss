@@ -1,0 +1,20 @@
+.ui {
+  &.button {
+    border-radius: 0;
+  }
+
+  &.selection {
+    &.dropdown {
+      border-radius: 0;
+      width: 100%;
+    }
+  }
+
+  &.modal {
+    height: auto;
+  }
+
+  &.toggle {
+    z-index: 0;
+  }
+}

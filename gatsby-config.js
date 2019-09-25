@@ -1,3 +1,5 @@
+const proxy = require('http-proxy-middleware')
+
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`
 })
@@ -6,6 +8,7 @@ module.exports = {
   siteMetadata: {
     title: `4pFoods Website`,
     description: `Enter in default site meta description...`,
+    lang: `en`,
     author: `@ocupop`,
   },
   plugins: [
@@ -17,10 +20,25 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      // keep as first gatsby-source-filesystem plugin for gatsby image support
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/static/img`,
+        name: 'static',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/common/assets`,
+        name: 'assets',
       },
     },
     `gatsby-transformer-sharp`,
@@ -37,65 +55,47 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `static/img/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     {
       resolve: '@martinreiche/gatsby-firestore',
+      // resolve: 'gatsby-source-firestore',
       options: {
-        credential: "./firebaseConfig.json",
+        // credential: './firebaseConfig.json',
+        appConfig: {
+          apiKey: process.env.GATSBY_FIREBASE_API_KEY,
+          authDomain: process.env.GATSBY_FIREBASE_AUTH_DOMAIN,
+          databaseURL: process.env.GATSBY_FIREBASE_DATABASE_URL,
+          projectId: process.env.GATSBY_FIREBASE_PROJECT_ID,
+          storageBucket: process.env.GATSBY_FIREBASE_STORAGE_BUCKET,
+          messagingSenderId: process.env.GATSBY_FIREBASE_MESSAGING_SENDER_ID,
+          appID: process.env.GATSBY_FIREBASE_APP_ID,
+        },
         types: [
           {
             type: 'Product',
             collection: 'products',
             map: doc => ({
-              name: doc.name,
-              vendor___NODE: doc.vendor.id,
-            }),
-            subCollections: [
-              {
-                type: `Vote`,
-                collection: `votes`,
-                map: doc => ({
-                  title: doc.title,
-                  date: doc.date.toDate(),
-                }),
-              },
-            ],
-          },
-          {
-            type: 'Vendor',
-            collection: 'vendors',
-            map: doc => ({
-              name: doc.name,
-              website: doc.website,
-              products___NODE: doc.products.map(product => product.id),
+              title: doc.title,
+              description: doc.description,
+              descriptionHtml: doc.descriptionHtml,
+              featured: doc.featured,
+              priceRange: doc.priceRange,
+              tags: doc.tags,
+              // vendor___NODE: doc.vendor.id,
             }),
           },
+          // {
+          //   type: 'Vendor',
+          //   collection: 'vendors',
+          //   map: doc => ({
+          //     title: doc.title,
+          //     website: doc.website,
+          //     // products___NODE: doc.products.map(product => product.id),
+          //   }),
+          // },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-source-shopify2`,
-      options: {
-        // The domain name of your Shopify shop. This is required.
-        // Example: 'gatsby-source-shopify-test-shop' if your Shopify address is
-        // 'gatsby-source-shopify-test-shop.myshopify.com'.
-        shopName: process.env.SHOP_NAME,
-
-        // An API access token to your Shopify shop. This is required.
-        // You can generate an access token in the "Manage private apps" section
-        // of your shop's Apps settings. In the Storefront API section, be sure
-        // to select "Allow this app to access your storefront data using the
-        // Storefront API".
-        // See: https://help.shopify.com/api/custom-storefronts/storefront-api/getting-started#authentication
-        accessToken: process.env.SHOPIFY_ACCESS_TOKEN,
-
-        // Set verbose to true to display a verbose output on `npm run develop`
-        // or `npm run build`. This prints which nodes are being fetched and how
-        // much time was required to fetch and process the data.
-        // Defaults to true.
-        verbose: true,
       },
     },
     {
@@ -124,8 +124,64 @@ module.exports = {
         cookieDomain: "example.com",
       },
     },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-relative-images',
+            options: {
+              name: 'uploads',
+            },
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 2048,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: 'static',
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
+    // {
+    //   resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
+    //   options: {
+    //     develop: true, // Activates purging in npm run develop
+    //     purgeOnly: ['/all.sass'], // applies purging only on the bulma css file
+    //   },
+    // }, // must be after other CSS plugins
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
+  // for avoiding CORS while developing Netlify Functions locally
+  // read more: https://www.gatsbyjs.org/docs/api-proxy/#advanced-proxying
+  developMiddleware: app => {
+    app.use(
+      '/.netlify/functions/',
+      proxy({
+        target: 'http://localhost:9000',
+        pathRewrite: {
+          '/.netlify/functions/': '',
+        },
+      })
+    )
+  },
 }

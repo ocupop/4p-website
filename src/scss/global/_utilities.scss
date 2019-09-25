@@ -20,8 +20,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  background-image: url(https://via.placeholder.com/700x500/000/222?text=placeholder);
   &.aspect-1x1 {
     padding-top: 100%;
+  }
+  &.aspect-2x1 {
+    padding-top: 50%;
   }
   &.aspect-4x3 {
     padding-top: 75%;

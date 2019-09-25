@@ -9,8 +9,10 @@
 @import "./global/typography";
 @import "./global/animations";
 
-// Pages
-@import "./pages/homepage";
+// Components
 
-// Extra
-@import "./vendor/cognito";
+// Pages
+
+// Vendor Overrides
+@import "./vendor/bootstrap";
+@import "./vendor/semantic";

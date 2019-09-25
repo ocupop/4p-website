@@ -3,7 +3,6 @@ import React from "react"
 import Image from "../common/ui/image"
 import HEAD from "../common/ui/head"
 
-import ProductGrid from '../features/shop/ProductGrid'
 
 const IndexPage = () => (
   <>
@@ -23,7 +22,6 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <ProductGrid />
   </>
 )
 

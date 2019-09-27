@@ -1,0 +1,46 @@
+.product-button {
+  background-color: $gray-200;
+  border: 0;
+  color: $gray-600;
+  padding: 10px 10px 10px 20px;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 11px;
+  @include media-breakpoint-up(xl) {
+    font-size: 13px;
+  }
+  &::before {
+    content: '+';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 7px;
+    transform: translateY(-50%);
+    font-size: 25px;
+    font-weight: 100;
+  }
+}
+
+.product-amount {
+  color: $gray-300;
+  text-transform: uppercase;
+  font-size: 11px;
+  @include media-breakpoint-up(xl) {
+    font-size: 13px;
+  }
+}
+.product-price {
+  font-weight: 800;
+  color: $gray-600;
+  font-size: 23px;
+}
+
+.product-detail-tag {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: $beige;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-right: 10px;
+}

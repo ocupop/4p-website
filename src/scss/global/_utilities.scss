@@ -57,3 +57,29 @@
     }
   }
 }
+
+.responsive-card-deck {
+  @include make-responsive-cards();
+}
+
+// Color utilities
+
+.bg-green-dark {
+  background-color: $green-dark;
+}
+
+.bg-teal {
+  background-color: $teal;
+}
+
+.bg-beige {
+  background-color: $beige;
+}
+
+.bg-beige-dark {
+  background-color: $beige-dark;
+}
+
+.bg-gray-600 {
+  background-color: $gray-600;
+}

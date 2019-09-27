@@ -1,20 +1,48 @@
 #pageHeader {
-  .navbar {
-    padding: 0.5rem 0;
-  }
-  .nav-item {
-    .nav-link {
-      color: $gray-600;
-      font-weight: 600;
-      text-transform: uppercase;
-      padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  box-shadow: 0 0 10px rgba($black, 0.2);
+  z-index: 99;
+  .navbar-brand {
+    img {
+      height: 32px;
+      margin: 8px 0;
     }
   }
-  .navbar-brand {
-    width: 200px;
+  .border-top,
+  .border-bottom {
+    @include media-breakpoint-up(md) {
+      border: 0 !important;
+    }
+  }
+}
+
+#primarynav {
+
+  .nav-link {
+    text-transform: uppercase;
+    margin: 0;
+    font-family: $headings-font-family;
+    padding:20px;
+    border-bottom:1px solid $gray-300;
+    @include media-breakpoint-up(md) {
+      border-bottom: 0 !important;
+    }
+  }
+
+  .btn {
+    font-size: 16px;
+    margin-bottom:30px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0 !important;
+    }
   }
 }
 #pageContent {
+  padding-top: 68px;
 }
 #pageFooter {
 }

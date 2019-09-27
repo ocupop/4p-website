@@ -47,7 +47,8 @@
     "shopify-buy": "^2.7.0",
     "short-id": "^0.1.0-1",
     "styled-components": "^4.3.2",
-    "uuid": "^3.2.1"
+    "uuid": "^3.2.1",
+    "yarn": "^1.17.3"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.2",

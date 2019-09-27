@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Spectral&display=swap');
+
 @import "./settings";
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -10,6 +12,9 @@
 @import "./global/animations";
 
 // Components
+@import "./components/buttons";
+@import "./components/card";
+@import "./components/product";
 
 // Pages
 

@@ -1,5 +1,15 @@
 import React from 'react'
 import ImpactTabs from './ImpactTabs'
+import TryUs from '../../common/ui/TryUs'
+import FarmersIntro  from '../our-farmers/FarmersIntro'
+import FeaturedFarm from '../../common/ui/FeaturedFarm'
+
+const placeholderImageLarge = {
+  backgroundImage: `url("https://via.placeholder.com/1400x600")`
+}
+const placeholderImageSmall = {
+  backgroundImage: `url("https://via.placeholder.com/500x350")`
+}
 
 const OurImpact = () => {
   return (
@@ -93,11 +103,55 @@ const OurImpact = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center">
-              
+              <p class="text-white text-uppercase font-weight-bold">Testimonial Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni debitis quibusdam commodi laborum nobis omnis quisquam, voluptas quo nihil. Id enim exercitationem explicabo? Obcaecati, repellendus. Similique, nihil. Consectetur, architecto unde!</p>
+              <p class="text-white">Firstname Lastname - Role</p>
             </div>
           </div>
         </div>
       </section>
+      <section>
+        <div className="container">
+          <FarmersIntro/>
+          <FeaturedFarm/>
+          <div className="row">
+            <div className="col-12">
+              <div className="responsive-card-deck cards-lg-2 cards-md-2">
+                <div className="card bg-transparent">
+                  <div className="bg-image aspect-4x3" style={placeholderImageSmall}></div>
+                  <div className="card-body">
+                    <h4>Farm Name</h4>
+                    <p>Farm description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae praesentium eos asperiores in doloribus illum? Quod eum veniam pariatur impedit dolores quos libero corrupti delectus.</p>
+                  </div>
+                  <div className="card-footer bg-transparent">
+                    <a href="#" className="btn btn-secondary">Shop this weeks items</a>
+                  </div>
+                </div>
+                <div className="card bg-transparent">
+                  <div className="bg-image aspect-4x3" style={placeholderImageSmall}></div>
+                  <div className="card-body">
+                    <h4>Farm Name</h4>
+                    <p>Farm description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae praesentium eos asperiores in doloribus illum? Quod eum veniam pariatur impedit dolores quos libero corrupti delectus.</p>
+                  </div>
+                  <div className="card-footer bg-transparent">
+                    <a href="#" className="btn btn-secondary">Shop this weeks items</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-green-dark">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 text-center">
+              <a href="#" className="btn btn-outline-white">See all farmers and producers</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <img src={"https://via.placeholder.com/1800x600"} className="img-fluid" alt="" />
+      <TryUs/>
     </>
   )
 }

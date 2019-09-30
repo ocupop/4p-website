@@ -2,7 +2,7 @@ import React from 'react'
 
 const TryUs = () => {
   return (
-    <section>
+    <section id="tryUsToday" className="bg-primary">
       <div className="container">
         <div className="row">
           <div className="col-12 text-center">

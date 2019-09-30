@@ -8,13 +8,12 @@ import HomeTabs from "./home/HomeTabs"
 import StartShopping from '../common/ui/StartShopping'
 import HomeTestimonials from './home/HomeTestimonials'
 import ImageBar from './home/ImageBar'
-import FoodAccessPrograms from './home/FoodAccessPrograms'
+import FoodAccessIntro from './food-access-programs/FoodAccessIntro'
 import FeaturedWeeklyHarvest from '../common/ui/FeaturedWeeklyHarvest'
-import FeaturedNews from '../common/ui/FeaturedNews'
+import FeaturedNewsItem from '../common/ui/FeaturedNewsItem'
 import Bring4p from './home/Bring4p'
 import TryUs from '../common/ui/TryUs'
 import CommunityPicks from '../common/ui/CommunityPicks'
-
 
 const IndexPage = () => (
   <>
@@ -34,7 +33,11 @@ const IndexPage = () => (
     <StartShopping/>
     <HomeTestimonials/>
     <ImageBar/>
-    <FoodAccessPrograms/>
+    <section className="bg-gray-600 text-white">
+      <div className="container">
+        <FoodAccessIntro/>
+      </div>
+    </section>
     <section>
       <div className="container">
         <div className="row">
@@ -47,7 +50,15 @@ const IndexPage = () => (
         <hr />
         <FeaturedWeeklyHarvest />
         <hr/>
-        <FeaturedNews />
+        <div className="row">
+          <div className="col-lg-6">
+            <h3>Featured 4P News</h3>
+          </div>
+          <div className="col-lg-6 text-lg-right">
+            <a href="#" className="btn btn-primary">Explore 4P News</a>
+          </div>
+        </div>
+        <FeaturedNewsItem />
       </div>
     </section>
     <Bring4p/>

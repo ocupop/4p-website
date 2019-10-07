@@ -48,9 +48,7 @@
     "short-id": "^0.1.0-1",
     "styled-components": "^4.3.2",
     "uuid": "^3.2.1",
-    "yarn": "^1.17.3"
-  },
-  "devDependencies": {
+    "yarn": "^1.17.3",
     "babel-eslint": "^10.0.2",
     "bootstrap": "^4.3.1",
     "eslint": "^6.2.1",

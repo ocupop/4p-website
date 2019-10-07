@@ -34,13 +34,6 @@ module.exports = {
         name: 'pages',
       },
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/common/assets`,
-        name: 'assets',
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-playground`,
@@ -58,46 +51,46 @@ module.exports = {
         icon: `static/img/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // {
-    //   resolve: '@martinreiche/gatsby-firestore',
-    //   // resolve: 'gatsby-source-firestore',
-    //   options: {
-    //     // credential: './firebaseConfig.json',
-    //     appConfig: {
-    //       apiKey: process.env.GATSBY_FIREBASE_API_KEY,
-    //       authDomain: process.env.GATSBY_FIREBASE_AUTH_DOMAIN,
-    //       databaseURL: process.env.GATSBY_FIREBASE_DATABASE_URL,
-    //       projectId: process.env.GATSBY_FIREBASE_PROJECT_ID,
-    //       storageBucket: process.env.GATSBY_FIREBASE_STORAGE_BUCKET,
-    //       messagingSenderId: process.env.GATSBY_FIREBASE_MESSAGING_SENDER_ID,
-    //       appID: process.env.GATSBY_FIREBASE_APP_ID,
-    //     },
-    //     types: [
-    //       {
-    //         type: 'Product',
-    //         collection: 'products',
-    //         map: doc => ({
-    //           title: doc.title,
-    //           description: doc.description,
-    //           descriptionHtml: doc.descriptionHtml,
-    //           featured: doc.featured,
-    //           priceRange: doc.priceRange,
-    //           tags: doc.tags,
-    //           // vendor___NODE: doc.vendor.id,
-    //         }),
-    //       },
-    //       // {
-    //       //   type: 'Vendor',
-    //       //   collection: 'vendors',
-    //       //   map: doc => ({
-    //       //     title: doc.title,
-    //       //     website: doc.website,
-    //       //     // products___NODE: doc.products.map(product => product.id),
-    //       //   }),
-    //       // },
-    //     ],
-    //   },
-    // },
+    {
+      resolve: '@martinreiche/gatsby-firestore',
+      // resolve: 'gatsby-source-firestore',
+      options: {
+        // credential: './firebaseConfig.json',
+        appConfig: {
+          apiKey: process.env.GATSBY_FIREBASE_API_KEY,
+          authDomain: process.env.GATSBY_FIREBASE_AUTH_DOMAIN,
+          databaseURL: process.env.GATSBY_FIREBASE_DATABASE_URL,
+          projectId: process.env.GATSBY_FIREBASE_PROJECT_ID,
+          storageBucket: process.env.GATSBY_FIREBASE_STORAGE_BUCKET,
+          messagingSenderId: process.env.GATSBY_FIREBASE_MESSAGING_SENDER_ID,
+          appID: process.env.GATSBY_FIREBASE_APP_ID,
+        },
+        types: [
+          {
+            type: 'Product',
+            collection: 'products',
+            map: doc => ({
+              title: doc.title,
+              description: doc.description,
+              descriptionHtml: doc.descriptionHtml,
+              featured: doc.featured,
+              priceRange: doc.priceRange,
+              tags: doc.tags,
+              // vendor___NODE: doc.vendor.id,
+            }),
+          },
+          // {
+          //   type: 'Vendor',
+          //   collection: 'vendors',
+          //   map: doc => ({
+          //     title: doc.title,
+          //     website: doc.website,
+          //     // products___NODE: doc.products.map(product => product.id),
+          //   }),
+          // },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

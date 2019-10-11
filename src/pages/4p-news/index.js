@@ -2,7 +2,7 @@ import React from 'react'
 import FeaturedNewsItem from '../../common/ui/FeaturedNewsItem'
 import NewsCards from './NewsCards'
 import NewsNav from './NewsNav'
-import TryUs from  '../../common/ui/TryUs'
+import { TryUsCTA } from '../../common/ui/CTAs'
 import NewsLetterCards from './NewsLetterCards'
 
 const News = () => {
@@ -17,20 +17,20 @@ const News = () => {
               <p>4p Foods sources farm-fresh food from farms in the Washington DC local foodshed and delivers them to your office or apartment building once each week.</p>
             </div>
           </div>
-          <hr/>
+          <hr />
         </div>
       </section>
       <section className="pt-0">
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <NewsNav/>
+              <NewsNav />
             </div>
           </div>
           <FeaturedNewsItem />
           <div className="row">
             <div className="col-12">
-              <NewsCards/>
+              <NewsCards />
             </div>
           </div>
         </div>
@@ -49,9 +49,9 @@ const News = () => {
           </div>
         </div>
       </section>
-      <img src={"https://via.placeholder.com/1800x600"} className="img-fluid" alt="" />
-      <TryUs />
-      
+      <img src="https://via.placeholder.com/1800x600" className="img-fluid" alt="" />
+      <TryUsCTA />
+
     </>
   )
 }

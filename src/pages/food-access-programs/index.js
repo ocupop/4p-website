@@ -1,6 +1,6 @@
 import React from 'react'
 import FoodAccessIntro from './FoodAccessIntro'
-import TryUs from '../../common/ui/TryUs'
+import { TryUsCTA } from '../../common/ui/CTAs'
 const placeholderImage = {
   backgroundImage: `url("https://via.placeholder.com/500x350")`,
 }
@@ -21,7 +21,7 @@ const FoodAccessPrograms = () => {
       </div>
       <section>
         <div className="container">
-          <FoodAccessIntro/>
+          <FoodAccessIntro />
           <hr />
           <div className="responsive-card-deck cards-lg-3 cards-md-2">
             <div className="card bg-transparent">
@@ -61,7 +61,7 @@ const FoodAccessPrograms = () => {
         </div>
       </section>
       <img src={"https://via.placeholder.com/1800x600"} className="img-fluid" alt="" />
-      <TryUs />
+      <TryUsCTA />
     </>
   )
 }

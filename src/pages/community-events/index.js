@@ -1,6 +1,6 @@
 import React from 'react'
 import EventsCards from './EventsCards'
-import TryUs from '../../common/ui/TryUs'
+import { TryUsCTA } from '../../common/ui/CTAs'
 
 const CommunityEvents = () => {
   return (
@@ -25,7 +25,7 @@ const CommunityEvents = () => {
         </div>
       </section>
       <img src={"https://via.placeholder.com/1800x600"} className="img-fluid" alt="" />
-      <TryUs />
+      <TryUsCTA />
     </>
   )
 }

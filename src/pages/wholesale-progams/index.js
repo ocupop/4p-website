@@ -1,5 +1,5 @@
 import React from 'react'
-import TryUs from '../../common/ui/TryUs'
+import { TryUsCTA } from '../../common/ui/CTAs'
 
 const WholesalePrograms = () => {
   return (
@@ -14,7 +14,7 @@ const WholesalePrograms = () => {
           </div>
           <div className="row align-items-center">
             <div className="col-lg-6">
-              <img src={"https://via.placeholder.com/500"} className="img-fluid" alt=""/>
+              <img src={"https://via.placeholder.com/500"} className="img-fluid" alt="" />
             </div>
             <div className="col-lg-6">
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga animi minima repellat reiciendis ratione a sequi nostrum voluptatem porro unde? Id, illo nihil. Incidunt, voluptatibus rerum eos tenetur laudantium voluptates a, culpa ea temporibus quas dolorum ipsum cum necessitatibus placeat dolores aut molestiae quae doloribus! Distinctio maxime aliquam quos autem.</p>
@@ -25,7 +25,7 @@ const WholesalePrograms = () => {
         </div>
       </section>
       <img src={"https://via.placeholder.com/1800x600"} className="img-fluid" alt="" />
-      <TryUs />
+      <TryUsCTA />
     </>
   )
 }

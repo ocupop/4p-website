@@ -1,6 +1,6 @@
 import React from 'react'
 import FaqList from './FaqList'
-import TryUs from '../../common/ui/TryUs'
+import { TryUsCTA } from '../../common/ui/CTAs'
 
 const Faq = () => {
   return (
@@ -14,7 +14,7 @@ const Faq = () => {
                 <div className="form-group">
                   <label htmlFor="faq-search" className="sr-only">Search</label>
                 </div>
-                <input id="faq-search" type="text" placeholder="Search" className="form-control"/>
+                <input id="faq-search" type="text" placeholder="Search" className="form-control" />
               </div>
             </div>
           </div>
@@ -26,7 +26,7 @@ const Faq = () => {
         </div>
       </section>
       <img src={"https://via.placeholder.com/1800x600"} className="img-fluid" alt="" />
-      <TryUs />
+      <TryUsCTA />
     </>
   )
 }

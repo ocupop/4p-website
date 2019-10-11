@@ -1,7 +1,7 @@
 import React from 'react'
 import ImpactTabs from './ImpactTabs'
-import TryUs from '../../common/ui/TryUs'
-import FarmersIntro  from '../our-farmers/FarmersIntro'
+import { TryUsCTA } from '../../common/ui/CTAs'
+import FarmersIntro from '../our-farmers/FarmersIntro'
 import FeaturedFarm from '../../common/ui/FeaturedFarm'
 
 const placeholderImageLarge = {
@@ -36,7 +36,7 @@ const OurImpact = () => {
           </div>
         </div>
       </section>
-      <ImpactTabs/>
+      <ImpactTabs />
       <section>
         <div className="container">
           <div className="row">
@@ -86,7 +86,7 @@ const OurImpact = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-4">
-              <img src={"/img/4p-foods-cmyk-logo-color-color.png"} className="img-fluid" alt="4P Foods logo"/>
+              <img src={"/img/4p-foods-cmyk-logo-color-color.png"} className="img-fluid" alt="4P Foods logo" />
             </div>
             <div className="col-lg-8">
               <h4>Our name stands for the 4 P's we think should be a part of every business</h4>
@@ -111,8 +111,8 @@ const OurImpact = () => {
       </section>
       <section>
         <div className="container">
-          <FarmersIntro/>
-          <FeaturedFarm/>
+          <FarmersIntro />
+          <FeaturedFarm />
           <div className="row">
             <div className="col-12">
               <div className="responsive-card-deck cards-lg-2 cards-md-2">
@@ -151,7 +151,7 @@ const OurImpact = () => {
         </div>
       </section>
       <img src={"https://via.placeholder.com/1800x600"} className="img-fluid" alt="" />
-      <TryUs/>
+      <TryUsCTA />
     </>
   )
 }

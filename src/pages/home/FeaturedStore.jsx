@@ -3,20 +3,10 @@ import React from 'react'
 const placeholderImage = {
   backgroundImage: `url("https://via.placeholder.com/500x350")`,
 }
-const FeaturedCollections = () => {
+const FeaturedStore = () => {
   return (
-    <section>
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-8">
-            <h2>Featured Collections + Goods</h2>
-            <p>Year-round, 4p delivers health, seasonal food from local family farms&mdash;all grown and harvested in the most responsible, sustainable way possible.</p>
-          </div>
-          <div className="col-lg-4">
-            <a href="#" className="btn btn-primary">Start Shopping</a>
-          </div>
-        </div>
-        <div className="row">
+    <>
+      <div className="row">
           <div className="col">
             <div className="responsive-card-deck cards-lg-3 cards-md-2">
               <div className="card product-card">
@@ -85,9 +75,8 @@ const FeaturedCollections = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+    </>
   )
 }
 
-export default FeaturedCollections
+export default FeaturedStore

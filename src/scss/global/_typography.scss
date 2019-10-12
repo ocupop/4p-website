@@ -18,13 +18,19 @@ a {
 
 h1,
 .h1 {
+  line-height: 1.25;
   font-weight: 300;
   text-transform: uppercase;
 }
 
 h2,
 .h2 {
+  line-height: 1.25;
   font-weight: 800;
-  font-size: 24px;
   text-transform: uppercase;
+}
+
+em {
+  font-family: $font-family-secondary;
+  font-style: italic;
 }

@@ -1,25 +1,26 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+// import logo from './assets/logo-wordmark.svg'
 
 const Header = ({ siteTitle }) => (
   <header id="pageHeader">
     <div id="topbar" className="bg-teal text-white">
       <div className="container">
-        <div className="d-flex justify-content-between p-2">
-          <div>Are you a wholesaler?</div>
-          <div>Free delivery with purchase over $60</div>
-          <div>Login</div>
+        <div className="d-flex justify-content-between px-5 py-2">
+          <div className="w-50">Are you a wholesaler?</div>
+          <div className="w-50 text-center">Free delivery with purchase over $60</div>
+          <div className="w-50 text-right">Login</div>
         </div>
       </div>
     </div>
     <div className="container">
-      <nav id="mainnav" className="navbar navbar-expand-md navbar-light">
-        <a className="navbar-brand" href="/" title={ siteTitle }>
-          <img src={"/img/logo-wordmark.svg"} alt={ siteTitle }/>
+      <nav id="mainnav" className="navbar navbar-expand-md">
+        <a className="navbar-brand" href="/" title={siteTitle}>
+          <img src="/img/logo-wordmark.svg" alt={siteTitle} />
         </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#primarynav" aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon" />
         </button>
 
         <div className="collapse navbar-collapse justify-content-md-end" id="primarynav">
@@ -27,10 +28,10 @@ const Header = ({ siteTitle }) => (
           <ul className="nav navbar-nav mx-auto border-top">
             <li className="nav-item">
               <Link to="/how-it-works" className="nav-link">How it works</Link>
-              </li>
+            </li>
             <li className="nav-item">
               <Link to="/our-impact" className="nav-link">Our Impact</Link>
-              </li>
+            </li>
             <li className="nav-item">
               <Link to="/4p-news" className="nav-link">4P News</Link>
             </li>

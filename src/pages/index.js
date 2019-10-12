@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import HEAD from "../common/ui/head"
+
 
 import { TryUsCTA, StartShoppingCTA } from '../common/ui/CTAs'
 
@@ -19,13 +19,11 @@ import ImageBar from './home/ImageBar'
 
 const IndexPage = () => (
   <>
-    <HEAD title="Home" />
-
     <section className="bg-primary">
       <div className="container">
         <div className="row">
-          <div className="col-12 col-lg-10 mx-lg-auto text-center">
-            <p className="h1 text-white">We believe in a world where <Link to="/our-impact">Good Food</Link> is the rule&mdash;not the exception.</p>
+          <div className="col-12 col-lg-9 mx-lg-auto text-center">
+            <p className="text-mega text-white">We believe in a world where <Link to="/our-impact" className="text-white text-underline">good food</Link> is the rule &mdash; not the exception.</p>
           </div>
         </div>
       </div>
@@ -36,9 +34,9 @@ const IndexPage = () => (
         <div className="row">
           <div className="col-lg-8">
             <h2>Featured Collections + Goods</h2>
-            <p>Year-round, 4p delivers health, seasonal food from local family farms&mdash;all grown and harvested in the most responsible, sustainable way possible.</p>
+            <p className="mb-5">Year-round, 4p delivers health, seasonal food from local family farms&mdash;all grown and harvested in the most responsible, sustainable way possible.</p>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 text-right">
             <a href="#" className="btn btn-primary">Start Shopping</a>
           </div>
         </div>
@@ -57,8 +55,8 @@ const IndexPage = () => (
     <section id="testimonials" className="bg-primary text-white">
       <div className="container">
         <div className="row">
-          <div className="col-12">
-            <h4 className="text-white">Stories of Satisfied Customers</h4>
+          <div className="col-12 text-center">
+            <h4 className="text-white mb-4">Stories of Satisfied Customers</h4>
             <Testimonials />
           </div>
         </div>

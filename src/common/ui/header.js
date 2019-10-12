@@ -1,58 +1,55 @@
+import React, { useContext, useState, useEffect } from "react"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Navbar, Nav } from 'react-bootstrap'
 // import logo from './assets/logo-wordmark.svg'
 
-const Header = ({ siteTitle }) => (
-  <header id="pageHeader">
-    <div id="topbar" className="bg-teal text-white">
-      <div className="container">
-        <div className="d-flex justify-content-between px-5 py-2">
-          <div className="w-50">Are you a wholesaler?</div>
-          <div className="w-50 text-center">Free delivery with purchase over $60</div>
-          <div className="w-50 text-right">Login</div>
+const Header = ({ siteTitle }) => {
+  // const shop = useContext(StoreContext)
+  // const { checkout } = shop
+  // const [quantity, setQuantity] = useState(countQuantity(checkout ? checkout.lineItems : []))
+  const [showMobileNav, setMobileNavVisibility] = useState(false)
+  // const [companyNavVisibility, setCompanyNavVisibility] = useState(false)
+  // const [communityNavVisibility, setCommunityNavVisibility] = useState(false)
+
+  return (
+    <header id="pageHeader">
+      <div className="bg-teal text-white">
+        <div id="topnav" className="d-flex justify-content-between px-5 py-2">
+          <div className=""><a href="/wholesale">Are you a wholesaler?</a></div>
+          <div className="text-center d-none d-md-block">Free delivery with purchase over $60</div>
+          <div className="text-right d-none d-md-block"><a href="/login">Login</a></div>
         </div>
       </div>
-    </div>
-    <div className="container">
-      <nav id="mainnav" className="navbar navbar-expand-md">
-        <a className="navbar-brand" href="/" title={siteTitle}>
+      <Navbar id="mainnav" expand="lg">
+        <Navbar.Brand href="/">
           <img src="/img/logo-wordmark.svg" alt={siteTitle} />
-        </a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#primarynav" aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon" />
-        </button>
-
-        <div className="collapse navbar-collapse justify-content-md-end" id="primarynav">
-
-          <ul className="nav navbar-nav mx-auto border-top">
-            <li className="nav-item">
-              <Link to="/how-it-works" className="nav-link">How it works</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/our-impact" className="nav-link">Our Impact</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/4p-news" className="nav-link">4P News</Link>
-            </li>
-          </ul>
-          <ul className="navbar-nav float-md-right mt-4 mt-md-0">
-            <li className="nav-item">
-              <Link to="/shop" className="nav-link btn btn-primary">Shop</Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+        </Navbar.Brand>
+        <Nav id="primarynav" className="mx-auto">
+          <Nav.Link href="/how-it-works">How it works</Nav.Link>
+          <Nav.Link href="/our-impact">Our Impact</Nav.Link>
+          <Nav.Link href="/4p-news">4P News</Nav.Link>
+        </Nav>
+        <Link to="/shop" className="nav-link btn btn-primary">Shop</Link>
+      </Navbar>
+      <div id="mobilenav">
+        <Nav.Link href="#" className="bg-teal" onClick={() => setMobileNavVisibility(!showMobileNav)}>Menu</Nav.Link>
+        {showMobileNav && (
+          <>
+            <div className="bg-secondary">
+              <Nav.Link href="/how-it-works">How It Works</Nav.Link>
+              <Nav.Link href="/our-impact">Out Impact</Nav.Link>
+              <Nav.Link href="/4p-news">4P News</Nav.Link>
+              <Nav.Link href="/login">Login</Nav.Link>
+            </div>
+            <div className="bg-primary">
+              <Link to="/shop" className="btn btn-primary btn-block">Shop</Link>
+            </div>
+          </>
+        )}
+      </div>
+    </header>
+  )
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

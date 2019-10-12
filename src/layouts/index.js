@@ -2,8 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
+import HEAD from "../common/ui/head"
 import Header from '../common/ui/header'
 import Footer from '../common/ui/footer'
+import 'remixicon/fonts/remixicon.css'
 import '../scss/main.scss'
 
 function Layout({ children }) {
@@ -19,8 +21,9 @@ function Layout({ children }) {
 
   return (
     <>
+      <HEAD />
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main id="pageContent" className="mt-5">
+      <main id="pageContent">
         {children}
       </main>
       <Footer siteTitle={data.site.siteMetadata.title} />

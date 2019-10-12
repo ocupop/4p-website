@@ -1,0 +1,13 @@
+blockquote {
+  font-family: $font-family-secondary;
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1.25;
+  footer {
+    color: $green-dark;
+    font-family: $font-family-base;
+    font-size: 1rem;
+  }
+  cite {
+  }
+}

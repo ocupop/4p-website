@@ -21,6 +21,9 @@ h1,
   line-height: 1.25;
   font-weight: 300;
   text-transform: uppercase;
+  @include media-breakpoint-down(md) {
+    font-size: 1.8rem;
+  }
 }
 
 h2,
@@ -28,6 +31,29 @@ h2,
   line-height: 1.25;
   font-weight: 800;
   text-transform: uppercase;
+  @include media-breakpoint-down(md) {
+    font-size: 1.25rem;
+  }
+}
+
+h3,
+.h3 {
+  line-height: 1.25;
+  font-weight: 300;
+  @include media-breakpoint-down(md) {
+    font-size: 1.2rem;
+  }
+}
+
+h4,
+.h4 {
+  line-height: 1.25;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  @include media-breakpoint-down(md) {
+    font-size: 1.1rem;
+  }
 }
 
 em {

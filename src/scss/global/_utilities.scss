@@ -103,9 +103,12 @@
 }
 
 .text-mega {
-  font-size: 2.9rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: 600;
   line-height: 1.25;
+  @include media-breakpoint-down(md) {
+    font-size: 1.75rem;
+  }
 }
 
 // Color utilities

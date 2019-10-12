@@ -22,6 +22,7 @@ const HEAD = ({ pageDescription, pageTitle, pageAuthor }) => {
       <meta name="description" content={metaDescription} />
       <meta name="author" content={metaAuthor} />
       {/* TODO - Add default metaData and logic for page overrides */}
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700|Spectral:400,400i,600,600i&display=swap" rel="stylesheet" />
 
     </Helmet>
   )

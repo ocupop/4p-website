@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Spectral&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Spectral&display=swap");
 
 @import "./settings";
 @import "node_modules/bootstrap/scss/bootstrap.scss";
@@ -8,11 +8,12 @@
 @import "./global/utilities";
 @import "./global/base";
 @import "./global/layout";
+@import "./global/nav";
 @import "./global/typography";
 @import "./global/animations";
 
 // Components
-@import "./components/buttons";
+@import "./components/testimonials";
 @import "./components/card";
 @import "./components/product";
 

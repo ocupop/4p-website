@@ -9,6 +9,7 @@
   font-family: $headings-font-family;
   padding: 0.5rem 1.25rem;
   text-transform: uppercase;
+  font-weight: 600;
   color: $white;
   border: 0;
   @include transition(0.3s);

@@ -56,10 +56,17 @@ const HowItWorks = () => {
               <Tab.Pane eventKey="farm">
                 <div className="row">
                   <div className="col-12 col-md-4">
-                    <h4>Empowering Farmers</h4>
+                    <h4><i>Empowering Farmers</i></h4>
+                    <p>4P currently empowers more than 200 local family farms to put their high quality produce, meat, and dairy products on more tables every day.</p>
+                    <h4 className="mt-4"><i>Committed to our Planet</i></h4>
+                    <p>4P Foods works with farmers who are committed to low-impact, sustainable methods of production. Plus, local food requires less travel, improving your carbon footprint.</p>
+                    <a href="" className="btn btn-primary mt-4">Learn More</a>
                   </div>
-                  <div className="col-12 col-md-4">
-                    <img src="" alt="" />
+                  <div className="col-12 col-md-8 overflow-hidden">
+                    <div className="d-flex">
+                      <img src="https://via.placeholder.com/600x400/99BB00/99BB00" alt="" />
+                      <img src="https://via.placeholder.com/600x400/990000/990000" alt="" />
+                    </div>
                   </div>
                 </div>
               </Tab.Pane>

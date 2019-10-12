@@ -48,24 +48,12 @@ const IndexPage = () => (
 
     <StartShoppingCTA />
 
-    <section id="testimonials" className="bg-primary text-white">
-      <div className="container">
-        <div className="row">
-          <div className="col-12 text-center">
-            <h4 className="text-white mb-4">Stories of Satisfied Customers</h4>
-            <Testimonials />
-          </div>
-        </div>
-      </div>
-    </section>
+    <Testimonials />
 
     <ImageBar />
 
-    <section id="food-access-programs" className="bg-gray-600 text-white">
-      <div className="container">
-        <FoodAccessIntro />
-      </div>
-    </section>
+
+    <FoodAccessIntro />
 
     <section id="featured-content">
       <div className="container">

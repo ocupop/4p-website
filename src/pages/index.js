@@ -44,11 +44,7 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section id="how-it-works">
-      <div className="container">
-        <HowItWorks />
-      </div>
-    </section>
+    <HowItWorks />
 
     <StartShoppingCTA />
 

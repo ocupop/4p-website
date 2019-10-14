@@ -1,5 +1,5 @@
 import React from 'react'
-import FeaturedNewsItem from '../../common/ui/FeaturedNewsItem'
+import FeaturedNewsItem from './FeaturedNewsItem'
 import NewsCards from './NewsCards'
 import NewsNav from './NewsNav'
 import { TryUsCTA } from '../../common/ui/CTAs'

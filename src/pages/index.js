@@ -1,19 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
 
-
 import { TryUsCTA, StartShoppingCTA } from '../common/ui/CTAs'
 
-import FeaturedWeeklyHarvest from '../common/ui/FeaturedWeeklyHarvest'
-import FeaturedNewsItem from '../common/ui/FeaturedNewsItem'
 
 import CommunityPicks from '../common/ui/CommunityPicks'
+
 import FoodAccessIntro from './food-access-programs/FoodAccessIntro'
 
 import FeaturedStore from "./home/FeaturedStore"
 import HowItWorks from "./home/HowItWorks"
 import Testimonials from './home/Testimonials'
 import ImageBar from './home/ImageBar'
+import EnrichYourself from './home/EnrichYourself'
 
 
 
@@ -55,29 +54,7 @@ const IndexPage = () => (
 
     <FoodAccessIntro />
 
-    <section id="featured-content">
-      <div className="container">
-        <div className="row">
-          <div className="col-12 col-lg-6 mx-lg-auto text-center">
-            <h2>Enrich Yourself</h2>
-            <p>News, Recipes, Tips, and Home-grown Hype</p>
-            <p>4P Foods sources farm-fresh food from farms in the Washington DC local foodshed and delivers them to your office or apartment building once a week.</p>
-          </div>
-        </div>
-        <hr />
-        <FeaturedWeeklyHarvest />
-        <hr />
-        <div className="row">
-          <div className="col-lg-6">
-            <h3>Featured 4P News</h3>
-          </div>
-          <div className="col-lg-6 text-lg-right">
-            <a href="#" className="btn btn-primary">Explore 4P News</a>
-          </div>
-        </div>
-        <FeaturedNewsItem />
-      </div>
-    </section>
+    <EnrichYourself />
 
     <section id="bring-us-to-your-community" className="bg-primary text-white">
       <div className="container">

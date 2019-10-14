@@ -17,16 +17,10 @@ function FeaturedNews() {
           <FeaturedNewsItem />
         </div>
       </div>
-      <div className="row">
-        <div className="col-12 col-md-4">
-          <FeaturedNewsItem />
-        </div>
-        <div className="col-12 col-md-4">
-          <FeaturedNewsItem />
-        </div>
-        <div className="col-12 col-md-4">
-          <FeaturedNewsItem />
-        </div>
+      <div className="threesome mt-5">
+        <FeaturedNewsItem />
+        <FeaturedNewsItem />
+        <FeaturedNewsItem />
       </div>
     </>
   )

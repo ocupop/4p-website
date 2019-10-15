@@ -2,8 +2,12 @@ import React from 'react'
 import { Card } from 'react-bootstrap'
 
 const FoodAccessIntro = () => {
+  const iconStyle = {
+    maxWidth: '100px',
+    width: '100px'
+  };
   return (
-    <section id="food-access-programs" className="bg-gray-600 text-white">
+    <section id="FoodAccessIntro" className="bg-gray-600 text-white">
       <div className="container">
         <div className="row mb-5">
           <div className="col-12 col-lg-11 mx-lg-auto text-center">
@@ -19,7 +23,7 @@ const FoodAccessIntro = () => {
                 <div className="card-content align-items-center">
                   <div className="card-header p-0">
                     <div className="content">
-                      <img src="/img/icons/homepage-foodaccess-geographic.png" className="w-50"  alt="" />
+                      <img src="/img/icons/homepage-foodaccess-geographic.png" style={iconStyle}  alt="" />
                     </div>
                   </div>
                   <div className="card-body">
@@ -35,7 +39,7 @@ const FoodAccessIntro = () => {
                 <div className="card-content align-items-center">
                   <div className="card-header p-0">
                     <div className="content">
-                      <img src="/img/icons/homepage-foodaccess-financial.png" className="w-50"  alt="" />
+                      <img src="/img/icons/homepage-foodaccess-financial.png" style={iconStyle}  alt="" />
                     </div>
                   </div>
                   <div className="card-body">
@@ -52,7 +56,7 @@ const FoodAccessIntro = () => {
                 <div className="card-content align-items-center">
                   <div className="card-header p-0">
                     <div className="content">
-                      <img src="/img/icons/homepage-foodaccess-personal.png" className="w-50" alt="" />
+                      <img src="/img/icons/homepage-foodaccess-personal.png" style={iconStyle} alt="" />
                     </div>
                   </div>
                   <div className="card-body">

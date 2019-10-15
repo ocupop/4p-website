@@ -7,7 +7,7 @@ function Community() {
       <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6 mx-lg-auto text-center">
-            <h3>Bring 4p to your community</h3>
+            <h2>Bring 4p to your community</h2>
             <p className="lead"><em>Supportive Sub-Headline Here</em></p>
             <p>4p Foods sources farm-fresh food from farms in the Washington DC local foodshed and delivers them to your office or apartment building once each week.</p>
           </div>

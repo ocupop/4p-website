@@ -3,11 +3,11 @@ import React from 'react'
 
 export const TryUsCTA = () => {
   return (
-    <section id="tryUsToday" className="bg-primary">
+    <section id="tryUsToday">
       <div className="container">
         <div className="row">
           <div className="col-12 text-center">
-            <a href="#" className="btn btn-primary btn-block">Try Us Today&mdash;Completely Commitment Free</a>
+            <h1><a href="#" className="btn btn-primary btn-xl btn-block">Try Us Today&mdash;Completely Commitment Free</a></h1>
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@ export const StartShoppingCTA = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 text-center">
-            <a href="#" className="btn btn-outline-white btn-lg">Start Shopping 4P</a>
+            <a href="#" className="btn btn-outline-white btn-xl">Start Shopping 4P</a>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ const CommunityPicks = () => {
         </div>
         <div className="responsive-card-deck cards-lg-2">
           <div className="card">
-            <div className="bg-image aspect-16x9" style={placeholderImage/}>
+            <div className="bg-image aspect-16x9" style={placeholderImage}/>
             <div className="card-footer">
               <div className="row">
                 <div className="col-6">

@@ -205,7 +205,7 @@
       max-width: 100%;
       background-color: transparent;
       border: 0;
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(sm) {
         flex: 0 0 33%;
         max-width: 33%;
       }
@@ -216,7 +216,7 @@
       .content {
         padding: 3rem 0;
         text-align: center;
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(sm) {
           padding: 0;
         }
         img {
@@ -230,7 +230,7 @@
       max-width: 100%;
       flex: 1 1 auto;
       padding: 1.25rem;
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(sm) {
         flex: 0 0 66%;
         max-width: 66%;
       }
@@ -309,7 +309,7 @@
       height: 100%;
       background-color: transparent;
       border: 0;
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(sm) {
         flex: 0 0 25%;
         max-width: 25%;
       }
@@ -320,7 +320,7 @@
       .content {
         padding: 3rem 0;
         text-align: center;
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(sm) {
           padding: 0;
         }
         img {
@@ -334,7 +334,7 @@
       max-width: 100%;
       flex: 1 1 auto;
       padding: 1.25rem;
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(sm) {
         flex: 0 0 75%;
         max-width: 75%;
       }

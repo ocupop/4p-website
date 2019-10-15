@@ -1,4 +1,5 @@
 import React from 'react'
+import { Card } from 'react-bootstrap'
 
 const FoodAccessIntro = () => {
   return (
@@ -12,43 +13,57 @@ const FoodAccessIntro = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-12 col-lg-4 text-center">
-            <div className="row align-items-center mb-5">
-              <div className="col-12 col-sm-4 col-lg-12">
-                <div className="px-lg-5 ml-auto mx-lg-4 py-lg-4">
-                  <img src="/img/icons/homepage-foodaccess-geographic.png" className="img-fluid w-75" alt="" />
+          <div className="col-12">
+            <div className="threesome">
+              <Card className="bg-transparent">
+                <div className="card-content align-items-center">
+                  <div className="card-header p-0">
+                    <div className="content">
+                      <img src="/img/icons/homepage-foodaccess-geographic.png" className="w-50"  alt="" />
+                    </div>
+                  </div>
+                  <div className="card-body">
+                    <div className="content">
+                      <h4 className="text-white">Geographic</h4>
+                      <p className="px-lg-5">The geographic access challenge is availability to resources for Good Food. For examples, no grocery stores within a reasonable distance.</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="col-12 col-sm-7 col-lg-12 text-sm-left text-lg-center">
-                <h4 className="text-white">Geographic</h4>
-                <p className="px-lg-5">The geographic access challenge is availability to resources for Good Food. For examples, no grocery stores within a reasonable distance.</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-lg-4 text-center">
-            <div className="row align-items-center mb-5">
-              <div className="col-12 col-sm-4 col-lg-12">
-                <div className="px-lg-5 ml-auto mx-lg-4 py-lg-4">
-                  <img src="/img/icons/homepage-foodaccess-financial.png" className="img-fluid w-75" alt="" />
+              </Card>
+
+              <Card className="bg-transparent">
+                <div className="card-content align-items-center">
+                  <div className="card-header p-0">
+                    <div className="content">
+                      <img src="/img/icons/homepage-foodaccess-financial.png" className="w-50"  alt="" />
+                    </div>
+                  </div>
+                  <div className="card-body">
+                    <div className="content">
+                      <h4>Financial</h4>
+                      <p>The financial access challenge of earning enough money for Good Food. Even if there is a grocery store, healthy fresh produce is often a luxury</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="col-12 col-sm-7 col-lg-12 text-sm-left text-lg-center">
-                <h4 className="text-white">Financial</h4>
-                <p className="px-lg-5">The financial access challenge of earning enough money for Good Food. Even if there is a grocery store, healthy fresh produce is often a luxury</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 text-center">
-            <div className="row align-items-center mb-5">
-              <div className="col-12 col-sm-4 col-lg-12">
-                <div className="px-lg-5 ml-auto mx-lg-4 py-lg-4">
-                  <img src="/img/icons/homepage-foodaccess-personal.png" className="img-fluid w-75" alt="" />
+              </Card>
+
+
+              <Card className="bg-transparent">
+                <div className="card-content align-items-center">
+                  <div className="card-header p-0">
+                    <div className="content">
+                      <img src="/img/icons/homepage-foodaccess-personal.png" className="w-50" alt="" />
+                    </div>
+                  </div>
+                  <div className="card-body">
+                    <div className="content">
+                      <h4>Personal</h4>
+                      <p>The personal access challenge is about lifestyle limitations. For example, someone working multiple jobs may not have the time, tools or knowledge to buy and prepare healthy food.</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="col-12 col-sm-7 col-lg-12 text-sm-left text-lg-center">
-                <h4 className="text-white">Personal</h4>
-                <p className="px-lg-5">The personal access challenge is about lifestyle limitations. For example, someone working multiple jobs may not have the time, tools or knowledge to buy and prepare healthy food.</p>
-              </div>
+              </Card>
+
             </div>
           </div>
         </div>

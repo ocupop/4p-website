@@ -1,7 +1,11 @@
 import React from 'react'
 import FeaturedNewsItem from './FeaturedNewsItem'
+import { ARTICLES } from '../../data/articles'
 
 function FeaturedNews() {
+  const featuredArticle = ARTICLES[0]
+  const articles = ARTICLES.slice(1,4)
+
   return (
     <>
       <div className="row mb-3">
@@ -14,13 +18,11 @@ function FeaturedNews() {
       </div>
       <div className="row mb-3">
         <div className="col-12">
-          <FeaturedNewsItem />
+          <FeaturedNewsItem article={featuredArticle} featured />
         </div>
       </div>
       <div className="threesome mt-5">
-        <FeaturedNewsItem />
-        <FeaturedNewsItem />
-        <FeaturedNewsItem />
+        {articles && articles.map(article => <FeaturedNewsItem key={article.id} article={article} />)}
       </div>
     </>
   )

@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { TryUsCTA, StartShoppingCTA } from '../common/ui/CTAs'
 
 
-import CommunityPicks from '../common/ui/CommunityPicks'
+import CommunityPicks from './home/CommunityPicks'
 
 import FoodAccessIntro from './food-access-programs/FoodAccessIntro'
 

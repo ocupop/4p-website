@@ -51,14 +51,14 @@ module.exports = {
         icon: `static/img/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: 'gatsby-source-google-sheets',
-      options: {
-        spreadsheetId: 'get this from the sheet url',
-        worksheetTitle: 'ie the name in the worksheet tab',
-        credentials: require('./path-to-credentials-file.json')
-      }
-    },
+    // {
+    //   resolve: 'gatsby-source-google-sheets',
+    //   options: {
+    //     spreadsheetId: 'get this from the sheet url',
+    //     worksheetTitle: 'ie the name in the worksheet tab',
+    //     credentials: require('./path-to-credentials-file.json')
+    //   }
+    // },
     // {
     //   resolve: '@martinreiche/gatsby-firestore',
     //   // resolve: 'gatsby-source-firestore',

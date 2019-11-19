@@ -1,0 +1,43 @@
+.deviceOrientationScene {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  button {
+    left: 25vw;
+    top: 40vh;
+    width: 50vw;
+    position: absolute;
+    background: $black;
+    border: 10px solid $primary;
+    cursor: pointer;
+    display: block;
+    font-family: monospace;
+    font-size: 24px;
+    height: 80px;
+    line-height: 60px;
+    margin: 0;
+    outline: none;
+    padding: 0 1.2em;
+    text-align: right;
+
+    &:hover {
+      background: $primary;
+    }
+  }
+}
+
+@for $i from 1 through 8 {
+  .deviceOrientationScene > *:nth-child(#{$i}) {
+    opacity: #{0.15 * $i};
+
+    button {
+      transform: rotate(#{180 - 30 * $i}deg);
+    }
+  }
+}
+
+.parallax-inner {
+  text-align: center;
+}

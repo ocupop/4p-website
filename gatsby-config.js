@@ -16,14 +16,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        // includePaths: ["absolute/path/a", "absolute/path/b"],
+        includePaths: ["content/_scss"],
       },
     },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/static/img`,
+        path: `${__dirname}/content/img`,
         name: 'static',
       },
     },
@@ -34,9 +34,15 @@ module.exports = {
         name: 'pages',
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/content/_pages`,
+        name: 'standalonePages',
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-playground`,
     `gatsby-plugin-layout`,
     `gatsby-plugin-styled-components`,
     {
@@ -48,7 +54,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `static/img/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `content/img/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     // {
@@ -99,32 +105,32 @@ module.exports = {
     //     ],
     //   },
     // },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
-        // Delays sending pageview hits on route update (in milliseconds)
-        pageTransitionDelay: 0,
-        // Enables Google Optimize using your container Id
-        optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
-        // Enables Google Optimize Experiment ID
-        experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
-        // Set Variation ID. 0 for original 1,2,3....
-        variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
-        // Any additional optional fields
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "example.com",
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: process.env.GOOGLE_ANALYTICS_ID,
+    //     // Defines where to place the tracking script - `true` in the head and `false` in the body
+    //     head: false,
+    //     // Setting this parameter is optional
+    //     anonymize: true,
+    //     // Setting this parameter is also optional
+    //     respectDNT: true,
+    //     // Avoids sending pageview hits from custom paths
+    //     exclude: ["/preview/**", "/do-not-track/me/too/"],
+    //     // Delays sending pageview hits on route update (in milliseconds)
+    //     pageTransitionDelay: 0,
+    //     // Enables Google Optimize using your container Id
+    //     optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+    //     // Enables Google Optimize Experiment ID
+    //     experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
+    //     // Set Variation ID. 0 for original 1,2,3....
+    //     variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
+    //     // Any additional optional fields
+    //     sampleRate: 5,
+    //     siteSpeedSampleRate: 10,
+    //     cookieDomain: "example.com",
+    //   },
+    // },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -151,12 +157,6 @@ module.exports = {
             },
           },
         ],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
     // {

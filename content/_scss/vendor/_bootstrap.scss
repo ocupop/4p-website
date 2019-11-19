@@ -1,0 +1,73 @@
+// Buttons
+.btn {
+  font-family: $font-family-secondary;
+  text-transform: uppercase;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 10px 20px;
+  &:hover {
+    text-decoration: none;
+  }
+  &.btn-link {
+    border-bottom: 1px solid $orange;
+    color: $orange;
+    font-weight: 600;
+    padding: 10px;
+    &.btn-link-white {
+      color: $white;
+      border-bottom: 1px solid $white;
+    }
+    &.btn-link-dark {
+      color: $dark;
+      border-bottom: 1px solid $dark;
+    }
+  }
+  &.btn-bordered-white {
+    border: 1px solid $white;
+    color: $white;
+    padding: 5px 20px;
+  }
+  &.btn-bordered-orange {
+    border: 1px solid $orange;
+    color: $orange;
+    padding: 5px 20px;
+  }
+  &.btn-bordered-dark {
+    border: 1px solid $dark;
+    color: $dark;
+    padding: 5px 20px;
+  }
+}
+.btn-xl {
+  line-height: 4rem;
+  font-size: 2.25rem;
+}
+
+// Cards
+.cards {
+  display: flex;
+  flex-flow: wrap;
+  .card {
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    flex: inherit;
+    color: $dark;
+    &:hover {
+      text-decoration: none;
+    }
+    .card-img-top {
+      padding-top: 50%;
+    }
+  }
+}
+
+.card {
+  border: 0;
+}
+
+//forms
+.form-control {
+  border: 1px solid $dark;
+  color: $dark;
+}

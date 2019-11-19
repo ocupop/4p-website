@@ -5,39 +5,38 @@
 //  * See: https://www.gatsbyjs.org/docs/node-apis/
 //  */
 
-// const path = require('path')
-// const { createFilePath } = require('gatsby-source-filesystem')
-// const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const path = require(`path`)
+const matter = require(`gray-matter`);
+const _ = require(`lodash`);
 
-// exports.createPages = ({ actions, graphql }) => {
+
+
+// exports.createPages = async ({ graphql, actions }) => {
 //   const { createPage } = actions
 
-//   return graphql(`
-//     {
-//       allProduct {
+//   const standalonePages = await graphql(`
+//     query {
+//       allStandalonePage {
 //         edges {
 //           node {
 //             id
+//             title
+//             permalink
+//             layout
 //           }
 //         }
 //       }
 //     }
 //   `).then(result => {
-//     if (result.errors) {
-//       result.errors.forEach(e => console.error(e.toString()))
-//       return Promise.reject(result.errors)
-//     }
+//     // Build Standalone Pages
+//     result.data.allStandalonePage.edges.forEach(({ node }) => {
+//       const component = path.resolve(`./src/templates/${node.layout}.jsx`)
 
-//     const firestoreProducts = result.data.allProduct.edges
-
-//     firestoreProducts.forEach(({ node }) => {
 //       createPage({
-//         path: `/firestore/${node.id}/`,
-//         component: path.resolve(`./src/features/firestore/ProductPage/index.js`),
+//         component,
+//         path: node.permalink,
 //         context: {
-//           // Data passed to context is available
-//           // in page queries as GraphQL variables.
-//           // handle: node.handle,
+//           // Data passed to context is available in page queries as GraphQL variables.
 //           id: node.id,
 //         },
 //       })
@@ -45,20 +44,70 @@
 //   })
 // }
 
-// exports.onCreateNode = ({ node, actions, getNode }) => {
-//   const { createNodeField } = actions
-//   fmImagesToRelative(node) // convert image paths for gatsby images
+exports.onCreateNode = async ({
+  node,
+  loadNodeContent,
+  actions,
+  createNodeId,
+  reporter,
+  createContentDigest
+}) => {
 
-//   if (node.internal.type === `MarkdownRemark`) {
-//     const value = createFilePath({ node, getNode })
-//     createNodeField({
-//       name: `slug`,
-//       node,
-//       value,
-//     })
-//   }
+  const { createNode, createParentChildLink, createNodeField } = actions
+
+  // only log for Standalone Pages
+  if (node.internal.mediaType !== `text/html` || node.name === '_defaults') {
+    return
+  }
+  const nodeContent = await loadNodeContent(node)
+
+  try {
+    const file = matter(nodeContent);
+
+    if (file.data) {
+      file.data = _.mapValues(file.data, value => {
+        if (_.isDate(value)) {
+          return value.toJSON();
+        }
+
+        return value;
+      })
+    }
+
+    let htmlNode = {
+      id: createNodeId(`${node.id} >>> LocalContentSource`),
+      children: [],
+      parent: node.id,
+      internal: {
+        content: file.content,
+        type: file.data.type
+      }
+    }
+
+    htmlNode.frontmatter = Object.assign({ title: `` }, file.data)
+    htmlNode.title = file.data.title
+    // htmlNode.permalink = file.data.permalink
+    // htmlNode.type = file.data.type
+    htmlNode.htmlContent = file.content;
+
+    if (node.internal.type === `File`) {
+      htmlNode.fileAbsolutePath = node.absolutePath;
+    }
+
+    htmlNode.internal.contentDigest = createContentDigest(htmlNode);
+    createNode(htmlNode);
+    createParentChildLink({
+      parent: node,
+      child: htmlNode
+    });
+
+    return htmlNode;
 
 
-// }
+  } catch (err) {
+    reporter.panicOnBuild(`Error processing Store HTML ${node.absolutePath ? `file ${node.absolutePath}` : `in node ${node.id}`}:\n
+      ${err.message}`);
+    return {}; // eslint
+  }
 
-
+}

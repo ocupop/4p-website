@@ -1,0 +1,22 @@
+.hero {
+  height: 0;
+  width: 100%;
+  padding-top: 60%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: $black;
+  @include media-breakpoint-up(md) {
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  @include media-breakpoint-up(md) {
+    h1 {
+      font-size: 5rem;
+    }
+  }
+}

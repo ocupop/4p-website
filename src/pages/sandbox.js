@@ -1,5 +1,5 @@
 import React from "react"
-import HEAD from "../common/ui/head"
+import HEAD from "../components/ui/head"
 
 import { ShopProvider } from '../features/shop/ShopContext'
 import ShopFilters from '../features/shop/ShopFilters'

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { ShopContext } from './ShopContext'
-import useFilter from '../../common/hooks/useFilter'
+import useFilter from '../../hooks/useFilter'
 
 function ShopFilters() {
   const [state, setState] = useContext(ShopContext)

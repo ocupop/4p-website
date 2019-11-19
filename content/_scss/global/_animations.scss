@@ -1,0 +1,48 @@
+@keyframes cardSlideIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.card {
+  // Loop through the cards and delay the loading animation.
+  @for $i from 1 through 20 {
+    &:nth-child(#{$i}) {
+      @include animation(cardSlideIn, 0.8s, 0.1s * $i);
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+//expand
+@keyframes expand {
+  from {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+  }
+  to {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    top: 20px;
+    left: 20px;
+    opacity: 1;
+  }
+}

@@ -5,44 +5,55 @@
 //  * See: https://www.gatsbyjs.org/docs/node-apis/
 //  */
 
-const path = require(`path`)
+const path = require(`path`);
 const matter = require(`gray-matter`);
 const _ = require(`lodash`);
+const slugify = require('slugify');
 
 
 
-// exports.createPages = async ({ graphql, actions }) => {
-//   const { createPage } = actions
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
 
-//   const standalonePages = await graphql(`
-//     query {
-//       allStandalonePage {
-//         edges {
-//           node {
-//             id
-//             title
-//             permalink
-//             layout
-//           }
-//         }
-//       }
-//     }
-//   `).then(result => {
-//     // Build Standalone Pages
-//     result.data.allStandalonePage.edges.forEach(({ node }) => {
-//       const component = path.resolve(`./src/templates/${node.layout}.jsx`)
+  // StandalonePages
+  const pages = await graphql(`
+    query {
+      allPage {
+        edges {
+          node {
+            id
+            title
+            layout
+          }
+        }
+      }
+    }
+  `).then(result => {
+    // Build Web Pages
+    result.data.allPage.edges.forEach(({ node }) => {
+      let slug = '/'
+      const component = path.resolve(`./src/layouts/${node.layout}.jsx`)
+      if (node.layout !== 'homepage') {
+        slug = slugify(node.title, {
+          remove: /[*+~.()'"!:@]/g,
+          lower: true
+        })
+      }
 
-//       createPage({
-//         component,
-//         path: node.permalink,
-//         context: {
-//           // Data passed to context is available in page queries as GraphQL variables.
-//           id: node.id,
-//         },
-//       })
-//     })
-//   })
-// }
+
+      createPage({
+        component,
+        path: slug,
+        context: {
+          // Data passed to context is available in page queries as GraphQL variables.
+          id: node.id,
+        },
+      })
+    })
+  })
+
+}
+
 
 exports.onCreateNode = async ({
   node,
@@ -53,7 +64,7 @@ exports.onCreateNode = async ({
   createContentDigest
 }) => {
 
-  const { createNode, createParentChildLink, createNodeField } = actions
+  const { createNode, createParentChildLink } = actions
 
   // only log for Standalone Pages
   if (node.internal.mediaType !== `text/html` || node.name === '_defaults') {
@@ -74,20 +85,19 @@ exports.onCreateNode = async ({
       })
     }
 
-    let htmlNode = {
+    const htmlNode = {
       id: createNodeId(`${node.id} >>> LocalContentSource`),
       children: [],
       parent: node.id,
       internal: {
         content: file.content,
-        type: file.data.type
+        type: file.data.content_type
       }
     }
 
-    htmlNode.frontmatter = Object.assign({ title: `` }, file.data)
+    htmlNode.frontmatter = file.data
     htmlNode.title = file.data.title
-    // htmlNode.permalink = file.data.permalink
-    // htmlNode.type = file.data.type
+    htmlNode.layout = file.data.layout
     htmlNode.htmlContent = file.content;
 
     if (node.internal.type === `File`) {

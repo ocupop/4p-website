@@ -13,18 +13,12 @@
 @import "global/animations";
 
 // Components
-@import "components/FilmTimeline";
-@import "components/DeviceOrientation";
-@import "components/Drawer";
-@import "components/Hero";
-@import "components/ScrollMagic";
+@import "components/testimonials";
+@import "components/card";
+@import "components/product";
 
 // Pages
-@import "pages/films";
-@import "pages/homepage";
-@import "pages/open_positions";
-@import "pages/production_process";
 
 // Vendor Overrides
 @import "vendor/bootstrap";
-@import "vendor/react-input-range";
+@import "vendor/semantic";

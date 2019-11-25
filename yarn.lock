@@ -2593,11 +2593,6 @@ auto-bind@^2.0.0:
   dependencies:
     "@types/react" "^16.8.12"
 
-autobind-decorator@^1.3.4:
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/autobind-decorator/-/autobind-decorator-1.4.3.tgz#4c96ffa77b10622ede24f110f5dbbf56691417d1"
-  integrity sha1-TJb/p3sQYi7eJPEQ9du/VmkUF9E=
-
 autoprefixer@^9.7.1:
   version "9.7.2"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.7.2.tgz#26cf729fbb709323b40171a874304884dcceffed"
@@ -8636,15 +8631,15 @@ html-minifier@^3.2.3:
     relateurl "0.2.x"
     uglify-js "3.4.x"
 
-html-react-parser@^0.9.1:
-  version "0.9.2"
-  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-0.9.2.tgz#1ac38e83b4f61e773df8f91be5267d64367555a9"
-  integrity sha512-EMf70HXgojCC9D1w9EmjdxDVXGqPkwtTa8Bmj1ePDWh7f2CbyEcS4WNDGS+I6ipS0ovUh5Ofe2kkGeW4XuvpaA==
+html-react-parser@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-0.10.0.tgz#b0f3700831ce52e04013158982167c65292a418d"
+  integrity sha512-IDSoBgA8ZCiSoJSiumFMEUY1gsqEUeDDj8zUBGjET39RAC0aZpICp2F/doQFRqdLV0dCLLYHI7NabUara2nH1w==
   dependencies:
     "@types/domhandler" "2.4.1"
     html-dom-parser "0.2.3"
     react-property "1.0.1"
-    style-to-object "0.2.3"
+    style-to-object "0.3.0"
 
 html-void-elements@^1.0.0, html-void-elements@^1.0.1:
   version "1.0.4"
@@ -8669,7 +8664,7 @@ html-webpack-plugin@^3.2.0:
     toposort "^1.0.0"
     util.promisify "1.0.0"
 
-htmlparser2@3.10.1, htmlparser2@^3.10.0, htmlparser2@^3.3.0, htmlparser2@^3.9.1:
+htmlparser2@3.10.1, htmlparser2@^3.10.0, htmlparser2@^3.3.0, htmlparser2@^3.9.0, htmlparser2@^3.9.1:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.10.1.tgz#bd679dc3f59897b6a34bb10749c855bb53a9392f"
   integrity sha512-IgieNijUMbkDovyoKObU1DUhm1iwNYE/fuifEoEHfd1oZKZDaONBSkal7Y01shxsM49R4XaMdGez3WnF9UfiCQ==
@@ -13337,7 +13332,7 @@ prop-types-extra@^1.1.0:
     react-is "^16.3.2"
     warning "^3.0.0"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.7, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -13730,13 +13725,12 @@ react-hot-loader@^4.12.16:
     shallowequal "^1.1.0"
     source-map "^0.7.3"
 
-react-input-range-rtl@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/react-input-range-rtl/-/react-input-range-rtl-0.0.4.tgz#7e3f78102f6adfc45c5a067ae25667483ecfd5d0"
-  integrity sha1-fj94EC9q38RcWgZ64lZnSD7P1dA=
+react-html-parser@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-html-parser/-/react-html-parser-2.0.2.tgz#6dbe1ddd2cebc1b34ca15215158021db5fc5685e"
+  integrity sha512-XeerLwCVjTs3njZcgCOeDUqLgNIt/t+6Jgi5/qPsO/krUWl76kWKXMeVs2LhY2gwM6X378DkhLjur0zUQdpz0g==
   dependencies:
-    autobind-decorator "^1.3.4"
-    prop-types "^15.5.8"
+    htmlparser2 "^3.9.0"
 
 react-is@^16.3.2, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.12.0"
@@ -15780,7 +15774,14 @@ style-loader@^0.23.1:
     loader-utils "^1.1.0"
     schema-utils "^1.0.0"
 
-style-to-object@0.2.3, style-to-object@^0.2.1:
+style-to-object@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/style-to-object/-/style-to-object-0.3.0.tgz#b1b790d205991cc783801967214979ee19a76e46"
+  integrity sha512-CzFnRRXhzWIdItT3OmF8SQfWyahHhjq3HwcMNCNLn+N7klOOqPjMeG/4JSu77D7ypZdGvSzvkrbyeTMizz2VrA==
+  dependencies:
+    inline-style-parser "0.1.1"
+
+style-to-object@^0.2.1:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/style-to-object/-/style-to-object-0.2.3.tgz#afcf42bc03846b1e311880c55632a26ad2780bcb"
   integrity sha512-1d/k4EY2N7jVLOqf2j04dTc37TPOv/hHxZmvpg8Pdh8UYydxeu/C1W1U4vD8alzf5V2Gt7rLsmkr4dxAlDm9ng==

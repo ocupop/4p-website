@@ -1,7 +1,7 @@
 # Site settings
-title: Walt Disney Animation Studios
+title: 4pFoods Website CMS
 email: dev@ocupop.com
-url: "http://client_url.com"
+url: "http://admin.4pfoods.com"
 permalink: pretty
 
 # Social sharing
@@ -22,21 +22,6 @@ collections:
   pages:
     output: true
     permalink: /:path/
-  films:
-    output: true
-    permalink: /:path/
-  resources:
-    output: true
-    permalink: /:path/
-  roles:
-    output: true
-    permalink: /:path/
-  teamMembers:
-    output: true
-    permalink: /:path/
-  techStories:
-    output: true
-    permalink: /:path/          
 
 defaults:
   - scope:
@@ -44,28 +29,6 @@ defaults:
     values:
       layout: page
       # variable_name: value
-  - scope:
-      type: 'films'
-    values:
-      layout: film
-      _comments:
-        title: Film Title
-        date: Film release date
-      _options:
-        layout: hidden
-  - scope:
-      type: 'resources'
-    values:
-      layout: resource
-      _comments:
-        title: Resource Name / Title
-        subtitle: Subheading describing resource
-        overview: Short explanation of the resource
-        logo: Logo image for this Resource
-        links: Add links to add to list for this resource
-        news: Add headings and dates for latest news
-      _options:
-        layout: hidden       
 
 
 # Build settings
@@ -76,11 +39,4 @@ sass:
 plugins:
   - jekyll-sitemap
 
-mediatypes:
-  video: Video
-  image: Image  
-
-_comments:
-  permalink: Update the films permalink here eg /film/filmname
-  hero: Add hero video, image, or parallax layers
 

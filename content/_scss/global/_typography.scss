@@ -1,5 +1,5 @@
 body {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.25rem;
   letter-spacing: 0;
   -webkit-font-smoothing: antialiased;
@@ -18,32 +18,29 @@ a {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $headings-font-family;
-}
-
-h1,
-.h1,
-h2,
-.h2
- {
+.h1 {
   line-height: 1.25;
-  font-weight: 800;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
   @include media-breakpoint-down(md) {
     font-size: 1.8rem;
+  }
+}
+
+h2,
+.h2 {
+  line-height: 1.25;
+  font-weight: 800;
+  text-transform: uppercase;
+  @include media-breakpoint-down(md) {
+    font-size: 1.25rem;
   }
 }
 
 h3,
 .h3 {
   line-height: 1.25;
-  font-weight: 600;
+  font-weight: 400;
   @include media-breakpoint-down(md) {
     font-size: 1.2rem;
   }
@@ -53,15 +50,11 @@ h4,
 .h4 {
   line-height: 1.25;
   font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   @include media-breakpoint-down(md) {
     font-size: 1.1rem;
   }
-}
-
-h6,
-.h6 {
-  text-transform: uppercase;
-  color: $gray-600;
 }
 
 em {
@@ -74,21 +67,6 @@ i {
 }
 
 .lead {
-  font-size: 1.4rem;
+  font-size: 1.85rem;
   line-height: 1.25;
-}
-
-a {
-  color: $orange;
-}
-
-.underline-heading {
-  text-transform: uppercase;
-  font-size: 1rem;
-  padding: 10px 20px;
-  border-bottom: 1px solid $dark;
-  color: $dark;
-  font-weight: 600;
-  padding: 10px;
-  display: inline-block;
 }

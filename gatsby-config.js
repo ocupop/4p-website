@@ -24,21 +24,14 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/img`,
-        name: 'static',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages',
+        name: 'images',
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/_pages`,
-        name: 'standalonePages',
+        name: 'pages',
       },
     },
     `gatsby-transformer-sharp`,

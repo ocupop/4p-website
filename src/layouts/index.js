@@ -6,7 +6,7 @@ import HEAD from "../components/ui/head"
 import Header from '../components/ui/header'
 import Footer from '../components/ui/footer'
 import 'remixicon/fonts/remixicon.css'
-import '../scss/main.scss'
+import '../../content/_scss/main.scss'
 
 function Layout({ children }) {
   const data = useStaticQuery(graphql`

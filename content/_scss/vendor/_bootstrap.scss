@@ -1,73 +1,87 @@
 // Buttons
-.btn {
-  font-family: $font-family-secondary;
-  text-transform: uppercase;
+.btn-primary {
+  color: $white !important;
+}
+.btn-lg {
   border-radius: 0;
+  line-height: 2.6rem;
+  padding: 0.5rem 1.5rem !important;
+}
+.btn {
+  font-family: $headings-font-family;
+  padding: 0.5rem 1.25rem;
   text-transform: uppercase;
-  font-size: 1rem;
-  padding: 10px 20px;
-  &:hover {
-    text-decoration: none;
-  }
-  &.btn-link {
-    border-bottom: 1px solid $orange;
-    color: $orange;
-    font-weight: 600;
-    padding: 10px;
-    &.btn-link-white {
-      color: $white;
-      border-bottom: 1px solid $white;
-    }
-    &.btn-link-dark {
-      color: $dark;
-      border-bottom: 1px solid $dark;
-    }
-  }
-  &.btn-bordered-white {
-    border: 1px solid $white;
-    color: $white;
-    padding: 5px 20px;
-  }
-  &.btn-bordered-orange {
-    border: 1px solid $orange;
-    color: $orange;
-    padding: 5px 20px;
-  }
-  &.btn-bordered-dark {
-    border: 1px solid $dark;
-    color: $dark;
-    padding: 5px 20px;
-  }
-}
-.btn-xl {
-  line-height: 4rem;
-  font-size: 2.25rem;
-}
-
-// Cards
-.cards {
-  display: flex;
-  flex-flow: wrap;
-  .card {
-    width: calc(25% - 2rem);
-    margin: 1rem;
-    flex: inherit;
-    color: $dark;
-    &:hover {
-      text-decoration: none;
-    }
-    .card-img-top {
-      padding-top: 50%;
-    }
-  }
-}
-
-.card {
+  font-weight: 600;
+  color: $white;
   border: 0;
+  @include transition(0.3s);
+  &:hover {
+    color: $white;
+  }
+  &.btn-outline-white {
+    border: 1px solid $white;
+  }
+  &.btn-green-dark {
+    background-color: $green-dark;
+  }
+  &.btn-white {
+    background-color: $white;
+    color: $gray-400;
+  }
 }
 
-//forms
-.form-control {
-  border: 1px solid $dark;
-  color: $dark;
+// Lists
+.list-group {
+  border: 0;
+  margin-bottom: 2rem;
+  .list-group-item {
+    border: 0;
+    border-left: 5px solid $gray-100;
+    &:hover {
+      border-color: $primary;
+    }
+  }
+}
+
+// Carousels
+.carousel-item {
+  width: 80%;
+  margin-right: auto;
+  margin-left: 10%;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  font-size: 3rem;
+}
+
+// Tabs
+.nav-tabs {
+  border-bottom: 2px solid $beige;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  .nav-item {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    .nav-link {
+      display: block;
+      padding: 10px 5px;
+      background-color: $beige-dark;
+      border-top-right-radius: 12px;
+      border-top-left-radius: 12px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.25rem;
+      font-weight: 600;
+      border: 0;
+      color: $gray-500;
+      &.active {
+        color: $gray-700;
+        background-color: $beige;
+      }
+    }
+  }
 }

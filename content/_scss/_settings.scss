@@ -7,23 +7,24 @@ $gray-400: #a7a9ac;
 $gray-500: #999999;
 $gray-600: #808080;
 $gray-700: #707070;
-$gray-800: #464443;
-$gray-900: #0a0505;
+$gray-800: #4d4d4d;
+$gray-900: #212529 !default;
 $black: #000000 !default;
-$black2: #081716;
 
 $blue: #82dadb;
-$navy: #0d0b29;
-$maroon: #2a0202;
+$blue-mid: #71c7c7;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #e83e8c !default;
 $red: #dc3545 !default;
-$orange: #f2783c;
+$orange: #fd7e14 !default;
 $yellow: #f5c938;
-$beige: #e8e5da;
 $green: #5fb35f;
-$cyan: #71c7c7;
+$green-dark: #255b35;
+$teal: #14585a;
+$cyan: #71c7c7 !default;
+$beige: #efebe5;
+$beige-dark: #dedbd3;
 
 $primary: $green;
 $secondary: $blue;
@@ -32,7 +33,7 @@ $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-300;
-$dark: $gray-900;
+$dark: $gray-800;
 
 $theme-colors: (
   "primary": $green,
@@ -41,25 +42,20 @@ $theme-colors: (
   "info": $cyan,
   "warning": $yellow,
   "danger": $red,
-  "light": $light,
-  "dark": $dark,
-  "green": $green,
-  "navy": $navy,
-  "orange": $orange,
-  "beige": $beige,
-  "maroon": $maroon,
-  "black": $black,
-  "black2": $black2,
-  "white": $white
+  "light": $gray-300,
+  "dark": $gray-800,
+  "tan": $beige,
+  "notice": $teal,
+  "green": $green-dark
 );
 
 $body-bg: $white;
-$body-color: $gray-900;
+$body-color: $gray-700;
 
-$font-family-base: "mr-eaves-modern", sans-serif;
-$font-family-secondary: "futura-pt", sans-serif;
+$font-family-base: "Montserrat", sans-serif;
+$font-family-secondary: "Spectral", serif;
 
-$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg: ($font-size-base * 1.25) !default;
 $font-size-sm: ($font-size-base * 0.875) !default;
 
@@ -71,15 +67,15 @@ $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;
 
 $h1-font-size: 2.5rem;
-$h2-font-size: 2.5rem;
+$h2-font-size: 1.8rem;
 $h3-font-size: 1.8rem;
 $h4-font-size: 1.25rem;
 $h5-font-size: 1.1rem;
-$h6-font-size: 0.9rem;
+$h6-font-size: 1rem;
 
-$headings-font-family: "hero-new", sans-serif;
+$headings-font-family: $font-family-base;
 $headings-font-weight: 400;
-$headings-line-height: 1.25;
+$headings-line-height: 1.5rem;
 $headings-color: inherit;
 
 $border-radius: 0;

@@ -1,7 +1,8 @@
 import React, { useContext, useState, useEffect } from "react"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 import { Navbar, Nav } from 'react-bootstrap'
-// import logo from './assets/logo-wordmark.svg'
+import logo from '../../../content/img/logo-wordmark.svg'
 
 const Header = ({ siteTitle }) => {
   // const shop = useContext(StoreContext)
@@ -22,7 +23,7 @@ const Header = ({ siteTitle }) => {
       </div>
       <Navbar id="mainnav" expand="lg">
         <Navbar.Brand href="/">
-          <img src="/img/logo-wordmark.svg" alt={siteTitle} />
+          <img src={logo} alt={siteTitle} />
         </Navbar.Brand>
         <Nav id="primarynav" className="mx-auto">
           <Nav.Link href="/how-it-works">How it works</Nav.Link>

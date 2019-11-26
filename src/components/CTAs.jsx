@@ -1,7 +1,20 @@
 import React from 'react'
 
+export const WholesaleCta = () => {
+  return (
+    <section id="tryUsToday">
+      <div className="container">
+        <div className="row">
+          <div className="col-12 text-center">
+            <h1>Are you a wholesale shopper? <a href="#" className="btn btn-xl">Learn More</a></h1>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
 
-export const TryUsCTA = () => {
+export const TryUsCta = () => {
   return (
     <section id="tryUsToday">
       <div className="container">
@@ -16,7 +29,7 @@ export const TryUsCTA = () => {
 }
 
 
-export const StartShoppingCTA = () => {
+export const StartShoppingCta = () => {
   return (
     <section id="startShopping" className="bg-green-dark">
       <div className="container">

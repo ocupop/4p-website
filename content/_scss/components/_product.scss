@@ -1,3 +1,4 @@
+// TODO: Refactor
 .product-button {
   background-color: $gray-200;
   border: 0;
@@ -10,7 +11,7 @@
     font-size: 13px;
   }
   &::before {
-    content: '+';
+    content: "+";
     display: block;
     position: absolute;
     top: 50%;

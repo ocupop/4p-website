@@ -1,0 +1,14 @@
+featured-news,
+try-us-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: $red;
+  color: $white;
+  &:after {
+    content: "React Component";
+    display: block;
+    color: $white;
+  }
+}

@@ -33,12 +33,15 @@ exports.createPages = async ({ graphql, actions }) => {
     result.data.allPage.edges.forEach(({ node }) => {
       let slug = '/'
       const component = path.resolve(`./src/layouts/${node.layout}.jsx`)
-      if (node.layout !== 'homepage') {
+      if (node.layout !== 'splash') {
         slug = slugify(node.title, {
           remove: /[*+~.()'"!:@]/g,
           lower: true
         })
       }
+
+      // TODO: Remove once Splash page is no longer needed
+      // const layout = node.layout === 'splash' ? 'splash' : 'index'
 
 
       createPage({

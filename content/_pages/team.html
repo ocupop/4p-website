@@ -11,8 +11,38 @@ share_image_url: /img/coffee.png
 <section>
   <div class="container">
     <div class="row">
+      <div class="col-12 col-lg-8 mx-lg-auto text-center">
+        <h1>Our Team</h1>
+        <p class="lead">Supportive Sub-Headline Here</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat doloremque provident expedita culpa
+          eligendi recusandae adipisci optio accusamus ipsa! Qui, minima. Veritatis totam alias quasi veniam quae
+          impedit deserunt qui eveniet fugit dolor, sint in odio laudantium quo ut nesciunt, non deleniti vel
+          praesentium enim corrupti tempore autem quia. Culpa!</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="pt-0">
+  <div class="container">
+    <div class="row">
       <div class="col-12">
-        Team
+        <div class="responsive-card-deck cards-lg-3 cards-md-2">
+          {% for team in site.team_members %}
+          <div class="card bg-transparent">
+            <div class="bg-image aspect-4x3" style="background-image: url({{ team.image }})"></div>
+            <div class="card-body">
+              <h5>{{ team.title }}</h5>
+              <p>{{ team.content | truncatewords: 30 }}</p>
+              <p>Favorite Veggie:<br />
+                {{ team.favorite_veggie }}
+              </p>
+            </div>
+            <div class="card-footer bg-transparent">
+              <a href="#" class="btn btn-secondary">Read More</a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>

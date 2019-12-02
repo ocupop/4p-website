@@ -16,6 +16,7 @@
 #mainnav {
   text-align: center;
   .navbar-brand {
+    margin: 0 1.5rem;
     @include media-breakpoint-down(sm) {
       margin: 0 auto;
     }
@@ -29,7 +30,7 @@
     font-size: 1.25rem;
     font-weight: bold;
     padding: 0.5rem 1.75rem;
-    margin: 0;
+    margin: 0 1.5rem;
     @include media-breakpoint-down(sm) {
       display: none;
     }

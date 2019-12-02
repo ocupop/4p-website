@@ -22,18 +22,14 @@ function Layout({ children, location: { pathname } }) {
   return (
     <>
       <HEAD />
-      {
-        pathname === '/' ? '' : <Header siteTitle={data.site.siteMetadata.title} />
-      }
+      {/* {pathname === '/' ? '' : ''} */}
+      <Header siteTitle={data.site.siteMetadata.title} />
 
       <main id="pageContent">
         {children}
       </main>
 
-      {
-        pathname === '/' ? '' : <Footer siteTitle={data.site.siteMetadata.title} />
-      }
-
+      <Footer siteTitle={data.site.siteMetadata.title} />
     </>
   )
 }

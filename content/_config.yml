@@ -24,7 +24,7 @@ collections:
     permalink: /:path/
   team_members:
     output: true
-    permalink: /team/:path/  
+    permalink: /team/:path/
 
 defaults:
   - scope:
@@ -39,7 +39,17 @@ safe: false
 sass:
   # style: compressed
   sass_dir: _scss
-plugins:
-  - jekyll-sitemap
+
+# plugins:
+
+
+  # Cloudcannon Configuration
+_array_structures:
+  meta:
+    - label: Meta Data
+      icon: share
+      value:
+        description:
+        image:
 
 

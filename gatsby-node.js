@@ -15,7 +15,7 @@ const slugify = require('slugify');
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  // StandalonePages
+  // TODO: determine better pattern
   const pages = await graphql(`
     query {
       allPage {
@@ -33,14 +33,14 @@ exports.createPages = async ({ graphql, actions }) => {
     result.data.allPage.edges.forEach(({ node }) => {
       let slug = '/'
       const component = path.resolve(`./src/layouts/${node.layout}.jsx`)
-      if (node.layout !== 'splash') {
+      if (node.layout !== 'homepage') {
         slug = slugify(node.title, {
           remove: /[*+~.()'"!:@]/g,
           lower: true
         })
       }
 
-      // TODO: Remove once Splash page is no longer needed
+      // TODO: Add solution for different Gatsby layouts
       // const layout = node.layout === 'splash' ? 'splash' : 'index'
 
 

@@ -8,7 +8,7 @@ import Footer from '../components/ui/footer'
 import 'remixicon/fonts/remixicon.css'
 import '../../content/_scss/main.scss'
 
-function Layout({ children, location: { pathname } }) {
+function Layout({ children }) {
   const data = useStaticQuery(graphql`
     query HeaderQuery {
       site {
@@ -22,7 +22,7 @@ function Layout({ children, location: { pathname } }) {
   return (
     <>
       <HEAD />
-      {/* {pathname === '/' ? '' : ''} */}
+      {/* {props.location.pathname === '/' ? '' : ''} */}
       <Header siteTitle={data.site.siteMetadata.title} />
 
       <main id="pageContent">

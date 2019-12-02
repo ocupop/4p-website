@@ -1,18 +1,16 @@
-/* eslint-disable camelcase */
+/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/prop-types */
 import React from 'react'
 import { graphql } from "gatsby"
 import _ from 'lodash'
 import parse from 'html-react-parser';
-import FooterHero from '../components/ui/FooterHero'
-import { TryUsCta } from '../components/CTAs'
 
 const pageComponents = {
-  // TODO: Import and list all acceptable components that may get included inline page content.
+  // TestComponent
 }
 
 const parseOptions = {
-  replace: ({ attribs, name }) => {
+  replace: ({attribs, name}) => {
     if (!attribs) return;
 
     if (name.includes('-')) {
@@ -22,24 +20,17 @@ const parseOptions = {
   }
 }
 
-
-const PageTemplate = ({
+const HomepageTemplate = ({
   data: {
-    page: {
-      htmlContent,
-      frontmatter: {
-        footer_image
-      }
+    contentPage: {
+      htmlContent
     }
   } }) => {
+
 
   return (
     <>
       {parse(htmlContent, parseOptions)}
-      <section className="p-0">
-        <FooterHero image={footer_image}/>
-        <TryUsCta/>
-      </section>
     </>
   )
 }
@@ -47,13 +38,10 @@ const PageTemplate = ({
 
 export const query = graphql`
   query($id: String!) {
-    page(id: {eq: $id }) {
+    contentPage(id: {eq: $id }) {
       title
       htmlContent
-      frontmatter {
-        footer_image
-      }
     }
   }`
 
-export default PageTemplate
+export default HomepageTemplate

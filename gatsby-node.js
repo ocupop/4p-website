@@ -18,7 +18,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // TODO: determine better pattern
   const pages = await graphql(`
     query {
-      allPage {
+      allContentPage {
         edges {
           node {
             id
@@ -30,9 +30,9 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `).then(result => {
     // Build Web Pages
-    result.data.allPage.edges.forEach(({ node }) => {
+    result.data.allContentPage.edges.forEach(({ node }) => {
       let slug = '/'
-      const component = path.resolve(`./src/layouts/${node.layout}.jsx`)
+      const component = path.resolve(`./src/templates/${node.layout}.jsx`)
       if (node.layout !== 'homepage') {
         slug = slugify(node.title, {
           remove: /[*+~.()'"!:@]/g,
@@ -94,7 +94,8 @@ exports.onCreateNode = async ({
       parent: node.id,
       internal: {
         content: file.content,
-        type: file.data.content_type
+        // type: file.data.content_type
+        type: `ContentPage`
       }
     }
 

@@ -1,0 +1,49 @@
+---
+layout: page
+title: Team
+meta:
+footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
+---
+{{ content }}
+<section class="pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="responsive-card-deck cards-lg-3 cards-md-2">
+          {% for team in site.team_members %}
+          <div class="card bg-transparent">
+            <div class="bg-image aspect-4x3" style="background-image: url({{ team.image }})"></div>
+            <div class="card-body">
+              <h5>{{ team.title }}</h5>
+              <p>{{ team.content | truncatewords: 30 }}</p>
+              <p>Favorite Veggie:<br />
+                {{ team.favorite_veggie }}
+              </p>
+            </div>
+            <div class="card-footer bg-transparent">
+              <a href="{{ team.url }}" class="btn btn-secondary">Read More</a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-notice text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 mx-lg-auto text-center">
+        <div class="editable">
+          <h2>Work with us</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis
+            aute irure dolor in reprehenderit</p>
+        </div>
+        <a href="/contact" class="btn btn-secondary">Contact Us</a>
+
+      </div>
+    </div>
+  </div>
+</section>

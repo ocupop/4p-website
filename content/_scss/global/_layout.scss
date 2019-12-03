@@ -6,6 +6,20 @@
   background-color: $white;
   box-shadow: 0 0 10px rgba($black, 0.2);
   z-index: 99;
+  .navbar {
+  padding: 0.5rem 0;
+  }
+  .nav-item {
+    .nav-link {
+      color: $gray-600;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      font-size: 20px;
+    }
+  }
+  .navbar-brand {
+    width: 200px;
+  }
   @include media-breakpoint-down(sm) {
     position: relative;
   }
@@ -18,4 +32,28 @@
   }
 }
 #pageFooter {
+  h6 {
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  .nav-link {
+    width: 100%;
+    padding: 5px 0;
+    text-transform: none;
+    color: $body-color;
+  }
+
+  .social {
+    i {
+      color: $body-color;
+      font-size: 22px;
+    }
+  }
+  input[type="text"] {
+    border: 2px solid $beige;
+  }
+}
+
+#footerImage {
+  padding-top: 25%;
 }

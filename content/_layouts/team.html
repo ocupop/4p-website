@@ -14,8 +14,8 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
           <div class="card bg-transparent">
             <a href="{{ team.url }}" class="bg-image aspect-1x1" style="background-image: url({{ team.image }})"></a>
             <div class="card-body">
-              <h5>{{ team.title }}</h5>
-              <p>{{ team.content | strip_html | truncatewords: 30 }}</p>
+              <h4 class="mb-0">{{ team.title }}</h4>
+              <h5 class="font-weight-light">{{ team.role }}</h5>
               <p>Favorite Veggie:<br/>
                 {{ team.favorite_veggie }}
               </p>

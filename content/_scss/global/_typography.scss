@@ -20,7 +20,7 @@ a {
 h1,
 .h1 {
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 700;
   text-transform: uppercase;
   @include media-breakpoint-down(md) {
     font-size: 1.8rem;
@@ -30,7 +30,7 @@ h1,
 h2,
 .h2 {
   line-height: 1.25;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   @include media-breakpoint-down(md) {
     font-size: 1.25rem;
@@ -49,7 +49,7 @@ h3,
 h4,
 .h4 {
   line-height: 1.25;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   @include media-breakpoint-down(md) {
@@ -69,4 +69,6 @@ i {
 .lead {
   font-size: 1.85rem;
   line-height: 1.25;
+  font-family: $font-family-secondary;
+  font-style: italic;
 }

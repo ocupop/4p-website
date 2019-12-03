@@ -15,8 +15,8 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
             <div class="bg-image aspect-4x3" style="background-image: url({{ team.image }})"></div>
             <div class="card-body">
               <h5>{{ team.title }}</h5>
-              <p>{{ team.content | truncatewords: 30 }}</p>
-              <p>Favorite Veggie:<br />
+              <p>{{ team.content | strip_html | truncatewords: 30 }}</p>
+              <p>Favorite Veggie:<br/>
                 {{ team.favorite_veggie }}
               </p>
             </div>
@@ -42,7 +42,6 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
             aute irure dolor in reprehenderit</p>
         </div>
         <a href="/contact" class="btn btn-secondary">Contact Us</a>
-
       </div>
     </div>
   </div>

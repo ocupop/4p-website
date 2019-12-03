@@ -13,6 +13,10 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-layout`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -34,10 +38,24 @@ module.exports = {
         name: 'pages',
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-layout`,
-    `gatsby-plugin-styled-components`,
+    {
+      resolve: "gatsby-theme-firebase",
+      options: {
+        credentials: {
+          apiKey: process.env.FIREBASE_API_KEY,
+          authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+          databaseURL: process.env.FIREBASE_DATABASE_URL,
+          projectId: process.env.FIREBASE_PROJECT_ID,
+          storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+          messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+          appId: process.env.FIREBASE_APP_ID,
+        },
+        // loginPath: "/login/",
+        // loginRedirectPath: "/authorized/",
+        socialLogins: ["google", "facebook", "github"],
+      },
+    },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -58,46 +76,7 @@ module.exports = {
     //     credentials: require('./path-to-credentials-file.json')
     //   }
     // },
-    // {
-    //   resolve: '@martinreiche/gatsby-firestore',
-    //   // resolve: 'gatsby-source-firestore',
-    //   options: {
-    //     // credential: './firebaseConfig.json',
-    //     appConfig: {
-    //       apiKey: process.env.FIREBASE_API_KEY,
-    //       authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-    //       databaseURL: process.env.FIREBASE_DATABASE_URL,
-    //       projectId: process.env.FIREBASE_PROJECT_ID,
-    //       storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-    //       messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-    //       appID: process.env.FIREBASE_APP_ID,
-    //     },
-    //     types: [
-    //       {
-    //         type: 'Product',
-    //         collection: 'products',
-    //         map: doc => ({
-    //           title: doc.title,
-    //           description: doc.description,
-    //           descriptionHtml: doc.descriptionHtml,
-    //           featured: doc.featured,
-    //           priceRange: doc.priceRange,
-    //           tags: doc.tags,
-    //           // vendor___NODE: doc.vendor.id,
-    //         }),
-    //       },
-    //       // {
-    //       //   type: 'Vendor',
-    //       //   collection: 'vendors',
-    //       //   map: doc => ({
-    //       //     title: doc.title,
-    //       //     website: doc.website,
-    //       //     // products___NODE: doc.products.map(product => product.id),
-    //       //   }),
-    //       // },
-    //     ],
-    //   },
-    // },
+
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
@@ -124,34 +103,7 @@ module.exports = {
     //     cookieDomain: "example.com",
     //   },
     // },
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-relative-images',
-            options: {
-              name: 'uploads',
-            },
-          },
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 2048,
-            },
-          },
-          {
-            resolve: 'gatsby-remark-copy-linked-files',
-            options: {
-              destinationDir: 'static',
-            },
-          },
-        ],
-      },
-    },
+
     // {
     //   resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
     //   options: {

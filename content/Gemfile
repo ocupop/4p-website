@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 ruby "2.6.2"
-gem "jekyll"
+gem "jekyll", "~>3.8.6"
 gem 'sassc'
 gem 'scss_lint'
 

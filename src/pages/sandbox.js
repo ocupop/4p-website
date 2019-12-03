@@ -1,28 +1,30 @@
 import React from "react"
 import HEAD from "../components/ui/head"
-
-import { ShopProvider } from '../features/shop/ShopContext'
-import ShopFilters from '../features/shop/ShopFilters'
-import ShopList from '../features/shop/ShopList'
+import FirebaseSandbox from '../components/FirebaseSandbox'
+// import { ShopProvider } from '../features/shop/ShopContext'
+// import ShopFilters from '../features/shop/ShopFilters'
+// import ShopList from '../features/shop/ShopList'
 
 
 
 const Sandbox = () => (
   <>
     <HEAD title="Sandbox" />
-    <ShopProvider>
-      <section>
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <h1><strong>Aloha!</strong></h1>
-              <p className="lead">Welcome to your new Gatsby site.</p>
-              <p>Now go build something great.</p>
-            </div>
-            <hr />
+    <section>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <h1><strong>Aloha!</strong></h1>
+            <p className="lead">Testing Integration w/Firebase.</p>
+          </div>
+          <hr />
+          <div className="col-12">
+            <FirebaseSandbox />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    {/* <ShopProvider>
       <section>
         <div className="container">
           <div className="row">
@@ -37,7 +39,7 @@ const Sandbox = () => (
           </div>
         </div>
       </section>
-    </ShopProvider>
+    </ShopProvider> */}
   </>
 )
 

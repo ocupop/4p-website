@@ -2,7 +2,7 @@
 layout: news
 title: 4p News
 meta:
-footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
+footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder+footer+image
 
 ---
 
@@ -10,16 +10,19 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-8 mx-lg-auto text-center">
-        <h1>Enrich Yourself</h1>
-        <p class="lead">News, Recipes, Tips, and Home-grown Hype</p>
-        <p>4p Foods sources farm-fresh food from farms in the Washington DC local foodshed and delivers them to your
-          office or apartment building once each week.</p>
-      </div>4P Foods sources farm-fresh food from farms in the Washington DC local foodshed and delivers them to your office or
-      apartment building once each week.
+        <h1 class="editable">Enrich Yourself</h1>
+        <h3 class="editable"><em>News, Recipes, Tips, and Home-grown Hype</em></h3>
+        <div class="editable">
+          <p>4p Foods sources farm-fresh food from farms in the Washington DC local foodshed and delivers them to your
+            office or apartment building once each week.</p>
+        </div>
+      </div>
     </div>
     <hr />
   </div>
 </section>
+<!-- design proposes tabbed behavior. 
+  Featured News tab and Weekly harvest newsletters tab, not sure if that requires a second react component -->
 <featured-news></featured-news>
 
 

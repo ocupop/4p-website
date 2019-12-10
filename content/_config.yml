@@ -48,7 +48,7 @@ defaults:
       _options:
         featured_image:
           uploads_dir: "img/uploads/farmers/:title"
-                
+
 
 
 
@@ -71,6 +71,15 @@ _array_structures:
         image:
   faqs:        
     - question: Question 1
-      answer_html: This is an answer...      
+      answer_html: This is an answer...
+  products:
+    - label: Products
+      icon: add
+      value:
+        name:
+        label:
+        image:
+        link:
+
 
 

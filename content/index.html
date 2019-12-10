@@ -2,6 +2,11 @@
 layout: homepage
 title: Home
 meta:
+_assets:
+  asset1_image: https://via.placeholder.com/800x500
+  asset2_image: https://via.placeholder.com/800x500
+  asset3_image: https://via.placeholder.com/800x500
+products:  
 ---
 
 <section class="bg-primary">
@@ -30,7 +35,6 @@ meta:
     </div>
   </div>
 </section>
-
 <section id="featured-store" class="pt-0">
   <div class="container">
     <div class="row">
@@ -238,7 +242,7 @@ meta:
     <div class="row">
       <div class="col-12 text-center">
         <h4 class="text-white mb-4">Stories of Satisfied Customers</h4>
-        <div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+        <div id="carousel-testimonials" class="carousel slide" data-ride="carousel" data-interval="10000">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
@@ -286,16 +290,25 @@ meta:
     </div>
   </div>
 </section>
-<div class="d-flex">
-  <span>
-    <img src="https://via.placeholder.com/800x500" class="img-fluid p-1 editable" alt="" />
-  </span>
-  <span>
-    <img src="https://via.placeholder.com/800x500" class="img-fluid p-1 editable" alt="" />
-  </span>
-  <span>
-    <img src="https://via.placeholder.com/800x500" class="img-fluid p-1 editable" alt="" />
-  </span>
+<div class="row no-gutters">
+  <div class="col-4">
+    <div class="p-1">
+      <div class="bg-image aspect-4x3" style="background-image: url('{{ page._assets.asset1_image }}')"
+        data-cms-editor-link="cloudcannon:#_assets.asset1_image"></div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="p-1">
+      <div class="bg-image aspect-4x3" style="background-image: url('{{ page._assets.asset2_image }}')"
+        data-cms-editor-link="cloudcannon:#_assets.asset2_image"></div>
+    </div>
+  </div>  
+  <div class="col-4">
+    <div class="p-1">
+      <div class="bg-image aspect-4x3" style="background-image: url('{{ page._assets.asset3_image }}')"
+        data-cms-editor-link="cloudcannon:#_assets.asset3_image"></div>
+    </div>
+  </div>
 </div>
 <section id="FoodAccessIntro" class="bg-gray text-white">
   <div class="container">
@@ -492,4 +505,34 @@ meta:
     </div>
   </div>
 </section>
-<community-picks></community-picks>
+<section class="bg-tan">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="text-white">Community Picks</h2>
+      </div>
+      <div class="col-lg-6 text-lg-right">
+        <a href="#" class="btn btn-white">Start Shopping</a>
+      </div>
+    </div>
+    <div class="responsive-card-deck cards-lg-2">
+      {% for product in page.products %}
+        <div class="card">
+          <div class="bg-image aspect-16x9" style="background-image: url({{ product.image | default: 'https://via.placeholder.com/150' }})"></div>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col-6">
+                <h5>{{ product.name }}</h5>
+                <p>{{ product.label }}</p>
+              </div>
+              <div class="col-6 text-right">
+                <a href="{{ product.link }}" class="btn btn-white">See Item</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- <community-picks></community-picks> -->

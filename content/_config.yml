@@ -27,7 +27,10 @@ collections:
     permalink: /team/:path/
   farmers:
     output: true
-    permalink: /farmers/:path/  
+    permalink: /farmers/:path/
+  events:
+    output: true
+    permalink: /events/:path/   
 
 defaults:
   - scope:
@@ -48,6 +51,13 @@ defaults:
       _options:
         featured_image:
           uploads_dir: "img/uploads/farmers/:title"
+  - scope:
+      type: 'events'
+    values:
+      layout: event
+      _options:
+        featured_image:
+          uploads_dir: "img/uploads/events/:title"        
 
 
 

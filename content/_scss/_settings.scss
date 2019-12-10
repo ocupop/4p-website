@@ -26,6 +26,7 @@ $green-dark: #255b35;
 $teal: #14585a;
 $beige: #efebe5;
 $beige-dark: #dedbd3;
+$beige-darker: #b7b4a9;
 
 $primary: $green;
 $secondary: $blue;
@@ -49,6 +50,7 @@ $theme-colors: (
   "black": $black,
   "gray": $gray-700,
   "tan": $beige,
+  "tan-dark": $beige-darker,
   "notice": $teal,
   "teal": $teal,
   "green": $green-dark

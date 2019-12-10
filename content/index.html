@@ -153,7 +153,7 @@ products:
   </div>
 </section>
 <div class="container">
-  <ul id="what-why-who" class="nav nav-tabs">
+  <ul id="how-it-works-tabs" class="nav nav-tabs">
     <li class="nav-item">
       <a class="nav-link active" id="tab-fresh" data-toggle="tab" href="#fresh" role="tab" aria-controls="fresh"
         aria-selected="true">Fresh from the farm</a>
@@ -407,8 +407,10 @@ products:
     </div>
   </div>
 </section>
-<featured-weekly-harvest></featured-weekly-harvest>
-<featured-news></featured-news>
+{% include news/featured-weekly-harvest.html %}
+{% include news/featured-news.html %}
+<!-- <featured-weekly-harvest></featured-weekly-harvest>
+<featured-news></featured-news> -->
 <section id="bring-us-to-your-community" class="bg-primary text-white">
   <div class="container">
     <div class="row">
@@ -513,7 +515,7 @@ products:
     </div>
   </div>
 </section>
-<section class="bg-tan">
+<section class="bg-tan-dark">
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
@@ -526,7 +528,7 @@ products:
     <div class="responsive-card-deck cards-lg-2">
       {% for product in page.products %}
         <div class="card">
-          <div class="bg-image aspect-16x9" style="background-image: url({{ product.image | default: 'https://via.placeholder.com/150' }})"></div>
+          <div class="bg-image aspect-16x9" style="background-image: url({{ product.image | default: 'https://via.placeholder.com/800x500' }})"></div>
           <div class="card-footer">
             <div class="row">
               <div class="col-6">

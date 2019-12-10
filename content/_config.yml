@@ -25,13 +25,31 @@ collections:
   team_members:
     output: true
     permalink: /team/:path/
+  farmers:
+    output: true
+    permalink: /farmers/:path/  
 
 defaults:
   - scope:
       type: 'pages'
     values:
       layout: page
-      # variable_name: value
+  - scope:
+      type: 'team_members'
+    values:
+      layout: team_member
+      _options:
+        image:
+          uploads_dir: "img/uploads/team/"
+  - scope:
+      type: 'farmers'
+    values:
+      layout: farmer
+      _options:
+        featured_image:
+          uploads_dir: "img/uploads/farmers/:title"
+                
+
 
 
 # Build settings

@@ -1,10 +1,12 @@
 import React, { useContext, useState, useEffect } from "react"
 import { Link } from "gatsby"
+import { auth, useAuth } from "gatsby-theme-firebase";
 import Img from "gatsby-image"
-import { Navbar, Nav } from 'react-bootstrap'
+import { Navbar, Nav, Dropdown } from 'react-bootstrap'
 import logo from '../../../content/img/logo-wordmark.svg'
 
 const Header = ({ siteTitle }) => {
+  const { isLoading, isLoggedIn, profile } = useAuth();
   // const shop = useContext(StoreContext)
   // const { checkout } = shop
   // const [quantity, setQuantity] = useState(countQuantity(checkout ? checkout.lineItems : []))
@@ -18,7 +20,21 @@ const Header = ({ siteTitle }) => {
         <div id="topnav" className="d-flex justify-content-between px-5 py-2">
           <div className=""><a href="/wholesale">Are you a wholesaler?</a></div>
           <div className="text-center d-none d-md-block">Free delivery with purchase over $60</div>
-          <div className="text-right d-none d-md-block"><a href="/login">Login</a></div>
+
+          <div className="text-right d-none d-md-block">
+            {isLoggedIn ? (
+              <Dropdown>
+                <Dropdown.Toggle>
+                  {profile.displayName}
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item href="/profile">Profile</Dropdown.Item>
+                  <Dropdown.Item onClick={() => auth.signOut()}>Sign Out</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            ) : (<a href="/login">Login</a>)}
+          </div>
         </div>
       </div>
       <Navbar id="mainnav" expand="lg">

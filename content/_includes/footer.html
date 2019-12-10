@@ -1,5 +1,6 @@
+{% unless page.layout == 'homepage'%}
 {% if page.footer_image %}
-  <div id="footerImage" class="bg-image" style="background-image: url({{ page.footer_image}})"></div>
+  <div class="bg-image aspect-4x1" style="background-image: url({{ page.footer_image}})"></div>
 {% endif %}
 <section id="tryUsToday" class="bg-primary">
   <div class="container">
@@ -10,6 +11,7 @@
     </div>
   </div>
 </section>
+{% endunless %}
 <footer id="pageFooter">
   <section>
     <div class="container">
@@ -26,7 +28,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">How it Works</a>
+              <a href="/how-it-works" class="nav-link">How it Works</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Delivery Options</a>
@@ -58,7 +60,7 @@
               <a href="/our-team" class="nav-link">Our Team</a>
             </li>
             <li class="nav-item">
-              <a href="/food-access-program" class="nav-link">Food Access Program</a>
+              <a href="/food-access-programs" class="nav-link">Food Access Programs</a>
               
             </li>
           </ul>

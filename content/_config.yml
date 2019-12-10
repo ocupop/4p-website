@@ -51,5 +51,8 @@ _array_structures:
       value:
         description:
         image:
+  faqs:        
+    - question: Question 1
+      answer_html: This is an answer...      
 
 

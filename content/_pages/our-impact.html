@@ -8,13 +8,13 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
 
 <div class="d-flex">
   <span>
-    <img src="https://via.placeholder.com/500x350" class="img-fluid p-1" alt="" />
+    <img src="https://via.placeholder.com/500x350" class="img-fluid p-1 editable" alt="" />
   </span>
   <span>
-    <img src="https://via.placeholder.com/500x350" class="img-fluid p-1" alt="" />
+    <img src="https://via.placeholder.com/500x350" class="img-fluid p-1 editable" alt="" />
   </span>
   <span>
-    <img src="https://via.placeholder.com/500x350" class="img-fluid p-1" alt="" />
+    <img src="https://via.placeholder.com/500x350" class="img-fluid p-1 editable" alt="" />
   </span>
 </div>
 <section>
@@ -22,12 +22,14 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
     <div class="row">
       <div class="col-lg-10 mx-lg-auto text-center">
         <div class="editable">
-          <h1>Good Food Made Easy</h1>
-          <p class="lead">4P Foods is part of the rapidly-growing alternative food system focused on health, long-term
+          <h1 class="editable">Good Food Made Easy</h1>
+          <p class="lead editable">4P Foods is part of the rapidly-growing alternative food system focused on health, long-term
             sustainability, and Good Food</p>
-          <p>To us, good food is more than local, it is: transparently sourced, nourishing to both body and mind,
-            ethically raised, and harvested in an environmentally concious way. Most of all, good food is equitably
-            accessible to all people, regardless of who they are or where they live.</p>
+          <div class="editable">
+            <p>To us, good food is more than local, it is: transparently sourced, nourishing to both body and mind,
+              ethically raised, and harvested in an environmentally concious way. Most of all, good food is equitably
+              accessible to all people, regardless of who they are or where they live.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -49,65 +51,96 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
     </li>
   </ul>
 </div>
+<!-- Tabbed section marked up with regular bootstrap tabs markup. May need to be refactored for gatsby -->
 <section class="bg-tan">
   <div class="container">
     <div class="tab-content">
       <div id="what" role="tabpanel" aria-labelledby="tab-what" class="tab-pane fade show active">
         <div class="row">
           <div class="col-lg-6">
-            <h4>4p has a dual mission: to help support small farmers by giving them access to new markets, while also
-              working to ensure that all people have access to Good Food produced by these farmers.</h4>
-            <p>As a direct-to-consumer food hub, 4p Foods aggregates food from small family farms throughout the region and
-              delivers it to households, offices, and community centers in DC, Maryland, and Virginia.</p>
-            <ul>
-              <li>Support local farmers</li>
-              <li>Support the environment</li>
-              <li>Support the economy</li>
-              <li>Support the community</li>
-              <li>Support you and your family</li>
-            </ul>
+            <div class="editable">
+              <h4>4p has a dual mission: to help support small farmers by giving them access to new markets, while also
+                working to ensure that all people have access to Good Food produced by these farmers.</h4>
+              <p>As a direct-to-consumer food hub, 4p Foods aggregates food from small family farms throughout the region and
+                delivers it to households, offices, and community centers in DC, Maryland, and Virginia.</p>
+              <ul>
+                <li>Support local farmers</li>
+                <li>Support the environment</li>
+                <li>Support the economy</li>
+                <li>Support the community</li>
+                <li>Support you and your family</li>
+              </ul>
+            </div>
           </div>
           <div class="col-lg-6">
-            <img src="https://via.placeholder.com/768x768" class="img-fluid" alt="" />
+            <img src="https://via.placeholder.com/768x768" class="img-fluid editable" alt="" />
           </div>
         </div>
       </div>
       <div id="why" role="tabpanel" aria-labelledby="tab-why" class="tab-pane fade show">
         <div class="row">
           <div class="col-lg-6">
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ratione rerum alias. Assumenda velit temporibus animi est quidem expedita repellendus vero labore sapiente.</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, reiciendis perferendis repellendus asperiores ipsa blanditiis temporibus corporis incidunt odio impedit sit dolorem veritatis reprehenderit. Quam deserunt porro natus soluta dolorum!</p>
-            <ul>
-              <li>Lorem point 1</li>
-              <li>Lorem point 2</li>
-              <li>Lorem point 3</li>
-              <li>Lorem point 4</li>
-              <li>Lorem point 5</li>
-            </ul>
+            <div class="editable">
+              <h4>We believe in a world where Good Food is the rule—not the exception.</h4>
+              <p><em>1 in 4 dollars spent in the entire health care system is spent on treating diabetes – a disease that is 100% treatable
+              with Good Food.</em></p>
+              <p>Good food is: transparently sourced so you know where it came from, healthy to nourish both body and mind, ethically
+              raised with no souls exploited in its production, and harvested in a way that maintains the health of the environment.
+              Most of all, good food is equitably accessible to all people, regardless of who they are or where they live.</p>
+            </div>
           </div>
           <div class="col-lg-6">
-            <img src="https://via.placeholder.com/768x768" class="img-fluid" alt="" />
+            <img src="https://via.placeholder.com/768x768" class="img-fluid editable" alt="" />
           </div>
         </div>
       </div>
       <div id="who" role="tabpanel" aria-labelledby="tab-who" class="tab-pane fade show">
         <div class="row">
-          <div class="col-lg-6">
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ratione rerum alias. Assumenda velit
-              temporibus animi est quidem expedita repellendus vero labore sapiente.</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, reiciendis perferendis repellendus asperiores
-              ipsa blanditiis temporibus corporis incidunt odio impedit sit dolorem veritatis reprehenderit. Quam deserunt
-              porro natus soluta dolorum!</p>
-            <ul>
-              <li>Lorem point 1</li>
-              <li>Lorem point 2</li>
-              <li>Lorem point 3</li>
-              <li>Lorem point 4</li>
-              <li>Lorem point 5</li>
-            </ul>
-          </div>
-          <div class="col-lg-6">
-            <img src="https://via.placeholder.com/768x768" class="img-fluid" alt="" />
+          <div class="col-12">
+            <div class="threesome">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-header">
+                    <img src="https://via.placeholder.com/768x500" class="img-fluid editable" alt="">
+                  </div>
+                  <div class="card-body">
+                    <div class="editable">
+                      <h4>Low Access Communities</h4>
+                      <p>4P fights to build a better food system that enables all people, regardless of income or ZIP code, to have access to
+                      good, healthy food.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-header">
+                    <img src="https://via.placeholder.com/768x500" class="img-fluid editable" alt="">
+                  </div>
+                  <div class="card-body">
+                    <div class="editable">
+                      <h4>Local Farmers</h4>
+                      <p>4P currently empowers more than 200 local family farms to put their high quality produce, meat, and dairy products on
+                      more tables every day.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-header">
+                    <img src="https://via.placeholder.com/768x500" class="img-fluid editable" alt="">
+                  </div>
+                  <div class="card-body">
+                    <div class="editable">
+                      <h4>The Environment</h4>
+                      <p>4P Foods works with farmers who are committed to low-impact, sustainable methods of production. Plus, local food
+                      requires less travel, improving your carbon footprint.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -118,34 +151,31 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2>Our impact so far</h2>
+        <h2 class="editable">Our impact so far</h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-3 text-center">
+      <div class="col-md-6 col-lg-3 text-center">
         <img src="https://via.placeholder.com/150" class="img-fluid mb-4 editable" alt="Barn Graphic" />
         <div class="editable">
           <p><strong>212+</strong> independent, family farmers supported by 4P Foods throughout the east coast.</p>
         </div>
-        
       </div>
-      <div class="col-lg-3 text-center">
+      <div class="col-md-6 col-lg-3 text-center">
         <img src="https://via.placeholder.com/150" class="img-fluid mb-4 editable" alt="Groceries Graphic" />
         <div class="editable">
           <p>Over <strong>100,000 lbs</strong> of Good Food delivered into underserved communities in our national region.
           </p>
         </div>
-        
       </div>
-      <div class="col-lg-3 text-center">
+      <div class="col-md-6 col-lg-3 text-center">
         <img src="https://via.placeholder.com/150" class="img-fluid mb-4 editable" alt="Package Graphic" />
         <div class="editable">
           <p><strong>290+ families</strong> served through our Fresh Farmacy produce prescription program in
             Charlottesville.</p>
         </div>
-        
       </div>
-      <div class="col-lg-3 text-center">
+      <div class="col-md-6 col-lg-3 text-center">
         <img src="https://via.placeholder.com/150" class="img-fluid mb-4 editable" alt="Money Graphic" />
         <div class="editable">
           <p><strong>60% of every dollar</strong> you spend with 4P Foods goes directly back to farmers. (Compared to 8% of
@@ -158,13 +188,13 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
 </section>
 <div class="d-flex">
   <span>
-    <img src="https://via.placeholder.com/500x350" class="img-fluid p-1 editable" alt="" />
+    <img src="https://via.placeholder.com/800x500" class="img-fluid p-1 editable" alt="" />
   </span>
   <span>
-    <img src="https://via.placeholder.com/500x350" class="img-fluid p-1 editable" alt="" />
+    <img src="https://via.placeholder.com/800x500" class="img-fluid p-1 editable" alt="" />
   </span>
   <span>
-    <img src="https://via.placeholder.com/500x350" class="img-fluid p-1 editable" alt="" />
+    <img src="https://via.placeholder.com/800x500" class="img-fluid p-1 editable" alt="" />
   </span>
 </div>
 <section class="bg-dark">
@@ -176,7 +206,7 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
           <p>4P fights to build a better food system that enables all people, regardless of income or ZIP code, to have
             access to good, healthy food.</p>
         </div>
-        <a href="#" class="btn btn-primary editable">Find out more</a>
+        <a href="/food-access-programs" class="btn btn-primary editable">Find out more</a>
       </div>
     </div>
   </div>
@@ -189,7 +219,7 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
       </div>
       <div class="col-lg-8">
         <h4 class="editable">Our name stands for the 4 P's we think should be a part of every business</h4>
-        <p class="lead text-primary editable">Purpose, People, Planet and Prosperity</p>
+        <h4 class="text-primary editable font-italic">Purpose, People, Planet and Prosperity</h4>
         <div class="editable">
           <p>Purpose means that we constantly strive to advance our mission &mdash; ensuring that all people can eat Good
             Food and all farmers can make a living growing Good Food.</p>
@@ -216,14 +246,13 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
     </div>
   </div>
 </section>
-<!-- <featured-farm></featured-farm> -->
+<featured-farms></featured-farms>
 <section class="bg-green">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <a href="#" class="btn btn-outline-white editable">See all farmers and producers</a>
+        <a href="/our-farmers" class="btn btn-outline-white editable">See all farmers and producers</a>
       </div>
     </div>
   </div>
 </section>
-<!-- <tryus-cta></tryus-cta> -->

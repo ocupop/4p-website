@@ -11,7 +11,7 @@ $gray-800: #4d4d4d;
 $gray-900: #212529 !default;
 $black: #000000 !default;
 
-$blue: #82dadb;
+$blue: #97d7d9;
 $blue-mid: #71c7c7;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
@@ -47,6 +47,7 @@ $theme-colors: (
   "dark": $gray-800,
   "white": $white,
   "black": $black,
+  "gray": $gray-700,
   "tan": $beige,
   "notice": $teal,
   "teal": $teal,

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
+import TestModal from './modals/TestModal'
 
-const FirebaseSandbox = props => {
+const FirebaseSandbox = () => {
   const [user, setUser] = useState({
     name: 'Tom'
   })
@@ -11,12 +12,13 @@ const FirebaseSandbox = props => {
   return (
     <>
       <p>Hello {user ? user.name : "there"}</p>
+      <TestModal/>
     </>
   )
 }
 
-FirebaseSandbox.propTypes = {
+// FirebaseSandbox.propTypes = {
 
-}
+// }
 
 export default FirebaseSandbox

@@ -24,7 +24,7 @@ layout: default
         <!-- need logic to let user know if event has already happened -->
         <h4>{{ page.title }}</h4>
         <p class="mb-0">{{ page.date | date: '%A %B %-d, %Y'}}</p>
-        <p>{{ page.date | date: '%l %Z'}}</p>
+        <p>{{ page.start_time }}{% if page.end_time %} - {{ page.end_time }}{% endif %}</p>
         {% if page.location.location_name %}
           <p class="mb-0">{{ page.location.location_name }}</p>
         {% endif %}

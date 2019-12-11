@@ -31,6 +31,7 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
               <h5>{{ event.title }}</h5>
               <p class="mb-0">{{ event.date | date: '%A'}}</p>
               <p class="mb-0">{{ event.date | date: '%B %-d, %Y'}}</p>
+              <p><small>{{ event.start_time }}{% if event.end_time %} - {{ event.end_time }}{% endif %}</small></p>
               <p>{{ event.description }}</p>
             </div>
           </div>

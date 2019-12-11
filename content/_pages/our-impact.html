@@ -2,20 +2,36 @@
 layout: page
 title: Our Impact
 meta:
+_assets:
+  asset1_image: 'https://via.placeholder.com/800x500'
+  asset2_image: 'https://via.placeholder.com/800x500'
+  asset3_image: 'https://via.placeholder.com/800x500'
+  asset4_image: 'https://via.placeholder.com/800x500'
+  asset5_image: 'https://via.placeholder.com/800x500'
+  asset6_image: 'https://via.placeholder.com/800x500'
 footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
 
 ---
 
-<div class="d-flex">
-  <span>
-    <img src="https://via.placeholder.com/500x350" class="img-fluid p-1 editable" alt="" />
-  </span>
-  <span>
-    <img src="https://via.placeholder.com/500x350" class="img-fluid p-1 editable" alt="" />
-  </span>
-  <span>
-    <img src="https://via.placeholder.com/500x350" class="img-fluid p-1 editable" alt="" />
-  </span>
+<div class="row no-gutters">
+  <div class="col-4">
+    <div class="p-1">
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets.asset1_image }}')"
+        data-cms-editor-link="cloudcannon:#_assets.asset1_image"></div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="p-1">
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets.asset2_image }}')"
+        data-cms-editor-link="cloudcannon:#_assets.asset2_image"></div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="p-1">
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets.asset3_image }}')"
+        data-cms-editor-link="cloudcannon:#_assets.asset3_image"></div>
+    </div>
+  </div>
 </div>
 <section>
   <div class="container">
@@ -186,16 +202,25 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
     </div>
   </div>
 </section>
-<div class="d-flex">
-  <span>
-    <img src="https://via.placeholder.com/800x500" class="img-fluid p-1 editable" alt="" />
-  </span>
-  <span>
-    <img src="https://via.placeholder.com/800x500" class="img-fluid p-1 editable" alt="" />
-  </span>
-  <span>
-    <img src="https://via.placeholder.com/800x500" class="img-fluid p-1 editable" alt="" />
-  </span>
+<div class="row no-gutters">
+  <div class="col-4">
+    <div class="p-1">
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets.asset4_image }}')"
+        data-cms-editor-link="cloudcannon:#_assets.asset4_image"></div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="p-1">
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets.asset5_image }}')"
+        data-cms-editor-link="cloudcannon:#_assets.asset5_image"></div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="p-1">
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets.asset6_image }}')"
+        data-cms-editor-link="cloudcannon:#_assets.asset6_image"></div>
+    </div>
+  </div>
 </div>
 <section class="bg-dark">
   <div class="container">
@@ -246,7 +271,26 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
     </div>
   </div>
 </section>
-<featured-farms></featured-farms>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-lg-auto text-center">
+        <div class="editable">
+          <h1 class="editable">Meet our farmers and producers</h1>
+          <p class="lead editable">Get local, farm-fresh Good Food - delivered right to your door.</p>
+          <div class="editable mb-5">
+            <p>Year-round, 4P delivers healthy, sustainable, seasonal food from local family farms. This means you’re getting the
+            freshest produce, meat, and dairy products on any given day—all grown and harvested in the most responsible, sustainable
+            way possible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include farms/featured-farm.html %}
+    {% include farms/farms-list-featured.html %}
+  </div>
+</section>
+<!-- <featured-farms></featured-farms> -->
 <section class="bg-green">
   <div class="container">
     <div class="row">

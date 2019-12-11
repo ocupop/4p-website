@@ -15,3 +15,41 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
     </div>
   </div>
 </section>
+<section class="pt-0">
+  <div class="container">
+    <div class="threesome mt-4">
+      {% for event in site.events %}
+      <div class="card bg-transparent">
+        <div class="card-content pin-footer">
+          <div class="card-header">
+            <div class="content">
+              <div class="bg-image aspect-4x3" style="background-image: url({{ event.featured_image | default: 'https://via.placeholder.com/800x500'}})"></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="content text-left">
+              <h5>{{ event.title }}</h5>
+              <p class="mb-0">{{ event.date | date: '%A'}}</p>
+              <p class="mb-0">{{ event.date | date: '%B %-d, %Y'}}</p>
+              <p>{{ page.date | date: '%l %Z'}}</p>
+              <p>{{ event.description }}</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="{{ event.url }}" class="btn btn-secondary">Read More</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        Need to figure out how to display past events
+      </div>
+    </div>
+  </div>
+</section>

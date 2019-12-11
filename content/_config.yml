@@ -57,7 +57,7 @@ defaults:
       layout: event
       _options:
         featured_image:
-          uploads_dir: "img/uploads/events/:title"        
+          uploads_dir: "img/uploads/events/"        
 
 
 
@@ -91,13 +91,19 @@ _array_structures:
         image:
         link:
   links:
-    - label:
-      icon:
+    - label: Links
+      icon: link 
       value:
         url:
         label:
         screenshot_image:
-        icon:        
+        icon:
+  images:
+    - label: Images
+      icon: image
+      value:
+        image:
+        alt_text:  
 
 
 

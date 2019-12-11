@@ -21,11 +21,12 @@ layout: default
         </div>
       {% endif %}
       <div class="{% if page.featured_image %}col-lg-6{% else %}col-12{% endif %}">
+        <!-- need logic to let user know if event has already happened -->
         <h4>{{ page.title }}</h4>
         <p class="mb-0">{{ page.date | date: '%A %B %-d, %Y'}}</p>
         <p>{{ page.date | date: '%l %Z'}}</p>
         {% if page.location.location_name %}
-          <p>{{ page.location.location_name }}</p>
+          <p class="mb-0">{{ page.location.location_name }}</p>
         {% endif %}
         {% if page.location.location_address %}
           <p>{{ page.location.location_address }}</p>
@@ -35,7 +36,7 @@ layout: default
 
         {% for link in page.links %}
           <p>
-            <a href="{{ page.event_link }}" class="btn btn-secondary">{% if link.icon %}<i class="{{ link}}"></i>{% endif %}{{ link.label | default: 'Event Link'}}</a>
+            <a href="{{ link.url }}" class="btn btn-secondary" target="_blank" rel="noopener">{% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %} {{ link.label | default: 'Event Link'}}</a>
           </p>
         {% endfor %}
       </div>

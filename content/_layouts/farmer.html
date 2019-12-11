@@ -7,7 +7,7 @@ layout: default
     <div class="row">
       <div class="col-12 text-center">
         <h1>{{ page.title }}</h1>
-        <p>{{ page.location.location_name }}</p>
+        <p>{{ page.location}}</p>
         <img src="{{ page.featured_image }}" class="img-fluid" alt="{{ page.title }} image">
       </div>
     </div>
@@ -92,6 +92,15 @@ layout: default
       <div class="col-12">
         {{ page.content }}
       </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      {% for image in page.images %}
+        <div class="bg-image aspect-4x3" style="background-image: url({{ image.image }})"></div>
+      {% endfor %}
     </div>
   </div>
 </section>

@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-12">
+    <div class="responsive-card-deck cards-lg-2 cards-md-2 mt-4">
+      {% for farm in page.related_farmers %}
+      <div class="card bg-transparent">
+        <div class="bg-image aspect-4x3" style="background-image: url(https://via.placeholder.com/800x500)"></div>
+        <div class="card-body">
+          <h4>Farm Name</h4>
+          <p>Farm description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae praesentium eos asperiores
+            in
+            doloribus illum? Quod eum veniam pariatur impedit dolores quos libero corrupti delectus.</p>
+        </div>
+        <div class="card-footer bg-transparent">
+          <a href="#" class="btn btn-secondary">Shop this weeks items</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -19,9 +19,6 @@ analytics:
 
 # Collections
 collections:
-  pages:
-    output: true
-    permalink: /:path/
   team_members:
     output: true
     permalink: /team/:path/

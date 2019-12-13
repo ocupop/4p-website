@@ -9,33 +9,14 @@ _assets:
   asset3_image: 'https://via.placeholder.com/800x500'
 ---
 
-<div class="row no-gutters">
-  <div class="col-4">
-    <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets.asset1_image }}')"
-        data-cms-editor-link="cloudcannon:#_assets.asset1_image" data-cms-editor-link-style="modal"></div>
-    </div>
-  </div>
-  <div class="col-4">
-    <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets.asset2_image }}')"
-        data-cms-editor-link="cloudcannon:#_assets.asset2_image" data-cms-editor-link-style="modal"></div>
-    </div>
-  </div>
-  <div class="col-4">
-    <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets.asset3_image }}')"
-        data-cms-editor-link="cloudcannon:#_assets.asset3_image" data-cms-editor-link-style="modal"></div>
-    </div>
-  </div>
-</div>
-<section>
+{% include image-bar.html %}
+<section class="pb-0">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-lg-auto text-center">
         <div class="editable">
           <h1 class="editable">Careers at 4P</h1>
-          <h3 class="editable">Supportive Sub-Headline Here</h3>
+          <h3 class="editable"><em>Supportive Sub-Headline Here</em></h3>
           <div class="editable">
           </div>
         </div>
@@ -47,12 +28,17 @@ _assets:
   <div class="container">
     {% assign careers = site.careers | sort: 'posted_date' | reversed %}
     {% for career in careers %}
+      <hr>
       <div class="row">
         <div class="col-12">
           <h4>{{ career.title }}</h4>
-          <p><strong>{{ career.location }}</strong> <em>Job posted {{ career.posted_date }}</em></p>
+          <p><strong>{{ career.location }}</strong> <em>Job posted {{ career.posted_date | date: '%m/%d/%Y' }}</em></p>
+          <p>{{ career.description }}</p>
+          <a href="{{ career.url }}" class="btn btn-secondary">Learn More and Apply</a>
         </div>
       </div>
+      <hr>
     {% endfor %}
   </div>
 </section>
+{% include careers/volunteer.html %}

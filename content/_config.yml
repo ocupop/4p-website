@@ -105,12 +105,19 @@ _array_structures:
         label:
         screenshot_image:
         icon:
-  images:
-    - label: Images
-      icon: image
+  assets:
+    - label: Image
+      icon: insert_photo
       value:
+        _type: image
+        title:
         image:
-        alt_text:  
+    - label: Video
+      icon: videocam
+      value:
+        _type: video
+        title:
+        embed_url:
 
 
 

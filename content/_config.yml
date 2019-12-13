@@ -27,7 +27,10 @@ collections:
     permalink: /farmers/:path/
   events:
     output: true
-    permalink: /events/:path/   
+    permalink: /events/:path/
+  careers:
+    output: true
+    permalink: /careers/:path/  
 
 defaults:
   - scope:
@@ -56,7 +59,12 @@ defaults:
       layout: event
       _options:
         featured_image:
-          uploads_dir: "img/uploads/events/" 
+          uploads_dir: "img/uploads/events/"
+  - scope:
+      type: 'careers'
+    values:
+      layout: careers
+            
 
 
 

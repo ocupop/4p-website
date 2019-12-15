@@ -20,20 +20,15 @@ layout: default
 <section class="p-0">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <div class="card-columns">
-          {% for faq in page.faqs %}
-          <div class="card">
-            <p class="text-uppercase">Question</p>
-            <p>{{faq.question}}</p>
-            <p class="text-uppercase">Answer</p>
-            {{ faq.answer_html }}
-            <hr />
-          </div>
-          {% endfor %}
+      {% for faq in page.faqs %}
+        <div class="col-lg-6">
+          <p class="text-uppercase">Question</p>
+          <p>{{faq.question}}</p>
+          <p class="text-uppercase">Answer</p>
+          {{ faq.answer_html }}
+          <hr />
         </div>
-      </div>
-      
+      {% endfor %}
     </div>
   </div>
 </section>

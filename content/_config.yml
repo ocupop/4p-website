@@ -86,9 +86,12 @@ _array_structures:
       value:
         description:
         image:
-  faqs:        
-    - question: Question 1
-      answer_html: This is an answer...
+  faqs:
+    - label: FAQ
+      icon: question_answer
+      value:
+        question:
+        answer_html:
   products:
     - label: Products
       icon: add

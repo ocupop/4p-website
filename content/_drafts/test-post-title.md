@@ -1,0 +1,17 @@
+---
+layout: post
+title: Test Post Title
+date: 2019-12-17 00:00:00
+featured_image: /uploads/866-800x500.jpg
+assets:
+  - _type: image
+    title:
+    image: /uploads/866-800x500.jpg
+  - _type: video
+    title:
+    embed_url: 'https://www.youtube.com/embed/WL1Hi_qsoM0'
+tags:
+  - 4P Foods
+---
+
+<div class="editable">We are so pleased to announce the news of our partnership with the PATH Foundation. The PATH Foundation is a grant-making organization that enhances the health and vitality of the community with four areas of focus &mdash; access to health, childhood wellness and nutrition, mental health and senior services. &ldquo;Food impacts all four of the PATH Foundation&rsquo;s health priorities and plays an important role in overall community health. By improving access to healthy food, the food hub will play a key role in accomplishing our mission: to strengthen the health and vitality of our community,&rdquo; Christy Connolly, PATH Foundation president and CEO states in the press release published in the Fauquier Times. Funding from the PATH Foundation grant will enable the construction of a new food hub facility at Vint Hill in New Baltimore, including equipment, engineering and architecture plans. Construction and renovation of the new facility is expected to be complete in early 2020. During the transition, our weekly 4P deliveries to households, workplaces, offices, as well as wholesale distribution in the DMV-area will continue to operate as normally scheduled from our existing distribution hubs. This new partnership, together with our recent merge with Local Food Hub, will allow 4P Foods to expand its infrastructure to better serve our mission of building a more equitable food system in an efficient and scalable, cost-effective way. Our singular focus is building an even better, more robust system for getting food from our region&rsquo;s small family farms to market, as well as to consumers who might not otherwise enjoy access to healthy, local food. 4P founder and CEO, Tom McDougall explains the greater impact of the partnership and opening of a new facility. &ldquo;Our farmers and our partners all share in the same belief that good, local food should be a right, not a privilege,&rdquo; said McDougall. &ldquo;This support from the PATH Foundation will allow us to open our next chapter here at 4P and grow upon the work we&rsquo;ve been doing for the past five years. Together with our partners, we will be working hard to make sure healthy, local sustainable food can become the norm, not the exception.&rdquo; In January, Tom published a Mid-Atlantic food port feasibility study, along with Sharon Gruber and Wendy Stuart of The Food Works Group and the research contributions of more than 300 people, that assessed the advancement of our region&rsquo;s food and agriculture sector. The findings of the study, An Assessment of the Mid-Atlantic Food Port Concept and Economic Impact on Rural Economic Development explains the long-term vision of 4P Foods and the new facility. Read the recent press release in the Fauquier Times for more information about the PATH Foundation 4P Foods partnership. To learn more about the PATH Foundation and their programs, visit &nbsp;www.pathforyou.org. The entire Mid-Atlantic food port feasibility study can be accessed here.</div>

@@ -2,11 +2,11 @@
 layout: page
 title: Careers
 meta:
-footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
+footer_image: 'https://via.placeholder.com/1800x600/000/222/?text=placeholder'
 _assets:
-  asset1_image: 'https://via.placeholder.com/800x500'
-  asset2_image: 'https://via.placeholder.com/800x500'
-  asset3_image: 'https://via.placeholder.com/800x500'
+  asset1_image: /uploads/4p-careers-headerimage-1.jpg
+  asset2_image: /uploads/4p-careers-headerimage-2.jpg
+  asset3_image: /uploads/4p-careers-headerimage-3.jpg
 ---
 
 {% include careers/image-bar.html %}
@@ -28,7 +28,7 @@ _assets:
   <div class="container">
     {% assign careers = site.careers | sort: 'posted_date' | reversed %}
     {% for career in careers %}
-      <hr>
+      <hr />
       <div class="row">
         <div class="col-12">
           <h4>{{ career.title }}</h4>
@@ -37,7 +37,7 @@ _assets:
           <a href="{{ career.url }}" class="btn btn-secondary">Learn More and Apply</a>
         </div>
       </div>
-      <hr>
+      <hr />
     {% endfor %}
   </div>
 </section>

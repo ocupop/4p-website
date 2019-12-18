@@ -49,7 +49,7 @@ module.exports = {
     {
       resolve: "gatsby-source-custom-api",
       options: {
-        url: "localhost:4000/api/pages.json"
+        url: "cms.4pfoods.com/api/pages.json"
       }
     },
     {

@@ -1,23 +1,22 @@
 <div class="threesome mt-5">
-  {% for i in (1..3) %}
+  {% assign posts = site.posts | sort: 'date' | reversed %}
+  {% for post in site.posts offset: 1 limit: 3 %}
   <div class="card bg-transparent">
     <div class="card-content pin-footer">
       <div class="card-header p-0">
         <div class="content">
-          <div class="bg-image aspect-4x3" style="background-image: url(https://via.placeholder.com/800x500)"></div>
+          <div class="bg-image aspect-4x3" style="background-image: url({{ post.featured_image }})"></div>
         </div>
       </div>
       <div class="card-body">
         <div class="content text-left">
-          <h5>Article Title</h5>
-          <p>June 18, 2019</p>
-          <p>Summary Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi voluptatum unde, deleniti rerum
-            perspiciatis, incidunt explicabo voluptates alias saepe iure, autem reiciendis eum in magni suscipit
-            recusandae quis accusamus! Harum.</p>
+          <h5>{{ post.title }}</h5>
+          <p>{{ post.date | date: '%B %d, %Y'}}</p>
+          <p>{{ post.content | strip_html | truncatewords: 30  }}</p>
         </div>
       </div>
       <div class="card-footer">
-        <a href="/single-post" class="btn btn-secondary">Read More</a>
+        <a href="{{ post.url }}" class="btn btn-secondary">Read More</a>
       </div>
     </div>
   </div>

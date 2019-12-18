@@ -6,7 +6,9 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <img src="https://via.placeholder.com/1800x800" class="img-fluid mb-5" alt="">
+        {% if page.featured_image %}
+          <img src="{{ page.featured_image}}" class="img-fluid mb-5" alt="{{ page.title }} image">
+        {% endif %}
         <h1>{{ page.title }}</h1>
         <p>{{ page.date | date: '%B %d, %Y'}}</p>
         {{ page.content }}
@@ -26,7 +28,7 @@ layout: default
       {% endfor %}
       </div>
       {% for video in videos %}
-      <div class="row mt-3">
+      <div class="row mt-5">
         <div class="col-12">
           <div class="responsive-iframe aspect-16x9 mb-3">
             <iframe src="{{ video.embed_url }}"></iframe>

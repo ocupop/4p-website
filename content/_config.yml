@@ -69,6 +69,20 @@ defaults:
       type: 'careers'
     values:
       layout: careers
+  - scope:
+      type: 'posts'
+    values:
+      layout: post
+      _options:
+        featured_image: 
+          uploads_dir: "img/uploads/posts/"
+  - scope:
+      type: 'newsletters'
+    values:
+      _options:
+        featured_image: 
+          uploads_dir: "img/uploads/newsletters/"      
+
             
 
 

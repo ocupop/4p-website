@@ -46,10 +46,26 @@ module.exports = {
         path: `${__dirname}/content/_includes/ui`,
       },
     },
+    // {
+    //   resolve: "gatsby-source-custom-api",
+    //   options: {
+    //     url: "https://694a7606.ngrok.io/api/pages.json"
+    //   }
+    // },
     {
       resolve: "gatsby-source-custom-api",
       options: {
-        url: "cms.4pfoods.com/api/pages.json"
+        url: {
+          development: "https://694a7606.ngrok.io/api/pages.json", // on "gatsby develop"
+          production: "https://cms.4pfoods.com/api/pages.json" // on "gatsby build"
+        },
+        // imageKeys: ["images"],
+        rootKey: "pages",
+        schemas: {
+          pages: `
+            title: String
+          `
+        }
       }
     },
     {

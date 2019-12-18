@@ -34,7 +34,8 @@ collections:
   newsletters:
     output: false
   posts:
-    output: true    
+    output: true
+    permalink: /posts/:path/
 
 defaults:
   - scope:

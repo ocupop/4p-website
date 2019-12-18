@@ -42,6 +42,9 @@
   &.aspect-3x1 {
     padding-top: 33%;
   }
+  &.aspect-4x1 {
+    padding-top: 25%;
+  }
   &.aspect-4x3 {
     padding-top: 75%;
   }
@@ -133,6 +136,17 @@
     pointer-events: none;
     @include media-breakpoint-down(sm) {
       display: none;
+    }
+  }
+  &.arrow-right-green {
+    &::after {
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(/img/icons/arrow-right-green.svg);
+      width: 60px;
+      height: 50px;
+      top: 30%;
+      left: 90%;
     }
   }
   &.arrow-right {

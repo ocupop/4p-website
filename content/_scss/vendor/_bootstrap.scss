@@ -12,6 +12,9 @@
   }
   &.btn-outline-white {
     border: 1px solid $white;
+    &:hover {
+      color: $green-dark;
+    }
   }
   &.btn-green-dark {
     background-color: $green-dark;
@@ -81,6 +84,13 @@
   }
 }
 
+.tab-content {
+  h4 {
+    font-style: italic;
+    text-transform: capitalize;
+  }
+}
+
 // Cards
 .card {
   border: 0;
@@ -103,5 +113,11 @@
     font-style: italic;
     color: $gray-600;
     margin-bottom: 20px;
+  }
+}
+
+.card-columns {
+  @include media-breakpoint-up(lg) {
+    column-count: 2;
   }
 }

@@ -6,8 +6,11 @@
   background-color: $white;
   box-shadow: 0 0 10px rgba($black, 0.2);
   z-index: 99;
-  .navbar {
-  padding: 0.5rem 0;
+  #mainnav {
+    padding: 0.5rem 0;
+  }
+  #usernav {
+    padding: 0 0.5rem;
   }
   .nav-item {
     .nav-link {
@@ -20,13 +23,18 @@
   .navbar-brand {
     width: 200px;
   }
+  @include media-breakpoint-down(lg) {
+    .container {
+      max-width: 100%;
+    }
+  }
   @include media-breakpoint-down(sm) {
     position: relative;
   }
 }
 
 #pageContent {
-  padding-top: 110px;
+  padding-top: 117px;
   @include media-breakpoint-down(md) {
     padding-top: 0px;
   }

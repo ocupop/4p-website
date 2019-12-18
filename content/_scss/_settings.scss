@@ -49,6 +49,7 @@ $theme-colors: (
   "white": $white,
   "black": $black,
   "gray": $gray-700,
+  "gray-600": $gray-600,
   "tan": $beige,
   "tan-dark": $beige-darker,
   "notice": $teal,
@@ -57,7 +58,7 @@ $theme-colors: (
 );
 
 $body-bg: $white;
-$body-color: $gray-700;
+$body-color: $gray-600;
 
 $font-family-base: "Montserrat", sans-serif;
 $font-family-secondary: "Spectral", serif;
@@ -73,10 +74,10 @@ $font-weight-bold: 700 !default;
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;
 
-$h1-font-size: 2rem;
-$h2-font-size: 1.8rem;
-$h3-font-size: 1.8rem;
-$h4-font-size: 1.25rem;
+$h1-font-size: 1.9rem;
+$h2-font-size: 1.9rem;
+$h3-font-size: 1.7rem;
+$h4-font-size: 1.3rem;
 $h5-font-size: 1.1rem;
 $h6-font-size: 1rem;
 

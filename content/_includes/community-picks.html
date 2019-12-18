@@ -1,0 +1,31 @@
+<section id="community-picks" class="bg-tan-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="text-white">Community Picks</h2>
+      </div>
+      <div class="col-lg-6 text-lg-right">
+        <a href="#" class="btn btn-white">Start Shopping</a>
+      </div>
+    </div>
+    <div class="responsive-card-deck cards-lg-2">
+      {% for product in page.products %}
+      <div class="card">
+        <div class="bg-image aspect-16x9"
+          style="background-image: url({{ product.image | default: 'https://via.placeholder.com/800x500' }})"></div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-6">
+              <h5>{{ product.name }}</h5>
+              <p>{{ product.label }}</p>
+            </div>
+            <div class="col-6 text-right">
+              <a href="{{ product.link }}" class="btn btn-white">See Item</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

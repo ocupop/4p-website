@@ -31,12 +31,26 @@ module.exports = {
         name: 'images',
       },
     },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'pages',
+    //     path: `${__dirname}/content`,
+    //     ignore: [`**/\.*`], // ignore files starting with a dot
+    //   },
+    // },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/content/_pages`,
-        name: 'pages',
+        name: 'ui',
+        path: `${__dirname}/content/_includes/ui`,
       },
+    },
+    {
+      resolve: "gatsby-source-custom-api",
+      options: {
+        url: "localhost:4000/api/pages.json"
+      }
     },
     {
       resolve: "gatsby-theme-firebase",

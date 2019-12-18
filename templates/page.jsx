@@ -1,16 +1,17 @@
-/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable camelcase */
 /* eslint-disable react/prop-types */
 import React from 'react'
 import { graphql } from "gatsby"
 import _ from 'lodash'
 import parse from 'html-react-parser';
+import FooterHero from '../components/ui/FooterHero'
 
 const pageComponents = {
-  // TestComponent
+  // TODO: Import and list all acceptable components that may get included inline page content.
 }
 
 const parseOptions = {
-  replace: ({attribs, name}) => {
+  replace: ({ attribs, name }) => {
     if (!attribs) return;
 
     if (name.includes('-')) {
@@ -20,17 +21,23 @@ const parseOptions = {
   }
 }
 
-const HomepageTemplate = ({
+
+const PageTemplate = ({
   data: {
     contentPage: {
-      htmlContent
+      htmlContent,
+      frontmatter: {
+        footer_image
+      }
     }
   } }) => {
-
 
   return (
     <>
       {parse(htmlContent, parseOptions)}
+      <section className="p-0">
+        <FooterHero image={footer_image}/>
+      </section>
     </>
   )
 }
@@ -41,7 +48,10 @@ export const query = graphql`
     contentPage(id: {eq: $id }) {
       title
       htmlContent
+      frontmatter {
+        footer_image
+      }
     }
   }`
 
-export default HomepageTemplate
+export default PageTemplate

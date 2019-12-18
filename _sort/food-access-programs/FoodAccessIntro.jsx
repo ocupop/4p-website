@@ -67,7 +67,6 @@ const FoodAccessIntro = () => {
                   </div>
                 </div>
               </Card>
-
             </div>
           </div>
         </div>

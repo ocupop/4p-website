@@ -1,0 +1,20 @@
+{% assign featured_farmer = site.farmers.first %}
+<div class="row">
+  <div class="col-12">
+    <div class="bg-image aspect-16x9" style="background-image: url({{ featured_farmer.featured_image }})"></div>
+    <div class="bg-tan p-4">
+      <div class="row">
+        <div class="col-12">
+          <h4>{{ featured_farmer.title }}</h4>
+          <p>{{ featured_farmer.description }}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <a href="{{ featured_farmer.url }}" class="btn btn-primary">Shop this weeks items</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

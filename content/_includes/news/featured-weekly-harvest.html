@@ -1,0 +1,34 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h3>Featured Weekly Harvest</h3>
+      </div>
+      <div class="col-lg-6 text-lg-right">
+        <a href="#" class="btn btn-primary">Explore Newsletters</a>
+      </div>
+    </div>
+    <div class="threesome mt-4">
+      {% for i in (1..3) %}
+      <div class="card bg-transparent">
+        <div class="card-content pin-footer">
+          <div class="card-header">
+            <div class="content">
+              <div class="bg-image aspect-4x3" style="background-image: url(https://via.placeholder.com/800x500)"></div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="content text-left">
+              <h5>Weekly Harvest #000</h5>
+              <p>September 19-20</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="/" class="btn btn-secondary">See Newsletter</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

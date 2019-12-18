@@ -1,16 +1,291 @@
 ---
-layout: page
-title: Project Template
+layout: homepage
+title: Home
+meta: []
+_assets:
+  asset1_image: 'https://via.placeholder.com/800x500'
+  asset2_image: 'https://via.placeholder.com/800x500'
+  asset3_image: 'https://via.placeholder.com/800x500'
+products:
+  - name: Test Product 1
+    label: Label detail goes here...
+    image:
+    link:
+  - name: Test Product 2
+    label: Label details info here...
+    image:
+    link:
 ---
-<section>
+
+<section class="bg-primary">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
-        <div class="content">
-          <h1>Aloha!</h1>
-          <p>Welcome to your new content management site.</p>
+      <div class="col-12 col-lg-9 mx-lg-auto text-center">
+        <p class="text-mega text-white editable">We believe in a world where
+          <a href="/our-impact" class="text-white text-underline">good food</a> is the rule &mdash; not the
+          exception.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="featured-collections" class="pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2>Featured Collections + Goods</h2>
+        <p class="mb-5">Year-round, 4p delivers health, seasonal food from local family farms&mdash;all grown and
+          harvested in the most responsible, sustainable way possible.</p>
+      </div>
+      <div class="col-lg-4 text-right">
+        <a href="#" class="btn btn-primary">Start Shopping</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="featured-store" class="pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="responsive-card-deck cards-lg-3 cards-md-2">
+          <div class="card product-card">
+            <div class="bg-image aspect-4x3"></div>
+            <div class="card-body">
+              <h5 class="card-title">Product title</h5>
+              <h6>Producer Name</h6>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="product-amount">Amount / Oz</div>
+                <div class="product-price">$55.55</div>
+              </div>
+            </div>
+            <div class="card-footer d-flex align-items-center p-0">
+              <button class="product-button w-50">
+                Weekly<br />
+                Delivery
+              </button>
+              <button class="product-button w-50">
+                One-Time<br />
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="card product-card">
+            <div class="bg-image aspect-4x3"></div>
+            <div class="card-body">
+              <h5 class="card-title">Product title</h5>
+              <h6>Producer Name</h6>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="product-amount">Amount / Oz</div>
+                <div class="product-price">$55.55</div>
+              </div>
+            </div>
+            <div class="card-footer d-flex align-items-center p-0">
+              <button class="product-button w-50">
+                Weekly<br />
+                Delivery
+              </button>
+              <button class="product-button w-50">
+                One-Time<br />
+                Purchase
+              </button>
+            </div>
+          </div>
+          <div class="card product-card">
+            <div class="bg-image aspect-4x3"></div>
+            <div class="card-body">
+              <h5 class="card-title">Product title</h5>
+              <h6>Producer Name</h6>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="product-amount">Amount / Oz</div>
+                <div class="product-price">$55.55</div>
+              </div>
+            </div>
+            <div class="card-footer d-flex align-items-center p-0">
+              <button class="product-button w-50">
+                Weekly<br />
+                Delivery
+              </button>
+              <button class="product-button w-50">
+                One-Time<br />
+                Purchase
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<section id="how-it-works">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>How it works</h2>
+        <h3><em>Building Equitable Food Communities</em></h3>
+      </div>
+    </div>
+    <div class="row justify-content-between text-center">
+      <div class="col-12 col-md-4">
+        <div class="m-3 arrow arrow-right-green">
+          <img src="/img/icons/orders.svg" alt="" class="img-fluid mx-4" />
+          <h4><em>Farmers grow and harvest sustainable, healthy food</em></h4>
+          <p>We work with more than 200 farmers for the best quality and variety. And the more we grow, the more we
+            give.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="m-3 arrow arrow-right-green">
+          <img src="/img/icons/dropoff.svg" alt="" class="img-fluid mx-4" />
+          <h4><em>Stroll through our online shop and customize your cart</em></h4>
+          <p>Produce, dairy, or meat? Feeding a family of 6 or cooking for one? We have the food selection for you to
+            make everyone happy.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="m-3">
+          <img src="/img/icons/food.svg" alt="" class="img-fluid mx-4" />
+          <h4><em>Determine where you’d like your food dropped off</em></h4>
+          <p>Save yourself the hassle of a trip to the store and set up delivery right to your door. Or pick one of our
+            community delivery sites to save yourself the delivery fee.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include home/how-tabs.html %}
+<section class="bg-green">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="btn btn-outline-white btn-lg">Start Shopping 4P</div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include home/home-testimonials.html %}
+<div class="row no-gutters">
+  <div class="col-4">
+    <div class="p-1">
+      <div class="bg-image aspect-4x3" style="background-image: url('{{ page._assets.asset1_image }}')"
+        data-cms-editor-link="cloudcannon:#_assets.asset1_image" data-cms-editor-link-style="modal"></div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="p-1">
+      <div class="bg-image aspect-4x3" style="background-image: url('{{ page._assets.asset2_image }}')"
+        data-cms-editor-link="cloudcannon:#_assets.asset2_image" data-cms-editor-link-style="modal"></div>
+    </div>
+  </div>  
+  <div class="col-4">
+    <div class="p-1">
+      <div class="bg-image aspect-4x3" style="background-image: url('{{ page._assets.asset3_image }}')"
+        data-cms-editor-link="cloudcannon:#_assets.asset3_image" data-cms-editor-link-style="modal"></div>
+    </div>
+  </div>
+</div>
+<section id="FoodAccessIntro" class="bg-gray text-white">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12 col-lg-11 mx-lg-auto text-center">
+        <h2 class="editable">Food Access Programs</h2>
+        <p class="lead editable"><em>4P fights to build a better food system that enables all people, regardless of
+            income or
+            ZIP code, to have access to good, healthy food.</em></p>
+        <p>Food Access (or lack thereof) is a multi-pronged problem touching on the areas of geography, financial, and
+          personal. 4P Foods, together with our partners, helps to deliver food along with solutions that mirror those
+          challenges.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="threesome">
+          <div class="card bg-transparent">
+            <div class="card-content align-items-center">
+              <div class="card-header p-0">
+                <div class="content">
+                  <img src="/img/icons/homepage-foodaccess-geographic.png" class="img-fluid editable" alt="" />
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="content">
+                  <h4 class="editable text-uppercase font-weight-bold">Geographic</h4>
+                  <p class="editable">The geographic access challenge is availability to resources for Good Food. For
+                    examples, no grocery stores within a reasonable distance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-transparent">
+            <div class="card-content align-items-center">
+              <div class="card-header p-0">
+                <div class="content">
+                  <img src="/img/icons/homepage-foodaccess-financial.png" class="img-fluid editable" alt="" />
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="content">
+                  <h4 class="editable text-uppercase font-weight-bold">Financial</h4>
+                  <p class="editable">The financial access challenge of earning enough money for Good Food. Even if
+                    there is a grocery
+                    store, healthy fresh produce is often a luxury</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-transparent">
+            <div class="card-content align-items-center">
+              <div class="card-header p-0">
+                <div class="content">
+                  <img src="/img/icons/homepage-foodaccess-personal.png" class="img-fluid editable" alt="" />
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="content">
+                  <h4 class="editable text-uppercase font-weight-bold">Personal</h4>
+                  <p class="editable">The personal access challenge is about lifestyle limitations. For example, someone
+                    working multiple
+                    jobs may not have the time, tools or knowledge to buy and prepare healthy food.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="/food-access-programs" class="btn btn-primary">Find Out More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 mx-lg-auto text-center">
+        <h2 class="editable">Enrich Yourself</h2>
+        <h3><em>News, Recipes, Tips, and Home-grown Hype</em></h3>
+        <p>4P Foods sources farm-fresh food from farms in the Washington DC local foodshed and delivers them to your
+          office or
+          apartment building once each week.</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% include news/featured-weekly-harvest.html %}
+{% include news/featured-news.html %}
+<!-- <featured-weekly-harvest></featured-weekly-harvest>
+<featured-news></featured-news> -->
+{% include home/home-bring-us.html %}
+<div class="bg-image aspect-4x1" style="background-image: url(https://via.placeholder.com/1800x600)"></div>
+<section id="tryUsToday">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="#" class="btn btn-primary btn-block btn-xl text-mega">Try Us Today&mdash;Completely Commitment Free</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% include community-picks.html %}
+<!-- <community-picks></community-picks> -->

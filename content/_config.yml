@@ -19,16 +19,59 @@ analytics:
 
 # Collections
 collections:
-  pages:
+  team_members:
     output: true
-    permalink: /:path/
+    permalink: /team/:path/
+  farmers:
+    output: true
+    permalink: /farmers/:path/
+  events:
+    output: true
+    permalink: /events/:path/
+  careers:
+    output: true
+    permalink: /careers/:path/
+  newsletters:
+    output: false
+  posts:
+    output: true
+    permalink: /posts/:title/
 
 defaults:
   - scope:
       type: 'pages'
     values:
       layout: page
-      # variable_name: value
+  - scope:
+      type: 'team_members'
+    values:
+      layout: team_member
+      _options:
+        image:
+          uploads_dir: "img/uploads/team/"
+  - scope:
+      type: 'farmers'
+    values:
+      layout: farmer
+      _options:
+        featured_image:
+          uploads_dir: "img/uploads/farmers/:title"
+        image:
+          uploads_dir: "img/uploads/farmers/:title"
+  - scope:
+      type: 'events'
+    values:
+      layout: event
+      _options:
+        featured_image:
+          uploads_dir: "img/uploads/events/"
+  - scope:
+      type: 'careers'
+    values:
+      layout: careers
+            
+
+
 
 
 # Build settings
@@ -36,7 +79,53 @@ safe: false
 sass:
   # style: compressed
   sass_dir: _scss
-plugins:
-  - jekyll-sitemap
+
+# plugins:
+
+
+  # Cloudcannon Configuration
+_array_structures:
+  meta:
+    - label: Meta Data
+      icon: share
+      value:
+        description:
+        image:
+  faqs:
+    - label: FAQ
+      icon: question_answer
+      value:
+        question:
+        answer_html:
+  products:
+    - label: Products
+      icon: add
+      value:
+        name:
+        label:
+        image:
+        link:
+  links:
+    - label: Links
+      icon: link 
+      value:
+        url:
+        label:
+        screenshot_image:
+        icon:
+  assets:
+    - label: Image
+      icon: insert_photo
+      value:
+        _type: image
+        title:
+        image:
+    - label: Video
+      icon: videocam
+      value:
+        _type: video
+        title:
+        embed_url:
+
 
 

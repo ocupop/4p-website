@@ -1,0 +1,44 @@
+---
+layout: page
+title: Careers
+meta:
+footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
+_assets:
+  asset1_image: 'https://via.placeholder.com/800x500'
+  asset2_image: 'https://via.placeholder.com/800x500'
+  asset3_image: 'https://via.placeholder.com/800x500'
+---
+
+{% include careers/image-bar.html %}
+<section class="pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-lg-auto text-center">
+        <div class="editable">
+          <h1 class="editable">Careers at 4P</h1>
+          <h3 class="editable"><em>Supportive Sub-Headline Here</em></h3>
+          <div class="editable">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    {% assign careers = site.careers | sort: 'posted_date' | reversed %}
+    {% for career in careers %}
+      <hr>
+      <div class="row">
+        <div class="col-12">
+          <h4>{{ career.title }}</h4>
+          <p><strong>{{ career.location }}</strong> <em>Job posted {{ career.posted_date | date: '%m/%d/%Y' }}</em></p>
+          <p>{{ career.description }}</p>
+          <a href="{{ career.url }}" class="btn btn-secondary">Learn More and Apply</a>
+        </div>
+      </div>
+      <hr>
+    {% endfor %}
+  </div>
+</section>
+{% include careers/volunteer.html %}

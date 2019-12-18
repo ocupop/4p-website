@@ -1,1 +1,150 @@
-<footer id="pageFooter"></footer>
+{% unless page.layout == 'homepage'%}
+{% if page.footer_image %}
+  <div class="bg-image aspect-4x1" style="background-image: url({{ page.footer_image}})"></div>
+{% endif %}
+<section id="tryUsToday" class="bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="#" class="btn btn-primary btn-block text-mega">Try Us Today&mdash;Completely Commitment Free</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endunless %}
+<footer id="pageFooter">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <h6>Shop</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Shop Collections</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Browse Goods
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/how-it-works" class="nav-link">How it Works</a>
+            </li>
+            <li class="nav-item">
+              <a href="how-it-works#delivery" class="nav-link">Delivery Options</a>
+            </li>
+            <li class="nav-item">
+              <a href="/wholesale-programs" class="nav-link">Wholesale Program</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="#" class="nav-link">Refer a Friend</a>
+            </li> -->
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h6>About 4P</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="/our-impact" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="/our-impact" class="nav-link">Our Impact</a>
+            </li>
+            <li class="nav-item">
+              <a href="/our-farmers" class="nav-link">Our Farmers</a>
+            </li>
+            <li class="nav-item">
+              <a href="/our-partners" class="nav-link">Our Partners</a>
+            </li>
+            <li class="nav-item">
+              <a href="/our-team" class="nav-link">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a href="/food-access-programs" class="nav-link">Food Access Programs</a>
+              
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h6>Enrich Yourself</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="/news" class="nav-link">4P News</a>
+            </li>
+            <li class="nav-item">
+              <a href="/news#weekly-harvest-newsletter" class="nav-link">Newsletter Archive</a>
+            </li>
+            <li class="nav-item">
+              <a href="/community-events" class="nav-link">Community Events</a>
+            </li>
+            <li class="nav-item">
+              <a href="/careers" class="nav-link">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a href="/careers#volunteer" class="nav-link">Volunteer</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h6>Support</h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="/contact" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="/faq" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a href="/legal" class="nav-link">Legal</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="#" class="nav-link">Chat</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pt-0">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-3">
+          <a href="/" class="navbar-brand">
+            <img src="/img/4p-foods-logo-color.png" class="img-fluid" alt="4P Foods logo" />
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <h6>Sign up for our Newsletter</h6>
+          <div class="form-inline">
+            <div class="form-group">
+              <input type="text" class="form-control bg-tan" placeholder="Your Email Address"/>
+              <a href="#" class="btn btn-secondary">Submit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <h6>Connect with us</h6>
+          <p class="social">
+            <a href="#" class="mr-2">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="#" class="mr-2">
+              <i class="ri-twitter-fill"></i>
+            </a>
+            <a href="#" class="mr-2">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="#" class="mr-2">
+              <i class="ri-pinterest-fill"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          © {{ site.time | date: "%Y" }} 4P Foods
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>

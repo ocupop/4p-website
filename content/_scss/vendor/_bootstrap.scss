@@ -12,6 +12,9 @@
   }
   &.btn-outline-white {
     border: 1px solid $white;
+    &:hover {
+      color: $green-dark;
+    }
   }
   &.btn-green-dark {
     background-color: $green-dark;
@@ -44,11 +47,6 @@
 }
 
 // Carousels
-.carousel-item {
-  width: 80%;
-  margin-right: auto;
-  margin-left: 10%;
-}
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%;
@@ -86,6 +84,13 @@
   }
 }
 
+.tab-content {
+  h4 {
+    font-style: italic;
+    text-transform: capitalize;
+  }
+}
+
 // Cards
 .card {
   border: 0;
@@ -93,6 +98,7 @@
   .card-body,
   .card-footer {
     border: 0;
+    background-color: transparent;
   }
   h5 {
     text-transform: uppercase;
@@ -107,5 +113,11 @@
     font-style: italic;
     color: $gray-600;
     margin-bottom: 20px;
+  }
+}
+
+.card-columns {
+  @include media-breakpoint-up(lg) {
+    column-count: 2;
   }
 }

@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>Our Team</h1>
+        <p class="lead">The People Behind the Veggies</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="{{ page.image }}" class="img-fluid" alt="{{ page.title }}">
+      </div>
+      <div class="col-lg-8">
+        <h3 class="text-uppercase">{{ page.title }}</h3>
+        <h4 class="font-weight-light">{{ page.role }}</h4>
+        <div class="pt-3">
+          {{ content }}
+        </div>
+        <p class="mb-0"><strong>Favorite Fruit or Veggie:</strong></p>
+        <p>{{ page.favorite_veggie }}</p>
+      </div>
+    </div>
+  </div>
+</section>

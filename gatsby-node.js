@@ -15,10 +15,10 @@ const slugify = require('slugify');
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  // StandalonePages
+  // TODO: determine better pattern
   const pages = await graphql(`
     query {
-      allPage {
+      allContentPage {
         edges {
           node {
             id
@@ -30,17 +30,17 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `).then(result => {
     // Build Web Pages
-    result.data.allPage.edges.forEach(({ node }) => {
+    result.data.allContentPage.edges.forEach(({ node }) => {
       let slug = '/'
-      const component = path.resolve(`./src/layouts/${node.layout}.jsx`)
-      if (node.layout !== 'splash') {
+      const component = path.resolve(`./src/templates/${node.layout}.jsx`)
+      if (node.layout !== 'homepage') {
         slug = slugify(node.title, {
           remove: /[*+~.()'"!:@]/g,
           lower: true
         })
       }
 
-      // TODO: Remove once Splash page is no longer needed
+      // TODO: Add solution for different Gatsby layouts
       // const layout = node.layout === 'splash' ? 'splash' : 'index'
 
 
@@ -94,7 +94,8 @@ exports.onCreateNode = async ({
       parent: node.id,
       internal: {
         content: file.content,
-        type: file.data.content_type
+        // type: file.data.content_type
+        type: `ContentPage`
       }
     }
 

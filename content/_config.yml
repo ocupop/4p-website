@@ -30,7 +30,11 @@ collections:
     permalink: /events/:path/
   careers:
     output: true
-    permalink: /careers/:path/  
+    permalink: /careers/:path/
+  newsletters:
+    output: false
+  posts:
+    output: true    
 
 defaults:
   - scope:

@@ -74,12 +74,14 @@ defaults:
     values:
       layout: post
       _options:
-        featured_image: "img/uploads/posts/"
+        featured_image: 
+          uploads_dir: "img/uploads/posts/"
   - scope:
       type: 'newsletters'
     values:
       _options:
-        featured_image: "img/uploads/newsletters/"      
+        featured_image: 
+          uploads_dir: "img/uploads/newsletters/"      
 
             
 

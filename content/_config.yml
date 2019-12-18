@@ -35,7 +35,7 @@ collections:
     output: false
   posts:
     output: true
-    permalink: /posts/:path/
+    permalink: /posts/:title/
 
 defaults:
   - scope:

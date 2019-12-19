@@ -39,11 +39,27 @@ faqs:
 products:
   - name: Test Product 1
     label: Label detail goes here...
-    image:
+    image: /img/uploads/home/4p-communitypicks-01.jpg
     link:
   - name: Test Product 2
     label: Label details info here...
-    image:
+    image: /img/uploads/home/4p-communitypicks-02.jpg
+    link:
+  - name: Test Product 3
+    label: Label detail goes here...
+    image: /img/uploads/home/4p-communitypicks-03.jpg
+    link:
+  - name: Test Product 4
+    label: Label details info here...
+    image: /img/uploads/home/4p-communitypicks-04.jpg
+    link:
+  - name: Test Product 5
+    label: Label detail goes here...
+    image: /img/uploads/home/4p-communitypicks-05.jpg
+    link:
+  - name: Test Product 6
+    label: Label details info here...
+    image: /img/uploads/home/4p-communitypicks-06.jpg
     link:      
 ---
 <section>
@@ -68,7 +84,7 @@ products:
     <div class="row justify-content-between text-center mt-5">
       <div class="col-12 col-md-4">
         <div class="m-3 arrow arrow-right-green">
-          <img src="/img/icons/4p-homepage-howitworks-01.png" alt="" class="img-fluid mx-4" />
+          <img src="/img/icons/4p-homepage-howitworks-01.png" alt="farm icon" class="img-fluid mx-4 w-50 mb-3" />
           <h4><em class="editable">Farmers grow and harvest sustainable, healthy food</em></h4>
           <p class="editable">We work with more than 200 farmers for the best quality and variety. And the more we grow, the more we give.
           </p>
@@ -76,7 +92,7 @@ products:
       </div>
       <div class="col-12 col-md-4">
         <div class="m-3 arrow arrow-right-green">
-          <img src="/img/icons/4p-homepage-howitworks-03.png  " alt="Orders Icon" class="img-fluid mx-4" />
+          <img src="/img/icons/4p-homepage-howitworks-03.png" alt="Orders Icon" class="img-fluid mx-4 w-50 mb-3" />
           <h4><em class="editable">Stroll through our online shop and customize your cart</em></h4>
           <p class="editable">Produce, dairy, or meat? Feeding a family of 6 or cooking for one? We have the food selection for you to make
             everyone happy.</p>
@@ -84,7 +100,7 @@ products:
       </div>
       <div class="col-12 col-md-4">
         <div class="m-3">
-          <img src="/img/icons/4p-homepage-howitworks-02.png" alt="Dropoff Icon" class="img-fluid mx-4" />
+          <img src="/img/icons/4p-homepage-howitworks-02.png" alt="Dropoff Icon" class="img-fluid mx-4 w-50 mb-3" />
           <h4><em class="editable">Determine where you’d like your food dropped off</em></h4>
           <p class="editable">Save yourself the hassle of a trip to the store and set up delivery right to your door. Or pick one of our
             community delivery sites to save yourself the delivery fee.</p>
@@ -97,10 +113,14 @@ products:
 {% include wholesale-cta.html %}
 {% include how-it-works/how-faq.html %}
 <!-- <wholesale-cta></wholesale-cta> -->
-<section>
+<section class="position-relative">
+  <img src="/img/bg-illustrations/4p-background-lettuce-01.png" alt="lettuce illustration" 
+    style="position: absolute; top: -60%; width: 28%; left: 0%; transform: rotate(-65deg);">
+  <img src="/img/bg-illustrations/4p-background-radish-01.png" alt="radish illustration"
+    style="position: absolute; top: -40%; width: 28%; right: 5%;">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-10 mx-lg-auto text-center">
+      <div class="col-12 col-lg-10 col-xl-6 mx-lg-auto text-center">
         <h2 class="editable">Delivered to your home, office, or building</h2>
         <h3><em>Healthy, Good Food, Direct To You</em></h3>
       </div>
@@ -119,7 +139,7 @@ products:
       </div>
     </div>
     <div class="row mt-5">
-      <div class="col-lg-4">
+      <div class="col-lg-6">
         <div class="editable">
           <h4>Local Farmers</h4>
           <p>4P currently empowers more than 200 local family farms to put their high quality produce, meat, and dairy products on
@@ -129,8 +149,8 @@ products:
           requires less travel, improving your carbon footprint.</p>
         </div>
       </div>
-      <div class="col-lg-8">
-        <img src="https://via.placeholder.com/800x500" class="img-fluid editable" alt="">
+      <div class="col-lg-6">
+        <img src="/img/uploads/how-it-works/4p-howitworks-ourfarms-01.jpg" class="img-fluid editable" alt="">
       </div>
     </div>
   </div>

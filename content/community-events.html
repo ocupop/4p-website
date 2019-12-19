@@ -2,7 +2,7 @@
 layout: page
 title: Community Events
 meta: 
-footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
+footer_image: '/img/uploads/events/4P-footer-07.jpg'
 ---
 
 <section>
@@ -18,40 +18,43 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
 <section class="pt-0">
   <div class="container">
     <div class="row">
-      <div class="threesome mt-4">
-        {% assign events = site.events | sort: 'event_date' | reversed %}
-        {% for event in events %}
-      
-        {% assign now = 'now' | date: '%s' | plus: 0 %}
-        {% assign event_start = event.event_date | date: '%s' | plus: 0 | default: site.time | date: '%s' | plus: 0 %}
-        {% if event_start >= now %}
-        <div class="card bg-transparent">
-          <div class="card-content pin-footer">
-            <div class="card-header">
-              <div class="content">
-                <div class="bg-image aspect-4x3"
-                  style="background-image: url({{ event.featured_image | default: 'https://via.placeholder.com/800x500'}})">
+      <div class="col-12">
+        <div class="threesome mt-4">
+          {% assign events = site.events | sort: 'event_date' | reversed %}
+          {% for event in events %}
+        
+          {% assign now = 'now' | date: '%s' | plus: 0 %}
+          {% assign event_start = event.event_date | date: '%s' | plus: 0 | default: site.time | date: '%s' | plus: 0 %}
+          {% if event_start >= now %}
+          <div class="card bg-transparent">
+            <div class="card-content pin-footer">
+              <div class="card-header">
+                <div class="content">
+                  <div class="bg-image aspect-4x3"
+                    style="background-image: url({{ event.featured_image | default: 'https://via.placeholder.com/800x500'}})">
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card-body">
-              <div class="content text-left">
-                <h5>{{ event.title }}</h5>
-                <p class="mb-0">{{ event.event_date | date: '%A'}}</p>
-                <p class="mb-0">{{ event.event_date | date: '%B %-d, %Y'}}</p>
-                <p><small>{{ event.start_time }}{% if event.end_time %} - {{ event.end_time }}{% endif %}</small></p>
-                <p>{{ event.description }}</p>
+              <div class="card-body">
+                <div class="content text-left">
+                  <h5>{{ event.title }}</h5>
+                  <p class="mb-0">{{ event.event_date | date: '%A'}}</p>
+                  <p class="mb-0">{{ event.event_date | date: '%B %-d, %Y'}}</p>
+                  <p><small>{{ event.start_time }}{% if event.end_time %} - {{ event.end_time }}{% endif %}</small></p>
+                  <p>{{ event.description }}</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="{{ event.url }}" class="btn btn-secondary">Read More</a>
               </div>
             </div>
-            <div class="card-footer">
-              <a href="{{ event.url }}" class="btn btn-secondary">Read More</a>
-            </div>
           </div>
+          {% endif %}
+          {% endfor %}
         </div>
-        {% endif %}
-        {% endfor %}
       </div>
     </div>
+    
   </div>
 </section>
 <section>
@@ -63,36 +66,38 @@ footer_image: https://via.placeholder.com/1800x600/000/222/?text=placeholder
       </div>
     </div>
     <div class="row">
-      <div class="threesome mt-4">
-        {% for event in events %}
-        {% assign now = 'now' | date: '%s' | plus: 0 %}
-        {% assign event_start = event.event_date | date: '%s' | plus: 0 | default: site.time | date: '%s' | plus: 0 %}
-        {% if event_start < now %}
-        <div class="card bg-transparent">
-          <div class="card-content pin-footer">
-            <div class="card-header">
-              <div class="content">
-                <div class="bg-image aspect-4x3"
-                  style="background-image: url({{ event.featured_image | default: 'https://via.placeholder.com/800x500'}})">
+      <div class="col-12">
+        <div class="threesome mt-4">
+          {% for event in events %}
+          {% assign now = 'now' | date: '%s' | plus: 0 %}
+          {% assign event_start = event.event_date | date: '%s' | plus: 0 | default: site.time | date: '%s' | plus: 0 %}
+          {% if event_start < now %}
+          <div class="card bg-transparent">
+            <div class="card-content pin-footer">
+              <div class="card-header">
+                <div class="content">
+                  <div class="bg-image aspect-4x3"
+                    style="background-image: url({{ event.featured_image | default: 'https://via.placeholder.com/800x500'}})">
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="card-body">
-              <div class="content text-left">
-                <h5>{{ event.title }}</h5>
-                <p class="mb-0">{{ event.event_date | date: '%A'}}</p>
-                <p class="mb-0">{{ event.event_date | date: '%B %-d, %Y'}}</p>
-                <p><small>{{ event.start_time }}{% if event.end_time %} - {{ event.end_time }}{% endif %}</small></p>
-                <p>{{ event.description }}</p>
+              <div class="card-body">
+                <div class="content text-left">
+                  <h5>{{ event.title }}</h5>
+                  <p class="mb-0">{{ event.event_date | date: '%A'}}</p>
+                  <p class="mb-0">{{ event.event_date | date: '%B %-d, %Y'}}</p>
+                  <p><small>{{ event.start_time }}{% if event.end_time %} - {{ event.end_time }}{% endif %}</small></p>
+                  <p>{{ event.description }}</p>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="{{ event.url }}" class="btn btn-secondary">Read More</a>
               </div>
             </div>
-            <div class="card-footer">
-              <a href="{{ event.url }}" class="btn btn-secondary">Read More</a>
-            </div>
           </div>
+          {% endif %}
+          {% endfor %}
         </div>
-        {% endif %}
-        {% endfor %}
       </div>
     </div>
   </div>

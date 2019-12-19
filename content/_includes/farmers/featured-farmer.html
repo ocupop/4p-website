@@ -6,7 +6,11 @@
       <div class="row">
         <div class="col-12">
           <h4>{{ featured_farmer.title }}</h4>
-          <p>{{ featured_farmer.description }}</p>
+          {% if featured_farmer.description %}
+            <p>{{ featured_farmer.description }}</p>
+          {% else %}
+            <p>{{ featured_farmer.content | strip_html | truncatewords: 75 }}</p>
+          {% endif %}
         </div>
       </div>
       <div class="row">

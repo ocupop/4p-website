@@ -6,37 +6,20 @@
   background-color: $white;
   box-shadow: 0 0 10px rgba($black, 0.2);
   z-index: 99;
-  #mainnav {
-    padding: 0.5rem 0;
-  }
-  #usernav {
-    padding: 0 0.5rem;
-  }
-  .nav-item {
-    .nav-link {
-      color: $gray-600;
-      text-transform: uppercase;
-      padding: 10px 20px;
-      font-size: 20px;
-    }
-  }
-  .navbar-brand {
-    width: 200px;
-  }
+  
+  
   @include media-breakpoint-down(lg) {
     .container {
       max-width: 100%;
     }
   }
-  @include media-breakpoint-down(sm) {
-    position: relative;
-  }
 }
 
 #pageContent {
   padding-top: 117px;
-  @include media-breakpoint-down(md) {
-    padding-top: 0px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 58px;
+    overflow: hidden;
   }
 }
 #pageFooter {
@@ -49,6 +32,10 @@
     padding: 5px 0;
     text-transform: none;
     color: $body-color;
+  }
+
+  .navbar-brand {
+    max-width: 200px;
   }
 
   .social {
@@ -68,6 +55,15 @@
       width: 25%;
       padding-top: 7px;
       padding-bottom: 7px;
+    }
+  }
+}
+
+#tryUsToday {
+  @include media-breakpoint-down(md) {
+    .btn {
+      font-size: 25px;
+      line-height: 1.3;
     }
   }
 }

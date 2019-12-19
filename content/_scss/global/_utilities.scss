@@ -199,22 +199,22 @@
   }
 }
 
-.cards {
-  display: flex;
-  flex-flow: wrap;
-  .card {
-    width: calc(25% - 2rem);
-    margin: 1rem;
-    flex: inherit;
-    color: $dark;
-    &:hover {
-      text-decoration: none;
-    }
-    .card-img-top {
-      padding-top: 50%;
-    }
-  }
-}
+// .cards {
+//   display: flex;
+//   flex-flow: wrap;
+//   .card {
+//     width: calc(25% - 2rem);
+//     margin: 1rem;
+//     flex: inherit;
+//     color: $dark;
+//     &:hover {
+//       text-decoration: none;
+//     }
+//     .card-img-top {
+//       padding-top: 50%;
+//     }
+//   }
+// }
 
 .responsive-card-deck {
   @include make-responsive-cards();
@@ -288,6 +288,10 @@
   flex-flow: row wrap;
   margin-right: -30px;
   margin-left: -30px;
+  padding: 30px;
+  @include media-breakpoint-up(sm) {
+    padding: 0;
+  }
   .card {
     position: relative;
     display: flex;
@@ -325,6 +329,7 @@
         }
         .card-body {
           flex: auto;
+          
         }
         .card-footer {
           flex: initial;
@@ -345,7 +350,8 @@
         max-width: 100%;
       }
       .content {
-        padding: 3rem 0;
+        padding: 0;
+        // padding: 3rem 0;
         text-align: center;
         @include media-breakpoint-up(sm) {
           padding: 0;
@@ -364,6 +370,7 @@
       @include media-breakpoint-up(sm) {
         flex: 0 0 66%;
         max-width: 66%;
+
       }
       @include media-breakpoint-up(xl) {
         flex: 0 0 100%;
@@ -380,6 +387,14 @@
       padding: 0 1.25rem;
       border: 0;
       background-color: transparent;
+      .btn {
+        width: 100%;
+      }
+      @include media-breakpoint-up(md) {
+        .btn {
+          width: auto;
+        }
+      }
     }
   }
 }
@@ -455,9 +470,12 @@
           padding: 0;
         }
         img {
-          width: 75%;
+          width: 50%;
           max-width: 100%;
           height: auto;
+          @include media-breakpoint-up(sm) {
+            width: 75%;
+          }
         }
       }
     }

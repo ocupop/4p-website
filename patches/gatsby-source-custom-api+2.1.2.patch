@@ -1,0 +1,12 @@
+diff --git a/node_modules/gatsby-source-custom-api/utils/buildNode.js b/node_modules/gatsby-source-custom-api/utils/buildNode.js
+index 2e0d928..b617dd1 100644
+--- a/node_modules/gatsby-source-custom-api/utils/buildNode.js
++++ b/node_modules/gatsby-source-custom-api/utils/buildNode.js
+@@ -11,7 +11,6 @@ module.exports = ({
+     children: [],
+     internal: {
+       type: name,
+-      url: data && data.url,
+       content: JSON.stringify(data),
+       contentDigest: createContentDigest(data)
+     }

@@ -27,18 +27,27 @@ _assets:
 <section>
   <div class="container">
     {% assign careers = site.careers | sort: 'posted_date' | reversed %}
-    {% for career in careers %}
-      <hr />
+    {% assign num_careers = careers | size %}
+    {% if num_careers > 0 %}
+      {% for career in careers %}
+        <hr />
+        <div class="row">
+          <div class="col-12">
+            <h4>{{ career.title }}</h4>
+            <p><strong>{{ career.location }}</strong> <em>Job posted {{ career.posted_date | date: '%m/%d/%Y' }}</em></p>
+            <p>{{ career.description }}</p>
+            <a href="{{ career.url }}" class="btn btn-secondary">Learn More and Apply</a>
+          </div>
+        </div>
+        <hr />
+      {% endfor %}
+    {% else %}
       <div class="row">
         <div class="col-12">
-          <h4>{{ career.title }}</h4>
-          <p><strong>{{ career.location }}</strong> <em>Job posted {{ career.posted_date | date: '%m/%d/%Y' }}</em></p>
-          <p>{{ career.description }}</p>
-          <a href="{{ career.url }}" class="btn btn-secondary">Learn More and Apply</a>
+          <h1>No careers message here...</h1>
         </div>
       </div>
-      <hr />
-    {% endfor %}
+    {% endif %}
   </div>
 </section>
 {% include careers/volunteer.html %}

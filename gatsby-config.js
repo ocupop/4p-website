@@ -46,21 +46,38 @@ module.exports = {
         path: `${__dirname}/content/_includes/ui`,
       },
     },
-    // {
-    //   resolve: "gatsby-source-custom-api",
-    //   options: {
-    //     url: "https://694a7606.ngrok.io/api/pages.json"
-    //   }
-    // },
     {
       resolve: "gatsby-source-custom-api",
       options: {
-        url: {
-          development: "https://694a7606.ngrok.io/api/pages.json", // on "gatsby develop"
-          production: "https://cms.4pfoods.com/api/pages.json" // on "gatsby build"
-        },
+        url: "https://cms.4pfoods.com/api/pages.json",
         // imageKeys: ["images"],
         rootKey: "pages",
+        schemas: {
+          pages: `
+            title: String
+          `
+        }
+      }
+    },
+    {
+      resolve: "gatsby-source-custom-api",
+      options: {
+        url: "https://cms.4pfoods.com/api/farmers.json",
+        // imageKeys: ["images"],
+        rootKey: "farmers",
+        schemas: {
+          pages: `
+            title: String
+          `
+        }
+      }
+    },
+    {
+      resolve: "gatsby-source-custom-api",
+      options: {
+        url: "https://cms.4pfoods.com/api/events.json",
+        // imageKeys: ["images"],
+        rootKey: "events",
         schemas: {
           pages: `
             title: String

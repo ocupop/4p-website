@@ -39,10 +39,6 @@ collections:
 
 defaults:
   - scope:
-      type: 'pages'
-    values:
-      layout: page
-  - scope:
       type: 'team_members'
     values:
       layout: team_member
@@ -74,16 +70,16 @@ defaults:
     values:
       layout: post
       _options:
-        featured_image: 
+        featured_image:
           uploads_dir: "img/uploads/posts/"
   - scope:
       type: 'newsletters'
     values:
       _options:
-        featured_image: 
-          uploads_dir: "img/uploads/newsletters/"      
+        featured_image:
+          uploads_dir: "img/uploads/newsletters/"
 
-            
+
 
 
 
@@ -121,7 +117,7 @@ _array_structures:
         link:
   links:
     - label: Links
-      icon: link 
+      icon: link
       value:
         url:
         label:

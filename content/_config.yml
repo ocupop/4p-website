@@ -36,6 +36,8 @@ collections:
   posts:
     output: true
     permalink: /posts/:title/
+  featured_products:
+    output: false
 
 defaults:
   - scope:

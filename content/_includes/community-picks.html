@@ -9,7 +9,8 @@
       </div>
     </div>
     <div class="responsive-card-deck cards-lg-2 mt-5">
-      {% for product in page.products %}
+      {% for slug in page.featured_products %}
+      {% assign product = site.featured_products | where: "slug", slug | first %}
       <div class="card mb-4">
         <div class="bg-image aspect-16x9"
           style="background-image: url({{ product.image | default: 'https://via.placeholder.com/800x500' }})"></div>

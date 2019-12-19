@@ -1,5 +1,5 @@
 ---
-layout: food-access-programs
+layout: page
 title: Food Access Programs
 meta:
 footer_image: '/img/uploads/food-access-programs/4P-footer-06.jpg'
@@ -141,6 +141,35 @@ _assets:
 <section class="pt-0">
   <div class="container">
     {% include news/featured-news-list.html %}
+  </div>
+</section>
+<section class="bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Good Food Resources</h2>
+        <p>Are you or your family struggling to access Good Food? Click here to learn more about resources that can
+          help.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="responsive-card-deck cards-lg-3 cards-md-2 mt-5">
+          {% for resource in page.food_resources %}
+          <div class="card bg-transparent">
+            <div class="bg-image aspect-4x3" style="background-image: url({{ resource.image }})"></div>
+            <div class="card-body">
+              <h5 class="text-white">{{ resource.name }}</h5>
+              <p>{{ resource.description }}</p>
+            </div>
+            <div class="card-footer bg-transparent">
+              <a href="{{ resource.link }}" class="btn btn-secondary">Read More</a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <!-- <featured-news></featured-news> -->

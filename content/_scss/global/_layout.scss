@@ -57,7 +57,17 @@
       font-size: 22px;
     }
   }
-  input[type="text"] {
-    border: 2px solid $beige;
+  .form-group {
+    width: 100%;
+    input {
+      width: 75%;
+      max-width: 300px;
+      border: 2px solid $gray-300;
+    }
+    .btn {
+      width: 25%;
+      padding-top: 7px;
+      padding-bottom: 7px;
+    }
   }
 }

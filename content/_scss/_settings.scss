@@ -2,7 +2,7 @@
 $white: #ffffff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #efebe5;
-$gray-300: #b3b3b3;
+$gray-300: #f4f2f2;
 $gray-400: #a7a9ac;
 $gray-500: #999999;
 $gray-600: #808080;
@@ -49,6 +49,7 @@ $theme-colors: (
   "white": $white,
   "black": $black,
   "gray": $gray-700,
+  "gray-300": $gray-300,
   "gray-600": $gray-600,
   "tan": $beige,
   "tan-dark": $beige-darker,

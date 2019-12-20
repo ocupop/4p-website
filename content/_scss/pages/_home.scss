@@ -1,15 +1,17 @@
 #community-picks {
-  .card {
-    position: relative;
-    .card-footer {
-      color: $white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: rgba($gray-600, 0.4);
-      h5 {
+  @include media-breakpoint-up(sm) {
+    .card {
+      position: relative;
+      .card-footer {
         color: $white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba($gray-600, 0.4);
+        h5 {
+          color: $white;
+        }
       }
     }
   }

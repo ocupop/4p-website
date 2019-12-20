@@ -59,9 +59,13 @@ module.exports = {
             meta: meta
             footer_image: String
             content: String
+            _assets: assets
           `,
           meta: `
             description: String
+            image: String
+          `,
+          assets: `
             image: String
           `
         }

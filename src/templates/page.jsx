@@ -23,14 +23,15 @@ const parseOptions = {
 
 
 const PageTemplate = ({
-  data: {
-    contentPage: {
-      htmlContent,
-      frontmatter: {
-        footer_image
-      }
-    }
-  } }) => {
+  // data: {
+  //   contentPage: {
+  //     htmlContent,
+  //     frontmatter: {
+  //       footer_image
+  //     }
+  //   }
+  // }
+ }) => {
 
   return (
     <>
@@ -43,15 +44,15 @@ const PageTemplate = ({
 }
 
 
-export const query = graphql`
-  query($id: String!) {
-    contentPage(id: {eq: $id }) {
-      title
-      htmlContent
-      frontmatter {
-        footer_image
-      }
-    }
-  }`
+// export const query = graphql`
+//   query($id: String!) {
+//     contentPage(id: {eq: $id }) {
+//       title
+//       htmlContent
+//       frontmatter {
+//         footer_image
+//       }
+//     }
+//   }`
 
 export default PageTemplate

@@ -16,10 +16,10 @@
 }
 
 #pageContent {
-  padding-top: 117px;
+  padding-top: 110px;
+  overflow: hidden;
   @include media-breakpoint-down(lg) {
     padding-top: 58px;
-    overflow: hidden;
   }
 }
 #pageFooter {

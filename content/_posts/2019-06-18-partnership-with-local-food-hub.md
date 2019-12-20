@@ -2,7 +2,7 @@
 layout: post
 title: Partnership with Local Food Hub
 date: 2019-06-18 11:45:00
-featured_image: /uploads/4p-lfh-partnership-announcement-1024x1024.png
+featured_image: /uploads/4p-lfh-partnership-announcement-1024x1024.jpg
 assets:
 tags:
 ---

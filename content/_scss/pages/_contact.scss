@@ -22,3 +22,32 @@
     background-color: $secondary;
   }
 }
+
+// Preloader behavior for cognito form
+.preloader {
+  display: none;
+  &::before {
+    content: '';
+    display: block;
+    z-index: 1;
+    border: 3px solid $white;
+    border-top: 3px solid $gray-500;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  }
+}
+
+/* Override the default invisibility if the preloader doesn't have a form after it. */
+.preloader:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

@@ -6,56 +6,47 @@
 //  */
 
 const path = require(`path`);
-const matter = require(`gray-matter`);
-const _ = require(`lodash`);
-const slugify = require('slugify');
+// const matter = require(`gray-matter`);
+// const _ = require(`lodash`);
+// const slugify = require('slugify');
 
 
 
-// exports.createPages = async ({ graphql, actions }) => {
-//   const { createPage } = actions
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
 
-//   // TODO: determine better pattern
-//   const pages = await graphql(`
-//     query {
-//       allContentPage {
-//         edges {
-//           node {
-//             id
-//             title
-//             layout
-//           }
-//         }
-//       }
-//     }
-//   `).then(result => {
-//     // Build Web Pages
-//     result.data.allContentPage.edges.forEach(({ node }) => {
-//       let slug = '/'
-//       const component = path.resolve(`./src/templates/${node.layout}.jsx`)
-//       if (node.layout !== 'homepage') {
-//         slug = slugify(node.title, {
-//           remove: /[*+~.()'"!:@]/g,
-//           lower: true
-//         })
-//       }
+  // TODO: determine better pattern
+  await graphql(`
+    query {
+      allPages {
+        edges {
+          node {
+            id
+            url
+            layout
+          }
+        }
+      }
+    }
+  `).then(result => {
+    // Build Web Pages
+    result.data.allPages.edges.forEach(({ node: { layout, url, id } }) => {
+      const component = path.resolve(`./src/templates/${layout}.jsx`)
 
-//       // TODO: Add solution for different Gatsby layouts
-//       // const layout = node.layout === 'splash' ? 'splash' : 'index'
+      // TODO: Add solution for different Gatsby layouts
+      // const layout = node.layout === 'splash' ? 'splash' : 'index'
 
+      createPage({
+        component,
+        path: url,
+        context: {
+          id
+        },
+      })
+    })
+  })
 
-//       createPage({
-//         component,
-//         path: slug,
-//         context: {
-//           // Data passed to context is available in page queries as GraphQL variables.
-//           id: node.id,
-//         },
-//       })
-//     })
-//   })
-
-// }
+}
 
 
 // exports.onCreateNode = async ({

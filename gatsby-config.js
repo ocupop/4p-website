@@ -54,7 +54,15 @@ module.exports = {
         rootKey: "pages",
         schemas: {
           pages: `
+            layout: String
             title: String
+            meta: meta
+            footer_image: String
+            content: String
+          `,
+          meta: `
+            description: String
+            image: String
           `
         }
       }
@@ -110,7 +118,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/img/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `content/img/4p-foods-logo-color.png`, // This path is relative to the root of the site.
       },
     },
     // {

@@ -23,28 +23,28 @@ food_resources:
     image: https://via.placeholder.com/500x350
     link:
 _assets:
-  asset1_image: '/img/uploads/food-access-programs/4p-foodaccess-headerimages-01.jpg'
-  asset2_image: '/img/uploads/food-access-programs/4p-foodaccess-headerimages-02.jpg'
-  asset3_image: '/img/uploads/food-access-programs/4p-foodaccess-headerimages-03.jpg'
+  - image: '/img/uploads/food-access-programs/4p-foodaccess-headerimages-01.jpg'
+  - image: '/img/uploads/food-access-programs/4p-foodaccess-headerimages-02.jpg'
+  - image: '/img/uploads/food-access-programs/4p-foodaccess-headerimages-03.jpg'
 ---
 
 <div class="row no-gutters">
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets.asset1_image }}')"
-        data-cms-editor-link="cloudcannon:#_assets.asset1_image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[0].image }}')"
+        data-cms-editor-link="cloudcannon:#_assets[0].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets.asset2_image }}')"
-        data-cms-editor-link="cloudcannon:#_assets.asset2_image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[1].image }}')"
+        data-cms-editor-link="cloudcannon:#_assets[1].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets.asset3_image }}')"
-        data-cms-editor-link="cloudcannon:#_assets.asset3_image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[2].image }}')"
+        data-cms-editor-link="cloudcannon:#_assets[2].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
 </div>

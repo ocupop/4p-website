@@ -7,10 +7,13 @@ permalink: api/pages
   {% if page.layout == 'page' %}
     {
       {% for var in page %}
+      {% unless var[0] == 'url' %}
       "{{ var[0] }}": {{ var[1] | jsonify }}{% unless forloop.last %},{% endunless %}
+      {%endunless%}
       {% endfor %}
     }{% unless forloop.last %},{% endunless %}
   {% endif %}
 {% endfor %}
 ]
 
+ 

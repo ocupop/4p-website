@@ -91,7 +91,8 @@
     "serve": "gatsby serve",
     "deploy": "npm run build && netlify deploy",
     "cms": "gulp dev",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "postinstall": "patch-package && gulp dev:install"
   },
   "repository": {
     "type": "git",

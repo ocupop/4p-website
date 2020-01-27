@@ -21,6 +21,7 @@ const parseOptions = {
   }
 }
 
+
 const PageTemplate = ({
   data: {
     pages: {

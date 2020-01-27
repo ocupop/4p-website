@@ -4,15 +4,14 @@ permalink: api/farmers
 ---
 [
 {% for farmer in site.farmers %}
-
     {
       {% for var in farmer %}
         {% unless var == 'next' or var == 'content' or var == 'previous' or var == 'excerpt' %}
         {% if var[0] == 'id' %}
-        "farmerId": {{ farmer[var] | jsonify }}{% unless forloop.last %},{% endunless %}
-
+          "farmerId": {{ farmer[var] | jsonify }}{% unless forloop.last %},{% endunless %}
         {% else %}
           "{{ var }}": {{ farmer[var] | jsonify }}{% unless forloop.last %},{% endunless %}
+        {% endif %}
         {% endunless %}
       {% endfor %}
     }{% unless forloop.last %},{% endunless %}

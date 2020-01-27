@@ -4,11 +4,10 @@
 //  *
 //  * See: https://www.gatsbyjs.org/docs/node-apis/
 //  */
-
 const path = require(`path`);
-// const matter = require(`gray-matter`);
-// const _ = require(`lodash`);
-// const slugify = require('slugify');
+const matter = require(`gray-matter`);
+const _ = require(`lodash`);
+const slugify = require('slugify');
 
 
 
@@ -22,7 +21,7 @@ exports.createPages = async ({ graphql, actions }) => {
         edges {
           node {
             id
-            url
+            pageUrl
             layout
           }
         }
@@ -30,7 +29,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `).then(result => {
     // Build Web Pages
-    result.data.allPages.edges.forEach(({ node: { layout, url, id } }) => {
+    result.data.allPages.edges.forEach(({ node: { layout, pageUrl, id } }) => {
       const component = path.resolve(`./src/templates/${layout}.jsx`)
 
       // TODO: Add solution for different Gatsby layouts
@@ -38,7 +37,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
       createPage({
         component,
-        path: url,
+        path: pageUrl,
         context: {
           id
         },
@@ -46,24 +45,68 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
+// getting farmers...
+//   await graphql(`
+//   query {
+//     allFarmers {
+//       edges {
+//         node {
+//           id
+//         }
+//       }
+//     }
+//   }
+// `).then(result => {
+//   // Build Web Pages
+//   result.data.allPages.edges.forEach(({ node: { layout, pageUrl, id } }) => {
+//     const component = path.resolve(`./src/templates/${layout}.jsx`)
+
+//     // TODO: Add solution for different Gatsby layouts
+//     // const layout = node.layout === 'splash' ? 'splash' : 'index'
+
+//     createPage({
+//       component,
+//       path: pageUrl,
+//       context: {
+//         id
+//       },
+//     })
+//   })
+// })
+
+
+
+
 }
 
 
-// exports.onCreateNode = async ({
-//   node,
-//   loadNodeContent,
-//   actions,
-//   createNodeId,
-//   reporter,
-//   createContentDigest
-// }) => {
+// exports.createPages = async ({ graphql, actions }) => {
+// console.log("this was run")
+// }
+
+// exports.onCreateNode = async (props) => {
+
+//   const {
+//     node,
+//     loadNodeContent,
+//     actions,
+//     createNodeId,
+//     reporter,
+//     createContentDigest
+//   } = props
+  
 
 //   const { createNode, createParentChildLink } = actions
 
 //   // only log for Standalone Pages
+
+//   // what is a media type
+//   // image, json (contenttype:json)
 //   if (node.internal.mediaType !== `text/html` || node.name === '_defaults') {
 //     return
 //   }
+
+
 //   const nodeContent = await loadNodeContent(node)
 
 //   try {

@@ -1,7 +1,7 @@
 const proxy = require('http-proxy-middleware')
 
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`
+  path: `.env.${process.env.NODE_ENV}`,
 })
 
 module.exports = {
@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        includePaths: ["content/_scss"],
+        includePaths: ['content/_scss'],
       },
     },
     {
@@ -31,6 +31,8 @@ module.exports = {
         name: 'images',
       },
     },
+    // maintain jekyll build, but pull it in as a datasource
+    // but mainitain medoa types
     // {
     //   resolve: 'gatsby-source-filesystem',
     //   options: {
@@ -39,19 +41,28 @@ module.exports = {
     //     ignore: [`**/\.*`], // ignore files starting with a dot
     //   },
     // },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'ui',
+    //     path: `${__dirname}/content/_includes/ui`,
+    //   },
+    // },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'farmers',
+    //     path: `${__dirname}/content/_farmers`,
+    //   },
+    // },
+
+    // Getting pages
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: 'gatsby-source-custom-api',
       options: {
-        name: 'ui',
-        path: `${__dirname}/content/_includes/ui`,
-      },
-    },
-    {
-      resolve: "gatsby-source-custom-api",
-      options: {
-        url: "https://cms.4pfoods.com/api/pages",
+        url: 'https://cms.4pfoods.com/api/pages',
         // imageKeys: ["images"],
-        rootKey: "pages",
+        rootKey: 'pages',
         schemas: {
           pages: `
             layout: String
@@ -67,23 +78,37 @@ module.exports = {
           `,
           assets: `
             image: String
-          `
-        }
-      }
+          `,
+        },
+      },
     },
-    // {
-    //   resolve: "gatsby-source-custom-api",
-    //   options: {
-    //     url: "https://cms.4pfoods.com/api/farmers.json",
-    //     // imageKeys: ["images"],
-    //     rootKey: "farmers",
-    //     schemas: {
-    //       pages: `
-    //         title: String
-    //       `
-    //     }
-    //   }
-    // },
+
+    // Getting Farmers
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: 'https://cms.4pfoods.com/api/farmers.json',
+        // imageKeys: ["images"],
+        rootKey: 'farmers',
+        schemas: {
+          farmers: `
+            farmerId: String
+            output: String
+            layout: String
+            title: String
+          `,
+          options:`
+            image: uploadsDir
+            featured_image: uploadsDir
+          `,
+          uploadsDir:`
+            uploads_dir: String
+          `
+        },
+      },
+    },
+
+
     // {
     //   resolve: "gatsby-source-custom-api",
     //   options: {
@@ -98,7 +123,7 @@ module.exports = {
     //   }
     // },
     {
-      resolve: "gatsby-theme-firebase",
+      resolve: 'gatsby-theme-firebase',
       options: {
         credentials: {
           apiKey: process.env.FIREBASE_API_KEY,
@@ -109,7 +134,7 @@ module.exports = {
           messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
           appId: process.env.FIREBASE_APP_ID,
         },
-        socialLogins: ["google", "facebook", "github"],
+        socialLogins: ['google', 'facebook', 'github'],
       },
     },
 
@@ -184,7 +209,7 @@ module.exports = {
         pathRewrite: {
           '/.netlify/functions/': '',
         },
-      })
+      }),
     )
   },
 }

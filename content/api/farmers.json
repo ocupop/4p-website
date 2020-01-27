@@ -13,7 +13,7 @@ permalink: api/farmers
 
         {% else %}
           "{{ var }}": {{ farmer[var] | jsonify }}{% unless forloop.last %},{% endunless %}
-        {% endunless %}
+        {% endif %}
       {% endfor %}
     }{% unless forloop.last %},{% endunless %}
 

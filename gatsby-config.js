@@ -84,31 +84,31 @@ module.exports = {
     },
 
     // Getting Farmers
-    {
-      resolve: 'gatsby-source-custom-api',
-      options: {
-        url: 'https://cms.4pfoods.com/api/farmers.json',
-        // imageKeys: ["images"],
-        rootKey: 'farmers',
-        schemas: {
-          farmers: `
-            farmerId: String
-            output: String
-            layout: String
-            title: String
-          `,
-          options:`
-            image: uploadsDir
-            featured_image: uploadsDir
-          `,
-          uploadsDir:`
-            uploads_dir: String
-          `
-        },
-      },
-    },
+    // {
+    //   resolve: 'gatsby-source-custom-api',
+    //   options: {
+    //     url: 'https://cms.4pfoods.com/api/farmers.json',
+    //     // imageKeys: ["images"],
+    //     rootKey: 'farmers',
+    //     schemas: {
+    //       farmers: `
+    //         farmerId: String
+    //         output: String
+    //         layout: String
+    //         title: String
+    //       `,
+    //       options:`
+    //         image: uploadsDir
+    //         featured_image: uploadsDir
+    //       `,
+    //       uploadsDir:`
+    //         uploads_dir: String
+    //       `
+    //     },
+    //   },
+    // },
 
-
+    // Getting Events
     // {
     //   resolve: "gatsby-source-custom-api",
     //   options: {
@@ -122,6 +122,37 @@ module.exports = {
     //     }
     //   }
     // },
+    {
+      resolve: 'gatsby-source-firestore',
+      options: {
+        // credential: require("./firebaseKey.json"),
+        credential: {
+          type: process.env.FIREBASE_TYPE,
+          project_id: process.env.FIREBASE_PROJECT_ID,
+          private_key_id: process.env.FIREBASE_PRIVATE_KEY_ID,
+          private_key: process.env.FIREBASE_PRIVATE_KEY,
+          client_email:process.env.FIREBASE_CLIENT_EMAIL,
+          client_id:process.env.FIREBASE_CLIENT_ID,
+          auth_uri:process.env.FIREBASE_AUTH_URI,
+          token_uri:process.env.FIREBASE_TOKEN_URI,
+          auth_provider_x509_cert_url:process.env.FIREBASE_PROVIDER_X509_CERT_URL,
+          client_x509_cert_url:process.env.FIREBASE_X509_CERT_URL,
+        },
+        databaseURL:process.env.FIREBASE_DATABASE_URL,
+        types: [
+          {
+            type: 'Products',
+            collection: 'products',
+            path: 'product/products1',
+            map: doc => ({
+              category: doc.category,
+              department: doc.department,
+              // author___NODE: doc.author.id,
+            }),
+          },
+        ],
+      },
+    },
     {
       resolve: 'gatsby-theme-firebase',
       options: {
@@ -137,7 +168,6 @@ module.exports = {
         socialLogins: ['google', 'facebook', 'github'],
       },
     },
-
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

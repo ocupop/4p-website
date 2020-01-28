@@ -74,6 +74,37 @@ exports.createPages = async ({ graphql, actions }) => {
 //   })
 // })
 
+// build out products
+  await graphql(`
+    query {
+      allProducts {
+        edges {
+          node {
+            id
+            department
+            category
+          }
+        }
+      }
+    }
+`).then(result => {
+  // Build Web Pages
+  result.data.allProducts.edges.forEach(({ node: { id } }) => {
+    const component = path.resolve(`./src/templates/product-detail.jsx`)
+
+    // TODO: Add solution for different Gatsby layouts
+    // const layout = node.layout === 'splash' ? 'splash' : 'index'
+
+    createPage({
+      component,
+      path: `product-detail/${id}`,
+      context: {
+        id
+      },
+    })
+  })
+})
+
 
 
 

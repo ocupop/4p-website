@@ -125,7 +125,6 @@ module.exports = {
     {
       resolve: 'gatsby-source-firestore',
       options: {
-        // credential: require("./firebaseKey.json"),
         credential: {
           type: process.env.FIREBASE_TYPE,
           project_id: process.env.FIREBASE_PROJECT_ID,

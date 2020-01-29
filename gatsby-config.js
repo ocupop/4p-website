@@ -1,8 +1,23 @@
 const proxy = require('http-proxy-middleware')
 
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`
+  path: `.env.${process.env.NODE_ENV}`,
 })
+
+const fbCreds = {
+  type: process.env.FIREBASE_TYPE,
+  project_id: process.env.FIREBASE_PROJECT_ID,
+  private_key_id: process.env.FIREBASE_PRIVATE_KEY_ID,
+  private_key: process.env.FIREBASE_PRIVATE_KEY,
+  client_email:process.env.FIREBASE_CLIENT_EMAIL,
+  client_id:process.env.FIREBASE_CLIENT_ID,
+  auth_uri:process.env.FIREBASE_AUTH_URI,
+  token_uri:process.env.FIREBASE_TOKEN_URI,
+  auth_provider_x509_cert_url:process.env.FIREBASE_PROVIDER_X509_CERT_URL,
+  client_x509_cert_url:process.env.FIREBASE_X509_CERT_URL,
+}
+
+// console.log(fbCreds)
 
 module.exports = {
   siteMetadata: {
@@ -20,7 +35,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        includePaths: ["content/_scss"],
+        includePaths: ['content/_scss'],
       },
     },
     {
@@ -31,6 +46,8 @@ module.exports = {
         name: 'images',
       },
     },
+    // maintain jekyll build, but pull it in as a datasource
+    // but mainitain medoa types
     // {
     //   resolve: 'gatsby-source-filesystem',
     //   options: {
@@ -39,19 +56,28 @@ module.exports = {
     //     ignore: [`**/\.*`], // ignore files starting with a dot
     //   },
     // },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'ui',
+    //     path: `${__dirname}/content/_includes/ui`,
+    //   },
+    // },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'farmers',
+    //     path: `${__dirname}/content/_farmers`,
+    //   },
+    // },
+
+    // Getting pages
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: 'gatsby-source-custom-api',
       options: {
-        name: 'ui',
-        path: `${__dirname}/content/_includes/ui`,
-      },
-    },
-    {
-      resolve: "gatsby-source-custom-api",
-      options: {
-        url: "https://cms.4pfoods.com/api/pages",
+        url: 'https://cms.4pfoods.com/api/pages',
         // imageKeys: ["images"],
-        rootKey: "pages",
+        rootKey: 'pages',
         schemas: {
           pages: `
             layout: String
@@ -67,23 +93,37 @@ module.exports = {
           `,
           assets: `
             image: String
-          `
-        }
-      }
+          `,
+        },
+      },
     },
+
+    // Getting Farmers
     // {
-    //   resolve: "gatsby-source-custom-api",
+    //   resolve: 'gatsby-source-custom-api',
     //   options: {
-    //     url: "https://cms.4pfoods.com/api/farmers.json",
+    //     url: 'https://cms.4pfoods.com/api/farmers.json',
     //     // imageKeys: ["images"],
-    //     rootKey: "farmers",
+    //     rootKey: 'farmers',
     //     schemas: {
-    //       pages: `
+    //       farmers: `
+    //         farmerId: String
+    //         output: String
+    //         layout: String
     //         title: String
+    //       `,
+    //       options:`
+    //         image: uploadsDir
+    //         featured_image: uploadsDir
+    //       `,
+    //       uploadsDir:`
+    //         uploads_dir: String
     //       `
-    //     }
-    //   }
+    //     },
+    //   },
     // },
+
+    // Getting Events
     // {
     //   resolve: "gatsby-source-custom-api",
     //   options: {
@@ -97,8 +137,29 @@ module.exports = {
     //     }
     //   }
     // },
+    // {
+    //   resolve: 'gatsby-source-firestore',
+    //   options: {
+    //     credential: fbCreds,
+    //     // credential: require('./firebaseKey.json'),
+    //     databaseURL:process.env.FIREBASE_DATABASE_URL,
+    //     types: [
+    //       {
+    //         type: 'Products',
+    //         collection: 'products',
+    //         map: doc => ({
+    //           name: doc.name,
+    //           category: doc.category,
+    //           department: doc.department,
+    //           variants: doc.variants
+    //           // author___NODE: doc.author.id,
+    //         }),
+    //       },
+    //     ],
+    //   },
+    // },
     {
-      resolve: "gatsby-theme-firebase",
+      resolve: 'gatsby-theme-firebase',
       options: {
         credentials: {
           apiKey: process.env.FIREBASE_API_KEY,
@@ -109,10 +170,9 @@ module.exports = {
           messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
           appId: process.env.FIREBASE_APP_ID,
         },
-        socialLogins: ["google", "facebook", "github"],
+        socialLogins: ['google', 'facebook', 'github'],
       },
     },
-
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -184,7 +244,7 @@ module.exports = {
         pathRewrite: {
           '/.netlify/functions/': '',
         },
-      })
+      }),
     )
   },
 }

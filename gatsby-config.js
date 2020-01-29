@@ -137,27 +137,27 @@ module.exports = {
     //     }
     //   }
     // },
-    {
-      resolve: 'gatsby-source-firestore',
-      options: {
-        // credential: fbCreds,
-        credential: require('./firebaseKey.json'),
-        databaseURL:process.env.FIREBASE_DATABASE_URL,
-        types: [
-          {
-            type: 'Products',
-            collection: 'products',
-            map: doc => ({
-              name: doc.name,
-              category: doc.category,
-              department: doc.department,
-              variants: doc.variants
-              // author___NODE: doc.author.id,
-            }),
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: 'gatsby-source-firestore',
+    //   options: {
+    //     // credential: fbCreds,
+    //     credential: require('./firebaseKey.json'),
+    //     databaseURL:process.env.FIREBASE_DATABASE_URL,
+    //     types: [
+    //       {
+    //         type: 'Products',
+    //         collection: 'products',
+    //         map: doc => ({
+    //           name: doc.name,
+    //           category: doc.category,
+    //           department: doc.department,
+    //           variants: doc.variants
+    //           // author___NODE: doc.author.id,
+    //         }),
+    //       },
+    //     ],
+    //   },
+    // },
     {
       resolve: 'gatsby-theme-firebase',
       options: {

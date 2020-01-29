@@ -1,17 +1,15 @@
 import React from 'react'
-import mockProducts from '../mockData/products.json'
+import { graphql } from 'gatsby'
 import Header from '../components/ui/header'
 import Footer from '../components/ui/footer'
-import Tag from '../components/ui/tag'
 import ProductVariant from '../components/products/ProductVariant'
 
-const Products = () => {
-  const mockMustardProduct = mockProducts.data.allProducts.edges[0].node
+const ProductList = ({ data }) => {
   return (
     <div>
       <Header siteTitle="Shop Home" />
       <h1>Showing Product List</h1>
-      {mockProducts.data.allProducts.edges.map(products => {
+      {data.allProducts.edges.map(products => {
         return products.node.variants.map(variant => {
           return <ProductVariant key={variant.sku} variant={variant} />
         })
@@ -22,4 +20,32 @@ const Products = () => {
   )
 }
 
-export default Products
+export const query = graphql`
+  {
+    allProducts {
+      edges {
+        node {
+          id
+          department
+          name
+          variants {
+            unit
+            price
+            available
+            nutritionalLabel
+            description
+            storageTips
+            label
+            name
+            featuredImage
+            quantity
+            sku
+            nutritionalFacts
+          }
+        }
+      }
+    }
+  }
+`
+
+export default ProductList

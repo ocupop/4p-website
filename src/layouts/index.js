@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import HEAD from "../components/ui/head"
+import HEAD from "../components/ui/Head"
 // import Header from '../components/ui/header'
 // import Footer from '../components/ui/footer'
 import 'remixicon/fonts/remixicon.css'

@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../components/ui/header'
-import Footer from '../components/ui/footer'
-import Tag from '../components/ui/tag'
+import Header from '../components/ui/Header'
+import Footer from '../components/ui/Footer'
+import Tag from '../components/ui/Tag'
 import ProductVariant from '../components/products/ProductVariant'
 
 const ProductDetail = ({ data }) => {

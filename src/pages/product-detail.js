@@ -1,12 +1,11 @@
 import React from 'react'
-import mockProducts from '../mockData/products.json'
 import Header from '../components/ui/header'
 import Footer from '../components/ui/footer'
 import Tag from '../components/ui/tag'
 import ProductVariant from '../components/products/ProductVariant'
 
-const ProductDetail = () => {
-  const mockMustardProduct = mockProducts.data.allProducts.edges[0].node
+const ProductDetail = ({ data }) => {
+  const mustardProduct = data.allProducts.edges[0].node
   return (
     <div>
       <Header siteTitle="Shop Home" />
@@ -16,7 +15,7 @@ const ProductDetail = () => {
       <Tag name="Tag2" />
       <Tag name="Tag3" />
       <h2>We Recommend</h2>
-      {mockMustardProduct.variants.map(variant => {
+      {mustardProduct.variants.map(variant => {
         return <ProductVariant key={variant.sku} variant={variant} />
       })}
 
@@ -24,5 +23,33 @@ const ProductDetail = () => {
     </div>
   )
 }
+
+export const query = graphql`
+  {
+    allProducts {
+      edges {
+        node {
+          id
+          department
+          name
+          variants {
+            unit
+            price
+            available
+            nutritionalLabel
+            description
+            storageTips
+            label
+            name
+            featuredImage
+            quantity
+            sku
+            nutritionalFacts
+          }
+        }
+      }
+    }
+  }
+`
 
 export default ProductDetail

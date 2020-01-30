@@ -4,8 +4,8 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-//const API_BASE_URL = 'http://localhost:4000'
-const API_BASE_URL = 'https://cms.4pfoods.com'
+const API_BASE_URL = 'http://localhost:4000'
+//const API_BASE_URL = 'https://cms.4pfoods.com'
 
 module.exports = {
   siteMetadata: {
@@ -34,47 +34,22 @@ module.exports = {
         name: 'images',
       },
     },
-    // maintain jekyll build, but pull it in as a datasource
-    // but mainitain medoa types
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     name: 'pages',
-    //     path: `${__dirname}/content`,
-    //     ignore: [`**/\.*`], // ignore files starting with a dot
-    //   },
-    // },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'ui',
-        path: `${__dirname}/content/_includes`,
-      },
-    },
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     name: 'farmers',
-    //     path: `${__dirname}/content/_farmers`,
-    //   },
-    // },
-
     // Getting UI Elements
     {
       resolve: 'gatsby-source-custom-api',
       options: {
         url: `${API_BASE_URL}/api/ui.json`,
-        // imageKeys: ["images"],
+        imageKeys: ["images"],
         rootKey: 'includes',
         schemas: {
           pages: `
             output: String!
             url: String!
-            path: String!`
+            path: String!
+            images: String`,
         },
       },
     },
-
     // Getting pages
     {
       resolve: 'gatsby-source-custom-api',
@@ -141,6 +116,8 @@ module.exports = {
     //     }
     //   }
     // },
+
+    // Getting content from firestore
     {
       resolve: 'gatsby-source-firestore',
       options: {
@@ -172,6 +149,8 @@ module.exports = {
         ],
       },
     },
+    
+    // Setting up Firebase
     {
       resolve: 'gatsby-theme-firebase',
       options: {
@@ -199,6 +178,7 @@ module.exports = {
         icon: `content/img/4p-foods-logo-color.png`, // This path is relative to the root of the site.
       },
     },
+
     // {
     //   resolve: 'gatsby-source-google-sheets',
     //   options: {

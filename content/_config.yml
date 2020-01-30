@@ -1,7 +1,7 @@
 # Site settings
 title: 4pFoods CMS
 email: dev@ocupop.com
-url: "http://admin.4pfoods.com"
+url: 'http://admin.4pfoods.com'
 permalink: pretty
 
 # Social sharing
@@ -15,7 +15,6 @@ socialshare:
 # Google Analytics
 analytics:
   default:
-
 
 # Collections
 collections:
@@ -38,6 +37,9 @@ collections:
     permalink: /posts/:title/
   featured_products:
     output: false
+  includes:
+    output: true
+    permalink: /includes/:path/
 
 defaults:
   - scope:
@@ -46,23 +48,23 @@ defaults:
       layout: team_member
       _options:
         image:
-          uploads_dir: "img/uploads/team/"
+          uploads_dir: 'img/uploads/team/'
   - scope:
       type: 'farmers'
     values:
       layout: farmer
       _options:
         featured_image:
-          uploads_dir: "img/uploads/farmers/:title"
+          uploads_dir: 'img/uploads/farmers/:title'
         image:
-          uploads_dir: "img/uploads/farmers/:title"
+          uploads_dir: 'img/uploads/farmers/:title'
   - scope:
       type: 'events'
     values:
       layout: event
       _options:
         featured_image:
-          uploads_dir: "img/uploads/events/"
+          uploads_dir: 'img/uploads/events/'
   - scope:
       type: 'careers'
     values:
@@ -73,18 +75,13 @@ defaults:
       layout: post
       _options:
         featured_image:
-          uploads_dir: "img/uploads/posts/"
+          uploads_dir: 'img/uploads/posts/'
   - scope:
       type: 'newsletters'
     values:
       _options:
         featured_image:
-          uploads_dir: "img/uploads/newsletters/"
-
-
-
-
-
+          uploads_dir: 'img/uploads/newsletters/'
 
 # Build settings
 safe: false
@@ -94,8 +91,7 @@ sass:
 
 # plugins:
 
-
-  # Cloudcannon Configuration
+# Cloudcannon Configuration
 _array_structures:
   meta:
     - label: Meta Data
@@ -138,6 +134,3 @@ _array_structures:
         _type: video
         title:
         embed_url:
-
-
-

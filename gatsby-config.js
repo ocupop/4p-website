@@ -41,13 +41,13 @@ module.exports = {
     //     ignore: [`**/\.*`], // ignore files starting with a dot
     //   },
     // },
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     name: 'ui',
-    //     path: `${__dirname}/content/_includes/ui`,
-    //   },
-    // },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'ui',
+        path: `${__dirname}/content/_includes`,
+      },
+    },
     // {
     //   resolve: 'gatsby-source-filesystem',
     //   options: {
@@ -56,11 +56,27 @@ module.exports = {
     //   },
     // },
 
+    // Getting UI Elements
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: 'http://localhost:4000/api/ui.json',
+        // imageKeys: ["images"],
+        rootKey: 'includes',
+        schemas: {
+          pages: `
+            output: String!
+            url: String!
+            path: String!`
+        },
+      },
+    },
+
     // Getting pages
     {
       resolve: 'gatsby-source-custom-api',
       options: {
-        url: 'https://cms.4pfoods.com/api/pages',
+        url: 'http://localhost:4000/api/pages.json',
         // imageKeys: ["images"],
         rootKey: 'pages',
         schemas: {

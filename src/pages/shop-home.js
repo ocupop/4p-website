@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../components/ui/header'
-import Footer from '../components/ui/footer'
+import Header from '../components/ui/Header'
+import Footer from '../components/ui/Footer'
 import ProductItem from '../components/products/ProductItem'
 import ProductVariant from '../components/products/ProductVariant'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Header from '../components/ui/header'
-import Footer from '../components/ui/footer'
+import Header from '../components/ui/Header'
+import Footer from '../components/ui/Footer'
 import ProductVariant from '../components/products/ProductVariant'
 
 const ProductList = ({ data }) => {

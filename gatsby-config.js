@@ -4,6 +4,9 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+//const API_BASE_URL = 'http://localhost:4000'
+const API_BASE_URL = 'https://cms.4pfoods.com'
+
 module.exports = {
   siteMetadata: {
     title: `4pFoods Website`,
@@ -60,7 +63,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-custom-api',
       options: {
-        url: 'http://localhost:4000/api/ui.json',
+        url: `${API_BASE_URL}/api/ui.json`,
         // imageKeys: ["images"],
         rootKey: 'includes',
         schemas: {

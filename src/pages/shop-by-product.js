@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Header from '../components/ui/Header'
 import Footer from '../components/ui/Footer'
 // import ProductVariant from '../components/products/ProductVariant'
@@ -8,7 +8,7 @@ import ProductItem from '../components/products/ProductItem'
 const ShopByProduct = ({ data }) => {
   return (
     <>
-      <Header siteTitle="Shop Home" />
+      <Header />
 
       <section>
         <div className="container">
@@ -20,22 +20,20 @@ const ShopByProduct = ({ data }) => {
             </div>
           </div>
           <div className="row no-gutters">
-            {data.allProducts.edges.map((product, index) => (
-              <div className="col-md-6 col-lg-3" key={index}>
+            {data.allProducts.edges.map(product => (
+              <div className="col-md-6 col-lg-3" key={product.node.id}>
                 <div className="content">
-                  <ProductItem product={product.node} />
+                  <Link to={`/products/${product.node.id}`}>
+                    <ProductItem product={product.node} />
+                  </Link>
                 </div>
               </div>
-              // return products.node.variants.map(variant => {
-              //   return <ProductVariant key={variant.sku} variant={variant} />
-              // })
             ))}
           </div>
         </div>
-      </section> 
-      
+      </section>
 
-      <Footer siteTitle="Shop Home" />
+      <Footer />
     </>
   )
 }

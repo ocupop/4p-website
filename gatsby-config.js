@@ -4,8 +4,7 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-const API_BASE_URL = 'http://localhost:4000'
-//const API_BASE_URL = 'https://cms.4pfoods.com'
+const API_BASE_URL = process.env.CMS_BASE_URL
 
 module.exports = {
   siteMetadata: {

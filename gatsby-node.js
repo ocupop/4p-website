@@ -4,12 +4,10 @@
 //  *
 //  * See: https://www.gatsbyjs.org/docs/node-apis/
 //  */
-const path = require(`path`);
-const matter = require(`gray-matter`);
-const _ = require(`lodash`);
-const slugify = require('slugify');
-
-
+const path = require(`path`)
+const matter = require(`gray-matter`)
+const _ = require(`lodash`)
+const slugify = require('slugify')
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -39,77 +37,67 @@ exports.createPages = async ({ graphql, actions }) => {
         component,
         path: pageUrl,
         context: {
-          id
+          id,
         },
       })
     })
   })
 
-// getting farmers...
-//   await graphql(`
-//   query {
-//     allFarmers {
-//       edges {
-//         node {
-//           id
-//         }
-//       }
-//     }
-//   }
-// `).then(result => {
-//   // Build Web Pages
-//   result.data.allPages.edges.forEach(({ node: { layout, pageUrl, id } }) => {
-//     const component = path.resolve(`./src/templates/${layout}.jsx`)
+  // getting farmers...
+  //   await graphql(`
+  //   query {
+  //     allFarmers {
+  //       edges {
+  //         node {
+  //           id
+  //         }
+  //       }
+  //     }
+  //   }
+  // `).then(result => {
+  //   // Build Web Pages
+  //   result.data.allPages.edges.forEach(({ node: { layout, pageUrl, id } }) => {
+  //     const component = path.resolve(`./src/templates/${layout}.jsx`)
 
-//     // TODO: Add solution for different Gatsby layouts
-//     // const layout = node.layout === 'splash' ? 'splash' : 'index'
+  //     // TODO: Add solution for different Gatsby layouts
+  //     // const layout = node.layout === 'splash' ? 'splash' : 'index'
 
-//     createPage({
-//       component,
-//       path: pageUrl,
-//       context: {
-//         id
-//       },
-//     })
-//   })
-// })
+  //     createPage({
+  //       component,
+  //       path: pageUrl,
+  //       context: {
+  //         id
+  //       },
+  //     })
+  //   })
+  // })
 
-// build out products
-//   await graphql(`
-//     query {
-//       allProducts {
-//         edges {
-//           node {
-//             id
-//             department
-//             category
-//           }
-//         }
-//       }
-//     }
-// `).then(result => {
-//   // Build Web Pages
-//   result.data.allProducts.edges.forEach(({ node: { id } }) => {
-//     const component = path.resolve(`./src/templates/product-detail.jsx`)
-
-//     // TODO: Add solution for different Gatsby layouts
-//     // const layout = node.layout === 'splash' ? 'splash' : 'index'
-
-//     createPage({
-//       component,
-//       path: `product-detail/${id}`,
-//       context: {
-//         id
-//       },
-//     })
-//   })
-// })
-
-
-
-
+  // build out products
+  await graphql(`
+    query {
+      allProducts {
+        edges {
+          node {
+            id
+            department
+            category
+          }
+        }
+      }
+    }
+  `).then(result => {
+    // Build Web Pages
+    result.data.allProducts.edges.forEach(({ node: { id, department } }) => {
+      createPage({
+        component: path.resolve(`./src/templates/product-detail.jsx`),
+        path: `products/${id}`,
+        context: {
+          id,
+        },
+      })
+    })
+  })
 }
-
 
 // exports.createPages = async ({ graphql, actions }) => {
 // console.log("this was run")
@@ -125,7 +113,6 @@ exports.createPages = async ({ graphql, actions }) => {
 //     reporter,
 //     createContentDigest
 //   } = props
-  
 
 //   const { createNode, createParentChildLink } = actions
 
@@ -136,7 +123,6 @@ exports.createPages = async ({ graphql, actions }) => {
 //   if (node.internal.mediaType !== `text/html` || node.name === '_defaults') {
 //     return
 //   }
-
 
 //   const nodeContent = await loadNodeContent(node)
 
@@ -181,7 +167,6 @@ exports.createPages = async ({ graphql, actions }) => {
 //     });
 
 //     return htmlNode;
-
 
 //   } catch (err) {
 //     reporter.panicOnBuild(`Error processing Store HTML ${node.absolutePath ? `file ${node.absolutePath}` : `in node ${node.id}`}:\n

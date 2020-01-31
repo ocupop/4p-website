@@ -17,7 +17,10 @@ const Header = () => {
       }
     }
   `)
-  return <div>{parse(data.allIncludes.edges[0].node.output)}</div>
+
+  const output = data.allIncludes.edges[0].node.output
+
+  return <div>{parse(output)}</div>
 }
 
 export default Header

@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/ui/Header'
 import Footer from '../components/ui/Footer'
 import ProductItem from '../components/products/ProductItem'
-import ProductVariant from '../components/products/ProductVariant'
+import CollectionCard from '../components/collection/CollectionCard'
 
 const ShopHome = ({ data }) => {
   const mustardProduct = data.allProducts.edges[0].node
@@ -19,7 +19,7 @@ const ShopHome = ({ data }) => {
             </div>
           </div>
           <div className="row no-gutters">
-            {/* loop through suggest products */}
+            {/* TODO loop through suggest products */}
             {data.allProducts.edges.map((product, index) => (
               <div className="col-md-6 col-lg-3" key={index}>
                 <div className="content">
@@ -40,7 +40,12 @@ const ShopHome = ({ data }) => {
             </div>
           </div>
           <div class="row no-gutters">
-            {/* loop through collections, show 2 */}
+            {/* TODO loop through collections, show 2 */}
+            <div class="col-lg-6">
+              <div class="content">
+                <CollectionCard/>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -54,15 +59,15 @@ const ShopHome = ({ data }) => {
             </div>
           </div>
           <div class="row no-gutters">
-            {/* loop through recently added */}
+            {/* TODO loop through recently added products */}
+            <div class="col-lg-3">
+              <div class="content">
+                <ProductItem product={mustardProduct}/>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <h1>ShopHome</h1>
-      <h2>Suggested Goods</h2>
-      <ProductVariant variant={mustardProduct.variants[0] } />
-      <h2>Collections</h2>
-      <ProductItem product={mustardProduct } />
     </>
   )
 }

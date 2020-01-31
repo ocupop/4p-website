@@ -2,21 +2,15 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Header from '../components/ui/Header'
 import Footer from '../components/ui/Footer'
-// import ProductVariant from '../components/products/ProductVariant'
+import SearchFilterBar from '../components/ui/SearchFilterBar'
 import ProductItem from '../components/products/ProductItem'
 
 const ShopByProduct = ({ data }) => {
   return (
     <>
       <section>
+        <SearchFilterBar/>
         <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <div className="content">
-                <h1>Suggested Goods</h1>
-              </div>
-            </div>
-          </div>
           <div className="row no-gutters">
             {data.allProducts.edges.map(product => (
               <div className="col-md-6 col-lg-3" key={product.node.id}>

@@ -54,7 +54,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-custom-api',
       options: {
-        url: 'http://localhost:4000/api/pages.json',
+        url: `${API_BASE_URL}/api/pages.json`,
         // imageKeys: ["images"],
         rootKey: 'pages',
         schemas: {

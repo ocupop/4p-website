@@ -1,5 +1,7 @@
 import React from 'react'
 import ItemRow from '../components/cart/ItemRow'
+import CollectionRow from '../components/cart/CollectionRow'
+import ThisWeekItemRow from '../components/cart/ThisWeekItemRow'
 
 const Cart = () => {
   return (
@@ -31,17 +33,16 @@ const Cart = () => {
               </div>
             </div>
           </div>
+          {/* TODO Loop through cart items */}
           <ItemRow/>
-          {/* {% for i in (1..2) %}
-            {% include item-row.html %}
-            <hr className="row-border"/>
-          {% endfor %}
-          {% include collection-row.html %} */}
+          <hr class="row-border" />
+          {/* TODO Loop through cart collection items */}
+          <CollectionRow/>
           <div className="row">
             <div className="col-lg-9 ml-lg-auto">
               <div className="content">
                 <h3>This week's goods 
-                  <button className="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false"
+                  <button className="btn btn-link text-secondary" type="button" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false"
                   aria-controls="collapse-1">
                   <span className="hide-text">Hide</span><span className="show-text">Show</span> Items
                   </button>
@@ -50,9 +51,8 @@ const Cart = () => {
             </div>
             <div className="col-lg-9 ml-lg-auto">
               <div id="collapse-1" className="collapse show">
-                {/* {% for i in (1..4) %}
-                {% include this-week-item.html %}
-                {% endfor %} */}
+                {/* TODO Loop through this week items in collection  */}
+                <ThisWeekItemRow/>
               </div>
             </div>
           </div>
@@ -65,9 +65,8 @@ const Cart = () => {
               </div>
             </div>
           </div>
-          {/* {% for i in (1..2) %}
-          {% include item-row.html %}
-          {% endfor %} */}
+          {/* TODO Loop through one time purchase items */}
+          <ItemRow />
           <hr className="row-border"/>
           <div className="row">
             <div className="col-lg-6 ml-lg-auto">

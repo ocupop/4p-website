@@ -4,14 +4,161 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Header from '../components/ui/Header'
 import Footer from '../components/ui/Footer'
+import { Carousel } from 'react-bootstrap'
+import ProductItem from '../components/products/ProductItem'
 
 const ProductDetail = ({ data }) => {
+  console.log(data);
+  const product = data.allProducts.edges[0].node
   return (
     <>
       <div>
-        <Header siteTitle="Product" />
-        <h1>{data.allProducts.edges[0].node.name}</h1>
-        <Footer siteTitle="Product" />
+        <Header siteTitle="Shop Home" />
+        <section>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="content">
+                  <h1 className="h2">{ product.name }</h1>
+                  <p className="mb-5">product description Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugiat quae laboriosam culpa nesciunt, quis distinctio iusto numquam velit temporibus, eum, quisquam hic. Ratione, sequi!</p>
+                  {/* TODO create variant select component */}
+                  <div className="form-group">
+                    <select className="form-control" name="variant-select" id="variant-select">
+                      {product.variants.map(variant => (
+                        <>
+                          <option key={variant.sku} value={variant.sku}>{variant.name}</option>
+                        </>
+                      )
+                      )}
+                    </select>
+                  </div>
+
+                  <div className="product-price mb-2">${product.variants[0].price}</div>
+                  <div className="product-amount">{product.variants[0].size}{product.variants[0].unit}</div>
+                  <div className="d-flex align-items-center mt-3">
+                    <button className="product-button w-50">
+                      Weekly<br />
+                      Delivery
+                  </button>
+                    <button className="product-button w-50">
+                      One-Time<br />
+                      Purchase
+                  </button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="content">
+                  <Carousel>
+                    <Carousel.Item>
+                      <div className="bg-image aspect-4x3"
+                        style={{
+                          backgroundImage: `url(https://via.placeholder.com/800x500/000)`
+                        }}
+                      ></div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <div className="bg-image aspect-4x3"
+                        style={{
+                          backgroundImage: `url(https://via.placeholder.com/800)`
+                        }}
+                      ></div>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <div className="bg-image aspect-4x3"
+                        style={{
+                          backgroundImage: `url(https://via.placeholder.com/800)`
+                        }}
+                      ></div>
+                    </Carousel.Item>
+                  </Carousel>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr />
+        <section>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="content">
+                  <h2>Product Details</h2>
+                  <div className="d-flex">
+                    {product.variants[0].tags.map((tag, index) => (
+                      <>
+                        <span key={index} className="product-detail-tag">{tag}</span>
+                      </>
+                    )
+                    )}
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="content">
+                  <h2>Ingredients:</h2>
+                  <span>Need to output ingredients</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr />
+        <section>
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="content">
+                  <div className="bg-image aspect-4x3"
+                    style={{
+                      backgroundImage: `url(https://via.placeholder.com/800)`
+                    }}
+                  ></div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="content">
+                  <h2>From Whiffletree Farms</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quia nihil omnis temporibus voluptatibus nostrum similique ad quae rem, suscipit dolores ex! Libero veniam, sit molestias maxime ratione perspiciatis officiis, illo tempore tenetur velit ducimus!</p>
+                  <div className="row">
+                    <div className="col-lg-6">
+                      <span className="text-uppercase text-light">30 Miles from you</span>
+                    </div>
+                    <div className="col-lg-6">
+                      <a href="#">whiffletreefarms.com</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="content">
+                  <h2 class="h1">We Recommend</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-md-6 col-lg-3">
+                <div class="content">
+                  {/* TODO loop through recommended products */}
+                  <ProductItem product={product} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* 
+      <h2>We Recommend</h2> 
+      {product.variants.map(variant => {
+        return <ProductVariant key={variant.sku} variant={variant} />
+      })}*/}
+
+        <Footer siteTitle="Shop Home" />
       </div>
     </>
   )
@@ -26,6 +173,7 @@ export const query = graphql`
           department
           name
           variants {
+            size
             unit
             price
             available
@@ -38,6 +186,7 @@ export const query = graphql`
             quantity
             sku
             nutritionalFacts
+            tags
           }
         }
       }

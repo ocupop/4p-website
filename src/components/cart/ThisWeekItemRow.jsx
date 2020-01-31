@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ItemRow = () => {
+const ThisWeekItemRow = () => {
   return (
     <>
-      <div className="row item-row">
+      <div className="row">
         <div className="col-lg-3">
           <div className="content">
             <div className="bg-image aspect-4x3"
@@ -14,10 +14,9 @@ const ItemRow = () => {
           </div>
         </div>
         <div className="col-lg-6">
-          <div className="content h-100 position-relative">
+          <div className="content">
             <h2>Item Title</h2>
-            <p>Amount</p>
-            <button className="btn btn-link">Remove</button>
+            <span className="text-uppercase">Amount</span>
           </div>
         </div>
         <div className="col-lg-3">
@@ -31,21 +30,12 @@ const ItemRow = () => {
               </div>
               <span className="product-price">$0.00</span>
             </div>
-            <div className="form-check form-check-inline">
-              <input className="form-check-input" type="radio" name="delivery" id="delivery-weekly" value="weekly" checked />
-              <label for="delivery-weekly">Weekly Delivery Item</label>
-            </div>
-            <div className="form-check form-check-inline">
-              <input className="form-check-input" type="radio" name="delivery" id="delivery-one-time" value="one-time" />
-              <label for="delivery-one-time">One-Time Purchase</label>
-            </div>
+            <button className="btn btn-link">Remove</button>
           </div>
         </div>
-      </div>
+      </div> 
     </>
   )
 }
 
-export default ItemRow
-
-
+export default ThisWeekItemRow

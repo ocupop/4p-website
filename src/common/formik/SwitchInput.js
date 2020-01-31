@@ -4,7 +4,7 @@ import { Checkbox } from "semantic-ui-react";
 const SwitchInput = props => {
   const { label, field, type, onChange } = props;
   return (
-    <div className="form-group">
+    <>
       <Checkbox
         {...field}
         type={type}
@@ -13,7 +13,7 @@ const SwitchInput = props => {
         onChange={onChange}
         value=""
       />
-    </div>
+    </>  
   );
 };
 

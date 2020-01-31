@@ -8,8 +8,6 @@ import ProductItem from '../components/products/ProductItem'
 const ShopByProduct = ({ data }) => {
   return (
     <>
-      <Header siteTitle="Shop Home" />
-
       <section>
         <div className="container">
           <div className="row">
@@ -32,10 +30,7 @@ const ShopByProduct = ({ data }) => {
             ))}
           </div>
         </div>
-      </section> 
-      
-
-      <Footer siteTitle="Shop Home" />
+      </section>
     </>
   )
 }

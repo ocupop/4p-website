@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
-
 import HEAD from "../components/ui/Head"
-// import Header from '../components/ui/header'
-// import Footer from '../components/ui/footer'
+import Header from '../components/ui/header'
+import Footer from '../components/ui/footer'
 import 'remixicon/fonts/remixicon.css'
 import '../../content/_scss/main.scss'
 
@@ -23,13 +22,13 @@ function Layout({ children }) {
     <>
       <HEAD />
       {/* {props.location.pathname === '/' ? '' : ''} */}
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+      <Header siteTitle={data.site.siteMetadata.title} />
 
       <main id="pageContent">
         {children}
       </main>
 
-      {/* <Footer siteTitle={data.site.siteMetadata.title} /> */}
+      <Footer siteTitle={data.site.siteMetadata.title} />
     </>
   )
 }

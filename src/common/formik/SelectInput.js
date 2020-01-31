@@ -54,27 +54,29 @@ const SelectInput = ({
           />
         )}
       </label>
-      <Select
-        {...field}
-        type={type}
-        defaultValue={defaultValue}
-        formatGroupLabel={formatGroupLabel}
-        onChange={onChange}
-        placeholder={placeholder}
-        options={options}
-        isMulti={isMulti}
-        isSearchable={isSearchable}
-        isClearable
-        theme={theme => ({
-          ...theme,
-          borderRadius: 0,
-          colors: {
-            ...theme.colors,
-            primary25: "#EBECF0",
-            primary: "#172B4D"
-          }
-        })}
-      />
+    
+        <Select
+          {...field}
+          type={type}
+          defaultValue={defaultValue}
+          formatGroupLabel={formatGroupLabel}
+          onChange={onChange}
+          placeholder={placeholder}
+          options={options}
+          isMulti={isMulti}
+          isSearchable={isSearchable}
+          isClearable
+          theme={theme => ({
+            ...theme,
+            borderRadius: 0,
+            colors: {
+              ...theme.colors,
+              primary25: "#EBECF0",
+              primary: "#172B4D"
+            }
+          })}
+        />
+    
     </div>
   );
 };

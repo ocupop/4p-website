@@ -1,53 +1,48 @@
 /* eslint-disable camelcase */
 /* eslint-disable react/prop-types */
 import React from 'react'
-import { graphql } from "gatsby"
-import _ from 'lodash'
-import parse from 'html-react-parser';
-// import FooterHero from '../components/ui/FooterHero'
+import { graphql } from 'gatsby'
+import Header from '../components/ui/Header'
+import Footer from '../components/ui/Footer'
 
-const pageComponents = {
-  // TODO: Import and list all acceptable components that may get included inline page content.
-}
-
-const parseOptions = {
-  replace: ({ attribs, name }) => {
-    if (!attribs) return;
-
-    if (name.includes('-')) {
-      const component = _.upperFirst(_.camelCase(name))
-      return React.createElement(pageComponents[component], attribs)
-    }
-  }
-}
-
-const PageTemplate = ({
-  data: {
-    pages: {
-      name,
-      content
-    }
-  }
- }) => {
-
+const ProductDetail = ({ data }) => {
   return (
     <>
-      <h1>{name}</h1>
-      {parse(content)}
-      <section className="p-0">
-        {/* <FooterHero image={footer_image}/> */}
-      </section>
+      <div>
+        <Header siteTitle="Product" />
+        <h1>{data.allProducts.edges[0].node.name}</h1>
+        <Footer siteTitle="Product" />
+      </div>
     </>
   )
 }
 
-
 export const query = graphql`
   query($id: String!) {
-    pages(id: {eq: $id }) {
-      name
-      content
+    allProducts(filter: { id: { eq: $id } }) {
+      edges {
+        node {
+          id
+          department
+          name
+          variants {
+            unit
+            price
+            available
+            nutritionalLabel
+            description
+            storageTips
+            label
+            name
+            featuredImage
+            quantity
+            sku
+            nutritionalFacts
+          }
+        }
+      }
     }
-  }`
+  }
+`
 
-export default PageTemplate
+export default ProductDetail

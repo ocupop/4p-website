@@ -2,15 +2,13 @@ import React from "react";
 import { Radio } from 'semantic-ui-react'
 
 const RadioInput = props => {
-  const { label, field, type, onChange, onChecked } = props;
+  const { label, field, type, onChange } = props;
   return (
     <>
       <Radio
         {...field}
         type={type}
-        // checked={field.value}
         label={label}
-        // checked={onChecked}
         onChange={onChange}
         value={field.value}
       />

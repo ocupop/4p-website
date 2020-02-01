@@ -6,10 +6,12 @@ import {
   TextArea,
   SwitchInput,
   SelectInput,
-  RichInput
+  RichInput,
+  RadioInput
 } from "../common/formik";
 
 const DeliveryInfo = () => {
+
   const mockSelectData = [
     {label: "opt1", name: "option 1"},
     {label: "opt2", name: "option 2"},
@@ -48,6 +50,28 @@ const DeliveryInfo = () => {
               <Form>
                 <div className="row">
                   <div className="col-lg-6">
+                  <div className="form-check form-check-inline">
+                      <Field
+                        name="radioExample"
+                        type="radio"
+                        component={RadioInput}
+                        label="radio-opt-1"
+                        value="radio-opt-1"
+                        onChange={(e, val) => {
+                          setFieldValue("radioExample", val.value);
+                        }}
+                      />
+                      <Field
+                        name="radioExample"
+                        type="radio"
+                        component={RadioInput}
+                        label="radio-opt-2"
+                        value="radio-opt-2"
+                        onChange={(e, val) => {
+                          setFieldValue("radioExample", val.value);
+                        }}
+                      />
+                    </div>
                     <Field
                       name="address"
                       type="text"

@@ -2,7 +2,6 @@ import React from 'react'
 import { Formik, Field, Form } from "formik";
 // formik custom components
 import {
-  FormikDebug,
   TextInput,
   TextArea,
   SwitchInput,
@@ -12,7 +11,7 @@ import {
 } from "../common/formik";
 
 const DeliveryInfo = () => {
-  
+
   const mockSelectData = [
     {label: "opt1", name: "option 1"},
     {label: "opt2", name: "option 2"},
@@ -235,7 +234,6 @@ const DeliveryInfo = () => {
                   label="Enter your description"
                 /> */}
                 <button type="submit" className="btn btn-secondary">Submit</button>
-                <FormikDebug />
               </Form>
             )}
           </Formik>

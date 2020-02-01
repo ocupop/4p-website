@@ -1,12 +1,15 @@
 import React from 'react'
 import { Formik, Field, Form } from "formik";
+import { Form as SForm } from 'semantic-ui-react'
 // formik custom components
 import {
+  FormikDebug,
   TextInput,
   TextArea,
   SwitchInput,
   SelectInput,
-  RichInput
+  RichInput,
+  RadioInput
 } from "../common/formik";
 
 const DeliveryInfo = () => {
@@ -48,6 +51,30 @@ const DeliveryInfo = () => {
               <Form>
                 <div className="row">
                   <div className="col-lg-6">
+                  <div className="form-check form-check-inline">
+                  <SForm.Field>
+                      <Field
+                        name="radioExample"
+                        type="radio"
+                        component={RadioInput}
+                        label="radio-opt-1"
+                        value="radio-opt-1"
+                        onChange={(e, val) => {
+                          setFieldValue("radioExample", val.value);
+                        }}
+                      />
+                      <Field
+                        name="radioExample"
+                        type="radio"
+                        component={RadioInput}
+                        label="radio-opt-2"
+                        value="radio-opt-2"
+                        onChange={(e, val) => {
+                          setFieldValue("radioExample", val.value);
+                        }}
+                      />
+                      </SForm.Field>
+                    </div>
                     <Field
                       name="address"
                       type="text"
@@ -210,6 +237,7 @@ const DeliveryInfo = () => {
                   label="Enter your description"
                 /> */}
                 <button type="submit" className="btn btn-secondary">Submit</button>
+                <FormikDebug />
               </Form>
             )}
           </Formik>

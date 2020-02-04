@@ -39,8 +39,7 @@ collections:
   featured_products:
     output: false
   includes:
-    output: true
-    permalink: /includes/:path/
+    output: false
 
 defaults:
   - scope:

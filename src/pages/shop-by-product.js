@@ -1,18 +1,19 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import Header from '../components/ui/Header'
-import Footer from '../components/ui/Footer'
 import SearchFilterBar from '../components/ui/SearchFilterBar'
 import ProductItem from '../components/products/ProductItem'
 
-const ShopByProduct = ({ data }) => {
+const ShopByProduct = ({ data: { allProducts: { edges } } }) => {
+  const products = edges
+
   return (
     <>
       <section>
-        <SearchFilterBar/>
+        <SearchFilterBar />
         <div className="container">
           <div className="row no-gutters">
-            {data.allProducts.edges.map(product => (
+            {products.map(product => (
               <div className="col-md-6 col-lg-3" key={product.node.id}>
                 <div className="content">
                   <Link to={`/products/${product.node.id}`}>

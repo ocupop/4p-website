@@ -80,7 +80,7 @@ const ProductDetail = ({ data }) => {
               <div className="content">
                 <h2>Product Details</h2>
                 <div className="d-flex">
-                  {product.variants[0].tags.map((tag, index) => (
+                  {product.variants[0].tags && product.variants[0].tags.map((tag, index) => (
                     <>
                       <span key={index} className="product-detail-tag">{tag}</span>
                     </>

@@ -13,7 +13,8 @@ const Footer = () => {
 
   return (
     <>
-      {parse(data.output)}
+    <h1>Footer</h1>
+      {parse(data.includes.output)}
     </>
   )
 }

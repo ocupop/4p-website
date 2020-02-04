@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <>
-      {parse(data.output)}
+      {parse(data.includes.output)}
     </>
   )
 }

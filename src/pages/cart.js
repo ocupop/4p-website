@@ -8,7 +8,7 @@ const Cart = ({ data }) => {
   const mockCollection1 = {
     title: 'Sample Products 1',
     id: 1,
-    price: 20.00,
+    price: 20.0,
     variants: [
       allProducts[0].node.variants[1],
       allProducts[0].node.variants[0],
@@ -45,6 +45,9 @@ const Cart = ({ data }) => {
   return (
     <>
       <section>
+        <button onClick={() => {
+          removeFromCart(allProducts[0].node.variants[1]);
+        }}>Testing Add</button>
         <div className="container">
           <div className="row">
             <div className="col-12">

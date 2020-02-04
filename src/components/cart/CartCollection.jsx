@@ -1,12 +1,12 @@
 import React from 'react'
-import CollectionItem from './CollectionItem'
+import CartCollectionItem from './CartCollectionItem'
 import VariantItem from './VariantItem'
 
 
-const VariantCollection = ({ collection }) => {
+const CartCollection = ({ collection }) => {
   return (
     <>
-      <CollectionItem collection={collection} />
+      <CartCollectionItem collection={collection} />
       <div className="row">
         <div className="col-lg-9 ml-lg-auto">
           <div className="content">
@@ -37,4 +37,4 @@ const VariantCollection = ({ collection }) => {
   )
 }
 
-export default VariantCollection
+export default CartCollection

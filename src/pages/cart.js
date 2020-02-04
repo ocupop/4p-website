@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
-import VariantItem from '../components/cart/VariantItem'
-import VariantCollection from '../components/cart/VariantCollection'
+import CartItem from '../components/cart/CartItem'
+import CartCollection from '../components/cart/CartCollection'
 
 const Cart = ({ data }) => {
   const allProducts = data.allProducts.edges
@@ -81,14 +81,14 @@ const Cart = ({ data }) => {
           </div>
 
           {mockShoppingCart.weeklyDelivery.variants.map(variant => (
-            <VariantItem key={variant.sku} variant={variant} />
+            <CartItem key={variant.sku} variant={variant} />
           ))}
 
           <hr class="row-border" />
 
           {mockShoppingCart.weeklyDelivery.collections.map(
             variantCollection => (
-              <VariantCollection key={variantCollection.id} collection={variantCollection} />
+              <CartCollection key={variantCollection.id} collection={variantCollection} />
             ),
           )}
 
@@ -106,14 +106,14 @@ const Cart = ({ data }) => {
           </div>
 
           {mockShoppingCart.oneTimePurchase.variants.map(variant => (
-            <VariantItem key={variant.sku} variant={variant} />
+            <CartItem key={variant.sku} variant={variant} />
           ))}
 
           <hr class="row-border" />
 
           {mockShoppingCart.oneTimePurchase.collections.map(
             variantCollection => (
-              <VariantCollection key={variantCollection.id} collection={variantCollection} />
+              <CartCollection key={variantCollection.id} collection={variantCollection} />
             ),
           )}
 

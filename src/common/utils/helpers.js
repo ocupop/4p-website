@@ -1,20 +1,8 @@
 export const objectToArray = (object) => {
   if (object) {
-    return Object.entries(object).map(e => Object.assign({}, e[1], { id: e[0] }))
+    return Object.entries(object).map(e => ({ ...e[1], id: e[0] }))
   }
 }
-
-
-// export const createDataTree = dataset => {
-//   let hashTable = Object.create(null);
-//   dataset.forEach(a => hashTable[a.id] = { ...a, childNodes: [] });
-//   let dataTree = [];
-//   dataset.forEach(a => {
-//     if (a.parentId) hashTable[a.parentId].childNodes.push(hashTable[a.id]);
-//     else dataTree.push(hashTable[a.id])
-//   });
-//   return dataTree
-// };
 
 export const formatToPhone = (number) => {
   const input = number.replace(/\D/g, '').substring(0, 10); // First ten digits of input only
@@ -34,8 +22,9 @@ export const formatMoney = (amount, decimalCount = 2, decimal = ".", thousands =
     let i = parseInt(amount = Math.abs(Number(amount) || 0).toFixed(decimalCount)).toString();
     let j = (i.length > 3) ? i.length % 3 : 0;
 
-    return negativeSign + (j ? i.substr(0, j) + thousands : '') + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + thousands) + (decimalCount ? decimal + Math.abs(amount - i).toFixed(decimalCount).slice(2) : "");
+    return negativeSign + (j ? i.substr(0, j) + thousands : '') + i.substr(j).replace(/(\d{3})(?=\d)/g, `$1${thousands}`) + (decimalCount ? decimal + Math.abs(amount - i).toFixed(decimalCount).slice(2) : "");
   } catch (e) {
+    // eslint-disable-next-line no-console
     console.log("Error formatting value:", e)
   }
 };

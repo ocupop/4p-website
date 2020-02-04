@@ -38,7 +38,7 @@ module.exports = {
       resolve: 'gatsby-source-custom-api',
       options: {
         url: `${API_BASE_URL}/api/ui.json`,
-        imageKeys: ["images"],
+        imageKeys: ['images'],
         rootKey: 'includes',
         schemas: {
           pages: `
@@ -148,7 +148,7 @@ module.exports = {
         ],
       },
     },
-    
+
     // Setting up Firebase
     {
       resolve: 'gatsby-theme-firebase',

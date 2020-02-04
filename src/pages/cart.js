@@ -1,5 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import { connect } from 'react-redux'
+import { addToCart, removeFromCart } from '../components/cart/cartActions';
 import VariantItem from '../components/cart/VariantItem'
 import VariantCollection from '../components/cart/VariantCollection'
 
@@ -8,7 +10,7 @@ const Cart = ({ data }) => {
   const mockCollection1 = {
     title: 'Sample Products 1',
     id: 1,
-    price: 20.00,
+    price: 20.0,
     variants: [
       allProducts[0].node.variants[1],
       allProducts[0].node.variants[0],
@@ -45,6 +47,9 @@ const Cart = ({ data }) => {
   return (
     <>
       <section>
+        <button onClick={() => {
+          removeFromCart(allProducts[0].node.variants[1]);
+        }}>Testing Add</button>
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -88,7 +93,10 @@ const Cart = ({ data }) => {
 
           {mockShoppingCart.weeklyDelivery.collections.map(
             variantCollection => (
-              <VariantCollection key={variantCollection.id} collection={variantCollection} />
+              <VariantCollection
+                key={variantCollection.id}
+                collection={variantCollection}
+              />
             ),
           )}
 
@@ -113,7 +121,10 @@ const Cart = ({ data }) => {
 
           {mockShoppingCart.oneTimePurchase.collections.map(
             variantCollection => (
-              <VariantCollection key={variantCollection.id} collection={variantCollection} />
+              <VariantCollection
+                key={variantCollection.id}
+                collection={variantCollection}
+              />
             ),
           )}
 
@@ -189,4 +200,4 @@ export const query = graphql`
   }
 `
 
-export default Cart
+export default connect(null)(Cart)

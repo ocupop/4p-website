@@ -91,14 +91,7 @@ const Cart = ({ data }) => {
 
           {mockShoppingCart.weeklyDelivery.collections.map(
             variantCollection => (
-<<<<<<< HEAD
-              <VariantCollection
-                key={variantCollection.id}
-                collection={variantCollection}
-              />
-=======
               <CartCollection key={variantCollection.id} collection={variantCollection} />
->>>>>>> develop
             ),
           )}
 
@@ -123,14 +116,7 @@ const Cart = ({ data }) => {
 
           {mockShoppingCart.oneTimePurchase.collections.map(
             variantCollection => (
-<<<<<<< HEAD
-              <VariantCollection
-                key={variantCollection.id}
-                collection={variantCollection}
-              />
-=======
               <CartCollection key={variantCollection.id} collection={variantCollection} />
->>>>>>> develop
             ),
           )}
 

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const VariantItem = ({ variant }) => {
+const CartCollectionItem = ({ collection }) => {
   return (
     <>
-      <div className="row item-row">
+      <div className="row item-row collection-row">
         <div className="col-lg-3">
           <div className="content">
             <div
@@ -15,21 +15,25 @@ const VariantItem = ({ variant }) => {
         </div>
         <div className="col-lg-6">
           <div className="content h-100 position-relative">
-            <h2>{variant.name}</h2>
-            <p>Amount</p>
+            <h2>{collection.title}</h2>
+            <div className="styled-select">
+              <select name="" id="">
+                <option value="">Size</option>
+              </select>
+            </div>
             <button className="btn btn-link">Remove</button>
           </div>
         </div>
         <div className="col-lg-3">
           <div className="content">
-            <div className="d-flex mb-3">
+            <div className="d-flex align-items-center mb-3">
               <div className="styled-select mr-3">
                 <select name="" id="">
                   <option value="">1</option>
                   <option value="">2</option>
                 </select>
               </div>
-              <span className="product-price">{variant.price}</span>
+              <span className="product-price">${collection.price}</span>
             </div>
             <div className="form-check form-check-inline">
               <input
@@ -59,4 +63,4 @@ const VariantItem = ({ variant }) => {
   )
 }
 
-export default VariantItem
+export default CartCollectionItem

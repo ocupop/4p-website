@@ -1,14 +1,12 @@
 import React from 'react'
 import { Formik, Field, Form } from "formik";
-// formik custom components
 import {
   TextInput,
   TextArea,
   SwitchInput,
   SelectInput,
-  RichInput,
   RadioInput
-} from "../common/formik";
+} from "../common/fields";
 
 const DeliveryInfo = () => {
 
@@ -190,7 +188,7 @@ const DeliveryInfo = () => {
                 <div className="row">
                   <div className="col-12">
                     <div className="form-check-inline">
-                      <label>If a key fob is needed to access the building, can you provide us with one?</label>
+                      <p>If a key fob is needed to access the building, can you provide us with one?</p>
                       <Field
                         name="switchKeyFob"
                         type="checkbox"
@@ -223,16 +221,7 @@ const DeliveryInfo = () => {
                     />
                   </div>
                 </div>
-                {/* Example of Rich Input */}
-                {/* <Field
-                  name="richDescription"
-                  type="text"
-                  component={RichInput}
-                  onChange={val => {
-                    setFieldValue("richDescription", val);
-                  }}
-                  label="Enter your description"
-                /> */}
+
                 <button type="submit" className="btn btn-secondary">Submit</button>
               </Form>
             )}

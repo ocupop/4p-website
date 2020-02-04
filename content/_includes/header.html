@@ -1,5 +1,4 @@
 ---
-layout: include
 ---
 <header id="pageHeader">
   <div class="bg-teal d-none d-lg-block">
@@ -41,7 +40,7 @@ layout: include
   <div class="container">
     <nav id="mainnav" class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="/" title="{{ site.title }}">
-        <img src="{{ '/img/logo-wordmark.svg' | prepend: site.cms_url }}" alt="{{ site.title }}">
+        <img src="{{ '/img/logo-wordmark.svg' | prepend: site.url }}" alt="{{ site.title }}">
       </a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#primarynav"
         aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +70,7 @@ layout: include
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
-          
+
           </li>
           <li class="nav-item dropdown d-lg-none">
             <a class="nav-link dropdown-toggle" href="#" id="user-dropdown-mobile" role="button" data-toggle="dropdown"

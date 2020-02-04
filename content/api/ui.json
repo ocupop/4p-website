@@ -3,17 +3,10 @@ layout: none
 permalink: api/ui
 ---
 [
-{% for ui in site.includes %}
+{% for include in site.includes %}
 {
-  {% for var in ui %}
-    {% unless var == 'next' or var == 'content' or var == 'previous' or var == 'excerpt' %}
-      {% if var == 'id' %}
-        "includes_id": {{ ui[var] | jsonify }}{% unless forloop.last %},{% endunless %}
-      {% else %}
-        "{{ var }}": {{ ui[var] | jsonify }}{% unless forloop.last %},{% endunless %}
-     {% endif %}
-    {% endunless %}
-  {% endfor %}
+  "slug": {{ include['slug'] | jsonify }},
+  "output": {{ include['output'] | jsonify }}
 }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]

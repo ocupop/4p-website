@@ -1,6 +1,6 @@
 import React from "react"
 
-import HEAD from "../components/ui/Head"
+import HEAD from "../common/ui/Head"
 
 const NotFoundPage = () => (
   <>

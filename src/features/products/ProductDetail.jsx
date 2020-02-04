@@ -1,11 +1,9 @@
-/* eslint-disable react/prop-types */
 import React from 'react'
-import { graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 import { Carousel } from 'react-bootstrap'
-import ProductItem from '../components/products/ProductItem'
+import ProductCard from './ProductCard'
 
-const ProductDetail = ({ data }) => {
-  const product = data.allProducts.edges[0].node
+const ProductDetail = ({product}) => {
 
   return (
     <>
@@ -14,7 +12,7 @@ const ProductDetail = ({ data }) => {
           <div className="row">
             <div className="col-lg-6">
               <div className="content">
-                <h1 className="h2">{ product.name }</h1>
+                <h1 className="h2">{product.name}</h1>
                 <p className="mb-5">product description Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugiat quae laboriosam culpa nesciunt, quis distinctio iusto numquam velit temporibus, eum, quisquam hic. Ratione, sequi!</p>
                 {/* TODO create variant select component */}
                 <div className="form-group">
@@ -31,11 +29,11 @@ const ProductDetail = ({ data }) => {
                 <div className="product-price mb-2">${product.variants[0].price}</div>
                 <div className="product-amount">{product.variants[0].size}{product.variants[0].unit}</div>
                 <div className="d-flex align-items-center mt-3">
-                  <button className="product-button w-50">
+                  <button type="button" className="product-button w-50">
                     Weekly<br />
                     Delivery
                 </button>
-                  <button className="product-button w-50">
+                  <button type="button" className="product-button w-50">
                     One-Time<br />
                     Purchase
                 </button>
@@ -50,21 +48,7 @@ const ProductDetail = ({ data }) => {
                       style={{
                         backgroundImage: `url(https://via.placeholder.com/800x500/000)`
                       }}
-                    ></div>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <div className="bg-image aspect-4x3"
-                      style={{
-                        backgroundImage: `url(https://via.placeholder.com/800)`
-                      }}
-                    ></div>
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <div className="bg-image aspect-4x3"
-                      style={{
-                        backgroundImage: `url(https://via.placeholder.com/800)`
-                      }}
-                    ></div>
+                    />
                   </Carousel.Item>
                 </Carousel>
               </div>
@@ -108,7 +92,7 @@ const ProductDetail = ({ data }) => {
                   style={{
                     backgroundImage: `url(https://via.placeholder.com/800)`
                   }}
-                ></div>
+                />
               </div>
             </div>
             <div className="col-lg-6">
@@ -129,62 +113,30 @@ const ProductDetail = ({ data }) => {
         </div>
       </section>
       <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="content">
-                <h2 class="h1">We Recommend</h2>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="content">
+                <h2 className="h1">We Recommend</h2>
               </div>
             </div>
           </div>
-          <div class="row no-gutters">
-            <div class="col-md-6 col-lg-3">
-              <div class="content">
-                {/* TODO loop through recommended products */}
-                <ProductItem product={product} />
+          <div className="row no-gutters">
+            <div className="col-md-6 col-lg-3">
+              <div className="content">
+                <ProductCard product={product} />
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/*
-        <h2>We Recommend</h2>
-        {product.variants.map(variant => {
-          return <ProductVariant key={variant.sku} variant={variant} />
-        })}
-      */}
     </>
+
   )
 }
 
-export const query = graphql`
-  query($id: String!) {
-    allProducts(filter: { id: { eq: $id } }) {
-      edges {
-        node {
-          id
-          department
-          name
-          variants {
-            size
-            unit
-            price
-            available
-            nutritionalLabel
-            description
-            storageTips
-            label
-            name
-            featuredImage
-            quantity
-            sku
-            nutritionalFacts
-            tags
-          }
-        }
-      }
-    }
-  }
-`
+ProductDetail.propTypes = {
+  product: PropTypes.instanceOf(Object)
+}
 
 export default ProductDetail

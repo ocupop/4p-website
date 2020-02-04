@@ -5,9 +5,9 @@
 //  * See: https://www.gatsbyjs.org/docs/node-apis/
 //  */
 const path = require(`path`)
-const matter = require(`gray-matter`)
-const _ = require(`lodash`)
-const slugify = require('slugify')
+// const matter = require(`gray-matter`)
+// const _ = require(`lodash`)
+// const slugify = require('slugify')
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -79,17 +79,15 @@ exports.createPages = async ({ graphql, actions }) => {
         edges {
           node {
             id
-            department
-            category
           }
         }
       }
     }
   `).then(result => {
     // Build Web Pages
-    result.data.allProducts.edges.forEach(({ node: { id, department } }) => {
+    result.data.allProducts.edges.forEach(({ node: { id } }) => {
       createPage({
-        component: path.resolve(`./src/templates/product-detail.jsx`),
+        component: path.resolve(`./src/templates/product.jsx`),
         path: `products/${id}`,
         context: {
           id,

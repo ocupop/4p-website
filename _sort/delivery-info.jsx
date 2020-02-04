@@ -6,7 +6,7 @@ import {
   SwitchInput,
   SelectInput,
   RadioInput
-} from "../common/fields";
+} from "../src/common/fields";
 
 const DeliveryInfo = () => {
 

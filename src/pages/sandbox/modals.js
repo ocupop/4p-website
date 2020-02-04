@@ -1,10 +1,10 @@
 import React from 'react'
-import LoginModal from '../components/modals/LoginModal'
+import TestModal from '../../features/modals/TestModal'
 
 const ModalTest = () => {
   return (
     <>
-     <LoginModal/> 
+      <TestModal />
     </>
   )
 }

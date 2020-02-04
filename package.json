@@ -33,7 +33,6 @@
     "gatsby-source-filesystem": "^2.1.9",
     "gatsby-source-firestore": "^1.0.3",
     "gatsby-source-google-sheets": "^1.1.1",
-
     "gatsby-transformer-sharp": "^2.2.6",
     "gray-matter": "^4.0.2",
     "gsap": "^3.0.1",

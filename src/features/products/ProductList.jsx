@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
 import ProductCard from './ProductCard'
 
 const ProductList = ({ products }) => {
@@ -13,9 +12,7 @@ const ProductList = ({ products }) => {
             {products.map(product => (
               <div className="col-md-6 col-lg-3" key={product.node.id}>
                 <div className="content">
-                  <Link to={`/products/${product.node.id}`}>
-                    <ProductCard product={product.node} />
-                  </Link>
+                  <ProductCard product={product.node} />
                 </div>
               </div>
             ))}

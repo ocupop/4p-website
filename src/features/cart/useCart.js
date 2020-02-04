@@ -21,15 +21,15 @@ function useCart({ author }) {
     }
   ])
 
-  function addItemToCart(item) {
+  function addItemToBag(item, bag) {
     // addToCart(item);
   }
 
-  function removeItemFromCart(item) {
+  function removeFromBag(item, bag) {
     // removeFromCart(item);
   }
 
-  return { items, addItemToCart, removeItemFromCart }
+  return { items, addItemToBag, removeFromBag }
 }
 
 export default useCart;

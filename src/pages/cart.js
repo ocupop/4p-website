@@ -192,4 +192,4 @@ export const query = graphql`
   }
 `
 
-export default connect(null)(Cart)
+export default Cart

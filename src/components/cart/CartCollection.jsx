@@ -1,6 +1,6 @@
 import React from 'react'
 import CartCollectionItem from './CartCollectionItem'
-import VariantItem from './VariantItem'
+import CartItem from './CartItem'
 
 
 const CartCollection = ({ collection }) => {
@@ -28,7 +28,7 @@ const CartCollection = ({ collection }) => {
         <div className="col-lg-9 ml-lg-auto">
           <div id="collapse-1" className="collapse show">
           {collection.variants.map(variant => (
-            <VariantItem variant={variant} />
+            <CartItem variant={variant} />
           ))}
           </div>
         </div>

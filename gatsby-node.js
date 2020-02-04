@@ -75,7 +75,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // build out products
   await graphql(`
     query {
-      allProducts {
+      allProduct {
         edges {
           node {
             id
@@ -85,7 +85,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `).then(result => {
     // Build Web Pages
-    result.data.allProducts.edges.forEach(({ node: { id } }) => {
+    result.data.allProduct.edges.forEach(({ node: { id } }) => {
       createPage({
         component: path.resolve(`./src/templates/product.jsx`),
         path: `products/${id}`,

@@ -3,9 +3,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import ProductDetail from '../features/products/ProductDetail'
 
-const Product = ({ data: {products} }) => {
-  const product = products
-
+const Product = ({ data: {product} }) => {
   return (
     <ProductDetail product={product} />
   )
@@ -13,7 +11,7 @@ const Product = ({ data: {products} }) => {
 
 export const query = graphql`
   query($id: String!) {
-    products( id: { eq: $id }) {
+    product( id: { eq: $id }) {
       id
       department
       name

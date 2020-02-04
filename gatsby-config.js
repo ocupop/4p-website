@@ -133,7 +133,7 @@ module.exports = {
         databaseURL: process.env.FIREBASE_DATABASE_URL,
         types: [
           {
-            type: 'Products',
+            type: 'Product',
             collection: 'products',
             map: doc => ({
               name: doc.name,

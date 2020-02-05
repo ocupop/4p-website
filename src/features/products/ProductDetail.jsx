@@ -9,8 +9,8 @@ import { SINGLE_BAG, RECURRING_BAG } from '../../common/constants/BagTypes'
 import AddToCartButton from '../cart/AddToCartButton'
 
 const ProductDetail = ({ product }) => {
-  const [selectedVariant, setSelectedVariant] = useState(product.variants[0])
   const [selectProductVariants, setSelectProductVariants] = useState([])
+  const [selectedVariant, setSelectedVariant] = useState(product.variants[0])
 
   useEffect(() => {
     // Only create label name pair if there are more than one variant
@@ -18,13 +18,23 @@ const ProductDetail = ({ product }) => {
       const variants = product.variants.map(variant => {
         return {
           label: variant.name,
-          name: variant.id,
+          value: variant.id,
         }
       })
-
+      setSelectedVariant(product.variants[0])
       setSelectProductVariants(variants)
     }
   }, [])
+
+  const getFeaturedImage = () => {
+    if (selectedVariant.featuredImage) {
+      return selectedVariant.featuredImage
+    }
+    if (product.featuredImage) {
+      return product.featuredImage
+    }
+    return ''
+  }
 
   return (
     <>
@@ -52,7 +62,7 @@ const ProductDetail = ({ product }) => {
                             options={selectProductVariants}
                             onChange={value => {
                               const variant = _.find(product.variants, {
-                                id: value.name,
+                                id: value.value,
                               })
                               setSelectedVariant(variant)
                             }}
@@ -95,7 +105,7 @@ const ProductDetail = ({ product }) => {
                     <div
                       className="bg-image aspect-4x3"
                       style={{
-                        backgroundImage: `url(https://via.placeholder.com/800x500/000)`,
+                        backgroundImage: `url(${getFeaturedImage()})`,
                       }}
                     />
                   </Carousel.Item>
@@ -115,11 +125,9 @@ const ProductDetail = ({ product }) => {
                 <div className="d-flex">
                   {product.tags &&
                     product.tags.map((tag, index) => (
-                      <>
-                        <span key={tag} className="product-detail-tag">
-                          {tag}
-                        </span>
-                      </>
+                      <span key={index} className="product-detail-tag">
+                        {tag}
+                      </span>
                     ))}
                 </div>
               </div>
@@ -149,7 +157,9 @@ const ProductDetail = ({ product }) => {
             </div>
             <div className="col-lg-6">
               <div className="content">
-                <h2>From {selectedVariant.vendor.name}</h2>
+                <h2>
+                  From {selectedVariant.vendor && selectedVariant.vendor.name}
+                </h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
                   quia nihil omnis temporibus voluptatibus nostrum similique ad

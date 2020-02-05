@@ -5,7 +5,6 @@ import { PRODUCT_DATA } from '../../common/data/PRODUCT_DATA'
 
 const Product = () => {
   const product = PRODUCT_DATA[1];
-  console.log(product);
   return (
     <ProductDetail product={product} />
   )

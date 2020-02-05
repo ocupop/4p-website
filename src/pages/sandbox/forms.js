@@ -1,32 +1,37 @@
-import React from "react";
-import { Formik, Field, Form } from "formik"
-import * as Yup from 'yup';
+import React from 'react'
+import { Formik, Field, Form } from 'formik'
+import * as Yup from 'yup'
 import {
   TextInput,
   TextArea,
   SwitchInput,
   SelectInput,
-  RichInput
-} from "../../common/fields"
+  RichInput,
+} from '../../common/fields'
 
 import FormikDebug from '../../common/utils/FormikDebug'
+
+const mockSelectData = [
+  { value: 'select1', label: 'Select One' },
+  { value: 'select2', label: 'Select Two' },
+  { value: 'select3', label: 'Select Three' },
+]
 
 const ValidationSchema = Yup.object().shape({
   content: Yup.string()
     .min(10, 'Too Short!')
     .max(100, 'Too Long!')
     .required('Required'),
-});
+})
 
 const FormSandbox = () => {
   const initialValues = {
-    description: "",
+    description: '',
     switch: true,
     featuredProduct: {},
-    richDescription: ""
+    richDescription: '',
   }
-  const productOptions = []
-
+  
   return (
     <section>
       <div className="container">
@@ -37,11 +42,10 @@ const FormSandbox = () => {
               enableReinitialize
               initialValues={initialValues}
               validationSchema={ValidationSchema}
-            // onSubmit={(values, { resetForm }) => {
-            //   dispatch(testForm({ firestore }, values))
-            //   resetForm()
-            // }}
-
+              // onSubmit={(values, { resetForm }) => {
+              //   dispatch(testForm({ firestore }, values))
+              //   resetForm()
+              // }}
             >
               {({ values, setFieldValue }) => (
                 <Form>
@@ -62,15 +66,15 @@ const FormSandbox = () => {
                     type="checkbox"
                     component={SwitchInput}
                     label="Switch"
-                    onChange={() => setFieldValue("switch", !values.switch)}
+                    onChange={() => setFieldValue('switch', !values.switch)}
                   />
                   {/* Example of Select Input */}
                   <Field
                     name="featuredProduct"
                     type="text"
                     component={SelectInput}
-                    options={productOptions}
-                    onChange={value => setFieldValue("featuredProduct", value)}
+                    options={mockSelectData}
+                    onChange={value => setFieldValue('featuredProduct', value)}
                     label="Select Featured Product"
                   />
                   {/* Example of Rich Input */}
@@ -78,7 +82,7 @@ const FormSandbox = () => {
                     name="richDescription"
                     type="text"
                     component={RichInput}
-                    onChange={val => setFieldValue("richDescription", val)}
+                    onChange={val => setFieldValue('richDescription', val)}
                     label="Enter rich text"
                   />
                   <button type="submit">Submit</button>
@@ -93,4 +97,4 @@ const FormSandbox = () => {
   )
 }
 
-export default FormSandbox;
+export default FormSandbox

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import useCart from './useCart'
 import { SINGLE_BAG, RECURRING_BAG } from '../../common/constants/BagTypes'
 
-const AddToBagButton = ({ children, bagType, item }) => {
+const AddToCart = ({ children, bagType, item }) => {
   const { addToCart } = useCart({ author: { id: 123 } })
   const [buttonDisabled, isButtonDisabled] = useState(false)
 
@@ -29,10 +29,10 @@ const AddToBagButton = ({ children, bagType, item }) => {
   )
 }
 
-AddToBagButton.propTypes = {
+AddToCart.propTypes = {
   children: PropTypes.node,
   bagType: PropTypes.string,
   item: PropTypes.instanceOf(Object),
 }
 
-export default AddToBagButton
+export default AddToCart

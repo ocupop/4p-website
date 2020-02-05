@@ -1,11 +1,3 @@
-// @TODO: 2020-02-04-14:50:50
-// [x] if only one variant, remove select show the one
-// [x] if multiple variants, grab the first from the list
-// [ ] clean up code to have it look more pretty
-// [x] add product to json data type
-// [x]    Think of how this will effect the application as a whole
-// [ ] refactor page and remove errors
-
 import React, { useState, useEffect } from 'react'
 import _ from 'lodash'
 import PropTypes from 'prop-types'
@@ -14,7 +6,7 @@ import { Formik, Field, Form } from 'formik'
 import ProductCard from './ProductCard'
 import { SelectInput } from '../../common/fields'
 import { SINGLE_BAG, RECURRING_BAG } from '../../common/constants/BagTypes'
-import AddToBagButton from '../cart/AddToBagButton'
+import AddToCartButton from '../cart/AddToCartButton'
 
 const ProductDetail = ({ product }) => {
   const [selectedVariant, setSelectedVariant] = useState(product.variants[0])
@@ -80,19 +72,19 @@ const ProductDetail = ({ product }) => {
                   {selectedVariant.unit}
                 </div>
                 <div className="d-flex align-items-center mt-3">
-                  <AddToBagButton
+                  <AddToCartButton
                     bagType={RECURRING_BAG}
                     item={selectedVariant}>
                     Weekly
                     <br />
                     Delivery
-                  </AddToBagButton>
+                  </AddToCartButton>
 
-                  <AddToBagButton bagType={SINGLE_BAG} item={selectedVariant}>
+                  <AddToCartButton bagType={SINGLE_BAG} item={selectedVariant}>
                     Single
                     <br />
                     Delivery
-                  </AddToBagButton>
+                  </AddToCartButton>
                 </div>
               </div>
             </div>

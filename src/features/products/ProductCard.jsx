@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { SINGLE_BAG, RECURRING_BAG } from '../../common/constants/BagTypes'
-import AddToBagButton from '../cart/AddToBagButton'
+import AddToBagButton from '../cart/AddToCartButton'
 
 const ProductCard = ({ product: { variants, name, id } }) => {
   return (

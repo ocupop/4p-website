@@ -20,5 +20,3 @@ CartList.propTypes = {
 }
 
 export default CartList
-
-

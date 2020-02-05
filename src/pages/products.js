@@ -34,6 +34,8 @@ export const query = graphql`
             storageTips
             label
             name
+            recurringPurchase
+            singlePurchase
             featuredImage
             quantity
             sku

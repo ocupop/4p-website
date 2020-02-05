@@ -30,6 +30,8 @@ export const query = graphql`
         sku
         nutritionalFacts
         tags
+        recurringPurchase
+        singlePurchase
       }
     }
   }

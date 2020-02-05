@@ -5,13 +5,12 @@ import {
   isLoaded,
   isEmpty
 } from 'react-redux-firebase'
-import { useSelector } from 'react-redux'
-import { addToCart, removeFromCart } from './cartActions'
-import { asyncActionStart, asyncActionFinish, asyncActionError } from '../../common/async/asyncActions'
+// import { useSelector } from 'react-redux'
+// import { asyncActionStart, asyncActionFinish, asyncActionError } from '../../common/async/asyncActions'
 
-const [items, addItem] = useState([]);
 
 function useCart({ author }) {
+  const [items, addItem] = useState([]);
   const firestore = useFirestore()
 
   useFirestoreConnect([
@@ -21,15 +20,15 @@ function useCart({ author }) {
     }
   ])
 
-  function addItemToBag(item, bag) {
+
+  function addToCart(item, bagType) {
+    console.log(`Called the hook, adding to bag ${bagType}, item:`, item)
     // addToCart(item);
   }
 
-  function removeFromBag(item, bag) {
-    // removeFromCart(item);
-  }
+  
 
-  return { items, addItemToBag, removeFromBag }
+  return {items, addToCart }
 }
 
 export default useCart;

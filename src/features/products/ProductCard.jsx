@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
+import { SINGLE_BAG, RECURRING_BAG } from '../../common/constants/BagTypes'
 import AddToBagButton from '../cart/AddToBagButton'
 
 const ProductCard = ({ product: { variants, name, id } }) => {
@@ -26,19 +27,19 @@ const ProductCard = ({ product: { variants, name, id } }) => {
         </div>
       </Link>
       <div className="card-footer d-flex align-items-center p-0">
-        <AddToBagButton
-          handleOnClick={() => {
-            console.log('add to weekly bag')
-          }}>
+        
+        {/* // @TODO we need to figure out which variant will be displayed and added to cart*/}
+      {/* <AddToBagButton bagType={RECURRING_BAG} item={variants[0]}>
           Weekly
           <br />
           Delivery
         </AddToBagButton>
-        <AddToBagButton>
+
+        <AddToBagButton bagType={SINGLE_BAG} item={variants[0]}>
           One-Time
           <br />
           Purchase
-        </AddToBagButton>
+        </AddToBagButton> */}
       </div>
     </div>
   )

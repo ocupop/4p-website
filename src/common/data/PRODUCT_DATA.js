@@ -74,6 +74,7 @@ export const PRODUCT_DATA = [
     tags: ['tag1', 'tag2'],
     variants: [
       {
+        id: 'dsAsd234',
         name: 'Organic Marinara Sauce',
         price: 5.99,
         size: 24,

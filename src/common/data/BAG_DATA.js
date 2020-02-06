@@ -1,6 +1,6 @@
 export const BAG_DATA = [
   {
-    id: 123,
+    id: 'ssd2sHkD3',
     name: 'Dairy Bag',
     featuredImage: 'absolute/path/to/image',
     tags: ['tag1', 'tag2', 'tag3'],

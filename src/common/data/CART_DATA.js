@@ -1,46 +1,37 @@
 export const CART_DATA = {
-  cartTotal: 123.00,
-  bags: [
+  cartTotal: 123.0,
+  cartItems: [
     {
-      id: "lkjsfdlsakj",
-      name: "Small Dairy Bag",
-      type: "automated", // recurring, single, automated
-      bagPrice: 25.00,
+      variantID: 'lkajflsakj',
+      productID: 'lkajdf',
+      title: 'Eggs',
+      size: 12,
+      unit: 'egg',
+      price: 12345,
+      quantity: 4,
+      featuredImage: 'absolute/path/to/image',
+      type: 'product', // bag|product
+      purchaseStatus: 'single', // single|reccuring
     },
     {
-      id: ";lka;i",
-      name: "One-Time Purchases",
-      type: "single", // recurring, single, automated
-      bagPrice: null,
-      items: [
-        {
-          variantID: "lkajflsakj",
-          productID: "lkajdf",
-          title: "Eggs",
-          size: 12,
-          unit: "egg",
-          price: 12345,
-          quantity: 4,
-          featuredImage: "absolute/path/to/image"
-        },
-      ]
+      variantID: '343WE23',
+      productID: 'lkajdf',
+      title: 'Eggs',
+      size: 12,
+      unit: 'egg',
+      price: 12345,
+      quantity: 4,
+      featuredImage: 'absolute/path/to/image',
+      type: 'product', // bag|product
+      purchaseStatus: 'reccuring', // single|reccuring
     },
     {
-      id: "lkhnn",
-      name: "Recurring Items",
-      type: "recurring", // recurring, single, automated
-      items: [
-        {
-          variantID: "lkajflsakj",
-          productID: "lkajdf",
-          title: "Eggs",
-          size: 12,
-          unit: "egg",
-          price: 12345,
-          quantity: 4,
-          featuredImage: "absolute/path/to/image"
-        },
-      ]
-    }
-  ]
+      bagID: 'DF223',
+      variantID: 'lkjsfdlsakj',
+      title: 'Dairy Bag',
+      type: 'bag', // bag|product
+      purchaseStatus: 'single', // single|reccuring
+      price: 25.0,
+    },
+  ],
 }

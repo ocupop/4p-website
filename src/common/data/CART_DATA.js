@@ -1,46 +1,38 @@
 export const CART_DATA = {
-  cartTotal: 123.00,
-  bags: [
+  cartTotal: 123.0,
+  cartItems: [
     {
-      id: "lkjsfdlsakj",
-      name: "Small Dairy Bag",
-      type: "automated", // recurring, single, automated
-      bagPrice: 25.00,
+      variantID: 'sdd24',
+      productID: 'e34dfs4',
+      title: 'Organic 2% Reduced Fat Milk',
+      size: 0.5,
+      unit: 'gallon',
+      price: 3.99,
+      quantity: 4,
+      featuredImage: 'absolute/path/to/image',
+      type: 'product', // bag|product
+      purchaseStatus: 'single', // single|reccuring
     },
     {
-      id: ";lka;i",
-      name: "One-Time Purchases",
-      type: "single", // recurring, single, automated
-      bagPrice: null,
-      items: [
-        {
-          variantID: "lkajflsakj",
-          productID: "lkajdf",
-          title: "Eggs",
-          size: 12,
-          unit: "egg",
-          price: 12345,
-          quantity: 4,
-          featuredImage: "absolute/path/to/image"
-        },
-      ]
+      variantID: 'dsAsd234',
+      productID: 'DsF34',
+      title: 'Organic Marinara Sauce',
+      size: 24,
+      unit: 'oz',
+      price: 5.99,
+      quantity: 2,
+      featuredImage: 'absolute/path/to/image',
+      type: 'product', // bag|product
+      purchaseStatus: 'reccuring', // single|reccuring
     },
     {
-      id: "lkhnn",
-      name: "Recurring Items",
-      type: "recurring", // recurring, single, automated
-      items: [
-        {
-          variantID: "lkajflsakj",
-          productID: "lkajdf",
-          title: "Eggs",
-          size: 12,
-          unit: "egg",
-          price: 12345,
-          quantity: 4,
-          featuredImage: "absolute/path/to/image"
-        },
-      ]
-    }
-  ]
+      bagID: 'ssd2sHkD3',
+      variantID: 'sdsg34Df23',
+      title: 'Dairy Bag',
+      featuredImage: 'absolute/path/to/image',
+      type: 'bag', // bag|product
+      purchaseStatus: 'single', // single|reccuring
+      price: 20.0,
+    },
+  ],
 }

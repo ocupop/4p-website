@@ -5,7 +5,7 @@ import CartList from './CartList'
 import {CART_DATA} from '../../common/data/CART_DATA'
 
 const CartDashboard = () => {
-  const { bags, cartTotal } = CART_DATA
+  const { cartItems , cartTotal } = CART_DATA
 
   return (
     <>
@@ -47,7 +47,7 @@ const CartDashboard = () => {
         </div>
         <button type="button" className="btn btn-primary">{cartTotal}</button>
         <hr />
-        <CartList bags={bags} />
+        <CartList items={cartItems} />
       </section>
     </>
   )

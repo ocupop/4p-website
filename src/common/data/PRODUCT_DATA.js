@@ -19,11 +19,13 @@ export const PRODUCT_DATA = [
       'vitamin A palmitate',
       'vitamin D3',
     ],
+    storageTip: 'keep cold and refrigerated',
     variants: [
       {
         id: 'sdd24',
         name: 'Organic 2% Reduced Fat Milk',
-        featuredImage: 'https://cdn.pixabay.com/photo/2017/07/05/15/41/milk-2474993_1280.jpg',
+        featuredImage:
+          'https://cdn.pixabay.com/photo/2017/07/05/15/41/milk-2474993_1280.jpg',
         price: 3.99,
         size: 1,
         unit: 'half gallon',
@@ -37,7 +39,8 @@ export const PRODUCT_DATA = [
       {
         id: '3SD23d',
         name: 'Organic 2% Fat Milk',
-        featuredImage: 'https://cdn.pixabay.com/photo/2016/12/06/18/27/milk-1887234_1280.jpg',
+        featuredImage:
+          'https://cdn.pixabay.com/photo/2016/12/06/18/27/milk-1887234_1280.jpg',
         price: 6.99,
         size: 1,
         unit: 'gallon',
@@ -55,7 +58,8 @@ export const PRODUCT_DATA = [
     name: 'Pasta Sauce',
     category: 'Pasta & Sauce',
     department: 'Pantry',
-    featuredImage:'https://image.shutterstock.com/image-photo/fettuccine-pasta-shrimp-tomatoes-herbs-600w-283021049.jpg',
+    featuredImage:
+      'https://image.shutterstock.com/image-photo/fettuccine-pasta-shrimp-tomatoes-herbs-600w-283021049.jpg',
     ingredients: [
       'Tomatoes',
       'Tomato Puree',
@@ -70,6 +74,7 @@ export const PRODUCT_DATA = [
     tags: ['tag1', 'tag2'],
     variants: [
       {
+        id: 'dsAsd234',
         name: 'Organic Marinara Sauce',
         price: 5.99,
         size: 24,

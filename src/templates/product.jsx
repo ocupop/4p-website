@@ -13,7 +13,6 @@ export const query = graphql`
   query($id: String!) {
     product( id: { eq: $id }) {
       id
-      department
       name
       variants {
         size

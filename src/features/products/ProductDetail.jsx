@@ -9,6 +9,7 @@ import { SINGLE_BAG, RECURRING_BAG } from '../../common/constants/BagTypes'
 import AddToCartButton from '../cart/AddToCartButton'
 
 const ProductDetail = ({ product }) => {
+  console.log(product)
   const [selectProductVariants, setSelectProductVariants] = useState([])
   const [selectedVariant, setSelectedVariant] = useState(product.variants[0])
 

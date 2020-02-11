@@ -1,33 +1,6 @@
 .cart-summary {
+  min-width: 400px;
   background: $white;
-  border: 1px solid $gray-200;
-  width: 400px;
-  height: auto;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 0;
-  @include transition(0.4s);
-  position: absolute;
-  right: 0;
-  top: 100%;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.1;
-  .cart-hover-summary-header,
-  .cart-hover-summary-footer {
-    padding: 20px;
-  }
-  .cart-hover-summary-item {
-    padding: 10px;
-    border-bottom: 1px solid $gray-200;
-  }
-  h2 {
-    font-size: 16px;
-    margin-bottom: 0;
-  }
-  .product-price {
-    font-size: 16px;
-  }
-  .product-amount {
-    font-size: 13px;
-  }
 }

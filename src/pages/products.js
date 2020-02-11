@@ -22,7 +22,6 @@ export const query = graphql`
       edges {
         node {
           id
-          department
           name
           variants {
             size

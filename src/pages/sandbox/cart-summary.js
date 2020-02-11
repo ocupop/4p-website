@@ -9,13 +9,16 @@ const cartSummarySandbox = () => {
           <div className="row">
             <div className="col-12">
               <div className="content">
-                <button class="btn btn-primary">Cart</button>
+                <CartSummary />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <CartSummary/>
+      <section style={{
+        paddingBottom: `500px`,
+      }}>
+      </section>
     </>
   )
 }

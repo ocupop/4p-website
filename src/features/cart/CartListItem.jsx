@@ -17,7 +17,7 @@ const CartListItem = ({ item }) => {
         </div>
         <div className="col-lg-6">
           <div className="content h-100 position-relative">
-            <h2>{item.title}</h2>
+            <h3>{item.title}</h3>
             <p>Amount</p>
             <button className="btn btn-link">Remove</button>
           </div>
@@ -31,7 +31,7 @@ const CartListItem = ({ item }) => {
                   <option value="">2</option>
                 </select>
               </div>
-              <span className="product-price">{item.price}</span>
+              <span className="product-price">${item.price}</span>
             </div>
             <div className="form-check form-check-inline">
               <input

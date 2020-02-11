@@ -34,5 +34,14 @@ export const CART_DATA = {
       purchaseStatus: 'single', // single|reccuring
       price: 20.0,
     },
+    {
+      bagID: 'ssd21sHkD3',
+      variantID: 'sdssg34Df23',
+      title: 'Dairy Bag',
+      featuredImage: 'absolute/path/to/image',
+      type: 'bag', // bag|product
+      purchaseStatus: 'single', // single|reccuring
+      price: 20.0,
+    },
   ],
 }

@@ -1,8 +1,40 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import _ from 'lodash'
 import PropTypes from 'prop-types'
+import { Carousel } from 'react-bootstrap'
+import { Formik, Field, Form } from 'formik'
+import { SelectInput } from '../../common/fields'
+import { SINGLE_BAG, RECURRING_BAG } from '../../common/constants/BagTypes'
+import AddToCartButton from '../cart/AddToCartButton'
+import BagCard from './BagCard'
 
 const BagDetails = ({bag}) => {
-  console.log(bag);
+  const [selectBagVariants, setSelectBagVariants] = useState([])
+  const [selectedVariant, setSelectedVariant] = useState(bag.variants[0])
+
+  useEffect(() => {
+    // Only create label name pair if there are more than one variant
+    if (bag.variants.length > 1) {
+      const variants = bag.variants.map(variant => {
+        return {
+          label: variant.name,
+          value: variant.id,
+        }
+      })
+      setSelectedVariant(bag.variants[0])
+      setSelectBagVariants(variants)
+    }
+  }, [])
+
+  const getFeaturedImage = () => {
+    if (selectedVariant.featuredImage) {
+      return selectedVariant.featuredImage
+    }
+    if (bag.featuredImage) {
+      return bag.featuredImage
+    }
+    return ''
+  }
   return (
     <>
       <section>
@@ -10,35 +42,73 @@ const BagDetails = ({bag}) => {
           <div className="row">
             <div className="col-lg-6">
               <div className="content">
-                <h2>{ bag.name }</h2>
-                <p className="font-family-serif">{ bag.description }</p>
-                <div className="styled-select">
-                  <select name="" id="" placeholder="Choose Size">
-                    <option value="">Option value 1</option>
-                    <option value="">Option value 2</option>
-                    <option value="">Option value 3</option>
-                  </select>
+                <h1 className="h2">{bag.name}</h1>
+                <p className="mb-5">{bag.description}</p>
+                {/* Only display the select, if there are select options */}
+                {selectBagVariants.length >= 2 && (
+                  <div className="form-group">
+                    <Formik
+                      enableReinitialize
+                      initialValues={{
+                        featuredProduct: selectBagVariants[0],
+                      }}>
+                      {() => (
+                        <Form>
+                          <Field
+                            name="featuredBag"
+                            type="text"
+                            component={SelectInput}
+                            options={selectBagVariants}
+                            onChange={value => {
+                              const variant = _.find(bag.variants, {
+                                id: value.value,
+                              })
+                              setSelectedVariant(variant)
+                            }}
+                            label="Select Featured Bag"
+                          />
+                        </Form>
+                      )}
+                    </Formik>
+                  </div>
+                )}
+
+                <div className="product-price mb-2">
+                  ${selectedVariant.price}
                 </div>
-                <div className="product-price my-3">$0.00 - $0.00</div>
-                <div className="d-flex">
-                  <button className="product-button w-50">
-                    Weekly<br />
+                <div className="product-amount">
+                  {selectedVariant.size}
+                  {selectedVariant.unit}
+                </div>
+                <div className="d-flex align-items-center mt-3">
+                  <AddToCartButton
+                    bagType={RECURRING_BAG}
+                    item={selectedVariant}>
+                    Weekly
+                    <br />
                     Delivery
-                  </button>
-                  <button className="product-button w-50">
-                    One-Time<br />
-                    Purchase
-                  </button>
+                  </AddToCartButton>
+
+                  <AddToCartButton bagType={SINGLE_BAG} item={selectedVariant}>
+                    Single
+                    <br />
+                    Delivery
+                  </AddToCartButton>
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="content">
-                <div className="bg-image aspect-4x3"
-                  style={{
-                    backgroundImage: `url(https://via.placeholder.com/768x500)`,
-                  }}
-                ></div>
+                <Carousel>
+                  <Carousel.Item>
+                    <div
+                      className="bg-image aspect-4x3"
+                      style={{
+                        backgroundImage: `url(${getFeaturedImage()})`,
+                      }}
+                    />
+                  </Carousel.Item>
+                </Carousel>
               </div>
             </div>
           </div>
@@ -128,7 +198,25 @@ const BagDetails = ({bag}) => {
           </div>
         </div>
       </section> */}
-      {/* TODO need to include 'we recommend' products section */}
+      {/* TODO need to include logic for 'we recommend' products section */}
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="content">
+                <h2 className="h1">We Recommend</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row no-gutters">
+            <div className="col-md-6 col-lg-3">
+              <div className="content">
+                <BagCard bag={bag} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }

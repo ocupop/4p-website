@@ -3,13 +3,13 @@ export const BAG_DATA = [
   {
     id: 'ssd2sHkD3',
     name: 'Dairy Bag',
-    featuredImage: 'absolute/path/to/image',
+    featuredImage: 'https://via.placeholder.com/500x400',
     tags: ['tag1', 'tag2', 'tag3'],
     department: 'dairy',
     category: 'Eggs',
     description:
       'Donec ac mattis elit. Duis massa sapien, gravida ac commodo a, ultricies sed nisl. Fusce id magna nulla. Curabitur quis magna ante. et nunc urna.',
-    variant: [
+    variants: [
       {
         id: 'sdsg34Df23',
         label: 'Just some eggs',
@@ -41,13 +41,13 @@ export const BAG_DATA = [
   {
     id: 'FG33edf',
     name: 'Produce Bag',
-    featuredImage: 'absolute/path/to/image',
+    featuredImage: 'https://via.placeholder.com/500x400/000',
     tags: ['tag1', 'tag2', 'tag3'],
     department: 'Produce',
     category: 'Fruits',
     description:
       'Donec ac mattis elit. Duis massa sapien, gravida ac commodo a, ultricies sed nisl. Fusce id magna nulla. Curabitur quis magna ante. et nunc urna.',
-    variant: [
+    variants: [
       {
         id: 'CXgv43',
         label: '1-2 People',

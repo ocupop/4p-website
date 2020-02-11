@@ -5,10 +5,15 @@ import BagCard from './BagCard';
 const BagList = ({bags}) => {
   return (
     <>
-      <h1>A List of all the bags</h1>
-      {bags && bags.map(bag => (
-        <BagCard key={bag.id} bag={bag} />
-      ))}
+      <div className="row no-gutters">
+        {bags && bags.map(bag => (
+          <div className="col-lg-6">
+            <div className="content">
+              <BagCard key={bag.id} bag={bag} />
+            </div>
+          </div>
+        ))}
+      </div>
     </>
   )
 }

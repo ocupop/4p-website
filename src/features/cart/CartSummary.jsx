@@ -46,6 +46,10 @@ const CartSummary = () => {
                   aria-valuemax="100"></div>
               </div>
             </div>
+            <hr className="my-0"/>
+            <div className="p-3 text-center">
+              <a href="/cart" className="text-uppercase font-family-base mb-0"><small><span className="text-primary">View and edit cart</span></small></a>
+            </div>
           </div>
         </Dropdown.Menu>
       </Dropdown>

@@ -1,6 +1,7 @@
 import { ASYNC_ACTION_ERROR, ASYNC_ACTION_FINISH, ASYNC_ACTION_START } from './asyncConstants';
 
 export const asyncActionStart = () => {
+  console.log("starting...")
   return {
     type: ASYNC_ACTION_START
   }

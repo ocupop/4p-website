@@ -5,7 +5,8 @@ import { Carousel } from 'react-bootstrap'
 import { Formik, Field, Form } from 'formik'
 import ProductCard from './ProductCard'
 import { SelectInput } from '../../common/fields'
-import { SINGLE_BAG, RECURRING_BAG } from '../../common/constants/BagTypes'
+import { PRODUCT_TYPE } from '../../common/constants/CartTypes'
+import { RECURRING_PURCHASE, SINGLE_PURCHASE } from '../../common/constants/CartPurchaseStatus'
 import AddToCartButton from '../cart/AddToCartButton'
 
 const ProductDetail = ({ product }) => {
@@ -83,14 +84,21 @@ const ProductDetail = ({ product }) => {
                 </div>
                 <div className="d-flex align-items-center mt-3">
                   <AddToCartButton
-                    bagType={RECURRING_BAG}
-                    item={selectedVariant}>
+                    cartType={PRODUCT_TYPE}
+                    cartPurchaseStatus={RECURRING_PURCHASE}
+                    item={selectedVariant}
+                    productId={product.id}
+                    >
                     Weekly
                     <br />
                     Delivery
                   </AddToCartButton>
 
-                  <AddToCartButton bagType={SINGLE_BAG} item={selectedVariant}>
+                  <AddToCartButton
+                    cartType={PRODUCT_TYPE}
+                    cartPurchaseStatus={SINGLE_PURCHASE}
+                    item={selectedVariant}
+                    productId={product.id}>
                     Single
                     <br />
                     Delivery

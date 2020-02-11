@@ -20,7 +20,7 @@ export const BAG_DATA = [
         available: true,
         vendor: {
           name: '4P Foods',
-          id: 123,
+          id: 123
         },
       },
       {
@@ -33,12 +33,11 @@ export const BAG_DATA = [
         available: true,
         vendor: {
           name: '4P Foods',
-          id: 123,
+          id: 123
         },
       },
     ],
   },
-  // bag 2
   {
     id: 'FG33edf',
     name: 'Produce Bag',
@@ -59,7 +58,7 @@ export const BAG_DATA = [
         available: true,
         vendor: {
           name: '4P Foods',
-          id: 123,
+          id: 123
         },
       },
       {
@@ -72,20 +71,21 @@ export const BAG_DATA = [
         available: true,
         vendor: {
           name: '4P Foods',
-          id: 123,
+          id: 123
         },
-        {
-          id: 'GHJ4wd',
-          price: 23.0,
-          name: 'Large Bag',
-          label: '5-6 People',
-          recurringPurchase: true,
-          singlePurchase: true,
-          available: true,
-          vendor: {
-            name: '4P Foods',
-            id: 123,
-          },
+      },  
+      {
+        id: 'GHJ4wd',
+        price: 23.0,
+        name: 'Large Bag',
+        label: '5-6 People',
+        recurringPurchase: true,
+        singlePurchase: true,
+        available: true,
+        vendor: {
+          name: '4P Foods',
+          id: 123
+        },
       },
     ],
   },

@@ -19,7 +19,7 @@ const CartDashboard = () => {
                   <div className="delivery-details d-flex align-items-center">
                     <span className="text-uppercase">
                       Your next delivery
-                      <strong>Wednesday 12/19</strong>
+                      <strong class="ml-2">Wednesday 12/19</strong>
                     </span>
                     <a href="#">
                       <small>

@@ -18,19 +18,9 @@ export const query = graphql`
         size
         unit
         price
-        available
-        nutritionalLabel
-        description
-        storageTips
         label
         name
-        featuredImage
-        quantity
         sku
-        nutritionalFacts
-        tags
-        recurringPurchase
-        singlePurchase
       }
     }
   }

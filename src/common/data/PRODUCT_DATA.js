@@ -22,11 +22,16 @@ export const PRODUCT_DATA = [
     ],
     category: 'milk',
     department: 'dairy',
+    vendor: {
+      name: 'Clover Sonoma',
+      id: '32dsf35',
+      featuredImage: 'https://cdn.pixabay.com/photo/2017/07/05/15/41/milk-2474993_1280.jpg',
+    },
     variants: [
       {
         id: 'sdd24',
-        name: 'Organic 2% Reduced Fat Milk',
-        label: 'Half Gallon',
+        name: 'Half Gallon',
+        label: '',
         description: 'Organic rBST and antibiotic- free Fresh pasteurized to ensure the quality Gluten free Low sodium Excellent source of calcium',
         nutritionalLabel: 'https://via.placeholder.com/500x700',
         featuredImage: 'https://cdn.pixabay.com/photo/2017/07/05/15/41/milk-2474993_1280.jpg',
@@ -43,17 +48,12 @@ export const PRODUCT_DATA = [
         recurringPurchase: true,
         singlePurchase: true,
         trackInventory: true,
-        quantity: 10,
-        vendor: {
-          name: 'Clover Sonoma',
-          id: '32dsf35',
-          featuredImage: 'https://via.placeholder.com/500x500',
-        },
+        quantity: 10
       },
       {
         id: '3SD23d',
-        name: 'Organic 2% Reduced Fat Milk',
-        label: 'Half Gallon',
+        name: 'Full Gallon',
+        label: '',
         nutritionalLabel: 'https://via.placeholder.com/500x700',
         featuredImage: 'https://cdn.pixabay.com/photo/2016/12/06/18/27/milk-1887234_1280.jpg',
         size: 1,
@@ -68,12 +68,7 @@ export const PRODUCT_DATA = [
         recurringPurchase: true,
         singlePurchase: true,
         trackInventory: true,
-        quantity: 5,
-        vendor: {
-          name: 'Clover Sonoma',
-          id: '32dsf35',
-          featuredImage: 'https://cdn.pixabay.com/photo/2017/07/05/15/41/milk-2474993_1280.jpg',
-        },
+        quantity: 5
       },
     ],
   },

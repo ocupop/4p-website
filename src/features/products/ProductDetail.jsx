@@ -10,22 +10,33 @@ import AddToCartButton from '../cart/AddToCartButton'
 
 const ProductDetail = ({ product }) => {
   console.log(product)
-  const [selectProductVariants, setSelectProductVariants] = useState([])
+  // const [productVariants, setProductVariants] = useState([])
   const [selectedVariant, setSelectedVariant] = useState(product.variants[0])
-
-  useEffect(() => {
-    // Only create label name pair if there are more than one variant
-    if (product.variants.length > 1) {
-      const variants = product.variants.map(variant => {
-        return {
-          label: variant.name,
-          value: variant.id,
-        }
-      })
-      setSelectedVariant(product.variants[0])
-      setSelectProductVariants(variants)
+  const variantOptions = product.variants.map(variant => {
+    return {
+      label: `${variant.name} - ${variant.label}`,
+      value: variant.id,
+      featuredImage: variant.featuredImage,
+      size: variant.size,
+      unit: variant.unit,
+      price: variant.price
     }
-  }, [])
+  })
+
+
+  // useEffect(() => {
+  //   // Only create label name pair if there are more than one variant
+  //   if (product.variants.length > 1) {
+  //     const variants = product.variants.map(variant => {
+  //       return {
+  //         label: variant.name,
+  //         value: variant.id,
+  //       }
+  //     })
+  //     setSelectedVariant(product.variants[0])
+  //     setSelectProductVariants(variants)
+  //   }
+  // }, [])
 
   const getFeaturedImage = () => {
     if (selectedVariant.featuredImage) {
@@ -46,56 +57,61 @@ const ProductDetail = ({ product }) => {
               <div className="content">
                 <h1 className="h2">{product.name}</h1>
                 <p className="mb-5">{product.description}</p>
-                {/* Only display the select, if there are select options */}
-                {selectProductVariants.length >= 2 && (
-                  <div className="form-group">
-                    <Formik
-                      enableReinitialize
-                      initialValues={{
-                        featuredProduct: selectProductVariants[0],
-                      }}>
-                      {() => (
+                <Formik
+                  enableReinitialize
+                  initialValues={{
+                    selectedVariant: variantOptions[0],
+                  }}>
+                  {({ values, setFieldValue }) => (
+                  <>  
+                    {/* Only display the select, if there are select options */}
+                    {variantOptions.length > 1 && (
+                      <div className="form-group">
                         <Form>
+                          <p>{ values.selectedVariant.label }</p>
                           <Field
-                            name="featuredProduct"
+                            name="selectedVariant"
                             type="text"
                             component={SelectInput}
-                            options={selectProductVariants}
-                            onChange={value => {
-                              const variant = _.find(product.variants, {
-                                id: value.value,
-                              })
-                              setSelectedVariant(variant)
-                            }}
+                            options={variantOptions}
+                            isClearable={false}
+                            onChange={value => setFieldValue("selectedVariant", value)}
+                            // onChange={value => {
+                            //   const variant = _.find(product.variants, {
+                            //     id: value.value,
+                            //   })
+                            //   setSelectedVariant(variant)
+                            // }}
                             label="Select Featured Product"
                           />
                         </Form>
-                      )}
-                    </Formik>
-                  </div>
-                )}
+                      </div>
+                    )}
+                    <div className="product-price mb-2">
+                      ${values.selectedVariant.price}
+                    </div>
+                    <div className="product-amount">
+                      {values.selectedVariant.size} {values.selectedVariant.unit}
+                    </div>
+                    <div className="d-flex align-items-center mt-3">
+                      <AddToCartButton
+                        bagType={RECURRING_BAG}
+                        item={selectedVariant}>
+                        Weekly
+                        <br />
+                        Delivery
+                      </AddToCartButton>
 
-                <div className="product-price mb-2">
-                  ${selectedVariant.price}
-                </div>
-                <div className="product-amount">
-                  {selectedVariant.size} {selectedVariant.unit}
-                </div>
-                <div className="d-flex align-items-center mt-3">
-                  <AddToCartButton
-                    bagType={RECURRING_BAG}
-                    item={selectedVariant}>
-                    Weekly
-                    <br />
-                    Delivery
-                  </AddToCartButton>
-
-                  <AddToCartButton bagType={SINGLE_BAG} item={selectedVariant}>
-                    Single
-                    <br />
-                    Delivery
-                  </AddToCartButton>
-                </div>
+                      <AddToCartButton bagType={SINGLE_BAG} item={selectedVariant}>
+                        Single
+                        <br />
+                        Delivery
+                      </AddToCartButton>
+                    </div>
+                  </>       
+                  )}
+                </Formik>
+                
               </div>
             </div>
             <div className="col-lg-6">
@@ -163,7 +179,7 @@ const ProductDetail = ({ product }) => {
                 <div
                   className="bg-image aspect-4x3"
                   style={{
-                    backgroundImage: `url(${selectedVariant.vendor.featuredImage })`,
+                    backgroundImage: `url(${product.vendor.featuredImage })`,
                   }}
                 />
               </div>
@@ -171,7 +187,7 @@ const ProductDetail = ({ product }) => {
             <div className="col-lg-6">
               <div className="content">
                 <h2>
-                  From {selectedVariant.vendor && selectedVariant.vendor.name}
+                  From {product.vendor && product.vendor.name}
                 </h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui

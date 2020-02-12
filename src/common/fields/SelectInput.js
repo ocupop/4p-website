@@ -38,7 +38,8 @@ const SelectInput = ({
   isSearchable,
   type,
   onChange,
-  options
+  options,
+  isClearable
 }) => {
   return (
     <div className="form-group">
@@ -65,7 +66,7 @@ const SelectInput = ({
           options={options}
           isMulti={isMulti}
           isSearchable={isSearchable}
-          isClearable
+          isClearable={isClearable}
           theme={theme => ({
             ...theme,
             borderRadius: 0,

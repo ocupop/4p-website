@@ -79,8 +79,7 @@ const ProductDetail = ({ product }) => {
                   ${selectedVariant.price}
                 </div>
                 <div className="product-amount">
-                  {selectedVariant.size}
-                  {selectedVariant.unit}
+                  {selectedVariant.size} {selectedVariant.unit}
                 </div>
                 <div className="d-flex align-items-center mt-3">
                   <AddToCartButton
@@ -123,10 +122,10 @@ const ProductDetail = ({ product }) => {
             <div className="col-lg-6">
               <div className="content">
                 <h2>Product Details</h2>
-                <div className="d-flex">
+                <div className="d-flex flex-wrap">
                   {product.tags &&
                     product.tags.map((tag, index) => (
-                      <span key={index} className="product-detail-tag">
+                      <span key={index} className="product-detail-tag mb-2">
                         {tag}
                       </span>
                     ))}
@@ -136,7 +135,20 @@ const ProductDetail = ({ product }) => {
             <div className="col-lg-6">
               <div className="content">
                 <h2>Ingredients:</h2>
-                <span>{product.ingredients}</span>
+                <p>
+                  {product.ingredients &&
+                    product.ingredients.map((ingredient, index) => (
+                      <span key={index} className="mb-2">
+                        {ingredient},&nbsp; 
+                      </span>
+                    ))}
+                </p>  
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="content">
+                <h3>Storage Tips</h3>
+                <p>{product.storageTips}</p>
               </div>
             </div>
           </div>
@@ -151,7 +163,7 @@ const ProductDetail = ({ product }) => {
                 <div
                   className="bg-image aspect-4x3"
                   style={{
-                    backgroundImage: `url(https://via.placeholder.com/800)`,
+                    backgroundImage: `url(${selectedVariant.vendor.featuredImage })`,
                   }}
                 />
               </div>
@@ -170,12 +182,12 @@ const ProductDetail = ({ product }) => {
                 </p>
                 <div className="row">
                   <div className="col-lg-6">
-                    <span className="text-uppercase text-light">
+                    <span className="text-uppercase">
                       30 Miles from you
                     </span>
                   </div>
                   <div className="col-lg-6">
-                    <a href="#">whiffletreefarms.com</a>
+                    <a href="#">vendorwebsiteurl.com</a>
                   </div>
                 </div>
               </div>

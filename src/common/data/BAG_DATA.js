@@ -12,8 +12,8 @@ export const BAG_DATA = [
     variants: [
       {
         id: 'sdsg34Df23',
-        label: 'Just some eggs',
-        price: 20.0,
+        label: '1-2 People',
+        price: 20.00,
         name: 'Mini',
         recurringPurchase: true,
         singlePurchase: true,
@@ -25,9 +25,34 @@ export const BAG_DATA = [
       },
       {
         id: '2344sd',
-        price: 25.0,
+        price: 25.00,
         name: 'Regular',
-        label: 'Full of eggs',
+        label: '3-4 People',
+        recurringPurchase: true,
+        singlePurchase: true,
+        available: true,
+        vendor: {
+          name: '4P Foods',
+          id: 123
+        },
+      },
+    ],
+  },
+  {
+    id: 'ssd2sHkD23',
+    name: 'Meat Bag',
+    featuredImage: 'https://via.placeholder.com/500x400',
+    tags: ['tag1', 'tag2', 'tag3'],
+    department: 'meat',
+    category: 'meat',
+    description:
+      'Donec ac mattis elit. Duis massa sapien, gravida ac commodo a, ultricies sed nisl. Fusce id magna nulla. Curabitur quis magna ante. et nunc urna.',
+    variants: [
+      {
+        id: 'sdsg34Df24',
+        label: '1-2 People',
+        price: 20.00,
+        name: 'Regular',
         recurringPurchase: true,
         singlePurchase: true,
         available: true,
@@ -51,7 +76,7 @@ export const BAG_DATA = [
       {
         id: 'CXgv43',
         label: '1-2 People',
-        price: 20.0,
+        price: 20.00,
         name: 'Small Bag',
         recurringPurchase: false,
         singlePurchase: true,
@@ -63,7 +88,7 @@ export const BAG_DATA = [
       },
       {
         id: 'XCVer3',
-        price: 25.0,
+        price: 25.00,
         name: 'Medium Bag',
         label: '3-4 People',
         recurringPurchase: true,

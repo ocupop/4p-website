@@ -141,9 +141,25 @@ module.exports = {
               variants: doc.variants,
             }),
           },
+          {
+            type: 'Quote',
+            collection: 'quotes',
+            map: doc => ({
+              content: doc.content,
+              author___NODE: doc.author.value,
+            }),
+          },
+          {
+            type: 'Author',
+            collection: 'authors',
+            map: doc => ({
+              name: doc.name,
+            }),
+          },
         ],
       },
     },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

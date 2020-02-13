@@ -44,7 +44,6 @@ export const BAG_DATA = [
     featuredImage: 'https://via.placeholder.com/500x400',
     tags: ['tag1', 'tag2', 'tag3'],
     department: 'meat',
-    category: 'meat',
     description:
       'Donec ac mattis elit. Duis massa sapien, gravida ac commodo a, ultricies sed nisl. Fusce id magna nulla. Curabitur quis magna ante. et nunc urna.',
     variants: [
@@ -68,8 +67,7 @@ export const BAG_DATA = [
     name: 'Produce Bag',
     featuredImage: 'https://via.placeholder.com/500x400/000',
     tags: ['tag1', 'tag2', 'tag3'],
-    department: 'Produce',
-    category: 'Fruits',
+    department: 'produce',
     description:
       'Donec ac mattis elit. Duis massa sapien, gravida ac commodo a, ultricies sed nisl. Fusce id magna nulla. Curabitur quis magna ante. et nunc urna.',
     variants: [

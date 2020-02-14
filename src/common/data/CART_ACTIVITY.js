@@ -1,6 +1,6 @@
 export const CART_HISTORY = [
   {
-    createdAt: Date,
+    timestamp: Date,
     userID: "",
     userName: "",
     action: "",

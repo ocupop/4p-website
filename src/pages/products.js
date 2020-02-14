@@ -24,12 +24,8 @@ export const query = graphql`
           id
           name
           variants {
-            size
-            unit
-            price
             label
             name
-            sku
           }
         }
       }

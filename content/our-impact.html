@@ -15,22 +15,22 @@ _assets:
 <div class="row no-gutters">
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[0].image }}')" data-cms-editor-link="cloudcannon:#_assets[0].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[0].image | prepend: site.url }}')" data-cms-editor-link="cloudcannon:#_assets[0].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[1].image }}')" data-cms-editor-link="cloudcannon:#_assets[1].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[1].image | prepend: site.url}}')" data-cms-editor-link="cloudcannon:#_assets[1].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[2].image }}')" data-cms-editor-link="cloudcannon:#_assets[2].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[2].image | prepend: site.url }}')" data-cms-editor-link="cloudcannon:#_assets[2].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
 </div>
 <section class="position-relative">
-  <img src="/img/bg-illustrations/4p-background-radish-01.png" alt="radish illustration"
+  <img src="{{ '/img/bg-illustrations/4p-background-radish-01.png' | prepend: site.url }}" alt="radish illustration"
     style="position: absolute; top: -10%; width: 32%; right: -5%;">
   <div class="container">
     <div class="row">
@@ -57,27 +57,27 @@ _assets:
     </div>
     <div class="row mt-5">
       <div class="col-md-6 col-lg-3 text-center">
-        <img src="/img/icons/4p-icons-howitworks-01.png" class="img-fluid mb-4 w-50 editable" alt="Barn Graphic" />
+        <img src="{{ '/img/icons/4p-icons-howitworks-01.png' | prepend: site.url }}" class="img-fluid mb-4 w-50 editable" alt="Barn Graphic" />
         <div class="editable">
           <p><strong>212+</strong> independent, family farmers supported by 4P Foods throughout the east coast.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3 text-center">
-        <img src="/img/icons/4p-icons-ourimpact-02.png" class="img-fluid mb-4 w-50 editable" alt="Groceries Graphic" />
+        <img src="{{ '/img/icons/4p-icons-ourimpact-02.png' | prepend: site.url }}" class="img-fluid mb-4 w-50 editable" alt="Groceries Graphic" />
         <div class="editable">
           <p>Over <strong>100,000 lbs</strong> of Good Food delivered into underserved communities in our national region.
           </p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3 text-center">
-        <img src="/img/icons/4p-icons-ourimpact-03.png" class="img-fluid mb-4 w-50 editable" alt="Package Graphic" />
+        <img src="{{ '/img/icons/4p-icons-ourimpact-03.png' | prepend: site.url }}" class="img-fluid mb-4 w-50 editable" alt="Package Graphic" />
         <div class="editable">
           <p><strong>290+ families</strong> served through our Fresh Farmacy produce prescription program in
             Charlottesville.</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3 text-center">
-        <img src="/img/icons/4p-icons-ourimpact-04.png" class="img-fluid mb-4 w-50 editable" alt="Money Graphic" />
+        <img src="{{ '/img/icons/4p-icons-ourimpact-04.png' | prepend: site.url }}" class="img-fluid mb-4 w-50 editable" alt="Money Graphic" />
         <div class="editable">
           <p><strong>60% of every dollar</strong> you spend with 4P Foods goes directly back to farmers. (Compared to 8% of
             mainstream food supply
@@ -90,17 +90,17 @@ _assets:
 <div class="row no-gutters">
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[3].image }}')" data-cms-editor-link="cloudcannon:#_assets[3].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[3].image | prepend: site.url }}')" data-cms-editor-link="cloudcannon:#_assets[3].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[4].image }}')" data-cms-editor-link="cloudcannon:#_assets[4].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[4].image | prepend: site.url }}')" data-cms-editor-link="cloudcannon:#_assets[4].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[5].image }}')" data-cms-editor-link="cloudcannon:#_assets[5].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[5].image | prepend: site.url }}')" data-cms-editor-link="cloudcannon:#_assets[5].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
 </div>
@@ -121,7 +121,7 @@ _assets:
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
-        <img src="/img/4p-foods-cmyk-logo-color-color.png" class="img-fluid editable" alt="4P Foods logo" />
+        <img src="{{ '/img/4p-foods-cmyk-logo-color-color.png' | prepend: site.url }}" class="img-fluid editable" alt="4P Foods logo" />
       </div>
       <div class="col-lg-8">
         <h4 class="editable">Our name stands for the 4 P's we think should be a part of every business</h4>
@@ -172,7 +172,7 @@ _assets:
   </div>
 </section>
 <!-- <featured-farms></featured-farms> -->
-<section class="bg-green bg-image aspect-none" style="background-image: url(/img/bg-illustrations/4p-homepage-button-02.jpg)">
+<section class="bg-green bg-image aspect-none" style="background-image: url({{ '/img/bg-illustrations/4p-homepage-button-02.jpg' | prepend: site.url }})">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">

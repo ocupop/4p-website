@@ -5,7 +5,7 @@
       {% assign farm = site.farmers | where: 'slug', slug | first %}
 
       <div class="card bg-transparent">
-        <div class="bg-image aspect-4x3" style="background-image: url({{ farm.featured_image }})"></div>
+        <div class="bg-image aspect-4x3" style="background-image: url({{ farm.featured_image | prepend: site.url }})"></div>
         <div class="card-body">
           <h4>{{ farm.title }}</h4>
           {% if farm.description %}

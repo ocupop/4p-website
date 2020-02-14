@@ -24,7 +24,7 @@ const CartSummary = () => {
                   </div>
                 </div>
                 <div className="col-6">
-                  <p class="mb-0 text-uppercase font-headings"><strong>Item Title</strong></p>
+                  <p className="mb-0 text-uppercase font-headings"><strong>Item Title</strong></p>
                   <span className="text-uppercase"><small>Amount</small></span><br />
                   <span className="text-uppercase"><small>Qty: 2</small></span>
                 </div>

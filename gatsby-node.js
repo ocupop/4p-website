@@ -39,8 +39,26 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
           }
         }
       }
+      allFarmers {
+        edges {
+          node {
+            id
+            url
+            layout
+          }
+        }
+      }
     }
-  `).then(({ data: { allPages: { edges: pages } } }) => {
+  `).then(({
+    data: {
+      allPages: {
+        edges: pages
+      },
+      allFarmers: {
+        edges: farmers
+      }
+    }
+  }) => {
     // Build Web Pages
     pages.forEach(({ node: { layout, pageUrl, id } }) => {
       const component = path.resolve(`./src/templates/${layout}.jsx`)
@@ -53,38 +71,22 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         },
       })
     })
+
+    // Build Farmer Pages
+    farmers.forEach(({ node: { layout, url, id } }) => {
+      const component = path.resolve(`./src/templates/${layout}.jsx`)
+
+      createPage({
+        component,
+        path: url,
+        context: {
+          id,
+        },
+      })
+    })
   })
 
-  // getting farmers...
-  //   await graphql(`
-  //   query {
-  //     allFarmers {
-  //       edges {
-  //         node {
-  //           id
-  //         }
-  //       }
-  //     }
-  //   }
-  // `).then(result => {
-  //   // Build Web Pages
-  //   result.data.allPages.edges.forEach(({ node: { layout, pageUrl, id } }) => {
-  //     const component = path.resolve(`./src/templates/${layout}.jsx`)
-
-  //     // TODO: Add solution for different Gatsby layouts
-  //     // const layout = node.layout === 'splash' ? 'splash' : 'index'
-
-  //     createPage({
-  //       component,
-  //       path: pageUrl,
-  //       context: {
-  //         id
-  //       },
-  //     })
-  //   })
-  // })
-
-  // build out products
+  // Product Pages
   await graphql(`
     query {
       allProduct {
@@ -95,9 +97,9 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         }
       }
     }
-  `).then(result => {
+  `).then(({ data: { allProduct: { edges: products } } }) => {
     // Build Web Pages
-    result.data.allProduct.edges.forEach(({ node: { id } }) => {
+    products.forEach(({ node: { id } }) => {
       createPage({
         component: path.resolve(`./src/templates/product.jsx`),
         path: `products/${id}`,
@@ -108,10 +110,6 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     })
   })
 }
-
-// exports.createPages = async ({ graphql, actions }) => {
-// console.log("this was run")
-// }
 
 
 // ------------------------

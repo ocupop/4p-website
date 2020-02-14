@@ -19,17 +19,17 @@ const parseOptions = {
   }
 }
 
-const PageTemplate = ({
+const FarmerTemplate = ({
   data: {
-    pages: {
-      content
+    farmers: {
+      output
     }
   }
- }) => {
+}) => {
 
   return (
     <>
-      {parse(content, parseOptions)}
+      {parse(output, parseOptions)}
     </>
   )
 }
@@ -37,14 +37,14 @@ const PageTemplate = ({
 
 export const query = graphql`
   query($id: String!) {
-    pages(id: {eq: $id }) {
+    farmers(id: {eq: $id }) {
       title
-      content
+      output
     }
   }`
 
-PageTemplate.propTypes = {
+FarmerTemplate.propTypes = {
   data: PropTypes.instanceOf(Object),
 }
 
-export default PageTemplate
+export default FarmerTemplate

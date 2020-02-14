@@ -6,14 +6,9 @@ permalink: api/farmers
 {% for farmer in site.farmers %}
     {
       {% for var in farmer %}
-      {{ var | json }}
-        {% unless var == 'next' or var == 'content' or var == 'previous' or var == 'excerpt' %}
-        {% if var[0] == 'id' %}
-          "farmerId": {{ farmer[var] | jsonify }}{% unless forloop.last %},{% endunless %}
-        {% else %}
+        {% if var == 'layout' or var == 'url' or var == 'output' or var == 'title' or var == 'slug' or var == 'date' or var == 'vendorID' %}
           "{{ var }}": {{ farmer[var] | jsonify }}{% unless forloop.last %},{% endunless %}
         {% endif %}
-        {% endunless %}
       {% endfor %}
     }{% unless forloop.last %},{% endunless %}
 

@@ -1,7 +1,8 @@
 import React from 'react'
+//import PropTypes from 'prop-types'
 import BagList from '../features/bags/BagList'
 import { BAG_DATA } from '../common/data/BAG_DATA'
-//import PropTypes from 'prop-types'
+
 
 const bags = () => {
   return (

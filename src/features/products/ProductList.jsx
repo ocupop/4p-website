@@ -12,13 +12,12 @@ const ProductList = ({ products }) => {
             <div className="col-12">
               <div className="content">
                 <div className="responsive-card-deck cards-md-3 cards-lg-4">
-                  {products.map(product => (
-                    <ProductCard product={product.node} key={product.node.id}/>
+                  {products.map(({ node: product }) => (
+                    <ProductCard product={product} key={product.id} />
                   ))}
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </section>

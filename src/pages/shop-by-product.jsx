@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import ProductList from '../features/products/ProductList'
 
-const products = ({ data: { allProduct: { edges } } }) => {
-  const products = edges
+const products = ({ data: { allProduct: { edges: products } } }) => {
+
   return (
     <>
       <ProductList products={products} />
@@ -23,8 +23,19 @@ export const query = graphql`
         node {
           id
           name
-          variants {
+          category
+          department
+          ingredients
+          tags {
             label
+            value
+          }
+          variants {
+            size
+            label
+            price
+          }
+          vendor {
             name
           }
         }

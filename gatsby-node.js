@@ -27,7 +27,7 @@ exports.onCreateWebpackConfig = ({
       })
     });
   }
-};
+}
 
 // ------------------------
 // CREATE PAGES

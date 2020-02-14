@@ -7,7 +7,7 @@ import {
   SwitchInput,
   SelectInput,
   RichInput,
-  // RadioInput,
+  RadioInput,
 } from '../../common/fields'
 
 import FormikDebug from '../../common/utils/FormikDebug'

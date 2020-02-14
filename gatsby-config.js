@@ -71,31 +71,24 @@ module.exports = {
         },
       },
     },
-
     // Getting Farmers
-    // {
-    //   resolve: 'gatsby-source-custom-api',
-    //   options: {
-    //     url: 'https://cms.4pfoods.com/api/farmers.json',
-    //     // imageKeys: ["images"],
-    //     rootKey: 'farmers',
-    //     schemas: {
-    //       farmers: `
-    //         farmerId: String
-    //         output: String
-    //         layout: String
-    //         title: String
-    //       `,
-    //       options:`
-    //         image: uploadsDir
-    //         featured_image: uploadsDir
-    //       `,
-    //       uploadsDir:`
-    //         uploads_dir: String
-    //       `
-    //     },
-    //   },
-    // },
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: `${process.env.CMS_BASE_URL}/api/farmers.json`,
+        rootKey: 'farmers',
+        schemas: {
+          farmers: `
+            output: String
+            layout: String
+            title: String
+            slug: String
+            date: String
+            vendorID: String
+          `
+        },
+      },
+    },
 
     // Getting Events
     // {

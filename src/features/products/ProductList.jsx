@@ -9,10 +9,10 @@ const ProductList = ({ products }) => {
         {/* <SearchFilterBar /> */}
         <div className="container">
           <div className="row no-gutters">
-            {products.map(product => (
-              <div className="col-md-6 col-lg-3" key={product.node.id}>
+            {products.map(({ node: product }) => (
+              <div className="col-md-6 col-lg-3" key={product.id}>
                 <div className="content">
-                  <ProductCard product={product.node} />
+                  <ProductCard product={product} />
                 </div>
               </div>
             ))}

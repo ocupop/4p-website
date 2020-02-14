@@ -1,136 +1,24 @@
-import React, { useState, useEffect } from 'react'
-import _ from 'lodash'
+import React from 'react'
 import PropTypes from 'prop-types'
-import { Carousel } from 'react-bootstrap'
-import { Formik, Field, Form } from 'formik'
-import ProductCard from './ProductCard'
-import { SelectInput } from '../../common/fields'
-import { SINGLE_BAG, RECURRING_BAG } from '../../common/constants/BagTypes'
-import AddToCartButton from '../cart/AddToCartButton'
+import { Link } from 'gatsby'
+import ProductVariantSelect from './ProductVariants/ProductVariantSelect'
+
 
 const ProductDetail = ({ product }) => {
-  console.log(product)
-  // const [productVariants, setProductVariants] = useState([])
-  const [selectedVariant, setSelectedVariant] = useState(product.variants[0])
-  const variantOptions = product.variants.map(variant => {
-    return {
-      label: `${variant.name} - ${variant.label}`,
-      value: variant.id,
-      featuredImage: variant.featuredImage,
-      size: variant.size,
-      unit: variant.unit,
-      price: variant.price
-    }
-  })
-
-
-  // useEffect(() => {
-  //   // Only create label name pair if there are more than one variant
-  //   if (product.variants.length > 1) {
-  //     const variants = product.variants.map(variant => {
-  //       return {
-  //         label: variant.name,
-  //         value: variant.id,
-  //       }
-  //     })
-  //     setSelectedVariant(product.variants[0])
-  //     setSelectProductVariants(variants)
-  //   }
-  // }, [])
-
-  const getFeaturedImage = () => {
-    if (selectedVariant.featuredImage) {
-      return selectedVariant.featuredImage
-    }
-    if (product.featuredImage) {
-      return product.featuredImage
-    }
-    return ''
-  }
+  const {
+    // name,
+    // category,
+    // department,
+    ingredients,
+    storageTips,
+    tags,
+    // variants,
+    vendor
+  } = product
 
   return (
     <>
-      <section>
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="content">
-                <h1 className="h2">{product.name}</h1>
-                <p className="mb-5">{product.description}</p>
-                <Formik
-                  enableReinitialize
-                  initialValues={{
-                    selectedVariant: variantOptions[0],
-                  }}>
-                  {({ values, setFieldValue }) => (
-                  <>  
-                    {/* Only display the select, if there are select options */}
-                    {variantOptions.length > 1 && (
-                      <div className="form-group">
-                        <Form>
-                          <p>{ values.selectedVariant.label }</p>
-                          <Field
-                            name="selectedVariant"
-                            type="text"
-                            component={SelectInput}
-                            options={variantOptions}
-                            isClearable={false}
-                            onChange={value => setFieldValue("selectedVariant", value)}
-                            // onChange={value => {
-                            //   const variant = _.find(product.variants, {
-                            //     id: value.value,
-                            //   })
-                            //   setSelectedVariant(variant)
-                            // }}
-                            label="Select Featured Product"
-                          />
-                        </Form>
-                      </div>
-                    )}
-                    <div className="product-price mb-2">
-                      ${values.selectedVariant.price}
-                    </div>
-                    <div className="product-amount">
-                      {values.selectedVariant.size} {values.selectedVariant.unit}
-                    </div>
-                    <div className="d-flex align-items-center mt-3">
-                      <AddToCartButton
-                        bagType={RECURRING_BAG}
-                        item={selectedVariant}>
-                        Weekly
-                        <br />
-                        Delivery
-                      </AddToCartButton>
-
-                      <AddToCartButton bagType={SINGLE_BAG} item={selectedVariant}>
-                        Single
-                        <br />
-                        Delivery
-                      </AddToCartButton>
-                    </div>
-                  </>       
-                  )}
-                </Formik>
-                
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="content">
-                <Carousel>
-                  <Carousel.Item>
-                    <div
-                      className="bg-image aspect-4x3"
-                      style={{
-                        backgroundImage: `url(${getFeaturedImage()})`,
-                      }}
-                    />
-                  </Carousel.Item>
-                </Carousel>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProductVariantSelect product={product}/>
       <hr />
       <section>
         <div className="container">
@@ -139,32 +27,32 @@ const ProductDetail = ({ product }) => {
               <div className="content">
                 <h2>Product Details</h2>
                 <div className="d-flex flex-wrap">
-                  {product.tags &&
-                    product.tags.map((tag, index) => (
-                      <span key={index} className="product-detail-tag mb-2">
-                        {tag}
-                      </span>
-                    ))}
+                  {tags && tags.map(tag => (
+                    <span key={tag.value} className="product-detail-tag mb-2">
+                      {tag.label}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="content">
-                <h2>Ingredients:</h2>
-                <p>
-                  {product.ingredients &&
-                    product.ingredients.map((ingredient, index) => (
-                      <span key={index} className="mb-2">
-                        {ingredient},&nbsp; 
-                      </span>
-                    ))}
-                </p>  
+                {ingredients && (
+                  <>
+                    <h2>Ingredients:</h2>
+                    <p>{ingredients}</p>
+                  </>
+                )}
               </div>
             </div>
             <div className="col-lg-6">
               <div className="content">
-                <h3>Storage Tips</h3>
-                <p>{product.storageTips}</p>
+                {storageTips && (
+                  <>
+                    <h3>Storage Tips</h3>
+                    <p>{storageTips}</p>
+                  </>
+                )}
               </div>
             </div>
           </div>
@@ -178,32 +66,27 @@ const ProductDetail = ({ product }) => {
               <div className="content">
                 <div
                   className="bg-image aspect-4x3"
-                  style={{
-                    backgroundImage: `url(${product.vendor.featuredImage })`,
-                  }}
+                  style={{ backgroundImage: `url(${vendor.featuredImage.src })` }}
                 />
               </div>
             </div>
             <div className="col-lg-6">
               <div className="content">
                 <h2>
-                  From {product.vendor && product.vendor.name}
+                  From {vendor && vendor.name}
                 </h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-                  quia nihil omnis temporibus voluptatibus nostrum similique ad
-                  quae rem, suscipit dolores ex! Libero veniam, sit molestias
-                  maxime ratione perspiciatis officiis, illo tempore tenetur
-                  velit ducimus!
-                </p>
+
+                {vendor.description && <p>{vendor.description}</p>}
+
                 <div className="row">
                   <div className="col-lg-6">
                     <span className="text-uppercase">
+                      {/* @TODO - Calculate proximity from vendor.location */}
                       30 Miles from you
                     </span>
                   </div>
                   <div className="col-lg-6">
-                    <a href="#">vendorwebsiteurl.com</a>
+                    <Link to={`${vendor.website}`}>{vendor.website}</Link>
                   </div>
                 </div>
               </div>
@@ -223,7 +106,7 @@ const ProductDetail = ({ product }) => {
           <div className="row no-gutters">
             <div className="col-md-6 col-lg-3">
               <div className="content">
-                <ProductCard product={product} />
+                {/* @TODO: Add logic required for recommended products */}
               </div>
             </div>
           </div>

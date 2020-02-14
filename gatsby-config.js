@@ -136,9 +136,24 @@ module.exports = {
             collection: 'products',
             map: doc => ({
               name: doc.name,
-              category: doc.category,
-              department: doc.department,
+              category: doc.category.label,
+              department: doc.department.label,
+              ingredients: doc.ingredients,
+              storageTips: doc.storageTips,
+              tags: doc.tags,
               variants: doc.variants,
+              vendor___NODE: doc.vendor.value
+            }),
+          },
+          {
+            type: 'Vendor',
+            collection: 'vendors',
+            map: doc => ({
+              name: doc.name,
+              description: doc.description,
+              website: doc.website,
+              location: doc.location,
+              featuredImage: doc.images[0]
             }),
           },
           {

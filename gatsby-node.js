@@ -1,9 +1,3 @@
-// /* eslint-disable no-console */
-// /**
-//  * Implement Gatsby's Node APIs in this file.
-//  *
-//  * See: https://www.gatsbyjs.org/docs/node-apis/
-//  */
 const path = require(`path`)
 // const matter = require(`gray-matter`)
 // const _ = require(`lodash`)
@@ -32,10 +26,8 @@ exports.onCreateWebpackConfig = ({
 // ------------------------
 // CREATE PAGES
 // ------------------------
-exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+exports.createPages = async ({ graphql, actions: { createPage } }) => {
 
-  // TODO: determine better pattern
   await graphql(`
     query {
       allPages {
@@ -48,13 +40,10 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `).then(result => {
+  `).then(({ data: { allPages: { edges: pages } } }) => {
     // Build Web Pages
-    result.data.allPages.edges.forEach(({ node: { layout, pageUrl, id } }) => {
+    pages.forEach(({ node: { layout, pageUrl, id } }) => {
       const component = path.resolve(`./src/templates/${layout}.jsx`)
-
-      // TODO: Add solution for different Gatsby layouts
-      // const layout = node.layout === 'splash' ? 'splash' : 'index'
 
       createPage({
         component,

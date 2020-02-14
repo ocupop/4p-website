@@ -7,6 +7,7 @@ import {
   SwitchInput,
   SelectInput,
   RichInput,
+  RadioInput,
 } from '../../common/fields'
 
 import FormikDebug from '../../common/utils/FormikDebug'
@@ -50,7 +51,14 @@ const FormSandbox = () => {
               {({ values, setFieldValue }) => (
                 <Form>
                   {/* Example of Text Field */}
-
+                  <Field
+                    name="text"
+                    type="text"
+                    component={TextInput}
+                    placeholder="Placeholder text"
+                    hint="Enter some text"
+                    label="Description"
+                  />
                   {/* Example of Text Area */}
                   <Field
                     name="description"
@@ -68,6 +76,7 @@ const FormSandbox = () => {
                     label="Switch"
                     onChange={() => setFieldValue('switch', !values.switch)}
                   />
+
                   {/* Example of Select Input */}
                   <Field
                     name="featuredProduct"
@@ -85,7 +94,7 @@ const FormSandbox = () => {
                     onChange={val => setFieldValue('richDescription', val)}
                     label="Enter rich text"
                   />
-                  <button type="submit">Submit</button>
+                  <button type="submit" className="btn btn-primary">Submit</button>
                   <FormikDebug />
                 </Form>
               )}

@@ -1,8 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const CartListItem = ({ item }) => {
+function removeItem(){
+  console.log('remove item')
+}
 
+const CartListItem = ({ item }) => {
+  console.log('cart list item', item)
   return (
     <li className="item-row">
       <div className="row">
@@ -11,15 +15,15 @@ const CartListItem = ({ item }) => {
             <div
               className="bg-image aspect-4x3"
               style={{
-                backgroundImage: `url(https://via.placeholder.com/500x400)`,
+                backgroundImage: `url(${item.featuredImage})`,
               }}></div>
           </div>
         </div>
         <div className="col-lg-6">
           <div className="content h-100 position-relative">
             <h3>{item.title}</h3>
-            <p>Amount</p>
-            <button className="btn btn-link">Remove</button>
+            <p>{item.size} {item.unit}</p>
+            <button className="btn btn-link" onClick={removeItem}>Remove</button>
           </div>
         </div>
         <div className="col-lg-3">

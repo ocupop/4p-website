@@ -9,7 +9,7 @@ export const CART_DATA = {
       unit: 'gallon',
       price: 3.99,
       quantity: 4,
-      featuredImage: 'absolute/path/to/image',
+      featuredImage: 'https://via.placeholder.com/500x400',
       type: 'product', // bag|product
       purchaseStatus: 'single', // single|reccuring
     },
@@ -21,7 +21,7 @@ export const CART_DATA = {
       unit: 'oz',
       price: 5.99,
       quantity: 2,
-      featuredImage: 'absolute/path/to/image',
+      featuredImage: 'https://via.placeholder.com/500x400/000',
       type: 'product', // bag|product
       purchaseStatus: 'reccuring', // single|reccuring
     },
@@ -29,7 +29,7 @@ export const CART_DATA = {
       bagID: 'ssd2sHkD3',
       variantID: 'sdsg34Df23',
       title: 'Dairy Bag',
-      featuredImage: 'absolute/path/to/image',
+      featuredImage: 'https://via.placeholder.com/500x400',
       type: 'bag', // bag|product
       purchaseStatus: 'single', // single|reccuring
       price: 20.0,
@@ -38,7 +38,7 @@ export const CART_DATA = {
       bagID: 'ssd21sHkD3',
       variantID: 'sdssg34Df23',
       title: 'Dairy Bag',
-      featuredImage: 'absolute/path/to/image',
+      featuredImage: 'https://via.placeholder.com/500x400/000',
       type: 'bag', // bag|product
       purchaseStatus: 'single', // single|reccuring
       price: 20.0,

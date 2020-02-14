@@ -77,6 +77,29 @@ const FormSandbox = () => {
                     onChange={() => setFieldValue('switch', !values.switch)}
                   />
 
+                  <div className="form-check form-check-inline">
+                    <Field
+                      name="radioExample"
+                      type="radio"
+                      component={RadioInput}
+                      label="radio-opt-1"
+                      value="radio-opt-1"
+                      onChange={(e, val) => {
+                        setFieldValue("radioExample", val.value);
+                      }}
+                    />
+                    <Field
+                      name="radioExample"
+                      type="radio"
+                      component={RadioInput}
+                      label="radio-opt-2"
+                      value="radio-opt-2"
+                      onChange={(e, val) => {
+                        setFieldValue("radioExample", val.value);
+                      }}
+                    />
+                  </div>
+
                   {/* Example of Select Input */}
                   <Field
                     name="featuredProduct"

@@ -17,7 +17,7 @@ footer_image: '/img/uploads/team/4P-footer-14.jpg'
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
-        <img src="{{ page.image }}" class="img-fluid mb-3" alt="{{ page.title }}">
+        <img src="{{ page.image | prepend: site.url }}" class="img-fluid mb-3" alt="{{ page.title }}">
       </div>
       <div class="col-lg-8">
         <h3 class="text-uppercase">{{ page.title }}</h3>

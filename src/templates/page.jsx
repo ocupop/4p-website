@@ -4,14 +4,17 @@ import React from 'react'
 import { graphql } from "gatsby"
 import _ from 'lodash'
 import parse from 'html-react-parser';
+import CartSummary from '../features/cart/CartSummary';
 // import FooterHero from '../components/ui/FooterHero'
 
 const pageComponents = {
   // TODO: Import and list all acceptable components that may get included inline page content.
+  CartSummary
 }
 
 const parseOptions = {
   replace: ({ attribs, name }) => {
+    // console.log(name, attribs)
     if (!attribs) return;
 
     if (name.includes('-')) {
@@ -32,11 +35,7 @@ const PageTemplate = ({
 
   return (
     <>
-      <h1>{name}</h1>
-      {parse(content)}
-      <section className="p-0">
-        {/* <FooterHero image={footer_image}/> */}
-      </section>
+      {parse(content, parseOptions)}
     </>
   )
 }

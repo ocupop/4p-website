@@ -2,11 +2,11 @@
 ---
 {% unless page.layout == 'homepage'%}
 {% if page.footer_image %}
-  <div class="bg-image aspect-4x1" style="background-image: url({{ page.footer_image }})"></div>
+  <div class="bg-image aspect-4x1" style="background-image: url({{ page.footer_image | prepend: site.url }})"></div>
 {% elsif layout.footer_image %}
-  <div class="bg-image aspect-4x1" style="background-image: url({{ layout.footer_image }})"></div>
+  <div class="bg-image aspect-4x1" style="background-image: url({{ layout.footer_image | prepend: site.url }})"></div>
 {% endif %}
-<section id="tryUsToday" class="bg-primary bg-image aspect-none" style="background-image: url(/img/bg-illustrations/4p-homepage-goodfood-01.jpg)">
+<section id="tryUsToday" class="bg-primary bg-image aspect-none" style="background-image: url({{ '/img/bg-illustrations/4p-homepage-goodfood-01.jpg' | prepend: site.url }})">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -114,12 +114,12 @@
       <div class="row align-items-center">
         <div class="col-12 col-lg-3">
           <a href="/" class="navbar-brand">
-            <img src="/img/4p-foods-logo-color.png" class="img-fluid" alt="4P Foods logo" />
+            <img src="{{ '/img/4p-foods-logo-color.png' | prepend: site.url }}" class="img-fluid" alt="4P Foods logo" />
           </a>
         </div>
         <div class="col-lg-6">
           <h6>Sign up for our Newsletter</h6>
-          <div class="form-group d-flex">
+          <div class="form-group d-flex align-items-center">
             <input type="text" class="form-control bg-gray-300" placeholder="Your Email Address"/>
             <a href="#" class="btn btn-secondary">Submit</a>
           </div>

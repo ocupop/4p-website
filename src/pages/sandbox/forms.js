@@ -7,7 +7,7 @@ import {
   SwitchInput,
   SelectInput,
   RichInput,
-  RadioInput,
+  // RadioInput,
 } from '../../common/fields'
 
 import FormikDebug from '../../common/utils/FormikDebug'
@@ -32,7 +32,7 @@ const FormSandbox = () => {
     featuredProduct: {},
     richDescription: '',
   }
-  
+
   return (
     <section>
       <div className="container">
@@ -43,10 +43,10 @@ const FormSandbox = () => {
               enableReinitialize
               initialValues={initialValues}
               validationSchema={ValidationSchema}
-              // onSubmit={(values, { resetForm }) => {
-              //   dispatch(testForm({ firestore }, values))
-              //   resetForm()
-              // }}
+            // onSubmit={(values, { resetForm }) => {
+            //   dispatch(testForm({ firestore }, values))
+            //   resetForm()
+            // }}
             >
               {({ values, setFieldValue }) => (
                 <Form>

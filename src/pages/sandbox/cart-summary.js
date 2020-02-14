@@ -17,8 +17,7 @@ const cartSummarySandbox = () => {
       </section>
       <section style={{
         paddingBottom: `500px`,
-      }}>
-      </section>
+      }} />
     </>
   )
 }

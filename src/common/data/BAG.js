@@ -96,7 +96,7 @@ export const BAG_DATA = [
           name: '4P Foods',
           id: 123
         },
-      },  
+      },
       {
         id: 'GHJ4wd',
         price: 23.0,
@@ -113,3 +113,23 @@ export const BAG_DATA = [
     ],
   },
 ]
+
+
+export const BAG = {
+  productID: "",
+  totalPrice: 0.00,
+  totalCost: 0.00,
+  created: Date,
+  lastUpdate: Date,
+  items: [
+    {
+      productID: "",
+      variantID: "",
+      price: 0.00,
+      cost: 0.00,
+      quantity: 0,
+      title: "",
+      featuredImageUrl: ""
+    }
+  ]
+}

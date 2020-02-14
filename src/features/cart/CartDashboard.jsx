@@ -1,11 +1,11 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react'
 // import PropTypes from 'prop-types'
 import CartList from './CartList'
-
-import {CART_DATA} from '../../common/data/CART_DATA'
+import { USER } from '../../common/data/USER'
 
 const CartDashboard = () => {
-  const { cartItems , cartTotal } = CART_DATA
+  const { shoppingCart: {cartItems , cartTotal }} = USER
 
   return (
     <>
@@ -51,9 +51,10 @@ const CartDashboard = () => {
             <div className="col-lg-6 ml-lg-auto">
               <div className="content">
                 <div className="form-group row align-items-center">
+                  {/* @TODO: add TextInput field component */}
                   <label htmlFor="input-coupon-code" className="col-sm-2 col-form-label">Coupon Code</label>
                   <div className="col-sm-10">
-                    <input type="text" className="form-control" id="input-coupon-code"/>
+                    <input type="text" className="form-control" name="input-coupon-code"/>
                   </div>
                 </div>
                 <dl className="d-flex flex-wrap text-right">

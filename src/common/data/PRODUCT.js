@@ -1,10 +1,81 @@
+export const PRODUCT = {
+  active: true,
+  category: {
+    label: "",
+    value: ""
+  },
+  collection: false,
+  department: {
+    label: "",
+    value: ""
+  },
+  description: { // This model is dictated by draftJS (Rich Editor)
+    blocks: [
+
+    ],
+    entityMap: {}
+  },
+  featuredImage: {
+    src: ""
+  },
+  ingredients: "",
+  name: "",
+  sku: "",
+  storageTips: "",
+  tags: [
+    {
+      label: "",
+      value: ""
+    }
+  ],
+  variants: [
+    {
+      available: true,
+      cost: 0.00,
+      description: "",
+      featuredImage: {
+        src: ""
+      },
+      label: "",
+      measurementSize: 0,
+      measurementUnit: {
+        label: "",
+        value: ""
+      },
+      nutritionLabel: {
+        src: ""
+      },
+      price: 0.00,
+      quantity: 0,
+      recurringPurchase: true,
+      singlePurchase: true,
+      size: "",
+      sku: "",
+      trackInventory: true,
+      vendorSKU: ""
+    }
+  ],
+  vendor: {
+    label: "",
+    value: ""
+  },
+  created: Date,
+  lastUpdate: Date
+}
+
+
+// https://stackoverflow.com/questions/47355540/firestore-adding-server-timestamp-field-to-the-object-which-being-added
+
+
+
+
 export const PRODUCT_DATA = [
   {
     id: 'e34dfs4',
     name: 'Organic 2% Reduced Fat Milk',
     description:
       'Clover Organic Farms sources its rBST and antibiotic-free milk and cream from a select group of small, organic family farms on the North Coast of California. Our milk and cream arrives at the plant the same day the cows are milked and it is fresh pasteurized* to ensure quality while preserving its fresh farm taste and nutritional value. In 2000, we became the first U.S. dairy processor to be awarded the American Humane Certified label for humanely produced dairy products by the American Humane Association. We invite you to enjoy Clover Organic Farms Milk and Cream products in a good conscience and good health!',
-    storageTips: 'keep cold and refrigerated',  
+    storageTips: 'keep cold and refrigerated',
     tags: [
       'Certified Organic',
       'Non-GMO',
@@ -77,7 +148,7 @@ export const PRODUCT_DATA = [
     name: 'Organic 2% Reduced Fat Milk',
     description:
       'The cream floats to the top, just like in our Organic Whole Milk. Our Organic, Cream Top 2% Reduced Fat milk is pasteurized at 171°F for 18 seconds.Unlike most milk, which is ultra- pasteurized(at or above 280°F for at least two seconds), we preserve the true flavor of milk that results from our cows’ diet. The pasture grasses our cows graze on tend to be sweeter out here in Northern California’s Marin and Sonoma County Coasts.The first thing you’ll notice when you pop the top of our cream - top milk is its beautiful aroma.Milk is supposed to have an aroma and a fresh taste.Enjoy!',
-    storageTips: 'keep cold and refrigerated',  
+    storageTips: 'keep cold and refrigerated',
     tags: [
       'Soy-Free'
     ],
@@ -128,7 +199,7 @@ export const PRODUCT_DATA = [
     ],
     featuredImage: '',
     ingredients: [
-      'organic biodynamic apples', 
+      'organic biodynamic apples',
       'organic biodynamic pears',
     ],
     category: 'Snack',

@@ -1,7 +1,7 @@
 import React from 'react'
-//import PropTypes from 'prop-types'
-import BagList from '../features/bags/BagList'
-import { BAG_DATA } from '../common/data/BAG_DATA'
+// import PropTypes from 'prop-types'
+// import BagList from '../features/bags/BagList'
+
 
 
 const bags = () => {
@@ -28,7 +28,7 @@ const bags = () => {
               </div>
             </div>
           </div>
-          <BagList bags={BAG_DATA} />
+          {/* <BagList bags={BAG_DATA} /> */}
         </div>
       </section>
     </>

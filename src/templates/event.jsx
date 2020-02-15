@@ -19,9 +19,9 @@ const parseOptions = {
   }
 }
 
-const FarmerTemplate = ({
+const EventTemplate = ({
   data: {
-    farmers: {
+    events: {
       output
     }
   }
@@ -34,17 +34,16 @@ const FarmerTemplate = ({
   )
 }
 
-
 export const query = graphql`
   query($id: String!) {
-    farmers(id: {eq: $id }) {
+    events(id: {eq: $id }) {
       title
       output
     }
   }`
 
-FarmerTemplate.propTypes = {
+EventTemplate.propTypes = {
   data: PropTypes.instanceOf(Object),
 }
 
-export default FarmerTemplate
+export default EventTemplate

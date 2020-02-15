@@ -1,0 +1,16 @@
+---
+layout: none
+permalink: api/posts
+---
+[
+{% for post in site.posts %}
+    {
+      {% for var in post %}
+        {% unless var == 'next' or var == 'previous' or var == 'excerpt' or var == '_options' %}
+          "{{ var }}": {{ post[var] | jsonify }}{% unless forloop.last %},{% endunless %}
+        {% endunless %}
+      {% endfor %}
+    }{% unless forloop.last %},{% endunless %}
+
+{% endfor %}
+]

@@ -19,9 +19,9 @@ const parseOptions = {
   }
 }
 
-const FarmerTemplate = ({
+const CareerTemplate = ({
   data: {
-    farmers: {
+    careers: {
       output
     }
   }
@@ -37,14 +37,14 @@ const FarmerTemplate = ({
 
 export const query = graphql`
   query($id: String!) {
-    farmers(id: {eq: $id }) {
+    careers(id: {eq: $id }) {
       title
       output
     }
   }`
 
-FarmerTemplate.propTypes = {
+CareerTemplate.propTypes = {
   data: PropTypes.instanceOf(Object),
 }
 
-export default FarmerTemplate
+export default CareerTemplate

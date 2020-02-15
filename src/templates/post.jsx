@@ -19,9 +19,9 @@ const parseOptions = {
   }
 }
 
-const FarmerTemplate = ({
+const PostTemplate = ({
   data: {
-    farmers: {
+    posts: {
       output
     }
   }
@@ -34,17 +34,16 @@ const FarmerTemplate = ({
   )
 }
 
-
 export const query = graphql`
   query($id: String!) {
-    farmers(id: {eq: $id }) {
+    posts(id: {eq: $id }) {
       title
       output
     }
   }`
 
-FarmerTemplate.propTypes = {
+PostTemplate.propTypes = {
   data: PropTypes.instanceOf(Object),
 }
 
-export default FarmerTemplate
+export default PostTemplate

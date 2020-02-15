@@ -4,12 +4,11 @@ permalink: api/events
 ---
 [
 {% for event in site.events %}
-
     {
       {% for var in event %}
-        {% unless var == 'next' or var == 'content' or var == 'previous' or var == 'excerpt' %}
+        {% if var == 'layout' or var == 'url' or var == 'output' or var == 'title' or var == 'slug' or var == 'date' %}
           "{{ var }}": {{ event[var] | jsonify }}{% unless forloop.last %},{% endunless %}
-        {% endunless %}
+        {% endif %}
       {% endfor %}
     }{% unless forloop.last %},{% endunless %}
 

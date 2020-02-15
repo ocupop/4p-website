@@ -89,6 +89,78 @@ module.exports = {
         },
       },
     },
+    // Getting Events
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: `${process.env.CMS_BASE_URL}/api/events.json`,
+        rootKey: 'events',
+        schemas: {
+          events: `
+            output: String
+            layout: String
+            title: String
+            slug: String
+            date: String
+          `
+        },
+      },
+    },
+
+    // Getting Posts
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: `${process.env.CMS_BASE_URL}/api/posts.json`,
+        rootKey: 'posts',
+        schemas: {
+          posts: `
+            output: String
+            layout: String
+            title: String
+            slug: String
+            date: String
+          `
+        },
+      },
+    },
+
+
+    // Getting Team
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: `${process.env.CMS_BASE_URL}/api/team.json`,
+        rootKey: 'team',
+        schemas: {
+          team: `
+            output: String
+            layout: String
+            title: String
+            slug: String
+            date: String
+          `
+        },
+      },
+    },
+
+    // Getting Careers
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: `${process.env.CMS_BASE_URL}/api/careers.json`,
+        rootKey: 'careers',
+        schemas: {
+          careers: `
+            output: String
+            layout: String
+            title: String
+            slug: String
+            date: String
+          `
+        },
+      },
+    },
 
     // Getting Events
     // {

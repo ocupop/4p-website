@@ -36,7 +36,7 @@ module.exports = {
       resolve: 'gatsby-source-custom-api',
       options: {
         url: `${process.env.CMS_BASE_URL}/api/ui.json`,
-        imageKeys: ["images"],
+        // imageKeys: ["images"],
         rootKey: 'includes',
         schemas: {
           pages: `

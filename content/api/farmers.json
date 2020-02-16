@@ -3,7 +3,7 @@ layout: none
 permalink: api/farmers
 ---
 [
-{% for farmer in site.farmers %}
+  {% for farmer in site.farmers %}
     {
       {% for var in farmer %}
         {% if var == 'layout' or var == 'url' or var == 'output' or var == 'title' or var == 'slug' or var == 'date' or var == 'vendorID' %}
@@ -11,6 +11,5 @@ permalink: api/farmers
         {% endif %}
       {% endfor %}
     }{% unless forloop.last %},{% endunless %}
-
-{% endfor %}
+  {% endfor %}
 ]

@@ -37,7 +37,7 @@ collections:
     permalink: /posts/:title/
   featured_products:
     output: false
-  includes:
+  elements:
     output: false
 
 defaults:
@@ -88,7 +88,8 @@ sass:
   # style: compressed
   sass_dir: _scss
 
-# plugins:
+plugins:
+ - jekyll-admin
 
 # Cloudcannon Configuration
 _array_structures:

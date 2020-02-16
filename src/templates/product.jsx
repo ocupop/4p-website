@@ -2,11 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import ProductDetail from '../features/products/ProductDetail'
+import Layout from '../containers/Layout'
 
 const Product = ({ data: {product} }) => {
 
   return (
-    <ProductDetail product={product}/>
+    <Layout>
+      <ProductDetail product={product}/>
+    </Layout>
   )
 }
 

@@ -1,9 +1,10 @@
 import React from 'react'
 import CartSummary from '../../features/cart/CartSummary'
+import Sandbox from '../../containers/Sandbox'
 
 const cartSummarySandbox = () => {
   return (
-    <>
+    <Sandbox>
       <section>
         <div className="container">
           <div className="row">
@@ -18,7 +19,7 @@ const cartSummarySandbox = () => {
       <section style={{
         paddingBottom: `500px`,
       }} />
-    </>
+    </Sandbox>
   )
 }
 

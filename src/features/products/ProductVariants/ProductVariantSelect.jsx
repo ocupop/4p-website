@@ -12,6 +12,8 @@ import { Formik, Field, Form } from 'formik'
 // import LoadingComponent from '../../common/ui/LoadingComponent'
 
 const ProductVariantSelect = () => {
+  const {id} = useParams()
+  console.log("ID:", id)
   // const [variantOptions, setVariantOptions] = useState([])
   // const [selectedVariant, setSelectedVariant] = useState(product.variants[0])
   // const variantOptions = product.variants.map(variant => {

@@ -1,12 +1,13 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
+import Layout from '../containers/Layout'
 // import BagList from '../features/bags/BagList'
 
 
 
 const bags = () => {
   return (
-    <>
+    <Layout>
       <section>
         <div className="container">
           <div className="row">
@@ -31,7 +32,7 @@ const bags = () => {
           {/* <BagList bags={BAG_DATA} /> */}
         </div>
       </section>
-    </>
+    </Layout>
   )
 }
 

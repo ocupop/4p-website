@@ -99,7 +99,6 @@ module.exports = {
         },
       },
     },
-
     // Getting Posts
     {
       resolve: 'gatsby-source-custom-api',
@@ -119,8 +118,6 @@ module.exports = {
         },
       },
     },
-
-
     // Getting Team
     {
       resolve: 'gatsby-source-custom-api',
@@ -139,7 +136,6 @@ module.exports = {
         },
       },
     },
-
     // Getting Careers
     {
       resolve: 'gatsby-source-custom-api',
@@ -158,22 +154,6 @@ module.exports = {
         },
       },
     },
-
-    // Getting Events
-    // {
-    //   resolve: "gatsby-source-custom-api",
-    //   options: {
-    //     url: "https://cms.4pfoods.com/api/events.json",
-    //     // imageKeys: ["images"],
-    //     rootKey: "events",
-    //     schemas: {
-    //       pages: `
-    //         title: String
-    //       `
-    //     }
-    //   }
-    // },
-
     // Getting content from firestore
     {
       resolve: 'gatsby-source-firestore',

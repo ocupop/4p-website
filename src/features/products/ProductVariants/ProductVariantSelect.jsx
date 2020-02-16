@@ -1,9 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 // import { useParams } from "react-router"
 // import _ from 'lodash'
-import { useSelector } from 'react-redux'
-import { useFirestoreConnect } from 'react-redux-firebase'
+// import { useSelector } from 'react-redux'
+// import { useFirestoreConnect } from 'react-redux-firebase'
 import { Formik, Field, Form } from 'formik'
 
 // import { Carousel } from 'react-bootstrap'
@@ -83,10 +83,10 @@ const ProductVariantSelect = () => {
                       </div>
                     )} */}
                     <div className="product-price mb-2">
-                      ${values.selectedVariant.price}
+                      {/* ${values.selectedVariant.price} */}
                     </div>
                     <div className="product-amount">
-                      {values.selectedVariant.size} {values.selectedVariant.unit}
+                      {/* {values.selectedVariant.size} {values.selectedVariant.unit} */}
                     </div>
                     <div className="d-flex align-items-center mt-3">
                       {/* <AddToCartButton

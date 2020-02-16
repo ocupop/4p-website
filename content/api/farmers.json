@@ -5,11 +5,13 @@ permalink: api/farmers
 [
   {% for farmer in site.farmers %}
     {
-      {% for var in farmer %}
-        {% if var == 'layout' or var == 'url' or var == 'output' or var == 'title' or var == 'slug' or var == 'date' or var == 'vendorID' %}
-          "{{ var }}": {{ farmer[var] | jsonify }}{% unless forloop.last %},{% endunless %}
-        {% endif %}
-      {% endfor %}
+      "layout": {{ farmer['layout'] | jsonify }},
+      "url": {{ farmer['url'] | jsonify }},
+      "title": {{ farmer['title'] | jsonify }},
+      "slug": {{ farmer['slug'] | jsonify }},
+      "date": {{ farmer['date'] | jsonify }},
+      "vendorID": {{ farmer['vendorID'] | jsonify }},
+      "output": {{ farmer['output'] | jsonify }}
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

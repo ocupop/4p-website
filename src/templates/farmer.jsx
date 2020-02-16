@@ -25,9 +25,6 @@ const parseOptions = {
       const component = _.upperFirst(_.camelCase(name))
       return React.createElement(pageComponents[component], attribs)
     }
-
-
-
   }
 }
 

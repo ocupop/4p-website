@@ -88,8 +88,7 @@ sass:
   # style: compressed
   sass_dir: _scss
 
-plugins:
- - jekyll-admin
+# plugins:
 
 # Cloudcannon Configuration
 _array_structures:

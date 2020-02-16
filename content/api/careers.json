@@ -7,7 +7,7 @@ permalink: api/careers
     {
       {% for var in career %}
         {% if var == 'layout' or var == 'url' or var == 'output' or var == 'title' or var == 'slug' or var == 'date' or var == 'vendorID' %}
-          "{{ var }}": {{ career[var] | jsonify }}{% unless forloop.last %},{% endunless %}
+          "{{ var }}": {{ career[var] | jsonify }}{% unless var == 'date' %},{% endunless %}
         {% endif %}
       {% endfor %}
     }{% unless forloop.last %},{% endunless %}

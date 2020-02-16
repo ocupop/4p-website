@@ -7,7 +7,7 @@ permalink: api/farmers
     {
       {% for var in farmer %}
         {% if var == 'layout' or var == 'url' or var == 'output' or var == 'title' or var == 'slug' or var == 'date' or var == 'vendorID' %}
-          "{{ var }}": {{ farmer[var] | jsonify }}{% unless forloop.last %},{% endunless %}
+          "{{ var }}": {{ farmer[var] | jsonify }}{% unless var == 'date'  %},{% endunless %}
         {% endif %}
       {% endfor %}
     }{% unless forloop.last %},{% endunless %}

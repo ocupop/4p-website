@@ -7,7 +7,7 @@ permalink: api/events
     {
       {% for var in event %}
         {% if var == 'layout' or var == 'url' or var == 'output' or var == 'title' or var == 'slug' or var == 'date' %}
-          "{{ var }}": {{ event[var] | jsonify }}{% unless forloop.last %},{% endunless %}
+          "{{ var }}": {{ event[var] | jsonify }}{% unless var == 'date'  %},{% endunless %}
         {% endif %}
       {% endfor %}
     }{% unless forloop.last %},{% endunless %}

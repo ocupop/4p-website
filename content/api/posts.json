@@ -4,13 +4,16 @@ permalink: api/posts
 ---
 [
 {% for post in site.posts %}
-    {
-      {% for var in post %}
-        {% if var == 'layout' or var == 'url' or var == 'output' or var == 'title' or var == 'slug' or var == 'post_date' or var == 'date' or var == 'categories' or var == 'tags' %}
-          "{{ var }}": {{ post[var] | jsonify }}{% unless var == 'slug' %},{% endunless %}
-        {% endif %}
-      {% endfor %}
-    }{% unless forloop.last %},{% endunless %}
-
+  {
+    "layout": {{ post['layout'] | jsonify }},
+    "url": {{ post['url'] | jsonify }},
+    "title": {{ post['title'] | jsonify }},
+    "slug": {{ post['slug'] | jsonify }},
+    "post_date": {{ post['post_date'] | jsonify }},
+    "date": {{ post['date'] | jsonify }},
+    "categories": {{ post['categories'] | jsonify }},
+    "tags": {{ post['tags'] | jsonify }},
+    "output": {{ post['output'] | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]

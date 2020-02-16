@@ -4,13 +4,13 @@ permalink: api/careers
 ---
 [
 {% for career in site.careers %}
-    {
-      {% for var in career %}
-        {% if var == 'layout' or var == 'url' or var == 'output' or var == 'title' or var == 'slug' or var == 'date' or var == 'vendorID' %}
-          "{{ var }}": {{ career[var] | jsonify }}{% unless var == 'date' %},{% endunless %}
-        {% endif %}
-      {% endfor %}
-    }{% unless forloop.last %},{% endunless %}
-
+  {
+    "layout": {{ career['layout'] | jsonify }},
+    "url": {{ career['url'] | jsonify }},
+    "title": {{ career['title'] | jsonify }},
+    "slug": {{ career['slug'] | jsonify }},
+    "date": {{ career['date'] | jsonify }},
+    "output": {{ career['output'] | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]

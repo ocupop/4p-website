@@ -31,7 +31,7 @@ const TextArea = ({
         placeholder={placeholder}
         rows={rows}
         type={type}
-      ></textarea>
+      />
       {touched[field.name] && errors[field.name] && (
         <span className="invalid-feedback">{errors[field.name]}</span>
       )}

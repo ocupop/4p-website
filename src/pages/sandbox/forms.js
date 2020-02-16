@@ -109,14 +109,6 @@ const FormSandbox = () => {
                     onChange={value => setFieldValue('featuredProduct', value)}
                     label="Select Featured Product"
                   />
-                  {/* Example of Rich Input */}
-                  <Field
-                    name="richDescription"
-                    type="text"
-                    component={RichInput}
-                    onChange={val => setFieldValue('richDescription', val)}
-                    label="Enter rich text"
-                  />
                   <button type="submit" className="btn btn-primary">Submit</button>
                   <FormikDebug />
                 </Form>

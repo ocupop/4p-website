@@ -1,9 +1,11 @@
 import React from 'react'
-import parse from 'html-react-parser'
+import _ from 'lodash'
+import parse from 'html-react-parser';
 import { useStaticQuery, graphql } from 'gatsby'
+
 import CartSummary from '../../features/cart/CartSummary'
-import UserNav from '../../common/ui/UserNav'
-import NotificationNav from '../../common/ui/NotificationNav'
+import UserNav from './UserNav'
+import NotificationNav from './NotificationNav'
 
 const pageComponents = {
   // TODO: Import and list all acceptable components that may get included inline page content.
@@ -14,7 +16,6 @@ const pageComponents = {
 
 const parseOptions = {
   replace: ({ attribs, name }) => {
-    // console.log(name, attribs)
     if (!attribs) return;
 
     if (name.includes('-')) {
@@ -25,9 +26,9 @@ const parseOptions = {
 }
 
 const Header = () => {
-  const data = useStaticQuery(graphql`
+  const {elements: {output:content}} = useStaticQuery(graphql`
     {
-      includes(slug: { eq: "header" }) {
+      elements(slug: { eq: "header" }) {
         output
       }
     }
@@ -35,7 +36,7 @@ const Header = () => {
 
   return (
     <>
-      {parse(data.includes.output, parseOptions)}
+      {parse(content, parseOptions)}
     </>
   )
 }

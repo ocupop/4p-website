@@ -10,7 +10,9 @@ permalink: api/pages
         {% if var[0] == 'url' %}
           "pageUrl": {{ var[1] | jsonify }}{% unless forloop.last %},{% endunless %}
         {% else %}
-          "{{ var[0] }}": {{ var[1] | jsonify }}{% unless forloop.last %},{% endunless %}
+          {% if var[0] == 'layout' or var[0] == 'content' or var[0] == 'title' %}
+            "{{ var[0] }}": {{ var[1] | jsonify }}{% unless forloop.last %},{% endunless %}
+          {% endif %}
         {% endif %}
       {% endfor %}
     }{% unless forloop.last %},{% endunless %}

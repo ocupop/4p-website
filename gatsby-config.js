@@ -37,11 +37,12 @@ module.exports = {
       options: {
         url: `${process.env.CMS_BASE_URL}/api/ui.json`,
         // imageKeys: ["images"],
-        rootKey: 'includes',
+        rootKey: 'elements',
         schemas: {
-          pages: `
+          elements: `
             slug: String!
-            output: String!`,
+            output: String!
+          `,
         },
       },
     },
@@ -56,17 +57,7 @@ module.exports = {
           pages: `
             layout: String
             title: String
-            meta: meta
-            footer_image: String
             content: String
-            _assets: assets
-          `,
-          meta: `
-            description: String
-            image: String
-          `,
-          assets: `
-            image: String
           `,
         },
       },
@@ -80,6 +71,7 @@ module.exports = {
         schemas: {
           farmers: `
             output: String
+            url: String
             layout: String
             title: String
             slug: String
@@ -98,6 +90,7 @@ module.exports = {
         schemas: {
           events: `
             output: String
+            url: String
             layout: String
             title: String
             slug: String
@@ -116,10 +109,12 @@ module.exports = {
         schemas: {
           posts: `
             output: String
+            url: String
             layout: String
             title: String
-            slug: String
+            post_date: String
             date: String
+            slug: String
           `
         },
       },
@@ -135,6 +130,7 @@ module.exports = {
         schemas: {
           team: `
             output: String
+            url: String
             layout: String
             title: String
             slug: String
@@ -153,6 +149,7 @@ module.exports = {
         schemas: {
           careers: `
             output: String
+            url: String
             layout: String
             title: String
             slug: String

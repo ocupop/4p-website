@@ -108,6 +108,8 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
 
     }
   }) => {
+    const collections = [...farmers, ...events, ...posts, ...team, ...careers]
+
     // Build Web Pages
     pages.forEach(({ node: { layout, pageUrl, id } }) => {
       const component = path.resolve(`./src/templates/${layout}.jsx`)
@@ -121,60 +123,8 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
       })
     })
 
-    // Build Farmer Pages
-    farmers.forEach(({ node: { layout, url, id } }) => {
-      const component = path.resolve(`./src/templates/${layout}.jsx`)
-
-      createPage({
-        component,
-        path: url,
-        context: {
-          id,
-        },
-      })
-    })
-
-    // Build Event Pages
-    events.forEach(({ node: { layout, url, id } }) => {
-      const component = path.resolve(`./src/templates/${layout}.jsx`)
-
-      createPage({
-        component,
-        path: url,
-        context: {
-          id,
-        },
-      })
-    })
-
-    // Build Newsletter Pages
-    posts.forEach(({ node: { layout, url, id } }) => {
-      const component = path.resolve(`./src/templates/${layout}.jsx`)
-
-      createPage({
-        component,
-        path: url,
-        context: {
-          id,
-        },
-      })
-    })
-
-    // Build Team Pages
-    team.forEach(({ node: { layout, url, id } }) => {
-      const component = path.resolve(`./src/templates/${layout}.jsx`)
-
-      createPage({
-        component,
-        path: url,
-        context: {
-          id,
-        },
-      })
-    })
-
-    // Build Careers Pages
-    careers.forEach(({ node: { layout, url, id } }) => {
+    // Build Collection Pages
+    collections.forEach(({ node: { layout, url, id } }) => {
       const component = path.resolve(`./src/templates/${layout}.jsx`)
 
       createPage({

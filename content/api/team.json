@@ -6,7 +6,7 @@ permalink: api/team
 {% for team in site.team_members %}
     {
       {% for var in team %}
-        {% if var == 'layout' or var == 'url' or var == 'output' or var == 'title' or var == 'slug' or var == 'date' or var == 'vendorID' %}
+        {% if var == 'layout' or var == 'url' or var == 'output' or var == 'title' or var == 'slug' or var == 'date' %}
           "{{ var }}": {{ team[var] | jsonify }}{% unless forloop.last %},{% endunless %}
         {% endif %}
       {% endfor %}

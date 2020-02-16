@@ -6,9 +6,9 @@ permalink: api/posts
 {% for post in site.posts %}
     {
       {% for var in post %}
-        {% unless var == 'next' or var == 'previous' or var == 'excerpt' or var == '_options' %}
-          "{{ var }}": {{ post[var] | jsonify }}{% unless forloop.last %},{% endunless %}
-        {% endunless %}
+        {% if var == 'layout' or var == 'url' or var == 'output' or var == 'title' or var == 'slug' or var == 'post_date' or var == 'date' or var == 'categories' or var == 'tags' %}
+          "{{ var }}": {{ post[var] | jsonify }}{% unless var == 'slug' %},{% endunless %}
+        {% endif %}
       {% endfor %}
     }{% unless forloop.last %},{% endunless %}
 

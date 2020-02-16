@@ -40,7 +40,7 @@ const FarmerTemplate = ({
 
   return (
     <>
-      {parse(output)}
+      {parse(output, parseOptions)}
     </>
   )
 }

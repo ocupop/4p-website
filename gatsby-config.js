@@ -1,8 +1,9 @@
 const proxy = require('http-proxy-middleware')
 
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`
+  path: `.env.${process.env.NODE_ENV}`,
 })
+
 
 module.exports = {
   siteMetadata: {
@@ -13,10 +14,13 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-layout`,
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        includePaths: ["content/_scss"],
+        includePaths: ['content/_scss'],
       },
     },
     {
@@ -27,17 +31,212 @@ module.exports = {
         name: 'images',
       },
     },
+    // Getting UI Elements
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: 'gatsby-source-custom-api',
       options: {
-        path: `${__dirname}/content/_pages`,
-        name: 'pages',
+        url: `${process.env.CMS_BASE_URL}/api/ui.json`,
+        // imageKeys: ["images"],
+        rootKey: 'elements',
+        schemas: {
+          elements: `
+            slug: String!
+            output: String!
+          `,
+        },
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-layout`,
-    `gatsby-plugin-styled-components`,
+    // Getting pages
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: `${process.env.CMS_BASE_URL}/api/pages.json`,
+        // imageKeys: ["images"],
+        rootKey: 'pages',
+        schemas: {
+          pages: `
+            layout: String
+            title: String
+            content: String
+          `,
+        },
+      },
+    },
+    // Getting Farmers
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: `${process.env.CMS_BASE_URL}/api/farmers.json`,
+        rootKey: 'farmers',
+        schemas: {
+          farmers: `
+            output: String
+            url: String
+            layout: String
+            title: String
+            slug: String
+            date: String
+            vendorID: String
+          `
+        },
+      },
+    },
+    // Getting Events
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: `${process.env.CMS_BASE_URL}/api/events.json`,
+        rootKey: 'events',
+        schemas: {
+          events: `
+            output: String
+            url: String
+            layout: String
+            title: String
+            slug: String
+            date: String
+          `
+        },
+      },
+    },
+
+    // Getting Posts
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: `${process.env.CMS_BASE_URL}/api/posts.json`,
+        rootKey: 'posts',
+        schemas: {
+          posts: `
+            output: String
+            url: String
+            layout: String
+            title: String
+            post_date: String
+            date: String
+            slug: String
+          `
+        },
+      },
+    },
+
+
+    // Getting Team
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: `${process.env.CMS_BASE_URL}/api/team.json`,
+        rootKey: 'team',
+        schemas: {
+          team: `
+            output: String
+            url: String
+            layout: String
+            title: String
+            slug: String
+            date: String
+          `
+        },
+      },
+    },
+
+    // Getting Careers
+    {
+      resolve: 'gatsby-source-custom-api',
+      options: {
+        url: `${process.env.CMS_BASE_URL}/api/careers.json`,
+        rootKey: 'careers',
+        schemas: {
+          careers: `
+            output: String
+            url: String
+            layout: String
+            title: String
+            slug: String
+            date: String
+          `
+        },
+      },
+    },
+
+    // Getting Events
+    // {
+    //   resolve: "gatsby-source-custom-api",
+    //   options: {
+    //     url: "https://cms.4pfoods.com/api/events.json",
+    //     // imageKeys: ["images"],
+    //     rootKey: "events",
+    //     schemas: {
+    //       pages: `
+    //         title: String
+    //       `
+    //     }
+    //   }
+    // },
+
+    // Getting content from firestore
+    {
+      resolve: 'gatsby-source-firestore',
+      options: {
+        credential: {
+          type: process.env.FIREBASE_TYPE,
+          project_id: process.env.FIREBASE_PROJECT_ID,
+          private_key_id: process.env.FIREBASE_PRIVATE_KEY_ID,
+          private_key: process.env.FIREBASE_PRIVATE_KEY,
+          client_email: process.env.FIREBASE_CLIENT_EMAIL,
+          client_id: process.env.FIREBASE_CLIENT_ID,
+          auth_uri: process.env.FIREBASE_AUTH_URI,
+          token_uri: process.env.FIREBASE_TOKEN_URI,
+          auth_provider_x509_cert_url:
+            process.env.FIREBASE_PROVIDER_X509_CERT_URL,
+          client_x509_cert_url: process.env.FIREBASE_X509_CERT_URL,
+        },
+        databaseURL: process.env.FIREBASE_DATABASE_URL,
+        types: [
+          {
+            type: 'Product',
+            collection: 'products',
+            map: doc => ({
+              name: doc.name,
+              category: doc.category.label,
+              department: doc.department.label,
+              ingredients: doc.ingredients,
+              storageTips: doc.storageTips,
+              tags: doc.tags,
+              variants: doc.variants,
+              vendor___NODE: doc.vendor.value
+            }),
+          },
+          {
+            type: 'Vendor',
+            collection: 'vendors',
+            map: doc => ({
+              name: doc.name,
+              description: doc.description,
+              website: doc.website,
+              location: doc.location,
+              featuredImage: doc.images[0]
+            }),
+          },
+          {
+            type: 'Quote',
+            collection: 'quotes',
+            map: doc => ({
+              content: doc.content,
+              author___NODE: doc.author.value,
+            }),
+          },
+          {
+            type: 'Author',
+            collection: 'authors',
+            map: doc => ({
+              name: doc.name,
+            }),
+          },
+        ],
+      },
+    },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -47,9 +246,10 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/img/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `content/img/4p-foods-logo-color.png`, // This path is relative to the root of the site.
       },
     },
+
     // {
     //   resolve: 'gatsby-source-google-sheets',
     //   options: {
@@ -58,46 +258,7 @@ module.exports = {
     //     credentials: require('./path-to-credentials-file.json')
     //   }
     // },
-    // {
-    //   resolve: '@martinreiche/gatsby-firestore',
-    //   // resolve: 'gatsby-source-firestore',
-    //   options: {
-    //     // credential: './firebaseConfig.json',
-    //     appConfig: {
-    //       apiKey: process.env.FIREBASE_API_KEY,
-    //       authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-    //       databaseURL: process.env.FIREBASE_DATABASE_URL,
-    //       projectId: process.env.FIREBASE_PROJECT_ID,
-    //       storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-    //       messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-    //       appID: process.env.FIREBASE_APP_ID,
-    //     },
-    //     types: [
-    //       {
-    //         type: 'Product',
-    //         collection: 'products',
-    //         map: doc => ({
-    //           title: doc.title,
-    //           description: doc.description,
-    //           descriptionHtml: doc.descriptionHtml,
-    //           featured: doc.featured,
-    //           priceRange: doc.priceRange,
-    //           tags: doc.tags,
-    //           // vendor___NODE: doc.vendor.id,
-    //         }),
-    //       },
-    //       // {
-    //       //   type: 'Vendor',
-    //       //   collection: 'vendors',
-    //       //   map: doc => ({
-    //       //     title: doc.title,
-    //       //     website: doc.website,
-    //       //     // products___NODE: doc.products.map(product => product.id),
-    //       //   }),
-    //       // },
-    //     ],
-    //   },
-    // },
+
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
@@ -124,34 +285,7 @@ module.exports = {
     //     cookieDomain: "example.com",
     //   },
     // },
-    {
-      resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: [
-          {
-            resolve: 'gatsby-remark-relative-images',
-            options: {
-              name: 'uploads',
-            },
-          },
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 2048,
-            },
-          },
-          {
-            resolve: 'gatsby-remark-copy-linked-files',
-            options: {
-              destinationDir: 'static',
-            },
-          },
-        ],
-      },
-    },
+
     // {
     //   resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
     //   options: {
@@ -175,7 +309,7 @@ module.exports = {
         pathRewrite: {
           '/.netlify/functions/': '',
         },
-      })
+      }),
     )
   },
 }

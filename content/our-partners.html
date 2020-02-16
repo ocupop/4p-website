@@ -1,0 +1,84 @@
+---
+layout: page
+title: Our Partners
+meta:
+footer_image: '/img/uploads/our-partners/4P-footer-08.jpg'
+partners:
+  - name: Bainum Family Foundation
+    description: >-
+      We help children exit poverty by providing educational opportunities and other support needed for lifelong success, and
+      we’ve been doing it since entrepreneur Stewart Bainum founded our organization in 1968.
+    image: '/img/uploads/our-partners/4p-partners-bainum.jpg'
+    link: https://bainumfdn.org/
+  - name: National Youth Baseball Academy
+    description: >-
+      The Washington Nationals Youth Baseball Academy uses the sports of baseball and softball as vehicles to foster positive
+      character development, academic achievement and improved health among youth from underserved communities in Washington,
+      D.C.
+    image: '/img/uploads/our-partners/4p-partners-nationalyouthbasebell.jpg'
+    link: https://www.mlb.com/nationals/youth-baseball-academy
+  - name: Local Food Hub
+    description: >-
+      Their mission is to partner with Virginia farmers to increase community access to local food. We provide the support
+      services, infrastructure, and market opportunities that connect people with food grown close to home.
+    image: '/img/uploads/our-partners/4p-partners-localfoodhub.jpg'
+    link: https://www.localfoodhub.org/
+  - name: American Sustainable Business Council
+    description: >-
+      ASBC is committed to the triple bottom line of People, Planet, and Profit. We believe that sustainable business is good
+      business!
+    image: '/img/uploads/our-partners/4p-partners-Sustainablebusiness.jpg'
+    link: https://www.asbcouncil.org/
+  - name: YMCA
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+      aliqua. Ut enim ad minim veniam.
+    image: '/img/uploads/our-partners/4p-partners-YMCA.jpg'
+    link:
+  - name: Fauquier Community Food Bank
+    description: >-
+      On a Friday morning, the 4P FOODS DC office team drove an hour outside of city headquarters to Warrenton, VA. Warrenton
+      is a short drive from the 4P FOODS distribution site. Each week, freights of food are shipped from regional farms to
+      our…
+    image: '/img/uploads/our-partners/4p-partners-fauquier.jpg'
+    link: http://fauquierfoodbank.org/
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 mx-lg-auto text-center">
+        <h1 class="editable">Our Partners</h1>
+        <h3 class="editable"><em>Supportive Sub-Headline Here</em></h3>
+        <div class="editable">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat doloremque provident expedita culpa
+            eligendi recusandae adipisci optio accusamus ipsa! Qui, minima. Veritatis totam alias quasi veniam quae
+            impedit deserunt qui eveniet fugit dolor, sint in odio laudantium quo ut nesciunt, non deleniti vel
+            praesentium enim corrupti tempore autem quia. Culpa!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="responsive-card-deck cards-lg-3 cards-md-2 mt-5">
+          {% for partner in page.partners %}
+          <div class="card bg-transparent mb-3 mb-lg-5">
+            <div class="bg-image aspect-4x3" style="background-image: url({{ partner.image | prepend: site.url }})"></div>
+            <div class="card-body">
+              <h5>{{ partner.name }}</h5>
+              <p>{{ partner.description }}</p>
+            </div>
+            <div class="card-footer bg-transparent">
+              <a href="{{ partner.link }}" class="btn btn-secondary" target="_blank" rel="noopener">Learn More</a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+#search-filter-nav {
+  .navbar-nav {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-item {
+    .nav-link {
+      color: $gray-600;
+      text-transform: uppercase;
+    }
+  }
+}

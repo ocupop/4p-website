@@ -1,0 +1,46 @@
+---
+layout: default
+footer_image: '/img/uploads/events/4P-footer-07.jpg'
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 mx-lg-auto text-center">
+        <h1 class="editable">Community Events</h1>
+        <h3 class="editable"><em>Food, Friends, and Fun</em></h3>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      {% if page.featured_image %}
+        <div class="col-lg-6">
+          <img src="{{ page.featured_image | prepend: site.url }}" class="img-fluid mb-3" alt="{{ page.title }} image">
+        </div>
+      {% endif %}
+      <div class="{% if page.featured_image %}col-lg-6{% else %}col-12{% endif %}">
+        <!-- need logic to let user know if event has already happened -->
+        <h4>{{ page.title }}</h4>
+        <p class="mb-0">{{ page.date | date: '%A %B %-d, %Y'}}</p>
+        <p>{{ page.start_time }}{% if page.end_time %} - {{ page.end_time }}{% endif %}</p>
+        {% if page.location.location_name %}
+          <p class="mb-0">{{ page.location.location_name }}</p>
+        {% endif %}
+        {% if page.location.location_address %}
+          <p>{{ page.location.location_address }}</p>
+        {% endif %}
+
+        {{ page.content }}
+
+        {% for link in page.links %}
+          <p>
+            <a href="{{ link.url }}" class="btn btn-secondary" target="_blank" rel="noopener">{% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %} {{ link.label | default: 'Event Link'}}</a>
+          </p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

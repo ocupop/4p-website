@@ -1,0 +1,97 @@
+.styled-select {
+  position: relative;
+  font-family: $font-family-base;
+  width: auto;
+  border-radius: 20px;
+  border: 1px solid $gray-600;
+  background: $white;
+  min-width: 50%;
+  padding: 7px;
+  
+  select {
+    background: transparent;
+    border: none;
+    color: $gray-600;
+    width: 100%;
+  }
+  &.square-select {
+    border-radius: 0;
+    padding: 13px 7px;
+    margin: 10px 0;
+    border: 1px solid $gray-400;
+    font-weight: 100;
+    select {
+      color: $gray-400;
+      text-transform: uppercase;
+    }
+  }
+}
+
+input[type="search"] {
+  border-radius: 20px;
+}
+
+.form-control {
+  text-transform: uppercase;
+  font-weight: 100;
+  padding: 25px;
+  margin: 10px 0;
+}
+
+.col-form-label,
+.form-check-label {
+  text-transform: uppercase;
+  color: $gray-600;
+  font-weight: 100;
+}
+
+
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: $gray-600;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid $gray-400;
+  border-radius: 0;
+  background: $white;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: $secondary;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}

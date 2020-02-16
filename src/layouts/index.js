@@ -1,14 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
-
-import HEAD from "../components/ui/head"
-import Header from '../components/ui/header'
-import Footer from '../components/ui/footer'
+import HEAD from "../common/ui/Head"
+import Header from '../common/ui/Header'
+import Footer from '../common/ui/Footer'
 import 'remixicon/fonts/remixicon.css'
 import '../../content/_scss/main.scss'
 
-function Layout({ children, location: { pathname } }) {
+function Layout({ children }) {
   const data = useStaticQuery(graphql`
     query HeaderQuery {
       site {
@@ -22,25 +21,21 @@ function Layout({ children, location: { pathname } }) {
   return (
     <>
       <HEAD />
-      {
-        pathname === '/' ? '' : <Header siteTitle={data.site.siteMetadata.title} />
-      }
+      {/* {props.location.pathname === '/' ? '' : ''} */}
+      <Header siteTitle={data.site.siteMetadata.title} />
 
       <main id="pageContent">
         {children}
       </main>
 
-      {
-        pathname === '/' ? '' : <Footer siteTitle={data.site.siteMetadata.title} />
-      }
-
+      <Footer siteTitle={data.site.siteMetadata.title} />
     </>
   )
 }
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  location: PropTypes.object.isRequired,
+  // location: PropTypes.object.isRequired,
 }
 
 export default Layout

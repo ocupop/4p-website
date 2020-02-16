@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-12">
+    <div class="responsive-card-deck cards-lg-2 cards-md-2 mt-4">
+      {% for slug in page.related_farmers %}
+      {% assign farm = site.farmers | where: 'slug', slug | first %}
+
+      <div class="card bg-transparent">
+        <div class="bg-image aspect-4x3" style="background-image: url({{ farm.featured_image | prepend: site.url }})"></div>
+        <div class="card-body">
+          <h4>{{ farm.title }}</h4>
+          {% if farm.description %}
+            <p>{{ farm.description }}</p>
+          {% endif %}
+        </div>
+        <div class="card-footer bg-transparent">
+          <a href="{{ farm.url }}" class="btn btn-secondary">Shop this weeks items</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

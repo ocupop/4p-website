@@ -1,0 +1,58 @@
+---
+layout: page
+title: 4p News
+meta:
+footer_image: '/img/uploads/news/4P-footer-02.jpg'
+
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 mx-lg-auto text-center">
+        <h1 class="editable">Enrich Yourself</h1>
+        <h3 class="editable"><em>News, Recipes, Tips, and Home-grown Hype</em></h3>
+        <div class="editable">
+          <p>4p Foods sources farm-fresh food from farms in the Washington DC local foodshed and delivers them to your
+            office or apartment building once each week.</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+  </div>
+</section>
+<section class="pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ul class="nav nav-tabs" id="news-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="tab-news" data-toggle="tab" href="#news" role="tab" aria-controls="news"
+              aria-selected="true">4P News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="tab-newsletters" data-toggle="tab" href="#newsletters" role="tab" aria-controls="newsletters"
+              aria-selected="false">Weekly Harvest Newsletters</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="news" role="tabpanel" aria-labelledby="tab-news">
+            {% include news/featured-news-item.html %}
+            {% include news/news-list.html %}
+          </div>
+          <div class="tab-pane fade" id="newsletters" role="tabpanel" aria-labelledby="tab-newsletters">
+            {% include news/newsletter-list.html  %}
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- design proposes tabbed behavior. 
+  Featured News tab and Weekly harvest newsletters tab, not sure if that requires a second react component -->
+
+<!-- <featured-news></featured-news> -->
+
+

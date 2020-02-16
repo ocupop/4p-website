@@ -1,0 +1,21 @@
+---
+layout: none
+permalink: api/pages
+---
+[
+{% for page in site.pages %}
+  {% if page.layout == 'page' %}
+    {
+      {% for var in page %}
+        {% if var[0] == 'url' %}
+          "pageUrl": {{ var[1] | jsonify }}{% unless forloop.last %},{% endunless %}
+        {% else %}
+          {% if var[0] == 'layout' or var[0] == 'content' or var[0] == 'title' %}
+            "{{ var[0] }}": {{ var[1] | jsonify }}{% unless forloop.last %},{% endunless %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    }{% unless forloop.last %},{% endunless %}
+  {% endif %}
+{% endfor %}
+]

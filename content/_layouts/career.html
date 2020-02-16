@@ -1,0 +1,52 @@
+---
+layout: page
+footer_image: '/img/uploads/careers/4P-footer-09.jpg'
+---
+
+<div class="row no-gutters">
+  <div class="col-4">
+    <div class="p-1">
+      <div class="bg-image aspect-16x9" style="background-image: url({{ '/img/uploads/careers/4p-careers-headerimage-01.jpg' | prepend: site.url }})"
+        ></div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="p-1">
+      <div class="bg-image aspect-16x9" style="background-image: url({{ '/img/uploads/careers/4p-careers-headerimage-02.jpg' | prepend: site.url }})"
+        ></div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="p-1">
+      <div class="bg-image aspect-16x9" style="background-image: url({{ '/img/uploads/careers/4p-careers-headerimage-03.jpg' | prepend: site.url }})"></div>
+    </div>
+  </div>
+</div>
+<section class="pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-lg-auto text-center">
+        <div class="editable">
+          <h1 class="editable">Careers at 4P</h1>
+          <h3 class="editable"><em>Supportive Sub-Headline Here</em></h3>
+          <div class="editable">
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>{{page.title}}</h1>
+        <p><strong>{{ page.location }}</strong> <em>Job posted {{ page.posted_date | date: '%m/%d/%Y' }}</em></p>
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include careers/volunteer.html %}

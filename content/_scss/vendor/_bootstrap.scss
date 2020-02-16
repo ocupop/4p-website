@@ -12,6 +12,9 @@
   }
   &.btn-outline-white {
     border: 1px solid $white;
+    &:hover {
+      color: $green-dark;
+    }
   }
   &.btn-green-dark {
     background-color: $green-dark;
@@ -19,6 +22,14 @@
   &.btn-white {
     background-color: $white;
     color: $gray-400;
+  }
+  &.btn-link {
+    color: $secondary;
+    padding-left: 0;
+    padding-right: 0;
+    &:hover {
+      color: darken($secondary, 15%);
+    }
   }
 }
 .btn-primary {
@@ -44,11 +55,6 @@
 }
 
 // Carousels
-.carousel-item {
-  width: 80%;
-  margin-right: auto;
-  margin-left: 10%;
-}
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%;
@@ -61,6 +67,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
+  @include media-breakpoint-down(md) {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
   .nav-item {
     width: 100%;
     margin-left: 5px;
@@ -78,6 +88,11 @@
       font-weight: 600;
       border: 0;
       color: $gray-500;
+      @include media-breakpoint-down(lg) {
+        font-size: 16px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+      }
       &.active {
         color: $gray-700;
         background-color: $beige;
@@ -86,13 +101,22 @@
   }
 }
 
+.tab-content {
+  h4 {
+    font-style: italic;
+    text-transform: capitalize;
+  }
+}
+
 // Cards
 .card {
   border: 0;
   background-color: $beige;
+  margin-bottom: 20px;
   .card-body,
   .card-footer {
     border: 0;
+    background-color: transparent;
   }
   h5 {
     text-transform: uppercase;
@@ -107,5 +131,12 @@
     font-style: italic;
     color: $gray-600;
     margin-bottom: 20px;
+  }
+}
+
+.card-columns {
+  column-count: 1;
+  @include media-breakpoint-up(lg) {
+    column-count: 2;
   }
 }

@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-12">
+    <div class="responsive-card-deck cards-lg-2 cards-md-2 mt-4">
+      {% for farmer in site.farmers limit: 2 offset: 1 %}
+      <div class="card bg-transparent">
+        <div class="bg-image aspect-4x3" style="background-image: url({{ farmer.featured_image | prepend: site.url }})"></div>
+        <div class="card-body">
+          <h4>{{ farmer.title }}</h4>
+          {% if farmer.description %}
+            <p>{{ farmer.description }}</p>
+          {% else %}
+            <p>{{ farmer.content | strip_html | truncatewords: 35 }}</p>
+          {% endif %}
+        </div>
+        <div class="card-footer bg-transparent">
+          <a href="{{ farmer.url }}" class="btn btn-secondary">Shop this weeks items</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Formik, Field, Form } from 'formik'
 import * as Yup from 'yup'
-import Sandbox from '../../containers/Sandbox'
+
 import {
   TextInput,
   TextArea,
@@ -34,7 +34,7 @@ const FormSandbox = () => {
   }
 
   return (
-    <Sandbox>
+    <>
       <section>
         <div className="container">
           <div className="row">
@@ -119,7 +119,7 @@ const FormSandbox = () => {
           </div>
         </div>
       </section>
-    </Sandbox>
+    </>
   )
 }
 

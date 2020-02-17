@@ -3,7 +3,6 @@ import React from 'react'
 import { graphql } from "gatsby"
 import { useSelector } from 'react-redux'
 import { useFirestoreConnect } from 'react-redux-firebase'
-import Sandbox from '../../containers/Sandbox'
 
 const HydratePage = ({
   data: {
@@ -21,7 +20,7 @@ const HydratePage = ({
 
 
   return (
-    <Sandbox>
+    <>
       <h1>Hydration Patterns</h1>
       <hr />
       <h4>Authors</h4>
@@ -41,7 +40,7 @@ const HydratePage = ({
           </li>
         ))}
       </ul>
-    </Sandbox>
+    </>
   )
 }
 

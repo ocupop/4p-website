@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { graphql } from "gatsby"
 import _ from 'lodash'
 import parse, { domToReact } from 'html-react-parser'
-import Layout from '../containers/Layout'
 
 const pageComponents = {
   // TODO: Import and list all acceptable components that may get included inline page content.
@@ -38,9 +37,9 @@ const CareerTemplate = ({
 }) => {
 
   return (
-    <Layout>
+    <>
       {parse(output, parseOptions)}
-    </Layout>
+    </>
   )
 }
 

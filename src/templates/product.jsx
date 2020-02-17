@@ -2,14 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import ProductDetail from '../features/products/ProductDetail'
-import Layout from '../containers/Layout'
 
-const Product = ({ data: {product} }) => {
+const Product = ({ data: { product } }) => {
 
   return (
-    <Layout>
+    <>
       <ProductDetail product={product}/>
-    </Layout>
+    </>
   )
 }
 
@@ -39,9 +38,7 @@ export const query = graphql`
 `
 
 Product.propTypes = {
-  data: {
-    product: PropTypes.instanceOf(Object),
-  }
+  data: PropTypes.instanceOf(Object)
 }
 
 export default Product

@@ -1,9 +1,3 @@
-// /* eslint-disable no-console */
-// /**
-//  * Implement Gatsby's Node APIs in this file.
-//  *
-//  * See: https://www.gatsbyjs.org/docs/node-apis/
-//  */
 const path = require(`path`)
 // const matter = require(`gray-matter`)
 // const _ = require(`lodash`)
@@ -27,15 +21,13 @@ exports.onCreateWebpackConfig = ({
       })
     });
   }
-};
+}
 
 // ------------------------
 // CREATE PAGES
 // ------------------------
-exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+exports.createPages = async ({ graphql, actions: { createPage } }) => {
 
-  // TODO: determine better pattern
   await graphql(`
     query {
       allPages {
@@ -47,14 +39,80 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      allFarmers {
+        edges {
+          node {
+            id
+            url
+            layout
+          }
+        }
+      }
+      allEvents {
+        edges {
+          node {
+            id
+            url
+            layout
+          }
+        }
+      }
+      allPosts {
+        edges {
+          node {
+            id
+            url
+            layout
+          }
+        }
+      }
+      allTeam {
+        edges {
+          node {
+            id
+            url
+            layout
+          }
+        }
+      }
+      allCareers {
+        edges {
+          node {
+            id
+            url
+            layout
+          }
+        }
+      }
     }
-  `).then(result => {
-    // Build Web Pages
-    result.data.allPages.edges.forEach(({ node: { layout, pageUrl, id } }) => {
-      const component = path.resolve(`./src/templates/${layout}.jsx`)
+  `).then(({
+    data: {
+      allPages: {
+        edges: pages
+      },
+      allFarmers: {
+        edges: farmers
+      },
+      allEvents: {
+        edges: events
+      },
+      allPosts: {
+        edges: posts
+      },
+      allTeam: {
+        edges: team
+      },
+      allCareers: {
+        edges: careers
+      }
 
-      // TODO: Add solution for different Gatsby layouts
-      // const layout = node.layout === 'splash' ? 'splash' : 'index'
+    }
+  }) => {
+    const collections = [...farmers, ...events, ...posts, ...team, ...careers]
+
+    // Build Web Pages
+    pages.forEach(({ node: { layout, pageUrl, id } }) => {
+      const component = path.resolve(`./src/templates/${layout}.jsx`)
 
       createPage({
         component,
@@ -64,38 +122,22 @@ exports.createPages = async ({ graphql, actions }) => {
         },
       })
     })
+
+    // Build Collection Pages
+    collections.forEach(({ node: { layout, url, id } }) => {
+      const component = path.resolve(`./src/templates/${layout}.jsx`)
+
+      createPage({
+        component,
+        path: url,
+        context: {
+          id,
+        },
+      })
+    })
   })
 
-  // getting farmers...
-  //   await graphql(`
-  //   query {
-  //     allFarmers {
-  //       edges {
-  //         node {
-  //           id
-  //         }
-  //       }
-  //     }
-  //   }
-  // `).then(result => {
-  //   // Build Web Pages
-  //   result.data.allPages.edges.forEach(({ node: { layout, pageUrl, id } }) => {
-  //     const component = path.resolve(`./src/templates/${layout}.jsx`)
-
-  //     // TODO: Add solution for different Gatsby layouts
-  //     // const layout = node.layout === 'splash' ? 'splash' : 'index'
-
-  //     createPage({
-  //       component,
-  //       path: pageUrl,
-  //       context: {
-  //         id
-  //       },
-  //     })
-  //   })
-  // })
-
-  // build out products
+  // Product Pages
   await graphql(`
     query {
       allProduct {
@@ -106,9 +148,9 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `).then(result => {
+  `).then(({ data: { allProduct: { edges: products } } }) => {
     // Build Web Pages
-    result.data.allProduct.edges.forEach(({ node: { id } }) => {
+    products.forEach(({ node: { id } }) => {
       createPage({
         component: path.resolve(`./src/templates/product.jsx`),
         path: `products/${id}`,
@@ -119,10 +161,6 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 }
-
-// exports.createPages = async ({ graphql, actions }) => {
-// console.log("this was run")
-// }
 
 
 // ------------------------

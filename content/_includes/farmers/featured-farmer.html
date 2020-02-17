@@ -1,7 +1,7 @@
 {% assign featured_farmer = site.farmers.first %}
 <div class="row">
   <div class="col-12">
-    <div class="bg-image aspect-16x9" style="background-image: url({{ featured_farmer.featured_image }})"></div>
+    <div class="bg-image aspect-16x9" style="background-image: url({{ featured_farmer.featured_image | prepend: site.url }})"></div>
     <div class="bg-tan p-4">
       <div class="row">
         <div class="col-12">

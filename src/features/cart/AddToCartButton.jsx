@@ -10,12 +10,13 @@ const AddToCart = ({ children, cartType, cartPurchaseStatus, item, productId }) 
   const [cartItem, setCartItem] = useState({});
 
   useEffect(() => {
-    if (
-      (cartPurchaseStatus === SINGLE_PURCHASE && item.singlePurchase === false) ||
-      (cartPurchaseStatus === RECURRING_PURCHASE && item.recurringPurchase === false)
-    ) {
-      isButtonDisabled(true)
-    }
+    // if (
+    //   (cartPurchaseStatus === SINGLE_PURCHASE && item.singlePurchase === false) ||
+    //   (cartPurchaseStatus === RECURRING_PURCHASE && item.recurringPurchase === false)
+    // ) {
+    //   isButtonDisabled(true)
+    // }
+    console.log(item);
 
     const newItem = {
       productID: productId,

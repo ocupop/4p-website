@@ -5,9 +5,9 @@ import CartListItem from './CartListItem'
 const CartList = ({ items }) => {
 
   return (
-    <>
+    <ul className="list-unstyled">
       {items && items.map(item => <CartListItem item={item} key={item.variantID} />)}
-    </>
+    </ul>
   )
 }
 

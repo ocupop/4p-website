@@ -23,6 +23,14 @@
     background-color: $white;
     color: $gray-400;
   }
+  &.btn-link {
+    color: $secondary;
+    padding-left: 0;
+    padding-right: 0;
+    &:hover {
+      color: darken($secondary, 15%);
+    }
+  }
 }
 .btn-primary {
   color: $white !important;

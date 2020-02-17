@@ -2,7 +2,7 @@ export const env = 'dev'
 
 // Config for firebase
 export const firebase = {
-  apiKey: process.env.GATSBY_FIREBASE_API,
+  apiKey: process.env.GATSBY_FIREBASE_API_KEY,
   authDomain: process.env.GATSBY_FIREBASE_AUTH_DOMAIN,
   databaseURL: process.env.GATSBY_FIREBASE_DATABASE_URL,
   projectId: process.env.GATSBY_FIREBASE_PROJECT_ID,

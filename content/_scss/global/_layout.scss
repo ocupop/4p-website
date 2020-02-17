@@ -56,8 +56,8 @@
     }
     .btn {
       width: 40%;
-      padding-top: 7px;
-      padding-bottom: 7px;
+      padding-top: 15px;
+      padding-bottom: 15px;
       @include media-breakpoint-up(sm) {
         width: 25%;
       }

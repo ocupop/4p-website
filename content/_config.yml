@@ -37,7 +37,7 @@ collections:
     permalink: /posts/:title/
   featured_products:
     output: false
-  includes:
+  elements:
     output: false
 
 defaults:

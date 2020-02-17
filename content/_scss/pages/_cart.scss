@@ -21,9 +21,6 @@
 .item-row {
   .btn-link {
     font-size: 14px;
-    color: $secondary;
-    padding-left: 0;
-    padding-right: 0;
     @include media-breakpoint-up(lg) {
       position: absolute;
       bottom: 20px;

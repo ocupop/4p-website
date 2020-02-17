@@ -14,9 +14,11 @@
 @import "global/forms";
 
 // Components
+@import "components/cart_summary";
 @import "components/modal";
 @import "components/product";
 @import "components/search_filter_nav";
+@import "components/user";
 
 // Pages
 @import "pages/contact";

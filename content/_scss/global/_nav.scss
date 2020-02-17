@@ -73,7 +73,7 @@
   }
   .dropdown-menu {
     @include media-breakpoint-down(lg) {
-      border: 0;
+      // border: 0;
       text-align: center;
       .dropdown-item {
         color: $gray-600;

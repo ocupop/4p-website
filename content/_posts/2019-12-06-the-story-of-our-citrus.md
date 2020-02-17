@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Story of Our Citrus
-date: 2019-12-06 10:00:00
+post_date: 2019-12-06 10:00:00
 featured_image: /uploads/blog-citrus.jpg
 assets:
   - _type: image

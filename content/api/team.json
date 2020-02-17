@@ -1,0 +1,16 @@
+---
+layout: none
+permalink: api/team
+---
+[
+{% for team in site.team_members %}
+  {
+    "layout": {{ team['layout'] | jsonify }},
+    "url": {{ team['url'] | jsonify }},
+    "title": {{ team['title'] | jsonify }},
+    "slug": {{ team['slug'] | jsonify }},
+    "date": {{ team['date'] | jsonify }},
+    "output": {{ team['output'] | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

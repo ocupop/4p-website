@@ -247,6 +247,11 @@
   text-transform: underline !important;
 }
 
+.row-border {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .text-mega {
   font-size: 2rem;
   font-weight: 600;
@@ -552,5 +557,36 @@
       border: 2px solid $gray-600;
       z-index: -1;
     }
+  }
+}
+
+user-nav,
+notification-nav {
+  height: 20px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  color: $white;
+  padding: 20px;
+  &::before {
+    content: 'usernav';
+  }
+}
+
+notification-nav {
+  &::before {
+    content: 'notifications';
+  }
+}
+
+cart-summary {
+  background-color: $primary;
+  display: flex;
+  align-items: center;
+  color: $white;
+  width: auto;
+  padding: 10px;
+  &::before {
+    content: 'Cart'
   }
 }

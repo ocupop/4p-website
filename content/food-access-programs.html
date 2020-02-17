@@ -31,19 +31,19 @@ _assets:
 <div class="row no-gutters">
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[0].image }}')"
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[0].image | prepend: site.url }}')"
         data-cms-editor-link="cloudcannon:#_assets[0].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[1].image }}')"
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[1].image | prepend: site.url }}')"
         data-cms-editor-link="cloudcannon:#_assets[1].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[2].image }}')"
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[2].image | prepend: site.url }}')"
         data-cms-editor-link="cloudcannon:#_assets[2].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
@@ -69,7 +69,7 @@ _assets:
             <div class="card-content align-items-center">
               <div class="card-header p-0">
                 <div class="content">
-                  <img src="/img/icons/homepage-foodaccess-geographic.png" class="img-fluid editable" alt="" />
+                  <img src="{{ '/img/icons/homepage-foodaccess-geographic.png' | prepend: site.url }}" class="img-fluid editable" alt="" />
                 </div>
               </div>
               <div class="card-body">
@@ -85,7 +85,7 @@ _assets:
             <div class="card-content align-items-center">
               <div class="card-header p-0">
                 <div class="content text-center">
-                  <img src="/img/icons/homepage-foodaccess-financial.png" class="img-fluid editable" alt="" />
+                  <img src="{{ '/img/icons/homepage-foodaccess-financial.png' | prepend: site.url }}" class="img-fluid editable" alt="" />
                 </div>
               </div>
               <div class="card-body">
@@ -101,7 +101,7 @@ _assets:
             <div class="card-content align-items-center">
               <div class="card-header p-0">
                 <div class="content">
-                  <img src="/img/icons/homepage-foodaccess-personal.png" class="img-fluid editable" alt="" />
+                  <img src="{{ '/img/icons/homepage-foodaccess-personal.png' | prepend: site.url }}" class="img-fluid editable" alt="" />
                 </div>
               </div>
               <div class="card-body">
@@ -122,7 +122,7 @@ _assets:
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
-        <img src="/img/uploads/food-access-programs/4p-foodaccess-fieldofgreens.jpg" class="img-fluid mb-3 editable" alt="">
+        <img src="{{ '/img/uploads/food-access-programs/4p-foodaccess-fieldofgreens.jpg' | prepend: site.url }}" class="img-fluid mb-3 editable" alt="">
       </div>
       <div class="col-lg-6">
         <div class="editable">
@@ -157,7 +157,7 @@ _assets:
         <div class="responsive-card-deck cards-lg-3 cards-md-2 mt-5">
           {% for resource in page.food_resources %}
           <div class="card bg-transparent">
-            <a href="{{ resource.link }}" class="bg-image aspect-4x3" style="background-image: url({{ resource.image }})"></a>
+            <a href="{{ resource.link }}" class="bg-image aspect-4x3" style="background-image: url({{ resource.image | prepend: site.url }})"></a>
             <div class="card-body">
               <h5 class="text-white">{{ resource.name }}</h5>
               <p>{{ resource.description }}</p>

@@ -1,0 +1,16 @@
+---
+layout: none
+permalink: api/careers
+---
+[
+{% for career in site.careers %}
+  {
+    "layout": {{ career['layout'] | jsonify }},
+    "url": {{ career['url'] | jsonify }},
+    "title": {{ career['title'] | jsonify }},
+    "slug": {{ career['slug'] | jsonify }},
+    "date": {{ career['date'] | jsonify }},
+    "output": {{ career['output'] | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

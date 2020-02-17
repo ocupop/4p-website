@@ -3,19 +3,15 @@ layout: none
 permalink: api/farmers
 ---
 [
-{% for farmer in site.farmers %}
+  {% for farmer in site.farmers %}
     {
-      {% for var in farmer %}
-      {{ var | json }}
-        {% unless var == 'next' or var == 'content' or var == 'previous' or var == 'excerpt' %}
-        {% if var[0] == 'id' %}
-          "farmerId": {{ farmer[var] | jsonify }}{% unless forloop.last %},{% endunless %}
-        {% else %}
-          "{{ var }}": {{ farmer[var] | jsonify }}{% unless forloop.last %},{% endunless %}
-        {% endif %}
-        {% endunless %}
-      {% endfor %}
+      "layout": {{ farmer['layout'] | jsonify }},
+      "url": {{ farmer['url'] | jsonify }},
+      "title": {{ farmer['title'] | jsonify }},
+      "slug": {{ farmer['slug'] | jsonify }},
+      "date": {{ farmer['date'] | jsonify }},
+      "vendorID": {{ farmer['vendorID'] | jsonify }},
+      "output": {{ farmer['output'] | jsonify }}
     }{% unless forloop.last %},{% endunless %}
-
-{% endfor %}
+  {% endfor %}
 ]

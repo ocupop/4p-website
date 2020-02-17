@@ -4,14 +4,13 @@ permalink: api/events
 ---
 [
 {% for event in site.events %}
-
-    {
-      {% for var in event %}
-        {% unless var == 'next' or var == 'content' or var == 'previous' or var == 'excerpt' %}
-          "{{ var }}": {{ event[var] | jsonify }}{% unless forloop.last %},{% endunless %}
-        {% endunless %}
-      {% endfor %}
-    }{% unless forloop.last %},{% endunless %}
-
+  {
+    "layout": {{ event['layout'] | jsonify }},
+    "url": {{ event['url'] | jsonify }},
+    "title": {{ event['title'] | jsonify }},
+    "slug": {{ event['slug'] | jsonify }},
+    "date": {{ event['date'] | jsonify }},
+    "output": {{ event['output'] | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]

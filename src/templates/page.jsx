@@ -1,10 +1,8 @@
-/* eslint-disable camelcase */
-/* eslint-disable react/prop-types */
 import React from 'react'
+import PropTypes from 'prop-types'
 import { graphql } from "gatsby"
 import _ from 'lodash'
-import parse from 'html-react-parser';
-// import FooterHero from '../components/ui/FooterHero'
+import parse from 'html-react-parser'
 
 const pageComponents = {
   // TODO: Import and list all acceptable components that may get included inline page content.
@@ -12,7 +10,7 @@ const pageComponents = {
 
 const parseOptions = {
   replace: ({ attribs, name }) => {
-    if (!attribs) return;
+    if (!attribs) return
 
     if (name.includes('-')) {
       const component = _.upperFirst(_.camelCase(name))
@@ -24,7 +22,6 @@ const parseOptions = {
 const PageTemplate = ({
   data: {
     pages: {
-      name,
       content
     }
   }
@@ -32,11 +29,7 @@ const PageTemplate = ({
 
   return (
     <>
-      <h1>{name}</h1>
-      {parse(content)}
-      <section className="p-0">
-        {/* <FooterHero image={footer_image}/> */}
-      </section>
+      {parse(content, parseOptions)}
     </>
   )
 }
@@ -45,9 +38,13 @@ const PageTemplate = ({
 export const query = graphql`
   query($id: String!) {
     pages(id: {eq: $id }) {
-      name
+      title
       content
     }
   }`
+
+PageTemplate.propTypes = {
+  data: PropTypes.instanceOf(Object),
+}
 
 export default PageTemplate

@@ -1,12 +1,12 @@
 import React from 'react'
 import { Formik, Field, Form } from 'formik'
 import * as Yup from 'yup'
+
 import {
   TextInput,
   TextArea,
   SwitchInput,
   SelectInput,
-  RichInput,
   RadioInput,
 } from '../../common/fields'
 
@@ -34,90 +34,92 @@ const FormSandbox = () => {
   }
 
   return (
-    <section>
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <h1>Sandbox: Forms</h1>
-            <Formik
-              enableReinitialize
-              initialValues={initialValues}
-              validationSchema={ValidationSchema}
-            // onSubmit={(values, { resetForm }) => {
-            //   dispatch(testForm({ firestore }, values))
-            //   resetForm()
-            // }}
-            >
-              {({ values, setFieldValue }) => (
-                <Form>
-                  {/* Example of Text Field */}
-                  <Field
-                    name="text"
-                    type="text"
-                    component={TextInput}
-                    placeholder="Placeholder text"
-                    hint="Enter some text"
-                    label="Description"
-                  />
-                  {/* Example of Text Area */}
-                  <Field
-                    name="description"
-                    type="text"
-                    component={TextArea}
-                    placeholder="Enter a description!"
-                    hint="Enter some text!"
-                    label="Description"
-                  />
-                  {/* Example of Switch Input */}
-                  <Field
-                    name="switch"
-                    type="checkbox"
-                    component={SwitchInput}
-                    label="Switch"
-                    onChange={() => setFieldValue('switch', !values.switch)}
-                  />
-
-                  <div className="form-check form-check-inline">
+    <>
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <h1>Sandbox: Forms</h1>
+              <Formik
+                enableReinitialize
+                initialValues={initialValues}
+                validationSchema={ValidationSchema}
+              // onSubmit={(values, { resetForm }) => {
+              //   dispatch(testForm({ firestore }, values))
+              //   resetForm()
+              // }}
+              >
+                {({ values, setFieldValue }) => (
+                  <Form>
+                    {/* Example of Text Field */}
                     <Field
-                      name="radioExample"
-                      type="radio"
-                      component={RadioInput}
-                      label="radio-opt-1"
-                      value="radio-opt-1"
-                      onChange={(e, val) => {
-                        setFieldValue("radioExample", val.value);
-                      }}
+                      name="text"
+                      type="text"
+                      component={TextInput}
+                      placeholder="Placeholder text"
+                      hint="Enter some text"
+                      label="Description"
                     />
+                    {/* Example of Text Area */}
                     <Field
-                      name="radioExample"
-                      type="radio"
-                      component={RadioInput}
-                      label="radio-opt-2"
-                      value="radio-opt-2"
-                      onChange={(e, val) => {
-                        setFieldValue("radioExample", val.value);
-                      }}
+                      name="description"
+                      type="text"
+                      component={TextArea}
+                      placeholder="Enter a description!"
+                      hint="Enter some text!"
+                      label="Description"
                     />
-                  </div>
+                    {/* Example of Switch Input */}
+                    <Field
+                      name="switch"
+                      type="checkbox"
+                      component={SwitchInput}
+                      label="Switch"
+                      onChange={() => setFieldValue('switch', !values.switch)}
+                    />
 
-                  {/* Example of Select Input */}
-                  <Field
-                    name="featuredProduct"
-                    type="text"
-                    component={SelectInput}
-                    options={mockSelectData}
-                    onChange={value => setFieldValue('featuredProduct', value)}
-                    label="Select Featured Product"
-                  />
-                  <button type="submit" className="btn btn-primary">Submit</button>
-                  <FormikDebug />
-                </Form>
-              )}
-            </Formik>
+                    <div className="form-check form-check-inline">
+                      <Field
+                        name="radioExample"
+                        type="radio"
+                        component={RadioInput}
+                        label="radio-opt-1"
+                        value="radio-opt-1"
+                        onChange={(e, val) => {
+                          setFieldValue("radioExample", val.value);
+                        }}
+                      />
+                      <Field
+                        name="radioExample"
+                        type="radio"
+                        component={RadioInput}
+                        label="radio-opt-2"
+                        value="radio-opt-2"
+                        onChange={(e, val) => {
+                          setFieldValue("radioExample", val.value);
+                        }}
+                      />
+                    </div>
+
+                    {/* Example of Select Input */}
+                    <Field
+                      name="featuredProduct"
+                      type="text"
+                      component={SelectInput}
+                      options={mockSelectData}
+                      onChange={value => setFieldValue('featuredProduct', value)}
+                      label="Select Featured Product"
+                    />
+                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <FormikDebug />
+                  </Form>
+                )}
+              </Formik>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }
 

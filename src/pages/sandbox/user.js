@@ -6,9 +6,9 @@ import UserDeliverySchedule from '../../features/user/UserDeliverySchedule'
 const user = () => {
   return (
     <>
-     <UserProfile/>
-     <UserAddress/>
-     <UserDeliverySchedule/>
+      <UserProfile />
+      <UserAddress />
+      <UserDeliverySchedule />
     </>
   )
 }

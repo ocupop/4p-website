@@ -6,13 +6,13 @@
 
 // You can delete this file if you're not using it
 
-import App from "./App"
+// import App from "./App"
 
 
-export const wrapRootElement = () => {
-  if (process.env.NODE_ENV !== `production`) {
-    return null
-  }
-  return App
-}
+// export const wrapRootElement = () => {
+//   if (process.env.NODE_ENV !== `production`) {
+//     return null
+//   }
+//   return App
+// }
 

@@ -5,13 +5,12 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import TestModal from './TestModal'
 import ImageModal from './ImageModal'
+import LoginModal from './LoginModal'
 
 const modalLookup = {
   TestModal,
-  ImageModal
-  // LoginModal,
-  // RegisterModal,
-  // UnauthModal
+  ImageModal,
+  LoginModal
 }
 
 const ModalWrapper = () => {
@@ -22,7 +21,7 @@ const ModalWrapper = () => {
     const ModalComponent = modalLookup[modalType]
     return <ModalComponent {...modalProps} />
   }
-  return <span>Need Modal Content</span>
+  return <></>
 }
 
 ModalWrapper.propTypes = {

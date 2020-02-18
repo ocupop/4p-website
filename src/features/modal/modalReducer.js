@@ -9,7 +9,6 @@ export const openModal = (state, payload) => {
 }
 
 export const closeModal = (state, payload) => {
-  console.log('CLosing')
   return null
 }
 

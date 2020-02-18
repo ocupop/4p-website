@@ -11,7 +11,6 @@ export const openModal = (modalType, modalProps) => {
 }
 
 export const closeModal = () => {
-  console.log("ACTION")
   return {
     type: MODAL_CLOSE
   }

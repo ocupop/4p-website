@@ -12,7 +12,7 @@ const ModalTest = () => {
           <div className="row">
             <div className="col-12">
               <h1>Testing Modals</h1>
-              <button type="button" onClick={() => dispatch(openModal('TestModal'))}>Test Modal</button>
+              <button type="button" onClick={() => dispatch(openModal('TestModal', { heading: 'Mom' }))}>Test Modal</button>
             </div>
           </div>
         </div>

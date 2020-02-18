@@ -104,9 +104,10 @@ const ProductDetail = ({ product }) => {
             </div>
           </div>
           <div className="row no-gutters">
-            <div className="col-md-6 col-lg-3">
+            <div className="col-12">
               <div className="content">
                 {/* @TODO: Add logic required for recommended products */}
+
               </div>
             </div>
           </div>

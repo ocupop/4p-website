@@ -1,32 +1,22 @@
-import React, { useState } from 'react'
-// import PropTypes from 'prop-types'
+import React from 'react'
+import { useDispatch } from 'react-redux'
 import { Modal, Button } from 'react-bootstrap'
+import { closeModal } from './modalActions'
 
-
-const ImageModal = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+const ImageModal = ({ image }) => {
+  const dispatch = useDispatch()
 
   return (
     <>
-      <Button variant="link" onClick={handleShow}>
-        <small>Nutrition Information</small>
-      </Button>
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>          
-        </Modal.Header>
-        <Modal.Body>
-          <img src="https://via.placeholder.com/500x700" className="img-fluid" alt=""/>
-        </Modal.Body>
+      <Modal show onHide={() => dispatch(closeModal())}>
+        <Modal.Header closeButton></Modal.Header>
+        <Modal.Body><img src={image} className="img-fluid" /></Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => dispatch(closeModal())}>Close</Button>
+        </Modal.Footer>
       </Modal>
     </>
   )
 }
-
-// ImageModal.propTypes = {
-
-// }
 
 export default ImageModal

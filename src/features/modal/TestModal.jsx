@@ -12,7 +12,7 @@ const TestModal = ({heading}) => {
     <>
       <Modal show onHide={() => dispatch(closeModal())}>
         <Modal.Header closeButton>
-  <Modal.Title>Modal {heading}</Modal.Title>
+          <Modal.Title>Modal {heading}</Modal.Title>
         </Modal.Header>
         <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
         <Modal.Footer>

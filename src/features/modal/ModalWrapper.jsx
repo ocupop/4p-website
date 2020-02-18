@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 // import PropTypes from 'prop-types'
+import { useSelector } from 'react-redux'
 import TestModal from './TestModal'
 
 const modalLookup = {
@@ -11,7 +12,9 @@ const modalLookup = {
   // UnauthModal
 }
 
-const ModalWrapper = ({ currentModal }) => {
+const ModalWrapper = () => {
+  const currentModal = useSelector(state => state.modals)
+
   if (currentModal) {
     const { modalType, modalProps } = currentModal
     const ModalComponent = modalLookup[modalType]

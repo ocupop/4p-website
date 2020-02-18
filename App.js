@@ -22,7 +22,7 @@ firebase.initializeApp(config.firebase)
 
 
 const App = ({ element }) => {
-  const store = createStore()
+  const store = createStore({ firebase: { authError: null } })
 
   return (
     <Provider store={store}>

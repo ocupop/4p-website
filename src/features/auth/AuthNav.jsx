@@ -1,10 +1,9 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
 import { useSelector } from 'react-redux'
 import { isLoaded, isEmpty } from 'react-redux-firebase'
-import LoadingComponent from './LoadingComponent'
-import SignedInMenu from './menus/SignedInMenu'
-import SignedOutMenu from './menus/SignedOutMenu'
+import LoadingComponent from '../../common/ui/LoadingComponent'
+import SignedInMenu from './SignedInMenu'
+import SignedOutMenu from './SignedOutMenu'
 
 const AuthNav = () => {
   const auth = useSelector(state => state.firebase.auth)
@@ -12,18 +11,14 @@ const AuthNav = () => {
   return (
     <>
       {!isLoaded(auth) ? (
-        <LoadingComponent inverted />
+        <LoadingComponent />
       ) : (
         isEmpty(auth)
         ? <SignedOutMenu/>
-        : <SignedInMenu/>
+        : <SignedInMenu auth={auth} />
       )}
     </>
   )
 }
-
-// AuthNav.propTypes = {
-
-// }
 
 export default AuthNav

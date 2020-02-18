@@ -4,10 +4,11 @@ import React from 'react'
 // import PropTypes from 'prop-types'
 import { useSelector } from 'react-redux'
 import TestModal from './TestModal'
+import LoginModal from './LoginModal'
 
 const modalLookup = {
-  TestModal
-  // LoginModal,
+  TestModal,
+  LoginModal,
   // RegisterModal,
   // UnauthModal
 }
@@ -20,7 +21,7 @@ const ModalWrapper = () => {
     const ModalComponent = modalLookup[modalType]
     return <ModalComponent {...modalProps} />
   }
-  return <span>Need Modal Content</span>
+  return <></>
 }
 
 ModalWrapper.propTypes = {

@@ -4,10 +4,10 @@ import { firebaseReducer } from 'react-redux-firebase';
 import { firestoreReducer } from 'redux-firestore'
 import locationReducer from './location'
 
-import asyncReducer from '../common/async/asyncReducer';
-import modalReducer from '../features/modal/modalReducer';
+import asyncReducer from '../features/async/asyncReducer'
+import modalReducer from '../features/modal/modalReducer'
+import authReducer from '../features/auth/authReducer'
 // import testReducer from '../features/sandbox/testReducer';
-// import authReducer from '../features/auth/authReducers';
 // import cartReducer from '../features/cart/cartReducer';
 
 const rootReducer = () => combineReducers({
@@ -17,9 +17,9 @@ const rootReducer = () => combineReducers({
   location: locationReducer,
   async: asyncReducer,
   modals: modalReducer,
+  auth: authReducer,
   // test: testReducer,
   // form: FormReducer,
-  // auth: authReducer,
   // cart: cartReducer
 })
 

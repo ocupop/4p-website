@@ -10,7 +10,7 @@ import { setAnalyticsUser } from '../common/utils/analytics'
 // ======================================================
 export const defaultRRFConfig = {
   userProfile: 'users', // root that user profiles are written to
-  updateProfileOnLogin: false, // enable/disable updating of profile on login
+  updateProfileOnLogin: true, // enable/disable updating of profile on login
   presence: 'presence', // list currently online users under "presence" path in RTDB
   sessions: null, // Skip storing of sessions
   useFirestoreForProfile: true, // Save profile to Firestore instead of Real Time Database

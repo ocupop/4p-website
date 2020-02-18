@@ -3,7 +3,7 @@ import _ from 'lodash'
 import parse from 'html-react-parser';
 import { useStaticQuery, graphql } from 'gatsby'
 
-import AuthNav from './AuthNav'
+import AuthNav from '../../features/auth/AuthNav'
 import CartSummary from '../../features/cart/CartSummary'
 
 const pageComponents = {

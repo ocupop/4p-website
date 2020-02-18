@@ -1,5 +1,5 @@
 import React from 'react'
-import ImageModal from '../../features/modals/ImageModal'
+import ImageModal from '../../features/modal/ImageModal'
 const product = () => {
   return (
     <>
@@ -8,7 +8,7 @@ const product = () => {
           <div className="row">
             <div className="col-12">
               <div className="content">
-                <h1>product sandbox</h1> 
+                <h1>product sandbox</h1>
               </div>
             </div>
           </div>
@@ -30,7 +30,7 @@ const product = () => {
                 <div className="d-flex align-items-center mt-3">
                   {/* @TODO: Add to cart */}
                 </div>
-                <ImageModal/>
+                <ImageModal />
               </div>
             </div>
             <div className="col-lg-6">
@@ -38,7 +38,8 @@ const product = () => {
                 <div
                   className="bg-image aspect-4x3"
                   style={{
-                    backgroundImage: `url(https://via.placeholder.com/768x500)` }}
+                    backgroundImage: `url(https://via.placeholder.com/768x500)`
+                  }}
                 />
               </div>
             </div>
@@ -89,7 +90,8 @@ const product = () => {
                 <div
                   className="bg-image aspect-4x3"
                   style={{
-                    backgroundImage: `url(https://via.placeholder.com/500x400)` }}
+                    backgroundImage: `url(https://via.placeholder.com/500x400)`
+                  }}
                 />
               </div>
             </div>

@@ -12,7 +12,9 @@ import ReduxToastr from 'react-redux-toastr'
 import createStore from './src/store/createStore'
 import { defaultRRFConfig } from './src/store/defaultConfig'
 import * as config from './src/config'
+import ModalWrapper from './src/features/modal/ModalWrapper'
 import Layout from './src/containers/Layout'
+
 
 
 // Initialize Firebase instance
@@ -29,7 +31,7 @@ const App = ({ element }) => {
         config={defaultRRFConfig}
         dispatch={store.dispatch}
         createFirestoreInstance={createFirestoreInstance}>
-
+        <ModalWrapper />
         <ReduxToastr
           position='bottom-right'
           transitionIn='fadeIn'

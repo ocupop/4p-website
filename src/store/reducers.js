@@ -5,7 +5,7 @@ import { firestoreReducer } from 'redux-firestore'
 import locationReducer from './location'
 
 import asyncReducer from '../common/async/asyncReducer';
-// import modalReducer from '../features/modals/modalReducer';
+import modalReducer from '../features/modal/modalReducer';
 // import testReducer from '../features/sandbox/testReducer';
 // import authReducer from '../features/auth/authReducers';
 // import cartReducer from '../features/cart/cartReducer';
@@ -16,9 +16,9 @@ const rootReducer = () => combineReducers({
   toastr: toastrReducer,
   location: locationReducer,
   async: asyncReducer,
+  modals: modalReducer,
   // test: testReducer,
   // form: FormReducer,
-  // modals: modalReducer,
   // auth: authReducer,
   // cart: cartReducer
 })

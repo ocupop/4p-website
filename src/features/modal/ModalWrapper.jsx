@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/prop-types */
 import React from 'react'
 // import PropTypes from 'prop-types'
 import TestModal from './TestModal'
@@ -9,8 +11,9 @@ const modalLookup = {
   // UnauthModal
 }
 
-const ModalWrapper = ({ currentModal: { modalType, modalProps } }) => {
-  if (modalType) {
+const ModalWrapper = ({ currentModal }) => {
+  if (currentModal) {
+    const { modalType, modalProps } = currentModal
     const ModalComponent = modalLookup[modalType]
     return <ModalComponent {...modalProps} />
   }

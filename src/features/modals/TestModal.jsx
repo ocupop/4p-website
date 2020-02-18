@@ -11,7 +11,7 @@ const TestModal = () => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="link" onClick={handleShow}>
         Launch demo modal
       </Button>
       <Modal show={show} onHide={handleClose}>

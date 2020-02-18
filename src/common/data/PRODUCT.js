@@ -20,7 +20,6 @@ export const PRODUCT = {
   },
   ingredients: "",
   name: "",
-  sku: "",
   storageTips: "",
   tags: [
     {
@@ -28,6 +27,9 @@ export const PRODUCT = {
       value: ""
     }
   ],
+  sku: "",
+  quantity: 0,
+  trackProductInventory: true,
   variants: [
     {
       available: true,
@@ -51,7 +53,7 @@ export const PRODUCT = {
       singlePurchase: true,
       size: "",
       sku: "",
-      trackInventory: true,
+      trackVariantInventory: true,
       vendorSKU: ""
     }
   ],

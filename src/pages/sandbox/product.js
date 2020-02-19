@@ -1,10 +1,13 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { openModal } from '../../features/modal/modalActions'
+
+
 const product = () => {
   const dispatch = useDispatch()
   return (
     <>
+      
       <section>
         <div className="container">
           <div className="row">

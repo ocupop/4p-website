@@ -2,6 +2,7 @@ import React from 'react'
 import { useFirestoreConnect } from 'react-redux-firebase'
 import { useSelector } from 'react-redux'
 import ProductList from '../features/products/ProductList'
+import StoreNav from '../common/ui/StoreNav'
 
 const ShopPage = () => {
   useFirestoreConnect('products')
@@ -10,6 +11,7 @@ const ShopPage = () => {
   return (
     
     <>
+      <StoreNav />
       <section>
         <div className="container">
           <div className="row">

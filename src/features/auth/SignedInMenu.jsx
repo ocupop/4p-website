@@ -11,24 +11,22 @@ const SignedInMenu = ({ auth: { displayName, photoURL } }) => {
 
   return (
     <ul className="navbar-nav">
-      <li className="nav-item dropdown">
-        {/* @TODO: JB - does this need to be a dropdown? */}
-        <Dropdown>
-          <Dropdown.Toggle variant="teal" id="dropdown-notification">
-            <i className="ri-notification-2-fill"/>
-          </Dropdown.Toggle>
-          <Dropdown.Menu>
-            <div className="dropdown-item">
-              Notifications
-          </div>
-          </Dropdown.Menu>
-        </Dropdown>
+      <li className="nav-item">
+        {/* @TODO: Add Notification Modal */}
+        <button className="nav-link btn btn-teal">
+          <i className="ri-notification-2-fill" />
+        </button>
       </li>
       <li className="nav-item">
         <Dropdown>
           <Dropdown.Toggle variant="teal" id="dropdown-user">
             {/* @TODO: JB - Add avatar using photoURL */}
-            <i className="ri-user-fill" /> <span className="text-uppercase">{displayName}</span>
+            {photoURL ? 
+              <img src={photoURL} className="img-avatar"/>
+              :
+              <i className="ri-user-fill" />
+            }
+             <span className="text-uppercase">{displayName}</span>
           </Dropdown.Toggle>
 
           <Dropdown.Menu>

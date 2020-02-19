@@ -590,3 +590,18 @@ cart-summary {
     content: 'Cart'
   }
 }
+
+.loader {
+  color: $white;
+  font-size: 14px;
+  position: relative;
+  &::before {
+    position: absolute;
+    left: -20px;
+    content: "\EE61"; 
+    font-family: 'remixicon' !important;
+    @include animation(spin, 1.2s);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }  
+}

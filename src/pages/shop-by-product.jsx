@@ -1,47 +1,28 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { useFirestoreConnect } from 'react-redux-firebase'
+import { useSelector } from 'react-redux'
 import ProductList from '../features/products/ProductList'
 
-const products = ({ data: { allProduct: { edges: products } } }) => {
-
+const ProductsPage = () => {
+  useFirestoreConnect('products')
+  const products = useSelector(state => state.firestore.ordered.products)
   return (
     <>
-      <ProductList products={products} />
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="content">
+                <div className="responsive-card-deck cards-md-3 cards-lg-4">
+                  <ProductList products={products} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
 
-products.propTypes = {
-  data: PropTypes.instanceOf(Object),
-}
-
-export const query = graphql`
-  {
-    allProduct {
-      edges {
-        node {
-          id
-          name
-          category
-          department
-          ingredients
-          tags {
-            label
-            value
-          }
-          variants {
-            size
-            label
-            price
-          }
-          vendor {
-            name
-          }
-        }
-      }
-    }
-  }
-`
-
-export default products
+export default ProductsPage

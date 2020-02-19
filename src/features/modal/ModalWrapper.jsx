@@ -4,13 +4,13 @@ import React from 'react'
 // import PropTypes from 'prop-types'
 import { useSelector } from 'react-redux'
 import TestModal from './TestModal'
+import ImageModal from './ImageModal'
 import LoginModal from './LoginModal'
 
 const modalLookup = {
   TestModal,
-  LoginModal,
-  // RegisterModal,
-  // UnauthModal
+  ImageModal,
+  LoginModal
 }
 
 const ModalWrapper = () => {

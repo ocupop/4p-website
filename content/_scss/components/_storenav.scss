@@ -1,0 +1,67 @@
+#storenav-wrapper {
+  border-top: 1px solid $gray-400;
+  @include media-breakpoint-up(lg) {
+    border-bottom: 1px solid $gray-400;
+  }
+}
+
+#storenav {
+  padding: 0;
+  @include media-breakpoint-down(lg) {
+    font-size: 0.8rem;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 0 20px;
+  }
+  .navbar-collapse {
+    @include media-breakpoint-down(md) {
+      background-color: $gray-200;
+      padding: 20px;
+    }
+  }
+  
+  .nav-link {
+    color: $gray-500;
+    text-transform: uppercase;
+  }
+  .navbar-text {
+    background-color: $beige;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-transform: uppercase;
+    width: 100%;
+    @include media-breakpoint-up(lg) {
+      width: auto;
+    }
+    &:nth-of-type(1) {
+      position: relative;
+      margin-top: 10px;
+      @include media-breakpoint-up(lg) {
+        margin-top: 0;
+      }
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: $gray-300;
+        @include media-breakpoint-up(lg) {
+          top: 25%;
+          right: 0;
+          left: auto;
+          width: 2px;
+          height: 50%;
+        }
+      }
+    }
+    .text-primary {
+      font-weight: 800;
+      font-family: $font-family-base;
+    }
+  }
+  
+}

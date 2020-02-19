@@ -1,8 +1,13 @@
 import React from 'react'
-import ImageModal from '../../features/modal/ImageModal'
+import { useDispatch } from 'react-redux'
+import { openModal } from '../../features/modal/modalActions'
+
+
 const product = () => {
+  const dispatch = useDispatch()
   return (
     <>
+      
       <section>
         <div className="container">
           <div className="row">
@@ -30,7 +35,7 @@ const product = () => {
                 <div className="d-flex align-items-center mt-3">
                   {/* @TODO: Add to cart */}
                 </div>
-                <ImageModal />
+                <button type="button" className="btn btn-link" onClick={() => dispatch(openModal('ImageModal', { image: 'https://via.placeholder.com/500x700' }))}>Nutritional Information</button>
               </div>
             </div>
             <div className="col-lg-6">

@@ -1,10 +1,11 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
-// import BagList from '../features/bags/BagList'
+import { useFirestoreConnect } from 'react-redux-firebase'
+import { useSelector } from 'react-redux'
+import ProductList from '../features/products/ProductList'
 
-
-
-const bags = () => {
+const BagsPage = () => {
+  useFirestoreConnect('products')
+  const products = useSelector(state => state.firestore.ordered.products)
   return (
     <>
       <section>
@@ -28,15 +29,20 @@ const bags = () => {
               </div>
             </div>
           </div>
-          {/* <BagList bags={BAG_DATA} /> */}
+          <div className="row">
+            <div className="col-12">
+              <div className="content">
+                {/* TODO loop through collections*/}
+                <div className="responsive-card-deck cards-md-3 cards-lg-4">
+                  <ProductList products={products} />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
   )
 }
 
-bags.propTypes = {
-
-}
-
-export default bags
+export default BagsPage

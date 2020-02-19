@@ -11,6 +11,7 @@ const SignedOutMenu = () => {
         <button
           type="button"
           onClick={() => dispatch(openModal('LoginModal'))}
+          className="btn btn-teal"
           >
             Login
         </button>

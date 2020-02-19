@@ -6,7 +6,7 @@ import locationReducer from './location'
 
 import asyncReducer from '../features/async/asyncReducer'
 import modalReducer from '../features/modal/modalReducer'
-import authReducer from '../features/auth/authReducer'
+// import authReducer from '../features/auth/authReducer'
 // import testReducer from '../features/sandbox/testReducer';
 // import cartReducer from '../features/cart/cartReducer';
 
@@ -17,7 +17,7 @@ const rootReducer = () => combineReducers({
   location: locationReducer,
   async: asyncReducer,
   modals: modalReducer,
-  auth: authReducer,
+  // auth: authReducer,
   // test: testReducer,
   // form: FormReducer,
   // cart: cartReducer

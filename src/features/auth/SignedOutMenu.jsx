@@ -12,8 +12,7 @@ const SignedOutMenu = () => {
           type="button"
           onClick={() => dispatch(openModal('LoginModal'))}
           className="btn btn-teal"
-          >
-            Login
+          >Login
         </button>
       </li>
     </ul>

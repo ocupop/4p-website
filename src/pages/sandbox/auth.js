@@ -1,15 +1,16 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { useFirebase, isLoaded, isEmpty } from 'react-redux-firebase'
 import LoadingComponent from '../../common/ui/LoadingComponent'
-import { openModal } from '../../features/modal/modalActions'
+// import { openModal } from '../../features/modal/modalActions'
+import { socialLogin } from '../../features/auth/authActions'
 
 function AuthPage() {
   const firebase = useFirebase()
-  const dispatch = useDispatch()
-  // const firestore = useFirestore()
   const auth = useSelector(state => state.firebase.auth)
-  // const profile = useSelector(state => state.firestore.profile)
+  const profile = useSelector(state => state.firebase.profile)
+
+
 
 
   return (
@@ -17,7 +18,7 @@ function AuthPage() {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2>FIrestore: Profile</h2>
+            <h2>Firestore: Profile</h2>
             <div>{JSON.stringify(profile, null, 2)}</div>
           </div>
         </div>
@@ -30,12 +31,7 @@ function AuthPage() {
             ) : (isEmpty(auth) ? (
               <>
                 <h3>You are not signed in</h3>
-                <button
-                  type="button"
-                  className="btn btn-primary"
-                  onClick={() => dispatch(openModal('LoginModal'))}
-                >Login
-                </button>
+                <button className="btn btn-secondary" type="button" onClick={() => socialLogin({ firebase, provider: 'google' })}>Login Test</button>
               </>
             ) : (
                 <>

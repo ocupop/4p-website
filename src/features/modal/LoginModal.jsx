@@ -1,42 +1,51 @@
 import React from 'react'
 import { useFirebase } from 'react-redux-firebase'
 import { useDispatch } from 'react-redux'
-import { Modal, Button } from 'react-bootstrap'
-import { closeModal } from './modalActions'
-import { loginWithGoogle } from '../auth/authActions'
 import { Formik, Field, Form } from 'formik'
 import * as Yup from 'yup'
+
+import { Modal, Button } from 'react-bootstrap'
+import { closeModal } from './modalActions'
+import { socialLogin } from "../auth/authActions"
 import { TextInput } from '../../common/fields'
 
 
-const ValidationSchema = Yup.object().shape({
-  content: Yup.string()
+const validationSchema = Yup.object().shape({
+  email: Yup.string()
     .min(10, 'Too Short!')
     .max(100, 'Too Long!')
+    .required('Required'),
+  password: Yup.string()
+    .min(8, 'Too Short!')
+    .max(20, 'Too Long!')
     .required('Required'),
 })
 
 const LoginModal = () => {
   const dispatch = useDispatch()
   const firebase = useFirebase()
-  const initialValues = {}
+  const initialValues = {
+    email: null,
+    password: null
+  }
+
   return (
     <>
       <Modal show onHide={() => dispatch(closeModal())}>
         <Modal.Body>
           <div className="modal-body-content">
             <img src="/img/logo-vertical.svg" className="img-fluid logo" alt="4P Foods logo" />
-            {/* TODO: Add Email/Password */}
+
             <Formik
               enableReinitialize
               initialValues={initialValues}
-              validationSchema={ValidationSchema}
-            // onSubmit={(values, { resetForm }) => {
-            //   dispatch(testForm({ firestore }, values))
-            //   resetForm()
-            // }}
+              validationSchema={validationSchema}
+              onSubmit={(values, { resetForm }) => {
+                console.log(values)
+                resetForm()
+              }}
             >
-              {({ values, setFieldValue }) => (
+              {() => (
                 <Form>
                   <Field
                     name="email"
@@ -48,7 +57,7 @@ const LoginModal = () => {
                   />
                   <Field
                     name="password"
-                    type="text"
+                    type="password"
                     component={TextInput}
                     placeholder="Enter Password"
                     hint="Enter Password"
@@ -58,22 +67,24 @@ const LoginModal = () => {
                 </Form>
               )}
             </Formik>
-            <div className="loader"></div>
-            <i className="ri-loader-4-line"></i>
-            <p className="my-3"><button className="btn btn-link"><em>Forgot Your Password?</em></button></p>
+            {/* <div className="loader">
+              <i className="ri-loader-4-line"/>
+            </div> */}
+            <p className="my-3">
+              <button type="button" className="btn btn-link"><em>Forgot Your Password?</em></button>
+            </p>
             <p className="text-uppercase">or sign in with</p>
             <div className="row">
               <div className="col-lg-6">
-                <button className="btn btn-secondary btn-block">Facebook</button>
+                <button type="button" className="btn btn-secondary btn-block">Facebook</button>
               </div>
               <div className="col-lg-6">
-                <Button onClick={() => dispatch(loginWithGoogle({ firebase }))} className="btn btn-secondary btn-block">Google</Button>
+                <Button onClick={() => socialLogin({ firebase, provider: 'google' })} className="btn btn-secondary btn-block">Google</Button>
               </div>
             </div>
-            <p className="mt-3">New to 4P Foods? <button className="btn btn-link text-secondary "><em>Sign up here</em></button></p>
-            {/* <Button onClick={() => loginWithFacebook()}>Facebook</Button> */}
-            {/* <Button onClick={() => loginWithGithub()}>Github</Button> */}
-            {/* <Button onClick={() => console.log("Needs firebase configuration")}>Phone</Button> */}
+            <p className="mt-3">
+              New to 4P Foods? <button type="button" className="btn btn-link text-secondary "><em>Sign up here</em></button>
+            </p>
           </div>
         </Modal.Body>
       </Modal>

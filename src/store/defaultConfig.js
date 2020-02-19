@@ -15,16 +15,8 @@ export const defaultRRFConfig = {
   sessions: null, // Skip storing of sessions
   useFirestoreForProfile: true, // Save profile to Firestore instead of Real Time Database
   useFirestoreForStorageMeta: true, // Metadata associated with storage file uploads goes to Firestore
-  // profileFactory: (userData, profileData, firestore) => { // how profiles are stored in database
-  //   const { user } = userData
-  //   return {
-  //     email: user.email
-  //   }
-  // },
   onAuthStateChanged: (auth, firebaseInstance, dispatch) => {
     if (auth) {
-      // const { currentUser } = firebaseInstance.auth()
-      // console.log("CURRENT:", currentUser.displayName)
       // Set auth within error handler
       // setErrorUser(auth)
       // Initalize messaging with dispatch

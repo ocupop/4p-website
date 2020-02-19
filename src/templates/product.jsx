@@ -29,9 +29,6 @@ export const query = graphql`
         name
         website
         description
-        featuredImage {
-          src
-        }
       }
     }
   }

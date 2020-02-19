@@ -1,5 +1,5 @@
 export function socialLogin({ firebase, provider }) {
-  return firebase.login({ provider, type: 'redirect' })
+  return firebase.login({ provider, type: 'pop-up' })
 }
 
 export function logout({ firebase }) {

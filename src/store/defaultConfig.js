@@ -23,7 +23,11 @@ export const defaultRRFConfig = {
       createdAt: creationTime,
       lastLoginAt: lastSignInTime,
       phoneNumber,
-      dietaryRestrictions: ''
+      dietaryRestrictions: '',
+      shoppingCart: {
+        cartPrice: 0.00,
+        items: []
+      }
     }
   },
   onAuthStateChanged: (auth, firebaseInstance, dispatch) => {

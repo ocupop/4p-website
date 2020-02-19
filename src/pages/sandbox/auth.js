@@ -2,16 +2,12 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { useFirebase, isLoaded, isEmpty } from 'react-redux-firebase'
 import LoadingComponent from '../../common/ui/LoadingComponent'
-// import { openModal } from '../../features/modal/modalActions'
 import { socialLogin } from '../../features/auth/authActions'
 
 function AuthPage() {
   const firebase = useFirebase()
   const auth = useSelector(state => state.firebase.auth)
   const profile = useSelector(state => state.firebase.profile)
-
-
-
 
   return (
     <section>
@@ -31,7 +27,8 @@ function AuthPage() {
             ) : (isEmpty(auth) ? (
               <>
                 <h3>You are not signed in</h3>
-                <button className="btn btn-secondary" type="button" onClick={() => socialLogin({ firebase, provider: 'google' })}>Login Test</button>
+                <button className="btn btn-secondary" type="button"
+                  onClick={() => socialLogin({ firebase, provider: 'google' })}>Login Test</button>
               </>
             ) : (
                 <>

@@ -6,11 +6,13 @@ import { useSelector } from 'react-redux'
 import TestModal from './TestModal'
 import ImageModal from './ImageModal'
 import LoginModal from './LoginModal'
+import RegisterModal from './RegisterModal'
 
 const modalLookup = {
   TestModal,
   ImageModal,
-  LoginModal
+  LoginModal,
+  RegisterModal
 }
 
 const ModalWrapper = () => {

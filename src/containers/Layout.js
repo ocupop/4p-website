@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import HEAD from "../common/ui/Head"
 import Header from '../common/ui/Header'
 import Footer from '../common/ui/Footer'
+import Scripts from '../common/ui/Scripts'
 
 
 function Layout({ children }) {
@@ -28,6 +29,7 @@ function Layout({ children }) {
       </main>
 
       <Footer siteTitle={data.site.siteMetadata.title} />
+      <Scripts />
     </>
   )
 }

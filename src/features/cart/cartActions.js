@@ -1,0 +1,3 @@
+addToCart
+removeFromCart
+updateCartItem

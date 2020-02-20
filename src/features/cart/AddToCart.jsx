@@ -2,14 +2,13 @@ import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useFirestore, useFirestoreConnect } from 'react-redux-firebase'
 import PropTypes from 'prop-types'
-import { addToCart } from './cartActions'
 
 const AddToCart = ({ productId, item }) => {
   const firestore = useFirestore()
   const dispatch = useDispatch()
-  // const { addToCart } = useCart({ author: { id: 123 } })
+
   const auth = useSelector(state => state.firebase.auth)
-  const profile = useSelector(state => state.firebase.profile)
+  // const profile = useSelector(state => state.firebase.profile)
 
   return (
     <>
@@ -20,7 +19,7 @@ const AddToCart = ({ productId, item }) => {
         onClick={() => {
           console.log('Adding Single Item')
           console.log(auth.uid, productId, item)
-          dispatch(addToCart({ firestore }, auth.uid, item))
+          // dispatch(addToCart({ firestore }, auth.uid, item))
         }}>
         Add Single Item
       </button>
@@ -32,7 +31,7 @@ const AddToCart = ({ productId, item }) => {
         onClick={() => {
           console.log('Adding Weekly Item')
           console.log(auth.uid, productId, item)
-          dispatch(addToCart({ firestore } auth.uid, item)
+          // dispatch(addToCart({ firestore } auth.uid, item)
           )
         }}>
         Add Weekly Item

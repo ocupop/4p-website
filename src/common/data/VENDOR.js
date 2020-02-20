@@ -1,24 +1,26 @@
 export const VENDOR = {
-  name: "",
-  description: "",
-  website: "",
+  name: '',
+  description: '',
+  website: '',
   images: [
     {
-      src: ""
+      src: ''
     }
   ],
-  tags: [{
-    label: "",
-    value: ""
-  }],
+  tags: [
+    {
+      label: '',
+      value: ''
+    }
+  ],
+  region: '',
   location: {
-    latitiude: "",
-    longitude: "",
-    name: "",
+    _lat: '',
+    _long: ''
   },
   featured: true,
-  contactEmail: "",
-  contactName: "",
+  contactEmail: '',
+  contactName: '',
   created: Date,
   lastUpdate: Date
 }

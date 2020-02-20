@@ -14,12 +14,12 @@ const CartDashboard = () => {
           <div className="row">
             <div className="col-12">
               <div className="content">
-                <div className="d-flex align-items-center justify-content-between">
-                  <h1 className="d-lg-inline-block">Your cart</h1>
-                  <div className="delivery-details d-flex align-items-center">
+                <div className="d-md-flex align-items-center justify-content-between">
+                  <h1 className="d-md-inline-block">Your cart</h1>
+                  <div className="delivery-details d-md-flex align-items-center">
                     <span className="text-uppercase">
                       Your next delivery
-                      <strong className="ml-2">Wednesday 12/19</strong>
+                      <strong className="ml-md-2"> Wednesday 12/19</strong>
                     </span>
                     <a href="#">
                       <small>

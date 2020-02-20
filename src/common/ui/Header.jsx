@@ -3,15 +3,12 @@ import _ from 'lodash'
 import parse from 'html-react-parser';
 import { useStaticQuery, graphql } from 'gatsby'
 
+import AuthNav from '../../features/auth/AuthNav'
 import CartSummary from '../../features/cart/CartSummary'
-import UserNav from './UserNav'
-import NotificationNav from './NotificationNav'
 
 const pageComponents = {
-  // TODO: Import and list all acceptable components that may get included inline page content.
-  CartSummary,
-  UserNav,
-  NotificationNav
+  AuthNav,
+  CartSummary
 }
 
 const parseOptions = {
@@ -20,6 +17,7 @@ const parseOptions = {
 
     if (name.includes('-')) {
       const component = _.upperFirst(_.camelCase(name))
+      // @TODO: Write logic to check if component isExists. If not - throw error
       return React.createElement(pageComponents[component], attribs)
     }
   }

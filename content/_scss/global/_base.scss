@@ -1,3 +1,12 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 55px;
+  @include media-breakpoint-up(lg) {
+    scroll-padding-top: 117px;
+  }
+}
+
+
 body {
   background-color: $body-bg;
   color: $body-color;
@@ -25,6 +34,12 @@ dl {
 
 a.text-underline {
   text-decoration: underline;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 hr {

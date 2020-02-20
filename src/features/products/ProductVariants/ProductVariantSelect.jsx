@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux'
 import { useFirestoreConnect } from 'react-redux-firebase'
 import { Formik, Field, Form } from 'formik'
 
-import { Carousel } from 'react-bootstrap'
 import { SelectInput } from '../../../common/fields'
 // import AddToCartButton from '../cart/AddToCartButton'
 // import LoadingComponent from '../../common/ui/LoadingComponent'
@@ -105,15 +104,10 @@ const ProductVariantSelect = ({ product }) => {
           </div>
           <div className="col-lg-6">
             <div className="content">
-              {/* @TODO: Update carousel logic to account for an array of images */}
-              <Carousel>
-                <Carousel.Item>
-                  <div
-                    className="bg-image aspect-4x3"
-                    style={{ backgroundImage: `url(${featuredImage})`}}
-                  />
-                </Carousel.Item>
-              </Carousel>
+              <div
+                className="bg-image aspect-4x3"
+                style={{ backgroundImage: `url(${featuredImage})` }}
+              />
             </div>
           </div>
         </div>

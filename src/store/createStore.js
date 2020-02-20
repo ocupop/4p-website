@@ -9,14 +9,14 @@ export default function createReduxStore(initialState = {}) {
   // Store Enhancers
   // ======================================================
   const enhancers = []
-  // if (typeof window !== `undefined`) {
-  //   if (window && window.location && window.location.hostname === 'localhost') {
-  //     const devToolsExtension = window.__REDUX_DEVTOOLS_EXTENSION__
-  //     if (typeof devToolsExtension === 'function') {
-  //       enhancers.push(devToolsExtension())
-  //     }
-  //   }
-  // }
+  if (typeof window !== `undefined`) {
+    if (window && window.location && window.location.hostname === 'localhost') {
+      const devToolsExtension = window.__REDUX_DEVTOOLS_EXTENSION__
+      if (typeof devToolsExtension === 'function') {
+        enhancers.push(devToolsExtension())
+      }
+    }
+  }
 
   // ======================================================
   // Middleware Configuration

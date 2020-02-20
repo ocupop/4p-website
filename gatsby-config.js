@@ -206,21 +206,21 @@ module.exports = {
               featuredImage: doc.images[0]
             }),
           },
-          {
-            type: 'Quote',
-            collection: 'quotes',
-            map: doc => ({
-              content: doc.content,
-              author___NODE: doc.author.value,
-            }),
-          },
-          {
-            type: 'Author',
-            collection: 'authors',
-            map: doc => ({
-              name: doc.name,
-            }),
-          },
+          // {
+          //   type: 'Quote',
+          //   collection: 'quotes',
+          //   map: doc => ({
+          //     content: doc.content,
+          //     author___NODE: doc.author.value,
+          //   }),
+          // },
+          // {
+          //   type: 'Author',
+          //   collection: 'authors',
+          //   map: doc => ({
+          //     name: doc.name,
+          //   }),
+          // },
         ],
       },
     },

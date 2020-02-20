@@ -30,6 +30,24 @@ module.exports = {
         name: 'images',
       },
     },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: 'https://code.jquery.com/jquery-3.4.1.min.js'
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'  
+      },
+    },
     // Getting UI Elements
     {
       resolve: 'gatsby-source-custom-api',

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useFirestoreConnect } from 'react-redux-firebase'
 import { useSelector } from 'react-redux'
-import ProductList from '../features/products/ProductList'
+import ProductList from '../features/product/ProductList'
 
 const ProductsPage = () => {
   useFirestoreConnect('products')

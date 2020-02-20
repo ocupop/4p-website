@@ -5,7 +5,7 @@ import { Formik, Field, Form } from 'formik'
 import * as Yup from 'yup'
 import { Button } from 'react-bootstrap'
 import { TextInput } from '../../common/fields'
-import { socialLogin } from "./authActions"
+import { socialLogin, login } from "./authActions"
 
 const initialValues = {
   email: '',
@@ -36,7 +36,8 @@ const LoginForm = () => {
             initialValues={initialValues}
             validationSchema={validationSchema}
             onSubmit={(values, { resetForm }) => {
-              // console.log(values)
+              console.log(values)
+              // login({firebase, values})
               resetForm()
             }}
           >
@@ -58,27 +59,28 @@ const LoginForm = () => {
                   hint="Enter Password"
                   label="Password"
                 />
-                <button type="submit" className="btn btn-secondary btn-block">Submit</button>
+                <button type="submit" className="btn btn-mid btn-block" disabled>Submit</button>
               </Form>
             )}
           </Formik>
+          {/* @TODO: JB - what is this meant for? */}
           {/* <div className="loader">
                   <i className="ri-loader-4-line"/>
                 </div> */}
           <p className="my-3">
-            <button type="button" className="btn btn-link"><em>Forgot Your Password?</em></button>
+            <button type="button" className="btn btn-transparent p-0" disabled><em>Forgot Your Password?</em></button>
           </p>
           <p className="text-uppercase">or sign in with</p>
           <div className="row">
             <div className="col-lg-6">
-              <button type="button" className="btn btn-secondary btn-block">Facebook</button>
+              <Button onClick={() => socialLogin({ firebase, provider: 'facebook' })} className="btn btn-mid btn-block" disabled>Facebook</Button>
             </div>
             <div className="col-lg-6">
               <Button onClick={() => socialLogin({ firebase, provider: 'google' })} className="btn btn-secondary btn-block">Google</Button>
             </div>
           </div>
           <p className="mt-3">
-            New to 4P Foods? <button type="button" className="btn btn-link text-secondary "><em>Sign up here</em></button>
+            New to 4P Foods? <button type="button" className="btn btn-transparent text-mid" disabled><em>Sign up here</em></button>
           </p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import ProductDetail from '../features/products/ProductDetail'
+import ProductDetail from '../features/product/ProductDetail'
 
 const Product = ({ data: { product } }) => {
 

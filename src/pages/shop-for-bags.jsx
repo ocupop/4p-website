@@ -32,7 +32,7 @@ const BagsPage = () => {
           <div className="row">
             <div className="col-12">
               <div className="content">
-                {/* TODO loop through collections*/}
+                {/* TODO loop through collections */}
                 <div className="responsive-card-deck cards-md-3 cards-lg-4">
                   <ProductList products={products} />
                 </div>

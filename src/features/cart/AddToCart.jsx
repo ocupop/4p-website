@@ -27,12 +27,11 @@ const AddToCart = ({ productId, item }) => {
       <button
         type="button"
         className="product-button w-50"
-        disabled={item.recurrsingPurchase === false}
+        disabled={item && item.recurrsingPurchase === false}
         onClick={() => {
           console.log('Adding Weekly Item')
           console.log(auth.uid, productId, item)
           // dispatch(addToCart({ firestore } auth.uid, item)
-          )
         }}>
         Add Weekly Item
       </button>

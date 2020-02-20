@@ -27,12 +27,6 @@ const LoginModal = () => {
             <LoadingComponent inverted />
           ) : (isEmpty(profile) ? <LoginForm/> : <Notifications/>)}
 
-
-
-
-
-
-
         </Modal.Body>
       </Modal>
     </>

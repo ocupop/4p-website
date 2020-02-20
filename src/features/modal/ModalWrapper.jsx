@@ -7,12 +7,14 @@ import TestModal from './TestModal'
 import ImageModal from './ImageModal'
 import LoginModal from './LoginModal'
 import RegisterModal from './RegisterModal'
+import NotificationModal from './NotificationModal'
 
 const modalLookup = {
   TestModal,
   ImageModal,
   LoginModal,
-  RegisterModal
+  RegisterModal,
+  NotificationModal
 }
 
 const ModalWrapper = () => {

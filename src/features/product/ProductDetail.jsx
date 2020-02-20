@@ -18,7 +18,7 @@ const ProductDetail = ({ product }) => {
 
   return (
     <>
-      <ProductVariantSelect product={product}/>
+      <ProductVariantSelect productID={product.id} />
       <hr />
       <section>
         <div className="container">
@@ -66,7 +66,7 @@ const ProductDetail = ({ product }) => {
               <div className="content">
                 <div
                   className="bg-image aspect-4x3"
-                  style={{ backgroundImage: `url(${vendor.featuredImage.src })` }}
+                  style={{ backgroundImage: `url(https://via.placeholder.com/500x350)` }}
                 />
               </div>
             </div>

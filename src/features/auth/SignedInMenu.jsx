@@ -2,17 +2,22 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useFirebase } from 'react-redux-firebase'
 import { Dropdown } from 'react-bootstrap'
+import { useDispatch } from 'react-redux'
 import { logout } from './authActions'
+import { openModal } from '../modal/modalActions'
 
 
 const SignedInMenu = ({ auth: { displayName, photoURL } }) => {
   const firebase = useFirebase()
+  const dispatch = useDispatch()
 
   return (
     <ul className="navbar-nav">
       <li className="nav-item">
-        {/* @TODO: Add Notification Modal */}
-        <button type="button" className="nav-link btn btn-teal">
+        <button
+          type="button"
+          className="nav-link btn btn-teal"
+          onClick={() => dispatch(openModal('NotificationModal'))}>
           <i className="ri-notification-2-fill" />
         </button>
       </li>

@@ -3,9 +3,11 @@ import React from 'react'
 
 const Notifications = () => {
   return (
-    <div className="row">
+    <div className="row mt-5">
       <div className="col-12">
-        <h3 className="text-center">Notifications</h3>
+        <div className="alert alert-warning">
+          <p><strong>Customer:</strong> notifications/messages</p>
+        </div>
       </div>
     </div>
   )

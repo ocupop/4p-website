@@ -1,13 +1,13 @@
 import React from 'react'
+// import PropTypes from 'prop-types'
 import { useDispatch } from 'react-redux'
 import { Modal } from 'react-bootstrap'
 import { closeModal } from './modalActions'
-import RegisterForm from '../auth/RegisterForm'
+import Notifications from '../user/Notifications'
 import logo from '../../common/assets/logo-vertical.svg'
 
 
-
-const RegisterModal = () => {
+const TestModal = () => {
   const dispatch = useDispatch()
 
   return (
@@ -19,12 +19,18 @@ const RegisterModal = () => {
               <img src={logo} className="img-fluid" alt="4P Foods logo" />
             </div>
           </div>
-
-          <RegisterForm/>
+          <Notifications/>
         </Modal.Body>
+        <Modal.Footer>
+          {/* <Button variant="secondary" onClick={() => dispatch(closeModal())}>Close</Button> */}
+        </Modal.Footer>
       </Modal>
     </>
   )
 }
 
-export default RegisterModal
+// TestModal.propTypes = {
+
+// }
+
+export default TestModal

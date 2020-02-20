@@ -1,7 +1,7 @@
 import React from 'react'
 import { useFirestoreConnect } from 'react-redux-firebase'
 import { useSelector } from 'react-redux'
-import ProductList from '../features/products/ProductList'
+import ProductList from '../features/product/ProductList'
 import StoreNav from '../common/ui/StoreNav'
 
 const ShopPage = () => {
@@ -9,7 +9,7 @@ const ShopPage = () => {
   const products = useSelector(state => state.firestore.ordered.products)
   // console.log(products)
   return (
-    
+
     <>
       <StoreNav />
       <section>
@@ -32,7 +32,7 @@ const ShopPage = () => {
           </div>
         </div>
       </section>
-      
+
       <section className="pt-0">
         <div className="container">
           <div className="row">

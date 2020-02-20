@@ -18,7 +18,7 @@ const ProductDetail = ({ product }) => {
 
   return (
     <>
-      <ProductVariantSelect product={product}/>
+      <ProductVariantSelect productID={product.id} />
       <hr />
       <section>
         <div className="container">

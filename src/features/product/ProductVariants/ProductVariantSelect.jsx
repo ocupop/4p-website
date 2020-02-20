@@ -3,18 +3,19 @@ import PropTypes from 'prop-types'
 import { useSelector } from 'react-redux'
 import { useFirestoreConnect } from 'react-redux-firebase'
 import { Formik, Field, Form } from 'formik'
+import draftToHtml from 'draftjs-to-html'
+import parse from 'html-react-parser'
 
 import { SelectInput } from '../../../common/fields'
 // import AddToCartButton from '../cart/AddToCartButton'
-// import LoadingComponent from '../../common/ui/LoadingComponent'
+import LoadingComponent from '../../../common/ui/LoadingComponent'
 
-const ProductVariantSelect = ({ product }) => {
-  const {id} = product
+const ProductVariantSelect = ({ productID }) => {
   const [selectedVariant, setSelectedVariant] = useState(null)
-  const [featuredImage, setFeaturedImage] = useState("")
+  const [featuredImage, setFeaturedImage] = useState("https://via.placeholder.com/500x350")
 
-  useFirestoreConnect([`products/${id}`], [id]) // sync /products/:id from firestore into redux
-  const activeProduct = useSelector(({ firestore: { data: { products } } }) => products && products[id])
+  useFirestoreConnect([`products/${productID}`], [productID]) // sync /products/:id from firestore into redux
+  const activeProduct = useSelector(({ firestore: { data: { products } } }) => products && products[productID])
   let variantOptions = []
   if (activeProduct) {
     const { variants } = activeProduct
@@ -22,20 +23,18 @@ const ProductVariantSelect = ({ product }) => {
       return {
         label: `${variant.size} ${variant.label}`,
         value: variant.sku,
-        product: id,
+        product: productID,
         data: variant
       }
     })
   }
 
-  // console.log(activeProduct)
+  // useEffect(() => {
+  //   if (selectedVariant) {
+  //     setFeaturedImage(selectedVariant.data.featuredImage || activeProduct.featuredImage)
+  //   }
 
-  useEffect(() => {
-    if (selectedVariant) {
-      setFeaturedImage(selectedVariant.data.featuredImage || product.featuredImage)
-    }
-
-  }, [selectedVariant])
+  // }, [selectedVariant])
 
 
   // @TODO: Set first variant as selected on page load
@@ -45,17 +44,19 @@ const ProductVariantSelect = ({ product }) => {
   //   }
   // }, [])
 
-
+  if(!activeProduct) return <LoadingComponent/>
 
   return (
     <section>
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            {product && (
+            {activeProduct && (
               <div className="content">
-                <h1 className="h2">{product.name}</h1>
-                <p className="mb-5">{product.description}</p>
+                <h1 className="h2">{activeProduct.name}</h1>
+                <div>
+                  {parse(draftToHtml(activeProduct.description))}
+                </div>
                 <Formik
                   enableReinitialize
                   initialValues={{
@@ -117,7 +118,7 @@ const ProductVariantSelect = ({ product }) => {
 }
 
 ProductVariantSelect.propTypes = {
-  product: PropTypes.instanceOf(Object)
+  productID: PropTypes.string
 }
 
 export default ProductVariantSelect

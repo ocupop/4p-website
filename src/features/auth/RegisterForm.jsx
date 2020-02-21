@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 // import PropTypes from 'prop-types'
 // import { useFirebase } from 'react-redux-firebase'
@@ -18,7 +16,7 @@ const validationSchema = Yup.object().shape({
   password: Yup.string()
     .min(8, 'Too Short!')
     .max(20, 'Too Long!')
-    .required('Required'),
+    .required('Required')
 })
 
 const RegisterForm = () => {
@@ -30,39 +28,43 @@ const RegisterForm = () => {
   return (
     <div className="row">
       <div className="col-12">
-        <div className="p-4">
-          <p className="mb-4">We need to verify that you are in a 4pFoods service area.</p>
-          <Formik
-            enableReinitialize
-            initialValues={initialValues}
-            validationSchema={validationSchema}
-            onSubmit={(values, { resetForm }) => {
-              console.log(values)
-              resetForm()
-            }}
-          >
-            {({ setFieldValue, values }) => (
-              <Form>
-                <Field
-                  name="zipCode"
-                  type="text"
-                  component={CreateSelect}
-                  options={zipOptions}
-                  onChange={value => setFieldValue("zipCode", value)}
-                  label="Enter Zipcode"
-                />
-                <FormikDebug />
-              </Form>
-            )}
-          </Formik>
+        <div className="text-center">
+          <div className="p-4">
+            <h2>Healthy, fresh food direct to your door</h2>
+            <p className="mb-4">
+              4P makes it easy to keep fresh food on your table, with weekly deliveries straight from local family
+              farms. Enter your ZIP Code below to see if we deliver to your area.
+            </p>
+            <Formik
+              enableReinitialize
+              initialValues={initialValues}
+              validationSchema={validationSchema}
+              onSubmit={(values, { resetForm }) => {
+                console.log(values)
+                resetForm()
+              }}>
+              {({ setFieldValue, values }) => (
+                <Form>
+                  <Field
+                    name="zipCode"
+                    type="text"
+                    component={CreateSelect}
+                    options={zipOptions}
+                    onChange={value => setFieldValue('zipCode', value)}
+                    label="Enter Zipcode"
+                    placeholder="Enter Zipcode"
+                  />
+                  <FormikDebug />
+                </Form>
+              )}
+            </Formik>
+          </div>
         </div>
       </div>
     </div>
   )
 }
 
-RegisterForm.propTypes = {
-
-}
+RegisterForm.propTypes = {}
 
 export default RegisterForm

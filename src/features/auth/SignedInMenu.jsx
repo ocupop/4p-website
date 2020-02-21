@@ -6,7 +6,6 @@ import { useDispatch } from 'react-redux'
 import { logout } from './authActions'
 import { openModal } from '../modal/modalActions'
 
-
 const SignedInMenu = ({ auth: { displayName, photoURL } }) => {
   const firebase = useFirebase()
   const dispatch = useDispatch()
@@ -26,10 +25,10 @@ const SignedInMenu = ({ auth: { displayName, photoURL } }) => {
           <Dropdown.Toggle variant="teal" id="dropdown-user">
             {photoURL ? (
               <img src={photoURL} className="img-avatar" alt={displayName} />
-            ):(
+            ) : (
               <i className="ri-user-fill" />
             )}
-             <span className="text-uppercase">{displayName}</span>
+            <span className="text-uppercase">{displayName}</span>
           </Dropdown.Toggle>
 
           <Dropdown.Menu>

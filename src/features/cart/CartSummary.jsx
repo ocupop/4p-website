@@ -25,7 +25,7 @@ const CartSummary = () => {
                 <Dropdown.Toggle variant="success" id="dropdown-basic">
                   <i className="ri-shopping-cart-fill mr-2" /> ${shoppingCart.cartPrice}
                 </Dropdown.Toggle>
-                <Dropdown.Menu>
+                <Dropdown.Menu alignRight>
                   <div className="cart-summary">
                     <div className="p-3 text-center border-bottom">
                       <p className="text-uppercase font-family-base mb-0"><small>Complete order by <span className="text-primary">Sunday</span></small></p>

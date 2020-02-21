@@ -5,10 +5,7 @@ import AddToCart from '../../features/cart/AddToCart'
 
 const AddToCartPage = () => {
   useFirestoreConnect('products')
-  const product = useSelector(state => state.firestore.ordered.products)
-
-  const activeProduct = product && product[0]
-  const activeVariant = activeProduct && activeProduct.variants[0]
+  const product = useSelector(state => state.firestore.ordered.products && state.firestore.ordered.products[0])
 
   return (
     <>
@@ -17,7 +14,7 @@ const AddToCartPage = () => {
           <div className="row">
             <div className="col-12">
               <h2>Example of Add To Cart Button</h2>
-              <AddToCart productId={activeProduct && activeProduct.id} item={activeVariant} />
+              {product && <AddToCart productId={product.id} item={product.variants[0]} />}
             </div>
           </div>
         </div>

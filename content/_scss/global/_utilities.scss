@@ -112,12 +112,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url("/assets/img/bg-illustrations.png");
+  background-image: url('/assets/img/bg-illustrations.png');
   @include media-breakpoint-down(sm) {
     padding-top: 35%;
     background-size: 100%;
     background-position: top center;
-    background-image: url("/assets/img/bg-illustrations-mobile.png");
+    background-image: url('/assets/img/bg-illustrations-mobile.png');
   }
 }
 
@@ -149,8 +149,6 @@
   width: 38%;
 }
 
-
-
 // Sticky behavior
 .sticky {
   position: sticky;
@@ -161,7 +159,7 @@
 .arrow {
   &::after,
   &::before {
-    content: " ";
+    content: ' ';
     position: absolute;
     left: 96%;
     top: 30%;
@@ -222,6 +220,13 @@
 
 .responsive-card-deck {
   @include make-responsive-cards();
+  .card {
+    display: flex;
+    flex-direction: column;
+    .card-body {
+      flex: 1 1 auto;
+    }
+  }
 }
 
 // Text utilities
@@ -341,7 +346,6 @@
         }
         .card-body {
           flex: auto;
-          
         }
         .card-footer {
           flex: initial;
@@ -353,7 +357,7 @@
       max-width: 100%;
       background-color: transparent;
       border: 0;
-      
+
       @include media-breakpoint-up(sm) {
         flex: 0 0 33%;
         max-width: 33%;
@@ -386,7 +390,6 @@
       @include media-breakpoint-up(sm) {
         flex: 0 0 66%;
         max-width: 66%;
-
       }
       @include media-breakpoint-up(xl) {
         flex: 0 0 100%;
@@ -587,7 +590,7 @@ cart-summary {
   width: auto;
   padding: 10px;
   &::before {
-    content: 'Cart'
+    content: 'Cart';
   }
 }
 
@@ -598,10 +601,10 @@ cart-summary {
   &::before {
     position: absolute;
     left: -20px;
-    content: "\EE61"; 
+    content: '\EE61';
     font-family: 'remixicon' !important;
     @include animation(spin, 1.2s);
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-  }  
+  }
 }

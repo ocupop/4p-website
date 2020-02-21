@@ -10,10 +10,9 @@ const ImageModal = ({ image }) => {
     <>
       <Modal show onHide={() => dispatch(closeModal())}>
         <Modal.Header closeButton></Modal.Header>
-        <Modal.Body><img src={image} className="img-fluid" /></Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => dispatch(closeModal())}>Close</Button>
-        </Modal.Footer>
+        <Modal.Body>
+          <img src={image} className="img-fluid" />
+        </Modal.Body>
       </Modal>
     </>
   )

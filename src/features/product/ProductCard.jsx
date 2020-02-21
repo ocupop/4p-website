@@ -7,9 +7,6 @@ const ProductCard = ({ product }) => {
   const { vendor } = product
   const defaultVariant = product.variants[0]
 
-  const activeProduct = product && product[0]
-  const activeVariant = activeProduct && activeProduct.variants[0]
-
   return (
     <div className="card product-card">
       <Link
@@ -28,7 +25,7 @@ const ProductCard = ({ product }) => {
         </div>
       </Link>
       <div className="card-footer d-flex align-items-center p-0">
-        <AddToCart productId={activeProduct && activeProduct.id} item={activeVariant} />
+        <AddToCart productId={product.id} item={defaultVariant} />
       </div>
     </div>
   )

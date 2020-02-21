@@ -4,8 +4,8 @@ import React from 'react'
 import { Formik, Field, Form } from 'formik'
 import * as Yup from 'yup'
 // import { socialLogin } from "../auth/authActions"
-import { CreateSelect } from '../../common/fields'
-import { zipOptions } from '../../common/data/ZIPS'
+import { ZipCodeSelect } from '../../common/fields'
+
 import FormikDebug from '../../common/utils/FormikDebug'
 
 const validationSchema = Yup.object().shape({
@@ -31,7 +31,7 @@ const RegisterForm = () => {
         <div className="text-center">
           <div className="p-4">
             <h2>Healthy, fresh food direct to your door</h2>
-            <p className="mb-4">
+            <p className="my-3 mb-5">
               4P makes it easy to keep fresh food on your table, with weekly deliveries straight from local family
               farms. Enter your ZIP Code below to see if we deliver to your area.
             </p>
@@ -48,8 +48,7 @@ const RegisterForm = () => {
                   <Field
                     name="zipCode"
                     type="text"
-                    component={CreateSelect}
-                    options={zipOptions}
+                    component={ZipCodeSelect}
                     onChange={value => setFieldValue('zipCode', value)}
                     label="Enter Zipcode"
                     placeholder="Enter Zipcode"

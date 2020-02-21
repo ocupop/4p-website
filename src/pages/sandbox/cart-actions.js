@@ -3,7 +3,7 @@ import { useFirestoreConnect } from 'react-redux-firebase'
 import { useSelector } from 'react-redux'
 import AddToCart from '../../features/cart/AddToCart'
 
-const AddToCartPage = () => {
+const CartActions = () => {
   useFirestoreConnect('products')
   const product = useSelector(state => state.firestore.ordered.products && state.firestore.ordered.products[0])
 
@@ -23,4 +23,4 @@ const AddToCartPage = () => {
   )
 }
 
-export default AddToCartPage
+export default CartActions

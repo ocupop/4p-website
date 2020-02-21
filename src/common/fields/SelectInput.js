@@ -20,6 +20,27 @@ const groupBadgeStyles = {
   textAlign: 'center'
 }
 
+const selectStyles = {
+  control: (provided, state) => ({
+    ...provided,
+    padding: 10
+  }),
+  option: (provided, state) => ({
+    ...provided,
+    backgroundColor: state.isSelected ? '#5fb35f' : 'white'
+  }),
+  menuList: (provided, state) => ({
+    ...provided,
+    padding: 0
+  }),
+  dropdownIndicator: () => ({
+    display: 'none'
+  }),
+  indicatorSeparator: () => ({
+    display: 'none'
+  })
+}
+
 const formatGroupLabel = data => (
   <div style={groupStyles}>
     <span>{data.label}</span>
@@ -67,13 +88,15 @@ const SelectInput = ({
         isMulti={isMulti}
         isSearchable={isSearchable}
         isClearable={isClearable}
+        styles={selectStyles}
         theme={theme => ({
           ...theme,
           borderRadius: 0,
           colors: {
             ...theme.colors,
-            primary25: '#EBECF0',
-            primary: '#a7a9ac'
+            primary25: '#a7a9ac',
+            primary: '#5fb35f',
+            primary50: '#a7a9ac'
           }
         })}
       />

@@ -31,7 +31,7 @@ const selectStyles = {
   }),
   option: (provided, state) => ({
     ...provided,
-    backgroundColor: state.isSelected ? '#255b35' : 'white'
+    backgroundColor: state.isSelected ? '#5fb35f' : 'white'
   }),
   menuList: (provided, state) => ({
     ...provided,
@@ -68,37 +68,45 @@ const CreateSelect = ({
   theme
 }) => {
   return (
-    <div className={`form-group ${className}`}>
-      <label className="sr-only">
-        <span className="mr-2">{label}</span>
-        {hint && <FieldHint content={hint} />}
-      </label>
-      <CreatableSelect
-        {...field}
-        type={type}
-        defaultValue={defaultValue}
-        formatGroupLabel={formatGroupLabel}
-        onChange={onChange}
-        placeholder={placeholder}
-        options={zipOptions}
-        isSearchable={isSearchable}
-        inMulti={isMulti}
-        isClearable
-        className="react-select-zip"
-        classNamePrefix="react-select"
-        styles={selectStyles}
-        theme={theme => ({
-          ...theme,
-          borderRadius: 0,
-          colors: {
-            ...theme.colors,
-            primary25: '#255b35',
-            primary: '#255b35',
-            primary50: '#a7a9ac'
-          }
-        })}
-      />
-    </div>
+    <>
+      <div className={`form-group ${className}`}>
+        <label className="sr-only">
+          <span className="mr-2">{label}</span>
+          {hint && <FieldHint content={hint} />}
+        </label>
+        <CreatableSelect
+          {...field}
+          type={type}
+          defaultValue={defaultValue}
+          formatGroupLabel={formatGroupLabel}
+          onChange={onChange}
+          placeholder={placeholder}
+          options={zipOptions}
+          isSearchable={isSearchable}
+          inMulti={isMulti}
+          isClearable
+          className="react-select-zip"
+          classNamePrefix="react-select"
+          styles={selectStyles}
+          theme={theme => ({
+            ...theme,
+            borderRadius: 0,
+            colors: {
+              ...theme.colors,
+              primary25: '#5fb35f',
+              primary: '#5fb35f',
+              primary50: '#a7a9ac'
+            }
+          })}
+        />
+      </div>
+      <p className="mt-4">
+        Already a Member?{' '}
+        <button type="button" className="btn btn-transparent text-mid" disabled>
+          <em>Sign in here</em>
+        </button>
+      </p>
+    </>
   )
 }
 

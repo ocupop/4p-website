@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import ProductVariantSelect from './ProductVariants/ProductVariantSelect'
 
-
 const ProductDetail = ({ product }) => {
   const {
     // name,
@@ -16,6 +15,7 @@ const ProductDetail = ({ product }) => {
     vendor
   } = product
 
+  console.log('vendor', vendor)
   return (
     <>
       <ProductVariantSelect productID={product.id} />
@@ -27,11 +27,12 @@ const ProductDetail = ({ product }) => {
               <div className="content">
                 <h2>Product Details</h2>
                 <div className="d-flex flex-wrap">
-                  {tags && tags.map(tag => (
-                    <span key={tag.value} className="product-detail-tag mb-2">
-                      {tag.label}
-                    </span>
-                  ))}
+                  {tags &&
+                    tags.map(tag => (
+                      <span key={tag.value} className="product-detail-tag mb-2">
+                        {tag.label}
+                      </span>
+                    ))}
                 </div>
               </div>
             </div>
@@ -72,9 +73,7 @@ const ProductDetail = ({ product }) => {
             </div>
             <div className="col-lg-6">
               <div className="content">
-                <h2>
-                  From {vendor && vendor.name}
-                </h2>
+                <h2>From {vendor && vendor.name}</h2>
 
                 {vendor.description && <p>{vendor.description}</p>}
 
@@ -105,10 +104,7 @@ const ProductDetail = ({ product }) => {
           </div>
           <div className="row no-gutters">
             <div className="col-12">
-              <div className="content">
-                {/* @TODO: Add logic required for recommended products */}
-
-              </div>
+              <div className="content">{/* @TODO: Add logic required for recommended products */}</div>
             </div>
           </div>
         </div>
@@ -118,7 +114,7 @@ const ProductDetail = ({ product }) => {
 }
 
 ProductDetail.propTypes = {
-  product: PropTypes.instanceOf(Object),
+  product: PropTypes.instanceOf(Object)
 }
 
 export default ProductDetail

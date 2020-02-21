@@ -31,7 +31,7 @@ const RegisterForm = () => {
         <div className="text-center">
           <div className="p-4">
             <h2>Healthy, fresh food direct to your door</h2>
-            <p className="my-3 mb-5">
+            <p className="my-3 mb-4">
               4P makes it easy to keep fresh food on your table, with weekly deliveries straight from local family
               farms. Enter your ZIP Code below to see if we deliver to your area.
             </p>

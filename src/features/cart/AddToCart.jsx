@@ -36,7 +36,7 @@ const AddToCart = ({ productId, item }) => {
 }
 
 AddToCart.propTypes = {
-  // productId: PropTypes.instanceOf(String),
+  productId: PropTypes.String,
   item: PropTypes.instanceOf(Object)
 }
 

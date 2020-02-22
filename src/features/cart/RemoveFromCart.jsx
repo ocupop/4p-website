@@ -10,19 +10,15 @@ const RemoveFromCart = ({ item }) => {
   const auth = useSelector(state => state.firebase.auth)
   const profile = useSelector(state => state.firebase.profile)
 
-  const shouldBtnDisable = () => {
-    return (
-      profile.shoppingCart &&
-      !profile.shoppingCart.items.filter(cartItem => cartItem.variantId === item.variantId).length
-    )
-  }
-
   return (
     <>
       <button
         type="button"
         className="btn btn-danger w-50"
-        disabled={shouldBtnDisable()} // disable if nothing is within the cart
+        disabled={
+          profile.shoppingCart &&
+          !profile.shoppingCart.items.filter(cartItem => cartItem.variantId === item.variantId).length
+        } // disable if nothing is within the cart
         onClick={() => {
           dispatch(removeFromCart({ firestore }, auth.uid, profile, item))
         }}>

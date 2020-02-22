@@ -45,7 +45,7 @@ const ProductVariantSelect = ({ productID }) => {
 
   useEffect(() => {
     if (selectedVariant) {
-      setFeaturedImage(selectedVariant.data.featuredImage || activeProduct.featuredImage)
+      setFeaturedImage(selectedVariant.featuredImage || activeProduct.featuredImage)
     }
   }, [selectedVariant])
 

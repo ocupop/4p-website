@@ -62,37 +62,35 @@ const LoginForm = () => {
               </Form>
             )}
           </Formik>
-          <div className="text-center">
-            <p className="my-3">
-              <button type="button" className="btn btn-transparent p-0" disabled>
-                <em>Forgot Your Password?</em>
-              </button>
-            </p>
-            <p className="text-uppercase">or sign in with</p>
-            <div className="row">
-              <div className="col-lg-6">
-                <Button
-                  onClick={() => socialLogin({ firebase, provider: 'facebook' })}
-                  className="btn btn-mid btn-block"
-                  disabled>
-                  Facebook
-                </Button>
-              </div>
-              <div className="col-lg-6">
-                <Button
-                  onClick={() => socialLogin({ firebase, provider: 'google' })}
-                  className="btn btn-secondary btn-block">
-                  Google
-                </Button>
-              </div>
+          <p className="my-3">
+            <button type="button" className="btn btn-transparent p-0" disabled>
+              <em>Forgot Your Password?</em>
+            </button>
+          </p>
+          <p className="text-uppercase">or sign in with</p>
+          <div className="row">
+            <div className="col-lg-6">
+              <Button
+                onClick={() => socialLogin({ firebase, provider: 'facebook' })}
+                className="btn btn-mid btn-block"
+                disabled>
+                Facebook
+              </Button>
             </div>
-            <p className="mt-3">
-              New to 4P Foods?{' '}
-              <button type="button" className="btn btn-transparent text-mid" disabled>
-                <em>Sign up here</em>
-              </button>
-            </p>
+            <div className="col-lg-6">
+              <Button
+                onClick={() => socialLogin({ firebase, provider: 'google' })}
+                className="btn btn-secondary btn-block">
+                Google
+              </Button>
+            </div>
           </div>
+          <p className="mt-3">
+            New to 4P Foods?{' '}
+            <button type="button" className="btn btn-transparent text-mid" disabled>
+              <em>Sign up here</em>
+            </button>
+          </p>
         </div>
       </div>
     </div>

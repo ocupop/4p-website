@@ -28,36 +28,34 @@ const RegisterForm = () => {
   return (
     <div className="row">
       <div className="col-12">
-        <div className="text-center">
-          <div className="p-4">
-            <h2>Healthy, fresh food direct to your door</h2>
-            <p className="my-3 mb-4">
-              4P makes it easy to keep fresh food on your table, with weekly deliveries straight from local family
-              farms. Enter your ZIP Code below to see if we deliver to your area.
-            </p>
-            <Formik
-              enableReinitialize
-              initialValues={initialValues}
-              validationSchema={validationSchema}
-              onSubmit={(values, { resetForm }) => {
-                console.log(values)
-                resetForm()
-              }}>
-              {({ setFieldValue, values }) => (
-                <Form>
-                  <Field
-                    name="zipCode"
-                    type="text"
-                    component={ZipCodeSelect}
-                    onChange={value => setFieldValue('zipCode', value)}
-                    label="Enter Zipcode"
-                    placeholder="Enter Zipcode"
-                  />
-                  <FormikDebug />
-                </Form>
-              )}
-            </Formik>
-          </div>
+        <div className="p-4">
+          <h2 className="text-center">Healthy, fresh food direct to your door</h2>
+          <p className="my-3 mb-4 text-center">
+            4P makes it easy to keep fresh food on your table, with weekly deliveries straight from local family farms.
+            Enter your ZIP Code below to see if we deliver to your area.
+          </p>
+          <Formik
+            enableReinitialize
+            initialValues={initialValues}
+            validationSchema={validationSchema}
+            onSubmit={(values, { resetForm }) => {
+              console.log(values)
+              resetForm()
+            }}>
+            {({ setFieldValue, values }) => (
+              <Form>
+                <Field
+                  name="zipCode"
+                  type="text"
+                  component={ZipCodeSelect}
+                  onChange={value => setFieldValue('zipCode', value)}
+                  label="Enter Zipcode"
+                  placeholder="Enter Zipcode"
+                />
+                <FormikDebug />
+              </Form>
+            )}
+          </Formik>
         </div>
       </div>
     </div>

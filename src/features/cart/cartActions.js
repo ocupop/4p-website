@@ -3,10 +3,13 @@ import _ from 'lodash'
 import { asyncActionStart, asyncActionFinish, asyncActionError } from '../../common/async/asyncActions'
 
 /**
- * Takes an updated shopping cart and adds it to firestore
+ * Adds a Product Variant to the users shopping cart.
  *
  * @param {String} userId
- * @param {map} updatedShoppingCart
+ * @param {Map} profile
+ * @param {String} productId
+ * @param {bool} recurring
+ * @param {Map} item
  */
 export const addToCart = ({ firestore }, userId, profile, productId, recurring, item) => {
   return async dispatch => {
@@ -49,9 +52,16 @@ export const addToCart = ({ firestore }, userId, profile, productId, recurring, 
   }
 }
 
+/**
+ * Removes an item from the cart
+ *
+ * @param {String} userId
+ * @param {Map} profile
+ * @param {Map} item
+ */
 export const removeFromCart = ({ firestore }, userId, profile, item) => {
   return async dispatch => {
-    let updatedCart = profile.shoppingCart
+    const updatedCart = profile.shoppingCart
     // validate that there are items to remove
     if (!profile.shoppingCart.items.length) {
       return

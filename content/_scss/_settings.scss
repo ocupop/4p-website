@@ -38,32 +38,30 @@ $light: $gray-300;
 $dark: $gray-800;
 
 $theme-colors: (
-  "primary": $green,
-  "secondary": $blue,
-  "success": $green,
-  "info": $cyan,
-  "warning": $yellow,
-  "danger": $red,
-  "light": $gray-300,
-  "mid": $gray-400,
-  "dark": $gray-800,
-  "white": $white,
-  "black": $black,
-  "gray": $gray-700,
-  "gray-300": $gray-300,
-  "gray-600": $gray-600,
-  "tan": $beige,
-  "tan-dark": $beige-darker,
-  "notice": $teal,
-  "teal": $teal,
-  "green": $green-dark
+  'primary': $green,
+  'secondary': $blue,
+  'success': $green,
+  'info': $cyan,
+  'warning': $yellow,
+  'danger': $red,
+  'light': $gray-300,
+  'mid': $gray-600,
+  'dark': $gray-800,
+  'white': $white,
+  'black': $black,
+  'gray': $gray-700,
+  'tan': $beige,
+  'tan-dark': $beige-darker,
+  'notice': $teal,
+  'teal': $teal,
+  'green': $green-dark
 );
 
 $body-bg: $white;
 $body-color: $gray-600;
 
-$font-family-base: "Montserrat", sans-serif;
-$font-family-secondary: "Spectral", serif;
+$font-family-base: 'Montserrat', sans-serif;
+$font-family-secondary: 'Spectral', serif;
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg: ($font-size-base * 1.25) !default;

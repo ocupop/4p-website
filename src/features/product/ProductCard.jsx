@@ -25,7 +25,7 @@ const ProductCard = ({ product }) => {
         </div>
       </Link>
       <div className="card-footer d-flex align-items-center p-0">
-        <AddToCart productId={product.id} item={defaultVariant} />
+        <AddToCart productID={product.id} item={defaultVariant} />
       </div>
     </div>
   )

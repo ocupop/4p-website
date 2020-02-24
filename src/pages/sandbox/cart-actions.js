@@ -19,7 +19,7 @@ const CartActions = () => {
               <h2>Example of Add To Cart Button</h2>
               <div>{JSON.stringify(activeVariant, null, 2)}</div>
 
-              {product && <AddToCart productId={product.id} item={activeVariant} />}
+              {product && <AddToCart productID={product.id} item={activeVariant} />}
               <br />
               {product && <RemoveFromCart item={activeVariant} />}
             </div>

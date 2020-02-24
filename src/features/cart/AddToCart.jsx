@@ -4,11 +4,13 @@ import { useFirestore } from 'react-redux-firebase'
 import PropTypes, { string } from 'prop-types'
 import { addToCart } from './cartActions'
 
-const AddToCart = ({ productId, item }) => {
+const AddToCart = ({ productID, item }) => {
   const firestore = useFirestore()
   const dispatch = useDispatch()
   const auth = useSelector(state => state.firebase.auth)
   const profile = useSelector(state => state.firebase.profile)
+
+  console.log(productID)
 
   return (
     <>
@@ -17,7 +19,7 @@ const AddToCart = ({ productId, item }) => {
         className="product-button w-50"
         disabled={item && item.singlePurchase === false}
         onClick={() => {
-          dispatch(addToCart({ firestore }, auth.uid, profile, productId, false, item))
+          dispatch(addToCart({ firestore }, auth.uid, profile, productID, false, item))
         }}>
         Add Single Item
       </button>
@@ -27,7 +29,7 @@ const AddToCart = ({ productId, item }) => {
         className="product-button w-50"
         disabled={item && item.recurringPurchase === false}
         onClick={() => {
-          dispatch(addToCart({ firestore }, auth.uid, profile, productId, true, item))
+          dispatch(addToCart({ firestore }, auth.uid, profile, productID, true, item))
         }}>
         Add Weekly Item
       </button>
@@ -36,7 +38,7 @@ const AddToCart = ({ productId, item }) => {
 }
 
 AddToCart.propTypes = {
-  productId: PropTypes.String,
+  productID: PropTypes.string,
   item: PropTypes.instanceOf(Object)
 }
 

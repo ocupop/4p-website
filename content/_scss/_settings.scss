@@ -20,18 +20,18 @@ $red: #dc3545 !default;
 $orange: #fd7e14 !default;
 $yellow: #f5c938;
 $green: #5fb35f;
+$green-dark: #255b35;
 $cyan: #71c7c7 !default;
 
-$green-dark: #255b35;
 $teal: #14585a;
-$beige: #efebe5;
-$beige-dark: #dedbd3;
-$beige-darker: #b7b4a9;
+$tan: #efebe5;
+$tan-dark: #dedbd3;
+$tan-darker: #b7b4a9;
 
 $primary: $green;
 $secondary: $blue;
 $success: $green !default;
-$info: $cyan !default;
+$info: $blue;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-300;
@@ -41,7 +41,7 @@ $theme-colors: (
   'primary': $green,
   'secondary': $blue,
   'success': $green,
-  'info': $cyan,
+  'info': $info,
   'warning': $yellow,
   'danger': $red,
   'light': $gray-300,
@@ -50,11 +50,11 @@ $theme-colors: (
   'white': $white,
   'black': $black,
   'gray': $gray-700,
-  'tan': $beige,
-  'tan-dark': $beige-darker,
-  'notice': $teal,
+  'tan': $tan,
+  'tan-dark': $tan-darker,
   'teal': $teal,
-  'green': $green-dark
+  'green': $green,
+  'green-dark': $green-dark
 );
 
 $body-bg: $white;

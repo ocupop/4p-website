@@ -10,8 +10,6 @@ const AddToCart = ({ productID, item }) => {
   const auth = useSelector(state => state.firebase.auth)
   const profile = useSelector(state => state.firebase.profile)
 
-  console.log(productID)
-
   return (
     <>
       <button

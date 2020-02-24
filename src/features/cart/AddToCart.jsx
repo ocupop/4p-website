@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { useFirestore, useFirestoreConnect } from 'react-redux-firebase'
-import PropTypes from 'prop-types'
+import { useFirestore } from 'react-redux-firebase'
+import PropTypes, { string } from 'prop-types'
+import { addToCart } from './cartActions'
 
-const AddToCart = ({ productId, item }) => {
+const AddToCart = ({ productID, item }) => {
   const firestore = useFirestore()
   const dispatch = useDispatch()
-
   const auth = useSelector(state => state.firebase.auth)
-  // const profile = useSelector(state => state.firebase.profile)
+  const profile = useSelector(state => state.firebase.profile)
 
   return (
     <>
@@ -17,9 +17,7 @@ const AddToCart = ({ productId, item }) => {
         className="product-button w-50"
         disabled={item && item.singlePurchase === false}
         onClick={() => {
-          console.log('Adding Single Item')
-          console.log(auth.uid, productId, item)
-          // dispatch(addToCart({ firestore }, auth.uid, item))
+          dispatch(addToCart({ firestore }, auth.uid, profile, productID, false, item))
         }}>
         Add Single Item
       </button>
@@ -27,11 +25,9 @@ const AddToCart = ({ productId, item }) => {
       <button
         type="button"
         className="product-button w-50"
-        disabled={item && item.recurrsingPurchase === false}
+        disabled={item && item.recurringPurchase === false}
         onClick={() => {
-          console.log('Adding Weekly Item')
-          console.log(auth.uid, productId, item)
-          // dispatch(addToCart({ firestore } auth.uid, item)
+          dispatch(addToCart({ firestore }, auth.uid, profile, productID, true, item))
         }}>
         Add Weekly Item
       </button>
@@ -40,6 +36,7 @@ const AddToCart = ({ productId, item }) => {
 }
 
 AddToCart.propTypes = {
+  productID: PropTypes.string,
   item: PropTypes.instanceOf(Object)
 }
 

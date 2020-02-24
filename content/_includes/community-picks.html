@@ -5,15 +5,17 @@
         <h2 class="text-white">Community Picks</h2>
       </div>
       <div class="col-lg-6 text-lg-right">
-        <a href="#" class="btn btn-white">Start Shopping</a>
+        <a href="/shop" class="btn btn-white">Start Shopping</a>
       </div>
     </div>
     <div class="responsive-card-deck cards-lg-2 mt-5">
-      {% for slug in page.featured_products %}
-      {% assign product = site.featured_products | where: "slug", slug | first %}
+      {% for slug in page.featured_products %} {% assign product = site.featured_products | where: "slug", slug | first
+      %}
       <div class="card mb-4">
-        <div class="bg-image aspect-16x9"
-          style="background-image: url({{ product.image | prepend: site.url | default: 'https://via.placeholder.com/800x500' }})"></div>
+        <div
+          class="bg-image aspect-16x9"
+          style="background-image: url({{ product.image | prepend: site.url | default: 'https://via.placeholder.com/800x500' }})"
+        ></div>
         <div class="card-footer">
           <div class="row">
             <div class="col-6">
@@ -21,7 +23,7 @@
               <p class="mb-0">{{ product.label }}</p>
             </div>
             <div class="col-6 text-right">
-              <a href="{{ product.link }}" class="btn btn-white">See Item</a>
+              <a href="/products/{{ product.id }}" class="btn btn-white">See Item</a>
             </div>
           </div>
         </div>

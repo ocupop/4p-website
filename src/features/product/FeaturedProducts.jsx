@@ -25,12 +25,11 @@ const FeaturedProducts = ({ vendorid: vendorID }) => {
     <section id="featured-store" className="pt-0 position-relative">
       <div className="container">
         <div className="row">
-          {products &&
-            products.map(product => (
-              <div className="col">
-                <ProductCard product={product} key={product.id} />
-              </div>
-            ))}
+          <div className="col-12">
+            <div className="responsive-card-deck cards-lg-3">
+              {products && products.map(product => <ProductCard product={product} key={product.id} />)}
+            </div>
+          </div>
         </div>
       </div>
     </section>

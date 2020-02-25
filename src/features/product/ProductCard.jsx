@@ -16,10 +16,11 @@ const ProductCard = ({ product }) => {
       />
       <Link to={`/products/${product.id}`} className="card-body">
         <h5 className="card-title">{product.name}</h5>
-        <h6>{vendor.name}</h6>
+        {vendor.name && <h6>{vendor.name}</h6>}
         <div className="d-flex align-items-center justify-content-between">
           <div className="product-amount">
-            {defaultVariant.name} <em>{defaultVariant.label}</em>
+            {defaultVariant.name && defaultVariant.name}
+            {defaultVariant.label && <em>{defaultVariant.label}</em>}
           </div>
           <div className="product-price">${defaultVariant.price}</div>
         </div>

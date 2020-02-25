@@ -15,6 +15,10 @@ const parseOptions = {
 
     if (name.includes('-')) {
       const component = _.upperFirst(_.camelCase(name))
+      // Note that attribs converts to lower case, for example
+      // vendorID would come through as vendorID.
+      // Within the react component when destructing props we need to assign it back
+      // example: { vendorid: vendorID }
       return React.createElement(pageComponents[component], attribs)
     }
   }

@@ -38,7 +38,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-load-script',
       options: {
-        src: 'https://code.jquery.com/jquery-3.4.1.min.js'
+        src: 'https://code.jquery.com/jquery-3.4.1.slim.min.js'
       }
     },
     {

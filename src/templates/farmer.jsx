@@ -1,18 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from "gatsby"
+import { graphql } from 'gatsby'
 import _ from 'lodash'
 import parse, { domToReact } from 'html-react-parser'
+import FeaturedProducts from '../features/product/FeaturedProducts'
 
 const pageComponents = {
-  // TODO: Import and list all acceptable components that may get included inline page content.
+  FeaturedProducts
 }
-
 
 const parseOptions = {
   replace: ({ attribs, name, children }) => {
     if (!attribs) return
-    if (attribs.id === 'pageFooter' || attribs.id === 'pageHeader' || name === 'script' || name === 'head') return (<></>)
+    if (attribs.id === 'pageFooter' || attribs.id === 'pageHeader' || name === 'script' || name === 'head') return <></>
     if (name === 'html' || name === 'body') {
       return <>{domToReact(children, parseOptions)}</>
     }
@@ -28,34 +28,25 @@ const parseOptions = {
   }
 }
 
-
-
 const FarmerTemplate = ({
   data: {
-    farmers: {
-      output
-    }
+    farmers: { output }
   }
 }) => {
-
-  return (
-    <>
-      {parse(output, parseOptions)}
-    </>
-  )
+  return <>{parse(output, parseOptions)}</>
 }
-
 
 export const query = graphql`
   query($id: String!) {
-    farmers(id: {eq: $id }) {
+    farmers(id: { eq: $id }) {
       title
       output
     }
-  }`
+  }
+`
 
 FarmerTemplate.propTypes = {
-  data: PropTypes.instanceOf(Object),
+  data: PropTypes.instanceOf(Object)
 }
 
 export default FarmerTemplate

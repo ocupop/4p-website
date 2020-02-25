@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import Alert from 'react-bootstrap/Alert'
+import UserAlert from '../../common/ui/UserAlert'
 // import PropTypes from 'prop-types'
 
 const Notifications = () => {
   const [currentNotifications, setCurrentNotifications] = useState(null)
-  const [show, setShow] = useState(true)
+
   const notifications = [
     {
       priority: 'danger',
@@ -41,10 +41,12 @@ const Notifications = () => {
           </p>
           {currentNotifications &&
             currentNotifications.map((notification, index) => (
-              <Alert key={index} show={show} variant={notification.priority} onClose={() => setShow(false)} dismissible>
-                <Alert.Heading>{notification.title}</Alert.Heading>
-                <p>{notification.description}</p>
-              </Alert>
+              <UserAlert
+                key={index}
+                title={notification.title}
+                description={notification.description}
+                priority={notification.priority}
+              />
               // <div key={index} className={`alert alert-${notification.priority}`} role="alert">
               //   <h4>{notification.title}</h4>
               //   <p>{notification.description}</p>

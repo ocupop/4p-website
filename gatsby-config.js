@@ -32,12 +32,6 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-load-script',
       options: {
-        src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCAO2do5V-Ea98ilA49coabv_hShNnH6RU&libraries=places'
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-load-script',
-      options: {
         src: 'https://code.jquery.com/jquery-3.4.1.slim.min.js'
       }
     },
@@ -51,6 +45,12 @@ module.exports = {
       resolve: 'gatsby-plugin-load-script',
       options: {
         src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCAO2do5V-Ea98ilA49coabv_hShNnH6RU&libraries=places'
       }
     },
     // Getting UI Elements

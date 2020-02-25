@@ -22,12 +22,12 @@ const FeaturedProducts = ({ vendorid: vendorID }) => {
   const products = useSelector(state => state.firestore.ordered.products)
 
   return (
-    <section id="featured-store" class="pt-0 position-relative">
-      <div class="container">
-        <div class="row">
+    <section id="featured-store" className="pt-0 position-relative">
+      <div className="container">
+        <div className="row">
           {products &&
             products.map(product => (
-              <div class="col">
+              <div className="col">
                 <ProductCard product={product} key={product.id} />
               </div>
             ))}

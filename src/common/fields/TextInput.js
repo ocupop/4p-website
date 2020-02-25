@@ -1,31 +1,12 @@
-import React from "react";
-import { Icon, Popup } from "semantic-ui-react";
+import React from 'react'
+import { Icon, Popup } from 'semantic-ui-react'
+import Label from './label'
 
-const TextInput = ({
-  hint,
-  type,
-  label,
-  placeholder,
-  required,
-  field,
-  form: { errors, touched }
-}) => {
-  const status = touched[field.name] && errors[field.name] ? `is-invalid` : ``;
+const TextInput = ({ hint, type, label, placeholder, required, field, form: { errors, touched } }) => {
+  const status = touched[field.name] && errors[field.name] ? `is-invalid` : ``
   return (
     <div className="form-group">
-      <label className={label ? "" : "sr-only"}>
-        <span className="mr-2">{label}</span>
-        {/*  @TODO not showing up in browsers, might be a CSS issue */}
-        {hint && (
-          <Popup
-            trigger={<Icon name="question circle" color="black" />}
-            content={hint}
-            position="right center"
-            inverted
-            size="tiny"
-          />
-        )}
-      </label>
+      <Label label={label} hint={hint} />
       <input
         className={`form-control ${status}`}
         {...field}
@@ -33,11 +14,9 @@ const TextInput = ({
         type={type}
         required={required}
       />
-      {touched[field.name] && errors[field.name] && (
-        <div className="invalid-feedback">{errors[field.name]}</div>
-      )}
+      {touched[field.name] && errors[field.name] && <div className="invalid-feedback">{errors[field.name]}</div>}
     </div>
-  );
-};
+  )
+}
 
-export default TextInput;
+export default TextInput

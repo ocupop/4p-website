@@ -32,6 +32,12 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-load-script',
       options: {
+        src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCAO2do5V-Ea98ilA49coabv_hShNnH6RU&libraries=places'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
         src: 'https://code.jquery.com/jquery-3.4.1.min.js'
       }
     },
@@ -205,13 +211,13 @@ module.exports = {
             collection: 'products',
             map: doc => ({
               name: doc.name,
-              category: doc.category.label,
-              department: doc.department.label,
+              category: doc.category ? doc.category.label : '',
+              department: doc.department ? doc.department.label : '',
               ingredients: doc.ingredients,
               storageTips: doc.storageTips,
               tags: doc.tags,
               variants: doc.variants,
-              vendor___NODE: doc.vendor.value
+              vendor___NODE: doc.vendor ? doc.vendor.value : ''
             })
           },
           {
@@ -223,7 +229,7 @@ module.exports = {
               website: doc.website,
               location: doc.location,
               logo: doc.logo,
-              featuredImage: doc.vendorImages[0]
+              featuredImage: doc.vendorImages ? doc.vendorImages[0] : {}
             })
           }
           // {

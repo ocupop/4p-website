@@ -90,3 +90,46 @@ input[type='search'] {
   opacity: 1;
   transform: scale(1);
 }
+
+// React Select
+.react-select-container {
+  .react-select__control {
+    border-color: $mid;
+    &:hover {
+      border-color: $mid;
+      border-width: 1px;
+    }
+  }
+  .react-select__control--is-focused {
+    border-color: $mid;
+    box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
+  }
+  .react-select__input {
+    padding: 3px;
+  }
+  .react-select__single-value {
+    color: $dark;
+  }
+}
+
+// Location Autocomplete
+.locationField {
+  position: relative;
+}
+.autocomplete-dropdown-container {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: calc(100% + 5px);
+  box-shadow: 0 0 3px rgba($dark, 0.3);
+  z-index: 999;
+  .suggestion-item,
+  .suggestion-item--active {
+    padding: 0.5rem 1rem;
+    background-color: $lighter;
+    cursor: pointer;
+  }
+  .suggestion-item--active {
+    background-color: $light;
+  }
+}

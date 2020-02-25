@@ -3,7 +3,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 import CreatableSelect from 'react-select/creatable'
-import FieldHint from './FieldHint'
+import Label from './label'
 import { zipOptions } from '../data/ZIPS'
 
 const groupStyles = {
@@ -70,10 +70,7 @@ const CreateSelect = ({
   return (
     <>
       <div className={`form-group ${className}`}>
-        <label className="sr-only">
-          <span className="mr-2">{label}</span>
-          {hint && <FieldHint content={hint} />}
-        </label>
+        <Label label={label} hint={hint} />
         <CreatableSelect
           {...field}
           type={type}

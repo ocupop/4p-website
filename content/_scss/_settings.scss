@@ -32,7 +32,9 @@ $success: $primary;
 $info: $blue;
 $warning: $yellow !default;
 $danger: $red !default;
+$lighter: $gray-100;
 $light: $gray-300;
+$mid: $gray-600;
 $dark: $gray-800;
 
 $theme-colors: (
@@ -43,7 +45,7 @@ $theme-colors: (
   'warning': $yellow,
   'danger': $red,
   'light': $light,
-  'mid': $gray-600,
+  'mid': $mid,
   'dark': $dark,
   'white': $white,
   'black': $black,

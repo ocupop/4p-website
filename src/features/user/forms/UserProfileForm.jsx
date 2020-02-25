@@ -6,7 +6,17 @@ import { useDispatch } from 'react-redux'
 import { Formik, Field, Form } from 'formik'
 import * as Yup from 'yup'
 
-import { TextInput, TextArea, SwitchInput, SelectInput, RadioInput, PhoneInput } from '../../../common/fields'
+import {
+  TextInput,
+  TextArea,
+  SwitchInput,
+  SelectInput,
+  PhoneInput,
+  ZipCodeSelect,
+  AddressInput
+} from '../../../common/fields'
+import { stateOptions } from '../../../common/data/selects'
+import { zipOptions } from '../../../common/data/ZIPS'
 
 import FormikDebug from '../../../common/utils/FormikDebug'
 
@@ -18,6 +28,7 @@ const ProfileSchema = Yup.object().shape({
 })
 
 const UserProfileForm = ({ profile }) => {
+  const [showAddressField, setShowAddressField] = useState(false)
   const dispatch = useDispatch()
   const {
     displayName,
@@ -25,7 +36,8 @@ const UserProfileForm = ({ profile }) => {
     firstName,
     lastName,
     dietaryRestrictions,
-    notifications,
+    emailNotifications,
+    smsNotifications,
     email,
     phone,
     role,
@@ -38,7 +50,8 @@ const UserProfileForm = ({ profile }) => {
     firstName,
     lastName,
     dietaryRestrictions,
-    notifications,
+    emailNotifications,
+    smsNotifications,
     email,
     phone,
     role,
@@ -105,25 +118,100 @@ const UserProfileForm = ({ profile }) => {
               />
             </div>
           </div>
+
           <div className="row">
             <div className="col-12">
-              <h2>Notification Preferences</h2>
-              <p>Describe the pupose</p>
+              <hr />
+              <h3>Delivery Address</h3>
+              <p>Describe the coverage areas and options for delivery...</p>
+              <button
+                type="button"
+                className="btn btn-transparent text-primary p-0"
+                onClick={() => setShowAddressField(!showAddressField)}>
+                {showAddressField ? <small>Search location</small> : <small>Enter address details</small>}
+              </button>
+
+              <hr />
+              {showAddressField ? (
+                <div className="row">
+                  <div className="col-12">
+                    <Field
+                      name="street_1"
+                      type="text"
+                      component={TextInput}
+                      placeholder="Street Address"
+                      label="Address"
+                    />
+                    <Field name="street_2" type="text" component={TextInput} placeholder="Suite/Apartment #" />
+                  </div>
+                  <div className="col-12 col-md-6">
+                    <Field name="city" type="text" component={TextInput} placeholder="City" />
+                  </div>
+                  <div className="col-12 col-md-2">
+                    <Field name="state" type="text" component={SelectInput} options={stateOptions} />
+                  </div>
+                  <div className="col-12 col-md-4">
+                    <Field
+                      name="address.zip"
+                      type="text"
+                      component={ZipCodeSelect}
+                      options={zipOptions}
+                      onChange={value => {
+                        setFieldValue('address.zip', value)
+                        // TODO: Set error messagin for out of coverage
+                      }}
+                    />
+                  </div>
+                </div>
+              ) : (
+                <div className="row">
+                  <div className="col-12">
+                    <Field
+                      name="location"
+                      className="locationField"
+                      hint="Start typing address or location name."
+                      component={AddressInput}
+                      onChange={value => setFieldValue('location', value)}
+                      placeholder="Enter Location..."
+                      label="Location"
+                    />
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+          <div className="row mt-5">
+            <div className="col-12">
+              <hr />
+              <h3>Notification Preferences</h3>
+              <p>Describe the notification expectations...</p>
+              <hr />
               <div className="d-flex">
                 <Field
                   className="pr-4"
-                  name="notifications.email"
+                  name="emailNotifications"
                   type="checkbox"
                   hint="Check here if you would like notifications sent to your email address"
                   component={SwitchInput}
-                  onChange={value => setFieldValue('notifications.email', !value)}
+                  toggle
+                  onChange={() => setFieldValue('emailNotifications', !values.emailNotifications)}
                   label="Email"
+                />
+                <Field
+                  className="pr-4"
+                  name="smsNotifications"
+                  type="checkbox"
+                  hint="Check here if you would like notifications sent to your phone"
+                  component={SwitchInput}
+                  toggle
+                  onChange={() => setFieldValue('smsNotifications', !values.smsNotifications)}
+                  label="SMS"
                 />
               </div>
             </div>
           </div>
-          <button type="submit" className="btn btn-primary btn-block">
-            Submit
+          <button type="button" className="btn btn-secondary btn-block">
+            Update
           </button>
           <FormikDebug />
         </Form>

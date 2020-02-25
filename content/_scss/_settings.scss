@@ -12,7 +12,6 @@ $gray-900: #212529 !default;
 $black: #000000 !default;
 
 $blue: #97d7d9;
-$blue-mid: #71c7c7;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 $pink: #e83e8c !default;
@@ -21,16 +20,15 @@ $orange: #fd7e14 !default;
 $yellow: #f5c938;
 $green: #5fb35f;
 $green-dark: #255b35;
-$cyan: #71c7c7 !default;
-
 $teal: #14585a;
+$cyan: #71c7c7;
 $tan: #efebe5;
 $tan-dark: #dedbd3;
 $tan-darker: #b7b4a9;
 
 $primary: $green;
 $secondary: $blue;
-$success: $green !default;
+$success: $primary;
 $info: $blue;
 $warning: $yellow !default;
 $danger: $red !default;
@@ -40,18 +38,18 @@ $dark: $gray-800;
 $theme-colors: (
   'primary': $green,
   'secondary': $blue,
-  'success': $green,
+  'success': $primary,
   'info': $info,
   'warning': $yellow,
   'danger': $red,
-  'light': $gray-300,
+  'light': $light,
   'mid': $gray-600,
-  'dark': $gray-800,
+  'dark': $dark,
   'white': $white,
   'black': $black,
   'gray': $gray-700,
   'tan': $tan,
-  'tan-dark': $tan-darker,
+  'tan-dark': $tan-dark,
   'teal': $teal,
   'green': $green,
   'green-dark': $green-dark

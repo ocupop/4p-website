@@ -6,13 +6,7 @@ import { useDispatch } from 'react-redux'
 import { Formik, Field, Form } from 'formik'
 import * as Yup from 'yup'
 
-import {
-  TextInput,
-  TextArea,
-  SwitchInput,
-  SelectInput,
-  RadioInput,
-} from '../../../common/fields'
+import { TextInput, TextArea, SwitchInput, SelectInput, RadioInput } from '../../../common/fields'
 
 import FormikDebug from '../../../common/utils/FormikDebug'
 
@@ -20,10 +14,10 @@ const ProfileSchema = Yup.object().shape({
   name: Yup.string()
     .min(2, 'Too Short!')
     .max(100, 'Too Long!')
-    .required('Required'),
+    .required('Required')
 })
 
-const UserProfileForm = ({profile}) => {
+const UserProfileForm = ({ profile }) => {
   const dispatch = useDispatch()
   const {
     displayName,
@@ -35,7 +29,7 @@ const UserProfileForm = ({profile}) => {
     email,
     phone,
     role,
-    billingAddress,
+    billingAddress
   } = profile
 
   const initialValues = {
@@ -48,31 +42,28 @@ const UserProfileForm = ({profile}) => {
     email,
     phone,
     role,
-    billingAddress,
+    billingAddress
   }
 
   return (
-    <div>
-      <h1>Profile Form</h1>
-      <Formik
-        enableReinitialize
-        initialValues={initialValues}
-        validationSchema={ProfileSchema}
-        onSubmit={(values, { resetForm }) => {
-          console.log(values)
-          // dispatch(testForm({ firestore }, values))
-          resetForm()
-        }}
-      >
-        {({ values, setFieldValue }) => (
-          <Form>
-
-            <button type="submit" className="btn btn-primary">Submit</button>
-            <FormikDebug />
-          </Form>
-        )}
-      </Formik>
-    </div>
+    <Formik
+      enableReinitialize
+      initialValues={initialValues}
+      validationSchema={ProfileSchema}
+      onSubmit={(values, { resetForm }) => {
+        console.log(values)
+        // dispatch(testForm({ firestore }, values))
+        resetForm()
+      }}>
+      {({ values, setFieldValue }) => (
+        <Form>
+          <button type="submit" className="btn btn-primary btn-block">
+            Submit
+          </button>
+          <FormikDebug />
+        </Form>
+      )}
+    </Formik>
   )
 }
 
@@ -81,5 +72,3 @@ UserProfileForm.propTypes = {
 }
 
 export default UserProfileForm
-
-

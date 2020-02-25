@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 import { useFirebase } from 'react-redux-firebase'
 import { Dropdown } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
@@ -32,7 +33,7 @@ const SignedInMenu = ({ auth: { displayName, photoURL } }) => {
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Dropdown.Item>Profile</Dropdown.Item>
+            <Dropdown.Item href="/profile">Profile</Dropdown.Item>
             <Dropdown.Divider />
             <Dropdown.Item onClick={() => logout({ firebase })}>Logout</Dropdown.Item>
           </Dropdown.Menu>

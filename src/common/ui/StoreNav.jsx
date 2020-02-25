@@ -14,11 +14,6 @@ const StoreNav = () => {
                     Browse Goods <span className="sr-only">(current)</span>
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/shop-for-bags">
-                    Shop Collections
-                  </Link>
-                </li>
               </ul>
               <span className="navbar-text">
                 <small className="text-gray-800">Your next delivery</small>

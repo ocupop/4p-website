@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from "gatsby"
+import { graphql } from 'gatsby'
 import _ from 'lodash'
 import parse from 'html-react-parser'
+import FeaturedProducts from '../features/product/FeaturedProducts'
 
 const pageComponents = {
-  // TODO: Import and list all acceptable components that may get included inline page content.
+  FeaturedProducts
 }
 
 const parseOptions = {
@@ -21,30 +22,23 @@ const parseOptions = {
 
 const PageTemplate = ({
   data: {
-    pages: {
-      content
-    }
+    pages: { content }
   }
- }) => {
-
-  return (
-    <>
-      {parse(content, parseOptions)}
-    </>
-  )
+}) => {
+  return <>{parse(content, parseOptions)}</>
 }
-
 
 export const query = graphql`
   query($id: String!) {
-    pages(id: {eq: $id }) {
+    pages(id: { eq: $id }) {
       title
       content
     }
-  }`
+  }
+`
 
 PageTemplate.propTypes = {
-  data: PropTypes.instanceOf(Object),
+  data: PropTypes.instanceOf(Object)
 }
 
 export default PageTemplate

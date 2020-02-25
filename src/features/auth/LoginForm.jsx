@@ -34,8 +34,7 @@ const LoginForm = () => {
             initialValues={initialValues}
             validationSchema={validationSchema}
             onSubmit={(values, { resetForm }) => {
-              console.log(values)
-              // login({firebase, values})
+              login({ firebase, values })
               resetForm()
             }}>
             {() => (

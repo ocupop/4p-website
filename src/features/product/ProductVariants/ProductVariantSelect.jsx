@@ -10,6 +10,8 @@ import logo from '../../../common/assets/logo-vertical.svg'
 import { SelectInput } from '../../../common/fields'
 // import AddToCartButton from '../cart/AddToCartButton'
 import LoadingComponent from '../../../common/ui/LoadingComponent'
+import AddToCart from '../../cart/AddToCart'
+import { formatMoney } from '../../../common/utils/helpers'
 
 const ProductVariantSelect = ({ productID }) => {
   const [selectedVariant, setSelectedVariant] = useState(null)
@@ -23,7 +25,9 @@ const ProductVariantSelect = ({ productID }) => {
       }
     }) => products && products[productID]
   )
+
   let variantOptions = []
+
   if (activeProduct) {
     const { variants } = activeProduct
     variantOptions = variants.map(variant => {
@@ -36,21 +40,19 @@ const ProductVariantSelect = ({ productID }) => {
     })
   }
 
-  // @TODO: Set first variant as selected on page load
   useEffect(() => {
     if (activeProduct) {
       setSelectedVariant(variantOptions[0])
     }
-  }, [])
+  }, [activeProduct])
 
   useEffect(() => {
-    if (selectedVariant) {
+    if (selectedVariant && activeProduct) {
       setFeaturedImage(selectedVariant.featuredImage || activeProduct.featuredImage)
     }
   }, [selectedVariant])
 
   if (!activeProduct) return <LoadingComponent />
-  console.log(activeProduct, 'active variant', selectedVariant)
   return (
     <section>
       <div className="container">
@@ -88,9 +90,11 @@ const ProductVariantSelect = ({ productID }) => {
 
                       {selectedVariant && (
                         <>
-                          <div className="product-price mb-2">{selectedVariant.data.price}</div>
+                          <div className="product-price mb-2">{formatMoney(selectedVariant.data.price)}</div>
                           <div className="product-amount">{selectedVariant.data.size}</div>
-                          <div className="d-flex align-items-center mt-3">{/* @TODO: Add to cart */}</div>
+                          <div className="d-flex align-items-center mt-3">
+                            <AddToCart product={{ id: productID, ...activeProduct }} item={selectedVariant.data} />
+                          </div>
                         </>
                       )}
                     </>
@@ -101,6 +105,7 @@ const ProductVariantSelect = ({ productID }) => {
           </div>
           <div className="col-lg-6">
             <div className="content">
+              {/* @TODO @cdnicoll: Fix this, it never equates */}
               {featuredImage ? (
                 <div className="bg-image aspect-4x3" style={{ backgroundImage: `url(${featuredImage})` }} />
               ) : (

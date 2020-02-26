@@ -105,6 +105,7 @@ const ProductVariantSelect = ({ productID }) => {
           </div>
           <div className="col-lg-6">
             <div className="content">
+              {/* @TODO @cdnicoll: Fix this, it never equates */}
               {featuredImage ? (
                 <div className="bg-image aspect-4x3" style={{ backgroundImage: `url(${featuredImage})` }} />
               ) : (

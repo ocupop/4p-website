@@ -17,11 +17,14 @@ export const addToCart = ({ firestore }, userID, profile, product, recurring, it
       productID: product.id,
       productName: product.name,
       variantID: item.variantID,
+      sku: item.sku,
+      vendorID: product.vendor.value,
+      vendorName: product.vendor.label,
       price: item.price,
       cost: item.cost,
       size: item.size,
       label: item.label,
-      featuredImage: item.featuredImage,
+      featuredImageUrl: item.featuredImage,
       recurring
     }
 
@@ -35,7 +38,7 @@ export const addToCart = ({ firestore }, userID, profile, product, recurring, it
 
     // check if we need to add a new item
     if (!itemToUpdate.length) {
-      updatedItem = { cartQuantity: 1, ...sanitizedItem }
+      updatedItem = { quantity: 1, ...sanitizedItem }
       updatedCart.items.push({ ...updatedItem })
     }
     // check if there was an item within the cart already, we need to update the quantity count
@@ -43,7 +46,7 @@ export const addToCart = ({ firestore }, userID, profile, product, recurring, it
       updatedCart.items.map(cartItem => {
         if (cartItem.variantID === updatedItem.variantID && cartItem.productID === updatedItem.productID) {
           return {
-            cartQuantity: (cartItem.cartQuantity += 1),
+            quantity: (cartItem.quantity += 1),
             ...updatedItem
           }
         }
@@ -53,6 +56,7 @@ export const addToCart = ({ firestore }, userID, profile, product, recurring, it
 
     updatedCart.cartPrice += sanitizedItem.price
 
+    console.log(updatedCart)
     try {
       dispatch(asyncActionStart())
       firestore.update(`profiles/${userID}`, { shoppingCart: updatedCart })
@@ -90,13 +94,13 @@ export const removeFromCart = ({ firestore }, userID, profile, productID, item) 
       return
     }
 
-    // check if the item being removed has a cartQuantity of more than 1
+    // check if the item being removed has a quantity of more than 1
     // if it does remove 1 from the count
-    if (itemToRemove[0].cartQuantity > 1) {
+    if (itemToRemove[0].quantity > 1) {
       updatedCart.items.map(cartItem => {
         if (cartItem.variantID === item.variantID && cartItem.productID === productID) {
           return {
-            cartQuantity: (cartItem.cartQuantity -= 1),
+            quantity: (cartItem.quantity -= 1),
             ...cartItem
           }
         }
@@ -104,7 +108,7 @@ export const removeFromCart = ({ firestore }, userID, profile, productID, item) 
       })
     }
     // if the cartQuanity of that item is <= 1 remove the item
-    else if (itemToRemove[0].cartQuantity <= 1) {
+    else if (itemToRemove[0].quantity <= 1) {
       // filter out any variant that doesn't match the itemToRemove variant ID
       updatedCart.items = updatedCart.items.filter(cartItem => cartItem.productID !== itemToRemove[0].productID)
     }

@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useSelector, useDispatch } from 'react-redux'
 import { useFirestore } from 'react-redux-firebase'
+import { Formik, Form, Field } from 'formik'
 import { addToCart, removeFromCart } from './cartActions'
+import { QuantityInput } from '../../common/fields'
 
 const CartListItem = ({ item }) => {
   const firestore = useFirestore()
@@ -10,32 +12,58 @@ const CartListItem = ({ item }) => {
   const auth = useSelector(state => state.firebase.auth)
   const profile = useSelector(state => state.firebase.profile)
 
-  const removeItemHandler = () => {
-    dispatch(removeFromCart({ firestore }, auth.uid, profile, item.productID, item))
+  const initialValues = {
+    quantity: item.quantity
   }
 
   const addItemHandler = () => {
     const product = {
       id: item.productID,
-      name: item.productName
+      name: item.productName,
+      vendor: {
+        value: item.vendorID,
+        label: item.vendorName
+      }
     }
-
-    dispatch(addToCart({ firestore }, auth.uid, profile, product, false, item))
+    console.log('@DEBUG::02262020-113910-AddItem')
+    //dispatch(addToCart({ firestore }, auth.uid, profile, product, false, item))
   }
 
-  console.log('cart list item', item)
+  const removeItemHandler = () => {
+    console.log('@DEBUG::02262020-113917-RemoveItem')
+    //dispatch(removeFromCart({ firestore }, auth.uid, profile, item.productID, item))
+  }
+
+  function handleSubmit(values) {
+    console.log('@DEBUG::02262020-114247-handleSubmit')
+    console.log(values)
+  }
 
   return (
-    <div className="row">
+    <div>
       {JSON.stringify(item, null, 2)}
-      <button className="btn btn-link" onClick={addItemHandler}>
-        Add
-      </button>
-      <hr />
-      <button className="btn btn-link" onClick={removeItemHandler}>
-        Remove
-      </button>
-      quantity: {item.cartQuantity}
+      <br />
+      <Formik enableReinitialize initialValues={initialValues} onSubmit={values => handleSubmit(values)}>
+        {({ values, setFieldValue }) => (
+          <Form>
+            <Field
+              className="mb-0"
+              name="quantity"
+              type="number"
+              component={QuantityInput}
+              onAdd={addItemHandler}
+              onRemove={removeItemHandler}
+              onChange={({ target: { value } }) => {
+                setFieldValue('quantity', parseInt(value))
+                console.log('@DEBUG::02262020-105428-OnChange', parseInt(value))
+              }}
+              placeholder="0"
+              maskOptions={{ allowDecimal: false, requireDecimal: false }}
+              label="Quantity"
+            />
+          </Form>
+        )}
+      </Formik>
     </div>
   )
   /*

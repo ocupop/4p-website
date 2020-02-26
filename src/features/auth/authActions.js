@@ -10,4 +10,6 @@ export function logout({ firebase }) {
   return firebase.auth().signOut()
 }
 
-
+export const createNewUser = ({ firebase, values: { email, password, registerZipCode } }) => {
+  return firebase.createUser({ email, password }, { email, registerZipCode })
+}

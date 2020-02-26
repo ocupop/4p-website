@@ -97,12 +97,6 @@ const CreateSelect = ({
           })}
         />
       </div>
-      <p className="mt-4">
-        Already a Member?{' '}
-        <button type="button" className="btn btn-transparent text-mid" disabled>
-          <em>Sign in here</em>
-        </button>
-      </p>
     </>
   )
 }

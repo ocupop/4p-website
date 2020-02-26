@@ -39,23 +39,15 @@ const LoginForm = () => {
             }}>
             {() => (
               <Form>
-                <Field
-                  name="email"
-                  type="email"
-                  component={TextInput}
-                  placeholder="Enter Email"
-                  hint="Enter Email"
-                  label="Email"
-                />
+                <Field name="email" type="email" component={TextInput} placeholder="Enter Email" label="Email" />
                 <Field
                   name="password"
                   type="password"
                   component={TextInput}
                   placeholder="Enter Password"
-                  hint="Enter Password"
                   label="Password"
                 />
-                <button type="submit" className="btn btn-mid btn-block" disabled>
+                <button type="submit" className="btn btn-primary btn-block">
                   Submit
                 </button>
               </Form>
@@ -71,8 +63,7 @@ const LoginForm = () => {
             <div className="col-lg-6">
               <Button
                 onClick={() => socialLogin({ firebase, provider: 'facebook' })}
-                className="btn btn-mid btn-block"
-                disabled>
+                className="btn btn-primary btn-block">
                 Facebook
               </Button>
             </div>

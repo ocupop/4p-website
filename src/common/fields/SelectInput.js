@@ -1,6 +1,7 @@
 import React from 'react'
 import Select from 'react-select'
 import { Icon, Popup } from 'semantic-ui-react'
+import Label from './label'
 
 const groupStyles = {
   display: 'flex',
@@ -64,18 +65,7 @@ const SelectInput = ({
 }) => {
   return (
     <div className="form-group">
-      <label className={label ? '' : 'sr-only'}>
-        <span className="mr-2">{label}</span>
-        {hint && (
-          <Popup
-            trigger={<Icon name="question circle" color="black" />}
-            content={hint}
-            position="right center"
-            inverted
-            size="tiny"
-          />
-        )}
-      </label>
+      <Label label={label} hint={hint} />
 
       <Select
         {...field}

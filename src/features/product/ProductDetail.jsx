@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import ProductVariantSelect from './ProductVariants/ProductVariantSelect'
+import FeaturedProducts from './FeaturedProducts'
 
 const ProductDetail = ({ product }) => {
   const {
@@ -104,7 +105,9 @@ const ProductDetail = ({ product }) => {
           </div>
           <div className="row no-gutters">
             <div className="col-12">
-              <div className="content">{/* @TODO: Add logic required for recommended products */}</div>
+              <div className="content">
+                <FeaturedProducts vendorID={vendor.value} />
+              </div>
             </div>
           </div>
         </div>

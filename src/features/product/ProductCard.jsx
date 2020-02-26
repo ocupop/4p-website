@@ -14,10 +14,12 @@ const ProductCard = ({ product }) => {
         className="bg-image aspect-4x3"
         style={{ backgroundImage: `url(${defaultVariant.featuredImage})` }}
       />
-      <Link to={`/products/${product.id}`} className="card-body">
+      <div className="card-header">
         <h5 className="card-title">{product.name}</h5>
+      </div>
+      <Link to={`/products/${product.id}`} className="card-body">
         {vendor.name && <h6>{vendor.name}</h6>}
-        <div className="d-flex align-items-center justify-content-between">
+        <div className="d-flex align-items-center justify-content-between w-100">
           <div className="product-amount">
             {defaultVariant.name && defaultVariant.name}
             {defaultVariant.label && <em>{defaultVariant.label}</em>}

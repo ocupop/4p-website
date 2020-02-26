@@ -19,24 +19,28 @@ export const addToCart = ({ firestore }, userID, profile, productID, recurring, 
       cost: item.cost,
       quantity: item.quantity,
       label: item.label,
-      featuredImage: item.featuredImage
+      featuredImage: item.featuredImage,
+      productID,
+      recurring
     }
 
     const updatedCart = profile.shoppingCart
     let updatedItem = { ...sanitizedItem }
 
     // check the cart items
-    const itemToUpdate = updatedCart.items.filter(cartItem => cartItem.variantID === sanitizedItem.variantID)
+    const itemToUpdate = updatedCart.items.filter(
+      cartItem => cartItem.variantID === sanitizedItem.variantID && cartItem.productID === sanitizedItem.productID
+    )
 
     // check if we need to add a new item
     if (!itemToUpdate.length) {
       updatedItem = { cartQuantity: 1, ...sanitizedItem }
-      updatedCart.items.push({ productID, recurring, ...updatedItem })
+      updatedCart.items.push({ ...updatedItem })
     }
     // check if there was an item within the cart already, we need to update the quantity count
     else {
       updatedCart.items.map(cartItem => {
-        if (cartItem.variantID === updatedItem.variantID) {
+        if (cartItem.variantID === updatedItem.variantID && cartItem.productID === updatedItem.productID) {
           return {
             cartQuantity: (cartItem.cartQuantity += 1),
             ...updatedItem
@@ -76,7 +80,9 @@ export const removeFromCart = ({ firestore }, userID, profile, item) => {
       return
     }
 
-    const itemToRemove = updatedCart.items.filter(cartItem => cartItem.variantID === item.variantID)
+    const itemToRemove = updatedCart.items.filter(
+      cartItem => cartItem.variantID === item.variantID && cartItem.productID === sanitizedItem.productID
+    )
 
     // there is no item to remove
     if (!itemToRemove.length) {
@@ -87,7 +93,7 @@ export const removeFromCart = ({ firestore }, userID, profile, item) => {
     // if it does remove 1 from the count
     if (itemToRemove[0].cartQuantity > 1) {
       updatedCart.items.map(cartItem => {
-        if (cartItem.variantID === item.variantID) {
+        if (cartItem.variantID === item.variantID && cartItem.productID === sanitizedItem.productID) {
           return {
             cartQuantity: (cartItem.cartQuantity -= 1),
             ...cartItem

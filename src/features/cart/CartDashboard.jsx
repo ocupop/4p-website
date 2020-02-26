@@ -1,10 +1,20 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react'
+import { useSelector } from 'react-redux'
+import { useFirestore } from 'react-redux-firebase'
 // import PropTypes from 'prop-types'
+import { removeFromCart } from './cartActions'
 import CartList from './CartList'
+import ProductCard from '../product/ProductCard'
+import CartListItem from './CartListItem'
 
 const CartDashboard = () => {
   const items = []
+
+  const firestore = useFirestore()
+  const profile = useSelector(state => state.firebase.profile)
+  const { shoppingCart } = profile
+  console.log(profile && shoppingCart)
 
   return (
     <>
@@ -34,10 +44,14 @@ const CartDashboard = () => {
           </div>
           <hr className="row-border" />
           <div className="row">
-            <div className="col-12 col-lg-6">
+            <div className="col-12">
               <div className="content">
                 <h2>Your Weekly Delivery</h2>
-                <p>Delivery copy Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quos?</p>
+                {profile.shoppingCart && shoppingCart.items.length > 0 ? (
+                  shoppingCart.items.map(item => <CartListItem key={item.variantID} item={item} />)
+                ) : (
+                  <p>Uh Oh! Your cart is empty...</p>
+                )}
               </div>
             </div>
           </div>

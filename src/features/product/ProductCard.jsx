@@ -22,7 +22,7 @@ const ProductCard = ({ product }) => {
         {vendor.name && <h6>{vendor.name}</h6>}
         <div className="d-flex align-items-center justify-content-between w-100">
           <div className="product-amount">
-            {defaultVariant.name && defaultVariant.name}
+            {defaultVariant.size && defaultVariant.size}
             {defaultVariant.label && <em>{defaultVariant.label}</em>}
           </div>
           <div className="product-price">{formatMoney(defaultVariant.price)}</div>

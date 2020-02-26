@@ -41,7 +41,9 @@ const UserProfileForm = ({ profile }) => {
     email,
     phone,
     role,
-    billingAddress
+    billingAddress,
+    deliveryAddress,
+    deliveryLocation
   } = profile
 
   const initialValues = {
@@ -55,7 +57,9 @@ const UserProfileForm = ({ profile }) => {
     email,
     phone,
     role,
-    billingAddress
+    billingAddress,
+    deliveryAddress,
+    deliveryLocation
   }
 
   return (
@@ -152,12 +156,12 @@ const UserProfileForm = ({ profile }) => {
                   </div>
                   <div className="col-12 col-md-4">
                     <Field
-                      name="address.zip"
+                      name="zip"
                       type="text"
                       component={ZipCodeSelect}
                       options={zipOptions}
                       onChange={value => {
-                        setFieldValue('address.zip', value)
+                        setFieldValue('zip', value)
                         // TODO: Set error messagin for out of coverage
                       }}
                     />
@@ -167,12 +171,13 @@ const UserProfileForm = ({ profile }) => {
                 <div className="row">
                   <div className="col-12">
                     <Field
-                      name="location"
+                      name="deliveryAddress"
                       className="locationField"
                       hint="Start typing address or location name."
                       component={AddressInput}
-                      onChange={value => setFieldValue('location', value)}
-                      placeholder="Enter Location..."
+                      locationField="deliveryLocation"
+                      onChange={value => setFieldValue('deliveryAddress', value)}
+                      placeholder="Enter Address..."
                       label="Location"
                     />
                   </div>

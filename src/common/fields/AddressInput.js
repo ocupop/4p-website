@@ -12,6 +12,7 @@ const AddressInput = ({
   placeholder,
   required,
   field,
+  locationField = 'location',
   onChange,
   onSelect,
   form: { errors, touched, setFieldValue, values }
@@ -22,10 +23,7 @@ const AddressInput = ({
     mapInstance: null,
     mapApi: null
   })
-  const [
-    places
-    // setPlaces
-  ] = useState([])
+  const [places] = useState([])
   const [mapLocation, setMapLocation] = useState([])
 
   const {
@@ -71,10 +69,10 @@ const AddressInput = ({
                   _lng: results[0].geometry.location.lng()
                 }
               }
-              setFieldValue('location', location)
+              setFieldValue(locationField, location)
               updateMap(results[0])
             })
-            setFieldValue('address', address)
+            setFieldValue(field.name, address)
           }}>
           {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
             <>
@@ -109,10 +107,8 @@ const AddressInput = ({
 
       <div className="bg-dark text-white p-5">
         <div className="row">
-          <div className="d-none">
-            <small>{JSON.stringify(mapLocation, null, 2)}</small>
-          </div>
           <div className="col-12">
+            <small className="d-none">{JSON.stringify(mapLocation, null, 2)}</small>
             <GoogleMap
               defaultZoom={10}
               defaultCenter={DEFAULT_LOCATION}

@@ -9,7 +9,7 @@ const CartActions = () => {
   const product = useSelector(state => state.firestore.ordered.products && state.firestore.ordered.products[0])
 
   // Change this if you need the variant changed.
-  const activeVariant = product && product.variants[1]
+  const activeVariant = product && product.variants[0]
   return (
     <>
       <section>
@@ -19,9 +19,9 @@ const CartActions = () => {
               <h2>Example of Add To Cart Button</h2>
               <div>{JSON.stringify(activeVariant, null, 2)}</div>
 
-              {product && <AddToCart productID={product.id} item={activeVariant} />}
+              {product && <AddToCart product={product} item={activeVariant} />}
               <br />
-              {product && <RemoveFromCart item={activeVariant} />}
+              {product && <RemoveFromCart product={product} item={activeVariant} />}
             </div>
           </div>
         </div>

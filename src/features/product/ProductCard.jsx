@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import AddToCart from '../../features/cart/AddToCart'
+import { formatMoney } from '../../common/utils/helpers'
 
 const ProductCard = ({ product }) => {
   const { vendor } = product
@@ -24,7 +25,7 @@ const ProductCard = ({ product }) => {
             {defaultVariant.name && defaultVariant.name}
             {defaultVariant.label && <em>{defaultVariant.label}</em>}
           </div>
-          <div className="product-price">${defaultVariant.price}</div>
+          <div className="product-price">{formatMoney(defaultVariant.price)}</div>
         </div>
       </Link>
       <div className="card-footer d-flex align-items-center p-0">

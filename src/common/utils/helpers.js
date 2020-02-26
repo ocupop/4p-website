@@ -19,28 +19,17 @@ export const formatToPhone = number => {
   return `(${zip}) ${middle} - ${last}`
 }
 
-export const formatMoney = (amount, decimalCount = 2, decimal = '.', thousands = ',') => {
-  try {
-    decimalCount = Math.abs(decimalCount)
-    decimalCount = isNaN(decimalCount) ? 2 : decimalCount
+/**
+ * Returns a money amount
+ * For more information on Intl.NumberFormat see: https://stackoverflow.com/a/16233919
+ *
+ * @param {float} Money Amount
+ */
+export const formatMoney = moneyAmount => {
+  const fromatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD'
+  })
 
-    const negativeSign = amount < 0 ? '-' : ''
-
-    let i = parseInt((amount = Math.abs(Number(amount) || 0).toFixed(decimalCount))).toString()
-    let j = i.length > 3 ? i.length % 3 : 0
-
-    return (
-      negativeSign +
-      (j ? i.substr(0, j) + thousands : '') +
-      i.substr(j).replace(/(\d{3})(?=\d)/g, '$1' + thousands) +
-      (decimalCount
-        ? decimal +
-          Math.abs(amount - i)
-            .toFixed(decimalCount)
-            .slice(2)
-        : '')
-    )
-  } catch (e) {
-    console.log('Error formatting value:', e)
-  }
+  return fromatter.format(moneyAmount)
 }

@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Dropdown, Button } from 'react-bootstrap'
 import { openModal } from '../modal/modalActions'
 import CartSummaryItem from './CartSummaryItem'
+import { formatMoney } from '../../common/utils/helpers'
 
 const CartSummary = () => {
   const profile = useSelector(state => state.firebase.profile)
@@ -22,7 +23,7 @@ const CartSummary = () => {
           shoppingCart && (
             <Dropdown>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
-                <i className="ri-shopping-cart-fill mr-2" /> ${shoppingCart.cartPrice}
+                <i className="ri-shopping-cart-fill mr-2" /> {formatMoney(shoppingCart.cartPrice)}
               </Dropdown.Toggle>
               <Dropdown.Menu alignRight>
                 <div className="cart-summary">
@@ -35,7 +36,9 @@ const CartSummary = () => {
                   </div>
                   <div className="p-3">
                     {shoppingCart.items.length > 0 ? (
-                      shoppingCart.items.map(item => <CartSummaryItem key={item.variantID} item={item} />)
+                      shoppingCart.items.map(item => (
+                        <CartSummaryItem key={`${item.productID}_${item.variantID}`} item={item} />
+                      ))
                     ) : (
                       <p>Uh Oh! Your cart is empty...</p>
                     )}

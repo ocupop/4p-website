@@ -51,7 +51,7 @@ export const addToCart = ({ firestore }, userID, profile, product, recurring, it
       })
     }
 
-    updatedCart.cartPrice += sanitizedItem.cost
+    updatedCart.cartPrice += sanitizedItem.price
 
     try {
       dispatch(asyncActionStart())
@@ -110,7 +110,7 @@ export const removeFromCart = ({ firestore }, userID, profile, productID, item) 
     }
 
     // dont let the cart price drop below 0
-    updatedCart.cartPrice = updatedCart.cartPrice <= 0 ? 0 : (updatedCart.cartPrice -= item.cost)
+    updatedCart.cartPrice = updatedCart.cartPrice <= 0 ? 0 : (updatedCart.cartPrice -= item.price)
 
     try {
       dispatch(asyncActionStart())

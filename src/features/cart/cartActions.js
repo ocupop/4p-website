@@ -11,16 +11,17 @@ import { asyncActionStart, asyncActionFinish, asyncActionError } from '../../com
  * @param {bool} recurring
  * @param {Map} item
  */
-export const addToCart = ({ firestore }, userID, profile, productID, recurring, item) => {
+export const addToCart = ({ firestore }, userID, profile, product, recurring, item) => {
   return async dispatch => {
     const sanitizedItem = {
+      productID: product.id,
+      productName: product.name,
       variantID: item.variantID,
       price: item.price,
       cost: item.cost,
-      quantity: item.quantity,
+      size: item.size,
       label: item.label,
       featuredImage: item.featuredImage,
-      productID,
       recurring
     }
 
@@ -72,7 +73,7 @@ export const addToCart = ({ firestore }, userID, profile, productID, recurring, 
  * @param {Map} profile
  * @param {Map} item
  */
-export const removeFromCart = ({ firestore }, userID, profile, item) => {
+export const removeFromCart = ({ firestore }, userID, profile, productID, item) => {
   return async dispatch => {
     const updatedCart = profile.shoppingCart
     // validate that there are items to remove
@@ -81,7 +82,7 @@ export const removeFromCart = ({ firestore }, userID, profile, item) => {
     }
 
     const itemToRemove = updatedCart.items.filter(
-      cartItem => cartItem.variantID === item.variantID && cartItem.productID === sanitizedItem.productID
+      cartItem => cartItem.variantID === item.variantID && cartItem.productID === productID
     )
 
     // there is no item to remove
@@ -93,7 +94,7 @@ export const removeFromCart = ({ firestore }, userID, profile, item) => {
     // if it does remove 1 from the count
     if (itemToRemove[0].cartQuantity > 1) {
       updatedCart.items.map(cartItem => {
-        if (cartItem.variantID === item.variantID && cartItem.productID === sanitizedItem.productID) {
+        if (cartItem.variantID === item.variantID && cartItem.productID === productID) {
           return {
             cartQuantity: (cartItem.cartQuantity -= 1),
             ...cartItem
@@ -105,7 +106,7 @@ export const removeFromCart = ({ firestore }, userID, profile, item) => {
     // if the cartQuanity of that item is <= 1 remove the item
     else if (itemToRemove[0].cartQuantity <= 1) {
       // filter out any variant that doesn't match the itemToRemove variant ID
-      updatedCart.items = updatedCart.items.filter(cartItem => cartItem.variantID !== itemToRemove[0].variantID)
+      updatedCart.items = updatedCart.items.filter(cartItem => cartItem.productID !== itemToRemove[0].productID)
     }
 
     // dont let the cart price drop below 0

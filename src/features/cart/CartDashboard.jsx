@@ -14,7 +14,6 @@ const CartDashboard = () => {
   const firestore = useFirestore()
   const profile = useSelector(state => state.firebase.profile)
   const { shoppingCart } = profile
-  console.log(profile && shoppingCart)
 
   return (
     <>

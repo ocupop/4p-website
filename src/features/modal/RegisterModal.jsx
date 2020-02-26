@@ -1,13 +1,15 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
+import { isLoaded, isEmpty } from 'react-redux-firebase'
+import { useDispatch, useSelector } from 'react-redux'
 import { Modal } from 'react-bootstrap'
 import { closeModal } from './modalActions'
 import RegisterForm from '../auth/RegisterForm'
+import Notifications from '../user/Notifications'
 import logo from '../../common/assets/logo-vertical.svg'
 
-
-
 const RegisterModal = () => {
+  const auth = useSelector(state => state.firebase.auth)
+  const profile = useSelector(state => state.firebase.profile)
   const dispatch = useDispatch()
 
   return (
@@ -19,8 +21,13 @@ const RegisterModal = () => {
               <img src={logo} className="img-fluid" alt="4P Foods logo" />
             </div>
           </div>
-
-          <RegisterForm/>
+          {!isLoaded(auth) ? (
+            <LoadingComponent inverted />
+          ) : isEmpty(profile) ? (
+            <RegisterForm />
+          ) : (
+            <Notifications newProfile={true} />
+          )}
         </Modal.Body>
       </Modal>
     </>

@@ -56,7 +56,6 @@ export const addToCart = ({ firestore }, userID, profile, product, recurring, it
 
     updatedCart.cartPrice += sanitizedItem.price
 
-    console.log(updatedCart)
     try {
       dispatch(asyncActionStart())
       firestore.update(`profiles/${userID}`, { shoppingCart: updatedCart })

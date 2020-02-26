@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 import { useFirebase } from 'react-redux-firebase'
 import { Dropdown } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
 import { logout } from './authActions'
 import { openModal } from '../modal/modalActions'
-
 
 const SignedInMenu = ({ auth: { displayName, photoURL } }) => {
   const firebase = useFirebase()
@@ -26,14 +26,14 @@ const SignedInMenu = ({ auth: { displayName, photoURL } }) => {
           <Dropdown.Toggle variant="teal" id="dropdown-user">
             {photoURL ? (
               <img src={photoURL} className="img-avatar" alt={displayName} />
-            ):(
+            ) : (
               <i className="ri-user-fill" />
             )}
-             <span className="text-uppercase">{displayName}</span>
+            <span className="text-uppercase">{displayName}</span>
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Dropdown.Item>Profile</Dropdown.Item>
+            <Dropdown.Item href="/profile">Profile</Dropdown.Item>
             <Dropdown.Divider />
             <Dropdown.Item onClick={() => logout({ firebase })}>Logout</Dropdown.Item>
           </Dropdown.Menu>

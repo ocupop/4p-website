@@ -1,3 +1,12 @@
+.modal-header,
+.modal-footer {
+  border: 0;
+}
+
+.modal-content {
+  border-radius: 0;
+}
+
 .modal-body-content {
   background-color: $white;
   padding: 25px;
@@ -19,7 +28,7 @@
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0,0,0,0);
+    clip: rect(0, 0, 0, 0);
     border: 0;
   }
 }

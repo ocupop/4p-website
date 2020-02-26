@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
+import AddToCart from '../../features/cart/AddToCart'
+import { formatMoney } from '../../common/utils/helpers'
 
 const ProductCard = ({ product }) => {
   const { vendor } = product
@@ -8,29 +10,33 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="card product-card">
-      <Link to={`/products/${product.id}`}>
-        <div
-          className="bg-image aspect-4x3"
-          style={{ backgroundImage: `url(${defaultVariant.featuredImage})` }}
-        />
-        <div className="card-body">
-          <h5 className="card-title">{product.name}</h5>
-          <h6>{vendor.name}</h6>
-          <div className="d-flex align-items-center justify-content-between">
-            <div className="product-amount">{defaultVariant.name} <em>{defaultVariant.label}</em></div>
-            <div className="product-price">${defaultVariant.price}</div>
+      <Link
+        to={`/products/${product.id}`}
+        className="bg-image aspect-4x3"
+        style={{ backgroundImage: `url(${defaultVariant.featuredImage})` }}
+      />
+      <div className="card-header">
+        <h5 className="card-title">{product.name}</h5>
+      </div>
+      <Link to={`/products/${product.id}`} className="card-body">
+        {vendor.name && <h6>{vendor.name}</h6>}
+        <div className="d-flex align-items-center justify-content-between w-100">
+          <div className="product-amount">
+            {defaultVariant.name && defaultVariant.name}
+            {defaultVariant.label && <em>{defaultVariant.label}</em>}
           </div>
+          <div className="product-price">{formatMoney(defaultVariant.price)}</div>
         </div>
       </Link>
       <div className="card-footer d-flex align-items-center p-0">
-        {/* Add to Cart */}
+        <AddToCart product={product} item={defaultVariant} />
       </div>
     </div>
   )
 }
 
 ProductCard.propTypes = {
-  product: PropTypes.instanceOf(Object),
+  product: PropTypes.instanceOf(Object)
 }
 
 export default ProductCard

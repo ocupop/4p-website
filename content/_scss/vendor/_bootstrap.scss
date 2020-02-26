@@ -63,7 +63,7 @@
 
 // Tabs
 .nav-tabs {
-  border-bottom: 2px solid $beige;
+  border-bottom: 2px solid $tan;
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
@@ -79,7 +79,7 @@
     .nav-link {
       display: block;
       padding: 10px 5px;
-      background-color: $beige-dark;
+      background-color: $tan-dark;
       border-top-right-radius: 12px;
       border-top-left-radius: 12px;
       text-align: center;
@@ -95,7 +95,7 @@
       }
       &.active {
         color: $gray-700;
-        background-color: $beige;
+        background-color: $tan;
       }
     }
   }
@@ -111,7 +111,7 @@
 // Cards
 .card {
   border: 0;
-  background-color: $beige;
+  background-color: $tan;
   margin-bottom: 20px;
   .card-body,
   .card-footer {

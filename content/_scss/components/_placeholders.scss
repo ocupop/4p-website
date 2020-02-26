@@ -16,7 +16,33 @@ testimonials-carousel {
   background-color: $red;
   color: $white;
   &:after {
-    content: "React Component";
+    content: 'React Component';
+    display: block;
+    color: $white;
+  }
+}
+
+auth-nav {
+  background-color: $teal;
+  display: flex;
+  padding: 5px;
+  &::after {
+    content: 'Login';
+    display: block;
+    color: $white;
+  }
+}
+
+featured-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: $gray-400;
+  color: $white;
+  margin-bottom: 20px;
+  &:after {
+    content: 'Featured Products';
     display: block;
     color: $white;
   }

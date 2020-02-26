@@ -1,6 +1,6 @@
 {
   "extends": [
-    "airbnb",
+    "airbnb"
     "prettier",
     "prettier/react"
   ],
@@ -8,10 +8,7 @@
     "react/jsx-filename-extension": [
       "error",
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "extensions": [".js", ".jsx"]
       }
     ],
     "react/react-in-jsx-scope": 0,
@@ -19,9 +16,7 @@
     "react/forbid-prop-types": 1,
     "react/no-did-mount-set-state": 0,
     "react/prefer-stateless-function": 1,
-    "react/jsx-uses-vars": [
-      2
-    ],
+    "react/jsx-uses-vars": [2],
     "jsx-a11y/anchor-is-valid": 0,
     "no-underscore-dangle": 0,
     "arrow-body-style": 0,
@@ -42,9 +37,7 @@
   "globals": {
     "graphql": true
   },
-  "plugins": [
-    "prettier"
-  ],
+  "plugins": ["prettier"],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2017,

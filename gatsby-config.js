@@ -4,13 +4,12 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`
 })
 
-
 module.exports = {
   siteMetadata: {
     title: `4pFoods Website`,
     description: `Enter in default site meta description...`,
     lang: `en`,
-    author: `@ocupop`,
+    author: `@ocupop`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,16 +18,40 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        includePaths: ['content/_scss'],
-      },
+        includePaths: ['content/_scss']
+      }
     },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/content/img`,
-        name: 'images',
-      },
+        name: 'images'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: 'https://code.jquery.com/jquery-3.4.1.slim.min.js'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCAO2do5V-Ea98ilA49coabv_hShNnH6RU&libraries=places'
+      }
     },
     // Getting UI Elements
     {
@@ -41,9 +64,9 @@ module.exports = {
           elements: `
             slug: String!
             output: String!
-          `,
-        },
-      },
+          `
+        }
+      }
     },
     // Getting pages
     {
@@ -57,9 +80,9 @@ module.exports = {
             layout: String
             title: String
             content: String
-          `,
-        },
-      },
+          `
+        }
+      }
     },
     // Getting Farmers
     {
@@ -77,8 +100,8 @@ module.exports = {
             date: String
             vendorID: String
           `
-        },
-      },
+        }
+      }
     },
     // Getting Events
     {
@@ -95,8 +118,8 @@ module.exports = {
             slug: String
             date: String
           `
-        },
-      },
+        }
+      }
     },
     // Getting Posts
     {
@@ -114,8 +137,8 @@ module.exports = {
             date: String
             slug: String
           `
-        },
-      },
+        }
+      }
     },
     // Getting Team
     {
@@ -132,8 +155,8 @@ module.exports = {
             slug: String
             date: String
           `
-        },
-      },
+        }
+      }
     },
     // Getting Careers
     {
@@ -150,8 +173,8 @@ module.exports = {
             slug: String
             date: String
           `
-        },
-      },
+        }
+      }
     },
     // Getting content from firestore
     {
@@ -161,13 +184,15 @@ module.exports = {
           type: process.env.GATSBY_FIREBASE_TYPE,
           project_id: process.env.GATSBY_FIREBASE_PROJECT_ID,
           private_key_id: process.env.GATSBY_FIREBASE_PRIVATE_KEY_ID,
-          private_key: process.env.NETLIFY ? JSON.parse(process.env.GATSBY_FIREBASE_PRIVATE_KEY) : process.env.GATSBY_FIREBASE_PRIVATE_KEY,
+          private_key: process.env.NETLIFY
+            ? JSON.parse(process.env.GATSBY_FIREBASE_PRIVATE_KEY)
+            : process.env.GATSBY_FIREBASE_PRIVATE_KEY,
           client_email: process.env.GATSBY_FIREBASE_CLIENT_EMAIL,
           client_id: process.env.GATSBY_FIREBASE_CLIENT_ID,
           auth_uri: process.env.GATSBY_FIREBASE_AUTH_URI,
           token_uri: process.env.GATSBY_FIREBASE_TOKEN_URI,
           auth_provider_x509_cert_url: process.env.GATSBY_FIREBASE_PROVIDER_X509_CERT_URL,
-          client_x509_cert_url: process.env.GATSBY_FIREBASE_X509_CERT_URL,
+          client_x509_cert_url: process.env.GATSBY_FIREBASE_X509_CERT_URL
         },
         databaseURL: process.env.GATSBY_FIREBASE_DATABASE_URL,
         // appConfig: {
@@ -186,14 +211,14 @@ module.exports = {
             collection: 'products',
             map: doc => ({
               name: doc.name,
-              category: doc.category.label,
-              department: doc.department.label,
+              category: doc.category ? doc.category.label : '',
+              department: doc.department ? doc.department.label : '',
               ingredients: doc.ingredients,
               storageTips: doc.storageTips,
               tags: doc.tags,
               variants: doc.variants,
-              vendor___NODE: doc.vendor.value
-            }),
+              vendor___NODE: doc.vendor ? doc.vendor.value : ''
+            })
           },
           {
             type: 'Vendor',
@@ -203,9 +228,10 @@ module.exports = {
               description: doc.description,
               website: doc.website,
               location: doc.location,
-              featuredImage: doc.images[0]
-            }),
-          },
+              logo: doc.logo,
+              featuredImage: doc.vendorImages ? doc.vendorImages[0] : {}
+            })
+          }
           // {
           //   type: 'Quote',
           //   collection: 'quotes',
@@ -221,8 +247,8 @@ module.exports = {
           //     name: doc.name,
           //   }),
           // },
-        ],
-      },
+        ]
+      }
     },
 
     {
@@ -234,8 +260,8 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/img/4p-foods-logo-color.png`, // This path is relative to the root of the site.
-      },
+        icon: `content/img/4p-foods-logo-color.png` // This path is relative to the root of the site.
+      }
     },
 
     // {
@@ -285,7 +311,7 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
+    'gatsby-plugin-netlify' // make sure to keep it last in the array
   ],
   // for avoiding CORS while developing Netlify Functions locally
   // read more: https://www.gatsbyjs.org/docs/api-proxy/#advanced-proxying
@@ -295,9 +321,9 @@ module.exports = {
       proxy({
         target: 'http://localhost:9000',
         pathRewrite: {
-          '/.netlify/functions/': '',
-        },
-      }),
+          '/.netlify/functions/': ''
+        }
+      })
     )
-  },
+  }
 }

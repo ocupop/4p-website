@@ -1,5 +1,5 @@
 .delivery-schedule-item {
-  background-color: $beige;
+  background-color: $tan;
   .delivery-date {
     display: flex;
     align-items: center;
@@ -11,7 +11,7 @@
     display: flex;
     button {
       width: 50%;
-      background-color: $beige-dark;
+      background-color: $tan-dark;
       color: $gray-600;
       text-transform: uppercase;
       border: 0;

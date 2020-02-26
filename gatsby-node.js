@@ -3,23 +3,18 @@ const path = require(`path`)
 // const _ = require(`lodash`)
 // const slugify = require('slugify')
 
-
-exports.onCreateWebpackConfig = ({
-  stage,
-  actions,
-  getConfig
-}) => {
+exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
   if (stage === 'build-html') {
     actions.setWebpackConfig({
-      externals: getConfig().externals.concat(function (context, request, callback) {
-        const regex = /^@?firebase(\/(.+))?/;
+      externals: getConfig().externals.concat(function(context, request, callback) {
+        const regex = /^@?firebase(\/(.+))?/
         // exclude firebase products from being bundled, so they will be loaded using require() at runtime.
         if (regex.test(request)) {
-          return callback(null, `umd ${request}`);
+          return callback(null, `umd ${request}`)
         }
-        callback();
+        callback()
       })
-    });
+    })
   }
 }
 
@@ -27,7 +22,6 @@ exports.onCreateWebpackConfig = ({
 // CREATE PAGES
 // ------------------------
 exports.createPages = async ({ graphql, actions: { createPage } }) => {
-
   await graphql(`
     query {
       allPages {
@@ -85,57 +79,46 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         }
       }
     }
-  `).then(({
-    data: {
-      allPages: {
-        edges: pages
-      },
-      allFarmers: {
-        edges: farmers
-      },
-      allEvents: {
-        edges: events
-      },
-      allPosts: {
-        edges: posts
-      },
-      allTeam: {
-        edges: team
-      },
-      allCareers: {
-        edges: careers
+  `).then(
+    ({
+      data: {
+        allPages: { edges: pages },
+        allFarmers: { edges: farmers },
+        allEvents: { edges: events },
+        allPosts: { edges: posts },
+        allTeam: { edges: team },
+        allCareers: { edges: careers }
       }
+    }) => {
+      const collections = [...farmers, ...events, ...posts, ...team, ...careers]
 
+      // Build Web Pages
+      pages.forEach(({ node: { layout, pageUrl, id } }) => {
+        const component = path.resolve(`./src/templates/${layout}.jsx`)
+
+        createPage({
+          component,
+          path: pageUrl,
+          context: {
+            id
+          }
+        })
+      })
+
+      // Build Collection Pages
+      collections.forEach(({ node: { layout, url, id } }) => {
+        const component = path.resolve(`./src/templates/${layout}.jsx`)
+
+        createPage({
+          component,
+          path: url,
+          context: {
+            id
+          }
+        })
+      })
     }
-  }) => {
-    const collections = [...farmers, ...events, ...posts, ...team, ...careers]
-
-    // Build Web Pages
-    pages.forEach(({ node: { layout, pageUrl, id } }) => {
-      const component = path.resolve(`./src/templates/${layout}.jsx`)
-
-      createPage({
-        component,
-        path: pageUrl,
-        context: {
-          id,
-        },
-      })
-    })
-
-    // Build Collection Pages
-    collections.forEach(({ node: { layout, url, id } }) => {
-      const component = path.resolve(`./src/templates/${layout}.jsx`)
-
-      createPage({
-        component,
-        path: url,
-        context: {
-          id,
-        },
-      })
-    })
-  })
+  )
 
   // Product Pages
   await graphql(`
@@ -148,20 +131,25 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
         }
       }
     }
-  `).then(({ data: { allProduct: { edges: products } } }) => {
-    // Build Web Pages
-    products.forEach(({ node: { id } }) => {
-      createPage({
-        component: path.resolve(`./src/templates/product.jsx`),
-        path: `products/${id}`,
-        context: {
-          id,
-        },
+  `).then(
+    ({
+      data: {
+        allProduct: { edges: products }
+      }
+    }) => {
+      // Build Web Pages
+      products.forEach(({ node: { id } }) => {
+        createPage({
+          component: path.resolve(`./src/templates/product.jsx`),
+          path: `products/${id}`,
+          context: {
+            id
+          }
+        })
       })
-    })
-  })
+    }
+  )
 }
-
 
 // ------------------------
 // ON CREATE NODES

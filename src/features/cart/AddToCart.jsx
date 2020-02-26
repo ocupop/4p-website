@@ -1,38 +1,43 @@
-import React, { useEffect, useState } from 'react'
-import PropTypes from 'prop-types'
-import useCart from './useCart'
-import { SINGLE_BAG, RECURRING_BAG } from '../../common/constants/BagTypes'
+import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { useFirestore } from 'react-redux-firebase'
+import PropTypes, { string } from 'prop-types'
+import { addToCart } from './cartActions'
 
-const AddToCart = ({ item }) => {
-  const { addToCart } = useCart({ author: { id: 123 } })
-  const [buttonDisabled, isButtonDisabled] = useState(false)
-
-  useEffect(() => {
-    if (
-      (bagType === SINGLE_BAG && item.singlePurchase === false) ||
-      (bagType === RECURRING_BAG && item.recurringPurchase === false)
-    ) {
-      isButtonDisabled(true)
-    }
-  }, [item])
+const AddToCart = ({ product, item }) => {
+  const firestore = useFirestore()
+  const dispatch = useDispatch()
+  const auth = useSelector(state => state.firebase.auth)
+  const profile = useSelector(state => state.firebase.profile)
 
   return (
     <>
       <button
         type="button"
         className="product-button w-50"
-        disabled={buttonDisabled}
-        onClick={() => addToCart(item, bagType)}>
-        {children}
+        disabled={item && item.singlePurchase === false}
+        onClick={() => {
+          dispatch(addToCart({ firestore }, auth.uid, profile, product, false, item))
+        }}>
+        Add Single Item
+      </button>
+
+      <button
+        type="button"
+        className="product-button w-50"
+        disabled={item && item.recurringPurchase === false}
+        onClick={() => {
+          dispatch(addToCart({ firestore }, auth.uid, profile, product, true, item))
+        }}>
+        Add Weekly Item
       </button>
     </>
   )
 }
 
 AddToCart.propTypes = {
-  children: PropTypes.node,
-  bagType: PropTypes.string,
-  item: PropTypes.instanceOf(Object),
+  productID: PropTypes.string,
+  item: PropTypes.instanceOf(Object)
 }
 
 export default AddToCart

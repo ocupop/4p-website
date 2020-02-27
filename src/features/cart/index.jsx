@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useFirebase, isLoaded, isEmpty } from 'react-redux-firebase'
 import { Formik, Form, FieldArray } from 'formik'
-import FormikDebug from '../../common/utils/FormikDebug'
+// import FormikDebug from '../../common/utils/FormikDebug'
 import LoadingComponent from '../../common/ui/LoadingComponent'
 import CartItems from './CartItems'
 import CartTotals from './CartTotals'
@@ -81,7 +81,7 @@ const Cart = () => {
                     </>
                   )}
 
-                  <FormikDebug />
+                  {/* <FormikDebug /> */}
                 </Form>
               )}
             </Formik>

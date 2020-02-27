@@ -42,7 +42,7 @@ const CartItems = ({ move, swap, push, insert, unshift, pop, remove, form }) => 
                     className="mb-0"
                     name={`items[${index}].quantity`}
                     component={QuantityInput}
-                    onChange={value => setFieldValue(`items[${index}].quantity`, value)}
+                    onChange={({ target: { value } }) => setFieldValue(`items[${index}].quantity`, parseInt(value))}
                     placeholder="0"
                   />
                   <div className="actions show-on-hover ml-5">

@@ -28,7 +28,7 @@ const QuantityInput = ({
   onAdd,
   onRemove,
   maskOptions,
-  form: { errors, touched }
+  form: { errors, touched, setFieldValue }
 }) => {
   const status = touched[field.name] && errors[field.name] ? `is-invalid` : ``
   const numberMask = createNumberMask({
@@ -40,7 +40,7 @@ const QuantityInput = ({
     <div className={`form-group qty-input ${className}`}>
       <Label label={label} hint={hint} />
       <div className="input-group">
-        <button onClick={() => console.log('subtract')} className="btn btn-mid">
+        <button onClick={() => setFieldValue(field.name, field.value - 1)} className="btn btn-mid">
           <i className="ri-subtract-line" />
         </button>
         <MaskedInput
@@ -52,7 +52,7 @@ const QuantityInput = ({
           required={required}
         />
 
-        <button onClick={() => console.log('add')} className="btn btn-mid">
+        <button onClick={() => setFieldValue(field.name, field.value + 1)} className="btn btn-mid">
           <i className="ri-add-line" />
         </button>
       </div>

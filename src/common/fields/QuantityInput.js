@@ -5,14 +5,14 @@ import createNumberMask from 'text-mask-addons/dist/createNumberMask'
 
 const defaultMaskOptions = {
   prefix: '',
-  suffix: '',
-  includeThousandsSeparator: true,
-  thousandsSeparatorSymbol: ',',
-  allowDecimal: true,
-  decimalSymbol: '.',
-  decimalLimit: 2, // how many digits allowed after the decimal
+  // suffix: '',
+  includeThousandsSeparator: false,
+  // thousandsSeparatorSymbol: ',',
+  allowDecimal: false,
+  // decimalSymbol: '.',
+  // decimalLimit: 2, // how many digits allowed after the decimal
   integerLimit: 3, // limit length of integer numbers
-  requireDecimal: true,
+  // requireDecimal: true,
   allowNegative: false,
   allowLeadingZeroes: false
 }
@@ -20,7 +20,6 @@ const defaultMaskOptions = {
 const QuantityInput = ({
   className,
   hint,
-  type,
   label,
   placeholder,
   required,
@@ -38,7 +37,25 @@ const QuantityInput = ({
   })
 
   return (
-    <div className={`form-group ${className}`}>
+    <div className={`form-group qty-input ${className}`}>
+      <Label label={label} hint={hint} />
+      <div className="input-group">
+        <button onClick={() => console.log('subtract')} className="btn btn-mid">
+          <i className="ri-subtract-line" />
+        </button>
+        <MaskedInput
+          mask={numberMask}
+          className={`form-control mt-0 ${status}`}
+          {...field}
+          onChange={onChange}
+          placeholder={placeholder}
+          required={required}
+        />
+
+        <button onClick={() => console.log('add')} className="btn btn-mid">
+          <i className="ri-add-line" />
+        </button>
+      </div>
       {/* <button
         className="btn btn-link"
         onClick={event => {
@@ -51,16 +68,7 @@ const QuantityInput = ({
       <button className="btn btn-link" onClick={onRemove}>
         -minus-
       </button> */}
-      <Label label={label} hint={hint} />
-      <MaskedInput
-        mask={numberMask}
-        className={`form-control ${status}`}
-        {...field}
-        onChange={onChange}
-        placeholder={placeholder}
-        type={type}
-        required={required}
-      />
+
       {touched[field.name] && errors[field.name] && <div className="invalid-feedback">{errors[field.name]}</div>}
     </div>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Field } from 'formik'
 // import { removeFromCart, updateItemQuantity makeRecurring } from './cartActions'
-import { QuantityInput, TextInput } from '../../common/fields'
+import { QuantityInput } from '../../common/fields'
 import { formatMoney } from '../../common/utils/helpers'
 
 const CartItems = ({ move, swap, push, insert, unshift, pop, remove, form }) => {
@@ -15,7 +15,7 @@ const CartItems = ({ move, swap, push, insert, unshift, pop, remove, form }) => 
     <ul className="list-group">
       {items &&
         items.map((item, index) => (
-          <li className="list-group-item">
+          <li key={`${item.productID}_${item.variantID}`} className="list-group-item">
             <div className="row">
               <div className="col-3 col-md-1">
                 <div
@@ -41,13 +41,12 @@ const CartItems = ({ move, swap, push, insert, unshift, pop, remove, form }) => 
                   <Field
                     className="mb-0"
                     name={`items[${index}].quantity`}
-                    type="number"
                     component={QuantityInput}
                     onChange={value => setFieldValue(`items[${index}].quantity`, value)}
                     placeholder="0"
                   />
-                  <div className="actions">
-                    <button onClick={() => console.log('remove')} className="btn btn-transparent text-danger">
+                  <div className="actions show-on-hover ml-5">
+                    <button onClick={() => console.log('remove item')} className="btn btn-danger">
                       <i className="ri-delete-bin-line" />
                     </button>
                   </div>

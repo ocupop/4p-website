@@ -1,14 +1,19 @@
 // Buttons
 .btn {
   font-family: $headings-font-family;
-  padding: 0.5rem 1.25rem;
+  // padding: 0.5rem 1.25rem;
   text-transform: uppercase;
   font-weight: 600;
   color: $white;
   border: 0;
+  border-radius: 0 !important;
   @include transition(0.3s);
   &:hover {
     color: $white;
+  }
+  &:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
   }
   &.btn-outline-white {
     border: 1px solid $white;
@@ -48,8 +53,21 @@
   .list-group-item {
     border: 0;
     border-left: 5px solid $gray-100;
+    @include transition();
+    // TB: This should probably go somewhere else, but is worth talking through where to put this utility class
+    .actions.show-on-hover {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      @include transition();
+    }
     &:hover {
       border-color: $primary;
+      .actions {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+      }
     }
   }
 }

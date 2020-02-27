@@ -21,17 +21,7 @@ const FeaturedProducts = ({ vendorid: vendorID }) => {
     }
   ])
 
-  const products = useSelector(state => {
-    const featuredProductsObject = state.firestore.data[featuredProducts]
-    const productsObject = []
-    if (featuredProductsObject) {
-      Object.keys(featuredProductsObject).forEach(function(item) {
-        productsObject.push({ id: item, ...featuredProductsObject[item] })
-      })
-    }
-
-    return productsObject
-  })
+  const products = useSelector(state => state.firestore.ordered.featuredProducts)
 
   return (
     <>

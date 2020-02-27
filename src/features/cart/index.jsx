@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react'
 // import PropTypes from 'prop-types'
 import { useSelector, useDispatch } from 'react-redux'
-import { useFirebase, useFirestore, isLoaded, isEmpty } from 'react-redux-firebase'
-import { Formik, Field, Form, FieldArray } from 'formik'
+import { useFirebase, isLoaded, isEmpty } from 'react-redux-firebase'
+import { Formik, Form, FieldArray } from 'formik'
 import FormikDebug from '../../common/utils/FormikDebug'
-
+import LoadingComponent from '../../common/ui/LoadingComponent'
 import CartItems from './CartItems'
 import CartTotals from './CartTotals'
-import FeaturedProducts from '../product/FeaturedProducts'
 
 import { updateCart } from './cartActions'
+import { openModal } from '../modal/modalActions'
+import { formatDate } from '../../common/utils/helpers'
 
 const Cart = () => {
   const dispatch = useDispatch()
@@ -28,6 +29,38 @@ const Cart = () => {
 
   return (
     <>
+      {!isLoaded(profile) ? (
+        <LoadingComponent inverted />
+      ) : (
+        <>
+          <div className="row">
+            <div className="col-12">
+              <div className="d-md-flex align-items-center justify-content-between">
+                {!isEmpty(profile) && (
+                  <>
+                    <h1 className="d-md-inline-block">Your cart</h1>
+                    <div className="delivery-details d-md-flex align-items-center">
+                      <span className="text-uppercase">
+                        Your next delivery
+                        <strong className="ml-md-2">{formatDate('')}</strong>
+                      </span>
+                      <a href="#">
+                        <small>
+                          Edit Delivery
+                          <br />
+                          Schedule
+                        </small>
+                      </a>
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+          <hr />
+        </>
+      )}
+
       {cart && cart.items.length > 0 ? (
         <div className="row">
           <div className="col-12">
@@ -44,11 +77,11 @@ const Cart = () => {
                     </button>
                   ) : (
                     <>
-                      <CartTotals />
+                      <CartTotals shoppingCart={shoppingCart} />
                     </>
                   )}
 
-                  {/* <FormikDebug /> */}
+                  <FormikDebug />
                 </Form>
               )}
             </Formik>
@@ -57,19 +90,17 @@ const Cart = () => {
       ) : (
         <div className="row justify-content-center">
           <div className="col-12 col-md-6">
-            {/* {!isLoaded(profile) ? (
-                  <LoadingComponent inverted />
-                ) : (
-                  isEmpty(profile) ? (
-                    <div>Test</div>
-                  )
-                } */}
-            {profile ? (
-              <div className="alert alert-warning">
+            {isEmpty(profile) ? (
+              <div className="alert alert-warning text-center">
                 <p>
-                  You don't have anything in your cart. Are you afraid that we might not guess where you live? Try
-                  signing up now and confirm that we have your address.
+                  <strong>You don't have anything in your cart!</strong>
+                  <br />
+                  Are you afraid that we might not guess where you live? Try signing up now and confirm that we have
+                  your address!
                 </p>
+                <button type="button" className="btn btn-primary" onClick={() => dispatch(openModal('RegisterModal'))}>
+                  Sign-Up Now
+                </button>
               </div>
             ) : (
               <div className="alert alert-warning">

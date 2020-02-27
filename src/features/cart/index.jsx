@@ -61,7 +61,7 @@ const Cart = () => {
                       {values !== initialValues ? (
                         <button
                           type="button"
-                          onClick={() => dispatch(updateCart({ firebase, profile, newCart: values }))}
+                          onClick={() => dispatch(updateCart({ firebase, newCart: values }))}
                           className="btn btn-lg btn-block btn-outline-primary">
                           Save Changes
                         </button>

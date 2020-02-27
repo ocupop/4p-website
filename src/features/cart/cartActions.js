@@ -2,11 +2,25 @@ import { toastr } from 'react-redux-toastr'
 import _ from 'lodash'
 import { asyncActionStart, asyncActionFinish, asyncActionError } from '../../common/async/asyncActions'
 
-export const updateCart = ({ firebase, profile, newCart }) => {
+function _setCartPrice(cart) {
+  const cartPrice = cart.items.reduce((price, item) => {
+    return price + item.price * item.quantity
+  }, 0)
+
+  return parseFloat(cartPrice).toFixed(2)
+}
+
+export const updateCart = ({ firebase, newCart }) => {
   return async dispatch => {
     try {
       dispatch(asyncActionStart())
-      console.log('Sanity Check:', profile, newCart) // Console out what you need to accomplish the next step
+      // console.log('Sanity Check:', newCart) // Console out what you need to accomplish the next step
+
+      // Set the cartPrice value
+      newCart.cartPrice = _setCartPrice(newCart)
+
+      // Update the cart in Firebase using react-redux-firebase "Update Profile" method
+      // https://react-redux-firebase.com/docs/recipes/profile.html#update-profile
       firebase.updateProfile({ shoppingCart: newCart })
 
       toastr.success('Success', 'Your cart has been updated')

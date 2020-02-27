@@ -8,19 +8,20 @@ import FormikDebug from '../../common/utils/FormikDebug'
 import CartItems from './CartItems'
 import CartTotals from './CartTotals'
 
+import { updateCart } from './cartActions'
+
 const Cart = () => {
-  const [cartItems, setCartItems] = useState([])
-  const firestore = useFirestore()
+  const dispatch = useDispatch()
+  const [cart, setCart] = useState(null)
+  const firebase = useFirebase()
   const profile = useSelector(state => state.firebase.profile)
   const { shoppingCart } = profile
-  let initialValues = {
-    items: cartItems
-  }
+  let initialValues = cart
 
   useEffect(() => {
     // Check to see if the shoping cart exists as profile loads.
     if (shoppingCart) {
-      setCartItems(shoppingCart.items)
+      setCart(shoppingCart)
     }
   }, [profile])
 
@@ -49,18 +50,19 @@ const Cart = () => {
             </div>
           </div>
           <hr />
-          {cartItems && cartItems.length > 0 ? (
+          {cart && cart.items.length > 0 ? (
             <div className="row">
               <div className="col-12">
-                <Formik initialValues={initialValues} onSubmit={values => console.log(values)}>
+                <Formik initialValues={initialValues} onSubmit={() => console.log(values)}>
                   {({ values, setFieldValue }) => (
                     <Form>
+                      <p>{cart.cartPrice}</p>
                       <FieldArray name="items" component={CartItems} />
                       {values !== initialValues ? (
                         <button
                           type="button"
-                          className="btn btn-lg btn-block btn-outline-primary"
-                          onClick={() => console.log(values)}>
+                          onClick={() => dispatch(updateCart({ firebase, profile, newCart: values }))}
+                          className="btn btn-lg btn-block btn-outline-primary">
                           Save Changes
                         </button>
                       ) : (

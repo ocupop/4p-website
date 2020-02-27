@@ -2,13 +2,14 @@ import { toastr } from 'react-redux-toastr'
 import _ from 'lodash'
 import { asyncActionStart, asyncActionFinish, asyncActionError } from '../../common/async/asyncActions'
 
-export const updateItemQuantity = ({ firestore, profile, item, quantity }) => {
+export const updateCart = ({ firebase, profile, newCart }) => {
   return async dispatch => {
     try {
       dispatch(asyncActionStart())
-      // firestore.update(`/profiles/${profile.id}`, {...pass new quanity using spread operator})
+      console.log('Sanity Check:', profile, newCart) // Console out what you need to accomplish the next step
+      firebase.updateProfile({ shoppingCart: newCart })
 
-      toastr.success('Success', 'Quantity details have been updated')
+      toastr.success('Success', 'Your cart has been updated')
       dispatch(asyncActionFinish())
     } catch (error) {
       console.log(error)
@@ -19,7 +20,20 @@ export const updateItemQuantity = ({ firestore, profile, item, quantity }) => {
 }
 
 export const makeRecurring = ({ firestore, profile, item: { productID, variantID } }) => {
-  console.log(profile.id, productID, variantID) // Console out what you need to accomplish the next step
+  return async dispatch => {
+    try {
+      dispatch(asyncActionStart())
+      console.log(profile.id, productID, variantID) // Console out what you need to accomplish the next step
+      // firestore.update(`/profiles/${profile.id}`, { items })
+
+      toastr.success('Success', 'Your cart has been updated')
+      dispatch(asyncActionFinish())
+    } catch (error) {
+      console.log(error)
+      dispatch(asyncActionError())
+      toastr.error('Oops', 'There was an issue updating the database. Please try again.')
+    }
+  }
 }
 
 /**

@@ -1,6 +1,10 @@
 import format from 'date-fns/format'
-import { firestore } from 'firebase'
 
+/**
+ * Formats a date object
+ *
+ * @param {DateTime} date
+ */
 export const formatDate = date => {
   let dateFormated = ''
   if (date) {

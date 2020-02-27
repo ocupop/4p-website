@@ -57,7 +57,6 @@ const Cart = () => {
                 <Formik initialValues={initialValues} onSubmit={() => console.log(values)}>
                   {({ values, setFieldValue }) => (
                     <Form>
-                      <p>{cart.cartPrice}</p>
                       <FieldArray name="items" component={CartItems} />
                       {values !== initialValues ? (
                         <button
@@ -67,7 +66,9 @@ const Cart = () => {
                           Save Changes
                         </button>
                       ) : (
-                        <>{/* <CartTotals /> */}</>
+                        <>
+                          <CartTotals />
+                        </>
                       )}
 
                       {/* <FormikDebug /> */}

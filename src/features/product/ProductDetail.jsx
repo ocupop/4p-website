@@ -16,7 +16,6 @@ const ProductDetail = ({ product }) => {
     vendor
   } = product
 
-  console.log('vendor', vendor)
   return (
     <>
       <ProductVariantSelect productID={product.id} />
@@ -106,7 +105,7 @@ const ProductDetail = ({ product }) => {
           <div className="row no-gutters">
             <div className="col-12">
               <div className="content">
-                <FeaturedProducts vendorID={vendor.value} />
+                <FeaturedProducts vendorID={vendor.id} />
               </div>
             </div>
           </div>

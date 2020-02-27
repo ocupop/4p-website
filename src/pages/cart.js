@@ -1,17 +1,22 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
-import CartDashboard from '../features/cart/CartDashboard'
+import Cart from '../features/cart'
+import FeaturedProducts from '../features/product/FeaturedProducts'
 
-const cart = () => {
+const CartPage = () => {
   return (
     <>
-      <CartDashboard />
+      <section>
+        <div className="container">
+          <Cart />
+          <hr />
+          <FeaturedProducts />
+        </div>
+      </section>
     </>
   )
 }
 
-cart.propTypes = {
+CartPage.propTypes = {}
 
-}
-
-export default cart
+export default CartPage

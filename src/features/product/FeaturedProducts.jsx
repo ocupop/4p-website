@@ -11,28 +11,32 @@ const FeaturedProducts = ({ vendorid: vendorID }) => {
     whereClause.push(['vendor.value', '==', vendorID])
   }
 
+  const featuredProducts = 'featuredProducts'
   useFirestoreConnect([
     {
       collection: 'products',
       where: whereClause,
-      limit: 3
+      limit: 3,
+      storeAs: featuredProducts
     }
   ])
 
-  const products = useSelector(state => state.firestore.ordered.products)
+  const products = useSelector(state => state.firestore.ordered.featuredProducts)
 
   return (
-    <section id="featured-store" className="pt-0 position-relative">
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="responsive-card-deck cards-lg-3">
-              {products && products.map(product => <ProductCard product={product} key={product.id} />)}
+    <>
+      <section id="featured-store" className="pt-0 position-relative">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <div className="responsive-card-deck cards-lg-3">
+                {products && products.map(product => <ProductCard product={product} key={product.id} />)}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }
 

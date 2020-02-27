@@ -39,8 +39,12 @@ const ProductCard = ({ product }) => {
         {vendor.name && <h6>{item.vendorName}</h6>}
         <div className="d-flex align-items-center justify-content-between w-100">
           <div className="product-amount">
+<<<<<<< HEAD
             {item.size && item.size}
             {item.label && <em>{item.label}</em>}
+=======
+            {defaultVariant.size && defaultVariant.size} {defaultVariant.label && <em>{defaultVariant.label}</em>}
+>>>>>>> 446def84386d0e325d703da10627d9f9c767183e
           </div>
           <div className="product-price">{formatMoney(item.price)}</div>
         </div>

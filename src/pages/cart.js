@@ -1,17 +1,15 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
-import CartDashboard from '../features/cart/CartDashboard'
+import Cart from '../features/cart'
 
 const cart = () => {
   return (
     <>
-      <CartDashboard />
+      <Cart />
     </>
   )
 }
 
-cart.propTypes = {
-
-}
+cart.propTypes = {}
 
 export default cart

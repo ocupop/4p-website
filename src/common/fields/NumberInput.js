@@ -1,5 +1,5 @@
-import React from "react"
-import FieldHint from './FieldHint'
+import React from 'react'
+import Label from './label'
 import MaskedInput from 'react-text-mask'
 import createNumberMask from 'text-mask-addons/dist/createNumberMask'
 
@@ -14,7 +14,7 @@ const defaultMaskOptions = {
   integerLimit: 3, // limit length of integer numbers
   requireDecimal: true,
   allowNegative: false,
-  allowLeadingZeroes: false,
+  allowLeadingZeroes: false
 }
 
 const NumberInput = ({
@@ -31,17 +31,12 @@ const NumberInput = ({
   const status = touched[field.name] && errors[field.name] ? `is-invalid` : ``
   const numberMask = createNumberMask({
     ...defaultMaskOptions,
-    ...maskOptions,
+    ...maskOptions
   })
 
   return (
     <div className={`form-group ${className}`}>
-      <label className={label ? "" : "sr-only"}>
-        <span className="mr-2">{label}</span>
-        {hint && (
-          <FieldHint content={hint} />
-        )}
-      </label>
+      <Label label={label} hint={hint} />
       <MaskedInput
         mask={numberMask}
         className={`form-control ${status}`}
@@ -50,12 +45,9 @@ const NumberInput = ({
         type={type}
         required={required}
       />
-      {touched[field.name] && errors[field.name] && (
-        <div className="invalid-feedback">{errors[field.name]}</div>
-      )}
+      {touched[field.name] && errors[field.name] && <div className="invalid-feedback">{errors[field.name]}</div>}
     </div>
   )
 }
 
-
-export default NumberInput;
+export default NumberInput

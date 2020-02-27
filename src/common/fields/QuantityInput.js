@@ -1,5 +1,5 @@
 import React from 'react'
-import FieldHint from './FieldHint'
+import Label from './label'
 import MaskedInput from 'react-text-mask'
 import createNumberMask from 'text-mask-addons/dist/createNumberMask'
 
@@ -39,7 +39,7 @@ const QuantityInput = ({
 
   return (
     <div className={`form-group ${className}`}>
-      <button
+      {/* <button
         className="btn btn-link"
         onClick={event => {
           event.preventDefault()
@@ -50,11 +50,8 @@ const QuantityInput = ({
       <br />
       <button className="btn btn-link" onClick={onRemove}>
         -minus-
-      </button>
-      <label className={label ? '' : 'sr-only'}>
-        <span className="mr-2">{label}</span>
-        {hint && <FieldHint content={hint} />}
-      </label>
+      </button> */}
+      <Label label={label} hint={hint} />
       <MaskedInput
         mask={numberMask}
         className={`form-control ${status}`}

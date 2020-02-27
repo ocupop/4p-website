@@ -26,7 +26,6 @@ function _cleanCart(cart) {
 
   //   return { ...duplicateItems[0], totalQuantity }
   // })
-
   // cart.items = cleanItems
 
   return cart

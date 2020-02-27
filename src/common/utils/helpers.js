@@ -1,8 +1,16 @@
 import format from 'date-fns/format'
 
+/**
+ * Formats a date object
+ *
+ * @param {DateTime} date
+ */
 export const formatDate = date => {
-  return date
-  // return format(new Date(date), 'MMMM dd, yyyy')
+  let dateFormated = ''
+  if (date) {
+    dateFormated = format(new Date(date), 'MMMM dd, yyyy')
+  }
+  return dateFormated
 }
 
 export const objectToArray = object => {

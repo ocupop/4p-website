@@ -1,8 +1,12 @@
 import format from 'date-fns/format'
+import { firestore } from 'firebase'
 
 export const formatDate = date => {
-  return date
-  // return format(new Date(date), 'MMMM dd, yyyy')
+  let dateFormated = ''
+  if (date) {
+    dateFormated = format(new Date(date), 'MMMM dd, yyyy')
+  }
+  return dateFormated
 }
 
 export const objectToArray = object => {

@@ -16,16 +16,20 @@ function _cleanCart(cart) {
   return cart
 }
 
+function _isItemInCart({ item: { productID, variantID }, cart }) {
+  return cart.items.filter(item => item.productID === productID && item.variantID === variantID).length
+}
+
 export const updateCart = ({ firebase, newCart }) => {
   return async dispatch => {
     try {
       dispatch(asyncActionStart())
       // console.log('Sanity Check:', newCart) // Console out what you need to accomplish the next step
 
-      // Clean up my cart
+      // Clean up cart
       newCart = _cleanCart(newCart)
 
-      // Set the cartPrice value
+      // Set the cartPrice
       newCart.cartPrice = _setCartPrice(newCart)
 
       // Update the cart in Firebase using react-redux-firebase "Update Profile" method
@@ -33,6 +37,33 @@ export const updateCart = ({ firebase, newCart }) => {
       firebase.updateProfile({ shoppingCart: newCart })
 
       toastr.success('Success', 'Your cart has been updated')
+      dispatch(asyncActionFinish())
+    } catch (error) {
+      console.log(error)
+      dispatch(asyncActionError())
+      toastr.error('Oops', 'There was an issue updating the database. Please try again.')
+    }
+  }
+}
+
+export const addToCart = ({ firebase, cart, item }) => {
+  return async dispatch => {
+    try {
+      dispatch(asyncActionStart())
+      // console.log('Sanity Check:', item, cart) // Console out what you need to accomplish the next step
+      cart.items.push(item)
+
+      // Clean up cart
+      let newCart = _cleanCart(cart)
+
+      // Set the cartPrice
+      newCart.cartPrice = _setCartPrice(newCart)
+
+      // Update the cart in Firebase using react-redux-firebase "Update Profile" method
+      // https://react-redux-firebase.com/docs/recipes/profile.html#update-profile
+      firebase.updateProfile({ shoppingCart: newCart })
+
+      toastr.success('Success', 'Item has been added to your cart')
       dispatch(asyncActionFinish())
     } catch (error) {
       console.log(error)
@@ -68,64 +99,64 @@ export const makeRecurring = ({ firestore, profile, item: { productID, variantID
  * @param {bool} recurring
  * @param {Map} item
  */
-export const addToCart = ({ firestore }, userID, profile, product, recurring, item) => {
-  return async dispatch => {
-    const sanitizedItem = {
-      productID: product.id,
-      productName: product.name,
-      variantID: item.variantID,
-      sku: item.sku,
-      vendorID: product.vendor.value,
-      vendorName: product.vendor.label,
-      price: item.price,
-      cost: item.cost,
-      size: item.size,
-      label: item.label,
-      featuredImageUrl: item.featuredImage,
-      recurring
-    }
+// export const addToCart = ({ firestore }, userID, profile, product, recurring, item) => {
+//   return async dispatch => {
+//     const sanitizedItem = {
+//       productID: product.id,
+//       productName: product.name,
+//       variantID: item.variantID,
+//       sku: item.sku,
+//       vendorID: product.vendor.value,
+//       vendorName: product.vendor.label,
+//       price: item.price,
+//       cost: item.cost,
+//       size: item.size,
+//       label: item.label,
+//       featuredImageUrl: item.featuredImage,
+//       recurring
+//     }
 
-    const updatedCart = profile.shoppingCart
-    let updatedItem = { ...sanitizedItem }
+//     const updatedCart = profile.shoppingCart
+//     let updatedItem = { ...sanitizedItem }
 
-    // check the cart items
-    const itemToUpdate = updatedCart.items.filter(
-      cartItem => cartItem.variantID === sanitizedItem.variantID && cartItem.productID === sanitizedItem.productID
-    )
+//     // check the cart items
+//     const itemToUpdate = updatedCart.items.filter(
+//       cartItem => cartItem.variantID === sanitizedItem.variantID && cartItem.productID === sanitizedItem.productID
+//     )
 
-    // check if we need to add a new item
-    if (!itemToUpdate.length) {
-      updatedItem = { quantity: 1, ...sanitizedItem }
-      updatedCart.items.push({ ...updatedItem })
-    }
-    // check if there was an item within the cart already, we need to update the quantity count
-    else {
-      updatedCart.items.map(cartItem => {
-        if (cartItem.variantID === updatedItem.variantID && cartItem.productID === updatedItem.productID) {
-          return {
-            quantity: (cartItem.quantity += 1),
-            ...updatedItem
-          }
-        }
-        return updatedItem
-      })
-    }
+//     // check if we need to add a new item
+//     if (!itemToUpdate.length) {
+//       updatedItem = { quantity: 1, ...sanitizedItem }
+//       updatedCart.items.push({ ...updatedItem })
+//     }
+//     // check if there was an item within the cart already, we need to update the quantity count
+//     else {
+//       updatedCart.items.map(cartItem => {
+//         if (cartItem.variantID === updatedItem.variantID && cartItem.productID === updatedItem.productID) {
+//           return {
+//             quantity: (cartItem.quantity += 1),
+//             ...updatedItem
+//           }
+//         }
+//         return updatedItem
+//       })
+//     }
 
-    updatedCart.cartPrice += sanitizedItem.price
+//     updatedCart.cartPrice += sanitizedItem.price
 
-    console.log(updatedCart)
-    try {
-      dispatch(asyncActionStart())
-      firestore.update(`profiles/${userID}`, { shoppingCart: updatedCart })
-      toastr.success('Success', 'Product has been added')
-      dispatch(asyncActionFinish())
-    } catch (error) {
-      console.log(error)
-      dispatch(asyncActionError())
-      toastr.error('Oops', 'There was an issue adding to Firestore')
-    }
-  }
-}
+//     console.log(updatedCart)
+//     try {
+//       dispatch(asyncActionStart())
+//       firestore.update(`profiles/${userID}`, { shoppingCart: updatedCart })
+//       toastr.success('Success', 'Product has been added')
+//       dispatch(asyncActionFinish())
+//     } catch (error) {
+//       console.log(error)
+//       dispatch(asyncActionError())
+//       toastr.error('Oops', 'There was an issue adding to Firestore')
+//     }
+//   }
+// }
 
 /**
  * Removes an item from the cart

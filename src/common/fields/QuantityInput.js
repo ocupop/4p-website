@@ -56,19 +56,6 @@ const QuantityInput = ({
           <i className="ri-add-line" />
         </button>
       </div>
-      {/* <button
-        className="btn btn-link"
-        onClick={event => {
-          event.preventDefault()
-          onAdd()
-        }}>
-        +plus+
-      </button>
-      <br />
-      <button className="btn btn-link" onClick={onRemove}>
-        -minus-
-      </button> */}
-
       {touched[field.name] && errors[field.name] && <div className="invalid-feedback">{errors[field.name]}</div>}
     </div>
   )

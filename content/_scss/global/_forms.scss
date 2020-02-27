@@ -30,11 +30,9 @@ input[type='search'] {
   border-radius: 20px;
 }
 
-// .form-control {
-//   font-weight: 100;
-//   padding: 25px;
-//   margin: 10px 0;
-// }
+.form-control {
+  height: calc(1.5em + 0.75rem + 4px);
+}
 
 .col-form-label,
 .form-check-label {

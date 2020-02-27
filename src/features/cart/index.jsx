@@ -56,17 +56,17 @@ const Cart = () => {
                   {({ values, setFieldValue }) => (
                     <Form>
                       <FieldArray name="items" component={CartItems} />
-                      <CartTotals />
+                      {values !== initialValues ? (
+                        <button
+                          type="button"
+                          className="btn btn-lg btn-block btn-outline-primary"
+                          onClick={() => console.log(values)}>
+                          Save Changes
+                        </button>
+                      ) : (
+                        <CartTotals />
+                      )}
 
-                      {/* <Field
-                        className="mb-0"
-                        name="quantity"
-                        type="number"
-                        component={QuantityInput}
-                        onChange={value => setFieldValue('quantity', parseInt(value))}
-                        placeholder="0"
-                        label="Quantity"
-                      /> */}
                       <FormikDebug />
                     </Form>
                   )}

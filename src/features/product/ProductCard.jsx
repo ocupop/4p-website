@@ -10,9 +10,10 @@ const ProductCard = ({ product }) => {
   const [selectedVariant, setSelectedVariant] = useState(defaultVariant)
 
   const item = {
+    itemID: `${product.id}_${selectedVariant.variantID}`,
     productID: product.id,
-    productName: product.name,
     variantID: selectedVariant.variantID,
+    productName: product.name,
     sku: selectedVariant.sku || product.sku,
     vendorID: vendor.value,
     vendorName: vendor.label,

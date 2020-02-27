@@ -11,13 +11,31 @@ function _setCartPrice(cart) {
 }
 
 function _cleanCart(cart) {
+  // remove all items with a quantity of zero
   cart.items = cart.items.filter(item => item.quantity)
+
+  // remove duplicates and calculate quantity
+  // const cleanItems = Array.from(new Set(cart.items.map(item => item.itemID))).map(id => {
+  //   const duplicateItems = cart.items.filter(item => item.itemID === id)
+  //   let totalQuantity = 0
+  //   duplicateItems.forEach(item => {
+  //     totalQuantity += item.quantity
+  //   })
+
+  //   return { ...duplicateItems[0], totalQuantity }
+  // })
+
+  // cart.items = cleanItems
 
   return cart
 }
 
-function _isItemInCart({ item: { productID, variantID }, cart }) {
-  return cart.items.filter(item => item.productID === productID && item.variantID === variantID).length
+function _itemInCart({ item: { itemID }, cart }) {
+  return cart.items.filter(item => item.itemID === itemID).length
+}
+
+function _updateItemQuantity({ item: { itemID, quantity }, cart: { items } }) {
+  items.filter(i => i.itemID === itemID).map(item => (item.quantity += quantity))
 }
 
 export const updateCart = ({ firebase, newCart }) => {
@@ -51,7 +69,9 @@ export const addToCart = ({ firebase, cart, item }) => {
     try {
       dispatch(asyncActionStart())
       // console.log('Sanity Check:', item, cart) // Console out what you need to accomplish the next step
-      cart.items.push(item)
+
+      // _itemInCart({ item, cart }) ? console.log('update quantity') : console.log('add to cart')
+      _itemInCart({ item, cart }) ? _updateItemQuantity({ item, cart }) : cart.items.push(item)
 
       // Clean up cart
       let newCart = _cleanCart(cart)
@@ -90,15 +110,15 @@ export const makeRecurring = ({ firestore, profile, item: { productID, variantID
   }
 }
 
-/**
- * Adds a Product Variant to the users shopping cart.
- *
- * @param {String} userID
- * @param {Map} profile
- * @param {String} productID
- * @param {bool} recurring
- * @param {Map} item
- */
+// /**
+//  * Adds a Product Variant to the users shopping cart.
+//  *
+//  * @param {String} userID
+//  * @param {Map} profile
+//  * @param {String} productID
+//  * @param {bool} recurring
+//  * @param {Map} item
+//  */
 // export const addToCart = ({ firestore }, userID, profile, product, recurring, item) => {
 //   return async dispatch => {
 //     const sanitizedItem = {
@@ -158,61 +178,61 @@ export const makeRecurring = ({ firestore, profile, item: { productID, variantID
 //   }
 // }
 
-/**
- * Removes an item from the cart
- *
- * @param {String} userID
- * @param {Map} profile
- * @param {Map} item
- */
-export const removeFromCart = ({ firestore }, userID, profile, productID, item) => {
-  return async dispatch => {
-    const updatedCart = profile.shoppingCart
-    // validate that there are items to remove
-    if (!profile.shoppingCart.items.length) {
-      return
-    }
+// /**
+//  * Removes an item from the cart
+//  *
+//  * @param {String} userID
+//  * @param {Map} profile
+//  * @param {Map} item
+//  */
+// export const removeFromCart = ({ firestore }, userID, profile, productID, item) => {
+//   return async dispatch => {
+//     const updatedCart = profile.shoppingCart
+//     // validate that there are items to remove
+//     if (!profile.shoppingCart.items.length) {
+//       return
+//     }
 
-    const itemToRemove = updatedCart.items.filter(
-      cartItem => cartItem.variantID === item.variantID && cartItem.productID === productID
-    )
+//     const itemToRemove = updatedCart.items.filter(
+//       cartItem => cartItem.variantID === item.variantID && cartItem.productID === productID
+//     )
 
-    // there is no item to remove
-    if (!itemToRemove.length) {
-      return
-    }
+//     // there is no item to remove
+//     if (!itemToRemove.length) {
+//       return
+//     }
 
-    // check if the item being removed has a quantity of more than 1
-    // if it does remove 1 from the count
-    if (itemToRemove[0].quantity > 1) {
-      updatedCart.items.map(cartItem => {
-        if (cartItem.variantID === item.variantID && cartItem.productID === productID) {
-          return {
-            quantity: (cartItem.quantity -= 1),
-            ...cartItem
-          }
-        }
-        return cartItem
-      })
-    }
-    // if the cartQuanity of that item is <= 1 remove the item
-    else if (itemToRemove[0].quantity <= 1) {
-      // filter out any variant that doesn't match the itemToRemove variant ID
-      updatedCart.items = updatedCart.items.filter(cartItem => cartItem.productID !== itemToRemove[0].productID)
-    }
+//     // check if the item being removed has a quantity of more than 1
+//     // if it does remove 1 from the count
+//     if (itemToRemove[0].quantity > 1) {
+//       updatedCart.items.map(cartItem => {
+//         if (cartItem.variantID === item.variantID && cartItem.productID === productID) {
+//           return {
+//             quantity: (cartItem.quantity -= 1),
+//             ...cartItem
+//           }
+//         }
+//         return cartItem
+//       })
+//     }
+//     // if the cartQuanity of that item is <= 1 remove the item
+//     else if (itemToRemove[0].quantity <= 1) {
+//       // filter out any variant that doesn't match the itemToRemove variant ID
+//       updatedCart.items = updatedCart.items.filter(cartItem => cartItem.productID !== itemToRemove[0].productID)
+//     }
 
-    // dont let the cart price drop below 0
-    updatedCart.cartPrice = updatedCart.cartPrice <= 0 ? 0 : (updatedCart.cartPrice -= item.price)
+//     // dont let the cart price drop below 0
+//     updatedCart.cartPrice = updatedCart.cartPrice <= 0 ? 0 : (updatedCart.cartPrice -= item.price)
 
-    try {
-      dispatch(asyncActionStart())
-      firestore.update(`profiles/${userID}`, { shoppingCart: updatedCart })
-      toastr.success('Success', 'Product has been removed')
-      dispatch(asyncActionFinish())
-    } catch (error) {
-      console.log(error)
-      dispatch(asyncActionError())
-      toastr.error('Oops', 'There was an issue adding to Firestore')
-    }
-  }
-}
+//     try {
+//       dispatch(asyncActionStart())
+//       firestore.update(`profiles/${userID}`, { shoppingCart: updatedCart })
+//       toastr.success('Success', 'Product has been removed')
+//       dispatch(asyncActionFinish())
+//     } catch (error) {
+//       console.log(error)
+//       dispatch(asyncActionError())
+//       toastr.error('Oops', 'There was an issue adding to Firestore')
+//     }
+//   }
+// }

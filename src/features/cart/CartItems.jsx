@@ -15,7 +15,7 @@ const CartItems = ({ move, swap, push, insert, unshift, pop, remove, form }) => 
     <ul className="list-group">
       {items &&
         items.map((item, index) => (
-          <li key={`${item.productID}_${item.variantID}`} className="list-group-item">
+          <li key={`${item.productID}_${item.variantID}_${index}`} className="list-group-item">
             <div className="row">
               <div className="col-3 col-md-1">
                 <div

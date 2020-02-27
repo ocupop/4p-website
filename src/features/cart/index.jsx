@@ -7,6 +7,7 @@ import FormikDebug from '../../common/utils/FormikDebug'
 
 import CartItems from './CartItems'
 import CartTotals from './CartTotals'
+import FeaturedProducts from '../product/FeaturedProducts'
 
 import { updateCart } from './cartActions'
 
@@ -66,10 +67,10 @@ const Cart = () => {
                           Save Changes
                         </button>
                       ) : (
-                        <CartTotals />
+                        <>{/* <CartTotals /> */}</>
                       )}
 
-                      <FormikDebug />
+                      {/* <FormikDebug /> */}
                     </Form>
                   )}
                 </Formik>
@@ -103,6 +104,8 @@ const Cart = () => {
               </div>
             </div>
           )}
+          <hr />
+          <FeaturedProducts />
         </div>
       </section>
     </>

@@ -21,6 +21,12 @@
     margin-left: 0;
     background-color: $secondary;
   }
+  .c-forms-confirmation-message {
+    background-color: $green;
+    color: $white;
+    padding: 20px;
+    margin: 20px 0;
+  }
 }
 
 // Preloader behavior for cognito form
@@ -38,8 +44,12 @@
     animation: spin 2s linear infinite;
 
     @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
     }
   }
 }

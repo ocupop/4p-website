@@ -24,8 +24,6 @@ function _cleanCart(cart) {
 
   //   return { ...duplicateItems[0], totalQuantity }
   // })
-
-<<<<<<< HEAD
   // cart.items = cleanItems
 
   return cart
@@ -41,8 +39,6 @@ function _updateItemQuantity({ item: { itemID, quantity }, cart: { items } }) {
 
 export const updateCart = ({ firebase, newCart }) => {
   return async dispatch => {
-=======
->>>>>>> 446def84386d0e325d703da10627d9f9c767183e
     try {
       dispatch(asyncActionStart())
       // console.log('Sanity Check:', newCart) // Console out what you need to accomplish the next step

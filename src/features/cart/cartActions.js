@@ -10,11 +10,20 @@ function _setCartPrice(cart) {
   return parseFloat(cartPrice).toFixed(2)
 }
 
+function _cleanCart(cart) {
+  cart.items = cart.items.filter(item => item.quantity)
+
+  return cart
+}
+
 export const updateCart = ({ firebase, newCart }) => {
   return async dispatch => {
     try {
       dispatch(asyncActionStart())
       // console.log('Sanity Check:', newCart) // Console out what you need to accomplish the next step
+
+      // Clean up my cart
+      newCart = _cleanCart(newCart)
 
       // Set the cartPrice value
       newCart.cartPrice = _setCartPrice(newCart)

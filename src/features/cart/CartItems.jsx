@@ -46,7 +46,7 @@ const CartItems = ({ move, swap, push, insert, unshift, pop, remove, form }) => 
                     placeholder="0"
                   />
                   <div className="actions show-on-hover ml-5">
-                    <button onClick={() => console.log('remove item')} className="btn btn-danger">
+                    <button onClick={() => remove(index)} className="btn btn-danger">
                       <i className="ri-delete-bin-line" />
                     </button>
                   </div>

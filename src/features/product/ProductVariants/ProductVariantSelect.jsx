@@ -48,9 +48,9 @@ const ProductVariantSelect = ({ productID }) => {
 
   useEffect(() => {
     if (selectedVariant && activeProduct) {
-      setFeaturedImage(selectedVariant.featuredImage || activeProduct.featuredImage)
+      setFeaturedImage(selectedVariant.data.featuredImage || activeProduct.featuredImage)
     }
-  }, [selectedVariant])
+  }, [selectedVariant, activeProduct])
 
   if (!activeProduct) return <LoadingComponent />
   return (
@@ -105,9 +105,8 @@ const ProductVariantSelect = ({ productID }) => {
           </div>
           <div className="col-lg-6">
             <div className="content">
-              {/* @TODO @cdnicoll: Fix this, it never equates */}
-              {featuredImage ? (
-                <div className="bg-image aspect-4x3" style={{ backgroundImage: `url(${featuredImage})` }} />
+              {featuredImage && Object.keys(featuredImage).length ? (
+                <div className="bg-image aspect-4x3" style={{ backgroundImage: `url(${featuredImage.downloadURL})` }} />
               ) : (
                 <>
                   <img src={logo} className="img-fluid" alt="" />

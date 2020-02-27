@@ -105,10 +105,7 @@ const ProductDetail = ({ product }) => {
           <div className="row no-gutters">
             <div className="col-12">
               <div className="content">
-                {/* @TODO Bug here will trigger a re-render if component is active.*/}
-                {/* this will then break the ProductVariantSelect component...*/}
-                {/* Might be due to redux store being updated */}
-                <FeaturedProducts />
+                <FeaturedProducts vendorID={vendor.id} />
               </div>
             </div>
           </div>

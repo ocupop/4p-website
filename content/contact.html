@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 meta:
-footer_image: "/img/uploads/contact/4P-footer-05.jpg"
+footer_image: '/img/uploads/contact/4P-footer-05.jpg'
 ---
 
 <section>
@@ -11,33 +11,52 @@ footer_image: "/img/uploads/contact/4P-footer-05.jpg"
       <div class="col-12 col-lg-8">
         <h1 class="editable">Contact Us</h1>
         <p class="editable">
-          Let us know if you have any concerns, questions, or kind words for us.
-          We are happy to get back to you as soon as possible. Be sure to check
-          the FAQ.
+          Let us know if you have any concerns, questions, or kind words for us. We are happy to get back to you as soon
+          as possible. Be sure to check the FAQ.
         </p>
         <p>
           <strong class="text-uppercase">Phone:</strong>
-          <a href="tel:703-732-6664" class="editable text-gray"
-            >(703) 732.6664</a
-          >
+          <a href="tel:703-732-6664" class="editable text-gray">(703) 732.6664</a>
         </p>
         <p>
           <strong class="text-uppercase">Email:</strong>
-          <a href="mailto:community@4pfoods.com" class="editable text-gray"
-            >community@4pfoods.com</a
-          >
+          <a href="mailto:community@4pfoods.com" class="editable text-gray">community@4pfoods.com</a>
         </p>
       </div>
     </div>
     <div class="row">
       <div class="col-12">
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name: <input type="text" name="name"/></label>
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email"/></label>
+          </p>
+          <p>
+            <label
+              >Your Role:
+              <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label
+            >
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+        <!-- 
         <div class="cognito">
-          <!-- <script src="https://services.cognitoforms.com/s/bbN8iw1MJUqjPe6aHn-_rw"></script>
+          <script src="https://services.cognitoforms.com/s/bbN8iw1MJUqjPe6aHn-_rw"></script>
           <script>
             Cognito.load('forms', { id: '62' })
-          </script> -->
+          </script> 
           <div class="preloader"></div>
-        </div>
+        </div>-->
       </div>
     </div>
   </div>

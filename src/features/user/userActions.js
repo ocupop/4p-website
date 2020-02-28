@@ -2,7 +2,7 @@
 import { toastr } from 'react-redux-toastr'
 import { asyncActionStart, asyncActionFinish, asyncActionError } from '../../common/async/asyncActions'
 
-export const updateProfile = ({ firestore }, values, profileID) => {
+export const updateProfile = ({ firebase }, values) => {
   return async dispatch => {
     // const updatedProfile = {
     //   ...values
@@ -11,7 +11,9 @@ export const updateProfile = ({ firestore }, values, profileID) => {
     try {
       dispatch(asyncActionStart())
 
-      firestore.update(`/profiles/${profileID}`, values)
+      // Update the cart in Firebase using react-redux-firebase "Update Profile" method
+      // https://react-redux-firebase.com/docs/recipes/profile.html#update-profile
+      firebase.updateProfile(values)
 
       toastr.success('Success', 'Profile details have been updated')
       dispatch(asyncActionFinish())

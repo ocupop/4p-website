@@ -70,6 +70,10 @@ const Cart = () => {
                       <FieldArray name="items" component={CartItems} />
 
                       {values !== activeCart ? (
+                        // TODO: Adjust backgroud process for updating cart that
+                        // relies on setting state while it disables any updates
+                        // to the cart and checks minimums/cartTotals etc.
+                        // Then this could effect "activeCart"
                         <button
                           type="button"
                           onClick={() => handleSubmit(values)}

@@ -28,27 +28,37 @@ footer_image: '/img/uploads/contact/4P-footer-05.jpg'
       <div class="col-12">
         <form name="contact" method="POST" data-netlify="true" action="/thank-you">
           <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>Your Name: <input type="text" name="name"/></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email"/></label>
-          </p>
-          <p>
-            <label
-              >Your Role:
-              <select name="role[]" multiple>
-                <option value="leader">Leader</option>
-                <option value="follower">Follower</option>
-              </select></label
-            >
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="first-name" class="text-uppercase font-weight-bold">First Name:</label>
+                <input type="text" name="first-name" class="form-control" />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <label for="last-name" class="text-uppercase font-weight-bold">Last Name:</label>
+                <input type="text" name="last-name" class="form-control" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <label for="email" class="text-uppercase font-weight-bold">Email</label>
+                <input type="text" name="email" class="form-control" required />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <label for="inquiry" class="text-uppercase font-weight-bold">Inquiry</label>
+                <textarea name="inquiry" id="" cols="30" rows="8" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-secondary text-white">Submit</button>
         </form>
       </div>
     </div>

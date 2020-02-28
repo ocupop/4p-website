@@ -1,22 +1,24 @@
 <div class="threesome mt-5">
-  {% assign posts = site.posts | sort: 'date' | reversed %}
-  {% for post in site.posts offset: 1 limit: 3 %}
+  {% assign posts = site.posts | sort: 'date' | reversed %} {% for post in site.posts offset: 1 limit: 3 %}
   <div class="card bg-transparent">
     <div class="card-content pin-footer">
       <div class="card-header">
         <div class="content">
-          <div class="bg-image aspect-4x3" style="background-image: url({{ post.featured_image | prepend: site.url }})"></div>
+          <div
+            class="bg-image aspect-4x3"
+            style="background-image: url({{ post.featured_image | prepend: site.url }})"
+          ></div>
         </div>
       </div>
       <div class="card-body">
         <div class="content text-left">
           <h5>{{ post.title }}</h5>
           <p>{{ post.date | date: '%B %d, %Y'}}</p>
-          <p>{{ post.content | strip_html | truncatewords: 30  }}</p>
+          <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
         </div>
       </div>
       <div class="card-footer">
-        <a href="{{ post.url }}" class="btn btn-secondary">Read More</a>
+        <a href="{{ post.url }}" class="btn btn-secondary text-white">Read More</a>
       </div>
     </div>
   </div>

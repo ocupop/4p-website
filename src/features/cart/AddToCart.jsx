@@ -15,7 +15,7 @@ const AddToCart = ({ item, recurringPurchase = false, singlePurchase = false }) 
       <button
         type="button"
         className="product-button w-50"
-        // disabled={!singlePurchase}
+        disabled={!singlePurchase}
         onClick={() => dispatch(addToCart({ firebase, cart, item: { ...item, recurring: false } }))}>
         One-Time
       </button>
@@ -23,7 +23,7 @@ const AddToCart = ({ item, recurringPurchase = false, singlePurchase = false }) 
       <button
         type="button"
         className="product-button w-50"
-        // disabled={!recurringPurchase}
+        disabled={!recurringPurchase}
         onClick={() => dispatch(addToCart({ firebase, cart, item: { ...item, recurring: true } }))}>
         Weekly
       </button>

@@ -8,9 +8,6 @@
   // border: 0;
   border-radius: 0 !important;
   @include transition(0.3s);
-  &:hover {
-    // color: $white;
-  }
   &:focus {
     outline: 0 !important;
     box-shadow: none !important;
@@ -27,6 +24,16 @@
   &.btn-white {
     background-color: $white;
     color: $gray-400;
+    &:hover {
+      background-color: $secondary;
+      color: $white;
+      border-color: $secondary;
+    }
+    &.text-dark {
+      &:hover {
+        color: $white !important;
+      }
+    }
   }
   &.btn-link {
     color: $secondary;
@@ -114,6 +121,10 @@
       &.active {
         color: $gray-700;
         background-color: $tan;
+      }
+      &:hover {
+        background-color: darken($tan-dark, 5%);
+        color: $white;
       }
     }
   }

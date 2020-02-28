@@ -7,6 +7,7 @@
   text-transform: uppercase;
   position: relative;
   font-size: 11px;
+  @include transition(0.3s);
   @include media-breakpoint-up(xl) {
     font-size: 13px;
   }
@@ -20,10 +21,13 @@
     font-size: 25px;
     font-weight: 100;
   }
+  &:hover {
+    background-color: $secondary;
+    color: $white;
+  }
 }
 
 .product-amount {
-  // color: $gray-300;
   text-transform: uppercase;
   font-size: 11px;
   @include media-breakpoint-up(xl) {

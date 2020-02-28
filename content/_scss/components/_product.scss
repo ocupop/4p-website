@@ -1,29 +1,6 @@
 // TODO: Refactor
-.product-button {
-  background-color: $tan-dark;
-  border: 0;
-  color: $gray-600;
-  padding: 10px 10px 10px 20px;
-  text-transform: uppercase;
-  position: relative;
-  font-size: 11px;
-  @include media-breakpoint-up(xl) {
-    font-size: 13px;
-  }
-  &::before {
-    content: '+';
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 7px;
-    transform: translateY(-50%);
-    font-size: 25px;
-    font-weight: 100;
-  }
-}
 
 .product-amount {
-  // color: $gray-300;
   text-transform: uppercase;
   font-size: 11px;
   @include media-breakpoint-up(xl) {

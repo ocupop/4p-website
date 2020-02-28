@@ -31,11 +31,15 @@ function _cleanCart(cart) {
   return cart
 }
 
-function _itemInCart({ item: { itemID }, cart }) {
+export function _itemInCart({ item: { itemID }, cart }) {
   return cart.items.filter(item => item.itemID === itemID).length
 }
 
-function _updateItemQuantity({ item: { itemID, quantity }, cart: { items } }) {
+export function getCartItem({ item: { itemID }, cart }) {
+  return cart.items.filter(item => item.itemID === itemID)[0]
+}
+
+export function updateItemQuantity({ item: { itemID, quantity }, cart: { items } }) {
   items.filter(i => i.itemID === itemID).map(item => (item.quantity += quantity))
 }
 
@@ -72,7 +76,7 @@ export const addToCart = ({ firebase, cart, item }) => {
       // console.log('Sanity Check:', item, cart) // Console out what you need to accomplish the next step
 
       // _itemInCart({ item, cart }) ? console.log('update quantity') : console.log('add to cart')
-      _itemInCart({ item, cart }) ? _updateItemQuantity({ item, cart }) : cart.items.push(item)
+      _itemInCart({ item, cart }) ? updateItemQuantity({ item, cart }) : cart.items.push(item)
 
       // Clean up cart
       let newCart = _cleanCart(cart)
@@ -99,6 +103,23 @@ export const makeRecurring = ({ firestore, profile, item: { productID, variantID
     try {
       dispatch(asyncActionStart())
       console.log(profile.id, productID, variantID) // Console out what you need to accomplish the next step
+      // firestore.update(`/profiles/${profile.id}`, { items })
+
+      toastr.success('Success', 'Your cart has been updated')
+      dispatch(asyncActionFinish())
+    } catch (error) {
+      console.log(error)
+      dispatch(asyncActionError())
+      toastr.error('Oops', 'There was an issue updating the database. Please try again.')
+    }
+  }
+}
+
+export const removeFromCart = ({ firebase, cart, item }) => {
+  return async dispatch => {
+    try {
+      dispatch(asyncActionStart())
+      console.log(cart, item) // Console out what you need to accomplish the next step
       // firestore.update(`/profiles/${profile.id}`, { items })
 
       toastr.success('Success', 'Your cart has been updated')

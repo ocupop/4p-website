@@ -47,7 +47,7 @@ const ProductCard = ({ product }) => {
         </div>
       </Link>
       <div className="card-footer d-flex align-items-center p-0">
-        <AddToCart item={item} />
+        <AddToCart item={item} recurringPurchase={true} singlePurchase={true} />
       </div>
     </div>
   )

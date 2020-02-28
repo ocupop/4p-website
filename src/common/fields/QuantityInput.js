@@ -25,8 +25,7 @@ const QuantityInput = ({
   required,
   field,
   onChange,
-  onAdd,
-  onRemove,
+  maxValue = 99,
   maskOptions,
   form: { errors, touched, setFieldValue }
 }) => {
@@ -36,11 +35,22 @@ const QuantityInput = ({
     ...maskOptions
   })
 
+  function subtractQuantity() {
+    if (field.value > 0) {
+      setFieldValue(field.name, field.value - 1)
+    }
+  }
+  function addQuantity() {
+    if (field.value < maxValue) {
+      setFieldValue(field.name, field.value + 1)
+    }
+  }
+
   return (
     <div className={`form-group qty-input ${className}`}>
       <Label label={label} hint={hint} />
       <div className="input-group">
-        <button onClick={() => setFieldValue(field.name, field.value - 1)} className="btn btn-mid">
+        <button onClick={() => subtractQuantity()} className="btn btn-mid" disabled={field.value <= 0}>
           <i className="ri-subtract-line" />
         </button>
         <MaskedInput
@@ -52,7 +62,7 @@ const QuantityInput = ({
           required={required}
         />
 
-        <button onClick={() => setFieldValue(field.name, field.value + 1)} className="btn btn-mid">
+        <button onClick={() => addQuantity()} className="btn btn-mid" disabled={field.value >= maxValue}>
           <i className="ri-add-line" />
         </button>
       </div>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { useDispatch } from 'react-redux'
-// import { useFirebase, isLoaded, isEmpty } from 'react-redux-firebase'
-// import LoadingComponent from '../../common/ui/LoadingComponent'
+import { useFirebase, isLoaded, isEmpty } from 'react-redux-firebase'
+import LoadingComponent from '../../../common/ui/LoadingComponent'
 import { Formik, Field, Form } from 'formik'
 import * as Yup from 'yup'
 
@@ -18,46 +18,43 @@ import {
 import { stateOptions } from '../../../common/data/selects'
 import { zipOptions } from '../../../common/data/ZIPS'
 
-import FormikDebug from '../../../common/utils/FormikDebug'
+import { updateProfile } from '../userActions'
+
+// import FormikDebug from '../../../common/utils/FormikDebug'
 
 const ProfileSchema = Yup.object().shape({
-  name: Yup.string()
-    .min(2, 'Too Short!')
-    .max(100, 'Too Long!')
-    .required('Required')
+  // firstName: Yup.string()
+  //   .min(2, 'Too Short!')
+  //   .max(100, 'Too Long!')
+  //   .required('Required')
 })
 
 const UserProfileForm = ({ profile }) => {
+  const firebase = useFirebase()
   const [showAddressField, setShowAddressField] = useState(false)
   const dispatch = useDispatch()
   const {
     displayName,
-    photoURL,
     firstName,
     lastName,
     dietaryRestrictions,
     emailNotifications,
     smsNotifications,
-    email,
-    phone,
+    phoneNumber,
     role,
-    billingAddress,
     deliveryAddress,
     deliveryLocation
   } = profile
 
   const initialValues = {
     displayName,
-    photoURL,
     firstName,
     lastName,
     dietaryRestrictions,
     emailNotifications,
     smsNotifications,
-    email,
-    phone,
+    phoneNumber,
     role,
-    billingAddress,
     deliveryAddress,
     deliveryLocation
   }
@@ -68,8 +65,7 @@ const UserProfileForm = ({ profile }) => {
       initialValues={initialValues}
       validationSchema={ProfileSchema}
       onSubmit={(values, { resetForm }) => {
-        console.log(values)
-        // dispatch(testForm({ firestore }, values))
+        dispatch(updateProfile({ firebase }, values))
         resetForm()
       }}>
       {({ values, setFieldValue }) => (
@@ -80,33 +76,18 @@ const UserProfileForm = ({ profile }) => {
                 name="firstName"
                 type="text"
                 component={TextInput}
-                // hint=""
                 placeholder="First Name..."
                 label="First Name"
               />
             </div>
             <div className="col-6">
-              <Field
-                name="lastName"
-                type="text"
-                component={TextInput}
-                // hint="Enter your last name"
-                placeholder="Last Name..."
-                label="Last Name"
-              />
+              <Field name="lastName" type="text" component={TextInput} placeholder="Last Name..." label="Last Name" />
             </div>
           </div>
 
           <div className="row">
             <div className="col-12 col-sm-6">
-              <Field
-                name="phoneNumber"
-                type="text"
-                // hint="Enter the primary contact person's details"
-                component={PhoneInput}
-                placeholder="(___) ___-____"
-                label="Phone"
-              />
+              <Field name="phoneNumber" type="text" component={PhoneInput} placeholder="(___) ___-____" label="Phone" />
             </div>
           </div>
 
@@ -199,7 +180,7 @@ const UserProfileForm = ({ profile }) => {
                   hint="Check here if you would like notifications sent to your email address"
                   component={SwitchInput}
                   toggle
-                  onChange={() => setFieldValue('emailNotifications', !values.emailNotifications)}
+                  onChange={(e, value) => setFieldValue('emailNotifications', value.checked)}
                   label="Email"
                 />
                 <Field
@@ -209,16 +190,16 @@ const UserProfileForm = ({ profile }) => {
                   hint="Check here if you would like notifications sent to your phone"
                   component={SwitchInput}
                   toggle
-                  onChange={() => setFieldValue('smsNotifications', !values.smsNotifications)}
+                  onChange={(e, value) => setFieldValue('smsNotifications', value.checked)}
                   label="SMS"
                 />
               </div>
             </div>
           </div>
-          <button type="button" className="btn btn-secondary btn-block">
+          <button type="submit" className="btn btn-secondary text-white btn-block">
             Update
           </button>
-          <FormikDebug />
+          {/* <FormikDebug /> */}
         </Form>
       )}
     </Formik>

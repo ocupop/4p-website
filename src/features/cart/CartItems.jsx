@@ -15,7 +15,9 @@ const CartItems = ({ move, swap, push, insert, unshift, pop, remove, form }) => 
     <ul className="list-group">
       {items &&
         items.map((item, index) => (
-          <li key={`${item.productID}_${item.variantID}_${index}`} className="list-group-item">
+          <li
+            key={item.itemID}
+            className={`list-group-item ${item.recurring ? 'recurringPurchase' : 'singlePurchase'}`}>
             <div className="row">
               <div className="col-3 col-md-1">
                 <div
@@ -26,9 +28,9 @@ const CartItems = ({ move, swap, push, insert, unshift, pop, remove, form }) => 
                 />
               </div>
               <div className="col-9 col-md-6">
-                <h4>{item.productName}</h4>
+                <h4 className="m-0">{item.productName}</h4>
                 <p>
-                  {item.size} {item.label}
+                  {item.size} {item.label} {item.recurring && <small className="text-secondary">[recurring]</small>}
                 </p>
               </div>
               <div className="col-2 col-md-2">

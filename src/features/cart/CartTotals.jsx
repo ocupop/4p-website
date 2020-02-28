@@ -10,7 +10,7 @@ const CartTotals = ({ shoppingCart }) => {
   return (
     <div className="row">
       <div className="col-lg-6 ml-lg-auto">
-        <div className="form-group row align-items-center">
+        <div className="form-group row align-items-center d-none">
           {discountCode ? (
             <p className="bg-light p-3 ml-auto">
               <small>discount code has been applied</small>
@@ -38,7 +38,9 @@ const CartTotals = ({ shoppingCart }) => {
         </dl>
         <p className="mt-5 text-right">
           <small>
-            You have until <span className="text-primary">{formatDate(cartDate)} by midnight</span> to edit your order
+            You have until{' '}
+            <span className="text-primary">({cartDate ? formatDate(cartDate) : 'DATE'}) by midnight</span> to edit your
+            order
           </small>
         </p>
       </div>

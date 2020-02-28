@@ -51,10 +51,12 @@ partners:
         <h1 class="editable">Our Partners</h1>
         <h3 class="editable"><em>Supportive Sub-Headline Here</em></h3>
         <div class="editable">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat doloremque provident expedita culpa
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat doloremque provident expedita culpa
             eligendi recusandae adipisci optio accusamus ipsa! Qui, minima. Veritatis totam alias quasi veniam quae
             impedit deserunt qui eveniet fugit dolor, sint in odio laudantium quo ut nesciunt, non deleniti vel
-            praesentium enim corrupti tempore autem quia. Culpa!</p>
+            praesentium enim corrupti tempore autem quia. Culpa!
+          </p>
         </div>
       </div>
     </div>
@@ -67,13 +69,18 @@ partners:
         <div class="responsive-card-deck cards-lg-3 cards-md-2 mt-5">
           {% for partner in page.partners %}
           <div class="card bg-transparent mb-3 mb-lg-5">
-            <div class="bg-image aspect-4x3" style="background-image: url({{ partner.image | prepend: site.url }})"></div>
+            <div
+              class="bg-image aspect-4x3"
+              style="background-image: url({{ partner.image | prepend: site.url }})"
+            ></div>
             <div class="card-body">
               <h5>{{ partner.name }}</h5>
               <p>{{ partner.description }}</p>
             </div>
             <div class="card-footer bg-transparent">
-              <a href="{{ partner.link }}" class="btn btn-secondary" target="_blank" rel="noopener">Learn More</a>
+              <a href="{{ partner.link }}" class="btn btn-secondary text-white" target="_blank" rel="noopener"
+                >Learn More</a
+              >
             </div>
           </div>
           {% endfor %}

@@ -17,35 +17,28 @@ export const defaultRRFConfig = {
   useFirestoreForStorageMeta: true, // Metadata associated with storage file uploads goes to Firestore
   profileFactory: (userData, profileData, firebase) => {
     // how profiles are stored in database
-    // TODO: Refactor... ugly!
+    let currentUser = userData
     if (userData.user) {
-      const {
-        user: {
-          phoneNumber,
-          metadata: { lastSignInTime, creationTime }
-        }
-      } = userData
-
-      return {
-        ...profileData,
-        createdAt: new Date(creationTime),
-        lastLoginAt: new Date(lastSignInTime),
-        phoneNumber,
-        dietaryRestrictions: '',
-        role: 'customer',
-        shoppingCart: {
-          cartPrice: 0.0,
-          items: []
-        }
-      }
+      currentUser = userData.user
     }
+
+    const {
+      phoneNumber,
+      metadata: { lastSignInTime, creationTime }
+    } = currentUser
 
     return {
       ...profileData,
-      createdAt: new Date(userData.metadata.creationTime),
-      lastLoginAt: new Date(userData.metadata.lastSignInTime),
-      phoneNumber: userData.phoneNumber,
+      createdAt: new Date(creationTime),
+      lastLoginAt: new Date(lastSignInTime),
+      phoneNumber,
+      firstName: '',
+      lastName: '',
+      deliveryAddress: '',
+      deliveryLocation: {},
       dietaryRestrictions: '',
+      emailNotifications: true,
+      smsNotifications: false,
       role: 'customer',
       shoppingCart: {
         cartPrice: 0.0,

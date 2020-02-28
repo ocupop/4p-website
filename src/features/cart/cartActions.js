@@ -110,3 +110,20 @@ export const makeRecurring = ({ firestore, profile, item: { productID, variantID
     }
   }
 }
+
+export const removeFromCart = ({ firebase, cart, item }) => {
+  return async dispatch => {
+    try {
+      dispatch(asyncActionStart())
+      console.log(cart, item) // Console out what you need to accomplish the next step
+      // firestore.update(`/profiles/${profile.id}`, { items })
+
+      toastr.success('Success', 'Your cart has been updated')
+      dispatch(asyncActionFinish())
+    } catch (error) {
+      console.log(error)
+      dispatch(asyncActionError())
+      toastr.error('Oops', 'There was an issue updating the database. Please try again.')
+    }
+  }
+}

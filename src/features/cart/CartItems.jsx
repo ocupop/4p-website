@@ -16,7 +16,7 @@ const CartItems = ({ move, swap, push, insert, unshift, pop, remove, form }) => 
       {items &&
         items.map((item, index) => (
           <li
-            key={`${item.productID}_${item.variantID}_${index}`}
+            key={item.itemID}
             className={`list-group-item ${item.recurring ? 'recurringPurchase' : 'singlePurchase'}`}>
             <div className="row">
               <div className="col-3 col-md-1">

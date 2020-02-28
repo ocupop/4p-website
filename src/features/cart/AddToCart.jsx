@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { useSelector, useDispatch } from 'react-redux'
 import { useFirebase } from 'react-redux-firebase'
 
-import { addToCart, itemInCart } from './cartActions'
+import { addToCart, getCartItem } from './cartActions'
 
 const AddToCart = ({ item, recurringPurchase = false, singlePurchase = false }) => {
   const firebase = useFirebase()
@@ -12,31 +12,35 @@ const AddToCart = ({ item, recurringPurchase = false, singlePurchase = false }) 
   const [cartItem, setCartItem] = useState(null)
   useEffect(() => {
     if (cart && item) {
-      setCartItem(itemInCart({ item, cart }))
+      setCartItem(getCartItem({ item, cart }))
     }
   }, [cart, item])
 
   return (
     <>
       {cartItem ? (
-        <div className="bg-teal text-center text-white p-2 w-100">
-          <small>In cart</small>
+        <div className="bg-teal text-center text-white p-3 w-100">
+          <small className="text-uppercase">
+            <strong>{cartItem.quantity}</strong> In cart
+          </small>
         </div>
       ) : (
         <>
           <button
             type="button"
-            className="product-button w-50"
+            className="btn btn-add-to-cart w-50"
             disabled={!singlePurchase}
             onClick={() => dispatch(addToCart({ firebase, cart, item: { ...item, recurring: false } }))}>
+            <i className="ri-add-line mr-2" />
             One-Time
           </button>
 
           <button
             type="button"
-            className="product-button w-50"
+            className="btn btn-add-to-cart w-50"
             disabled={!recurringPurchase}
             onClick={() => dispatch(addToCart({ firebase, cart, item: { ...item, recurring: true } }))}>
+            <i className="ri-add-line mr-2" />
             Weekly
           </button>
         </>

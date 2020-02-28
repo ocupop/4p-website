@@ -45,7 +45,7 @@ const Cart = () => {
                     <div className="delivery-details d-md-flex align-items-center">
                       <span className="text-uppercase">
                         Your next delivery
-                        <strong className="ml-md-2">{formatDate('')}</strong>
+                        <strong className="ml-md-2">{`(DATE)`}</strong>
                       </span>
                       <a href="#">
                         <small>
@@ -78,7 +78,7 @@ const Cart = () => {
                         </button>
                       ) : (
                         <>
-                          <small>no changes made</small>
+                          <small>minimum met message</small>
                         </>
                       )}
                       <hr />

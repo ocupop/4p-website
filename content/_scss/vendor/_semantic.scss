@@ -18,3 +18,10 @@
     z-index: 0;
   }
 }
+
+//overwrite semantic ui style declaration for p tags
+p {
+  &:last-child {
+    margin-bottom: 1rem;
+  }
+}

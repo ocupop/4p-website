@@ -63,7 +63,7 @@ const LoginForm = () => {
             <div className="col-lg-6">
               <Button
                 onClick={() => socialLogin({ firebase, provider: 'facebook' })}
-                className="btn btn-primary btn-block">
+                className="btn btn-secondary btn-block">
                 Facebook
               </Button>
             </div>

@@ -34,7 +34,7 @@ export const defaultRRFConfig = {
       phoneNumber,
       firstName: '',
       lastName: '',
-      deliveryAddress: {},
+      deliveryAddress: '',
       deliveryLocation: {},
       dietaryRestrictions: '',
       emailNotifications: true,

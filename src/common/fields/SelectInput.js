@@ -24,7 +24,7 @@ const groupBadgeStyles = {
 const selectStyles = {
   control: (provided, state) => ({
     ...provided,
-    padding: 10
+    minHeight: '35px'
   }),
   option: (provided, state) => ({
     ...provided,

@@ -39,6 +39,14 @@ a {
   &:hover {
     text-decoration: none;
   }
+  &.text-white {
+    &:hover {
+      color: $white !important;
+      &.text-underline {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 hr {

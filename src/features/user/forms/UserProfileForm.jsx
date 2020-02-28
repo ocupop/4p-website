@@ -215,7 +215,7 @@ const UserProfileForm = ({ profile }) => {
               </div>
             </div>
           </div>
-          <button type="button" className="btn btn-secondary btn-block">
+          <button type="button" className="btn btn-secondary text-white btn-block">
             Update
           </button>
           <FormikDebug />

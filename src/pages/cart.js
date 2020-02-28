@@ -6,7 +6,7 @@ import FeaturedProducts from '../features/product/FeaturedProducts'
 const CartPage = () => {
   return (
     <>
-      <section>
+      <section id="cartPage">
         <div className="container">
           <Cart />
           <hr />

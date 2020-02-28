@@ -1,3 +1,17 @@
+#cartPage {
+  .list-group-item {
+    &.recurringPurchase {
+      border-color: $secondary;
+    }
+    &.singlePurchase {
+      border-color: $mid;
+    }
+    &:hover {
+      background-color: $light;
+    }
+  }
+}
+
 .cart-header {
   border-bottom: 1px solid $gray-400;
   padding-bottom: 20px;
@@ -20,7 +34,7 @@
       margin-left: 20px;
       margin-top: 0;
     }
-  }  
+  }
 }
 
 .item-row {

@@ -26,7 +26,8 @@ footer_image: '/img/uploads/contact/4P-footer-05.jpg'
     </div>
     <div class="row">
       <div class="col-12">
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" action="/thank-you">
+          <input type="hidden" name="form-name" value="contact" />
           <p>
             <label>Your Name: <input type="text" name="name"/></label>
           </p>
@@ -49,14 +50,6 @@ footer_image: '/img/uploads/contact/4P-footer-05.jpg'
             <button type="submit">Send</button>
           </p>
         </form>
-        <!-- 
-        <div class="cognito">
-          <script src="https://services.cognitoforms.com/s/bbN8iw1MJUqjPe6aHn-_rw"></script>
-          <script>
-            Cognito.load('forms', { id: '62' })
-          </script> 
-          <div class="preloader"></div>
-        </div>-->
       </div>
     </div>
   </div>

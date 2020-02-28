@@ -8,7 +8,7 @@ import LoadingComponent from '../../common/ui/LoadingComponent'
 import CartItems from './CartItems'
 import CartTotals from './CartTotals'
 
-import { updateCart } from './cartActions'
+import { updateCart, itemInCart } from './cartActions'
 import { openModal } from '../modal/modalActions'
 import { formatDate } from '../../common/utils/helpers'
 
@@ -65,23 +65,24 @@ const Cart = () => {
             <div className="row">
               <div className="col-12">
                 <Formik initialValues={initialValues} onSubmit={() => console.log(values)}>
-                  {({ values, setFieldValue }) => (
+                  {({ values, setFieldValue, resetForm }) => (
                     <Form>
                       <FieldArray name="items" component={CartItems} />
 
                       {values !== activeCart ? (
                         <button
                           type="button"
-                          onClick={() => dispatch(updateCart({ firebase, newCart: values }))}
+                          onClick={() => handleSubmit(values)}
                           className="btn btn-lg btn-block btn-outline-primary">
                           Save Changes
                         </button>
                       ) : (
                         <>
-                          <hr />
-                          <CartTotals shoppingCart={shoppingCart} />
+                          <small>no changes made</small>
                         </>
                       )}
+                      <hr />
+                      <CartTotals shoppingCart={shoppingCart} />
 
                       {/* <FormikDebug /> */}
                     </Form>

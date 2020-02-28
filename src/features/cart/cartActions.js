@@ -31,11 +31,11 @@ function _cleanCart(cart) {
   return cart
 }
 
-function _itemInCart({ item: { itemID }, cart }) {
+export function itemInCart({ item: { itemID }, cart }) {
   return cart.items.filter(item => item.itemID === itemID).length
 }
 
-function _updateItemQuantity({ item: { itemID, quantity }, cart: { items } }) {
+export function updateItemQuantity({ item: { itemID, quantity }, cart: { items } }) {
   items.filter(i => i.itemID === itemID).map(item => (item.quantity += quantity))
 }
 
@@ -71,8 +71,8 @@ export const addToCart = ({ firebase, cart, item }) => {
       dispatch(asyncActionStart())
       // console.log('Sanity Check:', item, cart) // Console out what you need to accomplish the next step
 
-      // _itemInCart({ item, cart }) ? console.log('update quantity') : console.log('add to cart')
-      _itemInCart({ item, cart }) ? _updateItemQuantity({ item, cart }) : cart.items.push(item)
+      // itemInCart({ item, cart }) ? console.log('update quantity') : console.log('add to cart')
+      itemInCart({ item, cart }) ? updateItemQuantity({ item, cart }) : cart.items.push(item)
 
       // Clean up cart
       let newCart = _cleanCart(cart)

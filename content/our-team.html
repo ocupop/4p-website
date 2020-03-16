@@ -29,7 +29,8 @@ footer_image: '/img/uploads/team/4P-footer-14.jpg'
         <div class="responsive-card-deck cards-lg-3 cards-md-2">
           {% for team in site.team_members %}
           <div class="card bg-transparent mb-5">
-            <a href="{{ team.url }}" class="bg-image aspect-1x1" style="background-image: url({{ team.image | prepend: site.url }})"></a>
+            <a href="{{ team.url }}" class="bg-image aspect-1x1"
+              style="background-image: url({{ team.image | prepend: site.url }})"></a>
             <div class="card-body">
               <h4 class="mb-0">{{ team.title }}</h4>
               <h5 class="font-weight-light">{{ team.role }}</h5>
@@ -37,7 +38,7 @@ footer_image: '/img/uploads/team/4P-footer-14.jpg'
               </p>
             </div>
             <div class="card-footer bg-transparent">
-              <a href="{{ team.url }}" class="btn btn-secondary">Read More</a>
+              <a href="{{ team.url }}" class="btn btn-secondary text-white">Read More</a>
             </div>
           </div>
           {% endfor %}
@@ -46,7 +47,7 @@ footer_image: '/img/uploads/team/4P-footer-14.jpg'
     </div>
   </div>
 </section>
-<section class="bg-notice text-white">
+<section class="bg-green text-white">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6 mx-lg-auto text-center">
@@ -59,8 +60,9 @@ footer_image: '/img/uploads/team/4P-footer-14.jpg'
             Duis
             aute irure dolor in reprehenderit</p>
         </div>
-        <a href="/contact" class="btn btn-secondary">Contact Us</a>
+        <a href="/contact" class="btn btn-secondary text-white">Contact Us</a>
       </div>
     </div>
   </div>
 </section>
+{% include footer-image.html %}

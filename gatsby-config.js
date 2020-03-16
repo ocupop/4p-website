@@ -53,13 +53,7 @@ module.exports = {
         src: 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCAO2do5V-Ea98ilA49coabv_hShNnH6RU&libraries=places'
       }
     },
-    {
-      resolve: 'gatsby-plugin-load-script',
-      options: {
-        src: 'https://services.cognitoforms.com/s/bbN8iw1MJUqjPe6aHn-_rw',
-        onLoad: 'Cognito.load("forms", { id: "62" })'
-      }
-    },
+
 
     // Getting UI Elements
 

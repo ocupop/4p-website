@@ -4,9 +4,11 @@ import { graphql } from 'gatsby'
 import _ from 'lodash'
 import parse from 'html-react-parser'
 import FeaturedProducts from '../features/product/FeaturedProducts'
+import TryUs from '../common/ui/TryUs'
 
 const pageComponents = {
-  FeaturedProducts
+  FeaturedProducts,
+  TryUs
 }
 
 const parseOptions = {

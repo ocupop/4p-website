@@ -2,7 +2,9 @@
   <meta name="google" content="notranslate" />
   <meta http-equiv="Content-Language" content="en_US" />
   <meta charset="utf-8" />
-  <title>4pFoods Admin: {% if page.title %}{{ page.title | escape }}{% endif %}</title>
+  <title>
+    4pFoods: {% if page.meta.title %}{{ page.meta.title | escape }}{% else %}{{ page.title | escape }}{% endif %}
+  </title>
   <meta
     name="description"
     content="{% if page.meta.description %}{{ page.meta.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"

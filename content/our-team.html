@@ -30,7 +30,7 @@ footer_image: '/img/uploads/team/4P-footer-14.jpg'
           {% for team in site.team_members %}
           <div class="card bg-transparent mb-5">
             <a href="{{ team.url }}" class="bg-image aspect-1x1"
-              style="background-image: url({{ team.image | prepend: site.url }})"></a>
+              style="background-image: url({{ team.image  }})"></a>
             <div class="card-body">
               <h4 class="mb-0">{{ team.title }}</h4>
               <h5 class="font-weight-light">{{ team.role }}</h5>

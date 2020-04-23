@@ -1,8 +1,9 @@
 # Site settings
 title: 4pFoods CMS
 email: dev@ocupop.com
-url: 'http://cms.4pfoods.com'
+url: 'http://staging.4pfoods.com'
 permalink: pretty
+store_url: 'http://store.4pfoods.com'
 
 # Social sharing
 description:

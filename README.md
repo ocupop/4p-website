@@ -6,14 +6,12 @@
 
 
 ## Commands
-```
 # add package depdendencies
 yarn install
 
+## Daily Startup ##
+1. `cd` to project directory
+2. Start environment: `yarn start`
+3. Navigate to [http://localhost:4000/](http://localhost:4000/)
 
-```
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 

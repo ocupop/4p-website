@@ -5,24 +5,16 @@
   "version": "0.1.0",
   "author": "Ocupop Developer <dev@ocupop.com>",
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "browser-sync": "^2.26.7",
-    "dotenv": "^8.1.0",
-    "gray-matter": "^4.0.2",
-    "gsap": "^3.0.1",
-    "http-proxy-middleware": "^0.20.0",
-    "node-sass": "^4.12.0",
+    "bootstrap": "^4.4.1",
     "patch-package": "^6.2.0",
-    "postinstall-postinstall": "^2.0.0",
-    "prettier": "^1.18.2",
-    "remixicon": "^2.0.0"
+    "postinstall-postinstall": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.4.0",
-    "@cloudcannon/suite": "^2.0.0-rc6",
+    "@cloudcannon/suite": "^2.0.0-rc7",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "eslint": "^6.2.1",
@@ -40,10 +32,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "lint": "eslint **/*.{js,jsx} --quiet",
     "start": "gulp dev",
     "scripts": "NODE_ENV=production gulp buildScripts",
-    "postinstall": "patch-package && gulp dev:install"
+    "postinstall": "gulp dev:install"
   }
 }

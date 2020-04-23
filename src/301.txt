@@ -1,1 +1,7 @@
+/api/elements/ /api/ui.json
 /api/pages/ /api/pages.json
+/api/farmers/ /api/farmers.json
+/api/events/ /api/events.json
+/api/posts/ /api/posts.json
+/api/team/ /api/team.json
+/api/careers/ /api/careers.json

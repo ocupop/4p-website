@@ -121,6 +121,13 @@ _array_structures:
         label:
         screenshot_image:
         icon:
+  testimonials:
+    - label: testimonials
+      icon: format_quote
+      value:
+        testimonial_text:
+        name:
+        source:
   assets:
     - label: Image
       icon: insert_photo

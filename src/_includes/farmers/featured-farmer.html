@@ -1,4 +1,5 @@
-{% assign featured_farmer = site.farmers.first %}
+{% assign featured = page.featured_farmer %}
+{% assign featured_farmer = site.farmers | where: 'slug', featured | first %}
 <div class="row">
   <div class="col-12">
     <div class="bg-image aspect-16x9" style="background-image: url({{ featured_farmer.featured_image }})"></div>

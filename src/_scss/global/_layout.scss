@@ -66,8 +66,14 @@
 }
 
 #tryUsToday {
-  @include media-breakpoint-down(md) {
-    .btn {
+  .btn {
+    padding: 20px;
+    font-size: 2.25rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-down(lg) {
       font-size: 25px;
       line-height: 1.3;
     }

@@ -3,7 +3,34 @@ layout: page
 title: Team
 meta:
 team_members:
-footer_image: '/img/uploads/team/4P-footer-14.jpg'
+  - abbey-gleason
+  - alicia-mitchell
+  - bonnie-may
+  - chris-brown
+  - curtis-sowers
+  - devon-byrne
+  - dustin-thomas
+  - emily-tucker
+  - heidi-chaya
+  - hortense-brent
+  - jennifer-beckman
+  - john-shepard
+  - jon-wolf
+  - justin-white
+  - kerry-trenor
+  - kris-schumacher
+  - meg-buckley
+  - michael-james
+  - natalie-vandenburgh
+  - nate-osborne
+  - rod-crawford
+  - ronald-davis
+  - sandy-tribendis
+  - sean-roberts
+  - tara-eavey
+  - tom-mcdougall
+  - tyler-bruder
+footer_image: /img/uploads/team/4P-footer-14.jpg
 ---
 
 <section>
@@ -28,8 +55,7 @@ footer_image: '/img/uploads/team/4P-footer-14.jpg'
           {% for object in page.team_members %}
           {% assign team =  site.team_members | where: 'slug', object | first %}
           <div class="card bg-transparent mb-5">
-            <a href="{{ team.url }}" class="bg-image aspect-1x1 bg-white"
-              style="background-image: url({{ team.image | default: '/img/4p-foods-cmyk-logo-color-color.png'}})"></a>
+            <a href="{{ team.url }}" class="bg-image aspect-1x1 bg-white" style="background-image: url({{ team.image | default: '/img/4p-foods-cmyk-logo-color-color.png'}})"></a>
             <div class="card-body">
               <h4 class="mb-0">{{ team.title }}</h4>
               <h5 class="font-weight-light">{{ team.role }}</h5>

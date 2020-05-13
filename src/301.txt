@@ -1,4 +1,4 @@
-/api/elements/ /api/ui.json
+/api/elements/ /api/elements.json
 /api/pages/ /api/pages.json
 /api/farmers/ /api/farmers.json
 /api/events/ /api/events.json

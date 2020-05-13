@@ -1,6 +1,6 @@
 ---
 layout: none
-permalink: api/ui
+permalink: api/elements
 ---
 [
 {% for element in site.elements %}

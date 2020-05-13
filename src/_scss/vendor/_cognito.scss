@@ -34,7 +34,7 @@
 .preloader {
   display: none;
   &::before {
-    content: '';
+    content: "";
     display: block;
     z-index: 1;
     border: 3px solid $white;

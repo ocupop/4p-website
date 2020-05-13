@@ -12,19 +12,14 @@
 @import "global/forms";
 
 // Components
-@import "components/cart_summary";
 @import "components/modal";
 @import "components/product";
-@import "components/search_filter_nav";
-@import "components/storenav";
-@import "components/user";
 
 // Pages
-@import "pages/contact";
-@import "pages/cart";
 @import "pages/home";
 @import "pages/food_access_programs";
 @import "pages/news";
 
 // Vendor Overrides
 @import "vendor/bootstrap";
+@import "vendor/cognito";

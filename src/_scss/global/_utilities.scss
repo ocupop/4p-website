@@ -112,31 +112,31 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url('/assets/img/bg-illustrations.png');
+  background-image: url("/assets/img/bg-illustrations.png");
   @include media-breakpoint-down(sm) {
     padding-top: 35%;
     background-size: 100%;
     background-position: top center;
-    background-image: url('/assets/img/bg-illustrations-mobile.png');
+    background-image: url("/assets/img/bg-illustrations-mobile.png");
   }
 }
 
 .bg-lettuce {
-  background-image: url('/img/bg-illustrations/4p-background-lettuce-cropped.png');
+  background-image: url("/img/bg-illustrations/4p-background-lettuce-cropped.png");
   background-repeat: no-repeat;
   background-position: left top;
   background-size: contain;
 }
 
 .bg-cabbage-large {
-  background-image: url('/img/bg-illustrations/4p-background-cabbage-cropped.png');
+  background-image: url("/img/bg-illustrations/4p-background-cabbage-cropped.png");
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
 }
 
 .bg-cabbage-half {
-  background-image: url('/img/bg-illustrations/4p-background-cabbage-half.png');
+  background-image: url("/img/bg-illustrations/4p-background-cabbage-half.png");
   background-repeat: no-repeat;
   background-position: right center;
   background-size: contain;
@@ -159,7 +159,7 @@
 .arrow {
   &::after,
   &::before {
-    content: ' ';
+    content: " ";
     position: absolute;
     left: 96%;
     top: 30%;
@@ -548,7 +548,7 @@
     font-size: 29px;
     margin-right: 5px;
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       display: block;
       top: 1px;
@@ -562,59 +562,6 @@
   }
 }
 
-user-nav,
-notification-nav {
-  height: 20px;
-  width: auto;
-  display: flex;
-  align-items: center;
-  color: $white;
-  padding: 20px;
-  &::before {
-    content: 'usernav';
-  }
-}
-
-try-us {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &::before {
-    padding: 20px;
-    content: 'Try Us Today - Completely Commitment Free';
-    background-color: $primary;
-    color: $white;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    font-size: 2.25rem;
-    font-family: $font-family-base;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-}
-
-notification-nav {
-  &::before {
-    content: 'notifications';
-  }
-}
-
-cart-summary {
-  background-color: $primary;
-  display: flex;
-  align-items: center;
-  color: $white;
-  width: auto;
-  padding: 10px;
-  &::before {
-    content: 'Cart';
-  }
-}
-
 .loader {
   color: $white;
   font-size: 14px;
@@ -622,8 +569,8 @@ cart-summary {
   &::before {
     position: absolute;
     left: -20px;
-    content: '\EE61';
-    font-family: 'remixicon' !important;
+    content: "\EE61";
+    font-family: "remixicon" !important;
     @include animation(spin, 1.2s);
     animation-timing-function: linear;
     animation-iteration-count: infinite;

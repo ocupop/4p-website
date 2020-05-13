@@ -7,6 +7,7 @@
           <p class="mb-0 font-weight-bold">{{ site.data.notifications.header_notification }}</p>
         </div>
         <div id="secondarynav">
+          <!-- <auth-nav></auth-nav> -->
           <a href="{{ site.store_url }}/login" class="btn btn-primary">Login</a>
         </div>
       </nav>
@@ -33,6 +34,7 @@
           <li class="nav-item d-lg-none"><a href="/wholesale-programs" class="nav-link">Wholesale Programs</a></li>
         </ul>
         <ul class="nav navbar-nav">
+          <cart-summary></cart-summary>
           <li class="nav-item mt-3 mt-lg-0">
             <a href="{{ site.store_url }}" class="btn btn-primary">Shop Now</a>
           </li>

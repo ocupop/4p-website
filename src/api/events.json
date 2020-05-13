@@ -8,7 +8,6 @@ permalink: api/events
     "layout": {{ event['layout'] | jsonify }},
     "url": {{ event['url'] | jsonify }},
     "title": {{ event['title'] | jsonify }},
-    "slug": {{ event['slug'] | jsonify }},
     "date": {{ event['date'] | jsonify }},
     "output": {{ event['output'] | jsonify }}
   }{% unless forloop.last %},{% endunless %}

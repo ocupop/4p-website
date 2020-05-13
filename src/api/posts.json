@@ -8,7 +8,6 @@ permalink: api/posts
     "layout": {{ post['layout'] | jsonify }},
     "url": {{ post['url'] | jsonify }},
     "title": {{ post['title'] | jsonify }},
-    "slug": {{ post['slug'] | jsonify }},
     "post_date": {{ post['post_date'] | jsonify }},
     "date": {{ post['date'] | jsonify }},
     "categories": {{ post['categories'] | jsonify }},

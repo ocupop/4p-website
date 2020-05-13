@@ -8,7 +8,6 @@ permalink: api/careers
     "layout": {{ career['layout'] | jsonify }},
     "url": {{ career['url'] | jsonify }},
     "title": {{ career['title'] | jsonify }},
-    "slug": {{ career['slug'] | jsonify }},
     "date": {{ career['date'] | jsonify }},
     "output": {{ career['output'] | jsonify }}
   }{% unless forloop.last %},{% endunless %}

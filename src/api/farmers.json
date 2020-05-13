@@ -8,7 +8,6 @@ permalink: api/farmers
       "layout": {{ farmer['layout'] | jsonify }},
       "url": {{ farmer['url'] | jsonify }},
       "title": {{ farmer['title'] | jsonify }},
-      "slug": {{ farmer['slug'] | jsonify }},
       "date": {{ farmer['date'] | jsonify }},
       "vendorID": {{ farmer['vendorID'] | jsonify }},
       "output": {{ farmer['output'] | jsonify }}

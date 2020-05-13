@@ -25,7 +25,8 @@ footer_image: '/img/uploads/team/4P-footer-14.jpg'
     <div class="row">
       <div class="col-12">
         <div class="responsive-card-deck cards-lg-3 cards-md-2">
-          {% for team in site.team_members %}
+          {% for object in page.team_members %}
+          {% assign team =  site.team_members | where: 'slug', object | first %}
           <div class="card bg-transparent mb-5">
             <a href="{{ team.url }}" class="bg-image aspect-1x1 bg-white"
               style="background-image: url({{ team.image | default: '/img/4p-foods-cmyk-logo-color-color.png'}})"></a>

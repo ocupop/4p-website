@@ -2,8 +2,7 @@
 layout: post
 title: COVID-19 RESPONSE
 date: 2020-03-17 18:39:00
-featured_image: >-
-  /img/uploads/posts/2020-03-27-4p-mafrac-herd-ventres-friendshipctprospect-v2-14.jpg
+featured_image: /img/uploads/posts/4p-foods-delivery-spring-covid.jpg
 assets:
 tags:
 ---

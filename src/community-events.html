@@ -43,9 +43,9 @@ footer_image: '/img/uploads/events/4P-footer-07.jpg'
           <div class="card-header">
             <div class="content">
               {% if event.featured_image %}
-                <div class="bg-image aspect-1x1"
+                <a href="{{ event.url }}" class="bg-image aspect-1x1"
                   style="background-image: url({{ event.featured_image }})">
-                </div>
+                </a>
               {% else %}
                 <img src="/img/4p-foods-logo-color.png" class="img-fluid" alt="4P logo">
               {% endif %}
@@ -95,9 +95,9 @@ footer_image: '/img/uploads/events/4P-footer-07.jpg'
         <div class="card-content pin-footer">
           <div class="card-header">
             <div class="content">
-              <div class="bg-image aspect-1x1"
+              <a href="{{ event.url }}" class="bg-image aspect-1x1"
                 style="background-image: url({{ event.featured_image | default: 'https://via.placeholder.com/800x500'}})">
-              </div>
+              </a>
             </div>
           </div>
           <div class="card-body">

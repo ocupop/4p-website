@@ -1,1 +1,4 @@
-header_notification: 'Free Delivery with purchase over $60'
+header_notifications: 
+  - notification_text: 'Free Delivery with purchase over $60'
+    link:
+

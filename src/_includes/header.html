@@ -4,13 +4,11 @@
       <nav id="usernav" class="navbar navbar-expand-lg">
         <a href="/wholesale-programs" class="text-uppercase font-weight-bold">Are you a wholesaler?</a>
         <div id="header-notification">
-          {% for notification in site.data.notifications.header_notifications %}
-            {% if notification.link %}
-              <p class="mb-0 font-weight-bold"><a href="{{ notification.link }}">{{ notification.notification_text }}</a></p>
-            {% else %}  
-              <p class="mb-0 font-weight-bold">{{ notification.notification_text }}</p>
-            {% endif %}
-          {% endfor %}  
+          {% if site.data.notifications.header_notification.link %}
+            <p class="mb-0 font-weight-bold"><a href="{{ site.data.notifications.header_notification.link }}">{{ site.data.notifications.header_notification.notification_text }}</a></p>
+          {% else %}  
+            <p class="mb-0 font-weight-bold">{{ site.data.notifications.header_notification.notification_text }}</p>
+          {% endif %}
         </div>
         <div id="secondarynav">
           <auth-nav>

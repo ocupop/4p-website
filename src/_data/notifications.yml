@@ -1,4 +1,5 @@
-header_notifications: 
-  - notification_text: 'Free Delivery with purchase over $60'
+header_notifications:
+  - notification_text: Free Delivery with purchase over $60
     link:
-
+  - notification_text: 'Give $10, Get $10'
+    link: /referral-programs/

@@ -2,5 +2,5 @@ header_notification:
   notification_text: Free Delivery with purchase over $60
   link:
 bar_notification:
-  notification_text:
-  link:
+  notification_text: Opportunity for secondary notification
+  link: /community-events/

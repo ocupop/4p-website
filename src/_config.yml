@@ -3,7 +3,12 @@ title: 4pFoods CMS
 email: dev@ocupop.com
 url: 'http://staging.4pfoods.com'
 permalink: pretty
-store_url: 'http://store.4pfoods.com'
+store_url: 'https://4pfoods.deliverybizpro.com'
+store_login: '/login'
+store_signup: '/register.php?step=first&viewing_step=first'
+store_giftcards: '/giftcert.php'
+store_featured: '/summary.php?go=products'
+
 
 # Social sharing
 description:

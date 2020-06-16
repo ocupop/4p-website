@@ -44,5 +44,13 @@
         .setClassToggle(currentElement, "active")
         .addTo(controller);
     })
+
+    var hash  = window.location.hash;
+    console.log(hash)
+    if(hash && $('.nav-tabs').length){
+      var active_tab = $('.nav-tabs a').attr('href', hash);
+      console.log(active_tab);
+      $(active_tab).tab('show');
+    }
   })
 </script>

@@ -2,7 +2,7 @@
   {% for object in page.featured_products %}
     {% assign product = site.featured_products | where: 'slug', object | first  %}
     <div class="card product-card">
-      <a href="{{ product.link }}" class="bg-image aspect-4x3"
+      <a href="{{site.store_url }}/product/{{ product.product_number }}" class="bg-image aspect-4x3"
         style="background-image: url({{ product.image }})"></a>
       <div class="card-header">
         <h5 class="card-title">{{ product.name }}</h5>
@@ -24,7 +24,7 @@
         </div>
       </a>
       <div class="card-footer d-flex align-items-center">
-        <button class="btn btn-primary">Shop Now</button>
+        <a href="{{site.store_url }}/product/{{ product.product_number }}" class="btn btn-primary">Shop Now</a>
       </div>
     </div>
   {% endfor %}

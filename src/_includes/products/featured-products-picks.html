@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="responsive-card-deck cards-lg-2 mt-5">
-      {% for slug in page.featured_community_products %} {% assign product = site.featured_products | where: "slug", slug | first
+      {% for slug in page.community_featured_products %} {% assign product = site.featured_products | where: "slug", slug | first
       %}
       <div class="card mb-4">
         <div class="bg-image aspect-16x9"

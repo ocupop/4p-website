@@ -2,7 +2,7 @@
 layout: post
 title: COVID-19 RESPONSE
 date: 2020-03-17 18:39:00
-featured_image: /img/uploads/posts/4p-foods-delivery-spring-covid.jpg
+featured_image: /uploads/posts/4p-foods-delivery-spring-covid.jpg
 assets:
 tags:
 ---

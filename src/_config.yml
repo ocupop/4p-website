@@ -146,3 +146,26 @@ _array_structures:
         _type: video
         title:
         embed_url:
+  images:
+    - label: Image
+      icon: insert_photo
+      value:
+        title:
+        image:    
+  hero:
+    - label: Image Carousel
+      icon: insert_photo
+      value:
+        _type: image_carousel
+        images:
+    - label: Image Banner
+      icon: insert_photo
+      value:
+        _type: image_banner
+        images:
+    - label: Text Banner
+      icon: article
+      value:
+        _type: text_banner
+        text_html:      
+

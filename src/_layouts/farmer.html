@@ -40,7 +40,8 @@ layout: default
         </p>
       </div>
     </div>
-    {% endif %} {% assign links_size = page.links | size %} {% if links_size > 0 %}
+    {% endif %} 
+    {% assign links_size = page.links | size %} {% if links_size > 0 %}
     <div class="row">
       <div class="col-12">
         {% for link in page.links %}

@@ -3,13 +3,33 @@ layout: page
 title: Home
 meta:
 _assets:
-  - image: '/uploads/4p-produce-04-22-2020.jpg'
-  - image: '/uploads/4P-Produce-06.10.20.jpg'
-  - image: '/uploads/4P-Produce-06.14.20-1024x984.jpg'
+  - image: /uploads/4p-produce-04-22-2020.jpg
+  - image: /uploads/4P-Produce-06.10.20.jpg
+  - image: /uploads/4P-Produce-06.14.20-1024x984.jpg
   - image: /uploads/home/4p-homepage-foodaccess-01.jpg
   - image: /uploads/home/4p-homepage-foodaccess-02.jpg
   - image: /uploads/home/4p-homepage-foodaccess-03.jpg
-hero:  
+hero:
+  - _type: image_carousel
+    images:
+      - title: Test Image
+        image: /uploads/careers/4p-careers-headerimage-01.jpg
+      - title: test Image 2
+        image: /uploads/careers/4p-careers-headerimage-02.jpg
+      - title: Test image 3
+        image: /uploads/careers/4p-careers-headerimage-03.jpg
+  - _type: image_banner
+    images:
+      - title: Test image 1
+        image: /uploads/careers/4p-careers-headerimage-01.jpg
+      - title: Test image 2
+        image: /uploads/careers/4p-careers-headerimage-02.jpg
+      - title: Test image 3
+        image: /uploads/careers/4p-careers-headerimage-03.jpg
+  - _type: text_banner
+    text_html: >-
+      <p>We believe in a great world where Good Food is the rule not the
+      exception.</p>
 featured_products:
   - chocolate-chip-cookies-gf
   - garlic-scapes
@@ -41,23 +61,21 @@ community_featured_products:
   - dilly-daikon-pickles
   - garlic-scapes
 ---
+
 <div class="row no-gutters">
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[0].image }}')"
-        data-cms-editor-link="cloudcannon:#_assets[0].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[0].image }}')" data-cms-editor-link="cloudcannon:#_assets[0].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[1].image }}')"
-        data-cms-editor-link="cloudcannon:#_assets[1].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[1].image }}')" data-cms-editor-link="cloudcannon:#_assets[1].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[2].image }}')"
-        data-cms-editor-link="cloudcannon:#_assets[2].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[2].image }}')" data-cms-editor-link="cloudcannon:#_assets[2].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
 </div>

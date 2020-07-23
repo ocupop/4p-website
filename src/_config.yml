@@ -167,5 +167,8 @@ _array_structures:
       icon: article
       value:
         _type: text_banner
-        text_html:      
+        text_html:
+
+_comments:
+  product_url: 'Ex: /product/apple-fritter-baking-mix or /product/1362'        
 

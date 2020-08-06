@@ -106,6 +106,12 @@
     background-repeat: no-repeat;
   }
 }
+
+.bg-split {
+  background: rgb(96,180,96);
+  background: linear-gradient(90deg, rgba(96,180,96,1) 0%, rgba(96,180,96,1) 50%, rgba(41,41,41,1) 50%, rgba(248,246,238,1) 50%, rgba(248,246,238,1) 100%);
+}
+
 .bg-illustration-overlay {
   display: block;
   height: auto;
@@ -200,23 +206,6 @@
     }
   }
 }
-
-// .cards {
-//   display: flex;
-//   flex-flow: wrap;
-//   .card {
-//     width: calc(25% - 2rem);
-//     margin: 1rem;
-//     flex: inherit;
-//     color: $dark;
-//     &:hover {
-//       text-decoration: none;
-//     }
-//     .card-img-top {
-//       padding-top: 50%;
-//     }
-//   }
-// }
 
 .responsive-card-deck {
   @include make-responsive-cards();

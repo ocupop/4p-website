@@ -16,3 +16,26 @@
     }
   }
 }
+
+#shenandoah-banner {
+  position: relative;
+  overflow: hidden;
+  .border-left-circle {
+    p {
+      font-family: $font-family-secondary;
+      color: $gray-850;
+      font-size: 20px;
+      padding-left: 30px;
+    }
+  }
+}
+#shenandoah-badge {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 286px;
+  background-color: #F8F6EE;
+  border-radius: 50%;
+  padding: 45px;
+}

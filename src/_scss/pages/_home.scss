@@ -95,10 +95,10 @@
 }
 .badge {
   width: 25%;
-  padding: 40px;
+  padding: 10px;
   background-color: $tan-mid;
   border-radius: 50%;
-  @include media-breakpoint-down(lg) {
-    padding: 10px;
+  @include media-breakpoint-up(lg) {
+    padding: 40px;
   }
 }

@@ -55,6 +55,8 @@
   
   .col-right {
    width: 75%;
+   font-family: $font-family-secondary;
+   font-size: 17px;
    @include media-breakpoint-down(lg) {
      padding: 20px;
      font-size: 14px;

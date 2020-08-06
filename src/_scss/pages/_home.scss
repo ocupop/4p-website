@@ -41,11 +41,11 @@
 // }
 #announcement-banner {
   padding: 0;
+  background: $tan-mid;
   @include media-breakpoint-up(lg) {
     background: rgb(96,180,96);
     background: linear-gradient(90deg, rgba(96,180,96,1) 0%, rgba(96,180,96,1) 50%, rgba(41,41,41,1) 50%, rgba(248,246,238,1) 50%, rgba(248,246,238,1) 100%);
   }
-  background: $tan-mid;
   .d-flex {
     flex-wrap: wrap;
     @include media-breakpoint-up(lg) {
@@ -57,6 +57,7 @@
    width: 75%;
    @include media-breakpoint-down(lg) {
      padding: 20px;
+     font-size: 14px;
    }
   }
   .col-left {
@@ -77,6 +78,9 @@
     .text-mega {
       z-index: 100;
       position: relative;
+      @include media-breakpoint-down(lg) {
+        font-size: 1.7rem;
+      }
     }
     @include media-breakpoint-up(lg) {
       &::after {

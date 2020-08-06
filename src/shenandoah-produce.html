@@ -18,7 +18,10 @@ assets:
   - _type: image
     title: Shenandoah Produce
     image: >-
-      /uploads/shenandoah-produce/image-3.jpg    
+      /uploads/shenandoah-produce/image-3.jpg
+related_farmers:
+  - double-h-farm
+  - hartland-farm
 ---
 
 <section>
@@ -111,7 +114,7 @@ assets:
     </div>
   </div>
 </section>
-<section class="bg-primary bg-cabbage-large text-white">
+<section id="eat-local" class="bg-primary text-white">
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
@@ -119,14 +122,21 @@ assets:
           <h2>Eat Health, Support Local</h2>
           <p>Each one of our farmers and producers [insert link] would like to personally thank you
             for supporting them and the local economy, and we, in turn, would like to thank you for joining us on this journey to
-            bring Good Food from the farm to your door. Look for the Shenandoah Produce icon in our shop! Go here [insert link] to
-            see what’s available this week.</p>
+            bring Good Food from the farm to your door. Look for the Shenandoah Produce icon in our shop!</p>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-2">
+            <img src="/img/Shenandoah-icon-10.svg" class="img-fluid" alt="Shenandoah Logo">
+          </div>
+          <div class="col-md-6">
+            <a href="{{ site.store_url }}" class="btn btn-outline-white editable">See What's Available This Week</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-{% if page.featured_farmers %}
+{% if page.related_farmers %}
   <section>
     <div class="container">
       <div class="row">

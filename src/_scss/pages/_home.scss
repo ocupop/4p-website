@@ -17,25 +17,88 @@
   }
 }
 
-#shenandoah-banner {
-  position: relative;
-  overflow: hidden;
-  .border-left-circle {
-    p {
-      font-family: $font-family-secondary;
-      color: $gray-850;
-      font-size: 20px;
-      padding-left: 30px;
+// #shenandoah-banner {
+//   position: relative;
+//   overflow: hidden;
+//   .border-left-circle {
+//     p {
+//       font-family: $font-family-secondary;
+//       color: $gray-850;
+//       font-size: 20px;
+//       padding-left: 30px;
+//     }
+//   }
+// }
+// #shenandoah-badge {
+//   position: absolute;
+//   top: -6px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   width: 286px;
+//   background-color: #F8F6EE;
+//   border-radius: 50%;
+//   padding: 45px;
+// }
+#announcement-banner {
+  padding: 0;
+  @include media-breakpoint-up(lg) {
+    background: rgb(96,180,96);
+    background: linear-gradient(90deg, rgba(96,180,96,1) 0%, rgba(96,180,96,1) 50%, rgba(41,41,41,1) 50%, rgba(248,246,238,1) 50%, rgba(248,246,238,1) 100%);
+  }
+  background: $tan-mid;
+  .d-flex {
+    flex-wrap: wrap;
+    @include media-breakpoint-up(lg) {
+      flex-wrap: nowrap;
     }
   }
+  
+  .col-right {
+   width: 75%;
+   @include media-breakpoint-down(lg) {
+     padding: 20px;
+   }
+  }
+  .col-left {
+    background-color: $primary;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    &::after {
+      content: '';
+      width: 200vw;
+      background-color: $primary;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -50vw;
+      z-index: 1;
+    }
+    .text-mega {
+      z-index: 100;
+      position: relative;
+    }
+    @include media-breakpoint-up(lg) {
+      &::after {
+        display: none;
+      }
+    }
+    
+  }
+  .col-left,
+  .col-right {
+    @include media-breakpoint-up(lg) {
+      width: 37.5%;
+    }
+  }
+  
 }
-#shenandoah-badge {
-  position: absolute;
-  top: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 286px;
-  background-color: #F8F6EE;
+.badge {
+  width: 25%;
+  padding: 40px;
+  background-color: $tan-mid;
   border-radius: 50%;
-  padding: 45px;
+  @include media-breakpoint-down(lg) {
+    padding: 10px;
+  }
 }

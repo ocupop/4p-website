@@ -76,18 +76,20 @@ layout: default
   </div>
 </section>
 <!-- add logic to show related farmers-->
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8">
-        <h2 class="editable">
-          Related Farmers &amp; Producers
-        </h2>
+{% if page.related_farmers %}
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2 class="editable">
+            Related Farmers &amp; Producers
+          </h2>
+        </div>
+        <div class="col-lg-4 text-lg-right">
+          <a href="/our-farmers" class="btn btn-primary">Back to our farmers</a>
+        </div>
       </div>
-      <div class="col-lg-4 text-lg-right">
-        <a href="/our-farmers" class="btn btn-primary">Back to our farmers</a>
-      </div>
+      {% include farmers/farmers-list-related.html %}
     </div>
-    {% include farmers/farmers-list-related.html %}
-  </div>
-</section>
+  </section>
+{% endif %}

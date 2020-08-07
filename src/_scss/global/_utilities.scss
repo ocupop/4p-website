@@ -241,6 +241,12 @@
   text-transform: underline !important;
 }
 
+.text-white {
+  a {
+    color: $white;
+  }
+}
+
 .row-border {
   margin-left: 20px;
   margin-right: 20px;

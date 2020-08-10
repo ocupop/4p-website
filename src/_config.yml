@@ -37,7 +37,7 @@ collections:
     output: true
     permalink: /careers/:path/
   newsletters:
-    output: false
+    output: true
   posts:
     output: true
     permalink: /posts/:title/

@@ -45,12 +45,22 @@
         .addTo(controller);
     })
 
-    var hash  = window.location.hash;
+    var hash = window.location.hash;
     console.log(hash)
     if(hash && $('.nav-tabs').length){
-      var active_tab = $('.nav-tabs a').attr('href', hash);
-      console.log(active_tab);
-      $(active_tab).tab('show');
+      // var active_tab = $('.nav-tabs a').attr('href', hash);
+
+ 
+      $('.nav-tabs a[href="' + hash + '"]').tab('show');
     }
+
+
+    $('.nav-tabs a').click(function (e) {
+      console.log('tab click')
+      hash = $(this).attr('href');
+      console.log(hash)
+      window.location.hash = hash;
+    });
+
   })
 </script>

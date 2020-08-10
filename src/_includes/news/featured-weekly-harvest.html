@@ -9,7 +9,8 @@
       </div>
     </div>
     <div class="threesome mt-4">
-      {% assign newsletters = site.newsletters | sort: 'newsletter_date' %} {% for newsletter in newsletters reversed %}
+      {% assign newsletters = site.data.mailchimp_newsletters | sort: 'newsletter_date' %} 
+      {% for newsletter in newsletters reversed %}
       <div class="card bg-transparent">
         <div class="card-content pin-footer">
           <div class="card-header">

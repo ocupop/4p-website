@@ -1,5 +1,5 @@
 # Site settings
-title: 4pFoods CMS
+title: 4pFoods
 email: dev@ocupop.com
 url: 'http://staging.4pfoods.com'
 permalink: pretty
@@ -16,7 +16,7 @@ description: 'Local • Easy • Important Choose your bag Whether you are eatin
 socialshare:
   featured_image: img/4P-SP-header.png
   twitter:
-    username:
+    username: '@4PFoods'
     image: img/4P-SP-header.png
 
 # Google Analytics

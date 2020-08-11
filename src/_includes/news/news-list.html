@@ -6,7 +6,7 @@
         <div class="content">
           <div
             class="bg-image aspect-4x3"
-            style="background-image: url({{ post.featured_image }})"
+            style="background-image: url({{ post.featured_image | default: site.fallback_logo }})"
           ></div>
         </div>
       </div>

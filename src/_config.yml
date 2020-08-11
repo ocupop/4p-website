@@ -9,6 +9,7 @@ store_signup: '/register.php?step=first&viewing_step=first'
 store_giftcards: '/giftcert.php'
 store_featured: '/summary.php?go=products'
 
+fallback_logo: /img/post-fallback.jpg
 
 # Social sharing
 description:

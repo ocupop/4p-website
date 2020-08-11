@@ -571,3 +571,12 @@
     animation-iteration-count: infinite;
   }
 }
+
+.editable {
+  ol {
+    padding-left: 20px;
+    li {
+      margin-bottom: 20px;
+    }
+  }
+}

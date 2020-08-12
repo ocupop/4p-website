@@ -1,9 +1,9 @@
 # Site settings
 title: 4P Foods
 email: dev@ocupop.com
-url: 'http://staging.4pfoods.com'
+url: 'http://shenandoahproduce.4pfoods.com'
 permalink: pretty
-store_url: 'https://4pfoods.deliverybizpro.com'
+store_url: 'https://shop.4pfoods.com'
 store_login: '/login'
 store_signup: '/register.php?step=first&viewing_step=first'
 store_giftcards: '/giftcert.php'

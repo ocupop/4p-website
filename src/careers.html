@@ -39,7 +39,7 @@ _assets:
 <section>
   <div class="container">
     {% assign careers = site.careers | sort: 'posted_date' | reversed %} {% assign num_careers = careers | size %} {% if
-    num_careers > 0 %} {% for career in careers %}
+    num_careers > 0 %} {% for career in careers reversed %}
     <hr />
     <div class="row">
       <div class="col-12">

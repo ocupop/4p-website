@@ -1,9 +1,9 @@
 # Site settings
-title: 4pFoods CMS
+title: 4P Foods
 email: dev@ocupop.com
-url: 'http://staging.4pfoods.com'
+url: 'http://shenandoahproduce.4pfoods.com'
 permalink: pretty
-store_url: 'https://4pfoods.deliverybizpro.com'
+store_url: 'https://shop.4pfoods.com'
 store_login: '/login'
 store_signup: '/register.php?step=first&viewing_step=first'
 store_giftcards: '/giftcert.php'
@@ -16,7 +16,7 @@ description: 'Local • Easy • Important Choose your bag Whether you are eatin
 socialshare:
   featured_image: img/4P-SP-header.png
   twitter:
-    username:
+    username: '@4PFoods'
     image: img/4P-SP-header.png
 
 # Google Analytics

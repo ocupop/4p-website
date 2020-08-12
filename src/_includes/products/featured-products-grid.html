@@ -20,7 +20,9 @@
               {{ product.label }}
             {% endif %}
           </div>
-          <div class="product-price">{{ product.price }}</div>
+          {% if product.price %}
+            <div class="product-price">${{ product.price }}</div>
+          {% endif %}
         </div>
       </a>
       <div class="card-footer d-flex align-items-center">

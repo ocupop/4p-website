@@ -20,8 +20,7 @@ socialshare:
     image: img/4P-SP-header.png
 
 # Google Analytics
-analytics:
-  default:
+analytics_code: UA-45586201-6
 
 # Collections
 collections:

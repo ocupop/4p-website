@@ -7,7 +7,7 @@ assets:
 tags:
 ---
 
-<div class="editable mt-5"><h2><strong>Welcome!</strong></h2><p><em>Eating Good Food is as easy as 1,2,3.&nbsp; Read our user guide below for tips on how to get started. If you have any questions along the way, please <a href="mailto:shenandoahproduce@4pfoods.com">contact us</a>. We&rsquo;re happy to help!</em></p></div>
+<div class="editable mt-5"><h2><strong>Welcome!</strong></h2><p>&nbsp;</p><p><em>Eating Good Food is as easy as 1,2,3.&nbsp; Read our user guide below for tips on how to get started. If you have any questions along the way, please <a href="mailto:shenandoahproduce@4pfoods.com">contact us</a>. We&rsquo;re happy to help!</em></p></div>
 
 <div class="row align-items-center my-5"><div class="col-lg-3"><div class="text-lg-center editable"><p><img width="150" height="150" src="/uploads/4pfoods-icon1--150x150.jpeg" /></p></div></div><div class="col-lg-9"><div class="editable"><h4><strong>Step 1. </strong><a href="https://shop.4pfoods.com/login"><strong>Log-in</strong></a><strong> to your account / </strong><a href="https://shop.4pfoods.com/login"><strong>create an account</strong></a><strong>.</strong></h4><ul><li>Skip to step 3 if you're an existing customer seeking shopping tips!</li><li>Enter your location to see if we deliver to your area! <strong>From here, choose from two delivery options:</strong><ul><li>Select <strong>delivery</strong>&nbsp;for the convenience of direct delivery to your home.</li><li>Select <strong>pick-up</strong>&nbsp;to grab 4P Bags from a 4P Community Site near you and we'll waive any delivery fees for saving us C02.</li></ul></li></ul></div></div></div>
 

@@ -21,20 +21,20 @@ footer_image: /uploads/eg958jag.jpg
 </section>
 <section class="pt-0">
   <div class="container">
-    {% assign events = site.events | sort: 'event_date' %} 
+    {% assign events = site.events | sort: 'event_date' %}
 
-    {% assign upcoming_events = '' | split:"," %} 
-    {% assign past_events = '' | split: ',' %} 
-    {% for event in events %} 
-      {% assign now = 'now' | date: '%s' | plus: 0 %} 
-      {% assign event_start = event.event_date | date: '%s' | plus: 0 | default: site.time | date: '%s' | plus: 0 %} 
-      {% if event_start >= now %} 
-        {% assign upcoming_events = upcoming_events | push: event %} 
-      {% endif %} 
-      {% if event_start <= now %} 
-        {% assign past_events = past_events | push: event %} 
-      {% endif %} 
-    {% endfor %} 
+    {% assign upcoming_events = '' | split:"," %}
+    {% assign past_events = '' | split: ',' %}
+    {% for event in events %}
+      {% assign now = 'now' | date: '%s' | plus: 0 %}
+      {% assign event_start = event.event_date | date: '%s' | plus: 0 | default: site.time | date: '%s' | plus: 0 %}
+      {% if event_start >= now %}
+        {% assign upcoming_events = upcoming_events | push: event %}
+      {% endif %}
+      {% if event_start <= now %}
+        {% assign past_events = past_events | push: event %}
+      {% endif %}
+    {% endfor %}
     {% assign num_upcoming_events = upcoming_events | size %} {% if num_upcoming_events > 0 %}
     <div class="threesome mt-4">
       {% for event in upcoming_events reversed%}
@@ -46,7 +46,8 @@ footer_image: /uploads/eg958jag.jpg
                 <a href="{{ event.url }}" class="bg-image aspect-1x1" style="background-image: url({{ event.featured_image }})">
                 </a>
               {% else %}
-                <img src="/img/4p-foods-logo-color.png" class="img-fluid" alt="4P logo" />
+                <img src={{ '/img/4p-foods-logo-color.png' | prepend: site.url }}
+                  class="img-fluid" alt="4P logo" />
               {% endif %}
             </div>
           </div>
@@ -78,7 +79,7 @@ footer_image: /uploads/eg958jag.jpg
     {% endif %}
   </div>
 </section>
-{% assign num_past_events = past_events | size %} 
+{% assign num_past_events = past_events | size %}
 {% if num_past_events > 0 %}
 <section>
   <div class="container">

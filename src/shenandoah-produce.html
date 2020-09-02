@@ -30,7 +30,7 @@ related_farmers:
       <div class="col-12 text-center">
         <h1 class="editable">Shenandoah Produce</h1>
         <p class="editable mb-5">Warrenton, Virginia</p>
-        <img src="{{ page.featured_image }}" class="img-fluid" alt="{{ page.title }} image" />
+        <img src="{{ page.featured_image | prepend: site.url }}" class="img-fluid" alt="{{ page.title }} image" />
       </div>
     </div>
   </div>
@@ -124,7 +124,8 @@ related_farmers:
         </div>
         <div class="row align-items-center">
           <div class="col-md-2">
-            <img src="/img/Shenandoah-icon-10.svg" class="img-fluid" alt="Shenandoah Logo">
+            <img src={{ '/img/Shenandoah-icon-10.svg' | prepend: site.url }} class="img-fluid"
+              alt="Shenandoah Logo">
           </div>
           <div class="col-md-6">
             <a href="{{ site.store_url }}" class="btn btn-outline-white editable">See What's Available This Week</a>

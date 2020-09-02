@@ -1,15 +1,15 @@
 # Site settings
 title: 4P Foods
 email: dev@ocupop.com
-url: 'http://shenandoahproduce.4pfoods.com'
+url: 'https://driven-house.cloudvent.net'
 permalink: pretty
-store_url: 'https://shop.4pfoods.com'
-store_login: '/login'
-store_signup: '/register.php?step=first&viewing_step=first'
-store_giftcards: '/giftcert.php'
-store_featured: '/summary.php?go=products'
+store_url: 'http://localhost:8000'
+store_login: 'http://localhost:8000'
+store_signup: 'http://localhost:8000'
+store_giftcards: 'http://localhost:8000'
+store_featured: 'http://localhost:8000'
 
-fallback_logo: /img/post-fallback.jpg
+fallback_logo: http://localhost:8000
 
 # Social sharing
 description: 'Local • Easy • Important Choose your bag Whether you are eating for one, or you’re feeding a family, we’ve got just the right size for you. Select your building Convenience is a big deal. That’s why whether you are at work or at home, we’ll deliver right to your building.'
@@ -152,7 +152,7 @@ _array_structures:
       icon: insert_photo
       value:
         title:
-        image:    
+        image:
   hero:
     - label: Image Carousel
       icon: insert_photo
@@ -171,5 +171,5 @@ _array_structures:
         text_html:
 
 _comments:
-  product_url: 'Ex: /product/apple-fritter-baking-mix or /product/1362'        
+  product_url: 'Ex: /product/apple-fritter-baking-mix or /product/1362'
 

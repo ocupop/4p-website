@@ -4,9 +4,6 @@ title: How To Shop 4P!
 date: 2020-09-10 15:25:00
 featured_image: /img/uploads/posts/4p-produce-07-14-20.jpg
 assets:
-  - _type: video
-    title:
-    embed_url:
 tags:
 ---
 

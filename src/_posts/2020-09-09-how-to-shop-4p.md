@@ -6,11 +6,7 @@ featured_image: /img/uploads/posts/4p-produce-07-14-20.jpg
 assets:
   - _type: video
     title: View Delivery Schedule
-    embed_url: >-
-      <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/OmJsOWXJ1r8" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope;
-      picture-in-picture" allowfullscreen></iframe>
+    embed_url: 'https://www.youtube.com/embed/OmJsOWXJ1r8'
   - _type: video
     title: Place Recurring Orders
     embed_url: >-

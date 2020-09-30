@@ -25,6 +25,9 @@ assets:
   - _type: video
     title: How To Make Changes To Your Delivery Schedule
     embed_url: 'https://www.youtube.com/embed/OmJsOWXJ1r8'
+  - _type: image
+    title: Cucumbers
+    image: /uploads/2009-08-cucumber-va-xx.JPG
 tags:
 ---
 

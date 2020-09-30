@@ -20,14 +20,11 @@ assets:
     title: How To View Your Delivery Schedule
     embed_url: 'https://www.youtube.com/embed/OmJsOWXJ1r8'
   - _type: video
-    title: How To Make Changes To Your Delivery Schedule
-    embed_url: 'https://www.youtube.com/embed/OmJsOWXJ1r8'
-  - _type: video
     title: How To Pause Deliveries - Vacation Hold
     embed_url: 'https://www.youtube.com/embed/GH9K_zvgPlU'
   - _type: video
-    title:
-    embed_url:
+    title: How To Make Changes To Your Delivery Schedule
+    embed_url: 'https://www.youtube.com/embed/OmJsOWXJ1r8'
 tags:
 ---
 

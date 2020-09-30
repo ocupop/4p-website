@@ -9,24 +9,26 @@
       </div>
     </div>
     <div class="responsive-card-deck cards-lg-2 mt-5">
-      {% for slug in page.community_featured_products %} {% assign product = site.featured_products | where: "slug", slug | first
-      %}
-      <div class="card mb-4">
-        <div class="bg-image aspect-16x9"
-          style="background-image: url({{ product.image | default: 'https://via.placeholder.com/800x500' }})">
-        </div>
-        <div class="card-footer">
-          <div class="row">
-            <div class="col-8">
-              <h5>{{ product.name }}</h5>
-              <p class="mb-0">{{ product.label }}</p>
-            </div>
-            <div class="col-4 text-right">
-              <a href="{{site.store_url }}{{ product.product_url }}" class="btn btn-white">See Item</a>
+      {% for slug in page.community_featured_products %} 
+      {% assign product = site.featured_products | where: "slug", slug | first %}
+        {% if product.product_url %}
+        <div class="card mb-4">
+          <div class="bg-image aspect-16x9"
+            style="background-image: url({{ product.image | default: 'https://via.placeholder.com/800x500' }})">
+          </div>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col-8">
+                <h5>{{ product.name }}</h5>
+                <p class="mb-0">{{ product.label }}</p>
+              </div>
+              <div class="col-4 text-right">
+                <a href="{{site.store_url }}{{ product.product_url }}" class="btn btn-white">See Item</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        {% endif %}
       {% endfor %}
     </div>
   </div>

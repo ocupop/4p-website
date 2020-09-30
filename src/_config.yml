@@ -20,8 +20,7 @@ socialshare:
     image: img/4P-SP-header.png
 
 # Google Analytics
-analytics:
-  default:
+analytics_code: UA-45586201-6
 
 # Collections
 collections:
@@ -171,5 +170,22 @@ _array_structures:
         text_html:
 
 _comments:
-  product_url: 'Ex: /product/apple-fritter-baking-mix or /product/1362'        
+  product_url: 'Ex: /product/apple-fritter-baking-mix or /product/1362'
+
+_options:
+  content:
+    format: p h1 h2 h3 h4 h5 h6 pre address div
+    bold: true
+    italic: true
+    link: true
+    numberedlist: true
+    bulletedlist: true
+    subscript: true
+    superscript: true
+    horizontalrule: true
+    right: true
+    left: true
+    center: true
+    image: true
+    embed: true        
 

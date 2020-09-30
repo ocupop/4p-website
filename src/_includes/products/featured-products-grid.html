@@ -1,33 +1,35 @@
 <div class="responsive-card-deck cards-lg-3">
   {% for object in page.featured_products %}
     {% assign product = site.featured_products | where: 'slug', object | first  %}
-    <div class="card product-card">
-      <a href="{{site.store_url }}{{ product.product_url }}" class="bg-image aspect-4x3"
-        style="background-image: url({{ product.image }})"></a>
-      <div class="card-header">
-        <h5 class="card-title">{{ product.name }}</h5>
-        {% if product.vendor_name %}
-        <h6 class="mb-0">{{ product.vendor_name }}</h6>
-        {% endif %}
-      </div>
-      <a href="{{ product.link }}" class="card-body">
-        <div class="d-flex align-items-center justify-content-between w-100">
-          <div class="product-amount">
-            {% if product.size %}
-              {{ product.size }}
-            {% endif %}
-            {% if product.label %}
-              {{ product.label }}
-            {% endif %}
-          </div>
-          {% if product.price %}
-            <div class="product-price">${{ product.price }}</div>
+    {% if product.product_url %}
+      <div class="card product-card">
+        <a href="{{site.store_url }}{{ product.product_url }}" class="bg-image aspect-4x3"
+          style="background-image: url({{ product.image }})"></a>
+        <div class="card-header">
+          <h5 class="card-title">{{ product.name }}</h5>
+          {% if product.vendor_name %}
+          <h6 class="mb-0">{{ product.vendor_name }}</h6>
           {% endif %}
         </div>
-      </a>
-      <div class="card-footer d-flex align-items-center">
-        <a href="{{site.store_url }}{{ product.product_url }}" class="btn btn-primary">Shop Now</a>
+        <a href="{{ product.link }}" class="card-body">
+          <div class="d-flex align-items-center justify-content-between w-100">
+            <div class="product-amount">
+              {% if product.size %}
+                {{ product.size }}
+              {% endif %}
+              {% if product.label %}
+                {{ product.label }}
+              {% endif %}
+            </div>
+            {% if product.price %}
+              <div class="product-price">${{ product.price }}</div>
+            {% endif %}
+          </div>
+        </a>
+        <div class="card-footer d-flex align-items-center">
+          <a href="{{site.store_url }}{{ product.product_url }}" class="btn btn-primary">Shop Now</a>
+        </div>
       </div>
-    </div>
+    {% endif %}
   {% endfor %}
 </div>

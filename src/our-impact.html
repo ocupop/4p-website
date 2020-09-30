@@ -2,7 +2,7 @@
 layout: page
 title: Our Impact
 meta:
-footer_image:
+footer_image: /uploads/2020-05-20-va-bealeton-newdayfarms-danieljames-herd-ventures-6.jpg
 _assets:
   - image: /uploads/our-impact/4p-ourimpact-headerimages-01.jpg
   - image: /uploads/our-impact/4p-ourimpact-headerimages-02.jpg
@@ -10,6 +10,7 @@ _assets:
   - image: /uploads/our-impact/4p-ourimpact-foodacces-01.jpg
   - image: /uploads/our-impact/4p-ourimpact-foodacces-02.jpg
   - image: /uploads/our-impact/4p-ourimpact-foodacces-03.jpg
+  - image: /uploads/our-impact/IMG_5442.jpg
 ---
 
 <div class="row no-gutters">
@@ -38,10 +39,10 @@ _assets:
           Good Food With a Purpose
         </h1>
         <h3 class="editable">
-          <em>We define &ldquo;Good Food&rdquo; as more than just local. To us, good food is: transparently sourced so you know where it came from, healthy to nourish both body and mind, ethically raised with no souls exploited in its production, and harvested in a way that maintains the health of the environment. Most of all, Good Food is equitably accessible to all people, regardless of race, income, gender, or zipcode.</em>
+          <em>We define &ldquo;Good Food&rdquo; as more than just local. To us, good food: provides nourishment and enables people to thrive, is equitably accessible to everyone in the region, is produced in a manner that is environmentally regenerative, comes from a supply chain in which every being is treated with respect and dignity, and improves health outcomes and economic security for all.</em>
         </h3>
         <div class="editable">
-          <p>4P Foods is part of the rapidly-growing Good Food Movement that is building a better food system focused on equity, health, long-term sustainability, ethical and transparent sourcing.</p>
+          <p>4P Foods is part of the rapidly-growing Good Food Movement that is building a better food system focused on equity, health, long-term sustainability, and ethical and transparent sourcing.</p>
         </div>
         <div class="text-center mt-5">
           <a href="/about" class="btn btn-primary editable">Learn More About Us</a>
@@ -61,13 +62,13 @@ _assets:
       </div>
     </div>
     <div class="row mt-5">
-      <div class="col-md-6 col-lg-3 text-center">
+      <div class="col-md-6 col-lg-4 text-center">
         <img src="/img/icons/4p-icons-howitworks-01.png" class="img-fluid mb-4 w-50 editable" alt="Barn Graphic" />
         <div class="editable">
           <p><strong>600+</strong> independent, family farmers supported by 4P Foods throughout the east coast.</p>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3 text-center">
+      <div class="col-md-6 col-lg-4 text-center">
         <img src="/img/icons/4p-icons-ourimpact-02.png" class="img-fluid mb-4 w-50 editable" alt="Groceries Graphic" />
         <div class="editable">
           <p>Over <strong>100,000 lbs</strong> of Good Food delivered into underserved communities in our national region.</p>
@@ -85,6 +86,12 @@ _assets:
           
         </div>
       </div>
+      <!--<div class="col-md-6 col-lg-3 text-center">-->
+      <!--  <img class="img-fluid mb-4 w-50 editable" alt="Money Graphic" src="/uploads/screen-shot-2020-08-27-at-6-06-33-pm.png" width="202" />-->
+      <!--  <div class="editable">-->
+          
+      <!--  </div>-->
+      <!--</div>-->
     </div>
   </div>
 </section>
@@ -131,6 +138,47 @@ _assets:
         <p class="text-uppercase text-white editable mb-0">
           Tom McDougall &ndash; CEO &amp; Founder
         </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-tan">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h2 class="editable">
+          Meet our food equity partners
+        </h2>
+        <div class="editable">
+          <p>With every 4P Bag delivered, you are supporting our mission of building a more equitable food system. Learn more about our food access partners who make this vision possible.</p>
+        </div>
+        <a href="/our-partners" class="btn btn-primary">Learn More</a>
+      </div>
+      <div class="col-lg-6">
+        <div class="bg-image aspect-4x3" style="background-image: url('{{ page._assets[6].image }}')" data-cms-editor-link="cloudcannon:#_assets[6].image" data-cms-editor-link-style="modal"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-lg-auto text-center">
+        <div class="editable">
+          <h2>Meet our farmers and ARTISANS</h2>
+          <div class="mb-5">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+    {% include farmers/featured-farmer.html %} {% include farmers/farmers-list-featured.html %}
+  </div>
+</section>
+<!-- <featured-farms></featured-farms> -->
+<section class="bg-green-dark bg-image aspect-none" style="background-image: url({{ '/img/bg-illustrations/4p-homepage-button-02.jpg' }})">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="/our-farmers" class="btn btn-outline-white editable">See all producer profiles</a>
       </div>
     </div>
   </div>

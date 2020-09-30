@@ -25,6 +25,9 @@ assets:
   - _type: video
     title: How To Pause Deliveries - Vacation Hold
     embed_url: 'https://www.youtube.com/embed/GH9K_zvgPlU'
+  - _type: video
+    title: '4P Virtual Tour: Together We Bake'
+    embed_url: 'https://www.youtube.com/embed/wm9uhaIuGEM'
 tags:
 ---
 

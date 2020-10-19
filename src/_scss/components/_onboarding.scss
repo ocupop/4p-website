@@ -1,4 +1,12 @@
 #modal-onboarding {
+  .modal-dialog-centered {
+    &.modal-dialog-scrollable {
+      justify-content: flex-start;
+      @include media-breakpoint-up(lg) {
+        justify-content: center;
+      }
+    }
+  }
   .modal-xl {
     max-width: 95%;
     .modal-content {
@@ -6,33 +14,40 @@
     }
     .modal-header {
       border-radius: 0;
-      .close {
-        width: 33px;
-        height: 33px;
-        background-color: $white;
-        color: $gray-600;
-        float: none;
-        font-size: 35px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        opacity: 1;
-      }
+      
       .modal-title {
         text-transform: none;
         width: 100%;
       }
     }
+    
+  }
+  .close {
+    width: 33px;
+    height: 33px;
+    background-color: $white;
+    color: $gray-600;
+    float: none;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 1;
+    z-index: 100;
+    @include media-breakpoint-up(lg) {
+      top: -10px;
+      right: -12px;
+    }
   }
 }
 
 .step-number {
-  width: 75px;
-  height: 75px;
+  width: 40px;
+  height: 40px;
   font-size: 20px;
   font-weight: 600;
   background-color: $tan;
@@ -42,25 +57,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include media-breakpoint-up(lg) {
+    width: 75px;
+    height: 75px;
+    font-size: 15px;
+  }
 }
 
 #carousel-onboarding {
   .carousel-control-prev,
   .carousel-control-next {
+    width: 30px;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
     background-image: none;
   }
 
   .carousel-control-prev {
     left: -20px;
     @include media-breakpoint-up(lg) {
-      left: -60px;
+      left: 0;
     }
     
   }
   .carousel-control-next {
     right: 10px;
     @include media-breakpoint-up(lg) {
-      right: -35px;
+      right: 25px;
     }
   }
 }

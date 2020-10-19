@@ -14,13 +14,9 @@
   }
 }
 
-// #pageContent {
-//   padding-top: 110px;
-//   overflow: hidden;
-//   @include media-breakpoint-down(md) {
-//     padding-top: 58px;
-//   }
-// }
+#pageContent {
+  overflow: hidden;
+}
 #pageFooter {
   h6 {
     font-weight: 800;

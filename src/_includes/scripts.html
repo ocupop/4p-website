@@ -9,6 +9,8 @@
 
 <script defer>
   $(document).ready(function(){
+    //launch onboarding modal on page load
+    $('#modal-onboarding').modal('show')
     var controller = new ScrollMagic.Controller();
 
     $('[data-lazy-type]').each(function () {

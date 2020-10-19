@@ -3,10 +3,12 @@
 {% include head.html %}
 
 <body class="{{ page.layout }}">
+  {% include onboarding/modal-onboarding.html %}
   {% include header.html %}
   <main id="pageContent">
     {{ content }}
   </main>
+  
   {% include footer.html %}
   {% include scripts.html %}
 </body>

@@ -8,11 +8,17 @@
       <div class="modal-body p-0">
         <div id="carousel-onboarding" class="carousel slide d-none d-lg-block" data-ride="carousel" data-interval="false" data-wrap="false">
           <div class="carousel-inner">
+            <div class="carousel-item active">
+              {% include onboarding/slide-welcome.html %}
+            </div>
             {% for slide in site.data.onboarding.slides %}
-              <div class="carousel-item {% if forloop.first %}active{% endif %}">
+              <div class="carousel-item">
                 {% include onboarding/slide.html %}
               </div>
             {% endfor %}
+            <div class="carousel-item">
+              {% include onboarding/slide-start-shopping.html %}
+            </div>
           </div>
           <div class="carousel-controls controls-active">
             <a class="carousel-control-prev" href="#carousel-onboarding" role="button" data-slide="prev">

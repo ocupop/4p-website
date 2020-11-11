@@ -97,7 +97,7 @@
 
 
     //Show slide number in onboarding carousel
-    var totalSlides = $('.carousel-item').length -1;
+    var totalSlides = $('#carousel-onboarding .carousel-item').length -1;
     console.log(totalSlides)
     var currentIndex = $('.carousel-item.active').index();
     if(currentIndex == 0){
@@ -109,29 +109,29 @@
     console.log(currentIndex)
 
     $('#carousel-onboarding').bind('slid.bs.carousel', function() {
-      currentIndex = $('.carousel-item.active').index();
+      currentIndex = $('#carousel-onboarding .carousel-item.active').index();
       if(currentIndex == 0){
-        $('.carousel-controls').removeClass('controls-active');
+        $('#carousel-onboarding .carousel-controls').removeClass('controls-active');
       }else {
-        $('.carousel-controls').addClass('controls-active');
+        $('#carousel-onboarding .carousel-controls').addClass('controls-active');
       }
     $('.slide-number').html(''+currentIndex+' of '+totalSlides+'');
     });
 
     //replace onboarding image on collapse click
 
-    $('[data-image]').on('click', function(){
+    $('[data-video]').on('click', function(){
       if($(this).hasClass('collapsed')) {
         console.log('do it')
-        var new_image = $(this).data('image')
-        var instruction_image = $('.carousel-item.active').find('.instruction-image')
-        console.log(new_image)
-        instruction_image.attr('src', new_image);
+        var new_video = $(this).data('video')
+        var instruction_video = $('.carousel-item.active').find('.instruction-video')
+        console.log(new_video)
+        instruction_video.attr('src', new_video);
       }else {
-        var instruction_image = $('.carousel-item.active').find('.instruction-image')
-        var default_image = instruction_image.data('default-image');
+        var instruction_video = $('.carousel-item.active').find('.instruction-video')
+        var default_video = instruction_video.data('default-video');
         console.log('hiding')
-        instruction_image.attr('src', default_image)
+        instruction_video.attr('src', default_video)
       }
     })
 

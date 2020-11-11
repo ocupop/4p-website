@@ -2,15 +2,66 @@
   <div class="col-lg-6">
     <div class="content-wrapper">
       <div class="content">
-        <h1 class="h2">{{ site.data.onboarding.welcome_page.title }}</h1>
-        {{ site.data.onboarding.welcome_page.description_html }}
+        <span class="mb-0 text-primary h3">{{ forloop.index }}.</span>
+        <h2>{{ slide.title }}</h2>
+        {{ slide.description_html }}
+        <div class="accordion mt-4" id="accordion-deliveries">
+          {% for instruction in slide.instructions %}
+            <div class="card">
+              <div class="card-header" id="heading-deliveries-{{ forloop.index }}">
+                <button 
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse-deliveries-{{ forloop.index }}"
+                  aria-expanded="true"
+                  aria-controls="collapse-deliveries-{{ forloop.index }}"
+                  data-video="{{ instruction.video_path }}">
+                  {{ instruction.title }} <i class="ri-add-line"></i>
+                </button>
+              </div>
+          
+              <div id="collapse-deliveries-{{ forloop.index }}" class="collapse" aria-labelledby="heading-deliveries-{{ forloop.index }}" data-parent="#accordion-deliveries">
+                <div class="card-body px-0 pt-0">
+                  {{ instruction.description_html }}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+          <!-- <div class="card">
+            <div class="card-header" id="heading-deliveries-2">
+              <button
+                class="btn btn-link btn-block text-left collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse-deliveries-2"
+                aria-expanded="false"
+                aria-controls="collapse-deliveries-2"
+                data-image="https://via.placeholder.com/1200x1000?text=instruction2">
+                Skip an upcoming delivery <i class="ri-add-line"></i>
+              </button>
+            </div>
+            <div
+              id="collapse-deliveries-2"
+              class="collapse"
+              aria-labelledby="heading-deliveries-2"
+              data-parent="#accordion-deliveries">
+              <div class="card-body px-0 pt-0">
+                <p>Skipping orders is easy! Click the x next to any item in your cart to delete it just once or for all future deliveries, or click on "Upcoming Deliveries" to skip or donate any upcoming order. Going away for a while? Use the "Delivery Hold" feature to pause all orders for a certain period of time.</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
       </div>
     </div>
+    
   </div>
-  <div class="col-lg-6 bg-primary text-white bg-lettuce-2" style="background-image: url(/img/bg-illustrations/4p-background-lettuce-02.png)">
+  <div class="col-lg-6 bg-primary text-white">
     <div class="content-wrapper">
       <div class="content text-lg-center">
-        <a href="#carousel-onboarding" class="h1 d-flex align-items-center" data-slide="next">{{ site.data.onboarding.welcome_page.link_label }} <i class="ri-arrow-right-s-fill" ></i></a>
+        <!-- <div class="loader"></div> -->
+        <video class="instruction-video" src="{{ slide.video_path}}" autoplay loop data-default-video="{{ slide.video_path }}">
+        </video>
       </div>
     </div>
   </div>

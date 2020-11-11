@@ -2,31 +2,33 @@
   <div class="col-lg-6">
     <div class="content-wrapper">
       <div class="content">
-        <span class="mb-0 text-primary h3">1.</span>
-        <h2>Review Your Upcoming Deliveries</h2>
-        <p>Click on the bag icon in the upper right corner to see your next six deliveries. If you have any existing subscriptions, you will see your 4P bags there under each upcoming delivery date.</p>
+        <span class="mb-0 text-primary h3">{{ forloop.index }}.</span>
+        <h2>{{ slide.title }}</h2>
+        {{ slide.description_html }}
         <div class="accordion mt-4" id="accordion-deliveries">
-          <div class="card">
-            <div class="card-header" id="heading-deliveries-1">
-              <button 
-                class="btn btn-link btn-block text-left collapsed"
-                type="button"
-                data-toggle="collapse"
-                data-target="#collapse-deliveries-1"
-                aria-expanded="true"
-                aria-controls="collapse-deliveries-1"
-                data-image="https://via.placeholder.com/1200x1000?text=instruction1">
-                Change the default frequency of your bags <i class="ri-add-line"></i>
-              </button>
-            </div>
-        
-            <div id="collapse-deliveries-1" class="collapse" aria-labelledby="heading-deliveries-1" data-parent="#accordion-deliveries">
-              <div class="card-body px-0 pt-0">
-                <p>You can now change the default frequency of your bags (and eggs) to weekly, every other week, monthly, or specific dates. To do so, remove the item and then add it back after selecting the new frequency from the dropdown menu.</p>
+          {% for instruction in slide.instructions %}
+            <div class="card">
+              <div class="card-header" id="heading-deliveries-{{ forloop.index }}">
+                <button 
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse-deliveries-{{ forloop.index }}"
+                  aria-expanded="true"
+                  aria-controls="collapse-deliveries-{{ forloop.index }}"
+                  data-video="{{ instruction.video_path }}">
+                  {{ instruction.title }} <i class="ri-add-line"></i>
+                </button>
+              </div>
+          
+              <div id="collapse-deliveries-{{ forloop.index }}" class="collapse" aria-labelledby="heading-deliveries-{{ forloop.index }}" data-parent="#accordion-deliveries">
+                <div class="card-body px-0 pt-0">
+                  {{ instruction.description_html }}
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card">
+          {% endfor %}
+          <!-- <div class="card">
             <div class="card-header" id="heading-deliveries-2">
               <button
                 class="btn btn-link btn-block text-left collapsed"
@@ -48,7 +50,7 @@
                 <p>Skipping orders is easy! Click the x next to any item in your cart to delete it just once or for all future deliveries, or click on "Upcoming Deliveries" to skip or donate any upcoming order. Going away for a while? Use the "Delivery Hold" feature to pause all orders for a certain period of time.</p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -57,7 +59,8 @@
   <div class="col-lg-6 bg-primary text-white">
     <div class="content-wrapper">
       <div class="content text-lg-center">
-        <img src="https://via.placeholder.com/1200x1000?text=default1" class="img-fluid instruction-image" data-default-image="https://via.placeholder.com/1200x1000?text=default1" alt="">
+        <video class="instruction-video" src="{{ slide.video_path}}" autoplay data-default-video="{{ slide.video_path }}"></video>
+        <!-- <img src="https://via.placeholder.com/1200x1000?text=default1" class="img-fluid instruction-image"  alt=""> -->
       </div>
     </div>
   </div>

@@ -134,6 +134,13 @@
   background-size: contain;
 }
 
+.bg-lettuce-2 {
+  background-image: url("/img/bg-illustrations/4p-background-lettuce-02.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+}
+
 .bg-cabbage-large {
   background-image: url("/img/bg-illustrations/4p-background-cabbage-cropped.png");
   background-repeat: no-repeat;
@@ -570,6 +577,18 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
+}
+
+.circle {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $primary;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 28px;
 }
 
 .editable {

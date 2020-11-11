@@ -6,7 +6,7 @@
         <span aria-hidden="true">&times;</span>
       </button>
       <div class="modal-body p-0">
-        <div id="carousel-onboarding" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div id="carousel-onboarding" class="carousel slide d-none d-lg-block" data-ride="carousel" data-interval="false" data-wrap="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
               {% include onboarding/slide-1.html %}
@@ -17,43 +17,34 @@
             <div class="carousel-item">
               {% include onboarding/slide-3.html %}
             </div>
-          </div>
-          <a class="carousel-control-prev" href="#carousel-onboarding" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon text-primary" aria-hidden="true">
-              <i class="ri-arrow-left-s-fill"></i>
-            </span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carousel-onboarding" role="button" data-slide="next">
-            <span class="carousel-control-next-icon text-primary" aria-hidden="true">
-              <i class="ri-arrow-right-s-fill"></i>
-            </span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-
-      </div>
-      <div class="modal-footer bg-tan mt-5">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <div class="text-center">
-              <h4><em>Been here before?</em></h4>
-              <p>Don't let us stand in your way, jump right in a start shopping.
-                <span class="text-primary" data-dismiss="modal">Click Here to close this window</span>
-              </p>
+            <div class="carousel-item">
+              {% include onboarding/slide-4.html %}
+            </div>
+            <div class="carousel-item">
+              {% include onboarding/slide-5.html %}
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="text-center">
-              <div class="form-group d-flex align-items-center form-check mb-0">
-                <input type="checkbox" class="form-check-input mt-0" id="exampleCheck1">
-                <label class="form-check-label text-dark" for="exampleCheck1">Please do not show me this again</label>
-              </div>
-            </div>     
+          <div class="carousel-controls controls-active">
+            <a class="carousel-control-prev" href="#carousel-onboarding" role="button" data-slide="prev">
+              <i class="ri-arrow-left-s-fill text-primary"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <span class="slide-number"></span>
+            <a class="carousel-control-next" href="#carousel-onboarding" role="button" data-slide="next">
+              <i class="ri-arrow-right-s-fill text-primary"></i>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
-        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+      <div class="footer-notification">
+        <p><small>Been here before? Don't let us stand in your way, jump right in a start shopping.
+          <em data-dismiss="modal">Click Here to close this window</em></small> 
+        </p>
+        <div class="form-group form-check mb-0">
+          <input type="checkbox" class="form-check-input mt-0" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1"><small>Please do not show me this again</small></label>
+        </div>
       </div>
     </div>
   </div>

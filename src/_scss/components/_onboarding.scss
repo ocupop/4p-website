@@ -43,6 +43,30 @@
       right: -12px;
     }
   }
+ 
+  
+  .row {
+    height: 100%;
+  }
+  .footer-notification {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    padding: 10px 75px;
+    text-align: center;
+    color: $white;
+  }
+  .form-check-label {
+    color: $white;
+    text-transform: none;
+  }
+  .carousel-controls {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .step-number {
@@ -65,9 +89,23 @@
 }
 
 #carousel-onboarding {
+  .carousel-item {
+    
+  }
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 50px 50px 100px;
+    min-height: 600px;
+    .content {
+      padding: 0;
+    }
+  }
   .carousel-control-prev,
   .carousel-control-next {
-    width: 30px;
+    width: auto;
   }
   .carousel-control-next-icon,
   .carousel-control-prev-icon {
@@ -75,16 +113,74 @@
   }
 
   .carousel-control-prev {
-    left: -20px;
     @include media-breakpoint-up(lg) {
-      left: 0;
+      left: 50px;
     }
-    
   }
   .carousel-control-next {
-    right: 10px;
     @include media-breakpoint-up(lg) {
-      right: 25px;
+      right: 50px;
+    }
+  }
+  .carousel-controls {
+    width: 50%;
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary;
+    font-weight: 600;
+    opacity: 0;
+    // @include transition(0.2s);
+    &.controls-active {
+      opacity: 1;
+    }
+  }
+  p {
+    font-size: 14px;
+  }
+  h2,
+  .h2 {
+    text-transform: none;
+  }
+  .slide-intro {
+    .carousel-controls {
+      display: none;
+    }
+  }
+  .accordion {
+    .card {
+      background-color: transparent;
+      margin-bottom: 0;
+      border-top: 1px solid $body-color;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      .card-header {
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+        border-bottom: 0;
+        margin-bottom: 0;
+        .btn-link {
+          color: $body-color;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          text-transform: none;
+          i {
+            font-size: 25px;
+          }
+          &:hover,
+          &:focus {
+            text-decoration: none;
+          }
+        }
+      }
+      &:last-of-type {
+        border-bottom: 1px solid $body-color;
+      }
     }
   }
 }

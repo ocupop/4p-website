@@ -1,22 +1,65 @@
-
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-lg-auto">
-        <div class="text-center">
-          <h3>How to customize your order</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, deleniti dolore. Minima expedita nobis accusamus, placeat pariatur illum, earum, vel tempore corporis nihil dignissimos sint tempora facilis. Magni, autem non.</p>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="content-wrapper">
+      <div class="content">
+        <span class="mb-0 text-primary h3">1.</span>
+        <h2>Review Your Upcoming Deliveries</h2>
+        <p>Click on the bag icon in the upper right corner to see your next six deliveries. If you have any existing subscriptions, you will see your 4P bags there under each upcoming delivery date.</p>
+        <div class="accordion mt-4" id="accordion-deliveries">
+          <div class="card">
+            <div class="card-header" id="heading-deliveries-1">
+              <button 
+                class="btn btn-link btn-block text-left collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse-deliveries-1"
+                aria-expanded="true"
+                aria-controls="collapse-deliveries-1"
+                data-image="https://via.placeholder.com/1200x1000?text=instruction1">
+                Change the default frequency of your bags <i class="ri-add-line"></i>
+              </button>
+            </div>
+        
+            <div id="collapse-deliveries-1" class="collapse" aria-labelledby="heading-deliveries-1" data-parent="#accordion-deliveries">
+              <div class="card-body px-0 pt-0">
+                <p>You can now change the default frequency of your bags (and eggs) to weekly, every other week, monthly, or specific dates. To do so, remove the item and then add it back after selecting the new frequency from the dropdown menu.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="heading-deliveries-2">
+              <button
+                class="btn btn-link btn-block text-left collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapse-deliveries-2"
+                aria-expanded="false"
+                aria-controls="collapse-deliveries-2"
+                data-image="https://via.placeholder.com/1200x1000?text=instruction2">
+                Skip an upcoming delivery <i class="ri-add-line"></i>
+              </button>
+            </div>
+            <div
+              id="collapse-deliveries-2"
+              class="collapse"
+              aria-labelledby="heading-deliveries-2"
+              data-parent="#accordion-deliveries">
+              <div class="card-body px-0 pt-0">
+                <p>Skipping orders is easy! Click the x next to any item in your cart to delete it just once or for all future deliveries, or click on "Upcoming Deliveries" to skip or donate any upcoming order. Going away for a while? Use the "Delivery Hold" feature to pause all orders for a certain period of time.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="bg-image aspect-2x1 bg-dark mb-3 mb-lg-0"></div>
-      </div>
-      <div class="col-lg-6">
-        <div class="bg-image aspect-2x1 bg-dark"></div>
+    
+  </div>
+  <div class="col-lg-6 bg-primary text-white">
+    <div class="content-wrapper">
+      <div class="content text-lg-center">
+        <img src="https://via.placeholder.com/1200x1000?text=default1" class="img-fluid instruction-image" data-default-image="https://via.placeholder.com/1200x1000?text=default1" alt="">
       </div>
     </div>
   </div>
-</section>
+</div>
 

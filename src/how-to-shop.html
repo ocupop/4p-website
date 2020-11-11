@@ -1,6 +1,24 @@
 ---
 layout: default
 title: How to Shop
+how_to_shop_guide:
+  - title: Sign Up
+    description_html: >-
+      <p>Choose pickup or delivery, and please include delivery directions (clear and concise are always appreciated!)</p>
+      <p>Enter your contact and billing information and you're ready to go shopping!</p>
+  - title: Add 4P Bags to your cart
+    description_html: >-
+      <p>Produce, protein, dairy, and fruit bags are available</p>    
+      <p>Make sure to select a recurring order if you want to get Good Food on a regular basis! Don't worry, you'll get reminders before each delivery to remind you that you've got food coming.</p>
+  - title: Customize your 4P bags
+    description_html: >-
+      <p>Produce and new fruit bags have a set price and number of items within each size. Swap out any item you don't want from our weekly picks and then swap in any item you do, one for one.</p>    
+      <p>Protein and dairy bags now have flexible prices based on what you put in them. We still pack a "standard" bag with our picks each week, and you have the freedom to add or take away as much as you want, as long as you hit the $20 minimum per bag.</p>
+  - title: Go shopping for a la carte items
+    description_html: >-
+      <p>Add on exactly what you need (extra produce when you have guests in town, eggs to your produce bag, your favorite local granola) or try out something new from a talented artisan producer</p>    
+      <p>Try building your own bag by adding a la carte produce and pantry items to your cart&mdash;as long as you hit the $30 minimum order, you're good to go.</p>
+faqs:      
 ---
 
 <section>
@@ -17,6 +35,52 @@ title: How to Shop
       <div class="col-12 col-lg-8 mx-lg-auto">
         <div class="responsive-iframe aspect-16x9">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/WL1Hi_qsoM0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="how-to-shop-guide">
+  <div class="container">
+    <div class="row">
+      {% for item in page.how_to_shop_guide %}
+        <div class="col-lg-6 mb-5">
+          <div class="row">
+            <div class="col-lg-auto">
+              <div class="circle bg-tan">
+                {{ forloop.index }}
+              </div>
+            </div>
+            <div class="col">
+              <h4 class="my-3 text-nocase">{{ item.title }}</h4>
+              {{ item.description_html }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="bg-secondary bg-image aspect-none" style="background-image: url(/img/bg-illustrations/4p-homepage-goodfood-01.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-lg-auto">
+        <div class="editable text-center text-white">
+          <h2 class="text-nocase mb-4">Engage In Our Mission</h2>
+          <div class="editable">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum natus magnam nam impedit, tempore architecto odio! At, earum voluptates tempora provident, cum, optio vero qui asperiores dolores recusandae aliquam? Voluptas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center editable">
+          <h2>Shopping FAQ</h2>
         </div>
       </div>
     </div>

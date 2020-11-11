@@ -32,12 +32,40 @@
             </a>
           </div>
         </div>
+        <div class="d-block d-lg-none">
+          {% include onboarding/slide-welcome.html %}
+          
+          {% for slide in site.data.onboarding.slides %}
+          <section>
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h2 class="text-nocase">{{ slide.title }}</h2>
+                  {{ slide.description_html }}
+                  <video src="{{ slide.video_mobile_path }}" autoplay loop></video>
+                </div>
+              </div>
+              {% for instruction in slide.instructions %} 
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="h6 text-nocase font-weight-bold">{{ instruction.title }}</h3>
+                    {{ instruction.description_html }}
+                    <video src="{{ instruction.video_mobile_path }}" autoplay loop></video>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </section>
+           
+          {% endfor %}
+          {% include onboarding/slide-start-shopping.html %}  
+        </div>
       </div>
       <div class="footer-notification">
-        <p><small>Been here before? Don't let us stand in your way, jump right in a start shopping.
+        <p class="mb-0"><small>Been here before? <span class="d-none d-lg-inline">Don't let us stand in your way, jump right in a start shopping.</span> 
           <em data-dismiss="modal">Click Here to close this window</em></small> 
         </p>
-        <div class="form-group form-check mb-0">
+        <div class="form-group d-none d-lg-block form-check mb-0">
           <input type="checkbox" class="form-check-input mt-0" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1"><small>Please do not show me this again</small></label>
         </div>

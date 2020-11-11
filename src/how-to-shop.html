@@ -107,10 +107,41 @@ faqs:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="text-center editable">
+        <div class="text-center text-primary mb-5 editable">
           <h2>Shopping FAQ</h2>
+        </div>
+        <div class="accordion" id="accordion-faq">
+          {% for item in page.faqs %}
+            <div class="card">
+              <div class="card-header py-0" id="heading-{{ forloop.index }}">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
+                    {{ item.question }} <i class="ri-arrow-down-s-fill text-primary"></i>
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapse-{{ forloop.index }}" class="collapse" aria-labelledby="heading-{{ forloop.index }}" data-parent="#accordion-faq">
+                <div class="card-body px-0 pt-0">
+                  {{ item.answer_html }}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
         </div>
       </div>
     </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center editable">
+          <h2>Shop Tutorials</h2>
+        </div>
+      </div>
+    </div>
+    
   </div>
 </section>

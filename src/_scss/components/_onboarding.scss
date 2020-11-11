@@ -150,37 +150,5 @@
       display: none;
     }
   }
-  .accordion {
-    .card {
-      background-color: transparent;
-      margin-bottom: 0;
-      border-top: 1px solid $body-color;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      .card-header {
-        background-color: transparent;
-        padding-left: 0;
-        padding-right: 0;
-        border-bottom: 0;
-        margin-bottom: 0;
-        .btn-link {
-          color: $body-color;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          text-transform: none;
-          i {
-            font-size: 25px;
-          }
-          &:hover,
-          &:focus {
-            text-decoration: none;
-          }
-        }
-      }
-      &:last-of-type {
-        border-bottom: 1px solid $body-color;
-      }
-    }
-  }
+  
 }

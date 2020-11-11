@@ -143,6 +143,14 @@ videos:
         </div>
       </div>
     </div>
-
+    <div class="row">
+      {% for video in page.videos %}
+        <div class="col-lg-4">
+          <div class="bg-image aspect-16x9"></div>
+          <h4>{{ video.title }}</h4>
+          {{ video.description_html }}
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </section>

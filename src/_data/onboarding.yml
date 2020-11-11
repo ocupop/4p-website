@@ -10,12 +10,23 @@ slides:
       <p>Click on the bag icon in the upper right corner to see your next six
       deliveries. If you have any existing subscriptions, you will see your 4P
       bags there under each upcoming delivery date.</p>
-    video_path:
+    video_path: /uploads/01-video-1.mp4
     instructions:
-      - title:
-        description_html:
-        video_path:  
-
+      - title: Change the default frequency of your bags
+        description_html: >-
+          <p>You can now change the default frequency of your bags (and eggs) to
+          weekly, every other week, monthly, or specific dates. To do so, remove
+          the item and then add it back after selecting the new frequency from
+          the dropdown menu.</p>
+        video_path: /uploads/01-video-2.mp4
+      - title: Skip an upcoming delivery
+        description_html: >-
+          <p>Skipping orders is easy! Click the x next to any item in your cart
+          to delete it just once or for all future deliveries, or click on
+          "Upcoming Deliveries" to skip or donate any upcoming order. Going away
+          for a while? Use the "Delivery Hold" feature to pause all orders for a
+          certain period of time.</p>
+        video_path:
 start_shopping_page:
   title: Learn More
   description_html: >-

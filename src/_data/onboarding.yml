@@ -1,0 +1,25 @@
+welcome_page:
+  title: Tour The New 4P Foods Shopping Experience
+  description_html: >-
+    <p>We promise it's worth your while! Click the arrows to see how it all works and then be on your way to your next delivery of Good Food!</p>
+  link_label: 'Get Started!'
+
+slides:
+  - title:
+    description_html:
+    video_path:
+      instructions:
+        - title:
+          description_html:
+          video_path:  
+
+start_shopping_page:
+  title:
+  description_html:
+  video_path:
+  how_to_shop_guide_link:
+  how_to_shop_guide_link_label:
+  cta_title:
+  cta_description_html:
+  cta_link:
+  cta_link_label:

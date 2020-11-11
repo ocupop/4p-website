@@ -8,10 +8,10 @@ slides:
   - title:
     description_html:
     video_path:
-      instructions:
-        - title:
-          description_html:
-          video_path:  
+    instructions:
+      - title:
+        description_html:
+        video_path:  
 
 start_shopping_page:
   title:

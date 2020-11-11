@@ -1,25 +1,32 @@
 welcome_page:
   title: Tour The New 4P Foods Shopping Experience
   description_html: >-
-    <p>We promise it's worth your while! Click the arrows to see how it all works and then be on your way to your next delivery of Good Food!</p>
-  link_label: 'Get Started!'
-
+    <p>We promise it's worth your while! Click the arrows to see how it all
+    works and then be on your way to your next delivery of Good Food!</p>
+  link_label: Get Started!
 slides:
-  - title:
-    description_html:
+  - title: Review Your Upcoming Deliveries
+    description_html: >-
+      <p>Click on the bag icon in the upper right corner to see your next six
+      deliveries. If you have any existing subscriptions, you will see your 4P
+      bags there under each upcoming delivery date.</p>
     video_path:
       instructions:
         - title:
           description_html:
-          video_path:  
-
+          video_path:
 start_shopping_page:
-  title:
-  description_html:
+  title: Learn More
+  description_html: >-
+    <p>Still have a few questions? Dive deeper in our How to Shop Guide and
+    FAQs, or watch a full video tutorial.</p>
   video_path:
   how_to_shop_guide_link:
-  how_to_shop_guide_link_label:
-  cta_title:
-  cta_description_html:
+  how_to_shop_guide_link_label: How to Shop Guide
+  cta_title: Start Shopping
+  cta_description_html: >-
+    <p>Now that you know the basics, click through to reset your password and
+    enjoy our new shopping experience (or if you're brand new, create an
+    account)</p>
   cta_link:
-  cta_link_label:
+  cta_link_label: Start Shopping

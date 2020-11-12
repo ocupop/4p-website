@@ -1,0 +1,26 @@
+<div class="d-block d-lg-none">
+  {% include onboarding/welcome-mobile.html %}
+  {% for slide in site.data.onboarding.slides %}
+  <section id="instructions">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-nocase">{{ slide.title }}</h2>
+          {{ slide.description_html }}
+          <video data-lazy-type="video" data-lazy-src="{{ slide.video_mobile_path }}" class="my-3" autoplay controls loop></video>
+        </div>
+      </div>
+      {% for instruction in slide.instructions %} 
+        <div class="row">
+          <div class="col-12">
+            <h3 class="h6 text-nocase font-weight-bold">{{ instruction.title }}</h3>
+            {{ instruction.description_html }}
+            <video data-lazy-type="video" data-lazy-src="{{ instruction.video_mobile_path }}" class="my-3" autoplay controls loop></video>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section> 
+  {% endfor %}
+  {% include onboarding/start-shopping-mobile.html %}
+</div>

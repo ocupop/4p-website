@@ -84,6 +84,11 @@
       font-size: 1.6rem;
     }
   }
+  video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 #carousel-onboarding {
@@ -148,26 +153,59 @@
 }
 
 // shop help button styles
-
-#btn-shop-help {
+#shop-help-wrapper {
   position: fixed;
   top: 50%;
   right: 0;
-  color: $primary;
-  background-color: $tan;
-  font-weight: 600;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  line-height: 1.2;
-  font-size: 14px;
-  border-radius: 33px 0 0 33px;
-  box-shadow: 0 2px 10px rgba($black, 0.3);
-  i {
-    font-size: 40px;
-    margin-right: 5px;
+  
+  #help-toggle {
+    position: absolute;
+    right: 0;
+    top: -19px;
+    font-size: 20px;
+    background-color: $tan;
+    padding: 0px;
+    z-index: 100;
+    &:hover {
+      cursor: pointer;
+    }
   }
+  &.active {
+    #btn-shop-help,
+    #help-toggle {
+      transform: translateX(0);
+    }
+
+  }
+  #btn-shop-help {
+    color: $primary;
+    background-color: $tan;
+    font-weight: 600;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+    font-size: 14px;
+    border-radius: 33px 0 0 33px;
+    box-shadow: 0 2px 10px rgba($black, 0.3);
+    
+    @include transition(0.4s);
+    &:hover {
+      transform: translateX(0);
+    }
+    .ri-question-line {
+      font-size: 40px;
+      margin-right: 5px;
+    }
+    
+  }
+  #btn-shop-help,
+  #help-toggle {
+    transform: translateX(92px);
+  }
+
 }
+
 
 
 //video loader

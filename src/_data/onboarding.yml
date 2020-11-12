@@ -89,8 +89,7 @@ start_shopping_page:
   description_html: >-
     <p>Still have a few questions? Dive deeper in our How to Shop Guide and
     FAQs, or watch a full video tutorial.</p>
-  video_desktop_path:
-  video_mobile_path:
+  video_embed: 'https://www.youtube.com/embed/WL1Hi_qsoM0'
   how_to_shop_guide_link: /how-to-shop
   how_to_shop_guide_link_label: How to Shop Guide
   shopping_title: Start Shopping

@@ -23,7 +23,7 @@ slides:
           weekly, every other week, monthly, or specific dates. To do so, remove
           the item and then add it back after selecting the new frequency from
           the dropdown menu.</p>
-        video_desktop_path: /uploads/videos/01-video-2.mp4
+        video_desktop_path: /uploads/videos/change-freq-bags.mp4
         video_mobile_path:
       - title: Skip an upcoming delivery
         description_html: >-

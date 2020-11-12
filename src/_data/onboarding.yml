@@ -5,7 +5,8 @@ welcome_page:
     <p>We promise it's worth your while! Click the arrows to see how it all
     works and then be on your way to your next delivery of Good Food!</p>
   description_mobile_html: >-
-    <p>Here from 4p's old site? Let us show you what's new. Here for the first time? These tips will help you orient yourself, too.</p>  
+    <p>Here from 4p's old site? Let us show you what's new. Here for the first
+    time? These tips will help you orient yourself, too.</p>
   link_label: Get Started!
 slides:
   - title: Review Your Upcoming Deliveries
@@ -13,7 +14,7 @@ slides:
       <p>Click on the bag icon in the upper right corner to see your next six
       deliveries. If you have any existing subscriptions, you will see your 4P
       bags there under each upcoming delivery date.</p>
-    video_desktop_path: /uploads/videos/01-video-1.mp4
+    video_desktop_path: /uploads/videos/review-upcoming-deliveries.mp4
     video_mobile_path:
     instructions:
       - title: Change the default frequency of your bags
@@ -64,7 +65,7 @@ slides:
       select a la carte goods within each product category. (For example: Hop
       over to Dairy &amp;amp; Eggs). Just make sure you meet the $30 minimum
       order for delivery, and all orders over $50 get free delivery!</p>
-    video_desktop_path:
+    video_path_desktop:
     video_mobile_path:
     instructions:
       - title: Try a Fully A La Carte Order

@@ -194,8 +194,11 @@
       transform: translateX(0);
     }
     .ri-question-line {
-      font-size: 40px;
+      font-size: 20px;
       margin-right: 5px;
+      @include media-breakpoint-up(lg) {
+        font-size: 40px;
+      }
     }
     
   }

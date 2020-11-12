@@ -5,7 +5,7 @@
   left: 0;
   background-color: $white;
   box-shadow: 0 0 10px rgba($black, 0.2);
-  z-index: 99;
+  z-index: 999;
 
   @include media-breakpoint-down(lg) {
     .container {

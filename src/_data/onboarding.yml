@@ -32,7 +32,7 @@ slides:
           "Upcoming Deliveries" to skip or donate any upcoming order. Going away
           for a while? Use the "Delivery Hold" feature to pause all orders for a
           certain period of time.</p>
-        video_desktop_path:
+        video_desktop_path: /uploads/videos/skip-delivery.mp4
         video_mobile_path:
   - title: Customize Your 4P Bags
     description_html: >-

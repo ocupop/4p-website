@@ -4,7 +4,9 @@
       <div class="col-12">
         <h2>{{ site.data.onboarding.start_shopping_page.title }}</h2>
         {{ site.data.onboarding.start_shopping_page.description_html  }}
-        <video src="{{ site.data.onboarding.start_shopping_page.video_mobile_path }}" controls class="mt-3"></video>
+        <div class="responsive-iframe aspect-16x9">
+          <iframe src="{{ site.data.onboarding.start_shopping_page.video_embed }}" frameborder="0"></iframe>
+        </div>
         <div class="text-center">
           <a href="{{ site.data.onboarding.start_shopping_page.how_to_shop_guide_link }}" class="btn btn-primary mt-5">{{ site.data.onboarding.start_shopping_page.how_to_shop_guide_link_label }}</a>
         </div>

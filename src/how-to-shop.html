@@ -1,7 +1,7 @@
 ---
 layout: default
 title: How to Shop
-video_embed: https://www.youtube.com/embed/WL1Hi_qsoM0
+video_embed: 'https://www.youtube.com/embed/WL1Hi_qsoM0'
 how_to_shop_guide:
   - title: Sign Up
     description_html: >-
@@ -57,8 +57,8 @@ videos:
       Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia
       arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per
       conubia nostra, per inceptos himenaeos.&nbsp;</p>
-    embed_url: '/uploads/videos/01-video-1.mp4'
-    thumbnail_image:
+    embed_url: /uploads/videos/01-video-1.mp4
+    thumbnail_image: /uploads/2013-07-strawberry-box-va-xx.JPG
   - title: How to do another thing
     description_html: >-
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
@@ -180,7 +180,7 @@ videos:
     <div class="row">
       {% for video in page.videos %}
         <div class="col-lg-4">
-          <a href="#" class="bg-image aspect-16x9 video-thumbnail" data-toggle="modal" data-target="#videoModal" data-theVideo="{{ video.embed_url }}" style="background-image: url({{ video.thumbnail_image }})">
+          <a href="#" class="bg-image aspect-16x9 video-thumbnail" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ video.embed_url }}" style="background-image: url({{ video.thumbnail_image }})">
       
           </a>
           <h4 class="mt-4">{{ video.title }}</h4>

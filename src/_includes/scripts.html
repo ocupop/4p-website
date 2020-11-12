@@ -5,46 +5,45 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"
   defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" defer></script>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
 
 <script defer>
+  $(document).ready(function(){
+    Cookies.remove('onboarding')
 
-  function setCookie(cname,cvalue,exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires=" + d.toGMTString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  }
-
-  function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
+    //cookie management
+    function checkOnboardingCookie(){
+      var onboarding = Cookies.get('onboarding')
+      if(onboarding) {
+        console.log('onboarding is set, check the value', onboarding)
+        if(onboarding == 'show'){
+          //launch onboarding modal on page load if onboarding cookie is 'show'
+          $('#modal-onboarding').modal('show')
+        }
+        else{
+          $('#modal-onboarding').modal('hide')
+        }
       }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
+      else {
+        Cookies.set('onboarding', 'show', { expires: 100 })
+        console.log('onboarding is not set, set the value', onboarding)
+        $('#modal-onboarding').modal('show')
       }
     }
-    return "";
-  }
 
-  function checkCookie() {
-    getCookie("show-client-modal")
-  }
+    checkOnboardingCookie();
 
-  setCookie("show-client-modal", true, 1);
+    $('#modal-onboarding').on('hidden.bs.modal', function () {
+      console.log('modal onboarding closed')
+      if ($('#dismiss-onboarding').is(":checked")){
+        // it is checked, hide modal and set cookie to expire in 1 year
+        Cookies.set('onboarding', 'hide', { expires: 365 })
+      }else {
+        // it is not check, hide the modal and set cookie to expire in 1 day
+        Cookies.set('onboarding', 'hide', { expires: 1 })
+      }
+    })
 
-  console.log(checkCookie())
-  
-
-  $(document).ready(function(){
-    //launch onboarding modal on page load
-    $('#modal-onboarding').modal('show')
     var controller = new ScrollMagic.Controller();
 
     $('[data-lazy-type]').each(function () {
@@ -84,14 +83,12 @@
     var hash = window.location.hash;
     console.log(hash)
     if(hash && $('.nav-tabs').length){
-      // var active_tab = $('.nav-tabs a').attr('href', hash);
       $('.nav-tabs a[href="' + hash + '"]').tab('show');
     }
 
     $('.nav-tabs a').click(function (e) {
       console.log('tab click')
       hash = $(this).attr('href');
-      console.log(hash)
       window.location.hash = hash;
     });
 
@@ -100,41 +97,38 @@
     var totalSlides = $('#carousel-onboarding .carousel-item').length -1;
     console.log(totalSlides)
     var currentIndex = $('.carousel-item.active').index();
-    if(currentIndex == 0){
-      $('.carousel-controls').removeClass('controls-active');
-    }else {
-      $('.carousel-controls').addClass('controls-active');
+
+    function checkCarouselIndex(){
+      if(currentIndex == 0){
+        $('.carousel-controls').removeClass('controls-active');
+      }else {
+        $('.carousel-controls').addClass('controls-active');
+      }
     }
 
-    console.log(currentIndex)
+    checkCarouselIndex();
 
     $('#carousel-onboarding').bind('slid.bs.carousel', function() {
       currentIndex = $('#carousel-onboarding .carousel-item.active').index();
-      if(currentIndex == 0){
-        $('#carousel-onboarding .carousel-controls').removeClass('controls-active');
-      }else {
-        $('#carousel-onboarding .carousel-controls').addClass('controls-active');
-      }
+      checkCarouselIndex()
     $('.slide-number').html(''+currentIndex+' of '+totalSlides+'');
     });
 
-    //replace onboarding image on collapse click
+    //replace onboarding video on collapse click
 
     $('[data-video]').on('click', function(){
       if($(this).hasClass('collapsed')) {
-        console.log('do it')
-        var new_video = $(this).data('video')
         var instruction_video = $('.carousel-item.active').find('.instruction-video')
-        console.log(new_video)
+        var new_video = $(this).data('video');
         instruction_video.attr('src', new_video);
       }else {
         var instruction_video = $('.carousel-item.active').find('.instruction-video')
         var default_video = instruction_video.data('default-video');
-        console.log('hiding')
         instruction_video.attr('src', default_video)
       }
     })
 
+    //autoplay video in modal
     function autoPlayYouTubeModal(){
       var trigger = $("body").find('[data-toggle="modal"]');
       trigger.click(function() {
@@ -149,5 +143,6 @@
     }
 
     autoPlayYouTubeModal();
+
   })
 </script>

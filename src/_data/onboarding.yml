@@ -37,7 +37,8 @@ slides:
     description_html: >-
       <p>You can customize your 4P Bags to make sure you are getting exactly
       what you want each week. Learn how each bag works below.</p>
-    video_path:
+    video_desktop_path:
+    video_mobile_path:
     instructions:
       - title: How to Customize Produce and Fruit Bags
         description_html: >-
@@ -92,10 +93,9 @@ start_shopping_page:
   video_mobile_path:
   how_to_shop_guide_link: /how-to-shop
   how_to_shop_guide_link_label: How to Shop Guide
-  cta_title: Start Shopping
-  cta_description_html: >-
+  shopping_title: Start Shopping
+  shopping_description_html: >-
     <p>Now that you know the basics, click through to reset your password and
     enjoy our new shopping experience (or if you're brand new, create an
     account)</p>
-  cta_link:
-  cta_link_label: Start Shopping
+  shopping_link_label: Start Shopping

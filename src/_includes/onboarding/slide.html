@@ -16,10 +16,10 @@
                   type="button"
                   data-toggle="collapse"
                   data-target="#collapse-{{ slide_num }}-{{ forloop.index }}"
-                  aria-expanded="true"
+                  aria-expanded="false"
                   aria-controls="collapse-{{ slide_num }}-{{ forloop.index }}"
-                  data-video="{{ instruction.video_path }}">
-                  {{ instruction.title }} <i class="ri-add-line"></i>
+                  data-video="{{ instruction.video_desktop_path }}">
+                  {{ instruction.title }} <i class="ri-add-line"></i><i class="ri-subtract-line"></i>
                 </button>
               </div>
           
@@ -38,12 +38,9 @@
   <div class="col-lg-6 bg-primary text-white">
     <div class="content-wrapper">
       <div class="content text-lg-center">
-        <!-- <div class="loader"></div> -->
         <div class="video-wrapper">
-          <!-- <div class="loader"></div> -->
-          <video class="instruction-video" src="{{ slide.video_path}}" autoplay loop data-default-video="{{ slide.video_path }}"></video>
+          <video class="instruction-video" src="{{ slide.video_desktop_path}}" autoplay loop controls data-default-video="{{ slide.video_desktop_path }}"></video>
         </div>
-        
       </div>
     </div>
   </div>

@@ -9,7 +9,7 @@
         <div id="carousel-onboarding" class="carousel slide d-none d-lg-block" data-ride="carousel" data-interval="false" data-wrap="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              {% include onboarding/slide-welcome.html %}
+              {% include onboarding/welcome.html %}
             </div>
             {% for slide in site.data.onboarding.slides %}
               <div class="carousel-item">
@@ -17,7 +17,7 @@
               </div>
             {% endfor %}
             <div class="carousel-item">
-              {% include onboarding/slide-start-shopping.html %}
+              {% include onboarding/start-shopping.html %}
             </div>
           </div>
           <div class="carousel-controls controls-active">
@@ -33,16 +33,15 @@
           </div>
         </div>
         <div class="d-block d-lg-none">
-          {% include onboarding/slide-welcome.html %}
-          
+          {% include onboarding/welcome-mobile.html %}
           {% for slide in site.data.onboarding.slides %}
-          <section>
+          <section id="instructions">
             <div class="container">
               <div class="row">
                 <div class="col-12">
                   <h2 class="text-nocase">{{ slide.title }}</h2>
                   {{ slide.description_html }}
-                  <video src="{{ slide.video_mobile_path }}" autoplay loop></video>
+                  <video data-lazy-type="video" data-lazy-src="{{ slide.video_mobile_path }}" class="my-3" autoplay controls loop></video>
                 </div>
               </div>
               {% for instruction in slide.instructions %} 
@@ -50,24 +49,23 @@
                   <div class="col-12">
                     <h3 class="h6 text-nocase font-weight-bold">{{ instruction.title }}</h3>
                     {{ instruction.description_html }}
-                    <video src="{{ instruction.video_mobile_path }}" autoplay loop></video>
+                    <video data-lazy-type="video" data-lazy-src="{{ instruction.video_mobile_path }}" class="my-3" autoplay controls loop></video>
                   </div>
                 </div>
               {% endfor %}
             </div>
-          </section>
-           
+          </section> 
           {% endfor %}
-          {% include onboarding/slide-start-shopping.html %}  
+          {% include onboarding/start-shopping-mobile.html %}
         </div>
       </div>
       <div class="footer-notification">
         <p class="mb-0"><small>Been here before? <span class="d-none d-lg-inline">Don't let us stand in your way, jump right in a start shopping.</span> 
-          <em data-dismiss="modal">Click Here to close this window</em></small> 
+          <a href="#" data-dismiss="modal" class="text-white"><em>Click Here to close this window</em></a></small> 
         </p>
-        <div class="form-group d-none d-lg-block form-check mb-0">
-          <input type="checkbox" class="form-check-input mt-0" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1"><small>Please do not show me this again</small></label>
+        <div class="form-group form-check mb-0">
+          <input type="checkbox" class="form-check-input" id="dismiss-onboarding">
+          <label class="form-check-label" for="dismiss-onboarding"><small>Please do not show me this again</small></label>
         </div>
       </div>
     </div>

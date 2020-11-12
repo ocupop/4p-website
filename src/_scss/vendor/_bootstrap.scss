@@ -191,6 +191,19 @@
         text-transform: none;
         i {
           font-size: 25px;
+          position: absolute;
+          right: 0;
+          &.ri-add-line {
+            opacity: 0;
+            @include transition(0.4s);
+          }
+        }
+        &.collapsed {
+          i {
+           &.ri-add-line {
+             opacity: 1;
+           } 
+          }
         }
         &:hover,
         &:focus {

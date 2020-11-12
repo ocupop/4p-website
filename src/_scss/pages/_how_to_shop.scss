@@ -3,3 +3,17 @@
     text-transform: none;
   }
 }
+
+#accordion-faq {
+  .btn-link {
+    &.collapsed {
+      i {
+        transform: rotate(0)
+      }
+    }
+    i {
+      @include transition(0.4s);
+      transform: rotate(180deg);
+    }
+  }
+}

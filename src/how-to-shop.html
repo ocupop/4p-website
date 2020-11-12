@@ -151,7 +151,7 @@ videos:
           {% for item in page.faqs %}
             <div class="card">
               <div class="card-header py-0" id="heading-{{ forloop.index }}">
-                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
                   {{ item.question }} <i class="ri-arrow-down-s-fill text-primary"></i>
                 </button>
               </div>

@@ -134,8 +134,11 @@
 // shop help button styles
 #shop-help-wrapper {
   position: fixed;
-  top: 50%;
+  top: 100;
   right: 0;
+  @include media-breakpoint-up(lg) {
+    top: 50%;
+  }
   
   #help-toggle {
     position: absolute;

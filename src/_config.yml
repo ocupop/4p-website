@@ -194,6 +194,12 @@ _options:
     left: true
     center: true
     image: true
-    embed: true        
+    embed: true
+  video_desktop_path:
+    uploads_dir: "/uploads/videos/:title"
+  video_mobile_path:
+    uploads_dir: "/uploads/videos/:title"  
+
+
 
 placeholder_image: https://via.placeholder.com/1200

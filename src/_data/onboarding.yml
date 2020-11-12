@@ -13,7 +13,7 @@ slides:
       <p>Click on the bag icon in the upper right corner to see your next six
       deliveries. If you have any existing subscriptions, you will see your 4P
       bags there under each upcoming delivery date.</p>
-    video_desktop_path: /uploads/01-video-1.mp4
+    video_desktop_path: /uploads/videos/01-video-1.mp4
     video_mobile_path:
     instructions:
       - title: Change the default frequency of your bags
@@ -22,7 +22,7 @@ slides:
           weekly, every other week, monthly, or specific dates. To do so, remove
           the item and then add it back after selecting the new frequency from
           the dropdown menu.</p>
-        video_desktop_path: /uploads/01-video-2.mp4
+        video_desktop_path: /uploads/videos/01-video-2.mp4
         video_mobile_path:
       - title: Skip an upcoming delivery
         description_html: >-

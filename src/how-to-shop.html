@@ -57,7 +57,8 @@ videos:
       Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia
       arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per
       conubia nostra, per inceptos himenaeos.&nbsp;</p>
-    embed_url: 'https://www.youtube.com/embed/WL1Hi_qsoM0'
+    embed_url: '/uploads/videos/01-video-1.mp4'
+    thumbnail_image:
   - title: How to do another thing
     description_html: >-
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
@@ -67,6 +68,7 @@ videos:
       arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per
       conubia nostra, per inceptos himenaeos.&nbsp;</p>
     embed_url: 'https://www.youtube.com/embed/WL1Hi_qsoM0'
+    thumbnail_image:
   - title: How to do this other thing
     description_html: >-
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
@@ -76,6 +78,7 @@ videos:
       arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per
       conubia nostra, per inceptos himenaeos.&nbsp;</p>
     embed_url: 'https://www.youtube.com/embed/WL1Hi_qsoM0'
+    thumbnail_image:
 ---
 
 <section>
@@ -177,7 +180,7 @@ videos:
     <div class="row">
       {% for video in page.videos %}
         <div class="col-lg-4">
-          <a href="#" class="bg-image aspect-16x9" data-toggle="modal" data-target="#videoModal" data-theVideo="{{ video.embed_url }}">
+          <a href="#" class="bg-image aspect-16x9 video-thumbnail" data-toggle="modal" data-target="#videoModal" data-theVideo="{{ video.embed_url }}" style="background-image: url({{ video.thumbnail_image }})">
       
           </a>
           <h4 class="mt-4">{{ video.title }}</h4>
@@ -188,12 +191,14 @@ videos:
   </div>
 </section>
 <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <div>
-          <iframe width="100%" height="350" src=""></iframe>
+          <div class="responsive-iframe aspect-16x9">
+            <iframe width="100%" src=""></iframe>
+          </div>
         </div>
       </div>
     </div>

@@ -583,6 +583,24 @@ video {
   }
 }
 
+.video-thumbnail {
+  position: relative;
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "\f1b5";
+    font-family: "remixicon" !important;
+    font-size: 45px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .circle {
   width: 75px;
   height: 75px;

@@ -25,27 +25,6 @@
     }
     
   }
-  .close {
-    width: 33px;
-    height: 33px;
-    background-color: $white;
-    color: $gray-600;
-    float: none;
-    font-size: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    position: absolute;
-    top: -4px;
-    right: -8px;
-    opacity: 1;
-    z-index: 100;
-    @include media-breakpoint-up(lg) {
-      top: -10px;
-      right: -12px;
-    }
-  }
   
   .row {
     height: 100%;

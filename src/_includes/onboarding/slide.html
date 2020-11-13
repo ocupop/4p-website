@@ -39,7 +39,7 @@
     <div class="content-wrapper">
       <div class="content text-lg-center">
         <div class="video-wrapper">
-          <video class="instruction-video" src="{{ slide.video_desktop_path}}" autoplay loop controls data-default-video="{{ slide.video_desktop_path }}"></video>
+          <video class="instruction-video" src="{{ slide.video_desktop_path}}" autoplay loop controls data-default-video="{{ slide.video_desktop_path }}" {% if slide.thumbnail_desktop_image %}poster="{{ slide.thumbnail_desktop_image }}"{% endif %}></video>
         </div>
       </div>
     </div>

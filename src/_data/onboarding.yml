@@ -65,7 +65,7 @@ slides:
       select a la carte goods within each product category. (For example: Hop
       over to Dairy &amp;amp; Eggs). Just make sure you meet the $30 minimum
       order for delivery, and all orders over $50 get free delivery!</p>
-    video_path_desktop:
+    video_desktop_path:
     video_mobile_path:
     instructions:
       - title: Try a Fully A La Carte Order

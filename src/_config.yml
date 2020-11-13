@@ -198,8 +198,11 @@ _options:
   video_desktop_path:
     uploads_dir: "/uploads/videos/:title"
   video_mobile_path:
-    uploads_dir: "/uploads/videos/:title"  
-
+    uploads_dir: "/uploads/videos/:title"
+  thumbnail_desktop_image:
+    uploads_dir: "/uploads/videos/:title"
+  thumbnail_mobile_image:  
+    uploads_dir: "/uploads/videos/:title"
 
 
 placeholder_image: https://via.placeholder.com/1200

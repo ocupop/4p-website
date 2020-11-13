@@ -18,7 +18,10 @@
                   data-target="#collapse-{{ slide_num }}-{{ forloop.index }}"
                   aria-expanded="false"
                   aria-controls="collapse-{{ slide_num }}-{{ forloop.index }}"
-                  data-video="{{ instruction.video_desktop_path }}">
+                  data-video="{{ instruction.video_desktop_path }}"
+                  data-poster="{{ instruction.thumbnail_desktop_image }}"
+                  >
+                  
                   {{ instruction.title }} <i class="ri-add-line"></i><i class="ri-subtract-line"></i>
                 </button>
               </div>
@@ -39,7 +42,7 @@
     <div class="content-wrapper">
       <div class="content text-lg-center">
         <div class="video-wrapper">
-          <video class="instruction-video" src="{{ slide.video_desktop_path}}" autoplay loop controls data-default-video="{{ slide.video_desktop_path }}" {% if slide.thumbnail_desktop_image %}poster="{{ slide.thumbnail_desktop_image }}"{% endif %}></video>
+          <video class="instruction-video" src="{{ slide.video_desktop_path}}" autoplay loop controls data-default-video="{{ slide.video_desktop_path }}" poster="{{ slide.thumbnail_desktop_image }}" data-default-poster="{{ slide.thumbnail_desktop_image }}"></video>
         </div>
       </div>
     </div>

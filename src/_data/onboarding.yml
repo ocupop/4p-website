@@ -74,7 +74,7 @@ slides:
           selection of produce, pantry, and select protein and dairy products,
           no bag required. As long as you hit the $30 order minimum, you're good
           to go!</p>
-        video_desktop_path:
+        video_desktop_path: /uploads/videos/alacarte-items.mp4
         video_mobile_path:
       - title: Shop Shenandoah Produce
         description_html: >-

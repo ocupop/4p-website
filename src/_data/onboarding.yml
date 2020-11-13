@@ -45,7 +45,7 @@ slides:
       <p>You can customize your 4P Bags to make sure you are getting exactly
       what you want each week. Learn how each bag works below.</p>
     video_desktop_path:
-    thumbnail_desktop_image:
+    thumbnail_desktop_image: /uploads/videos/cusomize-bags.jpg
     video_mobile_path:
     thumbnail_mobile_image:
     instructions:
@@ -58,7 +58,7 @@ slides:
           buy it a la carte&amp;mdash;look for it by category or in the search
           bar.</p>
         video_desktop_path:
-        thumbnail_desktop_image:
+        thumbnail_desktop_image: /uploads/videos/cusomize-produce.jpg
         video_mobile_path:
         thumbnail_mobile_image:
       - title: How to Customize Protein and Dairy Bags
@@ -68,7 +68,7 @@ slides:
           and you have the freedom to add or take away as much as you want, as
           long as you hit the $20 minimum per bag.</p>
         video_desktop_path:
-        thumbnail_desktop_image:
+        thumbnail_desktop_image: /uploads/videos/cusomize-meat.jpg
         video_mobile_path:
         thumbnail_mobile_image:
   - title: Go Shopping for More

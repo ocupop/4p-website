@@ -45,7 +45,12 @@
       bottom: 0;
       width: 50%;
       background-color: transparent;
-      padding: 10px 75px;
+      padding: 10px 20px;
+    }
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 375px;
     }
   }
   .form-check-label {
@@ -78,6 +83,9 @@
     height: 100%;
     padding: 50px 50px 100px;
     min-height: 600px;
+    &.text-content {
+      padding: 50px 75px 100px 75px;
+    }
     .content {
       padding: 0;
     }
@@ -118,6 +126,12 @@
   }
   p {
     font-size: 14px;
+  }
+  .text-xl {
+    font-size: 2.7rem;
+  }
+  .text-xxl {
+    font-size: 3.5rem;
   }
   h2,
   .h2 {

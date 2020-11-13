@@ -112,6 +112,11 @@
       currentIndex = $('#carousel-onboarding .carousel-item.active').index();
       checkCarouselIndex()
     $('.slide-number').html(''+currentIndex+' of '+totalSlides+'');
+      if(currentIndex == totalSlides) {
+        $('.carousel-control-next').addClass('d-none')
+      }else {
+        $('.carousel-control-next').removeClass('d-none')
+      }
     });
 
     //replace onboarding video on collapse click

@@ -15,7 +15,7 @@ slides:
       deliveries. If you have any existing subscriptions, you will see your 4P
       bags there under each upcoming delivery date.</p>
     video_desktop_path: /uploads/videos/review-upcoming-deliveries.mp4
-    video_mobile_path:
+    video_mobile_path: /uploads/videos/upcoming-delivery-mobile.mp4
     instructions:
       - title: Change the default frequency of your bags
         description_html: >-
@@ -24,7 +24,7 @@ slides:
           the item and then add it back after selecting the new frequency from
           the dropdown menu.</p>
         video_desktop_path: /uploads/videos/change-freq-bags.mp4
-        video_mobile_path:
+        video_mobile_path: /uploads/videos/frequency-bags-mobile.mp4
       - title: Skip an upcoming delivery
         description_html: >-
           <p>Skipping orders is easy! Click the x next to any item in your cart
@@ -33,7 +33,7 @@ slides:
           for a while? Use the "Delivery Hold" feature to pause all orders for a
           certain period of time.</p>
         video_desktop_path: /uploads/videos/skip-delivery.mp4
-        video_mobile_path:
+        video_mobile_path: /uploads/videos/skip-mobile.mp4
   - title: Customize Your 4P Bags
     description_html: >-
       <p>You can customize your 4P Bags to make sure you are getting exactly
@@ -66,7 +66,7 @@ slides:
       over to Dairy &amp;amp; Eggs). Just make sure you meet the $30 minimum
       order for delivery, and all orders over $50 get free delivery!</p>
     video_desktop_path: /uploads/videos/go-shopping-for-more.mp4
-    video_mobile_path:
+    video_mobile_path: /uploads/videos/shopping-more-mobile-og.mp4
     instructions:
       - title: Try a Fully A La Carte Order
         description_html: >-
@@ -75,7 +75,7 @@ slides:
           no bag required. As long as you hit the $30 order minimum, you're good
           to go!</p>
         video_desktop_path: /uploads/videos/alacarte-items.mp4
-        video_mobile_path:
+        video_mobile_path: /uploads/videos/a-la-carte-mobile.mp4
       - title: Shop Shenandoah Produce
         description_html: >-
           <p>We are excited now to feature products from the Shenandoah Valley
@@ -84,7 +84,7 @@ slides:
           produce, meat, and dairy. Look for a la carte items in the header or
           for swap items with the SP icon.</p>
         video_desktop_path: /uploads/videos/shenandoah.mp4
-        video_mobile_path:
+        video_mobile_path: /uploads/videos/shopping-more-mobile.mp4
 start_shopping_page:
   title: Learn More
   description_html: >-

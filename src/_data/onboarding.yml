@@ -83,7 +83,7 @@ slides:
           product line brings you the best of this rich agricultural region's
           produce, meat, and dairy. Look for a la carte items in the header or
           for swap items with the SP icon.</p>
-        video_desktop_path:
+        video_desktop_path: /uploads/videos/shenandoah.mp4
         video_mobile_path:
 start_shopping_page:
   title: Learn More

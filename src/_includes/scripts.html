@@ -120,11 +120,15 @@
       if($(this).hasClass('collapsed')) {
         var instruction_video = $('.carousel-item.active').find('.instruction-video')
         var new_video = $(this).data('video');
+        var poster = $(this).data('poster');
+        console.log(poster)
+        instruction_video.attr('poster', poster)
         instruction_video.attr('src', new_video);
       }else {
         var instruction_video = $('.carousel-item.active').find('.instruction-video')
+        var default_poster = instruction_video.data('default-poster')
         var default_video = instruction_video.data('default-video');
-        instruction_video.attr('src', default_video)
+        instruction_video.attr('src', default_video).attr('poster', default_poster)
       }
     })
 

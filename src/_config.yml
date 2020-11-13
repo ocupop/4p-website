@@ -168,6 +168,13 @@ _array_structures:
       value:
         _type: text_banner
         text_html:
+  videos:
+    - label: Videos
+      icon: videocam
+      value:
+        title:
+        description_html:
+        embed_url:      
 
 _comments:
   product_url: 'Ex: /product/apple-fritter-baking-mix or /product/1362'
@@ -187,5 +194,12 @@ _options:
     left: true
     center: true
     image: true
-    embed: true        
+    embed: true
+  video_desktop_path:
+    uploads_dir: "/uploads/videos/:title"
+  video_mobile_path:
+    uploads_dir: "/uploads/videos/:title"  
 
+
+
+placeholder_image: https://via.placeholder.com/1200

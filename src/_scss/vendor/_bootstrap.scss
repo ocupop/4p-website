@@ -169,3 +169,74 @@
     column-count: 2;
   }
 }
+
+.accordion {
+  .card {
+    background-color: transparent;
+    margin-bottom: 0;
+    border-top: 1px solid $body-color;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .card-header {
+      background-color: transparent;
+      padding-left: 0;
+      padding-right: 0;
+      border-bottom: 0;
+      margin-bottom: 0;
+      .btn-link {
+        color: $body-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: none;
+        i {
+          font-size: 25px;
+          position: absolute;
+          right: 0;
+          &.ri-add-line {
+            opacity: 0;
+            @include transition(0.4s);
+          }
+        }
+        &.collapsed {
+          i {
+           &.ri-add-line {
+             opacity: 1;
+           } 
+          }
+        }
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+    &:last-of-type {
+      border-bottom: 1px solid $body-color;
+    }
+  }
+}
+
+.modal {
+  .close {
+    width: 33px;
+    height: 33px;
+    background-color: $white;
+    color: $gray-600;
+    float: none;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    right: -8px;
+    opacity: 1;
+    z-index: 100;
+    @include media-breakpoint-up(lg) {
+      top: -10px;
+      right: -12px;
+    }
+  }
+}

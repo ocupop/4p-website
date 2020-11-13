@@ -4,7 +4,6 @@
       <div class="content">
         {% assign slide_num = forloop.index %}
         <span class="mb-0 text-primary h3">{{ slide_num }}.</span>
-        
         <h2>{{ slide.title }}</h2>
         {{ slide.description_html }}
         <div class="accordion mt-4" id="accordion-{{ slide_num }}">
@@ -21,11 +20,9 @@
                   data-video="{{ instruction.video_desktop_path }}"
                   data-poster="{{ instruction.thumbnail_desktop_image }}"
                   >
-                  
                   {{ instruction.title }} <i class="ri-add-line"></i><i class="ri-subtract-line"></i>
                 </button>
               </div>
-          
               <div id="collapse-{{ slide_num }}-{{ forloop.index }}" class="collapse" aria-labelledby="heading-{{ slide_num }}-{{ forloop.index }}" data-parent="#accordion-{{ slide_num }}">
                 <div class="card-body px-0 pt-0">
                   {{ instruction.description_html }}
@@ -36,7 +33,6 @@
         </div>
       </div>
     </div>
-    
   </div>
   <div class="col-lg-6 bg-primary text-white">
     <div class="content-wrapper">

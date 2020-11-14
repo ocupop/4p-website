@@ -14,10 +14,10 @@ slides:
       <p>Click on the bag icon in the upper right corner to see your next six
       deliveries. If you have any existing subscriptions, you will see your 4P
       bags there under each upcoming delivery date.</p>
-    video_desktop_path: /uploads/videos/review-upcoming-deliveries.mp4
-    thumbnail_desktop_image:
-    video_mobile_path: /uploads/videos/upcoming-delivery-mobile.mp4
-    thumbnail_mobile_image:
+    video_desktop_path: /uploads/videos/updated-upcoming.mp4
+    thumbnail_desktop_image: /uploads/videos/upcoming-delivery-desktop.jpg
+    video_mobile_path: /uploads/videos/upcoming-mobile.mp4
+    thumbnail_mobile_image: /uploads/videos/upcoming-delivery-mobile.jpg
     instructions:
       - title: Change the default frequency of your bags
         description_html: >-
@@ -25,10 +25,10 @@ slides:
           weekly, every other week, monthly, or specific dates. To do so, remove
           the item and then add it back after selecting the new frequency from
           the dropdown menu.</p>
-        video_desktop_path: /uploads/videos/change-freq-bags.mp4
-        thumbnail_desktop_image:
-        video_mobile_path: /uploads/videos/frequency-bags-mobile.mp4
-        thumbnail_mobile_image:
+        video_desktop_path: /uploads/videos/frequency-bags.mp4
+        thumbnail_desktop_image: /uploads/videos/frequency-bags-desktop.jpg
+        video_mobile_path: /uploads/videos/frequency-of-bags-mobile.mp4
+        thumbnail_mobile_image: /uploads/videos/frequency-bags-mobile.jpg
       - title: Skip an upcoming delivery
         description_html: >-
           <p>Skipping orders is easy! Click the x next to any item in your cart
@@ -44,10 +44,10 @@ slides:
     description_html: >-
       <p>You can customize your 4P Bags to make sure you are getting exactly
       what you want each week. Learn how each bag works below.</p>
-    video_desktop_path:
-    thumbnail_desktop_image: /uploads/videos/cusomize-bags.jpg
-    video_mobile_path:
-    thumbnail_mobile_image:
+    video_desktop_path: /uploads/videos/custom-order.mp4
+    thumbnail_desktop_image: /uploads/videos/custom-order-desktop.jpg
+    video_mobile_path: /uploads/videos/custom-order-mobile.mp4
+    thumbnail_mobile_image: /uploads/videos/custom-order-mobile.jpg
     instructions:
       - title: How to Customize Produce and Fruit Bags
         description_html: >-
@@ -57,20 +57,20 @@ slides:
           favorite pantry item has gone? If it's not a swap in the bag, you can
           buy it a la carte &mdash; look for it by category or in the search
           bar.</p>
-        video_desktop_path:
+        video_desktop_path: /uploads/videos/custom-product-desktop.mp4
         thumbnail_desktop_image: /uploads/videos/cusomize-produce.jpg
-        video_mobile_path:
-        thumbnail_mobile_image:
+        video_mobile_path: /uploads/videos/custom-produce-mobile.mp4
+        thumbnail_mobile_image: /uploads/videos/custom-produce-mobile.jpg
       - title: How to Customize Protein and Dairy Bags
         description_html: >-
           <p>Protein and dairy bags now have flexible prices based on what you
           put in them. We still pack a "standard" bag with our picks each week,
           and you have the freedom to add or take away as much as you want, as
           long as you hit the $20 minimum per bag.</p>
-        video_desktop_path:
-        thumbnail_desktop_image: /uploads/videos/cusomize-meat.jpg
-        video_mobile_path:
-        thumbnail_mobile_image:
+        video_desktop_path: /uploads/videos/custom-meat.mp4
+        thumbnail_desktop_image: /uploads/videos/custom-meat-desktop.jpg
+        video_mobile_path: /uploads/videos/custom-meat-mobile.mp4
+        thumbnail_mobile_image: /uploads/videos/custom-meat-mobile.jpg
   - title: Go Shopping for More
     description_html: >-
       <p>Add extras to your 4P Bags with our a la carte shopping feature. Find
@@ -88,10 +88,10 @@ slides:
           selection of produce, pantry, and select protein and dairy products,
           no bag required. As long as you hit the $30 order minimum, you're good
           to go!</p>
-        video_desktop_path: /uploads/videos/alacarte-items.mp4
-        thumbnail_desktop_image:
+        video_desktop_path: /uploads/videos/a-la-carte.mp4
+        thumbnail_desktop_image: /uploads/videos/a-la-carte-desktop.jpg
         video_mobile_path: /uploads/videos/a-la-carte-mobile.mp4
-        thumbnail_mobile_image:
+        thumbnail_mobile_image: /uploads/videos/a-la-carte-mobile.jpg
       - title: Shop Shenandoah Produce
         description_html: >-
           <p>We are excited now to feature products from the Shenandoah Valley

@@ -101,7 +101,7 @@ slides:
           for swap items with the SP icon.</p>
         video_desktop_path: /uploads/videos/shenandoah.mp4
         thumbnail_desktop_image:
-        video_mobile_path: /uploads/videos/shopping-more-mobile.mp4
+        video_mobile_path:
         thumbnail_mobile_image:
 start_shopping_page:
   title: Learn More

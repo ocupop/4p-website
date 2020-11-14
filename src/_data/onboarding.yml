@@ -2,11 +2,11 @@ welcome_page:
   title_desktop: Tour The New 4P Foods Shopping Experience
   title_mobile: Welcome To The New 4P Foods Shopping Experience
   description_desktop_html: >-
-    <p>We promise it's worth your while! Click the arrows to see how it all
+    <p>We promise it's worth your while. Click the arrows to see how it all
     works and then be on your way to your next delivery of Good Food!</p>
   description_mobile_html: >-
-    <p>Here from 4p's old site? Let us show you what's new. Here for the first
-    time? These tips will help you orient yourself, too.</p>
+    <p>We promise it's worth your while. Scroll through to see how it all works
+    and then be on your way to your next delivery of Good Food!</p>
   link_label: Get Started!
 slides:
   - title: Review Your Upcoming Deliveries

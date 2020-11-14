@@ -37,9 +37,9 @@ slides:
           for a while? Use the "Delivery Hold" feature to pause all orders for a
           certain period of time.</p>
         video_desktop_path: /uploads/videos/skip-delivery.mp4
-        thumbnail_desktop_image:
+        thumbnail_desktop_image: /uploads/videos/skip-desktop.jpg
         video_mobile_path: /uploads/videos/skip-mobile.mp4
-        thumbnail_mobile_image:
+        thumbnail_mobile_image: /uploads/videos/skip-mobile.jpg
   - title: Customize Your 4P Bags
     description_html: >-
       <p>You can customize your 4P Bags to make sure you are getting exactly

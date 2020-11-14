@@ -100,7 +100,7 @@ slides:
           produce, meat, and dairy. Look for a la carte items in the header or
           for swap items with the SP icon.</p>
         video_desktop_path: /uploads/videos/shenandoah.mp4
-        thumbnail_desktop_image:
+        thumbnail_desktop_image: /uploads/videos/shenandoah-desktop.jpg
         video_mobile_path:
         thumbnail_mobile_image:
 start_shopping_page:

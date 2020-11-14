@@ -114,7 +114,7 @@ start_shopping_page:
   shopping_title: Start Shopping
   shopping_description_html: >-
     <p>Now that you know the basics, click through to enjoy our new shopping
-    experience. You will need to click "Forgot your password" to reset your
-    password if you are here for the first time from the old 4P Foods website.
-    If you&rsquo;re brand new, create an account.</p>
+    experience.</p><p><strong>You will need to click "Forgot your password" to
+    reset your password if you are here for the first time from the old 4P Foods
+    website.</strong>&nbsp;</p>
   shopping_link_label: Start Shopping

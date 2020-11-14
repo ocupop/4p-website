@@ -102,7 +102,7 @@ slides:
         video_desktop_path: /uploads/videos/shenandoah.mp4
         thumbnail_desktop_image: /uploads/videos/shenandoah-desktop.jpg
         video_mobile_path: /uploads/videos/shenandoah-mobile.mp4
-        thumbnail_mobile_image:
+        thumbnail_mobile_image: /uploads/videos/shenandoah-mobile.jpg
 start_shopping_page:
   title: Learn More
   description_html: >-

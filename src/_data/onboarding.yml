@@ -19,16 +19,6 @@ slides:
     video_mobile_path: /uploads/videos/upcoming-mobile.mp4
     thumbnail_mobile_image: /uploads/videos/upcoming-delivery-mobile.jpg
     instructions:
-      - title: Change the default frequency of your bags
-        description_html: >-
-          <p>You can now change the default frequency of your bags (and eggs) to
-          weekly, every other week, monthly, or specific dates. To do so, remove
-          the item and then add it back after selecting the new frequency from
-          the dropdown menu.</p>
-        video_desktop_path: /uploads/videos/frequency-bags.mp4
-        thumbnail_desktop_image: /uploads/videos/frequency-bags-desktop.jpg
-        video_mobile_path: /uploads/videos/frequency-of-bags-mobile.mp4
-        thumbnail_mobile_image: /uploads/videos/frequency-bags-mobile.jpg
       - title: Skip an upcoming delivery
         description_html: >-
           <p>Skipping orders is easy! Click the x next to any item in your cart
@@ -40,6 +30,17 @@ slides:
         thumbnail_desktop_image: /uploads/videos/skip-desktop.jpg
         video_mobile_path: /uploads/videos/skip-mobile.mp4
         thumbnail_mobile_image: /uploads/videos/skip-mobile.jpg
+      - title: Change the default frequency of your bags
+        description_html: >-
+          <p>You can now change the default frequency of your bags (and eggs) to
+          weekly, every other week, monthly, or specific dates. To do so, delete
+          the item from your cart (for all future deliveries) or recurring items
+          list and then add it back after selecting the new frequency from the
+          dropdown menu.</p>
+        video_desktop_path: /uploads/videos/frequency-bags.mp4
+        thumbnail_desktop_image: /uploads/videos/frequency-bags-desktop.jpg
+        video_mobile_path: /uploads/videos/frequency-of-bags-mobile.mp4
+        thumbnail_mobile_image: /uploads/videos/frequency-bags-mobile.jpg
   - title: Customize Your 4P Bags
     description_html: >-
       <p>You can customize your 4P Bags to make sure you are getting exactly

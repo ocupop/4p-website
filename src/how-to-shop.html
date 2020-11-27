@@ -142,7 +142,7 @@ faqs:
 
 <section>
   <div class="container">
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-12">
         <div class="text-center">
           <h1 class="editable">
@@ -166,6 +166,13 @@ faqs:
         </div>
       </div>
     {% endif %}
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="editable text-center">
+          <p><strong>Have a specific Question? Jump to our <a href="#faqs">FAQs</a></strong> </p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <section id="how-to-shop-guide">
@@ -230,38 +237,42 @@ faqs:
     {% endif %}
     <div class="row">
       {% for slide in site.data.onboarding.slides %}
-        <div class="col-lg-4 mb-4">
-          <!-- desktop video output-->
-          <a href="#" class="bg-image aspect-16x9 video-thumbnail d-none d-lg-block" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ slide.video_desktop_path }}" style="background-image: url({{ slide.thumbnail_desktop_image }})">
-      
-          </a>
-          <!-- mobile video output -->
-          <a href="#" class="bg-image aspect-16x9 video-thumbnail d-block d-lg-none" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ slide.video_mobile_path }}" style="background-image: url({{ slide.thumbnail_mobile_image }})">
-      
-          </a>
-          <h4 class="mt-4">{{ slide.title }}</h4>
-          {{ slide.description_html }}
-        </div>
-        {% for instruction in slide.instructions %}
+          {% if slide.show_on_how_to_shop %}
           <div class="col-lg-4 mb-4">
-            <!-- desktop video output -->
-            <a href="#" class="bg-image aspect-16x9 video-thumbnail d-none d-lg-block" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ instruction.video_desktop_path }}" style="background-image: url({{ instruction.thumbnail_desktop_image }})">
+            <!-- desktop video output-->
+            <a href="#" class="bg-image aspect-16x9 video-thumbnail d-none d-lg-block" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ slide.video_desktop_path }}" style="background-image: url({{ slide.thumbnail_desktop_image }})">
         
             </a>
             <!-- mobile video output -->
-            <a href="#" class="bg-image aspect-16x9 video-thumbnail d-block d-lg-none" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ instruction.video_mobile_path }}" style="background-image: url({{ instruction.thumbnail_mobile_image }})">
+            <a href="#" class="bg-image aspect-16x9 video-thumbnail d-block d-lg-none" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ slide.video_mobile_path }}" style="background-image: url({{ slide.thumbnail_mobile_image }})">
         
             </a>
-            <h4 class="mt-4">{{ instruction.title }}</h4>
-            {{ instruction.description_html }}
+            <h4 class="mt-4">{{ slide.title }}</h4>
+            {{ slide.description_html }}
           </div>
+          {% endif %}
+        {% for instruction in slide.instructions %}
+          {% if instruction.show_on_how_to_shop %}
+            <div class="col-lg-4 mb-4">
+              <!-- desktop video output -->
+              <a href="#" class="bg-image aspect-16x9 video-thumbnail d-none d-lg-block" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ instruction.video_desktop_path }}" style="background-image: url({{ instruction.thumbnail_desktop_image }})">
+          
+              </a>
+              <!-- mobile video output -->
+              <a href="#" class="bg-image aspect-16x9 video-thumbnail d-block d-lg-none" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ instruction.video_mobile_path }}" style="background-image: url({{ instruction.thumbnail_mobile_image }})">
+          
+              </a>
+              <h4 class="mt-4">{{ instruction.title }}</h4>
+              {{ instruction.description_html }}
+            </div>
+          {% endif %}  
         {% endfor %}
       {% endfor %}
     </div>
     
   </div>
 </section>
-<section>
+<section id="faqs">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -289,6 +300,13 @@ faqs:
               </div>
             </div>
           {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="editable text-center">
+          <p><strong>Still have a question?  <a href="/contact">Shoot us a note</a></strong> </p>
         </div>
       </div>
     </div>

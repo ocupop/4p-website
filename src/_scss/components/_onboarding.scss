@@ -120,9 +120,13 @@
     justify-content: center;
     color: $primary;
     font-weight: 600;
-    opacity: 0;
+    .slide-number {
+      opacity: 0;
+    }
     &.controls-active {
-      opacity: 1;
+      .slide-number {
+        opacity: 1;
+      }
     }
   }
   p {
@@ -144,6 +148,30 @@
     }
   }
   
+}
+
+.video-wrapper {
+  &.loading {
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    video {
+      opacity: 0;
+    }
+  }
+  video {
+    opacity: 1;
+    @include transition(0.5s);
+  }
 }
 
 // shop help button styles

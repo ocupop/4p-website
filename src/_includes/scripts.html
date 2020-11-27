@@ -107,9 +107,11 @@
     }
 
     checkCarouselIndex();
+    $('.carousel-control-prev').addClass('d-none')
 
     $('#carousel-onboarding').bind('slid.bs.carousel', function() {
       currentIndex = $('#carousel-onboarding .carousel-item.active').index();
+      console.log({currentIndex})
       checkCarouselIndex()
     $('.slide-number').html(''+currentIndex+' of '+totalSlides+'');
       if(currentIndex == totalSlides) {
@@ -117,9 +119,16 @@
       }else {
         $('.carousel-control-next').removeClass('d-none')
       }
+      if(currentIndex == 0) {
+        $('.carousel-control-prev').addClass('d-none')
+      }
+      else {
+        $('.carousel-control-prev').removeClass('d-none')
+      }
     });
 
     //replace onboarding video on collapse click
+
 
     $('[data-video]').on('click', function(){
       if($(this).hasClass('collapsed')) {
@@ -127,13 +136,24 @@
         var new_video = $(this).data('video');
         var poster = $(this).data('poster');
         console.log(poster)
-        instruction_video.attr('poster', poster)
-        instruction_video.attr('src', new_video);
+        $('.video-wrapper').addClass('loading');
+        instruction_video.attr('src', '').attr('poster', '');
+        setTimeout(function(){ 
+          instruction_video.attr('poster', poster)
+          instruction_video.attr('src', new_video);
+          $('.video-wrapper').removeClass('loading');
+        }, 1500);
+        
       }else {
         var instruction_video = $('.carousel-item.active').find('.instruction-video')
         var default_poster = instruction_video.data('default-poster')
         var default_video = instruction_video.data('default-video');
-        instruction_video.attr('src', default_video).attr('poster', default_poster)
+        instruction_video.attr('src', '').attr('poster', '')
+        $('.video-wrapper').addClass('loading');
+        setTimeout(function(){
+          instruction_video.attr('src', default_video).attr('poster', default_poster)
+          $('.video-wrapper').removeClass('loading');
+        }, 1500)
       }
     })
 

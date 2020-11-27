@@ -17,6 +17,7 @@ slides:
     video_desktop_path: /uploads/videos/updated-upcoming.mp4
     thumbnail_desktop_image: /uploads/videos/upcoming-delivery-desktop.jpg
     video_mobile_path: /uploads/videos/upcoming-mobile.mp4
+    show_on_how_to_shop: true
     thumbnail_mobile_image: /uploads/videos/upcoming-delivery-mobile.jpg
     instructions:
       - title: Skip an upcoming delivery
@@ -30,6 +31,7 @@ slides:
         thumbnail_desktop_image: /uploads/videos/skip-desktop.jpg
         video_mobile_path: /uploads/videos/skip-mobile.mp4
         thumbnail_mobile_image: /uploads/videos/skip-mobile.jpg
+        show_on_how_to_shop: true
       - title: Change the default frequency of your bags
         description_html: >-
           <p>You can now change the default frequency of your bags (and eggs) to
@@ -41,6 +43,7 @@ slides:
         thumbnail_desktop_image: /uploads/videos/frequency-bags-desktop.jpg
         video_mobile_path: /uploads/videos/frequency-of-bags-mobile.mp4
         thumbnail_mobile_image: /uploads/videos/frequency-bags-mobile.jpg
+        show_on_how_to_shop: true
   - title: Customize Your 4P Bags
     description_html: >-
       <p>You can customize your 4P Bags to make sure you are getting exactly
@@ -49,6 +52,7 @@ slides:
     thumbnail_desktop_image: /uploads/videos/custom-order-desktop.jpg
     video_mobile_path: /uploads/videos/custom-order-mobile.mp4
     thumbnail_mobile_image: /uploads/videos/custom-order-mobile.jpg
+    show_on_how_to_shop: false
     instructions:
       - title: How to Customize Produce and Fruit Bags
         description_html: >-
@@ -62,6 +66,7 @@ slides:
         thumbnail_desktop_image: /uploads/videos/cusomize-produce.jpg
         video_mobile_path: /uploads/videos/custom-produce-mobile.mp4
         thumbnail_mobile_image: /uploads/videos/custom-produce-mobile.jpg
+        show_on_how_to_shop: true
       - title: How to Customize Protein and Dairy Bags
         description_html: >-
           <p>Protein and dairy bags now have flexible prices based on what you
@@ -72,6 +77,7 @@ slides:
         thumbnail_desktop_image: /uploads/videos/custom-meat-desktop.jpg
         video_mobile_path: /uploads/videos/custom-meat-mobile.mp4
         thumbnail_mobile_image: /uploads/videos/custom-meat-mobile.jpg
+        show_on_how_to_shop: true
   - title: Go Shopping for More
     description_html: >-
       <p>Add extras to your 4P Bags with our a la carte shopping feature. Find
@@ -80,8 +86,9 @@ slides:
       for delivery, and all orders over $50 get free delivery!</p>
     video_desktop_path: /uploads/videos/go-shopping-for-more.mp4
     thumbnail_desktop_image: /uploads/videos/shop-for-more-desktop.jpg
-    video_mobile_path: /uploads/videos/shopping-more-mobile-og.mp4
+    video_mobile_path: /uploads/videos/shopping-more-mobile.mp4
     thumbnail_mobile_image: /uploads/videos/shop-for-more-mobile.jpg
+    show_on_how_to_shop: true
     instructions:
       - title: Try a Fully A La Carte Order
         description_html: >-
@@ -93,6 +100,7 @@ slides:
         thumbnail_desktop_image: /uploads/videos/a-la-carte-desktop.jpg
         video_mobile_path: /uploads/videos/a-la-carte-mobile.mp4
         thumbnail_mobile_image: /uploads/videos/a-la-carte-mobile.jpg
+        show_on_how_to_shop: true
       - title: Shop Shenandoah Produce
         description_html: >-
           <p>We are excited now to feature products from the Shenandoah Valley
@@ -104,6 +112,7 @@ slides:
         thumbnail_desktop_image: /uploads/videos/shenandoah-desktop.jpg
         video_mobile_path: /uploads/videos/shenandoah-mobile.mp4
         thumbnail_mobile_image: /uploads/videos/shenandoah-mobile.jpg
+        show_on_how_to_shop: true
 start_shopping_page:
   title: Learn More
   description_html: >-

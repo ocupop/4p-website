@@ -2,11 +2,11 @@ welcome_page:
   title_desktop: Tour The New 4P Foods Shopping Experience
   title_mobile: Welcome To The New 4P Foods Shopping Experience
   description_desktop_html: >-
-    <p>We promise it's worth your while! Click the arrows to see how it all
+    <p>We promise it's worth your while. Click the arrows to see how it all
     works and then be on your way to your next delivery of Good Food!</p>
   description_mobile_html: >-
-    <p>Here from 4p's old site? Let us show you what's new. Here for the first
-    time? These tips will help you orient yourself, too.</p>
+    <p>We promise it's worth your while. Scroll through to see how it all works
+    and then be on your way to your next delivery of Good Food!</p>
   link_label: Get Started!
 slides:
   - title: Review Your Upcoming Deliveries
@@ -19,16 +19,6 @@ slides:
     video_mobile_path: /uploads/videos/upcoming-mobile.mp4
     thumbnail_mobile_image: /uploads/videos/upcoming-delivery-mobile.jpg
     instructions:
-      - title: Change the default frequency of your bags
-        description_html: >-
-          <p>You can now change the default frequency of your bags (and eggs) to
-          weekly, every other week, monthly, or specific dates. To do so, remove
-          the item and then add it back after selecting the new frequency from
-          the dropdown menu.</p>
-        video_desktop_path: /uploads/videos/frequency-bags.mp4
-        thumbnail_desktop_image: /uploads/videos/frequency-bags-desktop.jpg
-        video_mobile_path: /uploads/videos/frequency-of-bags-mobile.mp4
-        thumbnail_mobile_image: /uploads/videos/frequency-bags-mobile.jpg
       - title: Skip an upcoming delivery
         description_html: >-
           <p>Skipping orders is easy! Click the x next to any item in your cart
@@ -40,6 +30,17 @@ slides:
         thumbnail_desktop_image: /uploads/videos/skip-desktop.jpg
         video_mobile_path: /uploads/videos/skip-mobile.mp4
         thumbnail_mobile_image: /uploads/videos/skip-mobile.jpg
+      - title: Change the default frequency of your bags
+        description_html: >-
+          <p>You can now change the default frequency of your bags (and eggs) to
+          weekly, every other week, monthly, or specific dates. To do so, delete
+          the item from your cart (for all future deliveries) or recurring items
+          list and then add it back after selecting the new frequency from the
+          dropdown menu.</p>
+        video_desktop_path: /uploads/videos/frequency-bags.mp4
+        thumbnail_desktop_image: /uploads/videos/frequency-bags-desktop.jpg
+        video_mobile_path: /uploads/videos/frequency-of-bags-mobile.mp4
+        thumbnail_mobile_image: /uploads/videos/frequency-bags-mobile.jpg
   - title: Customize Your 4P Bags
     description_html: >-
       <p>You can customize your 4P Bags to make sure you are getting exactly
@@ -107,13 +108,14 @@ start_shopping_page:
   title: Learn More
   description_html: >-
     <p>Still have a few questions? Dive deeper in our How to Shop Guide and
-    FAQs, or watch a full video tutorial.</p>
-  thumbnail_image: /img/video-thumbnail.jpg
+    FAQs.</p>
+  thumbnail_image:
   how_to_shop_guide_link: /how-to-shop
   how_to_shop_guide_link_label: How to Shop Guide
   shopping_title: Start Shopping
   shopping_description_html: >-
-    <p>Now that you know the basics, click through to reset your password and
-    enjoy our new shopping experience (or if you're brand new, create an
-    account)</p>
+    <p>Now that you know the basics, click through to enjoy our new shopping
+    experience.</p><p><strong>You will need to click "Forgot your password" to
+    reset your password if you are here for the first time from the old 4P Foods
+    website.</strong>&nbsp;</p>
   shopping_link_label: Start Shopping

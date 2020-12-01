@@ -113,6 +113,21 @@ slides:
         video_mobile_path: /uploads/videos/shenandoah-mobile.mp4
         thumbnail_mobile_image: /uploads/videos/shenandoah-mobile.jpg
         show_on_how_to_shop: true
+  - title: Update Your Account
+    description_html: <p>Update your password and payment information...</p>
+    video_desktop_path:
+    thumbnail_desktop_image:
+    video_mobile_path:
+    thumbnail_mobile_image:
+    show_on_how_to_shop: true
+    instructions:
+      - title:
+        description_html:
+        video_desktop_path:
+        thumbnail_desktop_image:
+        video_mobile_path:
+        thumbnail_mobile_image:
+        show_on_how_to_shop: true
 start_shopping_page:
   title: Learn More
   description_html: >-

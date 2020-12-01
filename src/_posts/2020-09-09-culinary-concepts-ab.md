@@ -6,8 +6,7 @@ featured_image: /uploads/2020-05-31-culinaryconcepts-pilotepisode-9.jpg
 assets:
   - _type: video
     title: Let's Cook
-    embed_url: >-
-      https://drive.google.com/drive/folders/1uUJMfaP0klwSihfhR9sQFGnlpbMCVl3t?ths=true
+    embed_url:
 tags:
 ---
 

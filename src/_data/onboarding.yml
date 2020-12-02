@@ -139,7 +139,7 @@ start_shopping_page:
   shopping_title: Start Shopping
   shopping_description_html: >-
     <p>Now that you know the basics, click through to enjoy our new shopping
-    experience.</p><p><strong>You will need to click "Forgot your password" to
+    experience.</p><h4><strong>You will need to click "Forgot your password" to
     reset your password if you are here for the first time from the old 4P Foods
-    website.</strong>&nbsp;</p>
-  shopping_link_label: Start Shopping
+    website.</strong>&nbsp;</h4>
+  shopping_link_label: Reset Your Password and Start Shopping

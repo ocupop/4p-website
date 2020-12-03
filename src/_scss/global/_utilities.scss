@@ -69,8 +69,6 @@ video {
   }
   &.aspect-auto {
     height: auto;
-    padding-top: 28vw;
-    padding-bottom: 28vw;
   }
 
   &.aspect-none {
@@ -109,6 +107,17 @@ video {
     background-size: cover;
     background-repeat: no-repeat;
   }
+}
+
+.bg-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bg-split {
@@ -275,13 +284,6 @@ video {
 // Layout Utilities
 .overflow-hidden {
   overflow: hidden !important;
-}
-
-.bg-fill {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .bg-full {

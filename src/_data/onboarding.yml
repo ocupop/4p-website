@@ -83,7 +83,7 @@ slides:
       <p>Add extras to your 4P Bags with our a la carte shopping feature. Find
       select a la carte goods within each product category. (For example: Hop
       over to Dairy &amp; Eggs). Just make sure you meet the $30 minimum order
-      for delivery, and all orders over $50 get free delivery!</p>
+      for delivery, and all orders over $60 get free delivery!</p>
     video_desktop_path: /uploads/videos/go-shopping-for-more.mp4
     thumbnail_desktop_image: /uploads/videos/shop-for-more-desktop.jpg
     video_mobile_path: /uploads/videos/shopping-more-mobile.mp4
@@ -113,6 +113,21 @@ slides:
         video_mobile_path: /uploads/videos/shenandoah-mobile.mp4
         thumbnail_mobile_image: /uploads/videos/shenandoah-mobile.jpg
         show_on_how_to_shop: true
+  - title: Update Your Account
+    description_html: <p>Update your password and payment information...</p>
+    video_desktop_path:
+    thumbnail_desktop_image:
+    video_mobile_path:
+    thumbnail_mobile_image:
+    show_on_how_to_shop: true
+    instructions:
+      - title:
+        description_html:
+        video_desktop_path:
+        thumbnail_desktop_image:
+        video_mobile_path:
+        thumbnail_mobile_image:
+        show_on_how_to_shop: true
 start_shopping_page:
   title: Learn More
   description_html: >-
@@ -124,7 +139,7 @@ start_shopping_page:
   shopping_title: Start Shopping
   shopping_description_html: >-
     <p>Now that you know the basics, click through to enjoy our new shopping
-    experience.</p><p><strong>You will need to click "Forgot your password" to
+    experience.</p><h5><strong>You will need to click "Forgot your password" to
     reset your password if you are here for the first time from the old 4P Foods
-    website.</strong>&nbsp;</p>
-  shopping_link_label: Start Shopping
+    website.</strong>&nbsp;</h5>
+  shopping_link_label: Reset Your Password and Start Shopping

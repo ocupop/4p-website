@@ -115,10 +115,10 @@ slides:
         show_on_how_to_shop: true
   - title: Update Your Account
     description_html: <p>Update your password and payment information...</p>
-    video_desktop_path:
-    thumbnail_desktop_image:
-    video_mobile_path:
-    thumbnail_mobile_image:
+    video_desktop_path: /uploads/videos/billing-desktop.mp4
+    thumbnail_desktop_image: /uploads/videos/payment.jpg
+    video_mobile_path: /uploads/videos/billing-mobile.mp4
+    thumbnail_mobile_image: /uploads/videos/payment.jpg
     show_on_how_to_shop: true
     instructions:
       - title: Reset your password

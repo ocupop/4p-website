@@ -128,13 +128,6 @@ slides:
         video_mobile_path:
         thumbnail_mobile_image:
         show_on_how_to_shop: true
-      - title: Update your payment info
-        description_html: <p>Description here...</p>
-        video_desktop_path:
-        thumbnail_desktop_image:
-        video_mobile_path:
-        thumbnail_mobile_image:
-        show_on_how_to_shop: true
 start_shopping_page:
   title: Learn More
   description_html: >-

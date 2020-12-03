@@ -121,8 +121,15 @@ slides:
     thumbnail_mobile_image:
     show_on_how_to_shop: true
     instructions:
-      - title:
-        description_html:
+      - title: Reset your password
+        description_html: <p>Description here...</p>
+        video_desktop_path:
+        thumbnail_desktop_image:
+        video_mobile_path:
+        thumbnail_mobile_image:
+        show_on_how_to_shop: true
+      - title: Update your payment info
+        description_html: <p>Description here...</p>
         video_desktop_path:
         thumbnail_desktop_image:
         video_mobile_path:

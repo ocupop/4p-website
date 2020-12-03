@@ -115,9 +115,9 @@ slides:
         show_on_how_to_shop: true
   - title: Update Your Account
     description_html: <p>Update your password</p>
-    video_desktop_path:
+    video_desktop_path: /uploads/videos/password-desktop.mp4
     thumbnail_desktop_image: /uploads/videos/password.jpg
-    video_mobile_path:
+    video_mobile_path: /uploads/videos/password-mobile.mp4
     thumbnail_mobile_image: /uploads/videos/password.jpg
     show_on_how_to_shop: true
     instructions:

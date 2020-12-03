@@ -46,20 +46,20 @@ videos:
   <div class="container">
     <div class="row align-items-center mb-5">
       <div class="col-12 col-lg-6">
-        <div class="text-center">
+        {% if page.featured_image %}
+          <div class="bg-image aspect-4x3" style="background-image: url({{ page.featured_image }})"></div>
+        {% endif %}
+      </div>
+      <div class="col-12 col-lg-6">
+        <div>
           <h1 class="editable">
             How to shop 4P Foods
           </h1>
           <h3 class="editable">
             <em>Get Local, farm-fresh Good Food - delivered right to your door.</em>
           </h3>
-          <p class="mt-4 editable">Have a specific Question?<br> Jump to our <a href="#faqs">FAQs</a></p>
+          <p class="mt-4 editable">Have a specific Question? Jump to our <a href="#faqs">FAQs</a></p>
         </div>
-      </div>
-      <div class="col-12 col-lg-6">
-        {% if page.featured_image %}
-          <div class="bg-image aspect-16x9" style="background-image: url({{ page.featured_image }})"></div>
-        {% endif %}
       </div>
     </div>
     

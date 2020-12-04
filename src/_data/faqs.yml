@@ -1,3 +1,67 @@
+- title: Getting Started
+  faqs:
+    - question: How does shopping with 4P Foods work?
+      answer_html: >-
+        <p>Our signature products are our customizable 4P Bags, which include
+        Produce, Protein, and Dairy. You can order a bag once to try it out, but
+        our recommendation is to set up a recurring order so that you can be
+        sure to have your fridge, freezer, and pantry stocked with fresh,
+        locally and sustainably grown food every week.&nbsp;</p><p>We pack each
+        bag with a well-rounded, seasonal selection of items each week, and then
+        you can customize your bags to swap out items you don't love for items
+        you do.</p><p>Produce and fruit bags have multiple sizes, each with a
+        set price and number of items to mix and match. Protein and Dairy bags
+        have one size each and start at $30-$40 each week, but you can add or
+        take away to your liking, with a per-bag minimum of $20.&nbsp;</p>
+    - question: How will I find out what food you have each week?
+      answer_html: >-
+        <p>Each Saturday we update our online shop with what&rsquo;s fresh that
+        week and send a Weekly Harvest Newsletter straight to your inbox, making
+        it simple to decide what you want to order and plan what you&rsquo;ll
+        cook for the week. We also include storage tips, recipe ideas, and
+        highlights from our farmers and partners.&nbsp;</p><p>If you&rsquo;ve
+        signed up and are not receiving the email newsletter, be sure to check
+        your spam or promotions folder, and then please <a href="/contact/">get
+        in touch with us</a>&nbsp;so we can look into it.</p>
+    - question: Is there a minimum commitment or signup fee?
+      answer_html: >-
+        <p>Nope! There is no minimum commitment and no tricky sign-up policy.
+        Our minimum order is $30, which comes out to $35 with the delivery fee
+        (unless you signup at one of our community pickup sites with free
+        delivery). The minimum order amount to get free shipping is
+        $60.</p><p>You can order once to give us a try, or sign up for a
+        subscription and still cancel anytime before your skip deadline with no
+        fees&ndash;but if you were anything less than satisfied with your order,
+        it might be worth <a href="/contact/">getting in touch</a> with our
+        member experience team first so that we can try to make things
+        right.</p>
+    - question: 'If I sign up for a subscription, can I skip orders?'
+      answer_html: >-
+        <p>Absolutely. You always have the ability to skip individual orders, or
+        place a delivery hold for a certain period of time. All we ask is that
+        you skip any upcoming deliveries ahead of the 2-day cut-off period,
+        during which time we finalize orders with farmers. The cut-off begins at
+        <strong>11:59 pm on Sunday</strong> for a Wednesday delivery,
+        <strong>11:59 pm on Monday</strong> for a Thursday delivery, and
+        <strong>11:59 pm on Tuesday</strong> for a Friday delivery.&nbsp;</p>
+    - question: How does billing work? Do I pay upfront?
+      answer_html: >-
+        <p>We do our billing every Saturday for the prior week&rsquo;s
+        deliveries. So if you get a bag on Wednesday, you&rsquo;ll be billed the
+        following weekend. If you skip your order, you won&rsquo;t be billed
+        that week.</p>
+- title: Mission
+  faqs:
+    - question: How do you  address racial equity in the food system?
+      answer_html: >-
+        <p>Right off the bat, we want to acknowledge that the food system has
+        traditionally done a lot of harm to BIPOC communities, from colonization
+        to slavery to the poor treatment of immigrant farm laborers. We are
+        intentionally working to increase our sourcing from BIPOC farmers and to
+        center equity in our daily work as a company. You can read more about
+        racial injustice in the food system and 4P&rsquo;s response in this <a
+        href="/posts/we-stand-with-all-of-you-we-stand-against-racism/">letter
+        from our founder &amp; CEO</a>, Tom McDougall.</p>
 - title: Shopping
   faqs:
     - question: >-
@@ -122,58 +186,6 @@
         confirmation email every time, you can hit &ldquo;Unsubscribe&rdquo; at
         the bottom of the email to update your email preferences for different
         types of emails.</p>
-- title: Getting Started
-  faqs:
-    - question: How does shopping with 4P Foods work?
-      answer_html: >-
-        <p>Our signature products are our customizable 4P Bags, which include
-        Produce, Protein, and Dairy. You can order a bag once to try it out, but
-        our recommendation is to set up a recurring order so that you can be
-        sure to have your fridge, freezer, and pantry stocked with fresh,
-        locally and sustainably grown food every week.&nbsp;</p><p>We pack each
-        bag with a well-rounded, seasonal selection of items each week, and then
-        you can customize your bags to swap out items you don't love for items
-        you do.</p><p>Produce and fruit bags have multiple sizes, each with a
-        set price and number of items to mix and match. Protein and Dairy bags
-        have one size each and start at $30-$40 each week, but you can add or
-        take away to your liking, with a per-bag minimum of $20.&nbsp;</p>
-    - question: How will I find out what food you have each week?
-      answer_html: >-
-        <p>Each Saturday we update our online shop with what&rsquo;s fresh that
-        week and send a Weekly Harvest Newsletter straight to your inbox, making
-        it simple to decide what you want to order and plan what you&rsquo;ll
-        cook for the week. We also include storage tips, recipe ideas, and
-        highlights from our farmers and partners.&nbsp;</p><p>If you&rsquo;ve
-        signed up and are not receiving the email newsletter, be sure to check
-        your spam or promotions folder, and then please <a href="/contact/">get
-        in touch with us</a>&nbsp;so we can look into it.</p>
-    - question: Is there a minimum commitment or signup fee?
-      answer_html: >-
-        <p>Nope! There is no minimum commitment and no tricky sign-up policy.
-        Our minimum order is $30, which comes out to $35 with the delivery fee
-        (unless you signup at one of our community pickup sites with free
-        delivery). The minimum order amount to get free shipping is
-        $60.</p><p>You can order once to give us a try, or sign up for a
-        subscription and still cancel anytime before your skip deadline with no
-        fees&ndash;but if you were anything less than satisfied with your order,
-        it might be worth <a href="/contact/">getting in touch</a> with our
-        member experience team first so that we can try to make things
-        right.</p>
-    - question: 'If I sign up for a subscription, can I skip orders?'
-      answer_html: >-
-        <p>Absolutely. You always have the ability to skip individual orders, or
-        place a delivery hold for a certain period of time. All we ask is that
-        you skip any upcoming deliveries ahead of the 2-day cut-off period,
-        during which time we finalize orders with farmers. The cut-off begins at
-        <strong>11:59 pm on Sunday</strong> for a Wednesday delivery,
-        <strong>11:59 pm on Monday</strong> for a Thursday delivery, and
-        <strong>11:59 pm on Tuesday</strong> for a Friday delivery.&nbsp;</p>
-    - question: How does billing work? Do I pay upfront?
-      answer_html: >-
-        <p>We do our billing every Saturday for the prior week&rsquo;s
-        deliveries. So if you get a bag on Wednesday, you&rsquo;ll be billed the
-        following weekend. If you skip your order, you won&rsquo;t be billed
-        that week.</p>
 - title: Delivery
   faqs:
     - question: How does delivery work?
@@ -240,18 +252,6 @@
         missing item (or send you a substitute item in a few select
         circumstances, such as subbing one apple variety for another if we run
         out).</p>
-- title: Mission
-  faqs:
-    - question: How do you  address racial equity in the food system?
-      answer_html: >-
-        <p>Right off the bat, we want to acknowledge that the food system has
-        traditionally done a lot of harm to BIPOC communities, from colonization
-        to slavery to the poor treatment of immigrant farm laborers. We are
-        intentionally working to increase our sourcing from BIPOC farmers and to
-        center equity in our daily work as a company. You can read more about
-        racial injustice in the food system and 4P&rsquo;s response in this <a
-        href="/posts/we-stand-with-all-of-you-we-stand-against-racism/">letter
-        from our founder &amp; CEO</a>, Tom McDougall.</p>
 - title: About Us
   faqs:
     - question: Where does 4P source its food from?

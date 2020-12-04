@@ -180,6 +180,8 @@ _comments:
   product_url: 'Ex: /product/apple-fritter-baking-mix or /product/1362'
 
 _options:
+  layout:
+    hidden: true
   content:
     format: p h1 h2 h3 h4 h5 h6 pre address div
     bold: true
@@ -204,5 +206,20 @@ _options:
   thumbnail_mobile_image:  
     uploads_dir: "/uploads/videos/:title"
 
+  _block:
+    format: p h1 h2 h3 h4 h5 h6 pre address div
+    bold: true
+    italic: true
+    link: true
+    numberedlist: true
+    bulletedlist: true
+    subscript: true
+    superscript: true
+    horizontalrule: true
+    right: true
+    left: true
+    center: true
+    image: true
+    embed: true    
 
 placeholder_image: https://via.placeholder.com/1200

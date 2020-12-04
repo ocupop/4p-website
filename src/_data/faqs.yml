@@ -3,16 +3,18 @@
     - question: How does shopping with 4P Foods work?
       answer_html: >-
         <p>Our signature products are our customizable 4P Bags, which include
-        Produce, Protein, and Dairy. You can order a bag once to try it out, but
-        our recommendation is to set up a recurring order so that you can be
-        sure to have your fridge, freezer, and pantry stocked with fresh,
-        locally and sustainably grown food every week.&nbsp;</p><p>We pack each
-        bag with a well-rounded, seasonal selection of items each week, and then
-        you can customize your bags to swap out items you don't love for items
-        you do.</p><p>Produce and fruit bags have multiple sizes, each with a
-        set price and number of items to mix and match. Protein and Dairy bags
-        have one size each and start at $30-$40 each week, but you can add or
-        take away to your liking, with a per-bag minimum of $20.&nbsp;</p>
+        Produce, Protein, and Dairy. We pack each bag with a well-rounded,
+        seasonal selection of items each week, and then you can customize your
+        bags to swap out items you don't love for items you do. You can also
+        shop a wide range of our products a la carte, allowing you to tailor
+        your order to exactly how much of exactly what you want.</p><p>You can
+        order a bag once to try it out, but our recommendation is to set up a
+        recurring order so that you can be sure to have your fridge, freezer,
+        and pantry stocked with fresh, locally and sustainably grown food every
+        week.</p><p>Produce and fruit bags have multiple sizes, each with a set
+        price and number of items to mix and match. Protein and Dairy bags have
+        one size each and start at $30-$40 each week, but you can add or take
+        away to your liking, with a per-bag minimum of $20.&nbsp;</p>
     - question: How will I find out what food you have each week?
       answer_html: >-
         <p>Each Saturday we update our online shop with what&rsquo;s fresh that
@@ -50,6 +52,12 @@
         deliveries. So if you get a bag on Wednesday, you&rsquo;ll be billed the
         following weekend. If you skip your order, you won&rsquo;t be billed
         that week.</p>
+    - question: What if I'm allergic to something that's coming in my 4P Bag?
+      answer_html: >-
+        <p>That&rsquo;s where the customization function comes in! Be sure to
+        login to your account between Saturday afternoon and your order deadline
+        (11:59pm three days before your delivery day) to customize your order
+        and swap out any items you can&rsquo;t enjoy.</p>
 - title: Mission
   faqs:
     - question: How do you  address racial equity in the food system?
@@ -62,6 +70,32 @@
         racial injustice in the food system and 4P&rsquo;s response in this <a
         href="/posts/we-stand-with-all-of-you-we-stand-against-racism/">letter
         from our founder &amp; CEO</a>, Tom McDougall.</p>
+    - question: How do I find out more about your farmers?
+      answer_html: >-
+        <p>Check out our <a href="/our-farmers">Farmers page</a>! We&rsquo;re
+        always updating it, so stay tuned for more profiles of the many amazing
+        farmers, ranchers, and artisans from whom we source.</p>
+    - question: Where do you source your food from?
+      answer_html: >-
+        <p>The short answer: we source locally and regionally from a network of
+        over 200 small, independent farmers, most of them located in the
+        Mid-Atlantic. Does that mean it&rsquo;s &ldquo;local?&rdquo; That
+        depends on where you live and how you define it, so we often use the
+        term &ldquo;regional&rdquo; to describe our sourcing
+        practices.</p><p>The longer answer: it depends on the item and the
+        season. Avocados don&rsquo;t grow in the Mid-Atlantic, so we buy them
+        from a fair-trade cooperative in Peru (read more about our sourcing of
+        tropical items on our blog <a
+        href="/posts/the-geography-of-good-food/">here</a>). As another example,
+        we can offer peak-season strawberries longer by following their season
+        up from the Carolinas in early spring through Virginia and beyond into
+        mid-summer. 4P is a founding member of the Eastern Food Hub
+        Collaborative, a network of other food hubs like us up and down the
+        Eastern Seaboard who all work with their own vetted networks of small,
+        sustainable farmers and work together to increase the variety and supply
+        of produce available from this region.</p><p>Read our growing collection
+        of <a href="/our-farmers">farmer profiles</a> for more information about
+        our food.</p>
 - title: Shopping
   faqs:
     - question: >-
@@ -254,41 +288,6 @@
         out).</p>
 - title: About Us
   faqs:
-    - question: Where does 4P source its food from?
-      answer_html: >-
-        <p>The short answer: we source locally and regionally from a network of
-        over 200 small, independent farmers, most of them located in the
-        Mid-Atlantic. Does that mean it&rsquo;s &ldquo;local?&rdquo; That
-        depends on where you live and how you define it, so we often use the
-        term &ldquo;regional&rdquo; to describe our sourcing
-        practices.</p><p>The longer answer: it depends on the item and the
-        season. Avocados don&rsquo;t grow in the Mid-Atlantic, so we buy them
-        from a fair-trade cooperative in Peru (read more about our sourcing of
-        tropical items on our blog&nbsp;<a
-        href="/posts/the-geography-of-good-food/">here</a>). As another example,
-        we can offer peak-season strawberries longer by following their season
-        up from the Carolinas in early spring through Virginia and beyond into
-        mid-summer. 4P is a founding member of the Eastern Food Hub
-        Collaborative, a network of other food hubs like us up and down the
-        Eastern Seaboard who all work with their own vetted networks of small,
-        sustainable farmers and work together to increase the variety and supply
-        of produce available from this region.</p><p>Read our growing collection
-        of&nbsp;<a href="/our-farmers">farmer profiles</a>&nbsp;for more
-        information about our food.</p>
-    - question: How does ordering from 4P work?
-      answer_html: >-
-        <p>We are your&nbsp;<a
-        href="/posts/spring-into-action-with-community-supported-agriculture/">direct
-        connection to the farm</a>. Ordering a bag from us is like an online
-        farmers market meets a farm share or CSA (Community Supported
-        Agriculture) program. Choose between different kinds of bags, like
-        produce, meat, or dairy. Order once or on a recurring basis. Each week,
-        you'll receive our newsletter with that week's &ldquo;menu&rdquo; with a
-        hand-selected range of seasonal items. (Customize by swapping out
-        anything you don&rsquo;t love for other things that you do). Once
-        you&rsquo;ve customized your bag to your liking, you can add on
-        additional a la carte items to round out your order! Read our
-        handy&nbsp;<a href="/how-to-shop/">shopping guide</a>.</p>    
     - question: Is all the food organic? What about non-GMO?
       answer_html: >-
         <p>Some of it is USDA-certified organic, and some of it is not (not all
@@ -310,34 +309,6 @@
         supporting regenerative agriculture. Regenerative agriculture seeks not
         only to maintain but also to increase soil health, carbon sequestration,
         and biodiversity.</p>
-    - question: What if I want to skip a delivery?
-      answer_html: >-
-        <p>First of all, you can select how often you want to get your 4P Bag(s)
-        and select items (eggs + pantry goods) with our frequency setting: once,
-        weekly, every other week, and so on.</p><p>We recommend selecting
-        recurring order and then using the skip feature to skip 1+ week at a
-        time. On your account management page you have the option to&nbsp;<a
-        href="/how-to-shop/">skip your order</a>&nbsp;once or for a longer
-        period of time. All we ask is that you skip any upcoming deliveries
-        ahead of the 2-day cut-off period, during which time we finalize orders
-        with farmers. The cut-off begins at&nbsp;<strong>11:59 pm on
-        Sunday</strong>&nbsp;for a Wednesday delivery,&nbsp;<strong>11:59 pm on
-        Monday</strong>&nbsp;for a Thursday delivery, and&nbsp;<strong>11:59 pm
-        on Tuesday</strong>&nbsp;for a Friday delivery.&nbsp;</p>    
-    - question: How does it all work?
-      answer_html: >-
-        <p>We are your <a
-        href="/posts/spring-into-action-with-community-supported-agriculture/">direct
-        connection to the farm</a>. Ordering a bag from us is like an online
-        farmers market meets a farm share or CSA (Community Supported
-        Agriculture) program. Choose between different kinds of bags, like
-        produce, meat, or dairy. Order once or on a recurring basis. Each week,
-        you'll receive our newsletter with that week's &ldquo;menu&rdquo; with a
-        hand-selected range of seasonal items. (Customize by swapping out
-        anything you don&rsquo;t love for other things that you do). Once
-        you&rsquo;ve customized your bag to your liking, you can add on
-        additional a la carte items to round out your order! Read our handy <a
-        href="/how-to-shop/">shopping guide</a>.</p>
     - question: Where do you source your food from?
       answer_html: >-
         <p>The short answer: we source locally and regionally from a network of
@@ -379,11 +350,6 @@
         the regional foodshed, harvested daily and delivered to you. With 4P,
         you are voting with your fork for a <a href="/our-impact/">more
         sustainable and equitable</a> food system for everyone.</p>
-    - question: How do I find our more about your farmers?
-      answer_html: >-
-        <p>Check out our <a href="/our-farmers">Farmers page</a>! We&rsquo;re
-        always updating it, so stay tuned for more profiles of the many amazing
-        farmers, ranchers, and artisans from whom we source.</p>
     - question: Is all the food organic? What about non-GMO
       answer_html: >-
         <p>Some of it is USDA-certified organic, and some of it is not (not all
@@ -405,38 +371,14 @@
         regenerative agriculture. Regenerative agriculture seeks not only to
         maintain but also to increase soil health, carbon sequestration, and
         biodiversity.</p>
-    - question: Can I customize what I get in my bag?
-      answer_html: >-
-        <p>Absolutely. We took the best of a traditional CSA or farm share model
-        (fresh, seasonal foods for you and direct, consistent support for
-        farmers) and made it more flexible and customizable.</p><p>Simply log in
-        and <a href="/how-to-shop/">customize</a> your bag. The time to shop
-        from our fresh selection will be between midday Saturday (when the
-        newsletter arrives) up until your skip deadline (two full days before
-        the start of your delivery day, or for an example, Sunday at 11:59 pm
-        for Wednesday delivery).</p><p>See what's available by either clicking
-        on the box icon in the upper right hand corner or by navigating to
-        <strong>Upcoming Deliveries</strong>&nbsp;under <strong>My
-        Account</strong>, and click <strong>Customize Bag.</strong>&nbsp;From
-        there, you can see what's on order, take out any items you don&rsquo;t
-        like, double up on your favorites, or add in something
-        new.&nbsp;</p><p>Be sure to click <strong>Save</strong>&nbsp;to complete
-        your changes!</p>
-    - question: What if I'm allergic to something?
-      answer_html: >-
-        <p>That&rsquo;s where the customization function comes in! Be sure to
-        login to your account between Saturday afternoon and your order deadline
-        (two full days before your delivery day) to customize your order and
-        swap out any items you can&rsquo;t enjoy.</p>
     - question: How can I order extra items?
       answer_html: >-
         <p>After you choose your bag(s), head over to the shop to browse that
         week&rsquo;s available items and add anything you would like. You can
         choose if you want this item just one time, or on a recurring basis
-        (based on availability). If the item you choose does not show these
-        options that means it has limited availability.&nbsp;</p><p>Can&rsquo;t
-        find what you&rsquo;re looking for? Try clicking the magnifying glass in
-        the corner to search for a specific item.</p>
+        (based on availability).&nbsp;</p><p>Can&rsquo;t find what you&rsquo;re
+        looking for? Try clicking the magnifying glass in the corner to search
+        for a specific item.</p>
     - question: What should I do with the old bags?
       answer_html: >-
         <p>We carefully inspect, sanitize, and reuse them, so we would love to
@@ -445,8 +387,8 @@
         included), and any glass milk bottles to the same place where your bags
         were dropped off. We&rsquo;ll send you a reminder email the day before
         your delivery so that our driver can pick them when they deliver the
-        next day. We&rsquo;ll then quarantine them and sanitize them for reuse.
-        With your help, it&rsquo;s a win-win! Thank you!</p>
+        next day. We&rsquo;ll then sanitize them for reuse. With your help,
+        it&rsquo;s a win-win! Thank you!</p>
     - question: How do I store this? How the heck do I cook rutabaga?
       answer_html: >-
         <p>Check out this helpful <a href="/posts/4p-foods-storage-tips/">food
@@ -462,21 +404,18 @@
         recipes for beets? Winter squash? Collard greens? We&rsquo;ve got you
         covered! If you don&rsquo;t use Pinterest and are a 4P Foods member,
         feel free to email us about accessing our guest Pinterest account.</p>
-    - question: 'Referring a friend, and other promotions?'
+    - question: >-
+        I would love to tell my friends, family, neighbors, etc about 4P Foods.
+        Do I get any perks for that?
       answer_html: >-
-        <ul><li>Refer a friend, and you both get $10 off! From the &ldquo;My
-        Account&rdquo; menu, select &ldquo;Referrals&rdquo; to find your unique
-        referral link. Share this link with friends, family, and colleagues, and
-        for anyone who signs up with this link and makes a purchase, both you
-        and your referee get a $10 credit.</li><li>Refer your office! We are
-        always looking for new office buildings with folks who want to get
-        fresh, healthy food delivered right to their workplace. When you put us
-        in touch with your office to schedule a &ldquo;meet &amp; greet&rdquo;
-        (where we come to tell more of our story, how it works, etc.), we will
-        give you a free small produce bag.</li></ul>
+        <p>Thank you--we love when 4P members want to spread the word! Refer a
+        friend, and you both get $10 off. From the &ldquo;My Account&rdquo;
+        menu, select &ldquo;Referrals&rdquo; to find your unique referral link.
+        Share this link with friends, family, and colleagues, and for anyone who
+        signs up with this link and makes a purchase, both you and your referee
+        get a $10 credit</p>
     - question: Do you have wholesale?
       answer_html: >-
         <p>Yes! Please contact our wholesale team at <a
         href="mailto:sales@4pfoods.com">sales@4pfoods.com </a>to learn more
-        about how you can bring Good Food to your
-        business.</p>                              
+        about how you can bring Good Food to your business.</p>

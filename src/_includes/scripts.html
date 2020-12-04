@@ -9,7 +9,7 @@
 
 <script defer>
   $(document).ready(function(){
-    Cookies.remove('onboarding')
+    // Cookies.remove('onboarding')
 
     //cookie management
     function checkOnboardingCookie(){
@@ -40,7 +40,7 @@
         Cookies.set('onboarding', 'hide', { expires: 365 })
       }else {
         // it is not check, hide the modal and set cookie to expire in 1 day
-        Cookies.set('onboarding', 'hide', { expires: 1 })
+        Cookies.set('onboarding', 'hide')
       }
     })
 

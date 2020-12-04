@@ -58,6 +58,21 @@
         login to your account between Saturday afternoon and your order deadline
         (11:59pm three days before your delivery day) to customize your order
         and swap out any items you can&rsquo;t enjoy.</p>
+    - question: What is 4P's mission?
+      answer_html: >-
+        <p>Our mission is to empower you to transform the food system.</p><p>And
+        how do we do that, you ask? Every purchase you make with 4P allows you
+        to live your values and support small and mid-sized family farmers and
+        artisans by giving them access to new markets, while also helping ensure
+        that all people have equitable access to the Good Food produced by these
+        farmers.</p><p>We believe that Good Food&mdash; food that is traceable,
+        nutritious, accessible, and produced in a system that empowers farmers
+        and sustains the environment&mdash; should be the norm, not the
+        exception, and we actively work to make that vision a reality each and
+        every day. Every purchase with 4P not only supports a growing network of
+        small family farms and artisan producers in the region, but also
+        advances equitable access to fresh healthy food in the communities we
+        serve.</p>
 - title: Mission
   faqs:
     - question: How do you  address racial equity in the food system?
@@ -96,6 +111,27 @@
         of produce available from this region.</p><p>Read our growing collection
         of <a href="/our-farmers">farmer profiles</a> for more information about
         our food.</p>
+    - question: What is 4P's mission?
+      answer_html: >-
+        <p>Our mission is to empower you to transform the food system.</p><p>And
+        how do we do that, you ask? Every purchase you make with 4P allows you
+        to live your values and support small and mid-sized family farmers and
+        artisans by giving them access to new markets, while also helping ensure
+        that all people have equitable access to the Good Food produced by these
+        farmers.</p><p>We believe that Good Food&mdash; food that is traceable,
+        nutritious, accessible, and produced in a system that empowers farmers
+        and sustains the environment&mdash; should be the norm, not the
+        exception, and we actively work to make that vision a reality each and
+        every day. Every purchase with 4P not only supports a growing network of
+        small family farms and artisan producers in the region, but also
+        advances equitable access to fresh healthy food in the communities we
+        serve.</p>
+    - question: >-
+        What happens if I buy a Donation Bag, or donate my order instead of skip
+        it?
+      answer_html:
+    - question: What do you mean by "Good Food"?
+      answer_html:
 - title: Shopping
   faqs:
     - question: >-

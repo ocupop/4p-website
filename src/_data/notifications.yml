@@ -3,4 +3,4 @@ header_notification:
   link:
 bar_notification:
   notification_text: COVID-19 Procedures & Community Response
-  link: 'https://shenandoahproduce.4pfoods.com/posts/covid-19-response/'
+  link: '/posts/covid-19-response/'

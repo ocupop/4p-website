@@ -5,7 +5,7 @@ date:
 featured_image:
 assets:
 tags:
-published: false
+published: true
 ---
 
 <div class="editable"></div>

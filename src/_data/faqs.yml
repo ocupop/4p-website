@@ -122,12 +122,6 @@
         confirmation email every time, you can hit &ldquo;Unsubscribe&rdquo; at
         the bottom of the email to update your email preferences for different
         types of emails.</p>
-    - question: How does billing work?
-      answer_html: >-
-        <p>We do our billing every Saturday for the prior week&rsquo;s
-        deliveries. So if you get a bag on Wednesday, you&rsquo;ll be billed the
-        following weekend. If you skip your order, you won&rsquo;t be billed
-        that week.</p>
 - title: Getting Started
   faqs:
     - question: How does shopping with 4P Foods work?
@@ -182,7 +176,28 @@
         that week.</p>
 - title: Delivery
   faqs:
-    - question: How is the food delivered? Will it stay fresh?
+    - question: How does delivery work?
+      answer_html: >-
+        <p>All of our deliveries are contactless, and you should receive an
+        automatic email or text notification when a driver drops off your
+        bags.</p><p>In general, if you signed up for direct home delivery, we
+        usually deliver the bags right to your doorstep, or wherever you
+        indicated in your delivery instructions (if we don&rsquo;t deliver to
+        the right place, please <a href="/contact/">get in touch</a>&nbsp;to let
+        us know!).</p><p>For commercial buildings or apartment complexes, we
+        deliver the bags per the building&rsquo;s COVID-19 protocols and your
+        directions. Per our own COVID-19 protocols, all of our drivers wear
+        required face masks and gloves--read more about our response to the
+        pandemic <a href="/posts/covid-19-response/">here</a>. If your building
+        has limited open hours for deliveries as a result of COVID-19, please <a
+        href="/contact/">let us know</a> so we can plan accordingly.</p><p>In an
+        effort to maximize delivery efficiency and minimize contact during the
+        busiest hours of the day, your delivery may arrive as early as 4:00AM
+        and as late as 8:00PM. You will have the opportunity to tell us your
+        delivery time preferences during registration, or you can <a
+        href="/contact/">reach out to us</a> to let us know if you have timing
+        limitations.</p>
+    - question: Will the food stay fresh after it is delivered?
       answer_html: >-
         <p>You will receive an email or text notification when a driver drops
         off your bags. We deliver our food in insulated packaging to keep
@@ -193,13 +208,13 @@
         day for our driver to swap out.</p>
     - question: Is there a delivery fee?
       answer_html: >-
-        <p>Please note that doorstep delivery takes us some extra time and
-        energy. There is a flat $5.00 fee that helps to cover some of that.
+        <p>Please note that delivery takes time and energy and an amazing
+        delivery team. There is a flat $5 fee that helps to cover some of that.
         Since we are awesome humans (and not drones) delivering your food with
         care, hopefully you&rsquo;ll agree that it&rsquo;s totally worth
-        it</p><p>Free delivery with purchase $50 and over. Free delivery to
-        public pick-up sites, where anyone can pick up their bags within a
-        certain pick-up time frame to save C02 and save a few bucks.</p>
+        it.</p><p>Delivery is free for all orders $60 and over and at community
+        pick-up sites, where anyone can pick up their bags within a certain
+        pick-up time frame to save C02 and save a few bucks.</p>
     - question: What is my delivery day?
       answer_html: >-
         <p>You should have been notified of your delivery day during the signup
@@ -211,41 +226,20 @@
         newsletter.</p><p>If you&rsquo;re still unsure,&nbsp;<a
         href="/contact/">reach out</a>&nbsp;and we'll be happy to assist
         you!</p>
-    - question: How does delivery work?
-      answer_html: >-
-        <p>All of our deliveries are contactless, and you should receive an
-        automatic email or text notification when a driver drops off your bags,
-        but the specifics will depend on your delivery site.</p><p>In general,
-        if you signed up for direct home delivery, we usually deliver the bags
-        right to your doorstep, or wherever you indicated in your delivery
-        instructions (if we don&rsquo;t deliver to the right place, please <a
-        href="/contact/">get in touch</a>&nbsp;to let us know!).</p><p>For
-        commercial buildings or apartment complexes, we deliver the bags per the
-        building&rsquo;s COVID-19 protocols and your directions. Per our own
-        COVID-19 protocols, all of our drivers wear required face masks and
-        gloves--read more about our response to the pandemic <a
-        href="/posts/covid-19-response/">here</a>. If your building has limited
-        open hours for deliveries as a result of COVID-19, please <a
-        href="/contact/">let us know</a> so we can plan accordingly.</p><p>In an
-        effort to maximize delivery efficiency and minimize contact during the
-        busiest hours of the day, your delivery may arrive as early as 4:00AM
-        and as late as 9:00PM. You will have the opportunity to tell us your
-        delivery time preferences during registration, or you can <a
-        href="/contact/">reach out to us</a> to let us know if you have timing
-        limitations.</p>
     - question: What if I receive damaged produce or my delivery is missing an item?
       answer_html: >-
         <p>If you receive any disappointing veggies or sad fruit, or if any
         items are missing, please let us know! We&rsquo;ll gladly try to correct
-        whatever happened, whether through a refund or an extra item in your
+        whatever happened, whether through a credit or an extra item in your
         next delivery.&nbsp;</p><p>We do our best to closely manage inventory so
         that we have enough for all orders but not so much that anything goes to
-        waste, but if we ever run out of an item or it becomes unavailable after
-        you have selected it in your order, we will do our best to notify you of
-        the change so you can let us know what you&rsquo;d like instead. If we
-        can&rsquo;t get in touch in time, we&rsquo;ll substitute the closest
-        item we have on hand (like pears for apples, or sweet potatoes for
-        butternut squash).</p>          
+        waste. If we ever run out of an item or it becomes unavailable after you
+        have selected it in your order, we will do our best to notify you of the
+        change so you can let us know what you&rsquo;d like instead. If we
+        can&rsquo;t get in touch in time, we&rsquo;ll issue you a credit for the
+        missing item (or send you a substitute item in a few select
+        circumstances, such as subbing one apple variety for another if we run
+        out).</p>
 - title: Mission
   faqs:
     - question: How do you  address racial equity in the food system?

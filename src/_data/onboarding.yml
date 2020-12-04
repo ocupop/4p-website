@@ -114,7 +114,10 @@ slides:
         thumbnail_mobile_image: /uploads/videos/shenandoah-mobile.jpg
         show_on_how_to_shop: true
   - title: Update Your Account
-    description_html: <p>Update your password</p>
+    description_html: >-
+      <p>On the login page, click "Forgot your password" and enter the email
+      address associated with your 4P Foods account to set up a new
+      password.</p>
     video_desktop_path: /uploads/videos/password-desktop.mp4
     thumbnail_desktop_image: /uploads/videos/password.jpg
     video_mobile_path: /uploads/videos/password-mobile.mp4
@@ -122,7 +125,9 @@ slides:
     show_on_how_to_shop: true
     instructions:
       - title: Update your payment information
-        description_html: <p>Description here...</p>
+        description_html: >-
+          <p>Once logged in, click on "Account Info" under "My Account" to
+          update your payment information with your preferred credit card.</p>
         video_desktop_path: /uploads/videos/billing-desktop.mp4
         thumbnail_desktop_image: /uploads/videos/payment.jpg
         video_mobile_path: /uploads/videos/billing-mobile.mp4

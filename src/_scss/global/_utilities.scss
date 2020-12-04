@@ -109,6 +109,15 @@ video {
   }
 }
 
+.bg-contain {
+  background-size: contain;
+  
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-fill {
   position: absolute;
   top: 0;

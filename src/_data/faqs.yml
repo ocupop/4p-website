@@ -89,26 +89,6 @@
         you entered to return.&nbsp;</p><p>If you need any assistance skipping a
         delivery, please <a href="/contact/">reach out to us</a> and we'll be
         happy to help.</p>
-    - question: What if I want to skip a delivery?
-      answer_html: >-
-        <p>Go for it. On your account management page you have the option to <a
-        href="/how-to-shop/">skip your order</a> once or for a longer period of
-        time. All we ask is that you skip any upcoming deliveries ahead of the
-        2-day cut-off period, during which time we finalize orders with farmers.
-        The cut-off begins at <strong>11:59 pm on Sunday</strong> for a
-        Wednesday delivery, <strong>11:59 pm on Monday</strong> for a Thursday
-        delivery, and <strong>11:59 pm on Tuesday</strong> for a Friday
-        delivery.&nbsp;</p>    
-    - question: Why can't I put meat in my produce bag? Or yogurt in my meat bag?
-      answer_html: >-
-        <p>We don&rsquo;t yet have a safe way to pack meat (which comes frozen)
-        with other items that aren&rsquo;t frozen (or vis versa), without using
-        lots of excess packaging, which we try to avoid from an environmental
-        perspective. We are working to expand our a la carte capability, and in
-        the meantime, our customizable bags and flexible order cadences
-        (one-time, weekly, every other week, and so on) should help you get the
-        right amounts of the right kinds of food for your household with minimal
-        waste.</p>    
     - question: I only want to order a small amount of dairy or protein--can I do that?
       answer_html: >-
         <p>Select dairy and protein items can be purchased a la carte, including
@@ -146,10 +126,23 @@
       answer_html: >-
         <p>We do our billing every Saturday for the prior week&rsquo;s
         deliveries. So if you get a bag on Wednesday, you&rsquo;ll be billed the
-        following weekend. If you skip your order or add a vacation, you
-        won&rsquo;t be billed that week.</p>    
+        following weekend. If you skip your order, you won&rsquo;t be billed
+        that week.</p>
 - title: Getting Started
   faqs:
+    - question: How does shopping with 4P Foods work?
+      answer_html: >-
+        <p>Our signature products are our customizable 4P Bags, which include
+        Produce, Protein, and Dairy. You can order a bag once to try it out, but
+        our recommendation is to set up a recurring order so that you can be
+        sure to have your fridge, freezer, and pantry stocked with fresh,
+        locally and sustainably grown food every week.&nbsp;</p><p>We pack each
+        bag with a well-rounded, seasonal selection of items each week, and then
+        you can customize your bags to swap out items you don't love for items
+        you do.</p><p>Produce and fruit bags have multiple sizes, each with a
+        set price and number of items to mix and match. Protein and Dairy bags
+        have one size each and start at $30-$40 each week, but you can add or
+        take away to your liking, with a per-bag minimum of $20.&nbsp;</p>
     - question: How will I find out what food you have each week?
       answer_html: >-
         <p>Each Saturday we update our online shop with what&rsquo;s fresh that
@@ -160,17 +153,44 @@
         signed up and are not receiving the email newsletter, be sure to check
         your spam or promotions folder, and then please <a href="/contact/">get
         in touch with us</a>&nbsp;so we can look into it.</p>
+    - question: Is there a minimum commitment or signup fee?
+      answer_html: >-
+        <p>Nope! There is no minimum commitment and no tricky sign-up policy.
+        Our minimum order is $30, which comes out to $35 with the delivery fee
+        (unless you signup at one of our community pickup sites with free
+        delivery). The minimum order amount to get free shipping is
+        $60.</p><p>You can order once to give us a try, or sign up for a
+        subscription and still cancel anytime before your skip deadline with no
+        fees&ndash;but if you were anything less than satisfied with your order,
+        it might be worth <a href="/contact/">getting in touch</a> with our
+        member experience team first so that we can try to make things
+        right.</p>
+    - question: 'If I sign up for a subscription, can I skip orders?'
+      answer_html: >-
+        <p>Absolutely. You always have the ability to skip individual orders, or
+        place a delivery hold for a certain period of time. All we ask is that
+        you skip any upcoming deliveries ahead of the 2-day cut-off period,
+        during which time we finalize orders with farmers. The cut-off begins at
+        <strong>11:59 pm on Sunday</strong> for a Wednesday delivery,
+        <strong>11:59 pm on Monday</strong> for a Thursday delivery, and
+        <strong>11:59 pm on Tuesday</strong> for a Friday delivery.&nbsp;</p>
+    - question: How does billing work? Do I pay upfront?
+      answer_html: >-
+        <p>We do our billing every Saturday for the prior week&rsquo;s
+        deliveries. So if you get a bag on Wednesday, you&rsquo;ll be billed the
+        following weekend. If you skip your order, you won&rsquo;t be billed
+        that week.</p>
 - title: Delivery
   faqs:
     - question: How is the food delivered? Will it stay fresh?
       answer_html: >-
         <p>You will receive an email or text notification when a driver drops
-        off your bags, and as long as you can pick up your food the same day it
-        is delivered, you should be fine. We deliver our produce in reusable
-        insulated tote bags to keep everything fresh. For our meat, dairy, and
-        eggs, we deliver them in nifty insulated cooler boxes to keep everything
-        cold. We take all the packaging back to sanitize and reuse, so please
-        set out your empties on delivery day for our driver to swap out.</p>
+        off your bags. We deliver our food in insulated packaging to keep
+        everything cold. We'd recommend picking up and unpacking your bags as
+        soon as you can, but as long as you can do so within a few hours (or
+        longer in cooler weather), you should be fine. We take all the packaging
+        back to sanitize and reuse, so please set out your empties on delivery
+        day for our driver to swap out.</p>
     - question: Is there a delivery fee?
       answer_html: >-
         <p>Please note that doorstep delivery takes us some extra time and

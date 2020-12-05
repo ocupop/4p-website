@@ -1,0 +1,150 @@
+welcome_page:
+  title_desktop: Tour The New 4P Foods Shopping Experience
+  title_mobile: Welcome To The New 4P Foods Shopping Experience
+  description_desktop_html: >-
+    <p>We promise it's worth your while. Click the arrows to see how it all
+    works and then be on your way to your next delivery of Good Food!</p>
+  description_mobile_html: >-
+    <p>We promise it's worth your while. Scroll through to see how it all works
+    and then be on your way to your next delivery of Good Food!</p>
+  link_label: Get Started!
+slides:
+  - title: Review Your Upcoming Deliveries
+    description_html: >-
+      <p>Click on the bag icon in the upper right corner to see your next six
+      deliveries. If you have any existing subscriptions, you will see your 4P
+      bags there under each upcoming delivery date.</p>
+    video_desktop_path: /uploads/videos/updated-upcoming.mp4
+    thumbnail_desktop_image: /uploads/videos/upcoming-delivery-desktop.jpg
+    video_mobile_path: /uploads/videos/upcoming-mobile.mp4
+    show_on_how_to_shop: true
+    thumbnail_mobile_image: /uploads/videos/upcoming-delivery-mobile.jpg
+    instructions:
+      - title: Skip an upcoming delivery
+        description_html: >-
+          <p>Skipping orders is easy! Click the x next to any item in your cart
+          to delete it just once or for all future deliveries, or click on
+          "Upcoming Deliveries" to skip or donate any upcoming order. Going away
+          for a while? Use the "Delivery Hold" feature to pause all orders for a
+          certain period of time.</p>
+        video_desktop_path: /uploads/videos/skip-delivery.mp4
+        thumbnail_desktop_image: /uploads/videos/skip-desktop.jpg
+        video_mobile_path: /uploads/videos/skip-mobile.mp4
+        thumbnail_mobile_image: /uploads/videos/skip-mobile.jpg
+        show_on_how_to_shop: true
+      - title: Change the default frequency of your bags
+        description_html: >-
+          <p>You can now change the default frequency of your bags (and eggs) to
+          weekly, every other week, monthly, or specific dates. To do so, delete
+          the item from your cart (for all future deliveries) or recurring items
+          list and then add it back after selecting the new frequency from the
+          dropdown menu.</p>
+        video_desktop_path: /uploads/videos/delivery-frequency.mp4
+        thumbnail_desktop_image: /uploads/videos/frequency-bags-desktop.jpg
+        video_mobile_path: /uploads/videos/frequency-of-bags-mobile.mp4
+        thumbnail_mobile_image: /uploads/videos/frequency-bags-mobile.jpg
+        show_on_how_to_shop: true
+  - title: Customize Your 4P Bags
+    description_html: >-
+      <p>You can customize your 4P Bags to make sure you are getting exactly
+      what you want each week. Learn how each bag works below.</p>
+    video_desktop_path: /uploads/videos/custom-order.mp4
+    thumbnail_desktop_image: /uploads/videos/custom-order-desktop.jpg
+    video_mobile_path: /uploads/videos/custom-order-mobile.mp4
+    thumbnail_mobile_image: /uploads/videos/custom-order-mobile.jpg
+    show_on_how_to_shop: false
+    instructions:
+      - title: How to Customize Produce and Fruit Bags
+        description_html: >-
+          <p>Produce and new fruit bags have a set price and number of items
+          within each size. Swap out any item you don't want from our weekly
+          picks and then swap in any item you do, one for one. Wondering where a
+          favorite pantry item has gone? If it's not a swap in the bag, you can
+          buy it a la carte &mdash; look for it by category or in the search
+          bar.</p>
+        video_desktop_path: /uploads/videos/custom-product-desktop.mp4
+        thumbnail_desktop_image: /uploads/videos/cusomize-produce.jpg
+        video_mobile_path: /uploads/videos/custom-produce-mobile.mp4
+        thumbnail_mobile_image: /uploads/videos/custom-produce-mobile.jpg
+        show_on_how_to_shop: true
+      - title: How to Customize Protein and Dairy Bags
+        description_html: >-
+          <p>Protein and dairy bags now have flexible prices based on what you
+          put in them. We still pack a "standard" bag with our picks each week,
+          and you have the freedom to add or take away as much as you want, as
+          long as you hit the $20 minimum per bag.</p>
+        video_desktop_path: /uploads/videos/custom-meat.mp4
+        thumbnail_desktop_image: /uploads/videos/custom-meat-desktop.jpg
+        video_mobile_path: /uploads/videos/custom-meat-mobile.mp4
+        thumbnail_mobile_image: /uploads/videos/custom-meat-mobile.jpg
+        show_on_how_to_shop: true
+  - title: Go Shopping for More
+    description_html: >-
+      <p>Add extras to your 4P Bags with our a la carte shopping feature. Find
+      select a la carte goods within each product category. (For example: Hop
+      over to Dairy &amp; Eggs). Just make sure you meet the $30 minimum order
+      for delivery, and all orders over $60 get free delivery!</p>
+    video_desktop_path: /uploads/videos/go-shopping-for-more.mp4
+    thumbnail_desktop_image: /uploads/videos/shop-for-more-desktop.jpg
+    video_mobile_path: /uploads/videos/shopping-more-mobile.mp4
+    thumbnail_mobile_image: /uploads/videos/shop-for-more-mobile.jpg
+    show_on_how_to_shop: true
+    instructions:
+      - title: Try a Fully A La Carte Order
+        description_html: >-
+          <p>You can build an order of exactly what you need from our a la carte
+          selection of produce, pantry, and select protein and dairy products,
+          no bag required. As long as you hit the $30 order minimum, you're good
+          to go!</p>
+        video_desktop_path: /uploads/videos/a-la-carte.mp4
+        thumbnail_desktop_image: /uploads/videos/a-la-carte-desktop.jpg
+        video_mobile_path: /uploads/videos/a-la-carte-mobile.mp4
+        thumbnail_mobile_image: /uploads/videos/a-la-carte-mobile.jpg
+        show_on_how_to_shop: true
+      - title: Shop Shenandoah Produce
+        description_html: >-
+          <p>We are excited now to feature products from the Shenandoah Valley
+          region in our Shenandoah Produce category. This hyper-locally focused
+          product line brings you the best of this rich agricultural region's
+          produce, meat, and dairy. Look for a la carte items in the header or
+          for swap items with the SP icon.</p>
+        video_desktop_path: /uploads/videos/shenandoah.mp4
+        thumbnail_desktop_image: /uploads/videos/shenandoah-desktop.jpg
+        video_mobile_path: /uploads/videos/shenandoah-mobile.mp4
+        thumbnail_mobile_image: /uploads/videos/shenandoah-mobile.jpg
+        show_on_how_to_shop: true
+  - title: Update Your Account
+    description_html: >-
+      <p>On the login page, click "Forgot your password" and enter the email
+      address associated with your 4P Foods account to set up a new
+      password.</p>
+    video_desktop_path: /uploads/videos/password-desktop.mp4
+    thumbnail_desktop_image: /uploads/videos/password.jpg
+    video_mobile_path: /uploads/videos/password-mobile.mp4
+    thumbnail_mobile_image: /uploads/videos/password.jpg
+    show_on_how_to_shop: true
+    instructions:
+      - title: Update your payment information
+        description_html: >-
+          <p>Once logged in, click on "Account Info" under "My Account" to
+          update your payment information with your preferred credit card.</p>
+        video_desktop_path: /uploads/videos/billing-desktop.mp4
+        thumbnail_desktop_image: /uploads/videos/payment.jpg
+        video_mobile_path: /uploads/videos/billing-mobile.mp4
+        thumbnail_mobile_image: /uploads/videos/payment.jpg
+        show_on_how_to_shop: true
+start_shopping_page:
+  title: Learn More
+  description_html: >-
+    <p>Still have a few questions? Dive deeper in our How to Shop Guide and
+    FAQs.</p>
+  thumbnail_image:
+  how_to_shop_guide_link: /how-to-shop
+  how_to_shop_guide_link_label: How to Shop Guide
+  shopping_title: Start Shopping
+  shopping_description_html: >-
+    <p>Now that you know the basics, click through to enjoy our new shopping
+    experience.</p><h5><strong>You will need to click "Forgot your password" to
+    reset your password if you are here for the first time from the old 4P Foods
+    website.</strong>&nbsp;</h5>
+  shopping_link_label: Reset Your Password and Start Shopping

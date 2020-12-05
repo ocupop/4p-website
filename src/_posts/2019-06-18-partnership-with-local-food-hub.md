@@ -5,6 +5,7 @@ date: 2019-06-18 00:48:00
 featured_image: /img/uploads/4P-LFH-Partnership-Announcement-1024x1024.png
 assets:
 tags:
+published: true
 ---
 
 <div class="editable">We at 4P Foods have very exciting news that will positively impact our local food system. After months of careful consideration, 4P Foods and Local Food Hub, a non-profit that partners with Virginia farmers to increase community access to food, have finalized a merger of our distribution operations.</div>

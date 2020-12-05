@@ -1,7 +1,7 @@
 # Site settings
 title: 4P Foods
 email: dev@ocupop.com
-url: 'http://shenandoahproduce.4pfoods.com'
+url: 'http://4pfoods.com'
 permalink: pretty
 store_url: 'https://shop.4pfoods.com'
 store_login: '/login'
@@ -168,6 +168,13 @@ _array_structures:
       value:
         _type: text_banner
         text_html:
+  videos:
+    - label: Videos
+      icon: videocam
+      value:
+        title:
+        description_html:
+        embed_url:      
 
 _comments:
   product_url: 'Ex: /product/apple-fritter-baking-mix or /product/1362'
@@ -190,6 +197,15 @@ _options:
     center: true
     image: true
     embed: true
+  video_desktop_path:
+    uploads_dir: "/uploads/videos/:title"
+  video_mobile_path:
+    uploads_dir: "/uploads/videos/:title"
+  thumbnail_desktop_image:
+    uploads_dir: "/uploads/videos/:title"
+  thumbnail_mobile_image:  
+    uploads_dir: "/uploads/videos/:title"
+
   _block:
     format: p h1 h2 h3 h4 h5 h6 pre address div
     bold: true
@@ -206,3 +222,4 @@ _options:
     image: true
     embed: true    
 
+placeholder_image: https://via.placeholder.com/1200

@@ -5,3 +5,8 @@
 /api/posts/ /api/posts.json
 /api/team/ /api/team.json
 /api/careers/ /api/careers.json
+
+/get-a-bag/ /how-to-shop
+/waitlist/ /
+/party/ /
+/* /

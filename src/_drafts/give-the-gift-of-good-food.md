@@ -1,23 +1,22 @@
 ---
 layout: post
 title: Give the Gift of Good Food
-date: 2020-12-11 03:46:24
+date: 2020-12-11 04:03:38
 featured_image:
 assets:
 tags:
 published: false
 ---
 
-# Give the Gift of Good Food
+##### 4P Gift Cards make a perfect present for friends, family, neighbors, coworkers, the list goes on–after all, everybody eats\! &nbsp;
 {: .editable}
 
-4P Gift Cards make a perfect present for friends, family, neighbors, coworkers, the list goes on–after all, everybody eats\! &nbsp;
+##### Choose from the preset gift card amounts below, and you'll have the option to buy for yourself or for someone else and to send the gift instantly or at a later date.
 
-Choose from the preset gift card amounts below, and you'll have the option to buy for yourself or for someone else and to send the gift instantly or at a later date.
+##### Please send us an email at community@4pfoods.com if none of the amounts here suits your gifting fancy or if you're interested in buying in bulk (4P Gift Cards make great staff or client gifts\!).
 
-Please send us an email at community@4pfoods.com if none of the amounts here suits your gifting fancy or if you're interested in buying in bulk (4P Gift Cards make great staff or client gifts\!).
+<div data-site-id="ac3f72f4-b083-413e-a022-afb53b8eeee0" data-platform="Other" class="gift-up-target">&nbsp;</div>
 
-<div  data-site-id="ac3f72f4-b083-413e-a022-afb53b8eeee0" data-platform="Other" class="gift-up-target"></div>
 <script type="text/javascript">
 (function (g, i, f, t, u, p, s) {
     g[u] = g[u] || function() { (g[u].q = g[u].q || []).push(arguments) };
@@ -28,5 +27,5 @@ Please send us an email at community@4pfoods.com if none of the amounts here sui
     s.parentNode.insertBefore(p, s);
 })(window, document, "script", "https://cdn.giftup.app/dist/gift-up.js", "giftup");
 </script>
-&nbsp;
 
+&nbsp;

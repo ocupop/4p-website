@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Give the Gift of Good Food
-date: 2020-12-11 04:03:00
+date: 2020-12-11 08:03:00
 featured_image: /img/uploads/posts/4p-summer-cropped-2.jpg
 assets:
 tags:
-published: false
+published: true
 ---
 
 ##### 4P Gift Cards make the perfect present for friends, family, neighbors, coworkers, the list goes on–after all, everybody eats\! &nbsp;

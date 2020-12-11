@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Give the Gift of Good Food
-date: 2020-12-11 04:03:38
+date: 2020-12-11 04:04:57
 featured_image:
 assets:
 tags:
 published: false
 ---
 
-##### 4P Gift Cards make a perfect present for friends, family, neighbors, coworkers, the list goes on–after all, everybody eats\! &nbsp;
+##### 4P Gift Cards make the perfect present for friends, family, neighbors, coworkers, the list goes on–after all, everybody eats\! &nbsp;
 {: .editable}
 
 ##### Choose from the preset gift card amounts below, and you'll have the option to buy for yourself or for someone else and to send the gift instantly or at a later date.

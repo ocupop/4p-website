@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Give the Gift of Good Food
-date: 2020-12-11 04:04:57
-featured_image:
+date: 2020-12-11 04:03:00
+featured_image: /img/uploads/posts/4p-summer-cropped-2.jpg
 assets:
 tags:
 published: false

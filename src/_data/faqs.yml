@@ -1,3 +1,4 @@
+---
 - title: Getting Started
   faqs:
     - question: How does shopping with 4P Foods work?
@@ -131,7 +132,14 @@
         it?
       answer_html:
     - question: What do you mean by "Good Food"?
-      answer_html:
+      answer_html: >-
+        <p>Here's how we define Good Food:&nbsp;</p><ol><li>provides nourishment
+        and enables people to thrive.</li><li>is equitably accessible to
+        everyone in our region, regardless of income, race, or zip
+        code.</li><li>is produced in a manner that is environmentally
+        regenerative.</li><li>comes from a supply chain in which every being is
+        treated with respect and dignity.</li><li>improves health outcomes and
+        economic security for all.</li></ol>
 - title: Shopping
   faqs:
     - question: >-
@@ -455,3 +463,4 @@
         <p>Yes! Please contact our wholesale team at <a
         href="mailto:sales@4pfoods.com">sales@4pfoods.com </a>to learn more
         about how you can bring Good Food to your business.</p>
+---

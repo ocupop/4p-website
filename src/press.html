@@ -1,0 +1,17 @@
+---
+layout: page
+Title: 4P In the Press
+---
+{% for press in site.press %}
+  <div class="row">
+    <div class="col-lg-4">
+      <a href="{{ press.link }}" class="bg-image aspect-4x3" style="background-image: url({{ resource.image }})"></a>
+    </div>
+    <div class="col-lg-8">
+      <h5>{{ press.title }}</h5>
+      <p>{{ press.press_date | date: "%d %m, %Y"}}</p>
+      <p>{{ press.description }}</p>
+      <a href="{{ resource.link }}" class="btn btn-secondary" target="_blank" rel="noopener">View Resource</a>
+    </div>
+  </div>
+{% endfor %}

@@ -43,7 +43,7 @@ collections:
     permalink: /posts/:title/
   featured_products:
     output: false
-  elements:
+  press: 
     output: false
 
 defaults:
@@ -87,6 +87,12 @@ defaults:
       _options:
         featured_image:
           uploads_dir: 'img/uploads/newsletters/'
+  - scope:
+      type: 'press'
+    values:
+      _options:
+        featured_image:
+          uploads_dir: 'img/uploads/press/'                
 
 # Build settings
 safe: false

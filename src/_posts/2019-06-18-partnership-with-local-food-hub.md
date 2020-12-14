@@ -8,7 +8,7 @@ tags:
 published: true
 ---
 
-<div class="editable">We at 4P Foods have very exciting news that will positively impact our local food system. After months of careful consideration, 4P Foods and Local Food Hub, a non-profit that partners with Virginia farmers to increase community access to food, have finalized a merger of our distribution operations.</div>
+<div class="editable">We at 4P Foods have very exciting news that will positively impact our local food system. After months of careful consideration, 4P Foods and Local Food Hub, a non-profit that partners with Virginia farmers to increase community access to food, have finalized an acquisition of Local Food Hub's distribution operations.</div>
 
 <div class="editable">&nbsp;</div>
 

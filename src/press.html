@@ -17,7 +17,8 @@ Title: 4P In the Press
 </section>
 <section>
   <div class="container">
-    {% for press in site.press %}
+    {% assign press = site.press | sort: 'press_date' %}
+    {% for press in press reversed %}
       <div class="row align-items-center mb-5">
         <div class="col-lg-4">
           <a href="{{ press.link }}" class="bg-image aspect-4x3 mb-3 mb-lg-0" style="background-image: url({{ press.featured_image }})"></a>

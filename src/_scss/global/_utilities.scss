@@ -632,4 +632,13 @@ video {
       margin-bottom: 20px;
     }
   }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+img.editable {
+  max-width: 100%;
+  height: auto;
 }

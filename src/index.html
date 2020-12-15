@@ -10,6 +10,7 @@ _assets:
   - image: /uploads/home/4p-homepage-foodaccess-02.jpg
   - image: /uploads/home/4p-homepage-foodaccess-03.jpg
   - image: /uploads/home/DSC_5495.jpg
+  - image: /uploads/home/4P-footer-01.jpg
 hero:
   - _type: image_carousel
     images:
@@ -390,7 +391,12 @@ community_featured_products:
  -->
 {% include news/featured-news.html %}
 {% include home/home-bring-us.html %}
-<div class="bg-image aspect-4x1" style="background-image: url(/uploads/home/4P-footer-01.jpg)"></div>
+<div 
+  data-cms-editor-link="cloudcannon:#_assets[7].image"
+  data-cms-editor-link-style="modal"
+  class="bg-image aspect-4x1"
+  style="background-image: url({{ page._assets[7].image }})">
+</div>
 <section id="tryUsToday">
   <div class="container">
     <div class="row">

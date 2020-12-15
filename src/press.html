@@ -20,11 +20,14 @@ Title: 4P In the Press
     {% for press in site.press %}
       <div class="row align-items-center mb-5">
         <div class="col-lg-4">
-          <a href="{{ press.link }}" class="bg-image aspect-4x3" style="background-image: url({{ press.featured_image }})"></a>
+          <a href="{{ press.link }}" class="bg-image aspect-4x3 mb-3 mb-lg-0" style="background-image: url({{ press.featured_image }})"></a>
         </div>
         <div class="col-lg-8">
           <h4 class="mb-0">{{ press.title }}</h4>
-          <p>{{ press.press_date | date: '%B %-d, %Y'}}</p>
+          <p>{% if press.source %}{{ press.source }} | {% endif %}{{ press.press_date | date: '%B %-d, %Y'}}</p>
+          {% if press.author %}
+            Written by: <p>{{ press.author }}</p>
+          {% endif %}
           <p>{{ press.description }}</p>
           <a href="{{ press.link }}" class="btn btn-primary mt-3" target="_blank" rel="noopener">View Article</a>
         </div>

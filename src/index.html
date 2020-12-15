@@ -133,10 +133,8 @@ community_featured_products:
   </div>
 </section> -->
 <section 
-  class="bg-image aspect-auto text-white cms-editor-link"
+  class="bg-image aspect-auto text-white"
   style="background-image: url({{ page._assets[6].image }})"
-  data-cms-editor-link="cloudcannon:#_assets[6].image"
-  data-cms-editor-link-style="modal"
   >
   <div class="container">
     <div class="row">
@@ -193,7 +191,7 @@ community_featured_products:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        {% include products/featured-products-grid.html %}
+        {% include products/featured-products-grid.html editor-link="#featured_products" %}
       </div>
     </div>
   </div>

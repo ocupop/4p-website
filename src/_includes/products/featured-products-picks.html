@@ -8,7 +8,10 @@
         <a href="{{ site.store_url }}" class="btn btn-white">Start Shopping</a>
       </div>
     </div>
-    <div class="responsive-card-deck cards-lg-2 mt-5">
+    <div 
+      data-cms-editor-link="cloudcannon:#community_featured_products" 
+      data-cms-editor-link-style="modal"
+      class="responsive-card-deck cards-lg-2 mt-5">
       {% for slug in page.community_featured_products %} 
       {% assign product = site.featured_products | where: "slug", slug | first %}
         {% if product.product_url %}

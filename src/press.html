@@ -23,13 +23,16 @@ Title: 4P In the Press
           <a href="{{ press.link }}" class="bg-image aspect-4x3 mb-3 mb-lg-0" style="background-image: url({{ press.featured_image }})"></a>
         </div>
         <div class="col-lg-8">
-          <h4 class="mb-0">{{ press.title }}</h4>
-          <p>{% if press.source %}{{ press.source }} | {% endif %}{{ press.press_date | date: '%B %-d, %Y'}}</p>
-          {% if press.author %}
-            Written by: <p>{{ press.author }}</p>
-          {% endif %}
-          <p>{{ press.description }}</p>
-          <a href="{{ press.link }}" class="btn btn-primary mt-3" target="_blank" rel="noopener">View Article</a>
+          <h4>{{ press.title }}</h4>
+          <small>
+            <p class="mb-0">{% if press.source %}{{ press.source }} | {% endif %}{{ press.press_date | date: '%B %-d, %Y'}}</p>
+        
+            {% if press.author %}
+              <p class="mb-0">Written by: {{ press.author }}</p>
+            {% endif %}
+          </small>
+          <p class="mt-3">{{ press.description | truncatewords: 60}}</p>
+          <a href="{{ press.link }}" class="btn btn-primary" target="_blank" rel="noopener">View Article</a>
         </div>
       </div>
     {% endfor %}

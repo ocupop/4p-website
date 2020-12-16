@@ -62,7 +62,7 @@ footer_image: /uploads/2020-03-09-4p-mafrac-herd-ventres-danieljamesdoherty-v2-3
         <div 
           data-cms-editor-link="cloudcannon:#team_members"
           data-cms-editor-link-style="modal" 
-          class="responsive-card-deck cards-lg-3 cards-md-2">
+          class="responsive-card-deck cards-lg-3 cards-md-2 cms-editor-link">
           {% for object in page.team_members %}
           {% assign team =  site.team_members | where: 'slug', object | first %}
           <div class="card bg-transparent mb-5">

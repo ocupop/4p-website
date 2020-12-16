@@ -1,4 +1,7 @@
-<div class="threesome mt-5">
+<div 
+  data-cms-editor-link="cloudcannon:collections/_posts"
+  data-cms-editor-link-style="modal" 
+  class="threesome mt-5">
   {% assign posts = site.posts | sort: 'date' | reversed %} {% for post in site.posts offset: 1 limit: 3 %}
   <div class="card bg-transparent">
     <div class="card-content pin-footer">

@@ -139,7 +139,7 @@ _assets:
   </div>
 </section>
 
-<section class="pt-0">
+<section>
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
@@ -174,7 +174,10 @@ _assets:
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="responsive-card-deck cards-lg-3 cards-md-2 mt-5">
+        <div
+          data-cms-editor-link="cloudcannon:#food_resources"
+          data-cms-editor-link-style="modal" 
+          class="responsive-card-deck cards-lg-3 cards-md-2 mt-5">
           {% for resource in page.food_resources %}
           <div class="card bg-transparent">
             <a href="{{ resource.link }}" class="bg-image aspect-4x3" style="background-image: url({{ resource.image }})"></a>

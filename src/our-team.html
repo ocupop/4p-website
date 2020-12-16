@@ -59,7 +59,10 @@ footer_image: /uploads/2020-03-09-4p-mafrac-herd-ventres-danieljamesdoherty-v2-3
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="responsive-card-deck cards-lg-3 cards-md-2">
+        <div 
+          data-cms-editor-link="cloudcannon:#team_members"
+          data-cms-editor-link-style="modal" 
+          class="responsive-card-deck cards-lg-3 cards-md-2">
           {% for object in page.team_members %}
           {% assign team =  site.team_members | where: 'slug', object | first %}
           <div class="card bg-transparent mb-5">
@@ -88,7 +91,7 @@ footer_image: /uploads/2020-03-09-4p-mafrac-herd-ventres-danieljamesdoherty-v2-3
           <h2>Work with us</h2>
           <p>We're building a food system where Good Food is the norm, not the exception. We connect farms and artisans in the Mid-Atlantic to those who need food. Our team is committed to making a better world for tomorrow through the power of Good Food. Search our job listings for current openings or you may send a resume and cover letter to info@4pfoods.com.</p>
         </div>
-        <a href="/contact" class="btn btn-secondary text-white">Contact Us</a>
+        <a href="/contact" class="btn btn-secondary text-white editable">Contact Us</a>
       </div>
     </div>
   </div>

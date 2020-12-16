@@ -11,7 +11,7 @@
     <div 
       data-cms-editor-link="cloudcannon:#community_featured_products" 
       data-cms-editor-link-style="modal"
-      class="responsive-card-deck cards-lg-2 mt-5">
+      class="responsive-card-deck cards-lg-2 mt-5 cms-editor-link">
       {% for slug in page.community_featured_products %} 
       {% assign product = site.featured_products | where: "slug", slug | first %}
         {% if product.product_url %}

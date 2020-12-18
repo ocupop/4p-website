@@ -3,4 +3,14 @@ footer_navigation:
   shop_links:
     - label: Shop Now
       link: 'https://shop.4pfoods.com/'
+    - label: How it Works
+      link: /how-it-works
+    - label: How to Shop
+      link: /how-to-shop
+    - label: Wholesale
+      link: /wholesale-programs
+    - label: Referral Program
+      link: /referral-programs
+    - label: Gift Cards
+      link: /posts/give-the-gift-of-good-food/
 ---

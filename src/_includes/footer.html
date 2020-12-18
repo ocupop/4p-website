@@ -3,89 +3,43 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-lg-3 mb-3">
-          <h6>Shop</h6>
+          <h6 class="editable">Shop</h6>
           <ul class="nav flex-column">
-            <li class="nav-item">
-              <a href="{{ site.store_url }}" class="nav-link">Shop Now</a>
-            </li>
-            <li class="nav-item">
-              <a href="/how-it-works" class="nav-link editable">How it Works</a>
-            </li>
-            <li class="nav-item">
-              <a href="/how-to-shop/" class="nav-link editable">How to Shop</a>
-            </li>
-            <li class="nav-item">
-              <a href="/wholesale-programs/" class="nav-link editable">Wholesale</a>
-            </li>
-            <li class="nav-item">
-              <a href="/referral-programs/" class="nav-link editable">Referral Program</a>
-            </li>
-            <li class="nav-item">
-              <a href="/posts/give-the-gift-of-good-food/" class="nav-link editable">Gift Cards</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link editable"></a>
-            </li>
+            {% for link in site.data.navigation.footer_navigation.shop_links %}
+              <li class="nav-item">
+                <a href="{{ link.link }}" class="nav-link">{{ link.label }}</a>
+              </li>
+            {% endfor %}
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 mb-3">
-          <h6>About 4P</h6>
+          <h6 class="editable">About 4P</h6>
           <ul class="nav flex-column">
-            <li class="nav-item">
-              <a href="/about" class="nav-link editable">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a href="/our-impact" class="nav-link editable">Our Impact</a>
-            </li>
-            <li class="nav-item">
-              <a href="/our-farmers" class="nav-link editable">Our Farmers</a>
-            </li>
-            <li class="nav-item">
-              <a href="/our-partners" class="nav-link editable">Our Partners</a>
-            </li>
-            <li class="nav-item">
-              <a href="/our-team" class="nav-link editable">Our Team</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link editable"></a>
-            </li>
+            {% for link in site.data.navigation.footer_navigation.about_links %}
+              <li class="nav-item">
+                <a href="{{ link.link }}" class="nav-link">{{ link.label }}</a>
+              </li>
+            {% endfor %}
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 mb-3">
-          <h6>Enrich Yourself</h6>
+          <h6 class="editable">Enrich Yourself</h6>
           <ul class="nav flex-column">
-            <li class="nav-item">
-              <a href="/news" class="nav-link editable">4P News</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a href="/newsletters" class="nav-link editable">Newsletter Archive</a>
-            </li> -->
-            <li class="nav-item">
-              <a href="/community-events" class="nav-link editable">Community Events</a>
-            </li>
-            <li class="nav-item">
-              <a href="/careers" class="nav-link editable">Careers</a>
-            </li>
-            <li class="nav-item">
-              <a href="/posts/4p-foods-storage-tips/" class="nav-link editable">Storage Tips</a>
-            </li>
+            {% for link in site.data.navigation.footer_navigation.enrich_yourself_links %}
+              <li class="nav-item">
+                <a href="{{ link.link }}" class="nav-link">{{ link.label }}</a>
+              </li>
+            {% endfor %}
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 mb-3">
-          <h6>Support</h6>
+          <h6 class="editable">Support</h6>
           <ul class="nav flex-column">
-            <li class="nav-item">
-              <a href="/contact" class="nav-link editable">Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a href="/faq" class="nav-link editable">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a href="/terms-of-service" class="nav-link editable">Terms of Service</a>
-            </li>
-            <li class="nav-item">
-              <a href="/privacy-policy" class="nav-link editable">Privacy Policy</a>
-            </li>
+            {% for link in site.data.navigation.footer_navigation.support_links %}
+              <li class="nav-item">
+                <a href="{{ link.link }}" class="nav-link">{{ link.label }}</a>
+              </li>
+            {% endfor %}
           </ul>
         </div>
       </div>
@@ -100,7 +54,7 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <h6>Sign up for our Newsletter</h6>
+          <h6 class="editable">Sign up for our Newsletter</h6>
           <!-- Begin Mailchimp Signup Form -->
           <div id="mc_embed_signup">
             <form action="https://4pfoods.us3.list-manage.com/subscribe/post?u=ad164c24986d53694379b9d1a&amp;id=838d40fd2e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -117,20 +71,13 @@
           <!--End mc_embed_signup-->
         </div>
         <div class="col-lg-3">
-          <h6>Connect with us</h6>
+          <h6 class="editable">Connect with us</h6>
           <p class="social">
-            <a href="https://www.facebook.com/4pfoods/" target="_blank" rel="noopener" class="editable mr-2">
-              <i class="ri-facebook-fill"></i>
+            {% for link in site.data.navigation.footer_navigation.connect_with_us_links %}
+            <a href="{{ link.link }}" target="_blank" rel="noopener" class="editable mr-2">
+              <i class="ri-{{ link.label | slugify }}-fill"></i>
             </a>
-            <a href="https://twitter.com/4PFoods" target="_blank" rel="noopener" class="editable mr-2">
-              <i class="ri-twitter-fill"></i>
-            </a>
-            <a href="https://www.instagram.com/4pfoods/" target="_blank" rel="noopener" class="editable mr-2">
-              <i class="ri-instagram-line"></i>
-            </a>
-            <a href="https://www.pinterest.ca/4pfoods" target="_blank" class="editable mr-2">
-              <i class="ri-pinterest-fill"></i>
-            </a>
+            {% endfor %}
           </p>
         </div>
       </div>

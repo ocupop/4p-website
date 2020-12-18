@@ -1,5 +1,11 @@
+---
 footer_navigation:
   shop_links:
     links:
-      - label:
-        link:  
+      - label: Shop Now
+        link: 'https://shop.4pfoods.com/'
+      - url:
+        label:
+        screenshot_image:
+        icon:
+---

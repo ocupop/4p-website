@@ -3,7 +3,9 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-lg-3 mb-3">
-          <h6 class="editable">Shop</h6>
+          <h6 class="editable">
+            Shop
+          </h6>
           <ul class="nav flex-column">
             {% for link in site.data.navigation.footer_navigation.shop_links %}
               <li class="nav-item">
@@ -13,7 +15,9 @@
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 mb-3">
-          <h6 class="editable">About 4P</h6>
+          <h6 class="editable">
+            About 4P
+          </h6>
           <ul class="nav flex-column">
             {% for link in site.data.navigation.footer_navigation.about_links %}
               <li class="nav-item">
@@ -23,7 +27,9 @@
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 mb-3">
-          <h6 class="editable">Enrich Yourself</h6>
+          <h6 class="editable">
+            Enrich Yourself
+          </h6>
           <ul class="nav flex-column">
             {% for link in site.data.navigation.footer_navigation.enrich_yourself_links %}
               <li class="nav-item">
@@ -33,7 +39,9 @@
           </ul>
         </div>
         <div class="col-sm-6 col-lg-3 mb-3">
-          <h6 class="editable">Support</h6>
+          <h6 class="editable">
+            Support
+          </h6>
           <ul class="nav flex-column">
             {% for link in site.data.navigation.footer_navigation.support_links %}
               <li class="nav-item">
@@ -54,7 +62,9 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <h6 class="editable">Sign up for our Newsletter</h6>
+          <h6 class="editable">
+            Sign up for our Newsletter
+          </h6>
           <!-- Begin Mailchimp Signup Form -->
           <div id="mc_embed_signup">
             <form action="https://4pfoods.us3.list-manage.com/subscribe/post?u=ad164c24986d53694379b9d1a&amp;id=838d40fd2e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -71,11 +81,13 @@
           <!--End mc_embed_signup-->
         </div>
         <div class="col-lg-3">
-          <h6 class="editable">Connect with us</h6>
+          <h6 class="editable">
+            Connect with us
+          </h6>
           <p class="social">
             {% for link in site.data.navigation.footer_navigation.connect_with_us_links %}
-            <a href="{{ link.link }}" target="_blank" rel="noopener" class="editable mr-2">
-              <i class="ri-{{ link.label | slugify }}-fill"></i>
+            <a href="https://www.pinterest.ca/4pfoods/" target="_blank" rel="noopener" class="editable mr-2">
+              <i class="ri-pinterest-fill"></i>
             </a>
             {% endfor %}
           </p>

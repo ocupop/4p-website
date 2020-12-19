@@ -1,0 +1,224 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
+import HelloWorld from './HelloWorld'
+import { gsap } from "gsap"
+import { ScrollToPlugin } from "gsap/ScrollToPlugin"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { SiteProvider } from './context'
+
+gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
+
+const COMPONENTS = {
+  HelloWorld
+}
+
+const portals = []
+
+function buildPortal(el) {
+  var Component = COMPONENTS[el.dataset.component]
+  if (!Component) return
+  // get props from elements data attribute, like the post_id
+  const props = Object.assign({}, el.dataset)
+  return ReactDOM.createPortal(<Component {...props} />, el)
+}
+
+
+document
+  .querySelectorAll('.__react-component')
+  .forEach((el) => {
+    console.log("React Component:", el.dataset.component)
+    const portal = buildPortal(el)
+    portals.push(portal)
+  })
+
+const Main = () => (
+  <SiteProvider>
+    {portals.map(portal => portal)}
+  </SiteProvider>
+)
+
+ReactDOM.render(<Main />, document.getElementById("main"))
+
+// Cookies.remove('onboarding')
+
+//cookie management
+function checkOnboardingCookie(){
+  var onboarding = Cookies.get('onboarding')
+  if(onboarding) {
+    console.log('onboarding is set, check the value', onboarding)
+    if(onboarding == 'show'){
+      //launch onboarding modal on page load if onboarding cookie is 'show'
+      $('#modal-onboarding').modal('show')
+    }
+    else{
+      $('#modal-onboarding').modal('hide')
+    }
+  }
+  else {
+    Cookies.set('onboarding', 'show', { expires: 100 })
+    console.log('onboarding is not set, set the value', onboarding)
+    $('#modal-onboarding').modal('show')
+  }
+}
+
+checkOnboardingCookie();
+
+$('#modal-onboarding').on('hidden.bs.modal', function () {
+  console.log('modal onboarding closed')
+  if ($('#dismiss-onboarding').is(":checked")){
+    // it is checked, hide modal and set cookie to expire in 1 year
+    Cookies.set('onboarding', 'hide', { expires: 365 })
+  }else {
+    // it is not check, hide the modal and set cookie to expire in 1 day
+    Cookies.set('onboarding', 'hide')
+  }
+})
+
+var controller = new ScrollMagic.Controller();
+
+$('[data-lazy-type]').each(function () {
+  var currentElement = this;
+  var $this = $(this);
+  var type = $this.data('lazy-type');
+  var lazySrc = $this.data('lazy-src');
+  var scene = new ScrollMagic.Scene({
+    triggerElement: currentElement,
+    reverse: false,
+    offset: -500
+  })
+    .on('enter', function () {
+      if (type == 'image') {
+        $this.attr('src', lazySrc);
+      }
+      if (type == 'bg-image') {
+        $this.css('background-image', 'url(' + lazySrc + ')')
+      }
+      if (type == 'video') {
+        $this.attr('src', lazySrc);
+      }
+      if (type == 'bg-video') {
+        lazyLoadBgVideo($this);
+      }
+    })
+    .on('exit', function () {
+      if (type == 'bg-video') {
+        // test to confirm this is working
+        currentElement.pause();
+      }
+    })
+    .setClassToggle(currentElement, "active")
+    .addTo(controller);
+})
+
+var hash = window.location.hash;
+console.log(hash)
+if(hash && $('.nav-tabs').length){
+  $('.nav-tabs a[href="' + hash + '"]').tab('show');
+}
+
+$('.nav-tabs a').click(function (e) {
+  console.log('tab click')
+  hash = $(this).attr('href');
+  window.location.hash = hash;
+});
+
+
+//Show slide number in onboarding carousel
+var totalSlides = $('#carousel-onboarding .carousel-item').length -1;
+console.log(totalSlides)
+var currentIndex = $('.carousel-item.active').index();
+
+function checkCarouselIndex(){
+  if(currentIndex == 0){
+    $('.carousel-controls').removeClass('controls-active');
+  }else {
+    $('.carousel-controls').addClass('controls-active');
+  }
+}
+
+checkCarouselIndex();
+$('.carousel-control-prev').addClass('d-none')
+
+$('#carousel-onboarding').bind('slid.bs.carousel', function() {
+  currentIndex = $('#carousel-onboarding .carousel-item.active').index();
+  console.log({currentIndex})
+  checkCarouselIndex()
+$('.slide-number').html(''+currentIndex+' of '+totalSlides+'');
+  if(currentIndex == totalSlides) {
+    $('.carousel-control-next').addClass('d-none')
+  }else {
+    $('.carousel-control-next').removeClass('d-none')
+  }
+  if(currentIndex == 0) {
+    $('.carousel-control-prev').addClass('d-none')
+  }
+  else {
+    $('.carousel-control-prev').removeClass('d-none')
+  }
+});
+
+//replace onboarding video on collapse click
+
+
+$('[data-video]').on('click', function(){
+  if($(this).hasClass('collapsed')) {
+    var instruction_video = $('.carousel-item.active').find('.instruction-video')
+    var new_video = $(this).data('video');
+    var poster = $(this).data('poster');
+    console.log(poster)
+    $('.video-wrapper').addClass('loading');
+    instruction_video.attr('src', '').attr('poster', '');
+    setTimeout(function(){ 
+      instruction_video.attr('poster', poster)
+      instruction_video.attr('src', new_video);
+      $('.video-wrapper').removeClass('loading');
+    }, 1500);
+    
+  }else {
+    var instruction_video = $('.carousel-item.active').find('.instruction-video')
+    var default_poster = instruction_video.data('default-poster')
+    var default_video = instruction_video.data('default-video');
+    instruction_video.attr('src', '').attr('poster', '')
+    $('.video-wrapper').addClass('loading');
+    setTimeout(function(){
+      instruction_video.attr('src', default_video).attr('poster', default_poster)
+      $('.video-wrapper').removeClass('loading');
+    }, 1500)
+  }
+})
+
+//autoplay video in modal
+function autoPlayYouTubeModal(){
+  var trigger = $("body").find('[data-toggle="modal"]');
+  trigger.click(function() {
+    var theModal = $(this).data( "target" ),
+    videoSRC = $(this).attr( "data-theVideo" ), 
+    videoSRCauto = videoSRC+"?autoplay=1" ;
+    $(theModal+' iframe').attr('src', videoSRCauto);
+    $(theModal+' button.close').click(function () {
+        $(theModal+' iframe').attr('src', videoSRC);
+    });   
+  });
+}
+
+autoPlayYouTubeModal();
+
+
+//shop help button show hide
+$('#help-toggle').on('click', function(e){
+  e.preventDefault();
+  $('#shop-help-wrapper').removeClass('active');
+})
+
+
+
+
+
+
+
+
+
+
+
+
+

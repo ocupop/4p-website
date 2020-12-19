@@ -1,39 +1,45 @@
 {
   "name": "4p-website",
-  "private": true,
-  "description": "4P Foods Theme",
   "version": "0.1.0",
-  "author": "Ocupop Developer <dev@ocupop.com>",
-  "dependencies": {
-    "bootstrap": "^4.4.1",
-    "patch-package": "^6.2.0",
-    "postinstall-postinstall": "^2.0.0"
+  "description": "4P Foods Theme",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocupop/4p-website"
   },
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.4.0",
-    "@cloudcannon/suite": "^2.0.0-rc7",
-    "babel-eslint": "^10.0.2",
-    "babel-loader": "^8.0.6",
-    "eslint": "^6.2.1",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-config-react": "^1.1.7",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.0",
-    "gulp": "^4.0.0",
-    "webpack": "^4.37.0",
-    "webpack-cli": "^3.3.6",
-    "webpack-dev-middleware": "^3.7.0",
-    "webpack-hot-middleware": "^2.25.0"
-  },
-  "license": "MIT",
   "scripts": {
     "start": "gulp dev",
-    "scripts": "NODE_ENV=production gulp buildScripts",
+    "dev": "concurrently 'npm:watch-scripts' 'npm:start' ",
+    "watch-scripts": "gulp scripts",
     "postinstall": "gulp dev:install"
+  },
+  "author": "Ocupop",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "bootstrap.native": "3.0.13",
+    "concurrently": "^5.1.0",
+    "gsap": "^3.5.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "recoil": "^0.1.2",
+    "remixicon": "^2.4.0",
+    "scrollmagic": "^2.0.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.0",
+    "@babel/plugin-transform-runtime": "^7.12.0",
+    "@babel/preset-env": "^7.12.0",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/register": "^7.12.0",
+    "@cloudcannon/suite": "2.0.2",
+    "babel-loader": "^8.1.0",
+    "gulp": "^4.0.2",
+    "patch-package": "^6.2.2",
+    "webpack": "^5.1.2",
+    "webpack-cli": "^4.2.0",
+    "webpack-stream": "^6.1.0"
   }
 }

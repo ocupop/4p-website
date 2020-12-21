@@ -5,11 +5,9 @@
 /api/posts/ /api/posts.json
 /api/team/ /api/team.json
 /api/careers/ /api/careers.json
-
 /get-a-bag/ /how-to-shop
 /waitlist/ /
 /party/ /
-
 /introducing-4p-foods-gift-cards-2/ /give-the-gift-of-good-food/
 
 /* /

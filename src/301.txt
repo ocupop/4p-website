@@ -9,4 +9,7 @@
 /get-a-bag/ /how-to-shop
 /waitlist/ /
 /party/ /
+
+/introducing-4p-foods-gift-cards-2/ /give-the-gift-of-good-food
+
 /* /

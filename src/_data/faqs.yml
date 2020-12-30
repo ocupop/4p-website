@@ -316,20 +316,19 @@
         newsletter.</p><p>If you&rsquo;re still unsure,&nbsp;<a
         href="/contact/">reach out</a>&nbsp;and we'll be happy to assist
         you!</p>
-    - question: What if I receive damaged produce or my delivery is missing an item?
+    - question: What if something in my delivery is missing or damaged?
       answer_html: >-
-        <p>If you receive any disappointing veggies or sad fruit, or if any
-        items are missing, please let us know! We&rsquo;ll gladly try to correct
-        whatever happened, whether through a credit or an extra item in your
-        next delivery.&nbsp;</p><p>We do our best to closely manage inventory so
-        that we have enough for all orders but not so much that anything goes to
-        waste. If we ever run out of an item or it becomes unavailable after you
-        have selected it in your order, we will do our best to notify you of the
-        change so you can let us know what you&rsquo;d like instead. If we
-        can&rsquo;t get in touch in time, we&rsquo;ll issue you a credit for the
-        missing item (or send you a substitute item in a few select
-        circumstances, such as subbing one apple variety for another if we run
-        out).</p>
+        <p>If you receive any disappointing items, or if anything is missing,
+        please let us know! We&rsquo;ll gladly try to correct whatever happened,
+        whether through a credit or an extra item in your next
+        delivery.</p><p>We do our best to closely manage inventory so that we
+        have enough for all orders but not so much that anything goes to waste.
+        If we ever run out of an item or it becomes unavailable after you have
+        placed your order, we'll do our best to notify you in advance so you can
+        let us know what you&rsquo;d like instead. If we're unable get in touch
+        in time, we&rsquo;ll issue you a credit for the missing item (or send
+        you a substitute item in select circumstances, i.e. pack gala apples as
+        a substitute for stayman apples, if out of stock).</p>
 - title: About Us
   faqs:
     - question: Is all the food organic? What about non-GMO?

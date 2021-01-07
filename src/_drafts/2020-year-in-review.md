@@ -1,8 +1,8 @@
 ---
 layout: post
 title: '2020: Year In Review'
-date: 2021-01-06 18:06:42
-featured_image:
+date: 2021-01-07 03:14:52
+featured_image: /img/uploads/posts/4pfoods-yearinreview-banner.png
 assets:
 tags:
 published: true

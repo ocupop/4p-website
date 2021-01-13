@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Recipe Corner
-date: 2021-01-13 02:43:10
-featured_image: /img/uploads/posts/2021.01.09 Recipes_Luke_Beef.jpg
+date: 2021-01-13 02:52:23
+featured_image: /img/uploads/posts/2021-01-09-recipeslukebeefx1200.jpg
 assets:
 tags:
 published: true

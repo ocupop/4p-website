@@ -142,47 +142,66 @@
         economic security for all.</li></ol>
 - title: Shopping
   faqs:
-    - question: >-
-        I’m here from your old site, and I’m not sure how to customize. Where
-        did the points go?
+    - question: How do I see what's coming in my next delivery?
       answer_html: >-
-        <p>We did away with the points system in favor of a setup that requires
-        a little less math and offers a lot more flexibility.&nbsp;</p><p>To get
-        started, click the shopping bag icon in the upper right and then click
-        &ldquo;Customize.&rdquo;&nbsp;</p><p>For produce and fruit bags, you
-        simply swap items one for one. Use the +/- buttons to change the
-        quantity of each item in the full product list, or click the red
-        &ldquo;x&rdquo; next to an item in the &ldquo;What&rsquo;s Inside&rdquo;
-        section to remove it. Keep an eye on the &ldquo;Items Left to Add&rdquo;
-        box in that section (on the right side of your screen in desktop view or
-        the top of your screen in mobile view) to know how much room is left in
-        your bag. If you need more items that can fit in your bag, you can now
-        add a la carte produce (and pantry, protein, and dairy!) items as needed
-        once you&rsquo;re done customizing.&nbsp;</p><p>For protein and dairy
-        bags, the sky&rsquo;s the limit! From the Customize page, you can add
-        and subtract to your heart&rsquo;s content, but both bags have a minimum
-        price of $20, so be sure to put at least that much in your bag (while
-        you&rsquo;re customizing, you can see your running total in the
-        &ldquo;Bag Price&rdquo; field in the &ldquo;What&rsquo;s Inside&rdquo;
-        section on the right side of your screen in desktop view or the top of
-        your screen in mobile view).</p>
-    - question: >-
-        I used to get pantry items in my produce bag, but now I don’t see them
-        available as swaps. Where did the pantry items go?
+        <p>There are two ways to view your upcoming deliveries:</p><ol><li>From
+        My Account &gt; Upcoming Deliveries: hover or click on My Account and
+        select Upcoming Deliveries from the menu. On this page, you'll see the
+        next six weeks of delivery days and any deliveries you have scheduled or
+        skipped, as well as the option to skip, donate, or restore upcoming
+        orders. Click the "Customize" button to see what you have coming in any
+        bags.</li><li>From the cart: click on the bag icon in the upper right
+        corner. You'll see the next six weeks of delivery days, with a number
+        next to each date indicating how many items are in your bag that week.
+        Click the "Customize" button to see what you have coming in any
+        bags.</li></ol>
+    - question: 'How do I skip an order, or multiple orders at once?'
       answer_html: >-
-        <p>Most pantry items have changed from bag items to a la carte items,
-        meaning you can add them on to any order, no saving up points required.
-        Click &ldquo;Pantry&rdquo; in the navigation bar at the top of the shop
-        to see the full selection.</p><p>If you don&rsquo;t need as many produce
-        items as come in a produce bag in addition to your pantry items,
-        we&rsquo;ve got you covered! Build a fully a la carte order by selecting
-        exactly the individual items that you want from each category--anything
-        that can be added to your cart from the shop is available a la carte. As
-        long as you hit the $30 minimum order, you&rsquo;re good to go, no
-        produce, protein, or dairy bag required.</p>
+        <p>To skip once, login to your account and click on &ldquo;My
+        Account&rdquo; in the upper right hand corner and then click on
+        &ldquo;Upcoming Deliveries.&rdquo; You&rsquo;ll see the orders you have
+        scheduled for the next six weeks, including the items and total cost,
+        and you&rsquo;ll also see buttons that allow you to skip or donate each
+        individual order.</p><p>If you choose to skip, you won&rsquo;t be
+        charged for your order that week. If you choose to donate, you will be
+        charged, and your order will be packed up and delivered to one of our
+        food assistance partners, like the <a
+        href="/posts/fauquier-community-food-bank/">Fauquier Community Food
+        Bank</a>.</p><p>You can skip for a longer period of time by turning on a
+        Vacation Hold. Under &ldquo;My Account&rdquo; click on &ldquo;Delivery
+        Hold&rdquo; and enter your vacation dates - we will skip all deliveries
+        scheduled that fall between the date you entered to leave and the date
+        you entered to return.&nbsp;</p><p>If you need any assistance skipping a
+        delivery, please <a href="/contact/">reach out to us</a> and we'll be
+        happy to help.</p>
+    - question: How do I know if my order is “done”?
+      answer_html: >-
+        <p>There&rsquo;s no checkout button on your shopping cart. As long as
+        you hit the $30 order minimum, you&rsquo;re good to
+        go.&nbsp;</p><p>However, there <em>is</em> a &ldquo;Save&rdquo; button
+        you need to click to finish the customizing process for a 4P bag. If
+        you&rsquo;re here from our old site, that&rsquo;s an important change to
+        note!</p><p>Whenever you make changes to your order (including adding or
+        removing items or customizing a bag), you&rsquo;ll get a confirmation
+        email. When you change a recurring order, you&rsquo;ll get emails for
+        the future deliveries, as well. If you don&rsquo;t want to get a
+        confirmation email every time, you can hit &ldquo;Unsubscribe&rdquo; at
+        the bottom of the email to update your email preferences for different
+        types of emails.</p>
+    - question: I only want to order a small amount of dairy or protein--can I do that?
+      answer_html: >-
+        <p>Select dairy and protein items can be purchased a la carte, including
+        eggs and butter. Take a look through the Dairy &amp; Eggs and Protein
+        sections of the shop to see what is available to add to your
+        cart.&nbsp;</p><p>Dairy and protein bags have $20 minimums, so if you
+        customize one of those bags to be less than $20 worth of products,
+        you&rsquo;ll still be charged $20. With a wide and ever-growing
+        selection of products and flexible order frequencies (one-time, every
+        week, every other week, monthly), $20 shouldn&rsquo;t be too hard to
+        hit!</p>
     - question: >-
-        How can I tell what’s coming in my bag and how many items I can add
-        while I’m customizing?
+        How can I tell what’s coming in a bag and how many items I can add while
+        I’m customizing?
       answer_html: >-
         <p>From the shop, click on &ldquo;What&rsquo;s Inside&rdquo; on any bag
         image to see what&rsquo;s available for a given week (if there are
@@ -212,36 +231,44 @@
         Cut-offs are 11:59 pm on Sunday for a Wednesday delivery, 11:59 pm on
         Monday for a Thursday delivery, and 11:59 pm on Tuesday for a Friday
         delivery.&nbsp;</p>
-    - question: 'How do I skip an order, or multiple orders at once?'
+    - question: >-
+        I used to get pantry items in my produce bag, but now I don’t see them
+        available as swaps. Where did the pantry items go?
       answer_html: >-
-        <p>To skip once, login to your account and click on &ldquo;My
-        Account&rdquo; in the upper right hand corner and then click on
-        &ldquo;Upcoming Deliveries.&rdquo; You&rsquo;ll see the orders you have
-        scheduled for the next six weeks, including the items and total cost,
-        and you&rsquo;ll also see buttons that allow you to skip or donate each
-        individual order.</p><p>If you choose to skip, you won&rsquo;t be
-        charged for your order that week. If you choose to donate, you will be
-        charged, and your order will be packed up and delivered to one of our
-        food assistance partners, like the <a
-        href="/posts/fauquier-community-food-bank/">Fauquier Community Food
-        Bank</a>.</p><p>You can skip for a longer period of time by turning on a
-        Vacation Hold. Under &ldquo;My Account&rdquo; click on &ldquo;Delivery
-        Hold&rdquo; and enter your vacation dates - we will skip all deliveries
-        scheduled that fall between the date you entered to leave and the date
-        you entered to return.&nbsp;</p><p>If you need any assistance skipping a
-        delivery, please <a href="/contact/">reach out to us</a> and we'll be
-        happy to help.</p>
-    - question: I only want to order a small amount of dairy or protein--can I do that?
+        <p>Most pantry items have changed from bag items to a la carte items,
+        meaning you can add them on to any order, no saving up points required.
+        Click &ldquo;Pantry&rdquo; in the navigation bar at the top of the shop
+        to see the full selection.</p><p>If you don&rsquo;t need as many produce
+        items as come in a produce bag in addition to your pantry items,
+        we&rsquo;ve got you covered! Build a fully a la carte order by selecting
+        exactly the individual items that you want from each category--anything
+        that can be added to your cart from the shop is available a la carte. As
+        long as you hit the $30 minimum order, you&rsquo;re good to go, no
+        produce, protein, or dairy bag required.</p>
+    - question: >-
+        I’m here from your old site, and I’m not sure how to customize. Where
+        did the points go?
       answer_html: >-
-        <p>Select dairy and protein items can be purchased a la carte, including
-        eggs and butter. Take a look through the Dairy &amp; Eggs and Protein
-        sections of the shop to see what is available to add to your
-        cart.&nbsp;</p><p>Dairy and protein bags have $20 minimums, so if you
-        customize one of those bags to be less than $20 worth of products,
-        you&rsquo;ll still be charged $20. With a wide and ever-growing
-        selection of products and flexible order frequencies (one-time, every
-        week, every other week, monthly), $20 shouldn&rsquo;t be too hard to
-        hit!</p>
+        <p>We did away with the points system in favor of a setup that requires
+        a little less math and offers a lot more flexibility.&nbsp;</p><p>To get
+        started, click the shopping bag icon in the upper right and then click
+        &ldquo;Customize.&rdquo;&nbsp;</p><p>For produce and fruit bags, you
+        simply swap items one for one. Use the +/- buttons to change the
+        quantity of each item in the full product list, or click the red
+        &ldquo;x&rdquo; next to an item in the &ldquo;What&rsquo;s Inside&rdquo;
+        section to remove it. Keep an eye on the &ldquo;Items Left to Add&rdquo;
+        box in that section (on the right side of your screen in desktop view or
+        the top of your screen in mobile view) to know how much room is left in
+        your bag. If you need more items that can fit in your bag, you can now
+        add a la carte produce (and pantry, protein, and dairy!) items as needed
+        once you&rsquo;re done customizing.&nbsp;</p><p>For protein and dairy
+        bags, the sky&rsquo;s the limit! From the Customize page, you can add
+        and subtract to your heart&rsquo;s content, but both bags have a minimum
+        price of $20, so be sure to put at least that much in your bag (while
+        you&rsquo;re customizing, you can see your running total in the
+        &ldquo;Bag Price&rdquo; field in the &ldquo;What&rsquo;s Inside&rdquo;
+        section on the right side of your screen in desktop view or the top of
+        your screen in mobile view).</p>
     - question: >-
         It takes me a long time to scroll through all of the options while I’m
         customizing. Is there a quicker way to find what I want?
@@ -250,20 +277,6 @@
         &ldquo;Customize Bag Contents&rdquo; to jump to that type of product
         (i.e. &ldquo;Fruits&rdquo; in the produce bag or &ldquo;Beef&rdquo; in
         the protein bag).</p>
-    - question: How do I know if my order is “done”?
-      answer_html: >-
-        <p>There&rsquo;s no checkout button on your shopping cart. As long as
-        you hit the $30 order minimum, you&rsquo;re good to
-        go.&nbsp;</p><p>However, there <em>is</em> a &ldquo;Save&rdquo; button
-        you need to click to finish the customizing process for a 4P bag. If
-        you&rsquo;re here from our old site, that&rsquo;s an important change to
-        note!</p><p>Whenever you make changes to your order (including adding or
-        removing items or customizing a bag), you&rsquo;ll get a confirmation
-        email. When you change a recurring order, you&rsquo;ll get emails for
-        the future deliveries, as well. If you don&rsquo;t want to get a
-        confirmation email every time, you can hit &ldquo;Unsubscribe&rdquo; at
-        the bottom of the email to update your email preferences for different
-        types of emails.</p>
 - title: Delivery
   faqs:
     - question: How does delivery work?

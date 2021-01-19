@@ -76,6 +76,26 @@
         serve.</p>
 - title: Mission
   faqs:
+    - question: How do I find out more about your farmers?
+      answer_html: >-
+        <p>Check out our <a href="/our-farmers">Farmers page</a>! We&rsquo;re
+        always updating it, so stay tuned for more profiles of the many amazing
+        farmers, ranchers, and artisans from whom we source.</p>
+    - question: What is 4P's mission?
+      answer_html: >-
+        <p>Our mission is to empower you to transform the food system.</p><p>And
+        how do we do that, you ask? Every purchase you make with 4P allows you
+        to live your values and support small and mid-sized family farmers and
+        artisans by giving them access to new markets, while also helping ensure
+        that all people have equitable access to the Good Food produced by these
+        farmers.</p><p>We believe that Good Food&mdash; food that is traceable,
+        nutritious, accessible, and produced in a system that empowers farmers
+        and sustains the environment&mdash; should be the norm, not the
+        exception, and we actively work to make that vision a reality each and
+        every day. Every purchase with 4P not only supports a growing network of
+        small family farms and artisan producers in the region, but also
+        advances equitable access to fresh healthy food in the communities we
+        serve.</p>
     - question: How do you  address racial equity in the food system?
       answer_html: >-
         <p>Right off the bat, we want to acknowledge that the food system has
@@ -86,11 +106,6 @@
         racial injustice in the food system and 4P&rsquo;s response in this <a
         href="/posts/we-stand-with-all-of-you-we-stand-against-racism/">letter
         from our founder &amp; CEO</a>, Tom McDougall.</p>
-    - question: How do I find out more about your farmers?
-      answer_html: >-
-        <p>Check out our <a href="/our-farmers">Farmers page</a>! We&rsquo;re
-        always updating it, so stay tuned for more profiles of the many amazing
-        farmers, ranchers, and artisans from whom we source.</p>
     - question: Where do you source your food from?
       answer_html: >-
         <p>The short answer: we source locally and regionally from a network of
@@ -112,21 +127,6 @@
         of produce available from this region.</p><p>Read our growing collection
         of <a href="/our-farmers">farmer profiles</a> for more information about
         our food.</p>
-    - question: What is 4P's mission?
-      answer_html: >-
-        <p>Our mission is to empower you to transform the food system.</p><p>And
-        how do we do that, you ask? Every purchase you make with 4P allows you
-        to live your values and support small and mid-sized family farmers and
-        artisans by giving them access to new markets, while also helping ensure
-        that all people have equitable access to the Good Food produced by these
-        farmers.</p><p>We believe that Good Food&mdash; food that is traceable,
-        nutritious, accessible, and produced in a system that empowers farmers
-        and sustains the environment&mdash; should be the norm, not the
-        exception, and we actively work to make that vision a reality each and
-        every day. Every purchase with 4P not only supports a growing network of
-        small family farms and artisan producers in the region, but also
-        advances equitable access to fresh healthy food in the communities we
-        serve.</p>
     - question: >-
         What happens if I buy a Donation Bag, or donate my order instead of skip
         it?
@@ -360,11 +360,11 @@
         href="/our-farmers">farmer profiles</a>&nbsp;are a great place to get
         more information about each farmer and their growing practices. While we
         embrace a local and regional food system, you can choose to&nbsp;<a
-        href="/how-to-shop/">customize</a>&nbsp;your bags to include only
-        local products, for example.</p><p>Our long-term goal is to be 100%
-        supporting regenerative agriculture. Regenerative agriculture seeks not
-        only to maintain but also to increase soil health, carbon sequestration,
-        and biodiversity.</p>
+        href="/how-to-shop/">customize</a>&nbsp;your bags to include only local
+        products, for example.</p><p>Our long-term goal is to be 100% supporting
+        regenerative agriculture. Regenerative agriculture seeks not only to
+        maintain but also to increase soil health, carbon sequestration, and
+        biodiversity.</p>
     - question: Where do you source your food from?
       answer_html: >-
         <p>The short answer: we source locally and regionally from a network of
@@ -385,48 +385,46 @@
         sustainable farmers and work together to increase the variety and supply
         of produce available from this region.</p><p>Read our growing collection
         of <a href="/our-farmers">farmer profiles</a> for more information about
-        our food.</p>
+        our food and the people behind it.</p>
     - question: How are you different than other online food delivery services?
       answer_html: >-
-        <p>We deliver the freshest, highest-quality produce, meat, dairy, and
-        pantry goods from farmers and producers in the Mid-Atlantic region (and
-        <a href="/posts/whats-in-the-winter-bag/">sometimes beyond</a>) who <a
+        <p>In short, we offer the bounty of the regional foodshed, harvested
+        daily and delivered to you. We bring the freshest, highest-quality
+        produce, meat, dairy, and pantry goods right to your doorstep from
+        farmers and producers in the Mid-Atlantic region (and <a
+        href="/posts/whats-in-the-winter-bag/">sometimes beyond</a>) who <a
         href="/posts/good-food-knows-no-boundaries/">share our values of Good
-        Food</a>. We aim to curb waste by packaging food in eco-friendly totes
-        that are returned and reused.</p><p>Our produce offerings vary with the
-        seasons. In the Spring, you&rsquo;ll see asparagus and strawberries. In
-        the summer, tomatoes and sweet corn. Autumn equals apples and leafy
-        greens. And in the Winter, it&rsquo;s a mix of local greenhouse-grown
-        produce like lettuce and storage crops like butternut squash, artisan
-        goods from local makers, and fruits and vegetables from farmers further
+        Food</a>. With 4P, you are voting with your fork for a <a
+        href="/our-impact/">more sustainable and equitable</a> food system for
+        everyone.</p><p>Our produce offerings vary with the seasons. In the
+        Spring, you&rsquo;ll see asparagus and strawberries. In the summer,
+        tomatoes and sweet corn. Autumn equals apples and leafy greens. And in
+        the Winter, it&rsquo;s a mix of local greenhouse-grown produce like
+        lettuce and storage crops like butternut squash, artisan goods from
+        local makers, and fruits and vegetables from farmers further
         south.&nbsp;</p><p>Year-round, we offer great local meats and dairy from
         animals raised on open pasture and treated with dignity throughout their
         lives, as well as delicious pantry goods like pastas, jams, and more
-        made by local artisans.&nbsp;</p><p>In short, we deliver the bounty of
-        the regional foodshed, harvested daily and delivered to you. With 4P,
-        you are voting with your fork for a <a href="/our-impact/">more
-        sustainable and equitable</a> food system for everyone.</p>
-    - question: Is all the food organic? What about non-GMO
+        made by local artisans. We also aim to curb waste by packaging food in
+        eco-friendly totes that are returned and reused.</p>
+    - question: What is 4P's Mission?
       answer_html: >-
-        <p>Some of it is USDA-certified organic, and some of it is not (not all
-        farmers who use organic practices choose to get certified). While
-        certifications are certainly important, what is most important to us is
-        <a href="/posts/good-food-knows-no-boundaries/">Good
-        Food</a>.</p><blockquote><p>Good Food provides nourishment and enables
-        people to thrive, is equitably accessible to everyone in the region, is
-        produced in a manner that is environmentally regenerative, comes from a
-        supply chain in which every being is treated with respect and dignity,
-        and improves health outcomes and economic security for
-        all.</p></blockquote><p>We work with farmers who are good stewards of
-        their resources, including land, water, and labor. Our <a
-        href="/our-farmers">farmer profiles</a>&nbsp;are a great place to get
-        more information about each farmer and their growing practices. While we
-        embrace a local and regional food system, you can choose to <a
-        href="/how-to-shop/">customize</a> your bags to include only local
-        products, for example.</p><p>Our long-term goal is to be 100% supporting
-        regenerative agriculture. Regenerative agriculture seeks not only to
-        maintain but also to increase soil health, carbon sequestration, and
-        biodiversity.</p>
+        <p>Our mission is to empower you to transform the food system.</p><p>And
+        how do we do that, you ask? Every purchase you make with 4P allows you
+        to live your values via a short, transparent supply chain and to know
+        that you are supporting a company seeking far more than profit (in fact,
+        the 4P's are an expansion of the idea of the triple bottom line: People,
+        Planet, Prosperity, and Purpose). Everything we do aims to help small
+        and mid-sized family farmers and artisans not just to survive, but to
+        thrive, while also helping ensure that all people have equitable access
+        to the Good Food produced by these farmers.</p><p>We believe that Good
+        Food&mdash; food that is traceable, nutritious, accessible, and produced
+        in a system that empowers farmers and sustains the environment&mdash;
+        should be the norm, not the exception, and we actively work to make that
+        vision a reality each and every day. Every purchase with 4P not only
+        supports a growing network of small family farms and artisan producers
+        in the region, but also advances equitable access to fresh healthy food
+        in the communities we serve.</p>
     - question: How can I order extra items?
       answer_html: >-
         <p>After you choose your bag(s), head over to the shop to browse that

@@ -4,8 +4,7 @@
       data-cms-editor-link="cloudcannon:#farmers"
       data-cms-editor-link-style="modal" 
       class="responsive-card-deck cards-lg-2 cards-md-2 mt-4 cms-editor-link">
-      {% for object in page.farmers %}
-      {% assign farmer = site.farmers | where: 'slug', object | first %}
+      {% for farmer in site.farmers %}
       <div class="card bg-transparent mb-5">
         <div
           class="bg-image aspect-16x9"

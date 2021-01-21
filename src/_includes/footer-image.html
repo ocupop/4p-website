@@ -1,6 +1,11 @@
 {% unless page.layout == 'homepage'%}
 {% if page.footer_image %}
-<div class="bg-image aspect-4x1" style="background-image: url({{ page.footer_image }})"></div>
+<div
+  data-cms-editor-link="cloudcannon:#footer_image"
+  data-cms-editor-link-style="modal"
+  class="bg-image aspect-4x1 cms-editor-link"
+  style="background-image: url({{ page.footer_image }})">
+</div>
 {% elsif layout.footer_image %}
 <div class="bg-image aspect-4x1" style="background-image: url({{ layout.footer_image }})"></div>
 {% endif %}

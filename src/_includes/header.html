@@ -2,7 +2,7 @@
   <div class="bg-teal d-none d-lg-block">
     <div class="container">
       <nav id="usernav" class="navbar navbar-expand-lg">
-        <a href="/wholesale-programs" class="text-uppercase font-weight-bold">Are you a wholesaler?</a>
+        <a href="/wholesale-programs" class="text-uppercase font-weight-bold editable">Interested in Wholesale?</a>
         <div id="header-notification">
           {% if site.data.notifications.header_notification.link %}
             <p class="mb-0 font-weight-bold"><a href="{{ site.data.notifications.header_notification.link }}">{{ site.data.notifications.header_notification.notification_text }}</a></p>
@@ -21,10 +21,9 @@
   <div class="container">
     <nav id="mainnav" class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="/" title="{{ site.title }}">
-        <img src="/img/logo-wordmark.svg" alt="{{ site.title }}">
+        <img src="/img/logo-wordmark.svg" alt="{{ site.title }}" />
       </a>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#primarynav"
-        aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#primarynav" aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -33,9 +32,9 @@
       </button>
       <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
         <ul class="nav navbar-nav mx-auto">
-          <li class="nav-item"><a href="/how-it-works" class="nav-link">How it works</a></li>
-          <li class="nav-item"><a href="/our-impact" class="nav-link">Our Impact</a></li>
-          <li class="nav-item"><a href="/news" class="nav-link">4P News</a></li>
+          <li class="nav-item"><a href="/how-it-works" class="nav-link editable">How it works</a></li>
+          <li class="nav-item"><a href="/our-impact" class="nav-link editable">Our Impact</a></li>
+          <li class="nav-item"><a href="/news" class="nav-link editable">4P News</a></li>
           <li class="nav-item d-lg-none"><a href="/wholesale-programs" class="nav-link">Wholesale Programs</a></li>
         </ul>
         <ul class="nav navbar-nav">
@@ -57,8 +56,7 @@
         <nav class="navbar navbar-expand-lg justify-content-center">
           <div id="header-notification" class="text-center">
             {% if site.data.notifications.bar_notification.link %}
-              <p class="mb-0 font-weight-bold"><a
-                  href="{{ site.data.notifications.bar_notification.link }}">{{ site.data.notifications.bar_notification.notification_text }}</a>
+              <p class="mb-0 font-weight-bold"><a href="{{ site.data.notifications.bar_notification.link }}">{{ site.data.notifications.bar_notification.notification_text }}</a>
               </p>
             {% else %}
               <p class="mb-0 font-weight-bold">{{ site.data.notifications.bar_notification.notification_text }}</p>
@@ -69,4 +67,3 @@
     </div>
   {% endif %}
 </header>
-

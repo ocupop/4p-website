@@ -1,4 +1,7 @@
-<div class="responsive-card-deck cards-lg-3">
+<div 
+  data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
+  data-cms-editor-link-style="modal"
+  class="responsive-card-deck cards-lg-3 cms-editor-link">
   {% for object in page.featured_products %}
     {% assign product = site.featured_products | where: 'slug', object | first  %}
     {% if product.product_url %}

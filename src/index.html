@@ -10,6 +10,7 @@ _assets:
   - image: /uploads/home/4p-homepage-foodaccess-02.jpg
   - image: /uploads/home/4p-homepage-foodaccess-03.jpg
   - image: /uploads/home/DSC_5495.jpg
+  - image: /uploads/home/4P-footer-01.jpg
 hero:
   - _type: image_carousel
     images:
@@ -132,7 +133,10 @@ community_featured_products:
     </div>
   </div>
 </section> -->
-<section class="bg-image aspect-auto text-white" style="background-image: url({{ page._assets[6].image }})">
+<section 
+  class="bg-image aspect-auto text-white"
+  style="background-image: url({{ page._assets[6].image }})"
+  >
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -188,7 +192,7 @@ community_featured_products:
   <div class="container">
     <div class="row">
       <div class="col-12">
-        {% include products/featured-products-grid.html %}
+        {% include products/featured-products-grid.html editor-link="#featured_products" %}
       </div>
     </div>
   </div>
@@ -256,17 +260,17 @@ community_featured_products:
 <div class="row no-gutters">
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-4x3" style="background-image: url('{{ page._assets[3].image }}')" data-cms-editor-link="cloudcannon:#_assets[3].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-4x3 cms-editor-link" style="background-image: url('{{ page._assets[3].image }}')" data-cms-editor-link="cloudcannon:#_assets[3].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-4x3" style="background-image: url('{{ page._assets[4].image }}')" data-cms-editor-link="cloudcannon:#_assets[4].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-4x3 cms-editor-link" style="background-image: url('{{ page._assets[4].image }}')" data-cms-editor-link="cloudcannon:#_assets[4].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-4x3" style="background-image: url('{{ page._assets[5].image }}')" data-cms-editor-link="cloudcannon:#_assets[5].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-4x3 cms-editor-link" style="background-image: url('{{ page._assets[5].image }}')" data-cms-editor-link="cloudcannon:#_assets[5].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
 </div>
@@ -292,7 +296,7 @@ community_featured_products:
             <div class="card-content align-items-center">
               <div class="card-header p-0">
                 <div class="content">
-                  <img src="/img/icons/homepage-foodaccess-geographic.png" class="img-fluid editable" alt="" />
+                  <img src="/img/icons/homepage-foodaccess-geographic.png" class="img-fluid editable" alt="Food Access Geographic icon" />
                 </div>
               </div>
               <div class="card-body">
@@ -311,7 +315,7 @@ community_featured_products:
             <div class="card-content align-items-center">
               <div class="card-header p-0">
                 <div class="content">
-                  <img src="/img/icons/homepage-foodaccess-financial.png" class="img-fluid editable" alt="" />
+                  <img src="/img/icons/homepage-foodaccess-financial.png" class="img-fluid editable" alt="Food Access Financial icon" />
                 </div>
               </div>
               <div class="card-body">
@@ -330,7 +334,7 @@ community_featured_products:
             <div class="card-content align-items-center">
               <div class="card-header p-0">
                 <div class="content">
-                  <img src="/img/icons/homepage-foodaccess-personal.png" class="img-fluid editable" alt="" />
+                  <img src="/img/icons/homepage-foodaccess-personal.png" class="img-fluid editable" alt="Food Access personal icon" />
                 </div>
               </div>
               <div class="card-body">
@@ -387,7 +391,12 @@ community_featured_products:
  -->
 {% include news/featured-news.html %}
 {% include home/home-bring-us.html %}
-<div class="bg-image aspect-4x1" style="background-image: url(/uploads/home/4P-footer-01.jpg)"></div>
+<div 
+  data-cms-editor-link="cloudcannon:#_assets[7].image"
+  data-cms-editor-link-style="modal"
+  class="bg-image aspect-4x1 cms-editor-link"
+  style="background-image: url({{ page._assets[7].image }})">
+</div>
 <section id="tryUsToday">
   <div class="container">
     <div class="row">

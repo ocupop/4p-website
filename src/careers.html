@@ -38,27 +38,35 @@ _assets:
 </section>
 <section>
   <div class="container">
-    {% assign careers = site.careers | sort: 'posted_date' | reversed %} {% assign num_careers = careers | size %} {% if
-    num_careers > 0 %} {% for career in careers reversed %}
-    <hr />
-    <div class="row">
-      <div class="col-12">
-        <h4>{{ career.title }}</h4>
-        <p><strong>{{ career.location }}</strong> <em>Job posted {{ career.posted_date | date: '%m/%d/%Y' }}</em></p>
-        <p>{{ career.description }}</p>
-        <a href="{{ career.url }}" class="btn btn-secondary text-white">Learn More and Apply</a>
+    {% assign careers = site.careers | sort: 'posted_date' | reversed %} 
+    {% assign num_careers = careers | size %} 
+    {% if num_careers > 0 %} 
+      {% for career in careers reversed %}
+      <hr />
+      <div 
+        data-cms-editor-link="cloudcannon:collections/_careers"
+        data-cms-editor-link-style="modal" 
+        class="row">
+        <div class="col-12">
+          <h4>{{ career.title }}</h4>
+          <p><strong>{{ career.location }}</strong> <em>Job posted {{ career.posted_date | date: '%m/%d/%Y' }}</em></p>
+          <p>{{ career.description }}</p>
+          <a href="{{ career.url }}" class="btn btn-secondary text-white">Learn More and Apply</a>
+        </div>
       </div>
-    </div>
-    <hr />
-    {% endfor %} {% else %}
+      <hr />
+      {% endfor %}
+    {% else %}
     <div class="row">
       <div class="col-12 col-lg-10 mx-lg-auto text-center">
-        <h4>We don't currently have any openings</h4>
-        <p>
-          If you feel passionate about our mission&mdash;helping small farmers thrive while ensuring that all people
-          have access to Good Food&mdash;and think you have something to add to the team, we'd love to hear from you.
-        </p>
-        <p>
+        <h4 class="editable">We don't currently have any openings</h4>
+        <div class="editable">
+          <p>
+            If you feel passionate about our mission&mdash;helping small farmers thrive while ensuring that all people
+            have access to Good Food&mdash;and think you have something to add to the team, we'd love to hear from you.
+          </p>
+        </div>
+        <p class="editable">
           Please send us a brief cover letter and resume at
           <a href="mailto:jobs@4pfoods.com">jobs@4pfoods.com</a>.
         </p>

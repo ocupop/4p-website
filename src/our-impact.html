@@ -3,6 +3,10 @@ layout: page
 title: Our Impact
 meta:
 footer_image: /uploads/2020-05-20-va-bealeton-newdayfarms-danieljames-herd-ventures-6.jpg
+featured_farmer: 100-bowls
+farmers:  
+  - agriberry-farm
+  - appalachian-harvest
 _assets:
   - image: /uploads/screen-shot-2020-11-29-at-9-54-41-pm.png
   - image: /uploads/screen-shot-2020-11-28-at-1-28-46-am.png
@@ -17,17 +21,17 @@ _assets:
 <div class="row no-gutters">
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[0].image }}')" data-cms-editor-link="cloudcannon:#_assets[0].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9 cms-editor-link" style="background-image: url('{{ page._assets[0].image }}')" data-cms-editor-link="cloudcannon:#_assets[0].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[1].image }}')" data-cms-editor-link="cloudcannon:#_assets[1].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9 cms-editor-link" style="background-image: url('{{ page._assets[1].image }}')" data-cms-editor-link="cloudcannon:#_assets[1].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[2].image }}')" data-cms-editor-link="cloudcannon:#_assets[2].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9 cms-editor-link" style="background-image: url('{{ page._assets[2].image }}')" data-cms-editor-link="cloudcannon:#_assets[2].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
 </div>
@@ -88,24 +92,39 @@ _assets:
 <div class="row no-gutters">
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[3].image }}')" data-cms-editor-link="cloudcannon:#_assets[3].image" data-cms-editor-link-style="modal"></div>
+      <div
+        class="bg-image aspect-16x9 cms-editor-link"
+        style="background-image: url('{{ page._assets[3].image }}')"
+        data-cms-editor-link="cloudcannon:#_assets[3].image"
+        data-cms-editor-link-style="modal">
+      </div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[4].image }}')" data-cms-editor-link="cloudcannon:#_assets[4].image" data-cms-editor-link-style="modal"></div>
+      <div
+        class="bg-image aspect-16x9 cms-editor-link"
+        style="background-image: url('{{ page._assets[4].image }}')"
+        data-cms-editor-link="cloudcannon:#_assets[4].image"
+        data-cms-editor-link-style="modal">
+      </div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-16x9" style="background-image: url('{{ page._assets[5].image }}')" data-cms-editor-link="cloudcannon:#_assets[5].image" data-cms-editor-link-style="modal"></div>
+      <div
+        class="bg-image aspect-16x9 cms-editor-link"
+        style="background-image: url('{{ page._assets[5].image }}')"
+        data-cms-editor-link="cloudcannon:#_assets[5].image"
+        data-cms-editor-link-style="modal">
+      </div>
     </div>
   </div>
 </div>
 <section class="bg-gray">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-6 mx-lg-auto text-center text-white">
+      <div class="col-12 col-lg-8 mx-lg-auto text-center text-white">
         <h2 class="text-white editable">
           "The businesses of today are creating the world of tomorrow. They have the ability, and more importantly the responsibility, to use their economic engines to drive real, lasting, positive social change."
         </h2>
@@ -117,8 +136,8 @@ _assets:
     </div>
   </div>
 </section>
-
-<section class="bg-gray">
+<!-- this section not currently in use -->
+<!-- <section class="bg-gray">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-10 mx-lg-auto text-center">
@@ -131,7 +150,7 @@ _assets:
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <section class="bg-tan">
   <div class="container">
     <div class="row align-items-center">
@@ -142,10 +161,15 @@ _assets:
         <div class="editable">
           <p>With every 4P Bag delivered, you are supporting local food access and a more equitable food system. Learn more about our food access partners who make this vision possible.</p>
         </div>
-        <a href="/our-partners" class="btn btn-primary">Learn More</a>
+        <a href="/our-partners" class="btn btn-primary editable">Learn More</a>
       </div>
       <div class="col-lg-6">
-        <div class="bg-image aspect-4x3" style="background-image: url('{{ page._assets[6].image }}')" data-cms-editor-link="cloudcannon:#_assets[6].image" data-cms-editor-link-style="modal"></div>
+        <div
+          class="bg-image aspect-4x3 cms-editor-link"
+          style="background-image: url('{{ page._assets[6].image }}')"
+          data-cms-editor-link="cloudcannon:#_assets[6].image"
+          data-cms-editor-link-style="modal">
+        </div>
       </div>
     </div>
   </div>

@@ -9,7 +9,7 @@ footer_navigation:
       link: /how-to-shop
     - label: Wholesale
       link: /wholesale-programs
-    - label: Referral Program
+    - label: Referral Programs
       link: /referral-programs
     - label: Gift Cards
       link: /posts/give-the-gift-of-good-food/
@@ -38,7 +38,7 @@ footer_navigation:
       link: /contact
     - label: FAQ
       link: /faq
-    - label:  Terms of Service
+    - label: Terms of Service
       link: /terms-of-service
     - label: Privacy Policy
       link: /privacy-policy
@@ -50,6 +50,5 @@ footer_navigation:
     - label: instagram
       link: 'https://www.instagram.com/4pfoods/'
     - label: pinterest
-      link: 'https://www.pinterest.ca/4pfoods/'         
-
+      link: 'https://www.pinterest.ca/4pfoods/'
 ---

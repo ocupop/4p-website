@@ -27,12 +27,14 @@ footer_navigation:
   enrich_yourself_links:
     - label: 4P News
       link: /news
+    - label: Storage Tips
+      link: /posts/4p-foods-storage-tips/
+    - label: Recipes
+      link: 'https://4pfoods.com/posts/recipes/'
     - label: Community Events
       link: /community-events
     - label: Careers
       link: /careers
-    - label: Storage Tips
-      link: /posts/4p-foods-storage-tips/
   support_links:
     - label: Contact Us
       link: /contact

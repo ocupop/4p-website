@@ -231,23 +231,7 @@
         Cut-offs are 11:59 pm on Sunday for a Wednesday delivery, 11:59 pm on
         Monday for a Thursday delivery, and 11:59 pm on Tuesday for a Friday
         delivery.&nbsp;</p>
-    - question: >-
-        I used to get pantry items in my produce bag, but now I don’t see them
-        available as swaps. Where did the pantry items go?
-      answer_html: >-
-        <p>Most pantry items have changed from bag items to a la carte items,
-        meaning you can add them on to any order, no saving up points required.
-        Click &ldquo;Pantry&rdquo; in the navigation bar at the top of the shop
-        to see the full selection.</p><p>If you don&rsquo;t need as many produce
-        items as come in a produce bag in addition to your pantry items,
-        we&rsquo;ve got you covered! Build a fully a la carte order by selecting
-        exactly the individual items that you want from each category--anything
-        that can be added to your cart from the shop is available a la carte. As
-        long as you hit the $30 minimum order, you&rsquo;re good to go, no
-        produce, protein, or dairy bag required.</p>
-    - question: >-
-        I’m here from your old site, and I’m not sure how to customize. Where
-        did the points go?
+    - question: I’m here from your old site—where did the points go?
       answer_html: >-
         <p>We did away with the points system in favor of a setup that requires
         a little less math and offers a lot more flexibility.&nbsp;</p><p>To get
@@ -269,6 +253,20 @@
         &ldquo;Bag Price&rdquo; field in the &ldquo;What&rsquo;s Inside&rdquo;
         section on the right side of your screen in desktop view or the top of
         your screen in mobile view).</p>
+    - question: >-
+        I used to get pantry items in my produce bag, but now I don’t see them
+        available as swaps. Where did the pantry items go?
+      answer_html: >-
+        <p>Most pantry items have changed from bag items to a la carte items,
+        meaning you can add them on to any order, no saving up points required.
+        Click &ldquo;Pantry&rdquo; in the navigation bar at the top of the shop
+        to see the full selection.</p><p>If you don&rsquo;t need as many produce
+        items as come in a produce bag in addition to your pantry items,
+        we&rsquo;ve got you covered! Build a fully a la carte order by selecting
+        exactly the individual items that you want from each category--anything
+        that can be added to your cart from the shop is available a la carte. As
+        long as you hit the $30 minimum order, you&rsquo;re good to go, no
+        produce, protein, or dairy bag required.</p>
     - question: >-
         It takes me a long time to scroll through all of the options while I’m
         customizing. Is there a quicker way to find what I want?

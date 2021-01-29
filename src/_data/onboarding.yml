@@ -133,6 +133,19 @@ slides:
         video_mobile_path: /uploads/videos/billing-mobile.mp4
         thumbnail_mobile_image: /uploads/videos/payment.jpg
         show_on_how_to_shop: true
+      - title: How to Share Your Referral Link
+        description_html: >-
+          <p>If you refer someone who signs up with 4P and makes a purchase, you
+          both get $10 off! Find your unique referral link by going to My
+          Account &gt; Referrals. (Note: the link will take people to the shop
+          so they can look around, but as long as they create an account during
+          that same session, your name will appear automatically in the "Who
+          referred you?" field)</p>
+        video_desktop_path: /uploads/videos/friend-referral-link.mp4
+        thumbnail_desktop_image: /uploads/videos/screenshot-2021-01-29-133840.png
+        video_mobile_path:
+        thumbnail_mobile_image:
+        show_on_how_to_shop: true
 start_shopping_page:
   title: Learn More
   description_html: >-

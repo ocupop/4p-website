@@ -44,7 +44,9 @@ When a Virginia farmer had thousands of pounds of apples with no buyer due to di
 
 <address>&nbsp;</address>
 
-<address class="AlignCenter"><img width="800" height="600" src="/uploads/kpci-church-distro-mafrac.png" /><em>Food Distribution at KPCI City of Light Church in Silver Spring, MD (photo courtesy of MAFRAC)</em></address>
+<address class="AlignCenter"><img width="800" height="600" src="/uploads/kpci-church-distro-mafrac.png" /></address>
+
+<address class="AlignCenter"><em>Food Distribution at KPCI City of Light Church in Silver Spring, MD (photo courtesy of MAFRAC)</em></address>
 
 <address>&nbsp;</address>
 

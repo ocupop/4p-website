@@ -24,7 +24,7 @@ MAFRAC assembled a core Operations Team (several of them graduates of Arcadia’
 
 ### **GROWING IMPACT**
 
-To date, MAFRAC has provided over $750,000 in grant funding to 79 nonprofits, small businesses, faith-based organizations, and others working to get locally grown or produced food into their food relief efforts. In the case of the aptly named Community Cooks, started by the [Warrenton Wellness Kitchen](https://www.warrentonwellnesskitchen.com/){: target="_blank" rel="noopener"} in VA, this meant buying ingredients from nearby farmers that local restaurants turned into homestyle, nourishing meals that volunteers from a local childcare center handed out to community members in need at four sites throughout the county. In the case of [Radical Roots Farm](/farmers/radical-roots-community-farm/) in Keezletown, VA, this meant providing a weekly CSA for 100 families in need at their local school over the summer.&nbsp;
+To date, MAFRAC has provided over $750,000 in grant funding to 79 nonprofits, small businesses, faith-based organizations, and others working to get locally grown or produced food into their food relief efforts. In the case of the aptly named Community Cooks, started by the [Warrenton Wellness Kitchen](https://www.warrentonwellnesskitchen.com/){: target="_blank" rel="noopener"} in VA, this meant buying ingredients from nearby farmers that local restaurants turned into homestyle, nourishing meals that volunteers from a local childcare center handed out to community members in need at four sites throughout the county. In the case of [Radical Roots Farm](/farmers/radical-roots-community-farm/){: target="_blank" rel="noopener"} in Keezletown, VA, this meant providing a weekly CSA for 100 families in need at their local school over the summer.&nbsp;
 
 MAFRAC has also become a hub for those new to the intersection of local food, food equity, and hunger relief. When Leila Bournes of [Bourne2Fly Fitness](https://www.b2ffitness.com/){: target="_blank" rel="noopener"}, an independent gym in NE DC, wanted to find ways to support her local community members, many of whom were out of work and lacking access to fresh food, she connected with MAFRAC and was inspired into action. With the help of a MAFRAC Local Food Grant and connections made through the MAFRAC stakeholder network, Bourne2Fly Fitness (B2FF) was able to source from local farmers and give away bags of fresh produce to neighbors in need. B2FF now hosts regular distributions to hand out food, along with cleaning products and other hygiene items.
 
@@ -56,13 +56,13 @@ MAFRAC has, in many ways, taken on a life of its own (intentionally\!). It has b
 
 For nearly a year now, the refrain of MAFRAC’s weekly Friday afternoon stakeholder calls has been, “What do you have? What do you need?” and the spirit of generosity and vulnerability encapsulated in those two questions animates the coalition now more than ever. In MAFRAC’s Stakeholder network, cooperation and ingenuity combine with generosity to bring incredible things to fruition.
 
-“Our hope is that after the pandemic, people won't forget what is happening right now—and will stay involved to change the system," 4P Founder, Tom McDougall says in [National Geographic](http://on.natgeo.com/39qZdRZ) (July 2020).
+“Our hope is that after the pandemic, people won't forget what is happening right now—and will stay involved to change the system," 4P Founder, Tom McDougall says in [National Geographic](http://on.natgeo.com/39qZdRZ){: target="_blank" rel="noopener"} (July 2020).
 
 <address>&nbsp;</address>
 
 ### **GET INVOLVED**
 
-##### *From nearly a million dollars of food purchased from local producers to give to neighbors in need to countless connections made between stakeholders, MAFRAC’s work has made a real, positive impact on vulnerable communities, farmers, and food producers during the COVID-19 pandemic, and that work is not over yet. To learn more about MAFRAC, you can follow on Twitter @MAFR\_AC, and to support them in their mission to “Feed and Be Fed,” please visit their website to make a tax-deductible donation today:[https://secure.donationpay.org/mafrac/](https://secure.donationpay.org/mafrac/).*
+##### *From nearly a million dollars of food purchased from local producers to give to neighbors in need to countless connections made between stakeholders, MAFRAC’s work has made a real, positive impact on vulnerable communities, farmers, and food producers during the COVID-19 pandemic, and that work is not over yet. To learn more about MAFRAC, you can follow on Twitter @MAFR\_AC, and to support them in their mission to “Feed and Be Fed,” please visit their website to make a tax-deductible donation today:&nbsp;[https://secure.donationpay.org/mafrac/](https://secure.donationpay.org/mafrac/){: target="_blank" rel="noopener"}.*
 
 <address>&nbsp;</address>
 

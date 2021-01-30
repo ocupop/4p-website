@@ -8,7 +8,7 @@ tags:
 published: true
 ---
 
-### <br>**THE ORIGINS**
+### **THE ORIGINS**
 
 At the start of the pandemic in mid-March 2020, when no one knew what the next day, let alone the next month or year, would bring, a group of local food system organizations convened by 4P Foods and the [Arcadia Center for Sustainable Food and Agriculture](http://arcadiafood.org/){: target="_blank" rel="noopener"} knew two things for sure: we&nbsp; were not going to go through whatever came next alone, and we were not going to go down without a fight. We banded together with a common vision to “Feed and Be Fed,” thus launching an informal coalition that would eventually become the Mid-Atlantic Food Resilience & Access Coalition (MAFRAC).&nbsp;
 
@@ -16,7 +16,7 @@ MAFRAC assembled a core Operations Team (several of them graduates of Arcadia’
 
 <address>&nbsp;</address>
 
-<address><img src="/uploads/mary-alexandria-loaded-truck-mafrac.png" width="800" height="600" alt="Woman standing outside pickup truck with squash and milk for food relief distribution" title="Getting ready to distribute in Alexandria, VA" /></address>
+<address><img width="800" height="600" alt="Woman standing outside pickup truck with squash and milk for food relief distribution" title="Getting ready to distribute in Alexandria, VA" src="/uploads/mary-alexandria-loaded-truck-mafrac.png" /></address>
 
 <address><em>Getting ready to distribute squash and milk in Alexandria, VA (photo courtesy of MAFRAC)</em></address>
 
@@ -30,7 +30,7 @@ MAFRAC has also become a hub for those new to the intersection of local food, fo
 
 <address>&nbsp;</address>
 
-<address><img src="/uploads/b2ff-produce-packing-mafrac.png" width="800" height="600" alt="People packing produce into food bags at Bourne2Fly Fitness in Washington, DC" title="Packing produce bags at Bourne2Fly Fitness in DC" /><em>Packing produce bags at Bourne2Fly Fitness in DC (photo courtesy of MAFRAC)</em></address>
+<address><img width="800" height="600" alt="People packing produce into food bags at Bourne2Fly Fitness in Washington, DC" title="Packing produce bags at Bourne2Fly Fitness in DC" src="/uploads/b2ff-produce-packing-mafrac.png" /><em>Packing produce bags at Bourne2Fly Fitness in DC (photo courtesy of MAFRAC)</em></address>
 
 <address>&nbsp;</address>
 
@@ -42,7 +42,7 @@ When a Virginia farmer had thousands of pounds of apples with no buyer due to di
 
 <address>&nbsp;</address>
 
-<address class="AlignCenter"><img src="/uploads/kpci-church-distro-mafrac.png" width="800" height="600" /><em>Food Distribution at KPCI City of Light Church in Silver Spring, MD (photo courtesy of MAFRAC)</em></address>
+<address class="AlignCenter"><img width="800" height="600" src="/uploads/kpci-church-distro-mafrac.png" /><em>Food Distribution at KPCI City of Light Church in Silver Spring, MD (photo courtesy of MAFRAC)</em></address>
 
 <address>&nbsp;</address>
 

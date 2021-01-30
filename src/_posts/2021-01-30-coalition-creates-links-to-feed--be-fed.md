@@ -30,7 +30,9 @@ MAFRAC has also become a hub for those new to the intersection of local food, fo
 
 <address>&nbsp;</address>
 
-<address><img width="800" height="600" alt="People packing produce into food bags at Bourne2Fly Fitness in Washington, DC" title="Packing produce bags at Bourne2Fly Fitness in DC" src="/uploads/b2ff-produce-packing-mafrac.png" /><em>Packing produce bags at Bourne2Fly Fitness in DC (photo courtesy of MAFRAC)</em></address>
+<address><img width="800" height="600" alt="People packing produce into food bags at Bourne2Fly Fitness in Washington, DC" title="Packing produce bags at Bourne2Fly Fitness in DC" src="/uploads/b2ff-produce-packing-mafrac.png" /></address>
+
+<address><em>Packing produce bags at Bourne2Fly Fitness in DC (photo courtesy of MAFRAC)</em></address>
 
 <address>&nbsp;</address>
 

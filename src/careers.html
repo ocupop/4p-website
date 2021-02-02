@@ -41,7 +41,9 @@ _assets:
     {% assign num_careers = careers | size %} 
     {% if num_careers > 0 %} 
       {% for career in careers reversed %}
+      {% if forloop.first %}
       <hr />
+      {% endif %}
       <div data-cms-editor-link="cloudcannon:collections/_careers" data-cms-editor-link-style="modal" class="row">
         <div class="col-12">
           <h4>{{ career.title }}</h4>

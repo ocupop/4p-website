@@ -275,6 +275,15 @@
         &ldquo;Customize Bag Contents&rdquo; to jump to that type of product
         (i.e. &ldquo;Fruits&rdquo; in the produce bag or &ldquo;Beef&rdquo; in
         the protein bag).</p>
+    - question: 'When is the shop updated each week, and when can I customize my 4 Bags?'
+      answer_html: >-
+        <p>On Saturdays, we update our inventory with what&rsquo;s fresh picks
+        for the week. When our Weekly Harvest Newsletter hit your inbox, it
+        means that the website is live and your bags are ready to customize! The
+        general timeframe is mid-day on Saturdays, however, on occasion there
+        may be delays tied to mother nature and communicating with farmers,
+        which may push back that time. Note that the arrival of the Saturday
+        newsletter conveniently alerts you that it's time to shop!&nbsp;</p>
 - title: Delivery
   faqs:
     - question: How does delivery work?
@@ -340,6 +349,17 @@
         in time, we&rsquo;ll issue you a credit for the missing item (or send
         you a substitute item in select circumstances, i.e. pack gala apples as
         a substitute for stayman apples, if out of stock).</p>
+    - question: What are Community Pick-up Sites and how can I join?
+      answer_html: >-
+        <p>We've teamed up with select community centers and local businesses
+        that are drop-off points for 4P deliveries. Anyone can change their
+        delivery location to a 4P Community Pick-up Site. For saving us C02 each
+        week, we save you money and will automatically waived your delivery fee
+        at a 4P Community Pick-up Site. To see if there are any locations near
+        you, simply log-in to your account and click "Account Info" and navigate
+        to the delivery drop-down menu for a list of participating locations.
+        Just note that you'll need to be able to pick-up your bags during
+        business hours.</p>
 - title: About Us
   faqs:
     - question: How are you different than other online food delivery services?

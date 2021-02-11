@@ -5,10 +5,11 @@
       <div class="card-content pin-footer">
         {% if featured.featured_image %}
         <div class="card-header p-0">
-          <div
+          <a 
+            href="{{ featured.url }}"
             class="bg-image aspect-2x1"
             style="background-image: url({{ featured.featured_image }})"
-          ></div>
+          ></a>
         </div>
         {% else %}
           <div class="card-header d-flex align-items-center justify-content-center border-0 p-4">
@@ -19,7 +20,7 @@
 
         <div class="card-body">
           <div class="content text-left">
-            <h5>{{ featured.title }}</h5>
+            <h5><a href="{{ featured.url }}" class="text-body">{{ featured.title }}</a></h5>
             <p>{{ featured.date | date: '%B %d, %Y'}}</p>
             <p>{{ featured.content | strip_html | truncatewords: 50 }}</p>
           </div>

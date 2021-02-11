@@ -3,9 +3,6 @@
 {% include head.html %}
 
 <body class="{{ page.layout }}">
-  {% unless page.url == '/how-to-shop/' %}
-    {% include onboarding/modal-onboarding.html %}
-  {% endunless %}
   {% include header.html %}
   <main id="pageContent">
     {{ content }}

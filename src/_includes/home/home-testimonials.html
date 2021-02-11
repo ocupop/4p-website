@@ -5,14 +5,7 @@
         <h4 class="text-white mb-4 text-uppercase font-weight-bold editable">
           Stories of Satisfied Customers
         </h4>
-        <div 
-        
-          id="carousel-testimonials" 
-          class="carousel slide cms-editor-link" 
-          data-ride="carousel"
-          data-interval="10000"
-          data-cms-editor-link="cloudcannon:#testimonials"
-          data-cms-editor-link-style="modal">
+        <div id="carousel-testimonials" class="carousel slide cms-editor-link" data-ride="carousel" data-interval="10000" data-cms-editor-link="cloudcannon:#testimonials" data-cms-editor-link-style="modal">
           <div class="carousel-inner">
             {% for testimonial in page.testimonials %}
             <div class="carousel-item {% if forloop.first %}active{% endif %}">

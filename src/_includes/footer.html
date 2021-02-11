@@ -86,8 +86,8 @@
           </h6>
           <p class="social">
             {% for link in site.data.navigation.footer_navigation.connect_with_us_links %}
-            <a href="https://www.pinterest.ca/4pfoods/" target="_blank" rel="noopener" class="editable mr-2">
-              <i class="ri-pinterest-fill"></i>
+            <a href="{{ link.link }}" target="_blank" rel="noopener" class="mr-2">
+              <i class="ri-{{link.label }}-fill"></i>
             </a>
             {% endfor %}
           </p>

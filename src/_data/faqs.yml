@@ -3,19 +3,21 @@
   faqs:
     - question: How does shopping with 4P Foods work?
       answer_html: >-
-        <p>Our signature products are our customizable 4P Bags, which include
-        Produce, Protein, and Dairy. We pack each bag with a well-rounded,
-        seasonal selection of items each week, and then you can customize your
-        bags to swap out items you don't love for items you do. You can also
-        shop a wide range of our products a la carte, allowing you to tailor
-        your order to exactly how much of exactly what you want.</p><p>You can
-        order a bag once to try it out, but our recommendation is to set up a
-        recurring order so that you can be sure to have your fridge, freezer,
-        and pantry stocked with fresh, locally and sustainably grown food every
-        week.</p><p>Produce and fruit bags have multiple sizes, each with a set
-        price and number of items to mix and match. Protein and Dairy bags have
-        one size each and start at $30-$40 each week, but you can add or take
-        away to your liking, with a per-bag minimum of $20.&nbsp;</p>
+        <p>We are your one-stop shop for local, regional, sustainable, and
+        ethical produce, protein, dairy, pantry, and more (what we call "Good
+        Food"). There are two ways to shop: <a target="_blank" rel="noopener"
+        href="https://shop.4pfoods.com/summary.php?go=products&amp;cat=93&amp;12">4P
+        Bags</a> and a la carte.</p><p>Produce and Fruit Bags have multiple
+        sizes, each with a set price and number of items to mix and match.
+        Protein and Dairy Bags have one size each and start at $30-$40 each
+        week, but you can add or take away to your liking, with a per-bag
+        minimum of $20.&nbsp;</p><p>You can order a Bag once to try it out, but
+        our recommendation is to set up a recurring order so that you can be
+        sure to have your fridge, freezer, and pantry stocked every week. You
+        can always add on a la carte items, skip as often as you need, or cancel
+        altogether with no penalty.</p><p>You can also order fully a la carte
+        without a 4P Bag (don't worry, your order will still come packed in one
+        of our lovely insulated reusable bags).</p>
     - question: How will I find out what food you have each week?
       answer_html: >-
         <p>Each Saturday we update our online shop with what&rsquo;s fresh that
@@ -142,6 +144,16 @@
         economic security for all.</li></ol>
 - title: Shopping
   faqs:
+    - question: When can I customize my 4 Bags?
+      answer_html: >-
+        <p>On Saturdays, we update the 4P Bags and our online shop with
+        what&rsquo;s fresh for the week. When the Weekly Harvest Newsletter hits
+        your inbox, it means your bags are ready to customize! Our ETA is
+        mid-day on Saturdays, but there are occasional delays due to mother
+        nature or technology. The arrival of the newsletter alerts you that you
+        have between then and your order deadline (<em>three days before your
+        delivery day at 11:59 pm</em>) to customize your Bags and/or add a la
+        carte items.</p>
     - question: How do I see what's coming in my next delivery?
       answer_html: >-
         <p>There are two ways to view your upcoming deliveries:</p><ol><li>From
@@ -155,6 +167,29 @@
         next to each date indicating how many items are in your bag that week.
         Click the "Customize" button to see what you have coming in any
         bags.</li></ol>
+    - question: How do I know if my order is “done”?
+      answer_html: >-
+        <p>There&rsquo;s no checkout button on your shopping cart. As long as
+        you hit the $30 order minimum, you&rsquo;re good to
+        go.&nbsp;</p><p>However, there <em>is</em> a &ldquo;Save&rdquo; button
+        you need to click to finish the customizing process for a 4P bag. If
+        you&rsquo;re here from our old site, that&rsquo;s an important change to
+        note!</p><p>Whenever you make changes to your order (including adding or
+        removing items or customizing a bag), you&rsquo;ll get a confirmation
+        email. When you change a recurring order, you&rsquo;ll get emails for
+        the future deliveries, as well. If you don&rsquo;t want to get a
+        confirmation email every time, you can hit &ldquo;Unsubscribe&rdquo; at
+        the bottom of the email to update your email preferences for different
+        types of emails.</p>
+    - question: When is the order deadline each week?
+      answer_html: >-
+        <p><strong>The deadline to make any customizations to your 4P order is a
+        full 48 hours before your delivery day. </strong>Please be mindful of
+        this cut-off which gives us a chance to finalize orders with farmers and
+        artisans! The order deadline by delivery day is as
+        follows:</p><ul><li>11:59 pm on Sunday for a Wednesday
+        delivery</li><li>11:59 pm on Monday for a Thursday
+        delivery</li><li>11:59 pm on Tuesday for a Friday delivery</li></ul>
     - question: 'How do I skip an order, or multiple orders at once?'
       answer_html: >-
         <p>To skip once, login to your account and click on &ldquo;My
@@ -174,20 +209,6 @@
         you entered to return.&nbsp;</p><p>If you need any assistance skipping a
         delivery, please <a href="/contact/">reach out to us</a> and we'll be
         happy to help.</p>
-    - question: How do I know if my order is “done”?
-      answer_html: >-
-        <p>There&rsquo;s no checkout button on your shopping cart. As long as
-        you hit the $30 order minimum, you&rsquo;re good to
-        go.&nbsp;</p><p>However, there <em>is</em> a &ldquo;Save&rdquo; button
-        you need to click to finish the customizing process for a 4P bag. If
-        you&rsquo;re here from our old site, that&rsquo;s an important change to
-        note!</p><p>Whenever you make changes to your order (including adding or
-        removing items or customizing a bag), you&rsquo;ll get a confirmation
-        email. When you change a recurring order, you&rsquo;ll get emails for
-        the future deliveries, as well. If you don&rsquo;t want to get a
-        confirmation email every time, you can hit &ldquo;Unsubscribe&rdquo; at
-        the bottom of the email to update your email preferences for different
-        types of emails.</p>
     - question: I only want to order a small amount of dairy or protein--can I do that?
       answer_html: >-
         <p>Select dairy and protein items can be purchased a la carte, including
@@ -198,10 +219,12 @@
         you&rsquo;ll still be charged $20. With a wide and ever-growing
         selection of products and flexible order frequencies (one-time, every
         week, every other week, monthly), $20 shouldn&rsquo;t be too hard to
-        hit!</p>
+        hit!</p><p>To access our full rotating inventory for Dairy (including
+        our selection of cheese), shop for a Dairy Bag and customize what's
+        inside!</p>
     - question: >-
-        How can I tell what’s coming in a bag and how many items I can add while
-        I’m customizing?
+        How can I tell what’s in my bag and how many items I can add while I’m
+        customizing?
       answer_html: >-
         <p>From the shop, click on &ldquo;What&rsquo;s Inside&rdquo; on any bag
         image to see what&rsquo;s available for a given week (if there are
@@ -224,30 +247,7 @@
         is no item limit, so you can add as many items as you want. Just be sure
         you have at least $20 worth of products in each bag, since that is the
         minimum bag price.&nbsp;</p>
-    - question: When is my last chance to make changes to my order before delivery?
-      answer_html: >-
-        <p>Skip or swap deadlines are a full 48 hours before your delivery day.
-        This time frame gives us a chance to finalize orders with farmers.
-        Cut-offs are 11:59 pm on Sunday for a Wednesday delivery, 11:59 pm on
-        Monday for a Thursday delivery, and 11:59 pm on Tuesday for a Friday
-        delivery.&nbsp;</p>
-    - question: >-
-        I used to get pantry items in my produce bag, but now I don’t see them
-        available as swaps. Where did the pantry items go?
-      answer_html: >-
-        <p>Most pantry items have changed from bag items to a la carte items,
-        meaning you can add them on to any order, no saving up points required.
-        Click &ldquo;Pantry&rdquo; in the navigation bar at the top of the shop
-        to see the full selection.</p><p>If you don&rsquo;t need as many produce
-        items as come in a produce bag in addition to your pantry items,
-        we&rsquo;ve got you covered! Build a fully a la carte order by selecting
-        exactly the individual items that you want from each category--anything
-        that can be added to your cart from the shop is available a la carte. As
-        long as you hit the $30 minimum order, you&rsquo;re good to go, no
-        produce, protein, or dairy bag required.</p>
-    - question: >-
-        I’m here from your old site, and I’m not sure how to customize. Where
-        did the points go?
+    - question: I’m here from your old site—where did the points go?
       answer_html: >-
         <p>We did away with the points system in favor of a setup that requires
         a little less math and offers a lot more flexibility.&nbsp;</p><p>To get
@@ -277,6 +277,20 @@
         &ldquo;Customize Bag Contents&rdquo; to jump to that type of product
         (i.e. &ldquo;Fruits&rdquo; in the produce bag or &ldquo;Beef&rdquo; in
         the protein bag).</p>
+    - question: >-
+        I used to get pantry items in my produce bag, but now I don’t see them
+        available as swaps. Where did the pantry items go?
+      answer_html: >-
+        <p>Most pantry items have changed from bag items to a la carte items,
+        meaning you can add them on to any order, no saving up points required.
+        Click &ldquo;Pantry&rdquo; in the navigation bar at the top of the shop
+        to see the full selection.</p><p>If you don&rsquo;t need as many produce
+        items as come in a produce bag in addition to your pantry items,
+        we&rsquo;ve got you covered! Build a fully a la carte order by selecting
+        exactly the individual items that you want from each category--anything
+        that can be added to your cart from the shop is available a la carte. As
+        long as you hit the $30 minimum order, you&rsquo;re good to go, no
+        produce, protein, or dairy bag required.</p>
 - title: Delivery
   faqs:
     - question: How does delivery work?
@@ -300,15 +314,6 @@
         delivery time preferences during registration, or you can <a
         href="/contact/">reach out to us</a> to let us know if you have timing
         limitations.</p>
-    - question: Will the food stay fresh after it is delivered?
-      answer_html: >-
-        <p>You will receive an email or text notification when a driver drops
-        off your bags. We deliver our food in insulated packaging to keep
-        everything cold. We'd recommend picking up and unpacking your bags as
-        soon as you can, but as long as you can do so within a few hours (or
-        longer in cooler weather), you should be fine. We take all the packaging
-        back to sanitize and reuse, so please set out your empties on delivery
-        day for our driver to swap out.</p>
     - question: Is there a delivery fee?
       answer_html: >-
         <p>Please note that delivery takes time and energy and an amazing
@@ -318,6 +323,19 @@
         it.</p><p>Delivery is free for all orders $60 and over and at community
         pick-up sites, where anyone can pick up their bags within a certain
         pick-up time frame to save C02 and save a few bucks.</p>
+    - question: What are Community Pick-up Sites and how can I join?
+      answer_html: >-
+        <p>We've teamed up with select community centers and local businesses to
+        be pickup points for 4P deliveries, which helps us curb CO2 by
+        delivering to a central location and helps you save money by enjoying
+        waived delivery fees on all orders! New customers can choose a Community
+        Pickup Site during registration, and anyone can change their delivery
+        location to a 4P Community Pick-up Site (or vis versa). To see if there
+        are any sites near you, simply log in to your account, click "Account
+        Info," and navigate to the dropdown below &ldquo;Do you want Pickup or
+        Delivery?&rsquo; for a list of participating locations. Just note that
+        you'll need to be able to pickup your bags during their business
+        hours.</p>
     - question: What is my delivery day?
       answer_html: >-
         <p>You should have been notified of your delivery day during the signup
@@ -329,6 +347,15 @@
         newsletter.</p><p>If you&rsquo;re still unsure,&nbsp;<a
         href="/contact/">reach out</a>&nbsp;and we'll be happy to assist
         you!</p>
+    - question: Will the food stay fresh after it is delivered?
+      answer_html: >-
+        <p>You will receive an email or text notification when a driver drops
+        off your bags. We deliver our food in insulated packaging to keep
+        everything cold. We'd recommend picking up and unpacking your bags as
+        soon as you can, but as long as you can do so within a few hours (or
+        longer in cooler weather), you should be fine. We take all the packaging
+        back to sanitize and reuse, so please set out your empties on delivery
+        day for our driver to swap out.</p>
     - question: What if something in my delivery is missing or damaged?
       answer_html: >-
         <p>If you receive any disappointing items, or if anything is missing,

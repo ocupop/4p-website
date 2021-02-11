@@ -143,8 +143,8 @@ slides:
           referred you?" field)</p>
         video_desktop_path: /uploads/videos/friend-referral-link.mp4
         thumbnail_desktop_image: /uploads/videos/screenshot-2021-01-29-133840.png
-        video_mobile_path:
-        thumbnail_mobile_image:
+        video_mobile_path: /uploads/videos/friend-referral-link.mp4
+        thumbnail_mobile_image: /uploads/videos/screenshot-2021-01-29-133840.png
         show_on_how_to_shop: true
 start_shopping_page:
   title: Learn More

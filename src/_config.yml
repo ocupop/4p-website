@@ -14,10 +14,10 @@ fallback_logo: /img/post-fallback.jpg
 # Social sharing
 description: 'Local • Easy • Important Choose your bag Whether you are eating for one, or you’re feeding a family, we’ve got just the right size for you. Select your building Convenience is a big deal. That’s why whether you are at work or at home, we’ll deliver right to your building.'
 socialshare:
-  featured_image: img/4P-SP-header.png
+  featured_image: img/socialshare.jpg
   twitter:
     username: '@4PFoods'
-    image: img/4P-SP-header.png
+    image: img/socialshare.jpg
 
 # Google Analytics
 analytics_code: UA-45586201-6

@@ -14,9 +14,8 @@ meta:
     image:
 footer_image:
 _assets:
-  - image: >-
-      /uploads/04-01-20-tom-tyler-vint-hill-dress-it-up-dressing-boxes-for-salad-kit-grab--go-lunch-warehouse.jpg
-  - image: /uploads/careers/4P Foods-delivery-spring-covid.jpg
+  - image: /uploads/tom-with-food-donations-2.jpg
+  - image: /uploads/4pfoodsteamphoto-autumnolivefarmstour.jpg
   - image: /uploads/careers/4p-careers-headerimage-02.jpg
 ---
 
@@ -42,7 +41,9 @@ _assets:
     {% assign num_careers = careers | size %} 
     {% if num_careers > 0 %} 
       {% for career in careers reversed %}
+      {% if forloop.first %}
       <hr />
+      {% endif %}
       <div data-cms-editor-link="cloudcannon:collections/_careers" data-cms-editor-link-style="modal" class="row">
         <div class="col-12">
           <h4>{{ career.title }}</h4>

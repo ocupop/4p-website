@@ -9,9 +9,6 @@ featured_image: >-
 assets:
   - _type: image
     title:
-    image:
-  - _type: image
-    title:
     image: /uploads/field-of-greens-market04.png
   - _type: image
     title:

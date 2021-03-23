@@ -98,6 +98,14 @@ sass:
 
 # Cloudcannon Configuration
 _array_structures:
+  nav_links:
+    - label: Links
+      icon: link
+      value:
+        label:
+        url:
+        alt:
+        nav_links:
   meta:
     - label: Meta Data
       icon: share

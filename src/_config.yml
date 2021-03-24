@@ -25,10 +25,10 @@ analytics_code: UA-127755766-5
 # Search
 algolia:
   application_id: '6I01FP0C7C'
-  index_name: '4p_Farmers'
+  index_name: '4p_Website_Content'
   max_record_size: 20000
   files_to_exclude:
-    -
+    - _newsletters/*
 
 
 # Collections

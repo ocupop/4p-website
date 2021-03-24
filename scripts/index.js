@@ -1,9 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import HelloWorld from './HelloWorld'
+import SearchBar from './search/SearchBar'
 
 const COMPONENTS = {
-  HelloWorld
+  HelloWorld,
+  SearchBar
 }
 
 function renderComponentInElement(el) {

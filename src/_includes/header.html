@@ -65,32 +65,8 @@
               <div class="row justify-content-lg-center">
                 <a class="nav-back-button d-flex justify-content-start d-lg-none w-100" href="#">Back <span class="left-nav-arrow ml-4"></span> </a>
                 {% for link in link.links %}
-                <div class="col-12 col-lg-auto sub-menu mb-xl-0 mb-4 {% if link.sublinks.size > 7 or link.links.size == 3 and forloop.last == true %}two-col-sublinks{% endif %} sublink-{{ link.title | slugify}}">
-                  <h6 class="sub-title font-weight-bold text-white"><a href="{{ link.url }}">{{ link.label }}</a></h6>
-                  {% if link._stay_connected == true %}
-                    {% include modules/nav_stay_connected.html %}
-                  {% elsif link.sublinks.size %}
-                    <ul class="list-unstyled">
-                      {% for sublink in link.sublinks %}
-                      <li class="nav-item">
-                        <a class="menu-item" href="{{ sublink.url }}">
-                          {{ sublink.label }}
-                        </a>
-                        {% if sublink.links.size %}
-                        <ul class="list-unstyled">
-                        {% for sublink in sublink.links %}
-                        <li class="nav-item">
-                          <a class="menu-item" href="{{ sublink.url }}">
-                            {{ subsubsublink.label }}
-                          </a>
-                        </li>
-                        {% endfor %}
-                        </ul>
-                        {% endif %}
-                      </li>
-                      {% endfor %}
-                    </ul>
-                  {% endif %}
+                <div class="col-12 col-lg-auto sub-menu mb-xl-0 mb-4">
+                  <a href="{{ link.url }}">{{ link.label }}</a>
                 </div>
                 {% endfor %}
               </div>

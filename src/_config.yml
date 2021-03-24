@@ -54,6 +54,9 @@ collections:
     output: false
   press:
     output: false
+  recipes: 
+    output: true
+    permalink: /recipes/:path/
 
 defaults:
   - scope:
@@ -102,6 +105,12 @@ defaults:
       _options:
         featured_image:
           uploads_dir: 'img/uploads/press/'
+  - scope:
+      type: 'recipes'
+    values:
+      _options:
+        featured_image:
+          uploads_dir: 'img/uploads/recipes/'        
 
 # Build settings
 safe: false

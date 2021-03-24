@@ -1,4 +1,61 @@
 ---
+primary_navigation:
+  navigation:
+    - label: How it works
+      url:
+      alt:
+      links:
+        - label: How 4P Works
+          url: /how-it-works
+          alt:
+        - label: How to Shop
+          url: /how-to-shop
+          alt:
+        - label: Tutorials
+          url: /how-to-shop/#tutorials
+          alt:
+        - label: FAQ
+          url: /faq
+          alt:
+    - label: Mission
+      url: 
+      alt:
+      links:
+        - label: Our Impact
+          url: /our-impact
+          alt:
+        - label: About Us
+          url: /about
+          alt:
+        - label: Our Team
+          url: /our-team
+          alt: 
+        - label: Our Farmers
+          url: /our-farmers
+          alt:
+        - label: Our Partners
+          url: /our-partners
+          alt:         
+    - label: Community
+      url:
+      alt:
+      links:
+        - label: Impact Blog
+          url: /news
+          alt:
+        - label: Recipes
+          url: /recipes
+          alt:
+        - label: Community Events
+          url: /community-events
+          alt:
+        - label: Community Events
+          url: /community-events
+          alt:
+        - label: In The News
+          url: /in-the-news
+          alt:  
+
 footer_navigation:
   shop_links:
     - label: Shop Now

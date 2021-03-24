@@ -11,7 +11,7 @@ layout: default
           <p>{{ page.author}}</p>
         {% endif %}
         {% if page.featured_image %}
-          <img src="{{ page.featured_image }}" class="img-fluid" alt="{{ page.title }} image" />
+          <img src="{{ page.featured_image }}" class="img-fluid mt-4" alt="{{ page.title }} image" />
         {% endif %}
       </div>
     </div>
@@ -78,32 +78,45 @@ layout: default
     </div>
   </section>
 {% endif %}
+{% assign images = page.assets | where: '_type', 'image' %}
+{% assign videos = page.assets | where: '_type', 'video' %}
+{% if images.size > 0 or videos.size > 0 %}
 <section>
   <div class="container">
-    <div class="row no-gutters">
-      {% assign images = page.assets | where: '_type', 'image' %} {% assign videos = page.assets | where: '_type',
-      'video' %} {% for image in images %}
-      <div class="col-lg-4">
-        <div class="p-1">
-          <div class="bg-image aspect-4x3" style="background-image: url({{ image.image }})"></div>
+    {% if images.size > 0 %}
+      <div class="row no-gutters">
+        {% for image in images %}
+        <div class="col-lg-4">
+          <div class="p-1">
+            <div class="bg-image aspect-4x3" style="background-image: url({{ image.image }})"></div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if videos.size > 0 %}
+      {% for video in videos %}
+      <div class="row no-gutters">
+        <div class="col-12">
+          <div class="responsive-iframe aspect-16x9 mb-3">
+            <iframe src="{{ video.embed_url }}"></iframe>
+          </div>
         </div>
       </div>
       {% endfor %}
-    </div>
-    {% for video in videos %}
-    <div class="row no-gutters">
-      <div class="col-12">
-        <div class="responsive-iframe aspect-16x9 mb-3">
-          <iframe src="{{ video.embed_url }}"></iframe>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-    <div class="row my-5">
-      <div class="col-12">
-        <a href="/our-farmers" class="btn btn-primary editable">Back to Our Farmers</a>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+<div class="container">
+  <hr />
+</div>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="/our-farmers" class="btn btn-primary btn-lg editable">Find More Recipes</a>
       </div>
     </div>
   </div>
-  
 </section>

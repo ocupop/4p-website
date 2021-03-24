@@ -53,7 +53,7 @@ primary_navigation:
           url: /community-events
           alt:
         - label: In The News
-          url: /in-the-news
+          url: /press
           alt:  
 
 footer_navigation:
@@ -90,6 +90,8 @@ footer_navigation:
       link: 'https://4pfoods.com/posts/recipes/'
     - label: Community Events
       link: /community-events
+    - label: Press
+      link: /press  
     - label: Careers
       link: /careers
   support_links:

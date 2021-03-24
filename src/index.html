@@ -9,29 +9,34 @@ _assets:
   - image: /uploads/home/4p-homepage-foodaccess-01.jpg
   - image: /uploads/home/4p-homepage-foodaccess-02.jpg
   - image: /uploads/home/4p-homepage-foodaccess-03.jpg
-  - image: /uploads/home/DSC_5495.jpg
+  - image: 
   - image: /uploads/4pfoods-produce-bag-swisschard-cropped.jpg
-hero:
-  - _type: image_carousel
-    images:
-      - title: Test Image
-        image: /uploads/careers/4p-careers-headerimage-01.jpg
-      - title: test Image 2
-        image: /uploads/careers/4p-careers-headerimage-02.jpg
-      - title: Test image 3
-        image: /uploads/careers/4p-careers-headerimage-03.jpg
-  - _type: image_banner
-    images:
-      - title: Test image 1
-        image: /uploads/careers/4p-careers-headerimage-01.jpg
-      - title: Test image 2
-        image: /uploads/careers/4p-careers-headerimage-02.jpg
-      - title: Test image 3
-        image: /uploads/careers/4p-careers-headerimage-03.jpg
-  - _type: text_banner
-    text_html: >-
-      <p>We believe in a great world where Good Food is the rule not the
-      exception.</p>
+carousel:
+  - title: Food with a Story
+    link:
+      label: Meet our Farmers
+      link: /farmers
+    description_html:  
+    image: /uploads/home/DSC_5495.jpg
+  - title: Supporting Farmers and Community
+    link:
+      label: How it works
+      link: /how-it-works
+    description_html:  
+    image: /uploads/home/DSC_5495.jpg
+  - title: Delivering Good Food with a Purpose
+    link:
+      label: Our Impact
+      link: /our-impact
+    description_html:  
+    image: /uploads/home/DSC_5495.jpg
+  - title: Cook with 4P
+    link:
+      label: Our Recipes
+      link: /recipes
+    description_html:  
+    image: /uploads/home/DSC_5495.jpg  
+      
 featured_products:
   - family-veggie-box---medium
   - protein-bag
@@ -96,19 +101,46 @@ community_featured_products:
   - bloody-brilliant-bloody-mary-mix
   - caesar-salad-dressing
 ---
-
-<section class="bg-image aspect-auto text-white" style="background-image: url({{ page._assets[6].image }})">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="editable mb-4">
-          <h1>Delivering Good Food<br class="d-none d-lg-block" />with a Purpose</h1>
+<div id="carousel-home" class="carousel-feature carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    {% for item in page.carousel %}
+    <div class="carousel-item {% if forloop.first %}active{% endif %}">
+      <section class="bg-image aspect-auto text-white" style="background-image: url({{ item.image }})">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="editable mb-4">
+                <h1>{{ item.title }}</h1>
+              </div>
+              <a href="{{ item.link.link }}" class="btn btn-primary">{{ item.link.label }}</a>
+            </div>
+          </div>
         </div>
-        <a href="/our-farmers" class="editable btn btn-primary btn-lg">Meet our farmers</a>
+      </section>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="carousel-controls-wrapper">
+    <div class="container">
+      <div class="d-flex">
+        <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+          <i class="ri-arrow-left-s-line"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-home" data-slide-to="1"></li>
+          <li data-target="#carousel-home" data-slide-to="2"></li>
+        </ol>
+        <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+          <i class="ri-arrow-right-s-line"></i>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
   </div>
-</section>
+</div>
+
 
 <section id="featured-collections" class="pb-0">
   <div class="container">

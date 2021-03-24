@@ -96,18 +96,18 @@
     //Show slide number in onboarding carousel
     var totalSlides = $('#carousel-onboarding .carousel-item').length -1;
     console.log(totalSlides)
-    var currentIndex = $('.carousel-item.active').index();
+    var currentIndex = $('#carousel-onboarding .carousel-item.active').index();
 
     function checkCarouselIndex(){
       if(currentIndex == 0){
-        $('.carousel-controls').removeClass('controls-active');
+        $('#carousel-onboarding .carousel-controls').removeClass('controls-active');
       }else {
-        $('.carousel-controls').addClass('controls-active');
+        $('#carousel-onboarding .carousel-controls').addClass('controls-active');
       }
     }
 
     checkCarouselIndex();
-    $('.carousel-control-prev').addClass('d-none')
+    $('#carousel-onboarding .carousel-control-prev').addClass('d-none')
 
     $('#carousel-onboarding').bind('slid.bs.carousel', function() {
       currentIndex = $('#carousel-onboarding .carousel-item.active').index();
@@ -115,15 +115,15 @@
       checkCarouselIndex()
     $('.slide-number').html(''+currentIndex+' of '+totalSlides+'');
       if(currentIndex == totalSlides) {
-        $('.carousel-control-next').addClass('d-none')
+        $('#carousel-onboarding .carousel-control-next').addClass('d-none')
       }else {
-        $('.carousel-control-next').removeClass('d-none')
+        $('#carousel-onboarding .carousel-control-next').removeClass('d-none')
       }
       if(currentIndex == 0) {
-        $('.carousel-control-prev').addClass('d-none')
+        $('#carousel-onboarding .carousel-control-prev').addClass('d-none')
       }
       else {
-        $('.carousel-control-prev').removeClass('d-none')
+        $('#carousel-onboarding .carousel-control-prev').removeClass('d-none')
       }
     });
 

@@ -41,9 +41,7 @@
           {% assign slug = link.label | slugify %}
 
           <li class="nav-item {% if link.links %}dropdown mega-dropdown{% endif %}{% if page.url contains slug %} active{% endif %}">
-            <a
-              class="nav-link"
-              {% if link.links %}
+            <a class="nav-link" {% if link.links %}
                 id="#collapse-{{ link.label | slugify }}"
                 data-toggle="dropdown"
                 aria-haspopup="true"

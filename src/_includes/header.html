@@ -31,6 +31,14 @@
         </span>
       </button>
       <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
+        <ul class="nav d-flex align-items-center justify-content-center d-lg-none mb-5">
+          <li class="nav-item mt-3 mt-lg-0">
+            <a href="{{ site.store_url }}" class="btn btn-primary mx-2">Shop</a>
+          </li>
+          <li class="nav-item mt-3 mt-lg-0 d-block d-lg-none">
+            <a href="{{ site.store_url }}/login" class="btn btn-primary mx-2">Login</a>
+          </li>
+        </ul>
         <ul class="primary-nav-links navbar-nav ml-auto ">
           {% for link in site.data.navigation.primary_navigation.navigation %}
           {% if link.links %}
@@ -56,7 +64,6 @@
             {% if link.links %}
             <div class="dropdown-menu mega-menu v-2 z-depth-1" aria-labelledby="collapse-{{ link.label | slugify }}">
               <div class="row justify-content-lg-center">
-                <a class="nav-back-button d-flex justify-content-start d-lg-none w-100" href="#">Back <span class="left-nav-arrow ml-4"></span> </a>
                 {% for link in link.links %}
                 <div class="col-12 col-lg-auto sub-menu mb-xl-0 mb-4">
                   <a href="{{ link.url }}">{{ link.label }}</a>
@@ -68,16 +75,12 @@
           </li>
           {% endfor %}
         </ul>
-        <ul class="nav navbar-nav">
-          <cart-summary>
-            <li class="nav-item mt-3 mt-lg-0">
-              <a href="{{ site.store_url }}" class="btn btn-primary">Shop Now</a>
-            </li>
-            <li class="nav-item mt-3 mt-lg-0 d-block d-lg-none">
-              <a href="{{ site.store_url }}/login" class="btn btn-primary">Login</a>
-            </li>
-          </cart-summary>
+        <ul class="nav navbar-nav d-none d-lg-block">
+          <li class="nav-item mt-3 mt-lg-0">
+            <a href="{{ site.store_url }}" class="btn btn-primary">Shop Now</a>
+          </li>
         </ul>
+        <a href="/wholesale-programs" class="text-uppercase font-weight-bold d-block d-lg-none editable link-mobile-wholesale">Are you a Wholesaler?</a>
       </div>
     </nav>
   </div>

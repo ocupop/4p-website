@@ -5,35 +5,35 @@
   "version": "0.1.0",
   "author": "Ocupop Developer <dev@ocupop.com>",
   "dependencies": {
+    "algoliasearch": "^4.8.4",
     "bootstrap": "^4.4.1",
-    "patch-package": "^6.2.0",
-    "postinstall-postinstall": "^2.0.0"
+    "concurrently": "^5.1.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-instantsearch": "^6.8.3",
+    "react-instantsearch-dom": "^6.8.3",
+    "react-select": "^3.1.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.4.0",
-    "@cloudcannon/suite": "^2.0.0-rc7",
-    "babel-eslint": "^10.0.2",
-    "babel-loader": "^8.0.6",
-    "eslint": "^6.2.1",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-config-react": "^1.1.7",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.0",
-    "gulp": "^4.0.0",
-    "webpack": "^4.37.0",
-    "webpack-cli": "^3.3.6",
-    "webpack-dev-middleware": "^3.7.0",
-    "webpack-hot-middleware": "^2.25.0"
+    "@babel/core": "^7.12.0",
+    "@babel/plugin-transform-runtime": "^7.12.0",
+    "@babel/preset-env": "^7.12.0",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/register": "^7.12.0",
+    "@cloudcannon/suite": "2.0.2",
+    "babel-loader": "^8.1.0",
+    "gulp": "^4.0.2",
+    "patch-package": "^6.2.2",
+    "webpack": "^5.1.2",
+    "webpack-cli": "^4.2.0",
+    "webpack-stream": "^6.1.0"
   },
   "license": "MIT",
   "scripts": {
     "start": "gulp dev",
-    "scripts": "NODE_ENV=production gulp buildScripts",
+    "dev": "concurrently 'npm:watch-scripts' 'npm:start' ",
+    "watch-scripts": "gulp scripts",
     "postinstall": "gulp dev:install"
   }
 }

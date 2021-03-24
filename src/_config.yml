@@ -22,6 +22,15 @@ socialshare:
 # Google Analytics
 analytics_code: UA-127755766-5
 
+# Search
+algolia:
+  application_id: '6I01FP0C7C'
+  index_name: '4p_Farmers'
+  max_record_size: 20000
+  files_to_exclude:
+    -
+
+
 # Collections
 collections:
   team_members:
@@ -43,7 +52,7 @@ collections:
     permalink: /posts/:title/
   featured_products:
     output: false
-  press: 
+  press:
     output: false
 
 defaults:
@@ -92,7 +101,7 @@ defaults:
     values:
       _options:
         featured_image:
-          uploads_dir: 'img/uploads/press/'                
+          uploads_dir: 'img/uploads/press/'
 
 # Build settings
 safe: false
@@ -165,7 +174,7 @@ _array_structures:
       icon: insert_photo
       value:
         title:
-        image:    
+        image:
   hero:
     - label: Image Carousel
       icon: insert_photo
@@ -188,7 +197,7 @@ _array_structures:
       value:
         title:
         description_html:
-        embed_url:      
+        embed_url:
 
 _comments:
   product_url: 'Ex: /product/apple-fritter-baking-mix or /product/1362'
@@ -217,7 +226,7 @@ _options:
     uploads_dir: "/uploads/videos/:title"
   thumbnail_desktop_image:
     uploads_dir: "/uploads/videos/:title"
-  thumbnail_mobile_image:  
+  thumbnail_mobile_image:
     uploads_dir: "/uploads/videos/:title"
 
   _block:
@@ -234,6 +243,6 @@ _options:
     left: true
     center: true
     image: true
-    embed: true    
+    embed: true
 
 placeholder_image: https://via.placeholder.com/1200

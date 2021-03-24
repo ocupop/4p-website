@@ -15,6 +15,3 @@ yarn install
 3. Navigate to [http://localhost:4000/](http://localhost:4000/)
 
 
-## Algolia ##
-`ALGOLIA_API_KEY=36476714571f53ff9df6c30d4d2ceea4 bundle exec jekyll algolia`
-

@@ -89,9 +89,12 @@
       padding-top: 4rem;
       padding-bottom: 6rem;
     }
+    h1 {
+      text-transform: none;
+    }
     .carousel-controls-wrapper {
       position: relative;
-      margin-top: -50px;
+      margin-top: -52px;
       left: 0;
       width: 100%;
       background-color: rgba($black, 0.5);
@@ -104,26 +107,44 @@
         top: auto;
       }
       .carousel-indicators {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
 
-        margin: 0;
+        margin: 0 20px;
         align-items: center;
         li {
-          width: 10px;
-          height: 10px;
+          width: 8px;
+          height: 8px;
           border-radius: 50%;
-          margin-left: 10px;
-          margin-right: 10px;
+          margin-left: 15px;
+          margin-right: 15px;
+          background-color: transparent;
+          border: 1px solid $white;
+          &.active {
+            background-color: $white;
+          }
         }
       }
       .carousel-control-prev,
       .carousel-control-next {
-        font-size: 2rem;
+        font-size: 1.8rem;
         position: relative;
       }
       .carousel-control-prev {
 
+      }
+    }
+     .bg-image {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: rgba($black, 0.35);
+        z-index: 0;
       }
     }
   }

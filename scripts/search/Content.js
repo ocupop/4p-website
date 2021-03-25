@@ -2,7 +2,6 @@ import React from "react"
 import { Hits, Pagination } from "react-instantsearch-dom"
 import { connectStateResults } from "react-instantsearch/connectors"
 import Hit from "./Hit.js"
-import Stats from './Stats'
 
 export default connectStateResults(
   ({ searchState, searchResults }) => {

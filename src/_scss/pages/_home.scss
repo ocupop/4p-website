@@ -96,16 +96,25 @@
   .lettuce {
     position: absolute;
     left: -8%;
-    top: 50%;
+    top: 0;
     transform: translateY(-50%);
-    width: 35%;
-    opacity: 0.3;
+    width: 50%;
+    opacity: 0.2;
+    @include media-breakpoint-up(lg) {
+      width: 35%;
+      opacity: 0.3;
+      top: 50%;
+    }
   }
   .leaf {
     position: absolute;
     right: -10%;
     bottom: 0;
-    width: 30%;
+    width: 50%;
     opacity: 0.3;
+    @include media-breakpoint-up(lg) {
+      width: 30%;
+    }
   }
+
 }

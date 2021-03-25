@@ -8,7 +8,7 @@ layout: default
       <div class="col-12 text-center">
         <h1>{{ page.title }}</h1>
         {% if page.author %}
-          <p>{{ page.author}}</p>
+          <h3><em>{{ page.author}}</em></h3>
         {% endif %}
         {% if page.featured_image %}
           <img src="{{ page.featured_image }}" class="img-fluid mt-4" alt="{{ page.title }} image" />
@@ -18,44 +18,46 @@ layout: default
   </div>
 </section>
 <section class="py-0">
+  {% if page.description_html %}
   <div class="container">
     <div class="row">
       <div class="col-12">
-        {{ page.content }}
+        {{ page.description_html }}
       </div>
     </div>
-    {% assign tags_size = page.tags | size %}
-    {% assign categories_size = page.categories | size %} 
-    {% if categories_size > 0 or tags_size > 0 %}
-    <div class="row">
-      {% if categories_size > 0 %}
-      <div class="col-12 col-lg-6">
-        <h4>Recipe Categories</h4>
-        <p>
-          {% for category in page.categories %} {{category}}{% unless forloop.last %},{% endunless %} {% endfor %}
-        </p>
+    {% comment %}
+      {% assign tags_size = page.tags | size %}
+      {% assign categories_size = page.categories | size %} 
+      {% if categories_size > 0 or tags_size > 0 %}
+      <div class="row">
+        {% if categories_size > 0 %}
+        <div class="col-12 col-lg-6">
+          <h4>Recipe Categories</h4>
+          <p>
+            {% for category in page.categories %} {{category}}{% unless forloop.last %},{% endunless %} {% endfor %}
+          </p>
+        </div>
+        {% endif %}
+        {% if tags_size > 0 %}
+        <div class="col-12 col-lg-6">
+          <h4>Recipe tags</h4>
+          <p>
+            {% for tag in page.tags %} {{tag}}{% unless forloop.last %},{% endunless %} {% endfor %}
+          </p>
+        </div>
+        {% endif %}
       </div>
       {% endif %}
-      {% if tags_size > 0 %}
-      <div class="col-12 col-lg-6">
-        <h4>Recipe tags</h4>
-        <p>
-          {% for tag in page.tags %} {{tag}}{% unless forloop.last %},{% endunless %} {% endfor %}
-        </p>
-      </div>
-      {% endif %}
-    </div>
-    {% endif %}
+    {% endcomment %}
   </div>
+  {% endif %}
 </section>
-<div class="container">
-  <hr />
-</div>
 {% if page.ingredients_html %}
-  <section>
+  <section class="pt-3 pb-0">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6">
+          <hr class="mb-5" />
           <h2>Ingredients</h2>
           {{ page.ingredients_html }}
         </div>
@@ -64,13 +66,11 @@ layout: default
   </section>
 {% endif %}
 {% if page.directions_html %}
-  <div class="container">
-    <hr />
-  </div>
-  <section>
+  <section class="pt-0">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6">
+          <hr class="mb-5"/>
           <h2>Directions</h2>
           {{ page.directions_html }}
         </div>

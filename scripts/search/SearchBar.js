@@ -49,7 +49,7 @@ const SearchBar = () => {
         snippetEllipsisText={" ..."}
       // enablePersonalization={true}
       />
-      <section className="pt-0">
+      <section className="pt-5 pb-0">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-12 col-lg-2">

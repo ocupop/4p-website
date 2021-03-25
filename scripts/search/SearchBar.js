@@ -3,13 +3,14 @@ import React from 'react'
 import algoliasearch from 'algoliasearch/lite'
 import {
   InstantSearch,
-  // Pagination,
+  Pagination,
   Configure,
   // Panel,
   // InfiniteHits,
   connectSearchBox
 } from "react-instantsearch-dom"
 
+import Stats from './Stats'
 import Content from "./Content"
 import Facet from "./Facet"
 // import { autocomplete } from './searchHelpers'

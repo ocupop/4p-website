@@ -11,11 +11,7 @@
       <div class="row">
         <div class="col-12">
           <h4>{{ featured_recipe.title }}</h4>
-          {% if featured_recipe.description_html %}
-            <p>{{ featured_recipe.description_html }}</p>
-          {% else %}
-            <p>{{ featured_recipe.content | strip_html | truncatewords: 75 }}</p>
-          {% endif %}
+          <p>{{ featured_recipe.content | strip_html | truncatewords: 75 }}</p>
         </div>
       </div>
       <div class="row">

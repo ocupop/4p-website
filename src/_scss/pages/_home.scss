@@ -95,16 +95,19 @@
   position: relative;
   .lettuce {
     position: absolute;
-    left: 0;
+    left: -5%;
     top: 50%;
     transform: translateY(-50%);
     width: 24%;
+    
   }
   .leaf {
     position: absolute;
-    right: 0;
+    right: -5%;
     top: 50%;
     transform: translateY(-50%);
     width: 24%;
+    opacity: 0.3;
+
   }
 }

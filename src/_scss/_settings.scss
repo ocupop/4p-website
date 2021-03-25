@@ -21,6 +21,7 @@ $orange: #fd7e14 !default;
 $yellow: #f5c938;
 $green: #5fb35f;
 $green-dark: #255b35;
+$green-darker: #265c35;
 $teal: #14585a;
 $cyan: #71c7c7;
 $tan: #efebe5;
@@ -57,7 +58,8 @@ $theme-colors: (
   'tan-dark': $tan-dark,
   'teal': $teal,
   'green': $green,
-  'green-dark': $green-dark
+  'green-dark': $green-dark,
+  'green-darker': $green-darker
 );
 
 $body-bg: $white;

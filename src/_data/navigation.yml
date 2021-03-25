@@ -18,7 +18,7 @@ primary_navigation:
           url: /faq
           alt:
     - label: Mission
-      url: 
+      url:
       alt:
       links:
         - label: Our Impact
@@ -29,13 +29,13 @@ primary_navigation:
           alt:
         - label: Our Team
           url: /our-team
-          alt: 
+          alt:
         - label: Our Farmers
           url: /our-farmers
           alt:
         - label: Our Partners
           url: /our-partners
-          alt:         
+          alt:
     - label: Community
       url:
       alt:
@@ -49,13 +49,9 @@ primary_navigation:
         - label: Community Events
           url: /community-events
           alt:
-        - label: Community Events
-          url: /community-events
-          alt:
         - label: In The News
           url: /press
-          alt:  
-
+          alt:
 footer_navigation:
   shop_links:
     - label: Shop Now
@@ -91,7 +87,7 @@ footer_navigation:
     - label: Community Events
       link: /community-events
     - label: Press
-      link: /press  
+      link: /press
     - label: Careers
       link: /careers
   support_links:

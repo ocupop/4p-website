@@ -1,9 +1,20 @@
 .card-hits {
   .ais-Hits-list {
     @extend .row;
-    @extend .row-cols-1;
-    @extend .row-cols-md-2;
+    @extend .row-cols-2;
     list-style-type: none;
     padding-left: 0;
+    .ais-Hits-item {
+      margin-bottom: 20px;
+      @extend .col;
+      flex-basis: auto;
+      @include media-breakpoint-up(md) {
+        flex-basis: 50%;
+        .card {
+          height: 100%;
+          color: $dark;
+        }
+      }
+    }
   }
 }

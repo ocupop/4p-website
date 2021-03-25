@@ -6,21 +6,21 @@ import { formatDate } from '../helpers'
 const Hit = ({ hit }) => {
   // console.log(hit)
   return (
-    <div className="col-mb-4">
-      <a href={hit.url} className="card bg-transparent">
-        <div
-          className="bg-image aspect-4x3"
-          style={{ backgroundImage: `url(${hit.featured_image})`}}
-        ></div>
-        <div className="card-body">
-          {/* <h4>{{ farmer.title }}</h4> */}
-          <Highlight attribute="title" hit={hit} tagName="em" />
-        </div>
-        <div className="card-footer bg-transparent">
-          <button className="btn btn-secondary text-white">Read More</button>
-        </div>
-      </a>
-    </div>
+    
+    <a href={hit.url} className="card bg-transparent">
+      <div
+        className="bg-image aspect-4x3"
+        style={{ backgroundImage: `url(${hit.featured_image})`}}
+      ></div>
+      <div className="card-body">
+        {/* <h4>{{ farmer.title }}</h4> */}
+        <Highlight attribute="title" hit={hit} tagName="em" />
+      </div>
+      <div className="card-footer bg-transparent">
+        <button className="btn btn-secondary text-white">Read More</button>
+      </div>
+    </a>
+  
     
     // <div className="row">
     //   <div className="col-2">

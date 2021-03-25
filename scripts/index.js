@@ -19,3 +19,5 @@ function renderComponentInElement(el) {
 document
   .querySelectorAll('.__react-component')
   .forEach(renderComponentInElement)
+
+console.log('hello')

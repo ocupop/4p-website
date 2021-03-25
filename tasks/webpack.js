@@ -1,7 +1,7 @@
 import path from 'path'
 
 let webpackConfig = {
-  mode: "production",
+  mode: "development",
   watch: true,
   entry: './scripts/index.js',
   output: {

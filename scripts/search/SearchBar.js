@@ -52,7 +52,7 @@ const SearchBar = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h1 class="h3">Search 4pFoods:</h1>
+              <h1 className="h3">Search 4pFoods:</h1>
               <div id="searchbox">
                 {/* Uncomment the following widget to add a search bar */}
                 <CustomSearchBox

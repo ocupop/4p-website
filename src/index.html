@@ -95,11 +95,14 @@ testimonials:
       need with fresh foods. You guys are truly outstanding.
     name: '-Kristin'
     source:
-community_featured_products:
-  - grass-fed-ribeye-steak---beef-bone-in
-  - semolina-radiatori-pasta
-  - bloody-brilliant-bloody-mary-mix
-  - caesar-salad-dressing
+featured_recipes:
+  - marinated-mushrooms
+  - marinated-mushrooms
+  - marinated-mushrooms
+  - marinated-mushrooms
+  - marinated-mushrooms
+  - marinated-mushrooms
+
 ---
 
 <div id="carousel-home" class="carousel-feature carousel slide" data-ride="carousel">
@@ -335,4 +338,17 @@ community_featured_products:
     </div>
   </div>
 </section>
-{% include products/featured-products-picks.html %}
+<section class="bg-tan">
+  <div class="container">
+    <div class="row align-items-center mb-5">
+      <div class="col-12 col-lg-8">
+        <h3>Featured Recipes</h3>
+      </div>
+      <div class="col-12 col-lg-4 text-lg-right">
+        <a href="/recipes" class="btn btn-secondary text-white btn-lg editable">See All Recipes</a>
+      </div>
+    </div>
+    {% include recipes/recipes-list-featured.html %}
+  </div>
+</section>
+

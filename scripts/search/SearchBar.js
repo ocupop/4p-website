@@ -67,7 +67,7 @@ const SearchBar = () => {
       <section className="pt-3">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-3 d-none">
+            <div className="col-12 col-md-3">
               <div id="filters">
                 {/* Uncomment the following widget to add categories list */}
                 <h6 className="border-bottom pb-2">Filters</h6>
@@ -75,15 +75,23 @@ const SearchBar = () => {
               </div>
             </div>
             <div className="col-12 col-lg-10">
+              <div id="stats">
+                {/* Uncomment the following widget to add search stats */}
+                <Stats />
+              </div>
               <div id="hits">
                 {/* Uncomment the following widget to add hits list */}
                 <Content />
               </div>
+              <div id="pagination">
+                {/* Uncomment the following widget to add pagination */}
+                <Pagination />
+              </div>
             </div>
           </div>
         </div>
-      </section>
-    </InstantSearch>
+      </section >
+    </InstantSearch >
   )
 }
 

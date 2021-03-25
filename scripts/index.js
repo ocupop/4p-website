@@ -20,4 +20,4 @@ document
   .querySelectorAll('.__react-component')
   .forEach(renderComponentInElement)
 
-console.log('hello')
+console.log('hellos')

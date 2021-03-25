@@ -1,0 +1,9 @@
+.card-hits {
+  .ais-Hits-list {
+    @extend .row;
+    @extend .row-cols-1;
+    @extend .row-cols-md-2;
+    list-style-type: none;
+    padding-left: 0;
+  }
+}

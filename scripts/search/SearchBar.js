@@ -41,7 +41,7 @@ const SearchBar = () => {
   return (
     <InstantSearch
       searchClient={searchClient}
-      indexName='refed.com'
+      indexName='4p_Website_Content'
     >
       <Configure
         // hitsPerPage={20}
@@ -68,14 +68,14 @@ const SearchBar = () => {
       <section className="pt-3">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-3">
+            <div className="col-12">
               <div id="filters">
                 {/* Uncomment the following widget to add categories list */}
                 <h6 className="border-bottom pb-2">Filters</h6>
                 <Facet attribute="categories" />
               </div>
             </div>
-            <div className="col-12 col-lg-10">
+            <div className="col-12">
               <div id="stats">
                 {/* Uncomment the following widget to add search stats */}
                 <Stats />

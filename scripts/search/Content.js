@@ -12,7 +12,7 @@ export default connectStateResults(
     // ) : //<div>No query</div>
     //   null
     return searchResults && searchResults.nbHits !== 0 ? (
-      <Hits hitComponent={Hit} />
+      <Hits hitComponent={Hit} className="card-hits"/>
     ) : (
       <div className="alert alert-warning">
         No results found for <strong>{searchState.query}</strong>.

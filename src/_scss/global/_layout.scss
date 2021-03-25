@@ -11,6 +11,19 @@
     .container {
       max-width: 100%;
     }
+    .navbar-collapse {
+      background-color: $tan-mid;
+    }
+    .dropdown-menu {
+      background-color: $tan-mid;
+      border: 0;
+
+      a {
+        color: $dark;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+      }
+    }
   }
   @include media-breakpoint-up(lg) {
     .navbar-nav {

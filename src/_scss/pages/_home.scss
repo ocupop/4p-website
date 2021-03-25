@@ -88,3 +88,23 @@
     padding: 40px;
   }
 }
+
+#impact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  .lettuce {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24%;
+  }
+  .leaf {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24%;
+  }
+}

@@ -1,17 +1,26 @@
 ---
 layout: page
-title: 4P Recipes
+title: Recipes
+meta:
+featured_recipe: marinated-mushrooms
 ---
 
-<section>
+<section class="pb-0">
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 col-lg-10 mx-lg-auto text-center">
         <div class="editable">
           <h1>Recipes</h1>
-          <div class="__react-component" data-component="SearchBar"></div>
+          <p>Seeking cooking inspiration for the fresh ingredients in your 4P delivery?</p>
         </div>
+        <div class="__react-component" data-component="SearchBar"></div>
       </div>
     </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    {% include recipes/featured-recipe.html %}
+
   </div>
 </section>

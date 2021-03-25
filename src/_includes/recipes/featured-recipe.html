@@ -1,0 +1,28 @@
+{% assign featured = page.featured_recipe %}
+
+{% assign featured_recipe = site.recipes | where: 'slug', featured | first %}
+<div 
+  data-cms-editor-link="cloudcannon:#featured_recipe"
+  data-cms-editor-link-style="modal"
+  class="row cms-editor-link">
+  <div class="col-12">
+    <div class="bg-image aspect-16x9" style="background-image: url({{ featured_recipe.featured_image }})"></div>
+    <div class="bg-tan p-4">
+      <div class="row">
+        <div class="col-12">
+          <h4>{{ featured_recipe.title }}</h4>
+          {% if featured_recipe.description_html %}
+            <p>{{ featured_recipe.description_html }}</p>
+          {% else %}
+            <p>{{ featured_recipe.content | strip_html | truncatewords: 75 }}</p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <a href="{{ featured_recipe.url }}" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

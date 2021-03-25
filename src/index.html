@@ -17,7 +17,7 @@ carousel:
       label: Meet our Farmers
       link: /farmers
     description_html:
-    image: /uploads/home/DSC_5495.jpg
+    image: /uploads/home/DSC_4972.jpg
   - title: Supporting Farmers and Community
     link:
       label: How it works
@@ -29,13 +29,13 @@ carousel:
       label: Our Impact
       link: /our-impact
     description_html:
-    image: /uploads/home/DSC_5495.jpg
+    image: /uploads/home/tomatoes.jpg
   - title: Cook with 4P
     link:
       label: Our Recipes
       link: /recipes
     description_html:
-    image: /uploads/home/DSC_5495.jpg
+    image: /uploads/home/Cheese-Platter-0004.jpg
 
 featured_products:
   - family-veggie-box---medium
@@ -95,11 +95,14 @@ testimonials:
       need with fresh foods. You guys are truly outstanding.
     name: '-Kristin'
     source:
-community_featured_products:
-  - grass-fed-ribeye-steak---beef-bone-in
-  - semolina-radiatori-pasta
-  - bloody-brilliant-bloody-mary-mix
-  - caesar-salad-dressing
+featured_recipes:
+  - marinated-mushrooms
+  - marinated-mushrooms
+  - marinated-mushrooms
+  - marinated-mushrooms
+  - marinated-mushrooms
+  - marinated-mushrooms
+
 ---
 
 <div id="carousel-home" class="carousel-feature carousel slide" data-ride="carousel">
@@ -172,13 +175,16 @@ community_featured_products:
 <section id="how-it-works">
   <div class="container">
     <div class="row">
-      <div class="col-12 text-center">
+      <div class="col-12 col-lg-8">
         <h2 class="editable">
           How it works
         </h2>
         <h3 class="editable">
-          <em>Building Good Food Communities</em>
+          <em>Building Equitable Food Communities</em>
         </h3>
+      </div>
+      <div class="col-12 col-lg-4 text-lg-right">
+        <a href="/how-it-works" class="btn btn-secondary text-white editable">Learn More</a>
       </div>
     </div>
     <div class="row justify-content-between text-center mt-lg-5">
@@ -186,10 +192,10 @@ community_featured_products:
         <div class="m-3 arrow arrow-right-green">
           <img src="/img/icons/4p-icons-ourimpact-01.png" alt="Farm Icon" class="img-fluid mx-4 w-50 mb-3" />
           <h4 class="editable">
-            <em>Farmers grow &amp; harvest</em>
+            <em>Farmers grow and harvest sustainable, healthy food</em>
           </h4>
           <div class="editable">
-            <p>We work with more than 200+ sustainable family farmers in the Mid-Atlantic for the best quality and variety of fresh food. The more we grow, the more farmers thrive and the more we give back through our food equity initiatives.</p>
+            <p>We work with more than 200 farmers for the best quality and variety. And the more we grow, the more we give.</p>
           </div>
         </div>
       </div>
@@ -197,10 +203,10 @@ community_featured_products:
         <div class="m-3 arrow arrow-right-green">
           <img src="/img/icons/4p-icons-howitworks-02.png" alt="Food Icon" class="img-fluid mx-4 w-50 mb-3" />
           <h4 class="editable">
-            <font face="Spectral, serif"><span style="font-weight: 400; text-transform: capitalize;"><i>Choose Your Bag &amp; Customize What's Inside</i></span></font>
+            <em>Stroll through our online shop and customize your cart</em>
           </h4>
           <div class="editable">
-            <p>Choose your 4P Bag, customize what's inside, and add on extra items to fill your bags. Set frequency for a one-time or recurring order to get what you need, when you need it.</p>
+            <p>Produce, dairy, or meat? Feeding a family of 6 or cooking for one? We have the food selection for you to make everyone happy.</p>
           </div>
         </div>
       </div>
@@ -208,17 +214,17 @@ community_featured_products:
         <div class="m-3">
           <img src="/img/icons/4p-icons-howitworks-03.png" alt="Delivery Icon" class="img-fluid mx-4 w-50 mb-3" />
           <h4 class="editable">
-            <em>We Pack &amp; deliver to you</em>
+            <em>Determine where you’d like your food dropped off</em>
           </h4>
           <div class="editable">
-            <p>We make it easy to keep healthy food on the table! Save yourself a trip to the store and set up delivery right to your door. Or set your delivery to a 4P Community Pickup Site to reduce your carbon footprint and save money.</p>
+            <p>Save yourself the hassle of a trip to the store and set up delivery right to your door. Or pick one of our community delivery sites to save yourself the delivery fee.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-{% include home/how-tabs.html %}
+<!-- {% include home/how-tabs.html %} -->
 <section class="bg-green-dark bg-image aspect-none" style="background-image: url(/img/bg-illustrations/4p-homepage-button-02.jpg)">
   <div class="container">
     <div class="row">
@@ -232,143 +238,97 @@ community_featured_products:
 <div class="row no-gutters">
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-4x3 cms-editor-link" style="background-image: url('{{ page._assets[3].image }}')" data-cms-editor-link="cloudcannon:#_assets[3].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9 cms-editor-link" style="background-image: url('{{ page._assets[3].image }}')" data-cms-editor-link="cloudcannon:#_assets[3].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-4x3 cms-editor-link" style="background-image: url('{{ page._assets[4].image }}')" data-cms-editor-link="cloudcannon:#_assets[4].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9 cms-editor-link" style="background-image: url('{{ page._assets[4].image }}')" data-cms-editor-link="cloudcannon:#_assets[4].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
   <div class="col-4">
     <div class="p-1">
-      <div class="bg-image aspect-4x3 cms-editor-link" style="background-image: url('{{ page._assets[5].image }}')" data-cms-editor-link="cloudcannon:#_assets[5].image" data-cms-editor-link-style="modal"></div>
+      <div class="bg-image aspect-16x9 cms-editor-link" style="background-image: url('{{ page._assets[5].image }}')" data-cms-editor-link="cloudcannon:#_assets[5].image" data-cms-editor-link-style="modal"></div>
     </div>
   </div>
 </div>
-<section id="FoodAccessIntro" class="bg-gray text-white">
+<section id="impact" class="bg-gray text-white">
+  <img class="lettuce" src="/img/bg-illustrations/4p-background-lettuce-cropped.png" alt="">
   <div class="container">
     <div class="row mb-5">
-      <div class="col-12 col-lg-11 mx-lg-auto text-center">
-        <h2 class="editable">
-          Food Access Programs
+      <div class="col-12 col-lg-3">
+        <h2 class="editable text-capitalize">
+          Our Impact
         </h2>
-        <p class="lead editable">
-          <em>4P works to build a better food system that enables all people, regardless of income or ZIP code, to have access to good, healthy food.</em>
+      </div>
+      <div class="col-12 col-lg-9">
+        <p class="lead editable mb-3">
+          <em>Our mission is to build a food system in which farmers producing Good Food can thrive, while also ensuring that all people—regardless of income, race, or zip code—have equitable access to that food.</em>
         </p>
-        <div class="editable">
-          <p>Food Access (or lack thereof) is a multi-pronged problem touching on the areas of geography, financial, and personal. 4P Foods, together with our partners, helps to deliver food along with solutions that mirror those challenges.</p>
+        <div class="editable mb-3">
+          <p>From initiatives rooted in improving food access and education, to partnerships with local heath networks, to supporting our many farmers and food producers, we positively impact the lives of others each and every day.</p>
         </div>
-      </div>
+        <a href="/our-impact" class="btn btn-primary mt-4 editable">Find out more</a>
+      </div>  
     </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="threesome">
-          <div class="card bg-transparent">
-            <div class="card-content align-items-center">
-              <div class="card-header p-0">
-                <div class="content">
-                  <img src="/img/icons/homepage-foodaccess-geographic.png" class="img-fluid editable" alt="Food Access Geographic icon" />
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="content text-center">
-                  <h4 class="editable text-uppercase font-weight-bold">
-                    Geographic
-                  </h4>
-                  <div class="editable">
-                    <p>Geographic access relates to proximity to Good Food sources. For example, is there a grocery store within a reasonable distance?</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <img class="leaf" src="/img/bg-illustrations/4p-background-lettuce-cropped.png" alt="">
+  </div>
+</section>
+<section class="bg-tan">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+
+      <div class="col-lg-5">
+        <div class="row align-items-center">
+          <div class="col-6 col-lg-4">
+            <img src="/img/icons/4p-icons-howitworks-01.png" class="img-fluid" alt="Farmer icon">
           </div>
-          <div class="card bg-transparent">
-            <div class="card-content align-items-center">
-              <div class="card-header p-0">
-                <div class="content">
-                  <img src="/img/icons/homepage-foodaccess-financial.png" class="img-fluid editable" alt="Food Access Financial icon" />
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="content text-center">
-                  <h4 class="editable text-uppercase font-weight-bold">
-                    Financial
-                  </h4>
-                  <div class="editable">
-                    <p>Financial access means being able to afford Good Food. Even if there is a nearby grocery store, healthy, fresh food is often a luxury</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card bg-transparent">
-            <div class="card-content align-items-center">
-              <div class="card-header p-0">
-                <div class="content">
-                  <img src="/img/icons/homepage-foodaccess-personal.png" class="img-fluid editable" alt="Food Access personal icon" />
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="content text-center">
-                  <h4 class="editable text-uppercase font-weight-bold">
-                    Personal
-                  </h4>
-                  <div class="editable">
-                    <p>The personal access challenge is about lifestyle limitations. For example, someone working multiple jobs may not have the time, tools, or knowledge to buy and prepare healthy food.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="col-12 col-lg-8">
+            <p class="editable mb-0"><strong>600+ independent, family farmers</strong> supported by 4P Foods throughout the region.</p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-12 text-center">
-        <a href="/food-access-programs" class="btn btn-primary editable">Find Out More</a>
+      <div class="col-lg-5">
+        <div class="row align-items-center">
+          <div class="col-6 col-lg-4">
+            <img src="/img/icons/4p-icons-ourimpact-02.png" class="img-fluid" alt="Food icon">
+          </div>
+          <div class="col-12 col-lg-8">
+            <p class="editable mb-0"><strong>Over 7,500 lbs of Good Food</strong> delivered into underserved communities across DC, MD and VA.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<section class="bg-lettuce">
+<section>
   <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6 mx-lg-auto text-center">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-8">
         <h2 class="editable">
           Enrich Yourself
         </h2>
         <h3 class="editable">
-          <em><em>Stories, Updates, And Home-Grown Hype</em></em>
+          <em><em>News, Recipes, Tips, and Home-grown Hype</em></em>
         </h3>
         <div class="editable">
-          <div>
-            <div>
-              <div>
-                <p>Stay up-to-date on what&rsquo;s new with 4P and our partners</p>
-              </div>
-            </div>
-          </div>
+          <p>4P Foods sources farm-fresh food from farms in the Washington DC local foodshed and delivers them to your office or apartment building once each week.</p>
         </div>
+      </div>
+      <div class="col-lg-4 text-lg-right">
+        <a href="/news" class="btn btn-primary editable">Explore 4P News</a>
       </div>
     </div>
   </div>
 </section>
-<!-- <section>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <h3 class="editable">Featured Weekly Harvest</h3>
-      </div>
-      <div class="col-lg-6 text-lg-right">
-        <a href="/news#newsletters" class="btn btn-primary">Explore Newsletters</a>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3>Featured 4p News</h3>
     </div>
-    {% include news/featured-newsletter-list.html %}
-
- -->
+  </div>
+</div>
 {% include news/featured-news.html %}
-{% include home/home-bring-us.html %}
 <div data-cms-editor-link="cloudcannon:#_assets[7].image" data-cms-editor-link-style="modal" class="bg-image aspect-4x1 cms-editor-link" style="background-image: url({{ page._assets[7].image }})">
 </div>
 <section id="tryUsToday">
@@ -380,4 +340,17 @@ community_featured_products:
     </div>
   </div>
 </section>
-{% include products/featured-products-picks.html %}
+<section class="bg-tan">
+  <div class="container">
+    <div class="row align-items-center mb-5">
+      <div class="col-12 col-lg-8">
+        <h3>Featured Recipes</h3>
+      </div>
+      <div class="col-12 col-lg-4 text-lg-right">
+        <a href="/recipes" class="btn btn-secondary text-white btn-lg editable">See All Recipes</a>
+      </div>
+    </div>
+    {% include recipes/recipes-list-featured.html %}
+  </div>
+</section>
+

@@ -13,8 +13,10 @@ const Hit = ({ hit }) => {
         style={{ backgroundImage: `url(${hit.featured_image})`}}
       ></div>
       <div className="card-body">
-        {/* <h4>{{ farmer.title }}</h4> */}
-        <Highlight attribute="title" hit={hit} tagName="em" />
+        <h4><Highlight attribute="title" hit={hit} tagName="strong" /></h4>
+        <div>
+          <Snippet attribute="content" hit={hit} tagName="strong" />
+        </div>
       </div>
       <div className="card-footer bg-transparent">
         <button className="btn btn-secondary text-white">Read More</button>

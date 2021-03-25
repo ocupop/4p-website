@@ -49,11 +49,13 @@ const SearchBar = () => {
         snippetEllipsisText={" ..."}
       // enablePersonalization={true}
       />
-      <div className="bg-light p-3">
+      <section className="pt-0">
         <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <h1 className="h3">Search 4pFoods:</h1>
+          <div className="row align-items-center">
+            <div className="col-12 col-lg-2">
+              <p>Search 4pFoods:</p>
+            </div>
+            <div className="col-12 col-lg-10">
               <div id="searchbox">
                 {/* Uncomment the following widget to add a search bar */}
                 <CustomSearchBox
@@ -61,10 +63,12 @@ const SearchBar = () => {
                   searchAsYouType={true}
                 />
               </div>
+
             </div>
           </div>
+          <hr/>
         </div>
-      </div>
+      </section>
       <section className="pt-3">
         <div className="container">
           <div className="row">

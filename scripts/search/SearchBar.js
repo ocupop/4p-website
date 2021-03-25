@@ -75,9 +75,17 @@ const SearchBar = () => {
               </div>
             </div>
             <div className="col-12 col-lg-10">
+              <div id="stats">
+                {/* Uncomment the following widget to add search stats */}
+                <Stats />
+              </div>
               <div id="hits">
                 {/* Uncomment the following widget to add hits list */}
                 <Content />
+              </div>
+              <div id="pagination">
+                {/* Uncomment the following widget to add pagination */}
+                <Pagination />
               </div>
             </div>
           </div>

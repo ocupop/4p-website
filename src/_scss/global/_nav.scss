@@ -99,6 +99,7 @@
 }
 
 #primarynav {
+  position: relative;
   flex-direction: row;
   @include media-breakpoint-down(md) {
     padding-bottom: 20px;
@@ -107,10 +108,13 @@
     top: 58px;
     left: 0;
     padding: 15px;
-    width: 90%;
-    height: 100%;
+    // padding-bottom: 58px;
+    width: 100vw;
+    max-width: 767px;
+    height: calc(100vh - 58px);
     transform: translateX(-100%);
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+    overflow-y: scroll;
     &.collapsing {
       transition: transform 0.3s ease-out;
       transform: translateX(-100%);
@@ -191,7 +195,6 @@
         left: -50vw;
       }
 
-
       > li.nav-item .menu-item,
       .menu-item {
         color: $dark;
@@ -222,37 +225,17 @@
 
 .link-mobile-wholesale {
   @include media-breakpoint-down(lg) {
-    position: absolute;
-    bottom: 58px;
-    left: 0;
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
     width: 100%;
+    margin-top: 3rem;
     background-color: $tan-dark;
     color: $dark;
     padding: 20px 15px;
+    z-index: 9999;
   }
 }
-
-// #mobilenav {
-//   text-align: center;
-//   text-transform: uppercase;
-//   font-size: 1.25rem;
-//   line-height: 1.75rem;
-//   @include media-breakpoint-up(md) {
-//     display: none;
-//   }
-//   .nav-link {
-//     color: $white;
-//     @include transition();
-//     &:hover {
-//       background-color: darken($secondary, 15%);
-//     }
-//   }
-//   .btn {
-//     font-size: 1.5rem;
-//     font-weight: 700;
-//     line-height: 2.5rem;
-//   }
-// }
 
 #usernav {
   align-items: center;

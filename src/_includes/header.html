@@ -6,7 +6,7 @@
         <div id="header-notification">
           {% if site.data.notifications.header_notification.link %}
             <p class="mb-0 font-weight-bold"><a href="{{ site.data.notifications.header_notification.link }}">{{ site.data.notifications.header_notification.notification_text }}</a></p>
-          {% else %}  
+          {% else %}
             <p class="mb-0 font-weight-bold">{{ site.data.notifications.header_notification.notification_text }}</p>
           {% endif %}
         </div>
@@ -74,13 +74,16 @@
             {% endif %}
           </li>
           {% endfor %}
+          <li class="nav-item">
+            <a href="/wholesale-programs"
+              class="text-uppercase font-weight-bold d-block d-lg-none editable link-mobile-wholesale">Are you a Wholesaler?</a>
+          </li>
         </ul>
         <ul class="nav navbar-nav d-none d-lg-block">
           <li class="nav-item mt-3 mt-lg-0">
             <a href="{{ site.store_url }}" class="btn btn-primary">Shop Now</a>
           </li>
         </ul>
-        <a href="/wholesale-programs" class="text-uppercase font-weight-bold d-block d-lg-none editable link-mobile-wholesale">Are you a Wholesaler?</a>
       </div>
     </nav>
   </div>

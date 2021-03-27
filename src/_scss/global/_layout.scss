@@ -6,7 +6,6 @@
   background-color: $white;
   box-shadow: 0 0 10px rgba($black, 0.2);
   z-index: 999;
-
   @include media-breakpoint-down(lg) {
     .container {
       max-width: 100%;
@@ -52,7 +51,6 @@
         left: -50vw;
       }
 
-
       > li.nav-item .menu-item,
       .menu-item {
         color: $dark;
@@ -75,6 +73,13 @@
               }
             }
           }
+        }
+      }
+    }
+    .mega-dropdown {
+      &:hover {
+        .mega-menu {
+          display: block;
         }
       }
     }

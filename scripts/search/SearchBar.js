@@ -18,7 +18,7 @@ import Facet from "./Facet"
 const searchClient = algoliasearch('6I01FP0C7C', 'cd32c8b8875db250abfc54be7af34c2d')
 
 const SearchBox = ({ currentRefinement, isSearchStalled, refine }) => (
-  <form noValidate action="" role="search">
+  <>
     <div className="form-group">
       <label htmlFor="querystring" className="sr-only">Search</label>
       <input
@@ -33,11 +33,11 @@ const SearchBox = ({ currentRefinement, isSearchStalled, refine }) => (
     </div>
     {/* <button onClick={() => refine('')}>Reset query</button> */}
     {isSearchStalled ? 'My search is stalled' : ''}
-  </form>
+  </>
 )
 const CustomSearchBox = connectSearchBox(SearchBox)
 
-const SearchBar = ({indexname}) => {
+const SearchBar = ({ indexname }) => {
   return (
     <InstantSearch
       searchClient={searchClient}
@@ -66,7 +66,7 @@ const SearchBar = ({indexname}) => {
 
             </div>
           </div>
-          <hr/>
+          <hr />
         </div>
       </section>
       <section className="pt-3">

@@ -11,7 +11,7 @@ export default connectStateResults(({ searchResults }) => {
           for <strong>{`"${searchResults.query}"`}</strong>
         </>
       )}{" "}
-      in <strong>{searchResults.processingTimeMS}ms</strong>
+      {/* in <strong>{searchResults.processingTimeMS}ms</strong> */}
     </div>
   )
 })

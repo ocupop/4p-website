@@ -8,11 +8,12 @@
       margin-bottom: 20px;
       @extend .col;
       flex-basis: auto;
+      color: $dark;
       @include media-breakpoint-up(md) {
         flex-basis: 50%;
         .card {
+          max-width: 525px;
           height: 100%;
-          color: $dark;
         }
       }
     }

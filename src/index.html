@@ -105,7 +105,7 @@ featured_recipes:
 
 ---
 
-<div id="carousel-home" class="carousel-feature carousel slide" data-ride="carousel">
+<div id="carousel-home" class="carousel-feature carousel slide mb-5" data-ride="carousel">
   <div class="carousel-inner">
     {% for item in page.carousel %}
     <div class="carousel-item {% if forloop.first %}active{% endif %}">
@@ -133,7 +133,7 @@ featured_recipes:
         </a>
         <ol class="carousel-indicators">
           {% for item in page.carousel %}
-          <li data-target="#carousel-home" data-slide-to="{{ forloop.index }}" class="{% if forloop.first %}active{% endif %}"></li>
+          <li data-target="#carousel-home" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}"></li>
           {% endfor %}
         </ol>
         <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
@@ -146,7 +146,7 @@ featured_recipes:
 </div>
 
 
-<section id="featured-collections" class="pb-0">
+<section id="featured-collections">
   <div class="container">
     <div class="row mb-3">
       <div class="col-lg-8">
@@ -154,17 +154,14 @@ featured_recipes:
           Featured 4P Bags + Goods
         </h2>
         <div class="editable">
-          <p class="mb-lg-5">We deliver healthy, seasonal food from local and regional family farms year-round&mdash; all grown and harvested in the most ethical, sustainable way possible.</p>
+          <p class="mb-lg-5">We deliver healthy, seasonal food from local and regional family farms year-round&mdash; all
+            grown and harvested in the most ethical, sustainable way possible.</p>
         </div>
       </div>
       <div class="col-lg-4 text-lg-right">
         <a href="https://shop.4pfoods.com" class="btn btn-primary btn-lg editable">Start Shopping</a>
       </div>
     </div>
-  </div>
-</section>
-<section>
-  <div class="container">
     <div class="row">
       <div class="col-12">
         {% include products/featured-products-grid.html editor-link="#featured_products" %}
@@ -269,7 +266,7 @@ featured_recipes:
           <p>From initiatives rooted in improving food access and education, to partnerships with local heath networks, to supporting our many farmers and food producers, we positively impact the lives of others each and every day.</p>
         </div>
         <a href="/our-impact" class="btn btn-primary mt-4 editable">Find out more</a>
-      </div>  
+      </div>
     </div>
   </div>
   <img class="leaf" src="/img/bg-illustrations/4P-Illustrations_spinach.svg" alt="Spinach graphic">

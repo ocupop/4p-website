@@ -16,7 +16,7 @@
 
 #mainnav {
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 0;
   @include media-breakpoint-down(lg) {
     padding: 0;
   }
@@ -178,12 +178,10 @@
       border: none;
       background-color: $tan-mid;
       width: 100%;
-      left: 0;
+      left: -11%;
       right: 0;
       top: auto;
-      margin-top: 23px;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+      margin-top: 8px;
       &::before {
         content: "";
         background-color: $tan-mid;

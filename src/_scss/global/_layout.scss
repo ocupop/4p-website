@@ -99,9 +99,9 @@
 
 #pageContent {
   overflow: hidden;
-  padding-top: 75px;
+  padding-top: 58px;
   @include media-breakpoint-up(lg) {
-    padding-top: 175px;
+    padding-top: 165px;
   }
 }
 #pageFooter {

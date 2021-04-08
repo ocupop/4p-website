@@ -109,17 +109,20 @@ featured_recipes:
   <div class="carousel-inner">
     {% for item in page.carousel %}
     <div class="carousel-item {% if forloop.first %}active{% endif %}">
-      <section class="bg-image aspect-auto text-white" style="background-image: url({{ item.image }})">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="editable mb-4">
-                <h1>{{ item.title }}</h1>
+      <section class="bg-image aspect-hero text-white" style="background-image: url({{ item.image }})">
+        <div class="bg-fill">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="editable mb-4">
+                  <h1>{{ item.title }}</h1>
+                </div>
+                <a href="{{ item.link.link }}" class="btn btn-primary">{{ item.link.label }}</a>
               </div>
-              <a href="{{ item.link.link }}" class="btn btn-primary">{{ item.link.label }}</a>
             </div>
           </div>
         </div>
+        
       </section>
     </div>
     {% endfor %}

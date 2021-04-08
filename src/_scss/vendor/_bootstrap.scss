@@ -104,6 +104,9 @@
     }
     h1 {
       text-transform: none;
+      @include media-breakpoint-down(sm) {
+        font-size: 1.7rem;
+      }
     }
     .carousel-controls-wrapper {
       position: absolute;

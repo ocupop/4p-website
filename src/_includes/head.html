@@ -16,6 +16,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     name="description"
     content="{% if page.meta[0].description %}{{ page.meta[0].description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
   />
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

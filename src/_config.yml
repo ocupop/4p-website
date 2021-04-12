@@ -102,6 +102,7 @@ _array_structures:
     - label: Meta Data
       icon: share
       value:
+        title:
         description:
         image:
   faqs:

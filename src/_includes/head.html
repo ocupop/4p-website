@@ -10,7 +10,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-M3ZVLNN');</script>
 <!-- End Google Tag Manager -->
   <title>
-    4pFoods: {% if page.meta.title %}{{ page.meta.title | escape }}{% else %}{{ page.title | escape }}{% endif %}
+    4pFoods: {% if page.meta[0].title %}{{ page.meta[0].title | escape }}{% else %}{{ page.title | escape }}{% endif %}
   </title>
   <meta
     name="description"

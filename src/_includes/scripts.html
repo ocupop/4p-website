@@ -15,7 +15,7 @@
     function checkOnboardingCookie(){
       var onboarding = Cookies.get('onboarding')
       if(onboarding) {
-        console.log('onboarding is set, check the value', onboarding)
+        // console.log('onboarding is set, check the value', onboarding)
         if(onboarding == 'show'){
           //launch onboarding modal on page load if onboarding cookie is 'show'
           $('#modal-onboarding').modal('show')
@@ -26,7 +26,7 @@
       }
       else {
         Cookies.set('onboarding', 'show', { expires: 100 })
-        console.log('onboarding is not set, set the value', onboarding)
+        // console.log('onboarding is not set, set the value', onboarding)
         $('#modal-onboarding').modal('show')
       }
     }
@@ -34,7 +34,7 @@
     checkOnboardingCookie();
 
     $('#modal-onboarding').on('hidden.bs.modal', function () {
-      console.log('modal onboarding closed')
+      // console.log('modal onboarding closed')
       if ($('#dismiss-onboarding').is(":checked")){
         // it is checked, hide modal and set cookie to expire in 1 year
         Cookies.set('onboarding', 'hide', { expires: 365 })
@@ -81,13 +81,13 @@
     })
 
     var hash = window.location.hash;
-    console.log(hash)
+    // console.log(hash)
     if(hash && $('.nav-tabs').length){
       $('.nav-tabs a[href="' + hash + '"]').tab('show');
     }
 
     $('.nav-tabs a').click(function (e) {
-      console.log('tab click')
+      // console.log('tab click')
       hash = $(this).attr('href');
       window.location.hash = hash;
     });
@@ -95,7 +95,7 @@
 
     //Show slide number in onboarding carousel
     var totalSlides = $('#carousel-onboarding .carousel-item').length -1;
-    console.log(totalSlides)
+    // console.log(totalSlides)
     var currentIndex = $('.carousel-item.active').index();
 
     function checkCarouselIndex(){
@@ -111,7 +111,7 @@
 
     $('#carousel-onboarding').bind('slid.bs.carousel', function() {
       currentIndex = $('#carousel-onboarding .carousel-item.active').index();
-      console.log({currentIndex})
+      // console.log({currentIndex})
       checkCarouselIndex()
     $('.slide-number').html(''+currentIndex+' of '+totalSlides+'');
       if(currentIndex == totalSlides) {
@@ -135,7 +135,7 @@
         var instruction_video = $('.carousel-item.active').find('.instruction-video')
         var new_video = $(this).data('video');
         var poster = $(this).data('poster');
-        console.log(poster)
+        // console.log(poster)
         $('.video-wrapper').addClass('loading');
         instruction_video.attr('src', '').attr('poster', '');
         setTimeout(function(){ 

@@ -1,7 +1,7 @@
 # Site settings
 title: 4P Foods
 email: dev@ocupop.com
-url: 'http://4pfoods.com'
+url: 'https://4pfoods.com'
 permalink: pretty
 store_url: 'https://shop.4pfoods.com'
 store_login: '/login'

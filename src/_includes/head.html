@@ -10,7 +10,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-M3ZVLNN');</script>
 <!-- End Google Tag Manager -->
   <title>
-    {% if page.meta[0].title %}{{ page.meta[0].title | escape }}{% else %}{{ page.title | escape }} | 4P Foods{% endif %}
+    {% if page.url == '/ '%}
+      4P Foods | Home
+    {% else %}
+      {% if page.meta[0].title %}
+        {{ page.meta[0].title | escape }} | 4P Foods
+      {% else %}
+        {{ page.title | escape }} | 4P Foods
+      {% endif %}
+    {% endif %}
   </title>
   <meta
     name="description"

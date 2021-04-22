@@ -215,6 +215,13 @@ _array_structures:
         title:
         description_html:
         embed_url:
+  buttons:
+    - label: buttons
+      icon:
+      value:
+        label:
+        link:      
+
 
 _comments:
   product_url: 'Ex: /product/apple-fritter-baking-mix or /product/1362'

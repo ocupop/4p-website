@@ -3,6 +3,7 @@ layout: post
 title: But Salmon Isn't Local? - How the Salmon Made it to Your Bag
 date: 2015-12-04 00:00:00
 featured_image: /img/uploads/posts/SalmonCover.jpg
+buttons:
 assets:
 tags:
 published: true

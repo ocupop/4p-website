@@ -3,6 +3,7 @@ layout: post
 title: The Geography of Good Food
 date: 2019-02-01 00:00:00
 featured_image: /img/uploads/posts/saundersbrotherscover.jpg
+buttons:
 assets:
 tags:
 published: true

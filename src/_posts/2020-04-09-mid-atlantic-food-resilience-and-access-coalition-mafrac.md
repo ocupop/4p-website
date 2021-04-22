@@ -3,6 +3,7 @@ layout: post
 title: Mid-Atlantic Food Resilience and Access Coalition (MAFRAC)
 date: 2020-04-09 00:00:00
 featured_image: /img/uploads/posts/mafrac-logo-full.jpg
+buttons:
 assets:
   - _type: image
     title:

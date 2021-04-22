@@ -3,6 +3,7 @@ layout: post
 title: Coalition Creates Links to Feed & Be Fed
 date: 2021-01-30 12:00:00
 featured_image: /img/uploads/posts/b2f-2117---mafrac.jpg
+buttons:
 assets:
 tags:
 published: true

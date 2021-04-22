@@ -3,6 +3,7 @@ layout: post
 title: Thanksgiving Gratitude for the 4P Community
 date: 2020-12-01 00:00:00
 featured_image: /img/uploads/posts/nadine-tallawah.png
+buttons:
 assets:
 tags:
 published: true

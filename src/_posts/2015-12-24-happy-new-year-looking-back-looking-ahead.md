@@ -3,6 +3,7 @@ layout: post
 title: 'Happy New Year! Looking back, looking ahead'
 date: 2015-12-24 00:00:00
 featured_image: /img/uploads/posts/happynewyearcover.jpg
+buttons:
 assets:
 tags:
 published: true

@@ -3,6 +3,7 @@ layout: post
 title: 'What do all those labels stand for? '
 date: 2016-03-02 00:00:00
 featured_image: /img/uploads/posts/foodlabelscover.jpg
+buttons:
 assets:
 tags:
 published: true

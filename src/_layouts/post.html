@@ -14,7 +14,7 @@ layout: default
         {{ page.content }}
         {% if page.buttons %}
           {% for button in page.buttons %}
-            <a href="{{ button.link }}">{{ button.label }}</a>
+            <a href="{{ button.link }}" class="btn btn-primary">{{ button.label }}</a>
           {% endfor %}
         {% endif %}
       </div>

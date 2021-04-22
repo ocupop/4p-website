@@ -13,9 +13,9 @@ layout: default
         <p>{{ page.date | date: '%B %d, %Y'}}</p>
         {{ page.content }}
         {% if page.buttons %}
-          <div class="d-flex">
+          <div class="d-md-flex">
             {% for button in page.buttons %}
-              <a href="{{ button.link }}" class="btn btn-primary mr-3">{{ button.label }}</a>
+              <a href="{{ button.link }}" class="btn btn-primary mr-3 mb-3">{{ button.label }}</a>
             {% endfor %}
           </div>
         {% endif %}

@@ -8,7 +8,7 @@ buttons:
     link: 'https://foodcap.org/support-our-work'
 assets:
 tags:
-published: true
+published: false
 ---
 <div class="editable">This is a test for the button.</div>
 

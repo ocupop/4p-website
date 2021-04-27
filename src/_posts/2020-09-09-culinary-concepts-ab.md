@@ -3,6 +3,7 @@ layout: post
 title: Culinary Concepts AB
 date: 2020-09-09 00:00:00
 featured_image: /uploads/2020-05-31-culinaryconcepts-pilotepisode-9.jpg
+buttons:
 assets:
   - _type: video
     title: Let's Cook

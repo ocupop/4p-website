@@ -3,6 +3,7 @@ layout: post
 title: Letter To Our COVID-19 Response Donors
 date: 2020-06-05 00:00:00
 featured_image: /uploads/4p-foods-rgb-logo-color-color-300x300.png
+buttons:
 assets:
 tags:
 published: false

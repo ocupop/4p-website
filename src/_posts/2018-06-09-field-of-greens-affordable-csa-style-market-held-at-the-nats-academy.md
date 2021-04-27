@@ -3,6 +3,7 @@ layout: post
 title: Field of Greens Affordable 'CSA-style' Market Held at the Nats Academy
 date: 2018-06-09 00:00:00
 featured_image: /img/uploads/posts/FOGMarketCover.png
+buttons:
 assets:
 tags:
 published: true

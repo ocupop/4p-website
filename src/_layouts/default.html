@@ -2,14 +2,14 @@
 <html>
 {% include head.html %}
 
-<body class="{{ page.layout }}">
+<body class="{{ page.layout }}-layout">
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3ZVLNN"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
  
   {% include header.html %}
-  <main id="pageContent">
+  <main id="pageContent" class="{{ page.layout }}-content">
     {{ content }}
   </main>
   {% unless page.url == '/how-to-shop/' %}

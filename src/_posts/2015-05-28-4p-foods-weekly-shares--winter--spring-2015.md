@@ -3,6 +3,7 @@ layout: post
 title: 4P Foods Weekly Shares // Winter + Spring 2015
 date: 2015-05-28 00:00:00
 featured_image: /img/uploads/posts/winter-bag-cover.jpg
+buttons:
 assets:
 tags:
 published: false

@@ -3,6 +3,7 @@ layout: post
 title: Guest Blogger Spotlight
 date: 2016-02-08 00:00:00
 featured_image: /img/uploads/posts/GuestBloggerSpotlightCover.jpg
+buttons:
 assets:
 tags:
 published: true

@@ -3,6 +3,7 @@ layout: post
 title: 4P Foods Local Meat Share - NOW AVAILABLE!
 date: 2015-01-15 00:00:00
 featured_image: /img/uploads/posts/MeatBagCover.jpg
+buttons:
 assets:
 tags:
 published: true

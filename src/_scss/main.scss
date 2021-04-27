@@ -16,6 +16,7 @@
 @import "components/product";
 @import "components/onboarding";
 
+
 // Pages
 @import "pages/home";
 @import "pages/food_access_programs";
@@ -27,3 +28,5 @@
 // Vendor Overrides
 @import "vendor/bootstrap";
 @import "vendor/cognito";
+@import "vendor/cloudcannon";
+@import "vendor/algolia";

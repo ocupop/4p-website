@@ -3,6 +3,7 @@ layout: post
 title: Meet Jim & Mark
 date: 2014-03-06 00:00:00
 featured_image: /img/uploads/posts/jimmarkcover.jpg
+buttons:
 assets:
 tags:
 published: true

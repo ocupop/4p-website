@@ -3,6 +3,7 @@ layout: post
 title: SPRING INTO ACTION WITH COMMUNITY-SUPPORTED AGRICULTURE
 date: 2020-02-28 07:00:00
 featured_image: /uploads/posts/4p-foods-spring.jpg
+buttons:
 assets:
   - _type: image
     title:

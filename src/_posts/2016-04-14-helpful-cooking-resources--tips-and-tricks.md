@@ -3,6 +3,7 @@ layout: post
 title: Helpful Cooking Resources + Tips and Tricks
 date: 2016-04-14 00:00:00
 featured_image: /img/uploads/posts/cookingtipstrickscover.jpg
+buttons:
 assets:
 tags:
 published: true

@@ -3,6 +3,7 @@ layout: post
 title: Beyond Local
 date: 2020-02-03 00:00:00
 featured_image: /img/uploads/aldermanfarmscover.jpg
+buttons:
 assets:
 tags:
 published: true

@@ -3,6 +3,7 @@ layout: post
 title: Weekly Food Shares // Summer Produce
 date: 2020-09-07 00:00:00
 featured_image: /img/uploads/posts/winter-bag-cover.jpg
+buttons:
 assets:
 tags:
 published: false

@@ -3,6 +3,7 @@ layout: post
 title: '"Food Chains" Documentary - Bonnie May'
 date: 2014-12-04 00:00:00
 featured_image: /img/uploads/posts/foodchainsdoccover.jpg
+buttons:
 assets:
 tags:
 published: true

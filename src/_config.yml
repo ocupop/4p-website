@@ -22,6 +22,24 @@ socialshare:
 # Google Analytics
 analytics_code: UA-127755766-5
 
+# Search
+# Needs to be added to continuous integration and include farmers configuration
+algolia:
+  application_id: '6I01FP0C7C'
+  index_name: 'Recipes'
+  max_record_size: 20000
+  files_to_exclude:
+    - _newsletters/*
+    - _team_members/*
+    - _events/*
+    - _careers/*
+    - _posts/*
+    - _farmers/*
+    - /*.html
+    - _featured_products/*
+
+
+
 # Collections
 collections:
   team_members:
@@ -43,8 +61,11 @@ collections:
     permalink: /posts/:title/
   featured_products:
     output: false
-  elements:
+  press:
     output: false
+  recipes: 
+    output: true
+    permalink: /recipes/:path/
 
 defaults:
   - scope:
@@ -87,6 +108,18 @@ defaults:
       _options:
         featured_image:
           uploads_dir: 'img/uploads/newsletters/'
+  - scope:
+      type: 'press'
+    values:
+      _options:
+        featured_image:
+          uploads_dir: 'img/uploads/press/'
+  - scope:
+      type: 'recipes'
+    values:
+      _options:
+        featured_image:
+          uploads_dir: 'img/uploads/recipes/'        
 
 # Build settings
 safe: false
@@ -98,6 +131,14 @@ sass:
 
 # Cloudcannon Configuration
 _array_structures:
+  nav_links:
+    - label: Links
+      icon: link
+      value:
+        label:
+        url:
+        alt:
+        nav_links:
   meta:
     - label: Meta Data
       icon: share
@@ -152,7 +193,7 @@ _array_structures:
       icon: insert_photo
       value:
         title:
-        image:    
+        image:
   hero:
     - label: Image Carousel
       icon: insert_photo
@@ -175,7 +216,14 @@ _array_structures:
       value:
         title:
         description_html:
-        embed_url:      
+        embed_url:
+  buttons:
+    - label: buttons
+      icon:
+      value:
+        label:
+        link:      
+
 
 _comments:
   product_url: 'Ex: /product/apple-fritter-baking-mix or /product/1362'
@@ -204,7 +252,7 @@ _options:
     uploads_dir: "/uploads/videos/:title"
   thumbnail_desktop_image:
     uploads_dir: "/uploads/videos/:title"
-  thumbnail_mobile_image:  
+  thumbnail_mobile_image:
     uploads_dir: "/uploads/videos/:title"
 
   _block:
@@ -221,6 +269,6 @@ _options:
     left: true
     center: true
     image: true
-    embed: true    
+    embed: true
 
 placeholder_image: https://via.placeholder.com/1200

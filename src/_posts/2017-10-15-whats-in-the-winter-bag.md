@@ -3,6 +3,7 @@ layout: post
 title: What's In the Winter Bag?
 date: 2017-10-15 00:00:00
 featured_image: /img/uploads/posts/winter-bag-cover.jpg
+buttons:
 assets:
 tags:
 published: true

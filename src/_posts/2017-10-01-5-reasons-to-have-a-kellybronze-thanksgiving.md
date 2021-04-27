@@ -3,6 +3,7 @@ layout: post
 title: 5 Reasons to Have A KellyBronze Thanksgiving
 date: 2017-10-01 00:00:00
 featured_image: /img/uploads/posts/KellyBronzeCover.jpg
+buttons:
 assets:
 tags:
 published: true

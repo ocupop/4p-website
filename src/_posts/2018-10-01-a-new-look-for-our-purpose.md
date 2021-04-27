@@ -3,6 +3,7 @@ layout: post
 title: A New Look For Our Purpose
 date: 2018-10-01 00:00:00
 featured_image: /img/uploads/posts/4pbanner.jpg
+buttons:
 assets:
 tags:
 published: true

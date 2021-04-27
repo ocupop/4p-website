@@ -3,6 +3,7 @@ layout: post
 title: 'Inside Look: 4P Foods Donation to Martha''s Table'
 date: 2014-09-26 00:00:00
 featured_image: /img/uploads/posts/marthastablecover.jpg
+buttons:
 assets:
 tags:
 published: true

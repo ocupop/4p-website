@@ -88,3 +88,33 @@
     padding: 40px;
   }
 }
+
+#impact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  .lettuce {
+    position: absolute;
+    left: -8%;
+    top: 0;
+    transform: translateY(-50%);
+    width: 50%;
+    opacity: 0.2;
+    @include media-breakpoint-up(lg) {
+      width: 35%;
+      opacity: 0.3;
+      top: 50%;
+    }
+  }
+  .leaf {
+    position: absolute;
+    right: -10%;
+    bottom: 0;
+    width: 50%;
+    opacity: 0.3;
+    @include media-breakpoint-up(lg) {
+      width: 30%;
+    }
+  }
+
+}

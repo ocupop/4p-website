@@ -3,6 +3,7 @@ layout: post
 title: 'Fixing a Broken System: "IF IT IS TO BE IT IS UP TO US"'
 date: 2014-11-21 00:00:00
 featured_image: /img/uploads/posts/fixingabrokencover.jpg
+buttons:
 assets:
 tags:
 published: true

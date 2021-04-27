@@ -1,4 +1,57 @@
 ---
+primary_navigation:
+  navigation:
+    - label: How it works
+      url:
+      alt:
+      links:
+        - label: How 4P Works
+          url: /how-it-works
+          alt:
+        - label: How to Shop
+          url: /how-to-shop
+          alt:
+        - label: Tutorials
+          url: /how-to-shop/#tutorials
+          alt:
+        - label: FAQ
+          url: /faq
+          alt:
+    - label: Mission
+      url:
+      alt:
+      links:
+        - label: Our Impact
+          url: /our-impact
+          alt:
+        - label: About Us
+          url: /about
+          alt:
+        - label: Our Team
+          url: /our-team
+          alt:
+        - label: Our Farmers
+          url: /our-farmers
+          alt:
+        - label: Our Partners
+          url: /our-partners
+          alt:
+    - label: Community
+      url:
+      alt:
+      links:
+        - label: Impact Blog
+          url: /impact-blog
+          alt:
+        - label: Recipes
+          url: /recipes
+          alt:
+        - label: Community Events
+          url: /community-events
+          alt:
+        - label: In The News
+          url: /in-the-news
+          alt:
 footer_navigation:
   shop_links:
     - label: Shop Now
@@ -25,14 +78,16 @@ footer_navigation:
     - label: Our Team
       link: our-team
   enrich_yourself_links:
-    - label: 4P News
-      link: /news
+    - label: Impact Blog
+      link: /impact-blog
     - label: Storage Tips
       link: /posts/4p-foods-storage-tips/
     - label: Recipes
       link: 'https://4pfoods.com/posts/recipes/'
     - label: Community Events
       link: /community-events
+    - label: In the News
+      link: /in-the-news
     - label: Careers
       link: /careers
   support_links:

@@ -5,7 +5,7 @@
       {% if post.featured_image %}
       <div class="card-header">
         <div class="content">
-          <a  
+          <a
             href="{{ post.url }}"
             class="bg-image aspect-4x3"
             style="background-image: url({{ post.featured_image }})"
@@ -20,7 +20,7 @@
       </div>
       {% endif %}
       <div class="card-body">
-        <div class="content text-left">
+        <div class="text-left">
           <h5><a href="{{ post.url }}" class="text-body">{{ post.title }}</a></h5>
           <p>{{ post.date | date: '%B %d, %Y'}}</p>
           <p>{{ post.content | strip_html | truncatewords: 30 }}</p>

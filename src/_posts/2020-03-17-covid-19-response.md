@@ -3,6 +3,7 @@ layout: post
 title: COVID-19 RESPONSE
 date: 2020-03-17 18:39:00
 featured_image: /img/uploads/posts/2020-05-08-4pfoods-hv-1080-20-covid16x9.jpg
+buttons:
 assets:
   - _type: video
     title:

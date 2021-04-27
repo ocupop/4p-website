@@ -3,6 +3,7 @@ layout: post
 title: Eating Seasonally With Our Farmers
 date: 2021-03-18 00:00:00
 featured_image: /img/uploads/posts/ysrvdcqc.jpg
+buttons:
 assets:
   - _type: image
     title: Baby Kale

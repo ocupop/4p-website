@@ -41,7 +41,7 @@ primary_navigation:
       alt:
       links:
         - label: Impact Blog
-          url: /news
+          url: /impact-blog
           alt:
         - label: Recipes
           url: /recipes
@@ -50,7 +50,7 @@ primary_navigation:
           url: /community-events
           alt:
         - label: In The News
-          url: /press
+          url: /in-the-news
           alt:
 footer_navigation:
   shop_links:
@@ -78,16 +78,16 @@ footer_navigation:
     - label: Our Team
       link: our-team
   enrich_yourself_links:
-    - label: 4P News
-      link: /news
+    - label: Impact Blog
+      link: /impact-blog
     - label: Storage Tips
       link: /posts/4p-foods-storage-tips/
     - label: Recipes
       link: 'https://4pfoods.com/posts/recipes/'
     - label: Community Events
       link: /community-events
-    - label: Press
-      link: /press
+    - label: In the News
+      link: /in-the-news
     - label: Careers
       link: /careers
   support_links:

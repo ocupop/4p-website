@@ -1,8 +1,8 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 55px;
+  scroll-padding-top: 120px;
   @include media-breakpoint-up(lg) {
-    scroll-padding-top: 168px;
+    scroll-padding-top: 250px;
   }
 }
 

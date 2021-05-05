@@ -74,7 +74,7 @@ footer_navigation:
     - label: Our Farmers
       link: /our-farmers
     - label: Our Partners
-      link: our-partners
+      link: /our-partners/
     - label: Our Team
       link: our-team
   enrich_yourself_links:

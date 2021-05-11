@@ -5,6 +5,15 @@ date: 2021-05-08 12:00:00
 featured_image: /img/uploads/posts/91916881.jpeg
 buttons:
 assets:
+  - _type: image
+    title:
+    image: /uploads/2021-05-10-4p-foods-foodconnects-vermontcheeseshipment.jpg
+  - _type: image
+    title:
+    image: /uploads/graftoncheese-2yearcheddar-new-456x456.jpg
+  - _type: image
+    title:
+    image: /uploads/20170825-085125-1440x760.jpg
 tags:
 published: true
 ---

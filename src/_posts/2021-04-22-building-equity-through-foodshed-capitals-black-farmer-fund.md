@@ -2,7 +2,7 @@
 layout: post
 title: Building Equity through Foodshed Capital’s Black Farmer Fund
 date: 2021-04-22 16:00:00
-featured_image: /img/uploads/posts/vafc-social-sharing-logo.jpg
+featured_image: /img/uploads/posts/vafc-social-sharing-logo-800x.jpg
 assets:
   - _type: image
     title:

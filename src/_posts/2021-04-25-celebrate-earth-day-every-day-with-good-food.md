@@ -2,7 +2,7 @@
 layout: post
 title: Celebrate Earth Day Every Day With Good Food
 date: 2021-04-25 00:00:00
-featured_image: /img/uploads/posts/4pfoods-omar-g-flores-produce-farmtour.jpg
+featured_image: /img/uploads/posts/4pfoods-omar-g-flores-produce-farmtour-600x.jpg
 buttons:
 assets:
 tags:

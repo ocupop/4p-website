@@ -1,6 +1,6 @@
 header_notification:
-  notification_text: Free Delivery with purchase over $60
+  notification_text:
   link:
 bar_notification:
   notification_text: COVID-19 Procedures & Community Response
-  link: '/posts/covid-19-response/'
+  link: /posts/covid-19-response/

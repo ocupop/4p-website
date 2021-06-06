@@ -314,12 +314,12 @@
     - question: Is there a delivery fee?
       answer_html: >-
         <p>Please note that delivery takes time and energy and an amazing
-        delivery team. There is a flat $5 fee that helps to cover some of that.
-        Since we are awesome humans (and not drones) delivering your food with
-        care, hopefully you&rsquo;ll agree that it&rsquo;s totally worth
-        it.</p><p>Delivery is free for all orders $60 and over and at community
-        pick-up sites, where anyone can pick up their bags within a certain
-        pick-up time frame to save C02 and save a few bucks.</p>
+        delivery team. There is a fee of $8.95 for orders under $85 and $5.95
+        for orders over $85. Since we are awesome humans (and not drones)
+        delivering your food with care, hopefully you&rsquo;ll agree that
+        it&rsquo;s totally worth it.</p><p>Delivery is free at community pick-up
+        sites, where anyone can pick up their bags within a certain pick-up time
+        frame to save C02 and save a few bucks.</p>
     - question: What are Community Pick-up Sites and how can I join?
       answer_html: >-
         <p>We've teamed up with select community centers and local businesses to

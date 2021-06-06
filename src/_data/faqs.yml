@@ -219,9 +219,7 @@
         hit!</p><p>To access our full rotating inventory for Dairy (including
         our selection of cheese), shop for a Dairy Bag and customize what's
         inside!</p>
-    - question: >-
-        How can I tell what’s in my bag and how many items I can add while I’m
-        customizing?
+    - question: How can I tell what’s in my bag while I’m customizing?
       answer_html: >-
         <p>From the shop, click on &ldquo;What&rsquo;s Inside&rdquo; on any bag
         image to see what&rsquo;s available for a given week (if there are
@@ -236,14 +234,7 @@
         remove will uncheck and change from yellow to white, and products you
         add will check and change from white to yellow. You can see a summary of
         your bag in the list in the &ldquo;What&rsquo;s Inside&rdquo; section on
-        the right in desktop view or at the top in mobile view.</p><p>For
-        produce and fruit bags, &ldquo;Items Left to Add&rdquo; in the
-        &ldquo;What&rsquo;s Inside&rdquo; section will start at zero when the
-        bag is full, and as you customize, you can track how many items are left
-        to add to your bag there.&nbsp;</p><p>For protein and dairy bags, there
-        is no item limit, so you can add as many items as you want. Just be sure
-        you have at least $20 worth of products in each bag, since that is the
-        minimum bag price.&nbsp;</p>
+        the right in desktop view or at the top in mobile view.</p>
     - question: I’m here from your old site—where did the points go?
       answer_html: >-
         <p>We did away with the points system in favor of a setup that requires

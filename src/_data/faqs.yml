@@ -32,15 +32,12 @@
     - question: Is there a minimum commitment or signup fee?
       answer_html: >-
         <p>Nope! There is no minimum commitment and no tricky sign-up policy.
-        Our minimum order is $30, which comes out to $35 with the delivery fee
-        (unless you signup at one of our community pickup sites with free
-        delivery). The minimum order amount to get free shipping is
-        $60.</p><p>You can order once to give us a try, or sign up for a
-        subscription and still cancel anytime before your skip deadline with no
-        fees&ndash;but if you were anything less than satisfied with your order,
-        it might be worth <a href="/contact/">getting in touch</a> with our
-        member experience team first so that we can try to make things
-        right.</p>
+        Our minimum order is $30 + delivery fee. You can order once to give us a
+        try, or sign up for a recurring subscription and still cancel anytime
+        before your skip deadline with no fees! If you were anything less than
+        satisfied with your order, please do&nbsp;<a href="/contact/">get in
+        touch</a> with our member experience team first so that we can try to
+        make things right.</p>
     - question: 'If I sign up for a subscription, can I skip orders?'
       answer_html: >-
         <p>Absolutely. You always have the ability to skip individual orders, or

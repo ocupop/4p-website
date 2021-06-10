@@ -154,8 +154,9 @@
 /farmers/planet-earth-diversified/our-team/ /farmers/planet-earth-diversified/
 /farmers/pratley-farm/our-partners/ /farmers/pratley-farm/
 /farmers/pratley-farm/our-team/ /farmers/pratley-farm/
-/farmers/queen-of-greens-farm/our-partners/ /farmers/queen-of-greens-farm/
-/farmers/queen-of-greens-farm/our-team/ /farmers/queen-of-greens-farm/
+/farmers/queen-of-greens-farm/our-partners/ /farmers/queen-of-greens/
+/farmers/queen-of-greens-farm/our-team/ /farmers/queen-of-greens/
+/farmers/queen-of-greens-farm/ /farmers/queen-of-greens/
 /farmers/radical-roots-community-farm/our-partners/ /farmers/radical-roots-community-farm/
 /farmers/radical-roots-community-farm/our-team/ /farmers/radical-roots-community-farm/
 /farmers/reese-farm/our-partners/ /farmers/reese-farm/

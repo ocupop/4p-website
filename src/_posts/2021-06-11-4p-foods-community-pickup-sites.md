@@ -2,7 +2,8 @@
 layout: post
 title: 4P Foods Community Pickup Sites
 date: 2021-06-11 12:00:00
-featured_image:
+featured_image: >-
+  /uploads/copy-of-2020-06-17-va-hanover-agriberryfarm-danieljames-herd-ventures-34.jpg
 buttons:
 assets:
 published: false

@@ -38,7 +38,7 @@
         satisfied with your order, please do&nbsp;<a href="/contact/">get in
         touch</a> with our member experience team first so that we can try to
         make things right.</p>
-    - question: 'If I sign up for a subscription, can I skip orders?'
+    - question: If I sign up for a subscription, can I skip orders?
       answer_html: >-
         <p>Absolutely. You always have the ability to skip individual orders, or
         place a delivery hold for a certain period of time. All we ask is that
@@ -74,6 +74,16 @@
         small family farms and artisan producers in the region, but also
         advances equitable access to fresh healthy food in the communities we
         serve.</p>
+    - question: Is there a delivery fee?
+      answer_html: >-
+        <p>Please note that delivery takes time and energy and an amazing
+        delivery team. There is a fee of $8.95 for orders under $85 and $5.95
+        for orders over $85. Since we are awesome humans (and not drones)
+        delivering your food with care, hopefully you&rsquo;ll agree that
+        it&rsquo;s totally worth it.</p><p>Delivery is free at <a
+        href="https://4pfoods.com/posts/4p-foods-community-pickup-sites/">community
+        pick-up sites</a>, where anyone can pick up their bags within a certain
+        pick-up time frame to save C02 and save a few bucks.</p>
 - title: Mission
   faqs:
     - question: How do I find out more about your farmers?
@@ -184,7 +194,7 @@
         follows:</p><ul><li>11:59 pm on Sunday for a Wednesday
         delivery</li><li>11:59 pm on Monday for a Thursday
         delivery</li><li>11:59 pm on Tuesday for a Friday delivery</li></ul>
-    - question: 'How do I skip an order, or multiple orders at once?'
+    - question: How do I skip an order, or multiple orders at once?
       answer_html: >-
         <p>To skip once, login to your account and click on &ldquo;My
         Account&rdquo; in the upper right hand corner and then click on

@@ -331,8 +331,8 @@
         to the dropdown below &ldquo;Do you want Pickup or Delivery?&rsquo; for
         a list of participating locations. Just note that you'll need to be able
         to pickup your bags during their business hours. Don't see a pick-up
-        site near you? <a href="community@4pfoods.com">Contact us</a> if you
-        know of a place near you that's a good fit!</p>
+        site near you? <a href="mailto:community@4pfoods.com">Contact us</a> if
+        you know of a place near you that's a good fit!</p>
     - question: What is my delivery day?
       answer_html: >-
         <p>You should have been notified of your delivery day during the signup

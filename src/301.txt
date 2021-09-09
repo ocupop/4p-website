@@ -1,3 +1,4 @@
+/butternut/ https://docs.google.com/spreadsheets/d/1-M0id_xsA2EjRXX2dSDb6arujuoPTUtf8bzZ7XVmnDs/view#gid=1651264669&fvid=695436193
 /api/elements/ /api/elements.json
 /api/pages/ /api/pages.json
 /api/farmers/ /api/farmers.json
@@ -480,4 +481,4 @@
 /legal/our-team/ /terms-of-service
 /news/ /impact-blog/
 /press/ /in-the-news/
-/butternut/ https://docs.google.com/spreadsheets/d/1-M0id_xsA2EjRXX2dSDb6arujuoPTUtf8bzZ7XVmnDs/view#gid=1651264669&fvid=695436193
+

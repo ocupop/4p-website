@@ -108,6 +108,7 @@ export const formatDate = (date) => {
 
 const queryString = window.location.search
 const urlParams = new URLSearchParams(queryString)
+let savedParams = window.sessionStorage.getItem('utm')
 
 const trackedUrlParams = {
   utm_medium: urlParams.get('utm_medium'),
@@ -117,14 +118,22 @@ const trackedUrlParams = {
   utm_term: urlParams.get('utm_term')
 }
 
-window.sessionStorage.setItem('utm', JSON.stringify(trackedUrlParams))
+const activeParams = Object.keys(trackedUrlParams)
+  .filter((k) => trackedUrlParams[k] != null)
+  .reduce((a, k) => ({ ...a, [k]: trackedUrlParams[k] }), {})
+
+if (!savedParams && Object.keys(activeParams).length !== 0) {
+  window.sessionStorage.setItem('utm', JSON.stringify(activeParams))
+  savedParams = window.sessionStorage.getItem('utm')
+}
+
 
 
 export function storeLinks() {
   const links = Array.from(document.getElementsByClassName("storeLink"))
   links.map(link => {
     const linkRef = link.href
-    const sessionParams = JSON.parse(window.sessionStorage.getItem('utm'))
+    const sessionParams = JSON.parse(savedParams)
     link.href = `${linkRef}?${new URLSearchParams(sessionParams).toString()}`
   })
 }

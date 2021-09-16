@@ -1,4 +1,4 @@
-<div 
+<div
   data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
   data-cms-editor-link-style="modal"
   class="responsive-card-deck cards-lg-3 cms-editor-link">
@@ -6,7 +6,7 @@
     {% assign product = site.featured_products | where: 'slug', object | first  %}
     {% if product.product_url %}
       <div class="card product-card">
-        <a href="{{site.store_url }}{{ product.product_url }}" class="bg-image aspect-4x3"
+        <a href="{{site.store_url }}{{ product.product_url }}" class="bg-image aspect-4x3 storeLink"
           style="background-image: url({{ product.image }})"></a>
         <div class="card-header">
           <h5 class="card-title">{{ product.name }}</h5>
@@ -30,7 +30,7 @@
           </div>
         </a>
         <div class="card-footer d-flex align-items-center">
-          <a href="{{site.store_url }}{{ product.product_url }}" class="btn btn-primary">Shop Now</a>
+          <a href="{{site.store_url }}{{ product.product_url }}" class="btn btn-primary storeLink">Shop Now</a>
         </div>
       </div>
     {% endif %}

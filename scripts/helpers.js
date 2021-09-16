@@ -105,3 +105,26 @@ export const formatDate = (date) => {
   return ''
 
 }
+
+const queryString = window.location.search
+const urlParams = new URLSearchParams(queryString)
+
+const trackedUrlParams = {
+  utm_medium: urlParams.get('utm_medium'),
+  utm_source: urlParams.get('utm_source'),
+  utm_campaign: urlParams.get('utm_campaign'),
+  utm_content: urlParams.get('utm_content'),
+  utm_term: urlParams.get('utm_term')
+}
+
+window.sessionStorage.setItem('utm', JSON.stringify(trackedUrlParams))
+
+
+export function storeLinks() {
+  const links = Array.from(document.getElementsByClassName("storeLink"))
+  links.map(link => {
+    const linkRef = link.href
+    const sessionParams = JSON.parse(window.sessionStorage.getItem('utm'))
+    link.href = `${linkRef}?${new URLSearchParams(sessionParams).toString()}`
+  })
+}

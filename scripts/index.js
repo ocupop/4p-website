@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import HelloWorld from './HelloWorld'
 import SearchBar from './search/SearchBar'
+import { storeLinks } from './helpers'
 
 const COMPONENTS = {
   HelloWorld,
@@ -19,4 +20,5 @@ function renderComponentInElement(el) {
 document
   .querySelectorAll('.__react-component')
   .forEach(renderComponentInElement)
-2
+
+storeLinks()

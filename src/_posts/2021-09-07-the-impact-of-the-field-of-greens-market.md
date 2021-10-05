@@ -7,9 +7,6 @@ buttons:
   - label: DONATE A BAG
     link: https://shop.4pfoods.com/donate
 assets:
-  - _type: image
-    title:
-    image:
 tags:
   - Food System
   - Nationals Youth Baseball Academy

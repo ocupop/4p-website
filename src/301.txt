@@ -1,3 +1,4 @@
+/butternut/ https://docs.google.com/spreadsheets/d/1vbvrV27TlKGtKnR7m2a48aDw8ip5e0CO26jMggSZQcc/view#gid=2053856062
 /api/elements/ /api/elements.json
 /api/pages/ /api/pages.json
 /api/farmers/ /api/farmers.json
@@ -154,8 +155,9 @@
 /farmers/planet-earth-diversified/our-team/ /farmers/planet-earth-diversified/
 /farmers/pratley-farm/our-partners/ /farmers/pratley-farm/
 /farmers/pratley-farm/our-team/ /farmers/pratley-farm/
-/farmers/queen-of-greens-farm/our-partners/ /farmers/queen-of-greens-farm/
-/farmers/queen-of-greens-farm/our-team/ /farmers/queen-of-greens-farm/
+/farmers/queen-of-greens-farm/our-partners/ /farmers/queen-of-greens/
+/farmers/queen-of-greens-farm/our-team/ /farmers/queen-of-greens/
+/farmers/queen-of-greens-farm/ /farmers/queen-of-greens/
 /farmers/radical-roots-community-farm/our-partners/ /farmers/radical-roots-community-farm/
 /farmers/radical-roots-community-farm/our-team/ /farmers/radical-roots-community-farm/
 /farmers/reese-farm/our-partners/ /farmers/reese-farm/
@@ -479,3 +481,4 @@
 /legal/our-team/ /terms-of-service
 /news/ /impact-blog/
 /press/ /in-the-news/
+

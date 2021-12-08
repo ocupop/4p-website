@@ -3,38 +3,31 @@ layout: page
 title: Team
 meta:
 team_members:
-  - abbey-gleason
-  - alicia-mitchell
-  - bonnie-may
-  - brian-wachira
-  - brooke-kinsey
-  - breyonna-horsley
-  - carlisle-wilkinson
-  - curtis-sowers
-  - david-bubba-weller
-  - devon-byrne
-  - emily-tucker
-  - erin-caricofe
-  - heidi-chaya
-  - hortense-brent
-  - jennifer-beckman
-  - jennifer-campbell
-  - john-ferguson
-  - john-shepard
-  - jon-wolf
+  - tom-mcdougall
+  - beth-leonard
+  - asif-ahmad
+  - elizabeth-johnson
   - justin-white
-  - kerry-trenor
-  - natalie-vandenburgh
+  - devon-byrne
+  - greg-self
+  - emily-tucker
+  - jennifer-beckman
+  - julia-hoffman
+  - annaleigh-baremore
+  - john-shepard
+  - amanda-mac-de-villiers
+  - jon-wolf
+  - brian-wachira
   - nate-osborne
   - margaret-grace-gratten
-  - riley-dulin
+  - rosa-diaz-de-leon-wolfersberger
   - rod-crawford
-  - raquel-burgess
-  - ryan-fortunato
-  - sandy-tribendis
-  - sean-roberts
-  - tom-mcdougall
+  - bonnie-may
   - tyler-bruder
+  - kerry-trenor
+  - sandy-tribendis
+  - breyonna-horsley
+  - julianne-hart
 footer_image: /uploads/2020-03-09-4p-mafrac-herd-ventres-danieljamesdoherty-v2-3.jpg
 ---
 
@@ -57,10 +50,7 @@ footer_image: /uploads/2020-03-09-4p-mafrac-herd-ventres-danieljamesdoherty-v2-3
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div 
-          data-cms-editor-link="cloudcannon:#team_members"
-          data-cms-editor-link-style="modal" 
-          class="responsive-card-deck cards-lg-3 cards-md-2 cms-editor-link">
+        <div data-cms-editor-link="cloudcannon:#team_members" data-cms-editor-link-style="modal" class="responsive-card-deck cards-lg-3 cards-md-2 cms-editor-link">
           {% for object in page.team_members %}
           {% assign team =  site.team_members | where: 'slug', object | first %}
           <div class="card bg-transparent mb-5">

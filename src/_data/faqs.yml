@@ -7,17 +7,18 @@
         ethical produce, protein, dairy, pantry, and more (what we call "Good
         Food"). There are two ways to shop: <a target="_blank" rel="noopener"
         href="https://shop.4pfoods.com/summary.php?go=products&amp;cat=93&amp;12">4P
-        Bags</a> and a la carte.</p><p>Produce and Fruit Bags have multiple
-        sizes, each with a set price and number of items to mix and match.
-        Protein and Dairy Bags have one size each and start at $30-$40 each
-        week, but you can add or take away to your liking, with a per-bag
-        minimum of $20.&nbsp;</p><p>You can order a Bag once to try it out, but
-        our recommendation is to set up a recurring order so that you can be
-        sure to have your fridge, freezer, and pantry stocked every week. You
-        can always add on a la carte items, skip as often as you need, or cancel
-        altogether with no penalty.</p><p>You can also order fully a la carte
-        without a 4P Bag (don't worry, your order will still come packed in one
-        of our lovely insulated reusable bags).</p>
+        Bags</a> and a la carte.</p><p>4P Bags come in four types: Produce,
+        Protein, Dairy, and Fruit. Each of them will come "pre-packed" with 4P's
+        Picks for that week, and then you can customize them by taking out or
+        adding items to get just what you want. It doesn't matter how many items
+        you have in a Bag, so long as you hit the minimum for that Bag, which
+        you'll see in the description.</p><p>You can order a Bag once to try it
+        out, but our recommendation is to set up a recurring order so that you
+        can be sure to have your fridge, freezer, and pantry stocked every week.
+        You can always add on a la carte items, skip as often as you need, or
+        cancel altogether with no penalty.</p><p>You can also order fully a la
+        carte without a 4P Bag (don't worry, your order will still come packed
+        in one of our lovely insulated reusable bags).</p>
     - question: How will I find out what food you have each week?
       answer_html: >-
         <p>Each Saturday we update our online shop with what&rsquo;s fresh that
@@ -31,16 +32,13 @@
     - question: Is there a minimum commitment or signup fee?
       answer_html: >-
         <p>Nope! There is no minimum commitment and no tricky sign-up policy.
-        Our minimum order is $30, which comes out to $35 with the delivery fee
-        (unless you signup at one of our community pickup sites with free
-        delivery). The minimum order amount to get free shipping is
-        $60.</p><p>You can order once to give us a try, or sign up for a
-        subscription and still cancel anytime before your skip deadline with no
-        fees&ndash;but if you were anything less than satisfied with your order,
-        it might be worth <a href="/contact/">getting in touch</a> with our
-        member experience team first so that we can try to make things
-        right.</p>
-    - question: 'If I sign up for a subscription, can I skip orders?'
+        Our minimum order is $30 + delivery fee. You can order once to give us a
+        try, or sign up for a recurring subscription and still cancel anytime
+        before your skip deadline with no fees! If you were anything less than
+        satisfied with your order, please do&nbsp;<a href="/contact/">get in
+        touch</a> with our member experience team first so that we can try to
+        make things right.</p>
+    - question: If I sign up for a subscription, can I skip orders?
       answer_html: >-
         <p>Absolutely. You always have the ability to skip individual orders, or
         place a delivery hold for a certain period of time. All we ask is that
@@ -76,6 +74,16 @@
         small family farms and artisan producers in the region, but also
         advances equitable access to fresh healthy food in the communities we
         serve.</p>
+    - question: Is there a delivery fee?
+      answer_html: >-
+        <p>Please note that delivery takes time and energy and an amazing
+        delivery team. There is a fee of $8.95 for orders under $85 and $5.95
+        for orders over $85. Since we are awesome humans (and not drones)
+        delivering your food with care, hopefully you&rsquo;ll agree that
+        it&rsquo;s totally worth it.</p><p>Delivery is free at <a
+        href="https://4pfoods.com/posts/4p-foods-community-pickup-sites/">community
+        pick-up sites</a>, where anyone can pick up their bags within a certain
+        pick-up time frame to save C02 and save a few bucks.</p>
 - title: Mission
   faqs:
     - question: How do I find out more about your farmers?
@@ -140,7 +148,7 @@
         economic security for all.</li></ol>
 - title: Shopping
   faqs:
-    - question: When can I customize my 4 Bags?
+    - question: When can I customize my 4P Bags?
       answer_html: >-
         <p>On Saturdays, we update the 4P Bags and our online shop with
         what&rsquo;s fresh for the week. When the Weekly Harvest Newsletter hits
@@ -186,7 +194,7 @@
         follows:</p><ul><li>11:59 pm on Sunday for a Wednesday
         delivery</li><li>11:59 pm on Monday for a Thursday
         delivery</li><li>11:59 pm on Tuesday for a Friday delivery</li></ul>
-    - question: 'How do I skip an order, or multiple orders at once?'
+    - question: How do I skip an order, or multiple orders at once?
       answer_html: >-
         <p>To skip once, login to your account and click on &ldquo;My
         Account&rdquo; in the upper right hand corner and then click on
@@ -218,9 +226,7 @@
         hit!</p><p>To access our full rotating inventory for Dairy (including
         our selection of cheese), shop for a Dairy Bag and customize what's
         inside!</p>
-    - question: >-
-        How can I tell what’s in my bag and how many items I can add while I’m
-        customizing?
+    - question: How can I tell what’s in my bag while I’m customizing?
       answer_html: >-
         <p>From the shop, click on &ldquo;What&rsquo;s Inside&rdquo; on any bag
         image to see what&rsquo;s available for a given week (if there are
@@ -235,14 +241,7 @@
         remove will uncheck and change from yellow to white, and products you
         add will check and change from white to yellow. You can see a summary of
         your bag in the list in the &ldquo;What&rsquo;s Inside&rdquo; section on
-        the right in desktop view or at the top in mobile view.</p><p>For
-        produce and fruit bags, &ldquo;Items Left to Add&rdquo; in the
-        &ldquo;What&rsquo;s Inside&rdquo; section will start at zero when the
-        bag is full, and as you customize, you can track how many items are left
-        to add to your bag there.&nbsp;</p><p>For protein and dairy bags, there
-        is no item limit, so you can add as many items as you want. Just be sure
-        you have at least $20 worth of products in each bag, since that is the
-        minimum bag price.&nbsp;</p>
+        the right in desktop view or at the top in mobile view.</p>
     - question: I’m here from your old site—where did the points go?
       answer_html: >-
         <p>We did away with the points system in favor of a setup that requires
@@ -286,7 +285,7 @@
         exactly the individual items that you want from each category--anything
         that can be added to your cart from the shop is available a la carte. As
         long as you hit the $30 minimum order, you&rsquo;re good to go, no
-        produce, protein, or dairy bag required.</p>
+        Produce, Protein, or Dairy Bag required.</p>
 - title: Delivery
   faqs:
     - question: How does delivery work?
@@ -313,25 +312,27 @@
     - question: Is there a delivery fee?
       answer_html: >-
         <p>Please note that delivery takes time and energy and an amazing
-        delivery team. There is a flat $5 fee that helps to cover some of that.
-        Since we are awesome humans (and not drones) delivering your food with
-        care, hopefully you&rsquo;ll agree that it&rsquo;s totally worth
-        it.</p><p>Delivery is free for all orders $60 and over and at community
-        pick-up sites, where anyone can pick up their bags within a certain
-        pick-up time frame to save C02 and save a few bucks.</p>
+        delivery team. There is a fee of $8.95 for orders under $85 and $5.95
+        for orders over $85. Since we are awesome humans (and not drones)
+        delivering your food with care, hopefully you&rsquo;ll agree that
+        it&rsquo;s totally worth it.</p><p>Delivery is free at community pick-up
+        sites, where anyone can pick up their bags within a certain pick-up time
+        frame to save C02 and save a few bucks.</p>
     - question: What are Community Pick-up Sites and how can I join?
       answer_html: >-
         <p>We've teamed up with select community centers and local businesses to
-        be pickup points for 4P deliveries, which helps us curb CO2 by
-        delivering to a central location and helps you save money by enjoying
-        waived delivery fees on all orders! New customers can choose a Community
-        Pickup Site during registration, and anyone can change their delivery
-        location to a 4P Community Pick-up Site (or vis versa). To see if there
-        are any sites near you, simply log in to your account, click "Account
-        Info," and navigate to the dropdown below &ldquo;Do you want Pickup or
-        Delivery?&rsquo; for a list of participating locations. Just note that
-        you'll need to be able to pickup your bags during their business
-        hours.</p>
+        be pickup points for 4P deliveries. Having your bags dropped off to a
+        pick-up site helps us curb CO2 and helps you save money, as we'll waive
+        the delivery fee on all orders!</p><p>New customers can choose a
+        Community Pickup Site as your delivery location while registering, and
+        anyone can change their delivery location to a 4P Community Pick-up Site
+        (or vis versa) from your 4P account. To see if there are any sites near
+        you, simply log in to your account, click "Account Info," and navigate
+        to the dropdown below &ldquo;Do you want Pickup or Delivery?&rsquo; for
+        a list of participating locations. Just note that you'll need to be able
+        to pickup your bags during their business hours. Don't see a pick-up
+        site near you? <a href="/contact/">Contact us</a> if you know of a place
+        near you that's a good fit!</p>
     - question: What is my delivery day?
       answer_html: >-
         <p>You should have been notified of your delivery day during the signup

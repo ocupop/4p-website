@@ -503,7 +503,7 @@
         <p>Fill out our <a
         href="https://docs.google.com/forms/d/e/1FAIpQLScusQRsgq6UrI3H-7ULJUV3G41ED3P6D10_qvhY5u7PgPbVQg/viewform">Wholesale
         Contact Form</a>, so our sales team can assist you.&nbsp;</p>
-    - question: What is available for order?
+    - question: What is available to order?
       answer_html: >-
         <p>We carry produce, dairy, protein (chicken, beef, turkey tofu, &amp;
         pork), pantry items, and beverages too! Please reach out to <a
@@ -511,12 +511,11 @@
         availability list.</p>
     - question: What is 4P Foods delivery schedule?
       answer_html: >-
-        <p>Our weekly delivery schedule is as
-        follows...</p><p><strong>Monday:</strong>&nbsp;Charlottesville,
-        Richmond</p><p><strong>Tuesday:</strong>&nbsp;Charlottesville,
-        DC</p><p><strong>Wednesday:</strong> Charlottesville, Valley,
-        Roanoke&nbsp;</p><p><strong>Thursday:</strong>&nbsp;Charlottesville,
-        Richmond</p><p><strong>Friday</strong>: Charlottesville, DC</p>
+        <p>Our weekly delivery schedule is as follows...</p><p>Monday:
+        Charlottesville, Richmond</p><p>Tuesday: Charlottesville,
+        DC</p><p>Wednesday: Charlottesville, Valley,
+        Roanoke&nbsp;</p><p>Thursday: Charlottesville, Richmond</p><p>Friday:
+        Charlottesville, DC</p>
     - question: >-
         What are the order cut off times to receive products on my next delivery
         day?
@@ -528,7 +527,7 @@
         lead time for us to pre-order and then send out to you.</p>
     - question: What items require pre-order?
       answer_html: >-
-        <p>Perishable items require pre order: chicken, pork, beef, turkey,
+        <p>Perishable items require pre order. Chicken, pork, beef, turkey,
         cheese, milk, herbs, fresh pasta, kombucha kegs, and salsa are items
         that we bring in our warehouse on an as needed basis. Please reach out
         to <a href="mailto:sales@4pfoods.com">sales@4pfoods.com</a> for a
@@ -541,10 +540,16 @@
     - question: Where do you source your food from?
       answer_html: >-
         <p>We source locally and regionally from a network of over 200
-        small-to-mid-sized, independent farmers. Every item on our availability
-        list is source-identified , so you will always know where the food you
-        buy is coming from.&nbsp;</p><p>Feel free to check out our growing
-        collection of <a href="https://4pfoods.com/our-farmers">farmer
+        small-to-mid-sized, independent farmers.</p><p>Why source regionally?
+        For example, by sourcing regionally and using a network of other food
+        hubs, we can offer peak-season strawberries longer by following their
+        season up from the Carolinas in early spring through Virginia and beyond
+        into mid-summer.</p><p>4P is a founding member of the Eastern Food Hub
+        Collaborative, a network of other food hubs like us up and down the
+        Eastern Seaboard who all work with their own vetted networks of small,
+        sustainable farmers and work together to increase the variety and supply
+        of produce available from this region.</p><p>Feel free to check out our
+        growing collection of <a href="https://4pfoods.com/our-farmers">farmer
         profiles</a> for more information about our food and the people behind
         it.</p>
 ---

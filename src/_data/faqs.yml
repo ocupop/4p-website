@@ -498,6 +498,11 @@
         about how you can bring Good Food to your business.</p>
 - title: Wholesale
   faqs:
+    - question: How do I place an order?
+      answer_html: >-
+        <p>Fill out our <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLScusQRsgq6UrI3H-7ULJUV3G41ED3P6D10_qvhY5u7PgPbVQg/viewform">Wholesale
+        Contact Form</a>, so our sales team can assist you.&nbsp;</p>
     - question: What is available for order?
       answer_html: >-
         <p>We carry produce, dairy, protein (chicken, beef, turkey tofu, &amp;
@@ -512,4 +517,34 @@
         DC</p><p><strong>Wednesday:</strong> Charlottesville, Valley,
         Roanoke&nbsp;</p><p><strong>Thursday:</strong>&nbsp;Charlottesville,
         Richmond</p><p><strong>Friday</strong>: Charlottesville, DC</p>
+    - question: >-
+        What are the order cut off times to receive products on my next delivery
+        day?
+      answer_html: >-
+        <p>For items that we stock in our warehouse regularly (produce, pantry
+        &amp; frozen items) we request you get orders in by 1pm the day before
+        your scheduled delivery. There are a handful of perishable items that we
+        do not stock regularly in our warehouse that require about a week of
+        lead time for us to pre-order and then send out to you.</p>
+    - question: What items require pre-order?
+      answer_html: >-
+        <p>Perishable items require pre order: chicken, pork, beef, turkey,
+        cheese, milk, herbs, fresh pasta, kombucha kegs, and salsa are items
+        that we bring in our warehouse on an as needed basis. Please reach out
+        to <a href="mailto:sales@4pfoods.com">sales@4pfoods.com</a> for a
+        detailed pre-ordering schedule.</p>
+    - question: ' Is there an order minimum?'
+      answer_html: >-
+        <p>Yes, 4P Foods does have an order minimum. Contact&nbsp;<a
+        href="mailto:sales@4pfoods.com">sales@4pfoods.com</a>&nbsp;for more
+        details.</p>
+    - question: Where do you source your food from?
+      answer_html: >-
+        <p>We source locally and regionally from a network of over 200
+        small-to-mid-sized, independent farmers. Every item on our availability
+        list is source-identified , so you will always know where the food you
+        buy is coming from.&nbsp;</p><p>Feel free to check out our growing
+        collection of <a href="https://4pfoods.com/our-farmers">farmer
+        profiles</a> for more information about our food and the people behind
+        it.</p>
 ---

@@ -496,4 +496,20 @@
         <p>Yes! Please contact our wholesale team at <a
         href="mailto:sales@4pfoods.com">sales@4pfoods.com </a>to learn more
         about how you can bring Good Food to your business.</p>
+- title: Wholesale
+  faqs:
+    - question: What is available for order?
+      answer_html: >-
+        <p>We carry produce, dairy, protein (chicken, beef, turkey tofu, &amp;
+        pork), pantry items, and beverages too! Please reach out to <a
+        href="mailto:sales@4pfoods.com">sales@4pfoods.com</a> for our detailed
+        availability list.</p>
+    - question: What is 4P Foods delivery schedule?
+      answer_html: >-
+        <p>Our weekly delivery schedule is as
+        follows...</p><p><strong>Monday:</strong>&nbsp;Charlottesville,
+        Richmond</p><p><strong>Tuesday:</strong>&nbsp;Charlottesville,
+        DC</p><p><strong>Wednesday:</strong> Charlottesville, Valley,
+        Roanoke&nbsp;</p><p><strong>Thursday:</strong>&nbsp;Charlottesville,
+        Richmond</p><p><strong>Friday</strong>: Charlottesville, DC</p>
 ---

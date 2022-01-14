@@ -2,7 +2,7 @@
 layout: post
 title: 'Egg-celent News: PPFG Eggs'
 date: 2021-12-21 09:00:00
-featured_image: /uploads/2020-08-15-whiffletreefarm-local-eggs-1-2dozen-brown-nolabel.jpg
+featured_image: /img/uploads/posts/brown-eggs.jpg
 buttons:
   - label: READ MORE
     link: https://4pfoods.com/farmers/piedmont-progressive-farmers-group/

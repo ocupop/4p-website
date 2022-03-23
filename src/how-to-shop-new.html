@@ -2,6 +2,7 @@
 layout: default
 title: How to Shop New
 meta:
+show_mailchimp_popup: false
 featured_image: /uploads/LandingPage_Photo_4PFoods.jpg
 video_embed:
 testimonials:
@@ -33,7 +34,7 @@ how_to_shop_guide:
     description_html: >-
   - title: We'll even pick up and rested your old bag
     description_html: >-
-impact_stats:
+stats:
   - title: Farmer and artisans supported in the Mid-Atlantic region
     stat: 135
   - title: Cents on the dollar go to the farmer on average compared to only 14 cents in the industrial food system  
@@ -55,7 +56,7 @@ footer_image: /uploads/footer-image-banner.jpg
 <section>
   <div class="container">
     <div class="row align-items-center mb-5">
-      <div class="col-12 col-lg-7">
+      <div class="col-12 col-lg-5 order-2 order-lg-1">
         <div>
           <h1 class="editable">
             Eat Good Food.<br>Change the World.
@@ -66,7 +67,7 @@ footer_image: /uploads/footer-image-banner.jpg
           <a href="https://shop.4pfoods.com/summary.php?go=products" class="btn btn-primary mt-4 editable">Start Shopping</a>
         </div>
       </div>
-      <div class="col-12 col-lg-5">
+      <div class="col-12 col-lg-7 order-1 order-lg-2">
         {% if page.featured_image %}
           <div class="bg-image aspect-4x3 mt-3 mt-lg-0" style="background-image: url({{ page.featured_image }})"></div>
         {% endif %}
@@ -85,7 +86,7 @@ footer_image: /uploads/footer-image-banner.jpg
     {% endcomment %}
   </div>
 </section>
-<section id="how-to-shop-testimonials" class="bg-primary text-white">
+<section id="how-to-shop-testimonials" class="bg-primary text-white d-none d-lg-block">
   <div class="container">
     <div class="row">
       {% for testimonial in page.testimonials %}
@@ -102,6 +103,7 @@ footer_image: /uploads/footer-image-banner.jpg
     </div>
   </div>
 </section>
+{% include carousel-testimonials.html class="d-block d-lg-none" %}
 <section id="how-to-shop-guide">
   <div class="container">
     <div class="row mb-5">
@@ -117,7 +119,7 @@ footer_image: /uploads/footer-image-banner.jpg
           <div class="mb-5">
             <div class="row align-items-center">
               <div class="col-auto">
-                <div class="circle bg-tan">
+                <div class="circle circle-sm bg-tan">
                   {{ forloop.index }}
                 </div>
               </div>
@@ -132,7 +134,9 @@ footer_image: /uploads/footer-image-banner.jpg
         {% endfor %}
       </div>
       <div class="col-12 col-lg-6">
-        <img src="/uploads/gif-placeholder.png" class="img-fluid" alt="How to shop">
+        <div class="pl-3">
+          <img src="/uploads/gif-placeholder.png" class="img-fluid" alt="How to shop">
+        </div>
       </div>
     </div>
   </div>
@@ -146,7 +150,7 @@ footer_image: /uploads/footer-image-banner.jpg
     </div>
   </div>
 </section>
-<section class="bg-tan">
+<section class="bg-tan d-none d-lg-block">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -156,7 +160,7 @@ footer_image: /uploads/footer-image-banner.jpg
       </div>
     </div>
     <div class="row align-items-center">
-      {% for item in page.impact_stats %}
+      {% for item in page.stats %}
         <div class="col-12 col-lg-4 ">
           <div class="text-center stat">
             <div class="position-relative stat-wrapper">
@@ -170,6 +174,7 @@ footer_image: /uploads/footer-image-banner.jpg
     </div>
   </div>
 </section>
+{% include carousel-stats.html class="d-block d-lg-none" %}
 <section>
   <div class="container">
     <div class="row mb-5">

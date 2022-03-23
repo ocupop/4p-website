@@ -5059,18 +5059,6 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 
 /***/ }),
 
-/***/ "./scripts/HelloWorld.js":
-/*!*******************************!*\
-  !*** ./scripts/HelloWorld.js ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ \"./node_modules/prop-types/index.js\");\n/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nvar HelloWorld = function HelloWorld(_ref) {\n  var title = _ref.title;\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h5\", null, \"React Component\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"p\", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"strong\", null, \"Title: \", title)));\n};\n\nHelloWorld.propTypes = {\n  title: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (HelloWorld);\n\n//# sourceURL=webpack:///./scripts/HelloWorld.js?");
-
-/***/ }),
-
 /***/ "./scripts/helpers.js":
 /*!****************************!*\
   !*** ./scripts/helpers.js ***!
@@ -5091,7 +5079,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _HelloWorld__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HelloWorld */ \"./scripts/HelloWorld.js\");\n/* harmony import */ var _search_SearchBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./search/SearchBar */ \"./scripts/search/SearchBar.js\");\n/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./helpers */ \"./scripts/helpers.js\");\n\n\n\n\n\nvar COMPONENTS = {\n  HelloWorld: _HelloWorld__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\n  SearchBar: _search_SearchBar__WEBPACK_IMPORTED_MODULE_3__[\"default\"]\n};\n\nfunction renderComponentInElement(el) {\n  var Component = COMPONENTS[el.dataset.component];\n  if (!Component) return; // get props from elements data attribute, like the post_id\n\n  var props = Object.assign({}, el.dataset);\n  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, props), el);\n}\n\ndocument.querySelectorAll('.__react-component').forEach(renderComponentInElement);\nObject(_helpers__WEBPACK_IMPORTED_MODULE_4__[\"storeLinks\"])();\n\n//# sourceURL=webpack:///./scripts/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _search_SearchBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./search/SearchBar */ \"./scripts/search/SearchBar.js\");\n/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./helpers */ \"./scripts/helpers.js\");\n\n\n\n\nvar COMPONENTS = {\n  SearchBar: _search_SearchBar__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n};\n\nfunction renderComponentInElement(el) {\n  var Component = COMPONENTS[el.dataset.component];\n  if (!Component) return; // get props from elements data attribute, like the post_id\n\n  var props = Object.assign({}, el.dataset);\n  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, props), el);\n}\n\ndocument.querySelectorAll('.__react-component').forEach(renderComponentInElement);\nObject(_helpers__WEBPACK_IMPORTED_MODULE_3__[\"storeLinks\"])();\n\n//# sourceURL=webpack:///./scripts/index.js?");
 
 /***/ }),
 

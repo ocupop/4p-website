@@ -32,7 +32,7 @@ how_to_shop_guide:
     description_html: >-
   - title: Fresh food delivered from our farmers to your doorstep
     description_html: >-
-  - title: We'll even pick up and rested your old bag
+  - title: We'll even pick up and reuse your old bag.
     description_html: >-
 stats:
   - title: Farmer and artisans supported in the Mid-Atlantic region
@@ -109,7 +109,7 @@ footer_image: /uploads/footer-image-banner.jpg
     <div class="row mb-5">
       <div class="col-12">
         <div class="text-center editable">
-          <h2>How to shop 4p Bag</h2>
+          <h2>How to shop</h2>
         </div>
       </div>
     </div>
@@ -162,12 +162,12 @@ footer_image: /uploads/footer-image-banner.jpg
     <div class="row align-items-center">
       {% for item in page.stats %}
         <div class="col-12 col-lg-4 ">
-          <div class="text-center stat">
+          <div class="text-center stat px-4">
             <div class="position-relative stat-wrapper">
               <div class="circle circle-lg bg-white"></div>
               <span class="display-4 font-weight-bold text-primary stat-number">{{ item.stat }}</span>
             </div>
-            <p class="stat-title">{{ item.title }}</p>
+            <p class="stat-title text-serif">{{ item.title }}</p>
           </div>
         </div>
       {% endfor %}

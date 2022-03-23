@@ -2,7 +2,7 @@
 layout: default
 title: How to Shop
 meta:
-featured_image: /uploads/2020-10-09-4p-largebag-herdventures.jpg
+featured_image: /uploads/LandingPage_Photo_4PFoods.jpg
 video_embed:
 testimonials:
   - testimonial_text: >-
@@ -49,17 +49,16 @@ videos:
     description_html:
     embed_url:
     thumbnail_image:
-footer_image: /uploads/2009-09-swisschard-va-xx.JPG    
+footer_image: /uploads/footer-image-banner.jpg
 ---
 
 <section>
   <div class="container">
     <div class="row align-items-center mb-5">
-      
-      <div class="col-12 col-lg-8">
+      <div class="col-12 col-lg-7">
         <div>
           <h1 class="editable">
-            Eat Good Food. Change the World.
+            Eat Good Food.<br>Change the World.
           </h1>
           <div class="editable">
             <h3><em>Delivering food from Mid-Atlantic farmers that supports your values.</em></h3>
@@ -67,9 +66,9 @@ footer_image: /uploads/2009-09-swisschard-va-xx.JPG
           <a href="https://shop.4pfoods.com/summary.php?go=products" class="btn btn-primary mt-4 editable">Start Shopping</a>
         </div>
       </div>
-      <div class="col-12 col-lg-4">
+      <div class="col-12 col-lg-5">
         {% if page.featured_image %}
-          <div class="bg-image aspect-4x3 mb-3 mb-lg-0" style="background-image: url({{ page.featured_image }})"></div>
+          <div class="bg-image aspect-4x3 mt-3 mt-lg-0" style="background-image: url({{ page.featured_image }})"></div>
         {% endif %}
       </div>
     </div>
@@ -86,15 +85,18 @@ footer_image: /uploads/2009-09-swisschard-va-xx.JPG
     {% endcomment %}
   </div>
 </section>
-<section class="bg-primary text-white">
+<section id="how-to-shop-testimonials" class="bg-primary text-white">
   <div class="container">
     <div class="row">
       {% for testimonial in page.testimonials %}
         <div class="col-12 col-lg-4 {% unless forloop.last %}border-right{% endunless %}">
-          <blockquote class="quote text-center">
-            <p>“{{ testimonial.testimonial_text}}”</p>
-            <footer>{{ testimonial.name }} - <cite>{{ testimonial.source }}</cite></footer>
-          </blockquote>
+          <div class="d-flex h-100 align-items-center">
+            <blockquote class="quote text-center">
+              <p>“{{ testimonial.testimonial_text}}”</p>
+              <footer>{{ testimonial.name }} - <cite>{{ testimonial.source }}</cite></footer>
+            </blockquote>
+          </div>
+          
         </div>
       {% endfor %}
     </div>
@@ -114,7 +116,7 @@ footer_image: /uploads/2009-09-swisschard-va-xx.JPG
         {% for item in page.how_to_shop_guide %}
           <div class="mb-5">
             <div class="row align-items-center">
-              <div class="col-lg-auto">
+              <div class="col-auto">
                 <div class="circle bg-tan">
                   {{ forloop.index }}
                 </div>
@@ -130,7 +132,7 @@ footer_image: /uploads/2009-09-swisschard-va-xx.JPG
         {% endfor %}
       </div>
       <div class="col-12 col-lg-6">
-        <img src="{{ site.placeholder_image }}" class="img-fluid" alt="">
+        <img src="/uploads/gif-placeholder.png" class="img-fluid" alt="How to shop">
       </div>
     </div>
   </div>

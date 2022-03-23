@@ -623,6 +623,10 @@ video {
   border-radius: 50%;
   font-weight: 800;
   font-size: 28px;
+  &.circle-lg {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .editable {
@@ -641,4 +645,18 @@ video {
 img.editable {
   max-width: 100%;
   height: auto;
+}
+
+.stat {
+  .stat-wrapper{
+    padding-top: 160px;
+  }
+  .circle, 
+  .stat-number {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+  }
 }

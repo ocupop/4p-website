@@ -1,78 +1,69 @@
 ---
 layout: default
-title: How to Shop New
+title: How to Shop
 meta:
-featured_image: /uploads/LandingPage_Photo_4PFoods.jpg
+featured_image: /uploads/2020-10-09-4p-largebag-herdventures.jpg
 video_embed:
-testimonials:
-  - testimonial_text: >-
-      We've tried a number of meal prep kits and grocery delivery services, and
-      nothing compared to the quality of 4P.
-    name: Meredith
-    source: Phone Call
-  - testimonial_text: >-
-      I choose 4P because they work with small growers and help farmers, plus I
-      love the fresh, diverse offerings and items such as honey, granola,
-      sauces, salad dressings and unususal fresh cheeses!
-    name: Vikki
-    source: Phone Call
-  - testimonial_text: >-
-      I love that I know what I'll be getting, can skip a week or donate. Also,
-      I love that I don't pay in advance. The veggies and fruit so far have been
-      amazing and I love the recipes in the newsletter.
-    name: Jamie
-    source: Facebook
 how_to_shop_guide:
-  - title: Pick your bag
+  - title: Sign Up (or Log In)
     description_html: >-
-  - title: Register as a customer
+      <p>If you're brand new, choose pickup or delivery, and please include
+      delivery directions (clear and concise are always appreciated!). Enter
+      your contact and billing information and you're ready to go shopping.</p>
+  - title: Add 4P Bags to your cart
     description_html: >-
-  - title: Customize weekly - swap, add, change, skip or donate your bag
+      <p>Produce, Protein, Dairy, and Fruit bags are available.</p><p>Make sure
+      to select a recurring order if you want to get Good Food on a regular
+      basis! Don't worry, you'll get reminders before each delivery so you don't
+      forget that you've got food coming.</p>
+  - title: Customize your 4P bags
     description_html: >-
-  - title: Fresh food delivered from our farmers to your doorstep
+      <p>Each 4P Bag comes "pre-packed" with 4P's Picks of the week based on
+      what's fresh from our farmers and artisans. You'll receive a newsletter on
+      Saturday afternoons letting you know that the week's fresh harvests are in
+      and it's time to customize your Bags.&nbsp;</p><p>The initial price of
+      each standard Bag is consistent every week, and the final price will vary
+      based on how you customize your Bags. Info on each Bag's starting price
+      and minimum price can be found <a
+      href="https://shop.4pfoods.com/summary.php?go=products&amp;cat=93&amp;12">in
+      the shop</a>.</p>
+  - title: Go shopping for a la carte items
     description_html: >-
-  - title: We'll even pick up and rested your old bag
-    description_html: >-
-impact_stats:
-  - title: Farmer and artisans supported in the Mid-Atlantic region
-    stat: 135
-  - title: Cents on the dollar go to the farmer on average compared to only 14 cents in the industrial food system  
-    stat: 60
-  - title: Pounds of food donated to community organizations in Virginia
-    stat: 239K
-featured_products:
-  - family-veggie-box---medium
-  - protein-bag
-  - dairy-bag-1      
+      <p>Add on exactly what you need (extra produce when you have guests in
+      town, eggs to your produce bag, your favorite local granola) or try out
+      something new from a talented artisan producer.</p><p>Try building your
+      own fully a la carte bag by adding individual items to your cart&mdash;as
+      long as you hit the $30 minimum order, you're good to go.&nbsp;</p>
 videos:
   - title:
     description_html:
     embed_url:
     thumbnail_image:
-footer_image: /uploads/footer-image-banner.jpg
 ---
 
 <section>
   <div class="container">
     <div class="row align-items-center mb-5">
-      <div class="col-12 col-lg-7">
-        <div>
-          <h1 class="editable">
-            Eat Good Food.<br>Change the World.
-          </h1>
-          <div class="editable">
-            <h3><em>Delivering food from Mid-Atlantic farmers that supports your values.</em></h3>
-          </div>
-          <a href="https://shop.4pfoods.com/summary.php?go=products" class="btn btn-primary mt-4 editable">Start Shopping</a>
-        </div>
-      </div>
-      <div class="col-12 col-lg-5">
+      <div class="col-12 col-lg-6">
         {% if page.featured_image %}
-          <div class="bg-image aspect-4x3 mt-3 mt-lg-0" style="background-image: url({{ page.featured_image }})"></div>
+          <div class="bg-image aspect-4x3 mb-3 mb-lg-0" style="background-image: url({{ page.featured_image }})"></div>
         {% endif %}
       </div>
+      <div class="col-12 col-lg-6">
+        <div>
+          <h1 class="editable">
+            How to shop 4P Foods
+          </h1>
+          <h3 class="editable">
+            <em>Get Local, farm-fresh Good Food&mdash;delivered right to your door.</em>
+          </h3>
+          <p class="mt-4 editable">
+            Have a specific question? Jump to our <a href="#faqs">FAQs</a>
+          </p>
+        </div>
+      </div>
     </div>
-    {% comment %}
+    
     {% if page.video_embed %}
       <div class="row mt-5">
         <div class="col-12 col-lg-8 mx-lg-auto">
@@ -82,112 +73,29 @@ footer_image: /uploads/footer-image-banner.jpg
         </div>
       </div>
     {% endif %}
-    {% endcomment %}
-  </div>
-</section>
-<section id="how-to-shop-testimonials" class="bg-primary text-white">
-  <div class="container">
-    <div class="row">
-      {% for testimonial in page.testimonials %}
-        <div class="col-12 col-lg-4 {% unless forloop.last %}border-right{% endunless %}">
-          <div class="d-flex h-100 align-items-center">
-            <blockquote class="quote text-center">
-              <p>“{{ testimonial.testimonial_text}}”</p>
-              <footer>{{ testimonial.name }} - <cite>{{ testimonial.source }}</cite></footer>
-            </blockquote>
-          </div>
-          
-        </div>
-      {% endfor %}
-    </div>
   </div>
 </section>
 <section id="how-to-shop-guide">
   <div class="container">
-    <div class="row mb-5">
-      <div class="col-12">
-        <div class="text-center editable">
-          <h2>How to shop 4p Bag</h2>
-        </div>
-      </div>
-    </div>
     <div class="row">
-      <div class="col-12 col-lg-6">
-        {% for item in page.how_to_shop_guide %}
-          <div class="mb-5">
-            <div class="row align-items-center">
-              <div class="col-auto">
-                <div class="circle bg-tan">
-                  {{ forloop.index }}
-                </div>
-              </div>
-              <div class="col">
-                <h4 class="text-nocase mb-0">{{ item.title }}</h4>
-                {% if item.description_html %}
-                  {{ item.description_html }}
-                {% endif%}
+      {% for item in page.how_to_shop_guide %}
+        <div class="col-lg-6 mb-5">
+          <div class="row">
+            <div class="col-lg-auto">
+              <div class="circle bg-tan">
+                {{ forloop.index }}
               </div>
             </div>
-          </div>
-        {% endfor %}
-      </div>
-      <div class="col-12 col-lg-6">
-        <img src="/uploads/gif-placeholder.png" class="img-fluid" alt="How to shop">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="bg-green-dark bg-image aspect-none" style="background-image: url(/img/bg-illustrations/4p-homepage-button-02.jpg)">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <a href="https://shop.4pfoods.com" class="btn btn-outline-white btn-lg editable">Start Shopping 4P</a>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="bg-tan">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="text-center editable">
-          <h2>Impact Stats</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row align-items-center">
-      {% for item in page.impact_stats %}
-        <div class="col-12 col-lg-4 ">
-          <div class="text-center stat">
-            <div class="position-relative stat-wrapper">
-              <div class="circle circle-lg bg-white"></div>
-              <span class="display-4 font-weight-bold text-primary stat-number">{{ item.stat }}</span>
+            <div class="col">
+              <h4 class="my-3 text-nocase">{{ item.title }}</h4>
+              {{ item.description_html }}
             </div>
-            <p class="stat-title">{{ item.title }}</p>
           </div>
         </div>
       {% endfor %}
     </div>
   </div>
 </section>
-<section>
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-12">
-        <div class="text-center editable">
-          <h2>Featured Bags</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        {% include products/featured-products-grid.html editor-link="#featured_products" %}
-      </div>
-    </div>
-  </div>
-</section>
-{% include footer-image.html %}
-{% comment %}
 <section class="bg-secondary bg-image aspect-none" style="background-image: url(/img/bg-illustrations/4p-homepage-goodfood-01.jpg)">
   <div class="container">
     <div class="row">
@@ -254,7 +162,6 @@ footer_image: /uploads/footer-image-banner.jpg
     </div>
   </div>
 </section>
-
 <section id="tutorials">
   <div class="container">
     <div class="row mb-5">
@@ -328,4 +235,3 @@ footer_image: /uploads/footer-image-banner.jpg
     </div>
   </div>
 </div>
-{% endcomment %}

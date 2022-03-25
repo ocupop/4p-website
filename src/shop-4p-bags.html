@@ -68,7 +68,7 @@ footer_image: /uploads/footer-image-banner.jpg
     </div>
   </div>
 </section>
-<section id="how-to-shop-testimonials" class="bg-green-dark text-white d-none d-lg-block">
+<section id="how-to-shop-testimonials" class="bg-green-dark text-white d-none d-lg-block" data-cms-bind="#testimonials">
   <div class="container">
     <div class="row">
       {% for testimonial in page.testimonials %}
@@ -93,7 +93,7 @@ footer_image: /uploads/footer-image-banner.jpg
         <h2 class="h1 text-center editable">How to shop</h2>
       </div>
     </div>
-    <div class="row">
+    <div class="row" data-cms-bind="#how_to_shop_guide">
       <div class="col-12 col-lg-6 order-2 order-lg-1">
         {% for item in page.how_to_shop_guide %}
           <div class="mb-5">
@@ -139,7 +139,7 @@ footer_image: /uploads/footer-image-banner.jpg
         </div>
       </div>
     </div>
-    <div class="row align-items-center">
+    <div class="row align-items-center" data-cms-bind="#stats">
       {% for item in page.stats %}
         <div class="col-12 col-lg-4 ">
           <div class="text-center stat px-4">

@@ -629,8 +629,8 @@ video {
     font-size: 22px;
   }
   &.circle-lg {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
 }
 
@@ -663,5 +663,8 @@ img.editable {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
 
+  }
+  .stat-title {
+    font-style: normal;
   }
 }

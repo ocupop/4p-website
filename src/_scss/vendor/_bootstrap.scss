@@ -201,6 +201,7 @@
         border: 1px solid $dark;
         &.active {
           background-color: $dark;
+          opacity: 0.5;
         }
       }
     }

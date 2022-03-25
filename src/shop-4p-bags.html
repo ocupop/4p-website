@@ -56,10 +56,8 @@ footer_image: /uploads/footer-image-banner.jpg
           <h1 class="editable">
             Eat Good Food.<br>Change the World.
           </h1>
-          <div class="editable">
-            <h3><em>Delivering food from Mid-Atlantic farmers that supports your values.</em></h3>
-          </div>
-          <a href="https://shop.4pfoods.com/summary.php?go=products" class="btn btn-primary mt-4 editable">Start Shopping</a>
+          <h3 class="text-serif editable">Delivering food from Mid-Atlantic farmers that supports your values.</h3>
+          <a href="https://shop.4pfoods.com/summary.php?go=products" class="btn btn-primary btn-lg mt-4 editable">Start Shopping</a>
         </div>
       </div>
       <div class="col-12 col-lg-7 order-1 order-lg-2">
@@ -68,20 +66,9 @@ footer_image: /uploads/footer-image-banner.jpg
         {% endif %}
       </div>
     </div>
-    {% comment %}
-    {% if page.video_embed %}
-      <div class="row mt-5">
-        <div class="col-12 col-lg-8 mx-lg-auto">
-          <div class="responsive-iframe aspect-16x9">
-            <iframe width="560" height="315" src="{{ page.video_embed }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    {% endif %}
-    {% endcomment %}
   </div>
 </section>
-<section id="how-to-shop-testimonials" class="bg-primary text-white d-none d-lg-block">
+<section id="how-to-shop-testimonials" class="bg-green-dark text-white d-none d-lg-block">
   <div class="container">
     <div class="row">
       {% for testimonial in page.testimonials %}
@@ -89,7 +76,7 @@ footer_image: /uploads/footer-image-banner.jpg
           <div class="d-flex h-100 align-items-center">
             <blockquote class="quote text-center">
               <p>“{{ testimonial.testimonial_text}}”</p>
-              <footer>{{ testimonial.name }} - <cite>{{ testimonial.source }}</cite></footer>
+              <footer class="text-primary font-weight-bold">{{ testimonial.name }} - <cite>{{ testimonial.source }}</cite></footer>
             </blockquote>
           </div>
           
@@ -99,17 +86,16 @@ footer_image: /uploads/footer-image-banner.jpg
   </div>
 </section>
 {% include carousel-testimonials.html class="d-block d-lg-none" %}
-<section id="how-to-shop-guide">
+<section id="shop-guide">
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
-        <div class="text-center editable">
-          <h2>How to shop</h2>
-        </div>
+        <h2 class="h1 text-center editable">How to shop</h2>
+        <h3 class="text-center editable text-serif">Get local, farm-fresh Good Food - delivered right to your door.</h3>
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-6 order-2 order-lg-1">
         {% for item in page.how_to_shop_guide %}
           <div class="mb-5">
             <div class="row align-items-center">
@@ -128,9 +114,9 @@ footer_image: /uploads/footer-image-banner.jpg
           </div>
         {% endfor %}
       </div>
-      <div class="col-12 col-lg-6">
-        <div class="pl-3">
-          <img src="/uploads/gif-placeholder.png" class="img-fluid" alt="How to shop">
+      <div class="col-12 col-lg-6 order-1 order-lg-2">
+        <div class="mb-5 mb-lg-0 pl-lg-3">
+          <video src="/uploads/customizing.mp4" autoplay muted loop poster="/uploads/gif-placeholder.png"></video>
         </div>
       </div>
     </div>
@@ -160,7 +146,7 @@ footer_image: /uploads/footer-image-banner.jpg
           <div class="text-center stat px-4">
             <div class="position-relative stat-wrapper">
               <div class="circle circle-lg bg-white"></div>
-              <span class="display-4 font-weight-bold text-primary stat-number">{{ item.stat }}</span>
+              <span class="display-3 font-weight-bold text-primary stat-number">{{ item.stat }}</span>
             </div>
             <p class="stat-title text-serif">{{ item.title }}</p>
           </div>
@@ -170,13 +156,11 @@ footer_image: /uploads/footer-image-banner.jpg
   </div>
 </section>
 {% include carousel-stats.html class="d-block d-lg-none" %}
-<section>
+<section id="featured-bags">
   <div class="container">
     <div class="row mb-5">
       <div class="col-12">
-        <div class="text-center editable">
-          <h2>Featured Bags</h2>
-        </div>
+        <h2 class="h1 text-center editable">Featured Bags</h2>
       </div>
     </div>
     <div class="row">

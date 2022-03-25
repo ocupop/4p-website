@@ -84,6 +84,7 @@ i {
 }
 
 .text-serif {
-  font-style: italic;
   font-family: $font-family-secondary;
+  text-transform: none;
+  font-weight: normal;
 }

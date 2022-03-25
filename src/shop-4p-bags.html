@@ -91,7 +91,6 @@ footer_image: /uploads/footer-image-banner.jpg
     <div class="row mb-5">
       <div class="col-12">
         <h2 class="h1 text-center editable">How to shop</h2>
-        <h3 class="text-center editable text-serif">Get local, farm-fresh Good Food - delivered right to your door.</h3>
       </div>
     </div>
     <div class="row">
@@ -161,6 +160,7 @@ footer_image: /uploads/footer-image-banner.jpg
     <div class="row mb-5">
       <div class="col-12">
         <h2 class="h1 text-center editable">Featured Bags</h2>
+        <p class="text-center editable">We deliver healthy, seasonal food from local and regional family farms and artisans— all grown and harvested in the most ethical, sustainable way possible and packed inside insulated eco-friendly 4P Bags.</p>
       </div>
     </div>
     <div class="row">
@@ -171,145 +171,3 @@ footer_image: /uploads/footer-image-banner.jpg
   </div>
 </section>
 {% include footer-image.html %}
-{% comment %}
-<section class="bg-secondary bg-image aspect-none" style="background-image: url(/img/bg-illustrations/4p-homepage-goodfood-01.jpg)">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 mx-lg-auto">
-        <div class="editable text-center text-white">
-          <h2 class="text-nocase mb-4">Engage In Our Mission</h2>
-          <div>
-            <h4>We Believe In A World Where Good Food Is The Norm&mdash;Not The Exception.</h4>
-            <p>Every 4P purchase you make supports our <strong><a target="_blank" rel="noopener" href="/our-partners/">Good Food access initiatives</a></strong> and <strong><a target="_blank" rel="noopener" href="/our-farmers/">Good Food partner producers</a></strong>.</p>
-            <p>You can contribute directly to the Washington Nationals Youth Baseball Academy&rsquo;s weekly <strong><a target="_blank" rel="noopener" href="https://www.nats4good.org/youth-baseball-academy/health-and-nutrition/">Field of Greens Market</a></strong> by adding a <strong><a target="_blank" rel="noopener" href="https://shop.4pfoods.com/summary.php?go=products&amp;cat=93&amp;12">donation bag</a></strong>&nbsp;to your order or donating an order instead of skipping, or to Local Food Hub&rsquo;s <strong><a target="_blank" rel="noopener" href="https://www.localfoodhub.org/program/food-access/">Fresh Farmacy</a></strong> produce prescription program by making a tax-deductible donation <strong><a target="_blank" rel="noopener" href="https://www.localfoodhub.org/donate/">here</a></strong>.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="faqs">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="text-center text-primary mb-5 editable">
-          <h2>Shopping &amp; Delivery FAQS</h2>
-        </div>
-        
-      </div>
-    </div>
-    {% for object in site.data.faqs %}
-      {% assign title = object.title | slugify %}
-      {% if title contains 'shopping' or title contains 'delivery' %}
-      <div class="row mt-5">
-        <div class="col-12">
-          <h2 class="mb-4">{{ object.title }}</h2>
-        </div>
-      </div>
-      <div id="{{ object.title | slugify }}" class="row mb-5">
-        <div class="col-12">
-          <div class="accordion" id="accordion-faq">
-            {% for item in object.faqs %}
-              <div class="card">
-                <div class="card-header py-0" id="heading-{{ forloop.index }}">
-                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
-                    {{ item.question }} <i class="ri-arrow-down-s-fill text-primary"></i>
-                  </button>
-                </div>
-            
-                <div id="collapse-{{ forloop.index }}" class="collapse" aria-labelledby="heading-{{ forloop.index }}" data-parent="#accordion-faq">
-                  <div class="card-body px-0 pt-0">
-                    {{ item.answer_html }}
-                  </div>
-                </div>
-              </div>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-      {% endif %}
-    {% endfor %}
-    <div class="row mt-5">
-      <div class="col-12">
-        <div class="editable text-center">
-          <p><strong>Still have a question? <a href="/contact">Shoot us a note</a></strong></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="tutorials">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-12">
-        <div class="text-center editable">
-          <h2>Shop Tutorials</h2>
-        </div>
-      </div>
-    </div>
-    {% if page.videos.first.embed_url %}
-      <div class="row">
-        {% for video in page.videos %}
-          <div class="col-lg-4 mb-4">
-            <a href="#" class="bg-image aspect-16x9 video-thumbnail" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ video.embed_url }}" style="background-image: url({{ video.thumbnail_image }})">
-        
-            </a>
-            <h4 class="mt-4">{{ video.title }}</h4>
-            {{ video.description_html }}
-          </div>
-        {% endfor %}
-      </div>
-    {% endif %}
-    <div class="row">
-      {% for slide in site.data.onboarding.slides %}
-          {% if slide.show_on_how_to_shop %}
-          <div class="col-lg-4 mb-4">
-            <!-- desktop video output-->
-            <a href="#" class="bg-image aspect-16x9 video-thumbnail d-none d-lg-block" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ slide.video_desktop_path }}" style="background-image: url({{ slide.thumbnail_desktop_image }})">
-        
-            </a>
-            <!-- mobile video output -->
-            <a href="#" class="bg-image aspect-16x9 video-thumbnail d-block d-lg-none" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ slide.video_mobile_path }}" style="background-image: url({{ slide.thumbnail_mobile_image }})">
-        
-            </a>
-            <h4 class="mt-4">{{ slide.title }}</h4>
-            {{ slide.description_html }}
-          </div>
-          {% endif %}
-        {% for instruction in slide.instructions %}
-          {% if instruction.show_on_how_to_shop %}
-            <div class="col-lg-4 mb-4">
-              <!-- desktop video output -->
-              <a href="#" class="bg-image aspect-16x9 video-thumbnail d-none d-lg-block" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ instruction.video_desktop_path }}" style="background-image: url({{ instruction.thumbnail_desktop_image }})">
-          
-              </a>
-              <!-- mobile video output -->
-              <a href="#" class="bg-image aspect-16x9 video-thumbnail d-block d-lg-none" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ instruction.video_mobile_path }}" style="background-image: url({{ instruction.thumbnail_mobile_image }})">
-          
-              </a>
-              <h4 class="mt-4">{{ instruction.title }}</h4>
-              {{ instruction.description_html }}
-            </div>
-          {% endif %}  
-        {% endfor %}
-      {% endfor %}
-    </div>
-    
-  </div>
-</section>
-<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-body">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <div>
-          <div class="responsive-iframe aspect-16x9">
-            <iframe width="100%" src=""></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-{% endcomment %}

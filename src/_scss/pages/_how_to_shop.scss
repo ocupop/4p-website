@@ -17,3 +17,11 @@
     }
   }
 }
+
+#how-to-shop-testimonials {
+  @include media-breakpoint-down(lg) {
+    .border-right {
+      border: 0 !important;
+    }
+  }
+}

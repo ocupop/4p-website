@@ -82,3 +82,9 @@ i {
   font-family: $font-family-secondary;
   font-style: italic;
 }
+
+.text-serif {
+  font-family: $font-family-secondary;
+  text-transform: none;
+  font-weight: normal;
+}

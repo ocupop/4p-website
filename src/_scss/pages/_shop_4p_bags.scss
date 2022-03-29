@@ -1,0 +1,12 @@
+#shop-guide {
+  h4 {
+    text-transform: none;
+  }
+}
+
+#shop-guide,
+#featured-bags {
+  @include media-breakpoint-down(lg) {
+    padding-top: 50px;
+  }
+}

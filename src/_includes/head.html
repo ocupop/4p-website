@@ -9,7 +9,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-M3ZVLNN');</script>
 <!-- End Google Tag Manager -->
-  <title>{% if page.url == '/' %}4P Foods | Home{% else %}{% if page.meta[0].title %}{{ page.meta[0].title | escape }} | 4P Foods{% else %}{{ page.title | escape }} | 4P Foods{% endif %}{% endif %}</title>
+  <title>{% if page.meta[0].title %}{{ page.meta[0].title | escape }} | 4P Foods{% else %}{{ page.title | escape }} | 4P Foods{% endif %}</title>
   <meta
     name="description"
     content="{% if page.meta[0].description %}{{ page.meta[0].description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"

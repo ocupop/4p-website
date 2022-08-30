@@ -1,0 +1,30 @@
+# .github/workflows/jekyll-algolia.yml
+# currently using ruby 2.5.9 which is the most current version that both cloudcannon and github action support
+# bundler version also had to be forced to be 1.17.3 in order to run properly
+on:
+  push:
+    branches:
+      - master
+
+defaults:
+  run:
+    working-directory: src
+
+jobs:
+  build:
+    name: Algolia push records
+
+    runs-on: ubuntu-latest
+    env:
+      ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - name: Install dependencies and push records
+        run: |
+          gem install bundler:2.1.4
+          bundle install --jobs 4 --retry 3
+          bundle exec jekyll algolia
+        

@@ -271,20 +271,5 @@ _options:
     image: true
     embed: true
 
-  _text:
-    format: p h1 h2 h3 h4 h5 h6 pre address div
-    bold: true
-    italic: true
-    link: true
-    numberedlist: true
-    bulletedlist: true
-    subscript: true
-    superscript: true
-    horizontalrule: true
-    right: true
-    left: true
-    center: true
-    image: true
-    embed: true
 
 placeholder_image: https://via.placeholder.com/1200

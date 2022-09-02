@@ -10,7 +10,7 @@ layout: default
           <img src="{{ page.featured_image }}" class="img-fluid mb-5" alt="{{ page.title }} image">
         {% endif %}
         <h1>{{ page.title }}</h1>
-        <p>{{ page.date | date: '%B %d, %Y'}}</p>
+        <p>{{ page.date | date: '%B %d, %Y'}} {% if page.author %}by {{ page.author }}{% endif %}</p>
         {{ page.content }}
         {% if page.buttons %}
           <div class="d-md-flex">

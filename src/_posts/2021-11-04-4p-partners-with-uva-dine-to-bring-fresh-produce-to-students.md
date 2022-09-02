@@ -2,6 +2,8 @@
 layout: post
 title: 4P Partners with UVA Dine to Bring Fresh Produce to Students
 date: 2021-11-04 15:00:00
+author:
+excerpt:
 featured_image: /uploads/img-1181.jpg
 buttons:
 assets:

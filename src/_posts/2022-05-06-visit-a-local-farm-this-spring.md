@@ -2,6 +2,8 @@
 layout: post
 title: Visit a Local Farm this Spring
 date: 2022-05-06 11:30:00
+author:
+excerpt:
 featured_image: /uploads/messicksfarmmarket-building-fall.png
 buttons:
 assets:

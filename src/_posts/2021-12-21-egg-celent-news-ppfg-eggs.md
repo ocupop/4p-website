@@ -2,6 +2,8 @@
 layout: post
 title: 'Egg-celent News: PPFG Eggs'
 date: 2021-12-21 09:00:00
+author:
+excerpt:
 featured_image: /img/uploads/posts/brown-eggs.jpg
 buttons:
   - label: READ MORE

@@ -2,6 +2,8 @@
 layout: post
 title: Eat Well, Live Well with 4P in 2022
 date: 2022-01-10 17:00:00
+author:
+excerpt:
 featured_image: /uploads/eatwelllivewell-4pfoods-2022.jpg
 buttons:
 assets:

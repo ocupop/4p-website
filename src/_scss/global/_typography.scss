@@ -42,7 +42,6 @@ h3,
   em {
     font-family: $font-family-secondary;
     font-weight: 700;
-    text-transform: capitalize;
   }
   @include media-breakpoint-down(md) {
     font-size: 1.2rem;

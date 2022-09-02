@@ -2,6 +2,8 @@
 layout: post
 title: More About Our Meats
 date: 2020-11-17 00:00:00
+author:
+excerpt:
 featured_image: /img/uploads/posts/2020-06-15-4p-meat-bag.jpg
 buttons:
 assets:

@@ -2,6 +2,8 @@
 layout: post
 title: 'Brighter Bites: A New 4P Foods Partnership'
 date: 2021-10-06 14:00:00
+author:
+excerpt:
 featured_image: /uploads/10-06-2021-brighterbitesboxes-photocoutesyofbrighterbites.jpg
 buttons:
 assets:

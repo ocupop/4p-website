@@ -2,6 +2,8 @@
 layout: post
 title: 4P Foods Community Pickup Sites
 date: 2021-05-01 12:00:00
+author:
+excerpt:
 featured_image: /img/uploads/posts/bag-in-tree-resized.png
 buttons:
 assets:

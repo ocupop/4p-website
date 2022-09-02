@@ -2,6 +2,8 @@
 layout: post
 title: '"But Citrus isn''t Local!?" - A Word from Our Founder'
 date: 2015-04-28 00:00:00
+author:
+excerpt:
 featured_image: /img/uploads/posts/citrusisntlocalcover.jpg
 buttons:
 assets:

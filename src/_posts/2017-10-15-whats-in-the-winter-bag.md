@@ -2,6 +2,8 @@
 layout: post
 title: What's In the Winter Bag?
 date: 2017-10-15 00:00:00
+author:
+excerpt:
 featured_image: /img/uploads/posts/winter-bag-cover.jpg
 buttons:
 assets:

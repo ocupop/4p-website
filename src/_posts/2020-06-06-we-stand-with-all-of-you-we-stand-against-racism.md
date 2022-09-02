@@ -2,6 +2,8 @@
 layout: post
 title: 'We Stand With All of You: We Stand Against Racism'
 date: 2020-06-06 00:00:00
+author:
+excerpt:
 featured_image:
 buttons:
 assets:

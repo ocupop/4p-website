@@ -2,6 +2,8 @@
 layout: post
 title: Good Food Knows No Boundaries
 date: 2019-10-08 15:06:00
+author:
+excerpt:
 featured_image: /uploads/good-food-knows-no-boundaries-img.jpg
 buttons:
 assets:

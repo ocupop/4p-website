@@ -2,6 +2,8 @@
 layout: post
 title:
 date:
+author:
+excerpt:
 featured_image:
 buttons:
 assets:

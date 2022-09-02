@@ -2,6 +2,8 @@
 layout: post
 title: The Big Cheese Deal
 date: 2021-05-08 12:00:00
+author:
+excerpt:
 featured_image: /img/uploads/posts/91916881.jpeg
 buttons:
 assets:

@@ -2,6 +2,8 @@
 layout: post
 title: 'Reflections // Kara Ellis, Marketing Intern'
 date: 2015-08-30 00:00:00
+author:
+excerpt:
 featured_image: /img/uploads/posts/KaraEllisCover.jpg
 buttons:
 assets:

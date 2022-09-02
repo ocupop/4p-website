@@ -4,6 +4,8 @@ title: >-
   Press Release: Regional Coalition Mobilizes to Feed Communities, Support
   Farmers During COVID-19 Pandemic
 date: 2020-03-19 00:00:00
+author:
+excerpt:
 featured_image: /img/uploads/2020.03.27-4P_MAFRAC_HERD.ventres_FriendshipCt+Prospect-v2-14.jpg
 buttons:
 assets:

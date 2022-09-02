@@ -2,6 +2,8 @@
 layout: post
 title: Harvest Party at Bees and Trees Farm
 date: 2015-10-28 00:00:00
+author:
+excerpt:
 featured_image: /img/uploads/posts/HarvestPartyCover.jpg
 buttons:
 assets:

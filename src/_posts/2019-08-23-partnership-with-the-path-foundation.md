@@ -2,6 +2,8 @@
 layout: post
 title: Partnership with the Path Foundation
 date: 2019-08-23 06:00:00
+author:
+excerpt:
 featured_image: /uploads/path-foundation-1.jpg
 buttons:
 assets:

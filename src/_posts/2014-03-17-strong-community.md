@@ -2,6 +2,8 @@
 layout: post
 title: Strong Community
 date: 2014-03-17 00:00:00
+author:
+excerpt:
 featured_image: /img/uploads/posts/marthastableheader-1.jpg
 buttons:
 assets:

@@ -2,6 +2,8 @@
 layout: post
 title: Introducing 4P Foods
 date: 2014-03-12 00:00:00
+author:
+excerpt:
 featured_image: /img/uploads/posts/4poldlogocover.jpg
 buttons:
 assets:

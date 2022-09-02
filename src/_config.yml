@@ -102,6 +102,9 @@ defaults:
       _options:
         featured_image:
           uploads_dir: 'img/uploads/posts/'
+      _inputs:
+        excerpt:
+          type: textarea
   - scope:
       type: 'newsletters'
     values:

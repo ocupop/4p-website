@@ -4,18 +4,16 @@ title: Community Events
 meta:
 footer_image: /uploads/eg958jag.jpg
 ---
-
 <section>
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-8 mx-lg-auto text-center">
         <div class="editable">
-          <h1>Community Events</h1>
-          <h3><em>Food, Friends, and Fun</em></h3>
+          <h1>Event with 4P Foods</h1>
+          <h2>Food, Friends, and Fun!</h2>
         </div>
         <div class="editable">
-          <p>Check here for opportunities to get to know the 4P team, farmers, and members and learn more about Good Food at events
-          that highlight the bounty of our regional food system.</p>
+          <p>Check here for opportunities to get to know the 4P Foods team, farmers, and members and learn more about Good Food at events that highlight the bounty of our regional food system.</p>
         </div>
       </div>
     </div>
@@ -38,10 +36,7 @@ footer_image: /uploads/eg958jag.jpg
       {% endif %} 
     {% endfor %} 
     {% assign num_upcoming_events = upcoming_events | size %} {% if num_upcoming_events > 0 %}
-    <div 
-      data-cms-editor-link="cloudcannon:collections/_events"
-      data-cms-editor-link-style="modal" 
-      class="threesome mt-4">
+    <div data-cms-editor-link="cloudcannon:collections/_events" data-cms-editor-link-style="modal" class="threesome mt-4">
       {% for event in upcoming_events reversed%}
       <div class="card bg-transparent">
         <div class="card-content pin-footer">
@@ -95,10 +90,7 @@ footer_image: /uploads/eg958jag.jpg
         </div>
       </div>
     </div>
-    <div
-      data-cms-editor-link="cloudcannon:collections/_events"
-      data-cms-editor-link-style="modal"  
-      class="threesome mt-4">
+    <div data-cms-editor-link="cloudcannon:collections/_events" data-cms-editor-link-style="modal" class="threesome mt-4">
       {% for event in past_events reversed %}
       <div class="card bg-transparent">
         <div class="card-content pin-footer">

@@ -11,20 +11,19 @@ food_resources:
       have visited FoodFinder online, and over 1,000 people have downloaded the
       app.
     image: /uploads/food-access-programs/4p-goodfoodresources-01.jpg
-    link: 'https://foodfinder.us/'
+    link: https://foodfinder.us/
   - name: Food Learning Locator
     description: >-
       Bainum Family Foundation’s Food Learning Locator, which provides an
       interactive map of food-related education and job training opportunities
       in D.C., Maryland, and Virginia:
     image: /uploads/food-access-programs/4p-goodfoodresources-02.jpg
-    link: 'https://foodlearninglocator.org/'
+    link: https://foodlearninglocator.org/
 _assets:
   - image: /uploads/2020-05-08-4pfoods-hv-1080-34-1.jpg
   - image: /uploads/4p-ymca-nats-academy-market1.png
   - image: /uploads/field-of-greens-market02.JPG
 ---
-
 <div class="row no-gutters">
   <div class="col-4">
     <div class="p-1">
@@ -47,9 +46,7 @@ _assets:
     <div class="row mb-5">
       <div class="col-12 col-lg-11 mx-lg-auto text-center">
         <div class="editable">
-        <h2>
-          Food Access Programs
-        </h2>
+          <h1><strong>Food Access Programs</strong></h1>
         </div>
         <p class="lead editable">
           Building a better food system that enables all people&mdash;regardless of income, race, or ZIP code&mdash;to access Good Food.
@@ -153,7 +150,8 @@ _assets:
       </div>
       <div class="col-lg-6">
         <div class="editable">
-          <p>In our most successful program in Ward 7 (a &ldquo;food desert,&rdquo; where access to Good Food is highly limited), 4P Foods addresses the geographic access challenge by delivering into the neighborhood to a central community center, the Washington Nationals Youth Baseball Academy (YBA).</p>
+          <h3><strong>Increasing Food Access in Ward 7, Washington, DC</strong></h3>
+          <p>In our most successful program in the Ward 7 neighborhoods of Washington, D.C., 4P Foods increases access to freshly harvested food with weekly deliveries into the neighborhood to a central community center, the Washington Nationals Youth Baseball Academy (YBA).</p>
           <p>Each week at the YBA, we put on the Field of Greens market, offering the same fresh, healthy food that our members get in their bags each week, but at low to no cost, thanks to a USDA grant that 4P Foods, the YBA, and the YMCA received for the program. To address the personal access challenge, the YMCA puts on free cooking classes at the YBA using our food.</p>
         </div>
       </div>
@@ -182,10 +180,7 @@ _assets:
     </div>
     <div class="row">
       <div class="col-12">
-        <div
-          data-cms-editor-link="cloudcannon:#food_resources"
-          data-cms-editor-link-style="modal" 
-          class="responsive-card-deck cards-lg-3 cards-md-2 mt-5 cms-editor-link">
+        <div data-cms-editor-link="cloudcannon:#food_resources" data-cms-editor-link-style="modal" class="responsive-card-deck cards-lg-3 cards-md-2 mt-5 cms-editor-link">
           {% for resource in page.food_resources %}
           <div class="card bg-transparent">
             <a href="{{ resource.link }}" class="bg-image aspect-4x3" style="background-image: url({{ resource.image }})"></a>

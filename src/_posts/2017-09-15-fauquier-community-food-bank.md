@@ -2,6 +2,8 @@
 layout: post
 title: Fauquier Community Food Bank
 date: 2017-09-15 00:00:00
+author:
+excerpt:
 featured_image: /img/uploads/posts/FauquierCommunityFoodBankCover.jpg
 buttons:
 assets:

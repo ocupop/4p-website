@@ -2,6 +2,8 @@
 layout: post
 title: "10 WAYS TO ENJOY\_ THE GREAT OUTDOORS"
 date: 2021-07-30 00:00:00
+author:
+excerpt:
 featured_image: /uploads/sunnyside-farm-tour-team-1-800x600.jpg
 buttons:
 assets:

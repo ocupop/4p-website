@@ -2,6 +2,8 @@
 layout: post
 title: NATS4GOOD COMMUNITY GRANT
 date: 2020-04-09 18:35:00
+author:
+excerpt:
 featured_image: /uploads/posts/4pfoods-nats4good.jpg
 buttons:
 assets:

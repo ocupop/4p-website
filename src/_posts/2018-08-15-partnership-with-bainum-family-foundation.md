@@ -2,6 +2,8 @@
 layout: post
 title: Partnership With Bainum Family Foundation
 date: 2018-08-15 01:07:00
+author:
+excerpt:
 featured_image: /img/uploads/posts/Bainum_Family_Foundation_Logo_Color.jpg
 buttons:
 assets:

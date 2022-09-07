@@ -2,6 +2,8 @@
 layout: post
 title: How Was It Raised? What's Behind Meat Labels
 date: 2020-11-17 00:00:00
+author:
+excerpt:
 featured_image: >-
   /img/uploads/posts/2020-06-03-va-edinburg-jlgreenfarm-danieljames-herd-ventures-12.jpg
 buttons:  

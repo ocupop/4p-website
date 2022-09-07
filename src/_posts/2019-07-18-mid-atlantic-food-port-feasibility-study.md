@@ -2,6 +2,8 @@
 layout: post
 title: Mid-Atlantic Food Port Feasibility Study
 date: 2019-07-18 00:00:00
+author:
+excerpt:
 featured_image: /img/uploads/MidAtlanticFoodPortFSCover.png
 buttons:
 assets:

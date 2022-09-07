@@ -4,6 +4,8 @@ title: >-
     4P Foods Receives Investment from American Heart Association’s Bernard J.
     Tyson Impact Fund
 date: 2021-10-29 09:00:00
+author:
+excerpt:
 featured_image: /uploads/tom-warehouse.jpg
 buttons:
     -

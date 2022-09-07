@@ -1,7 +1,14 @@
 ---
 layout: page
-title: Food Access Programs
+title: 4P Foods | Food Access Programs | Washington, DC
 meta:
+  - title: 4P Foods | Food Access Programs | Washington, DC
+    description: >-
+      We stand 4ps and love. Our mission at 4P Foods is to connect all people
+      and communities to regional farmers and responsibly sourced food. Our
+      Purpose is to positively impact People, Planet, and Prosperity through a
+      more equitable food system.
+    image:
 footer_image: /uploads/2009-09-swisschard-va-xx-1.JPG
 food_resources:
   - name: Foodfinder.us
@@ -11,20 +18,19 @@ food_resources:
       have visited FoodFinder online, and over 1,000 people have downloaded the
       app.
     image: /uploads/food-access-programs/4p-goodfoodresources-01.jpg
-    link: 'https://foodfinder.us/'
+    link: https://foodfinder.us/
   - name: Food Learning Locator
     description: >-
       Bainum Family Foundation’s Food Learning Locator, which provides an
       interactive map of food-related education and job training opportunities
       in D.C., Maryland, and Virginia:
     image: /uploads/food-access-programs/4p-goodfoodresources-02.jpg
-    link: 'https://foodlearninglocator.org/'
+    link: https://foodlearninglocator.org/
 _assets:
   - image: /uploads/2020-05-08-4pfoods-hv-1080-34-1.jpg
   - image: /uploads/4p-ymca-nats-academy-market1.png
   - image: /uploads/field-of-greens-market02.JPG
 ---
-
 <div class="row no-gutters">
   <div class="col-4">
     <div class="p-1">
@@ -46,9 +52,9 @@ _assets:
   <div class="container">
     <div class="row mb-5">
       <div class="col-12 col-lg-11 mx-lg-auto text-center">
-        <h2 class="editable">
-          Food Access Programs
-        </h2>
+        <div class="editable">
+          <h1><strong>Food Access Programs</strong></h1>
+        </div>
         <p class="lead editable">
           Building a better food system that enables all people&mdash;regardless of income, race, or ZIP code&mdash;to access Good Food.
         </p>
@@ -92,9 +98,11 @@ _assets:
               </div>
               <div class="card-body">
                 <div class="content text-center">
-                  <h4 class="editable">
+                  <div class="editable">
+                  <h4>
                     Financial
                   </h4>
+                  </div>
                   <div class="editable">
                     <p>The financial access challenge of earning enough money for Good Food. Even if there is a grocery store, healthy fresh produce is often a luxury.</p>
                     <p>Given the accessible stores, can you afford Good Food? Even if there is a nearby grocery store, fresh and appealing produce is often unavailable or unattainably expensive.</p>
@@ -112,9 +120,11 @@ _assets:
               </div>
               <div class="card-body">
                 <div class="content text-center">
-                  <h4 class="editable">
-                    Personal
-                  </h4>
+                  <div class="editable">
+                    <h4 class="editable">
+                      Personal
+                    </h4>
+                  </div>
                   <div class="editable">
                     <p>The personal access challenge is about lifestyle and environmental limitations. For example, someone working multiple jobs may not have the time, tools or knowledge to buy and prepare healthy food.</p>
                     <p>If someone delivered a free bag of groceries to your doorstep, would you have the ability to cook and enjoy them? Many people don&rsquo;t have the time, tools, or skills to buy and prepare healthy food.</p>
@@ -147,7 +157,8 @@ _assets:
       </div>
       <div class="col-lg-6">
         <div class="editable">
-          <p>In our most successful program in Ward 7 (a &ldquo;food desert,&rdquo; where access to Good Food is highly limited), 4P Foods addresses the geographic access challenge by delivering into the neighborhood to a central community center, the Washington Nationals Youth Baseball Academy (YBA).</p>
+          <h3><strong>Increasing Food Access in Ward 7, Washington, DC</strong></h3>
+          <p>In our most successful program in the Ward 7 neighborhoods of Washington, D.C., 4P Foods increases access to freshly harvested food with weekly deliveries into the neighborhood to a central community center, the Washington Nationals Youth Baseball Academy (YBA).</p>
           <p>Each week at the YBA, we put on the Field of Greens market, offering the same fresh, healthy food that our members get in their bags each week, but at low to no cost, thanks to a USDA grant that 4P Foods, the YBA, and the YMCA received for the program. To address the personal access challenge, the YMCA puts on free cooking classes at the YBA using our food.</p>
         </div>
       </div>
@@ -164,9 +175,11 @@ _assets:
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="editable">
-          Good Food Resources
-        </h2>
+        <div class="editable">
+          <h2>
+            Good Food Resources
+          </h2>
+        </div>
         <div class="editable">
           <p>Are you or your family struggling to access Good Food? Click here to learn more about resources that can help.</p>
         </div>
@@ -174,10 +187,7 @@ _assets:
     </div>
     <div class="row">
       <div class="col-12">
-        <div
-          data-cms-editor-link="cloudcannon:#food_resources"
-          data-cms-editor-link-style="modal" 
-          class="responsive-card-deck cards-lg-3 cards-md-2 mt-5 cms-editor-link">
+        <div data-cms-editor-link="cloudcannon:#food_resources" data-cms-editor-link-style="modal" class="responsive-card-deck cards-lg-3 cards-md-2 mt-5 cms-editor-link">
           {% for resource in page.food_resources %}
           <div class="card bg-transparent">
             <a href="{{ resource.link }}" class="bg-image aspect-4x3" style="background-image: url({{ resource.image }})"></a>

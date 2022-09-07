@@ -2,6 +2,8 @@
 layout: post
 title: 4P Foods Storage Tips
 date: 2015-01-14 00:00:00
+author:
+excerpt:
 featured_image: /img/uploads/posts/StorageTipsCover.jpg
 buttons:
 assets:

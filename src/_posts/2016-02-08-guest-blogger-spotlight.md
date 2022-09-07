@@ -2,6 +2,8 @@
 layout: post
 title: Guest Blogger Spotlight
 date: 2016-02-08 00:00:00
+author:
+excerpt:
 featured_image: /img/uploads/posts/GuestBloggerSpotlightCover.jpg
 buttons:
 assets:

@@ -2,6 +2,7 @@
 layout: post
 title: 'Regenerative Agriculture and the Future of Food '
 date: 2022-04-11 00:00:00
+author:
 featured_image: /uploads/amanda-farm-tour.jpg
 buttons:
 assets:

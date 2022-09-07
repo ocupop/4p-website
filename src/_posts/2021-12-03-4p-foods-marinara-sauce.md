@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 4P Foods Marinara Sauce
+author:
+excerpt:
 date: 2021-12-03 17:00:00
 featured_image: /uploads/4pfoods-marinarasauce-tomatosauce.jpg
 buttons:

@@ -2,6 +2,8 @@
 layout: post
 title: Give the Gift of Good Food
 date: 2020-12-11 03:54:00
+author:
+excerpt:
 featured_image: /img/uploads/posts/4PFoods_HolidayProduceBag_banner.jpg
 buttons:
 assets:

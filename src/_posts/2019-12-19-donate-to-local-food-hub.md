@@ -2,6 +2,8 @@
 layout: post
 title: Donate to Local Food Hub
 date: 2019-12-19 00:00:00
+author:
+excerpt:
 featured_image: /img/uploads/LFHLogo.png
 buttons:
 assets:

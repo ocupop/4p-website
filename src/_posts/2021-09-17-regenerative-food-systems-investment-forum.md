@@ -2,6 +2,8 @@
 layout: post
 title: Regenerative Food Systems Investment Forum
 date: 2021-09-17 00:00:00
+author:
+excerpt:
 featured_image: /rfsi-forum-21---tom.png
 buttons:
 assets:

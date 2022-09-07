@@ -2,6 +2,8 @@
 layout: post
 title: Culinary Concepts AB
 date: 2020-09-09 00:00:00
+author:
+excerpt:
 featured_image: /uploads/2020-05-31-culinaryconcepts-pilotepisode-9.jpg
 buttons:
 assets:

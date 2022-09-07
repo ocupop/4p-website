@@ -2,6 +2,8 @@
 layout: post
 title: Our Favorite Pick-Your-Own Apple Orchards
 date: 2014-10-07 00:00:00
+author:
+excerpt:
 featured_image: /img/uploads/posts/pyocover.jpg
 buttons:
 assets:

@@ -102,6 +102,9 @@ defaults:
       _options:
         featured_image:
           uploads_dir: 'img/uploads/posts/'
+      _inputs:
+        excerpt:
+          type: textarea
   - scope:
       type: 'newsletters'
     values:
@@ -270,5 +273,6 @@ _options:
     center: true
     image: true
     embed: true
+
 
 placeholder_image: https://via.placeholder.com/1200

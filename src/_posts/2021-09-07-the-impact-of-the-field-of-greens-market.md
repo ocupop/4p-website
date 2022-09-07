@@ -2,6 +2,8 @@
 layout: post
 title: The Impact of the Field of Greens Market
 date: 2021-09-07 13:00:00
+author:
+excerpt:
 featured_image: /uploads/4pfoods-nats4goodbuyabagcampaign-800x600.jpg
 buttons:
   - label: DONATE A BAG

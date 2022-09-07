@@ -4,6 +4,8 @@ title: >-
   The Washington Nationals Youth Baseball Academy and 4P Foods invite the public
   to participate in “Buy a Bag” program
 date: 2021-02-17 11:28:00
+author:
+excerpt:
 featured_image: >-
   /img/uploads/posts/2021.02.17_4PFoods_WNYBA_NatsAcademyMarket_BuyABagCampaign_1080x.jpg
 buttons:  

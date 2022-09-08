@@ -13,6 +13,18 @@ excerpt: >-
 featured_image: /uploads/4pfoods-web-images-1900x1000-rodaleinstitute.png
 buttons:
 assets:
+  - _type: image
+    title: Amanda and Grace at the Rodale Institute
+    image: /uploads/3.jpg
+  - _type: image
+    title: Speaker at the Rodale Institute
+    image: /uploads/5.jpg
+  - _type: image
+    title: Grace at the Rodale Institute
+    image: /uploads/7.jpg
+  - _type: image
+    title: Vegetable Systems Trial at the Rodale Institute
+    image: /uploads/8.jpg
 tags:
   - Regenerative Agriculture
   - Regenerative Food Systems

@@ -13,13 +13,13 @@ meta:
 featured_image: /uploads/2020-10-09-4p-largebag-herdventures.jpg
 video_embed:
 how_to_shop_guide:
-  - title: Create an Account (or Log In)
+  - title_html: <h4>Create an Account (or Log In)</h4>
     description_html: >-
       <p>If you're brand new - we'll first need to ensure that we deliver to
       you! Choose pickup or delivery, and please include delivery directions
       (clear and concise are always appreciated).</p><p>Enter your contact and
       billing information and you're ready to go shopping.</p>
-  - title: Subscribe to a Tote or Buy A La Carte
+  - title_html: <h4>Subscribe to a Tote or Buy A La Carte</h4>
     description_html: >-
       <p>Subscribe to get Produce, Protein, Dairy, and Fruit 4P Foods totes sent
       weekly or monthly. Or, just buy what you need when you need
@@ -28,7 +28,7 @@ how_to_shop_guide:
       each week.&nbsp;</p><p><strong>Curating your 4P Foods purchases every time
       you need food?</strong> Our Weekly Harvest newsletter will let you know
       when to start prepping for your next delivery window!</p>
-  - title: Customize Your 4P Foods Subscription
+  - title_html: <h4>Customize Your 4P Foods Subscription</h4>
     description_html: >-
       <p>Each 4P Foods tote comes packed with freshly harvest, in-season
       selections from the 4P Foods team.</p><p>Every Saturday, the Weekly
@@ -40,7 +40,7 @@ how_to_shop_guide:
       can be found <a
       href="https://shop.4pfoods.com/summary.php?go=products&amp;cat=93&amp;12">in
       the shop</a>.</p>
-  - title: Shop A La Carte
+  - title_html: <h4>Shop A La Carte</h4>
     description_html: >-
       <p>We have all your pantry, dairy, and daily staples - locally sourced
       from farmers and makers in DC, Virginia, Maryland, North Carolina, and the
@@ -49,7 +49,7 @@ how_to_shop_guide:
       bag when you need it. As long as you hit the $30 minimum order, you're
       good to go.&nbsp;</p>
 videos:
-  - title:
+  - title_html:
     description_html:
     embed_url:
     thumbnail_image:
@@ -96,7 +96,7 @@ videos:
             </div>
             <div class="col">
               <div class="my-3 editable">
-                <h4 class="text-nocase">{{ item.title }}</h4>
+                {{ item.title_html }}
               </div>
               {{ item.description_html }}
             </div>

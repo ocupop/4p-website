@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "4P Foods Welcomes Former Lidl US COO Louisa Hart  as Its New Chief Operating Officer: 15-year international grocery store operator brings new perspective and expertise to 4P Foods. \_"
+title: 'Introducing 4P Foods New COO: Louisa Hart'
 date: 2022-08-16 10:00:00
-author:
-excerpt:
+author: 4P Foods
+excerpt: "We are thrilled to welcome vormer Lidl US COO Louisa Hart as our new Chief Operating Officer. Louisa is a 15-year international grocery store operator and brings new perspectives and expertise to 4P Foods. \_"
 featured_image: /uploads/4pfoods-web-images-1900x1000.png
 buttons:
 assets:

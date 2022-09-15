@@ -1,16 +1,14 @@
 ---
 layout: post
-title: >-
-  4P Foods Learns More about Regenerative Organic Agriculture Research at The
-  Rodale Institute
+title: Exciting Regenerative Organic Farming Research at Rodale Institute
 date: 2022-09-08 11:00:00
 author: 4P Foods
 excerpt: >-
   Local Food Sales Advocate Grace Grattan traveled to The Rodale Institute in
   Kutztown, PA to attend the 2022 Annual Organic Field Day. Lucky for us, Grace
-  is sharing her farm-tastic thoughts and takeaways from the event with the 4P
-  Foods community!
-featured_image: /uploads/4pfoods-web-images-1900x1000-rodaleinstitute.png
+  is sharing her farm-tastic thoughts and takeaways about regenerative organic
+  farming research at the Rodale Institute!
+featured_image: /img/uploads/posts/4pfoods-blog-images-1900x1000.png
 buttons:
 assets:
   - _type: image

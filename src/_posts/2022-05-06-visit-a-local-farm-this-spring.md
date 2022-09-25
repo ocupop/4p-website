@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Visit a Local Farm this Spring
+title: 6 Wonderful Farms To Visit In Virginia And Maryland
 date: 2022-05-06 11:30:00
-author:
-excerpt:
+author: 4P Foods
+excerpt: >-
+  A list of six farms to visit in Virginia and Maryland. These local farms are
+  open for visitors year round or put on special seasonal events.
 featured_image: /uploads/messicksfarmmarket-building-fall.png
 buttons:
 assets:

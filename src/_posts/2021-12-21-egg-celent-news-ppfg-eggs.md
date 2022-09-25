@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'Egg-celent News: PPFG Eggs'
+title: 'Egg-celent News: Delicious, Farm Fresh Eggs Delivered'
 date: 2021-12-21 09:00:00
-author:
+author: 4P Foods
 excerpt:
 featured_image: /img/uploads/posts/brown-eggs.jpg
 buttons:

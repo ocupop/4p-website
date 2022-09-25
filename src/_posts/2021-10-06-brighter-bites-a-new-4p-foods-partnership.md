@@ -1,9 +1,11 @@
 ---
 layout: post
-title: 'Brighter Bites: A New 4P Foods Partnership'
+title: 'Partnership with Brighter Bites: Fresh Food Delivered to Schools'
 date: 2021-10-06 14:00:00
-author:
-excerpt:
+author: 4P Foods
+excerpt: >-
+  4P Foods is partnering with Brighter Bites to deliver fruits and vegetables to
+  schools in Prince George’s County, Maryland.
 featured_image: /uploads/10-06-2021-brighterbitesboxes-photocoutesyofbrighterbites.jpg
 buttons:
 assets:

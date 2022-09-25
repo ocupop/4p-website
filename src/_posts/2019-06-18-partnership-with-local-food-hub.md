@@ -1,16 +1,18 @@
 ---
 layout: post
-title: Partnership with Local Food Hub
+title: Excited to Announce New Virginia Warehouse and Wholesale Distribution
 date: 2019-06-18 00:48:00
-author:
-excerpt:
+author: 4P Foods
+excerpt: >-
+  4P Foods has exciting news that will positively impact our local food system.
+  We will acquire Local Food Hub's wholesale arm and warehouse in
+  Charlottesville, Virginia.
 featured_image: /img/uploads/4P-LFH-Partnership-Announcement-1024x1024.png
 buttons:
 assets:
 tags:
 published: true
 ---
-
 <div class="editable">We at 4P Foods have very exciting news that will positively impact our local food system. After months of careful consideration, 4P Foods and Local Food Hub, a non-profit that partners with Virginia farmers to increase community access to food, have finalized the merger of their distribution operations. Starting this month, 4P Foods will acquire Local Food Hub's wholesale arm and warehouse in Charlottesville, Virginia.</div>
 
 <div class="editable">&nbsp;</div>

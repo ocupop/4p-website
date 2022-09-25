@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Eat Well, Live Well with 4P in 2022
+title: 5 Reasons to Get Farm Fresh Food Delivered by 4P Foods
 date: 2022-01-10 17:00:00
-author:
-excerpt:
+author: 4P Foods
+excerpt: 4P Foods can connect you to a more sustainable food system.
 featured_image: /uploads/eatwelllivewell-4pfoods-2022.jpg
 buttons:
 assets:

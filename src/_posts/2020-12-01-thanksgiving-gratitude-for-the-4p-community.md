@@ -1,16 +1,18 @@
 ---
 layout: post
-title: Thanksgiving Gratitude for the 4P Community
+title: Expressing Love & Gratitude For Our Community This Thanksgiving
 date: 2020-12-01 00:00:00
-author:
-excerpt:
+author: 4P Foods
+excerpt: >-
+  We want to say thank you to the hardworking farmers, the resilient food
+  businesses, the tireless food assistance providers, our incredible 4P Foods
+  community.
 featured_image: /img/uploads/posts/nadine-tallawah.png
 buttons:
 assets:
 tags:
 published: true
 ---
-
 #### &nbsp;
 {: .editable.AlignCenter}
 

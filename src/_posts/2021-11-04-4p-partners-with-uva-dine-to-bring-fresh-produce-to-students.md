@@ -1,9 +1,12 @@
 ---
 layout: post
-title: 4P Partners with UVA Dine to Bring Fresh Produce to Students
+title: 'Successful Partnership with UVA Dine: Local Food Delivered to Students'
 date: 2021-11-04 15:00:00
-author:
-excerpt:
+author: 4P Foods
+excerpt: >-
+    UVA Dine’s Sustainability Coordinator and Green Dining program worked with
+    4P to create Farmers Market in a Bag. Students get to order a bag full of
+    locally-sourced produce.
 featured_image: /uploads/img-1181.jpg
 buttons:
 assets:

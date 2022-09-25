@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Celebrate Earth Day Every Day With Good Food
+title: Celebrate Earth Day with Food that is Better for the Earth
 date: 2021-04-25 00:00:00
-author:
+author: 4P Foods
 excerpt:
 featured_image: /img/uploads/posts/4pfoods-omar-g-flores-produce-farmtour-600x.jpg
 buttons:

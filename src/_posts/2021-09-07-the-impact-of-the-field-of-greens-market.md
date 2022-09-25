@@ -1,9 +1,12 @@
 ---
 layout: post
-title: The Impact of the Field of Greens Market
+title: Your Donations Increase Access to Quality, Nutrient-Dense Food
 date: 2021-09-07 13:00:00
-author:
-excerpt:
+author: 4P Foods
+excerpt: >-
+  Our Community Supported Agriculture (CSA) partnership with the Nationals Youth
+  Baseball Academy is increasing access to healthy, nutrient-dense fruits and
+  vegetables in D.C.
 featured_image: /uploads/4pfoods-nats4goodbuyabagcampaign-800x600.jpg
 buttons:
   - label: DONATE A BAG

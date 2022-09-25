@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 4P Foods Community Pickup Sites
+title: Why Sign Up For A 4P Foods' Pick-Up Site? Free Delivery
 date: 2021-05-01 12:00:00
-author:
+author: 4P Foods
 excerpt:
 featured_image: /img/uploads/posts/bag-in-tree-resized.png
 buttons:

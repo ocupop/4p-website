@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "10 WAYS TO ENJOY\_ THE GREAT OUTDOORS"
+title: 10 Stunning Farms to Visit in Virginia and Maryland
 date: 2021-07-30 00:00:00
-author:
-excerpt:
+author: 4P Foods
+excerpt: Ten farms you should visit in Virginia and Maryland this summer.
 featured_image: /uploads/sunnyside-farm-tour-team-1-800x600.jpg
 buttons:
 assets:

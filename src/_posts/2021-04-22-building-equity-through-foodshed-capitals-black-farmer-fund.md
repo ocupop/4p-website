@@ -1,9 +1,12 @@
 ---
 layout: post
-title: Building Equity through Foodshed Capital’s Black Farmer Fund
+title: How You Can Build Equity Through Foodshed Capital's Black Farmer Fund
 date: 2021-04-22 16:00:00
-author:
-excerpt:
+author: 4P Foods
+excerpt: >-
+  Foodshed Capital is a Richmond, Va. based nonprofit that is on a mission to
+  provide financial stewardship to farms and businesses fostering an equitable
+  and regenerative local food economy.
 featured_image: /img/uploads/posts/vafc-social-sharing-logo-800x.jpg
 assets:
   - _type: image

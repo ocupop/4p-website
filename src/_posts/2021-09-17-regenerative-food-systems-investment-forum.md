@@ -1,9 +1,12 @@
 ---
 layout: post
-title: Regenerative Food Systems Investment Forum
+title: 'Rebuilding Food Systems: Regenerative Food Systems Investment Forum'
 date: 2021-09-17 00:00:00
-author:
-excerpt:
+author: 4P Foods
+excerpt: >-
+  4P Foods Founder and CEO Tom McDougall is speaking about a case study in
+  regional regenerative distribution at the 2021 Regenerative Food Systems
+  Investment (RFSI) Forum.
 featured_image: /rfsi-forum-21---tom.png
 buttons:
 assets:

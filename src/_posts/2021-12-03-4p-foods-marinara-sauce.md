@@ -1,8 +1,10 @@
 ---
 layout: post
-title: 4P Foods Marinara Sauce
-author:
-excerpt:
+title: Now Available! 4P Foods' Marinara Sauce Made With Virginia-Grown Tomatoes
+author: 4P Foods
+excerpt: >-
+  4P Foods marinara sauce is made with Virginia-grown tomatoes in Hatch Kitchen
+  in Richmond, VA.
 date: 2021-12-03 17:00:00
 featured_image: /uploads/4pfoods-marinarasauce-tomatosauce.jpg
 buttons:

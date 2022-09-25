@@ -1,8 +1,6 @@
 ---
 layout: post
-title: >-
-  Turning Over New Leafs: The 5 New Greens To Add To Your Salad Bowls, Stir Fry,
-  and Stews
+title: 'Turning Over New Leafs: 5 New Greens for Your Salad, Stir Fry and Stew'
 date: 2022-07-29 11:00:00
 author: Julianne Hart
 excerpt: >-

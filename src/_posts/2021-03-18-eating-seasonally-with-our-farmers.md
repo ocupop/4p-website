@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Eating Seasonally With Our Farmers
+title: How Seasonal Eating Benefits Farmers, Your Health, and Taste Buds!
 date: 2021-03-18 00:00:00
-author:
-excerpt:
+author: 4P Foods
+excerpt: >-
+  Local food not only supports independent farmers and producers, it’s the
+  freshest bounty around, and is downright delicious.
 featured_image: /img/uploads/posts/ysrvdcqc.jpg
 buttons:
 assets:

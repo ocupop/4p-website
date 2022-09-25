@@ -1,9 +1,11 @@
 ---
 layout: post
-title: The Big Cheese Deal
+title: 'Exciting Big Cheese Deal: Bringing Vermont Cheese to Your Dairy Tote'
 date: 2021-05-08 12:00:00
-author:
-excerpt:
+author: 4P Foods
+excerpt: >-
+  Small farm–crafted, award-winning Vermont Cheese delivered in your 4P Foods
+  tote.
 featured_image: /img/uploads/posts/91916881.jpeg
 buttons:
 assets:

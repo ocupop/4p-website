@@ -1,9 +1,11 @@
 ---
 layout: post
-title: 5 Reasons to Have A KellyBronze Thanksgiving
+title: 5 Reasons to Cook a KellyBronze Turkey for Thanksgiving
 date: 2017-10-01 00:00:00
-author:
-excerpt:
+author: 4P Foods
+excerpt: >-
+  A delicious KellyBronze turkey cooks in half the time of an average turkey and
+  is twice as tasty.
 featured_image: /img/uploads/posts/KellyBronzeCover.jpg
 buttons:
 assets:

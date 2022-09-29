@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Apple-ly Ever After: A Tale of the Best Virginia-Grown Apples'
-date: 2022-09-29 00:00:00
+date: 2022-09-29 10:00:00
 author: '4P Foods '
 excerpt: >-
   The great weather conditions in Virginia make it a prime state to grow apples.

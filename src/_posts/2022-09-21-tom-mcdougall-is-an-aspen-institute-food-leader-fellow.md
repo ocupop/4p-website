@@ -8,7 +8,7 @@ excerpt: >-
   leaders fellows with 17 emerging food leaders to commune for 18 months to
   discuss and uncover challenges within the current food system and develop
   solutions for the better.
-featured_image: /img/uploads/posts/4pfoods-blog-images-1900x1000-2.jpg
+featured_image: /img/uploads/posts/4pfoods-blog-images-1900x1000-4.jpg
 buttons:
 assets:
 tags:

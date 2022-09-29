@@ -4,7 +4,7 @@ title: 'Apple-ly Ever After: A Tale of the Best Virginia-Grown Apples'
 date: 2022-09-29 00:00:00
 author: '4P Foods '
 excerpt:
-featured_image:
+featured_image: /uploads/appleblog-12applesof-virginia---ig-post-blog-banner.png
 buttons:
   - label:
     link:

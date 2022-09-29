@@ -8,8 +8,6 @@ excerpt: >-
   Read on to find out which varieties are best for eating and baking.
 featured_image: /uploads/appleblog-12applesof-virginia---ig-post-blog-banner.png
 buttons:
-  - label:
-    link:
 assets:
 tags:
   - '2022'

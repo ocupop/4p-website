@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New Program Connecting Virginia Schools To Local Farmers
-date: 2022-10-05 09:30:00
+date: 2022-10-05 09:00:00
 author: 4P Foods
 excerpt: >-
   During farm-to-school month, we highlight our work with the Virginia

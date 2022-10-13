@@ -2,5 +2,5 @@ header_notification:
   notification_text:
   link:
 bar_notification:
-  notification_text: Modified Thanksgiving Delivery Schedule
+  notification_text: Thanksgiving Delivery Schedule
   link: /posts/special-thanksgiving-delivery-schedule/

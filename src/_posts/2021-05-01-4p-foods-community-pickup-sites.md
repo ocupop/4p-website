@@ -1,10 +1,14 @@
 ---
 layout: post
 title: Why Sign Up For A 4P Foods' Pick-Up Site? Free Delivery
-date: 2021-05-01 12:00:00
+date: 2022-09-02 12:00:00
 author: 4P Foods
-excerpt:
-featured_image: /img/uploads/posts/bag-in-tree-resized.png
+excerpt: >-
+  Across 4P Foods’ delivery area, we have conveniently located community pick-up
+  sites. Our pick-up sites provide 4P Foods’ customers with a place to gather
+  their weekly harvest that reduces their grocery bill with free delivery! View
+  a full list of our convenient pick-up locations across the DMV.
+featured_image: /img/uploads/posts/4pfoods-blog-images-1900x1000-10.jpg
 buttons:
 assets:
 published: true

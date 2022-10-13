@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Thanksgiving Delivery Schedule
+title: Modified Thanksgiving Delivery Schedule
 date: 2022-10-10 10:00:00
 author: 4P Foods
 excerpt: >-

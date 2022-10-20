@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 5 Reasons Why KellyBronze Turkeys  Are Better For Thanksgiving
-date: 2022-10-06 00:00:00
+date: 2022-10-11 00:00:00
 author: 4P Foods
 excerpt: >-
   A delicious KellyBronze turkey cooks in half the time of an average turkey and

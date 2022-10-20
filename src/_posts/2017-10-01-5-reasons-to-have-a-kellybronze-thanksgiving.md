@@ -8,6 +8,8 @@ excerpt: >-
   is twice as tasty.
 featured_image: /img/uploads/posts/4pfoods-blog-images-1900x1000-8.jpg
 buttons:
+  - label: PREORDER NOW
+    link: https://shop.4pfoods.com/turkey-pre-order
 assets:
 tags:
   - Thanksgiving

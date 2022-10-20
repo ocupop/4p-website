@@ -17,7 +17,7 @@ assets:
 tags:
   - 4P Foods
   - Brighter Bites
-published: false
+published: true
 ---
 4P Foods aggregates, quality checks, and delivers fruits and vegetables for Brighter Bites’ box program in Prince George’s County, Maryland. Brighter Bites is a nonprofit creating&nbsp; healthier communities by increasing access to fresh food. Their mission is to change eating habits among children and their families to increase health outcomes
 

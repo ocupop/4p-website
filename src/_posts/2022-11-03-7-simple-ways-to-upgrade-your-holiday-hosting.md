@@ -21,39 +21,39 @@ From impressing the in-laws to celebrating with friends, we all know just how mu
 
 This holiday season upgrade your holiday hosting, improve your carbon footprint, and reduce your stress with these simple ideas.
 
-## **\#1 Buy in-season produce.**
+# **\#1 Buy in-season produce.**
 
-###### *In-season, local produce tastes better than produce traveling&nbsp; longer distances.*
+#### *In-season, local produce tastes better than produce traveling&nbsp; longer distances.*
 
 Fresh food tastes better and is more nutrient dense. In-season produce sourced from local and regional farms is harvested when fully ripe for better flavor and [better nutrients](https://www.hopkinsmedicine.org/health/wellness-and-prevention/health-benefits-of-farmers-markets). Produce from 4P Foods travels an average of&nbsp; 300 miles, whereas produce in the grocery store travels an average of 1,300 miles to reach your table.
 
 By adding a 4P Foods [produce tote](https://shop.4pfoods.com/4p-bags) to your cart, you’re adding all that flavor to your side dishes, desserts, and appetizers. Easy Pea-sy\!
 
-## **\#2 Get your groceries delivered.**
+# **\#2 Get your groceries delivered.**
 
-###### *Let us save you time while&nbsp; delivering products from independent farmers and artisans right to your doorstep\!*&nbsp;
+#### *Let us save you time while&nbsp; delivering products from independent farmers and artisans right to your doorstep\!*&nbsp;
 
 4P Foods delivers in-season produce and pantry staples sourced from independent farmers and artisans we know and trust in Washington, DC, Virginia, Maryland, and through the Eastern Seaboard and MidAtlantic. Farmers we source beyond our region meet our sourcing standards and help us offer produce not seasonally available, especially during the winter months.
 
 View our [Thanksgiving delivery schedule](https://4pfoods.com/posts/special-thanksgiving-delivery-schedule/) designed to ensure&nbsp; you get your [Thanksgiving centerpiece](https://shop.4pfoods.com/turkey-pre-order) and all of the [delicious side dish Thanksgiving essentials](https://shop.4pfoods.com/vegetables) you need before the big day.
 
-## **\#3 Purchase local and ethically-raised protein.**
+# **\#3 Purchase local and ethically-raised protein.**
 
-###### *“**This is our third year ordering a KellyBronze \[turkey for Thanksgiving\]. My mother-in-law says it is by far the best turkey she's ever had\!” -Lauren B.*
+#### *“**This is our third year ordering a KellyBronze \[turkey for Thanksgiving\]. My mother-in-law says it is by far the best turkey she's ever had\!” -Lauren B.*
 
 Impress your in-laws\! Or your friends, parents, siblings, significant other, or yourself\! 4P Foods only provides locally-sourced and ethically-raised turkey, beef, pork, chicken, and lamb.
 
 [Pre-order your Thanksgiving turkey for delivery today\!](https://shop.4pfoods.com/turkey-pre-order)
 
-## **\#4 Wow with specialty cheeses.**
+# **\#4 Wow with specialty cheeses.**
 
-###### *Everything you need to create a beautiful charcuterie board or cheese spread.*
+#### *Everything you need to create a beautiful charcuterie board or cheese spread.*
 
 Do you want to be dairy-ing and serve cheeses that will “wow”? We can help you create a beautiful [charcuterie board](https://shop.4pfoods.com/product/the-perfect-charcuterie-board) or [cheese spread](https://shop.4pfoods.com/cheese)\! 4P Foods’ wonderful procurement team finds the most&nbsp; delicious handmade cheese from regional sources and, through a partnership with a Northeast food hub, Vermont cheese\!
 
-## **\#5 Stock up on snacks and easy appetizers.**
+# **\#5 Stock up on snacks and easy appetizers.**
 
-###### *Shop our selection of snacks and ready-to-go appetizers.*
+#### *Shop our selection of snacks and ready-to-go appetizers.*
 
 Avoid the family hanger with our selection of delicious, locally made [snacks](https://shop.4pfoods.com/snacks) and [easy appetizers](https://shop.4pfoods.com/provisions) to serve before, during, and after the feast. We have:
 
@@ -65,9 +65,9 @@ Avoid the family hanger with our selection of delicious, locally made [snacks](h
 * [Crackers](https://shop.4pfoods.com/summary.php?go=products&amp;search_substring=crackers)
 * [Virginia peanuts](https://shop.4pfoods.com/summary.php?go=products&amp;search_substring=peanuts)
 
-## **\#6 Don’t forget the drinks.**
+# **\#6 Don’t forget the drinks.**
 
-###### *A festive drink is a thoughtful addition to your gathering.*
+#### *A festive drink is a thoughtful addition to your gathering.*
 
 Cocktails, mocktails, [coffee](https://shop.4pfoods.com/summary.php?go=products&amp;search_substring=coffee), and seasonal favorites. We’ve got the drinks\!
 
@@ -86,9 +86,9 @@ For mocktails and cocktails:
 * [Cocktail mixer set](https://shop.4pfoods.com/product/house-cocktail-gift-set)
 * [Sangria recipe](https://4pfoods.com/recipes/strawberry-sangria-starring-mad-magic-kombucha/)
 
-## **\#7 Take a shortcut or two.&nbsp;**
+# **\#7 Take a shortcut or two.&nbsp;**
 
-###### *Shhhh\! No one has to know, because these baking and cooking shortcuts will taste amazing.*
+#### *Shhhh\! No one has to know, because these baking and cooking shortcuts will taste amazing.*
 
 Are there certain baking or cooking tasks that you just don’t like to do? No worries, we have shortcuts that still taste amazing.
 

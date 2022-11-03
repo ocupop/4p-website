@@ -101,6 +101,6 @@ For dessert shortcuts:
 
 * Freeze Homestead custard for a delicious and creamy milkshake like dessert
 * Try our ready made [cookies](https://shop.4pfoods.com/baked-goods) for a quick dessert option.
-* House full of chocolate lovers? Try[fruit](https://shop.4pfoods.com/fruit-produce) dipped in delicious[chocolate tahini](https://shop.4pfoods.com/product/chocolate-sweet-tahini).
+* House full of chocolate lovers? Try&nbsp;[fruit](https://shop.4pfoods.com/fruit-produce) dipped in delicious&nbsp;[chocolate tahini](https://shop.4pfoods.com/product/chocolate-sweet-tahini).
 
 &nbsp;

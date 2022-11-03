@@ -39,7 +39,7 @@ View our [Thanksgiving delivery schedule](https://4pfoods.com/posts/special-than
 
 # **\#3 Purchase local and ethically-raised protein.**
 
-#### *“**This is our third year ordering a KellyBronze \[turkey for Thanksgiving\]. My mother-in-law says it is by far the best turkey she's ever had\!” -Lauren B.*
+#### *This is our third year ordering a KellyBronze \[turkey for Thanksgiving\]. My mother-in-law says it is by far the best turkey she's ever had\!” -Lauren B.*
 
 Impress your in-laws\! Or your friends, parents, siblings, significant other, or yourself\! 4P Foods only provides locally-sourced and ethically-raised turkey, beef, pork, chicken, and lamb.
 

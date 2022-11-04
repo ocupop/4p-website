@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modified Thanksgiving Delivery Schedule
-date: 2022-10-17 10:00:00
+date: 2022-11-02 10:00:00
 author: 4P Foods
 excerpt: >-
   4P Foods will be delivering grocery totes and food orders on a modified

@@ -73,8 +73,8 @@ Cocktails, mocktails, [coffee](https://shop.4pfoods.com/summary.php?go=products&
 
 For seasonal favorites try:
 
-* Eggnog
-* Custard
+* [Eggnog](https://shop.4pfoods.com/product/egg-nog-homestead){: target="_blank" rel="noopener"}
+* [Custard](https://shop.4pfoods.com/product/custard-quart){: target="_blank" rel="noopener"}
 * [Apple cider](https://shop.4pfoods.com/product/apple-cider){: target="_blank" rel="noopener"}
 * [Pumpkin spice latte recipe](https://4pfoods.com/recipes/pumpkin-spice-latte-breakfast-recipe/){: target="_blank" rel="noopener"}
 
@@ -86,7 +86,7 @@ For mocktails and cocktails:
 * [Cocktail mixer set](https://shop.4pfoods.com/product/house-cocktail-gift-set){: target="_blank" rel="noopener"}
 * [Sangria recipe](https://4pfoods.com/recipes/strawberry-sangria-starring-mad-magic-kombucha/){: target="_blank" rel="noopener"}
 
-# **\#7 Take a shortcut or two. **
+# \#7 Take a shortcut or two.&nbsp;
 
 #### *Shhhh\! No one has to know, because these baking and cooking shortcuts will taste amazing.*
 
@@ -99,6 +99,6 @@ For cooking shortcuts:
 
 For dessert shortcuts:
 
-* Freeze Homestead custard for a delicious and creamy milkshake like dessert
+* Freeze Homestead [custard](https://shop.4pfoods.com/product/custard-quart){: target="_blank" rel="noopener"} for a delicious and creamy milkshake like dessert.
 * Try our ready made [cookies](https://shop.4pfoods.com/baked-goods){: target="_blank" rel="noopener"} for a quick dessert option.
 * House full of chocolate lovers? Try [fruit](https://shop.4pfoods.com/fruit-produce){: target="_blank" rel="noopener"} dipped in delicious [chocolate tahini](https://shop.4pfoods.com/product/chocolate-sweet-tahini){: target="_blank" rel="noopener"}.

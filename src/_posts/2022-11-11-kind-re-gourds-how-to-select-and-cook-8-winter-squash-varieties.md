@@ -13,7 +13,7 @@ buttons:
 assets:
 tags:
   - Thanksgiving
-published: false
+published: true
 ---
 You may be wondering what local produce there is to look forward to as it gets colder outside and farmers’ harvests slow down. One of our favorite parts of this season is the variety of *gourd-geous* local winter squash that is available.&nbsp;
 

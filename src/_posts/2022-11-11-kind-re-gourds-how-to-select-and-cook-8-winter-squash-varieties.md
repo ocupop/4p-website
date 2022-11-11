@@ -107,12 +107,12 @@ Red Kuri squash has hard skin and is usually roasted with the skin on. Once roas
 
 # **Gourd-geous** **Nutrition Facts**\: **Winter Squash Does A Lot**
 
-1. Low glycemic index despite their natural sweetness. This makes them a great vegetable to add to the menu for people living with diabetes.&nbsp;
-2. Some varieties such as butternut squash are similar in taste to sweet potatoes, but with fewer carbohydrates.&nbsp;
-3. Contain polysaccharides, a type of fiber that can prevent blood sugar from rising.&nbsp;
-4. Help lower blood pressure, lower cholesterol, and reduce the risk of heart disease.&nbsp;
-5. Help aid eye health.
-6. Lessen digestive issues.&nbsp;
-7. Rich in minerals such as potassium and magnesium.&nbsp;
-8. High amounts of nutrients such as carotenoids and vitamin C.
-9. Contain a high amount of compounds like beta-carotene and lutein that protect human cells.
+* Low glycemic index despite their natural sweetness. This makes them a great vegetable to add to the menu for people living with diabetes.&nbsp;
+* Some varieties such as butternut squash are similar in taste to sweet potatoes, but with fewer carbohydrates.&nbsp;
+* Contain polysaccharides, a type of fiber that can prevent blood sugar from rising.&nbsp;
+* Help lower blood pressure, lower cholesterol, and reduce the risk of heart disease.&nbsp;
+* Help aid eye health.
+* Lessen digestive issues.&nbsp;
+* Rich in minerals such as potassium and magnesium.&nbsp;
+* High amounts of nutrients such as carotenoids and vitamin C.
+* Contain a high amount of compounds like beta-carotene and lutein that protect human cells.

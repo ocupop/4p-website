@@ -19,6 +19,7 @@ meta:
   - title: Place Holder
     description: Place Holder
     image:
+careers:
 footer_image:
 _assets:
   - image: /uploads/tom-with-food-donations-2.jpg
@@ -44,10 +45,11 @@ _assets:
 </section>
 <section>
   <div class="container">
-    {% assign careers = site.careers | sort: 'posted_date' | reversed %} 
-    {% assign num_careers = careers | size %} 
+    {% assign num_careers = page.careers | size %} 
+    {{ num_careers }}
     {% if num_careers > 0 %} 
-      {% for career in careers reversed %}
+      {% for object in page.careers %}
+      {% assign career = site.careers | where: 'slug', object | first  %}
       {% if forloop.first %}
       <hr />
       {% endif %}

@@ -46,7 +46,6 @@ _assets:
 <section>
   <div class="container">
     {% assign num_careers = page.careers | size %} 
-    {{ num_careers }}
     {% if num_careers > 0 %} 
       {% for object in page.careers %}
       {% assign career = site.careers | where: 'slug', object | first  %}

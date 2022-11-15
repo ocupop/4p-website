@@ -3,3 +3,5 @@ collections_config:
     sort:
       key: posted_date
       order: desc
+  team_members:
+  

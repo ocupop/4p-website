@@ -10,7 +10,7 @@ excerpt: >-
   to set up a one time donation or recurring donation just like you would order
   a grocery tote for yourself. 
 featured_image: /uploads/4pfoods-blog-images-1900x1000-6.png
-buttons:
+buttons: BUY A DONATION TOTE
 assets:
 tags:
   - Food System

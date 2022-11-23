@@ -7,7 +7,7 @@ excerpt: >-
   Getting good-for-you food to the communities that need it is central to 4P
   Foods’ mission. Through our Buy a Bag program, you can send a 4P Foods tote to
   a family for their next meal. 
-featured_image: /uploads/4pfoods-blog-images-1900x1000-6.png
+featured_image: /img/uploads/posts/4pfoods-blog-images-1900x1000-9.png
 buttons:
 assets:
 tags:

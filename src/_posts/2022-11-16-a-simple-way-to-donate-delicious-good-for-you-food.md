@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Simple Way To Donate Delicious, Good-For-You Food
-date: 2022-11-16 10:00:00
+date: 2022-11-29 10:00:00
 author: 4P Foods
 excerpt: >-
   Getting good-for-you food to the communities that need it is central to 4P

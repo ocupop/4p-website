@@ -1,15 +1,13 @@
 ---
 layout: post
-title: 7 Simple Ways to Upgrade Your Holiday Hosting
+title: 7 Simple Ways to Upgrade Your Thanksgiving Hosting
 date: 2022-11-03 13:30:00
 author: 4P Foods
 excerpt: >-
-  This holiday season upgrade your holiday hosting, improve your carbon
-  footprint, and reduce your stress with these simple ideas.
+  This Thanksgiving upgrade your holiday hosting, improve your carbon footprint,
+  and reduce your stress with these simple ideas.
 featured_image: /uploads/4pfoods-blog-images-1900x1000-4.png
 buttons:
-  - label: PREORDER YOUR TURKEY
-    link: https://shop.4pfoods.com/turkey-pre-order
   - label: SHOP THANKSGIVING ESSENTIALS
     link: https://shop.4pfoods.com/summary.php?go=products
 assets:
@@ -86,7 +84,7 @@ For mocktails and cocktails:
 * [Cocktail mixer set](https://shop.4pfoods.com/product/house-cocktail-gift-set){: target="_blank" rel="noopener"}
 * [Sangria recipe](https://4pfoods.com/recipes/strawberry-sangria-starring-mad-magic-kombucha/){: target="_blank" rel="noopener"}
 
-# \#7 Take a shortcut or two.&nbsp;
+# \#7 Take a shortcut or two.
 
 #### *Shhhh\! No one has to know, because these baking and cooking shortcuts will taste amazing.*
 

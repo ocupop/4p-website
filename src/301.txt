@@ -479,8 +479,7 @@
 /guest-blogger-spotlight/ /posts/guest-blogger-spotlight/
 /legal/our-partners/ /terms-of-service
 /legal/our-team/ /terms-of-service
-/news/ /impact-blog/
-/press/ /in-the-news/
+/news/ /blog/
 /how-it-works/ /how-we-work/
 /our-team/ /team/
 /our-partners/ /partners/

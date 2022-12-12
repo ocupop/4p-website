@@ -1,12 +1,12 @@
 ---
 primary_navigation:
   navigation:
-    - label: How it works
+    - label: How we work
       url:
       alt:
       links:
         - label: How 4P Works
-          url: /how-it-works
+          url: /how-we-work
           alt:
         - label: How to Shop
           url: /how-to-shop
@@ -17,49 +17,49 @@ primary_navigation:
         - label: FAQ
           url: /faq
           alt:
-    - label: Mission
+    - label: About Us
       url:
       alt:
       links:
-        - label: Our Impact
-          url: /our-impact
-          alt:
         - label: About Us
           url: /about
           alt:
-        - label: Our Team
-          url: /our-team
+        - label: Mission
+          url: /mission
           alt:
-        - label: Our Farmers
-          url: /our-farmers
+        - label: Team
+          url: /team
           alt:
-        - label: Our Partners
-          url: /our-partners
+        - label: Farmers
+          url: /farmers
           alt:
-    - label: Community
+        - label: Partners
+          url: /partners
+          alt:
+    - label: Recipes and More
       url:
       alt:
       links:
-        - label: Impact Blog
-          url: /impact-blog
+        - label: Blog
+          url: /blog
           alt:
         - label: Recipes
           url: /recipes
           alt:
-        - label: Community Events
-          url: /community-events
+        - label: Events
+          url: /events
           alt:
-        - label: In The News
-          url: /in-the-news
+        - label: Press
+          url: /press
           alt:
 footer_navigation:
   shop_links:
     - label: Shop Now
       link: 'https://shop.4pfoods.com/'
-    - label: How it Works
-      link: /how-it-works
-    - label: How to Shop
-      link: /how-to-shop
+    - label: How we work
+      link: /how-we-work
+    - label: Pick Up Sites
+      link: /posts/4p-foods-community-pickup-sites/
     - label: Wholesale
       link: /wholesale
     - label: Referral Programs
@@ -69,27 +69,27 @@ footer_navigation:
   about_links:
     - label: About Us
       link: /about
-    - label: Our Impact
-      link: /our-impact
-    - label: Our Farmers
-      link: /our-farmers
-    - label: Our Partners
-      link: /our-partners/
-    - label: Our Team
-      link: our-team
-  enrich_yourself_links:
-    - label: Impact Blog
-      link: /impact-blog
-    - label: Storage Tips
-      link: /posts/4p-foods-storage-tips/
-    - label: Recipes
-      link: 'https://4pfoods.com/recipes'
-    - label: Community Events
-      link: /community-events
-    - label: In the News
-      link: /in-the-news
+    - label: Mission
+      link: /mission
+    - label: Team
+      link: /team  
+    - label: Farm Partners
+      link: /farmers
+    - label: Food and Community Partners
+      link: /partners/
     - label: Careers
-      link: /careers
+      link: /careers  
+  enrich_yourself_links:
+    - label: Blog
+      link: /blog
+    - label: Recipes
+      link: /recipes
+    - label: Events
+      link: /events
+    - label: Press
+      link: /press
+    - label: Food Storage Tips
+      link: /posts/4p-foods-storage-tips/  
   support_links:
     - label: Contact Us
       link: /contact

@@ -481,4 +481,11 @@
 /legal/our-team/ /terms-of-service
 /news/ /impact-blog/
 /press/ /in-the-news/
+/how-it-works/ /how-we-work/
+/our-team/ /team/
+/our-partners/ /partners/
+/our-farmers/ /farmers/
+/impact-blog/ /blog/
+/in-the-news/ /press/
+/community-events/ /events/
 

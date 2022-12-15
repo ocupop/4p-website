@@ -9,7 +9,7 @@ excerpt: >-
   of produce gets less exciting. During this time, we partner with
   independently-owned farms in states such as Florida, Georgia, and Texas to
   provide delicious, nutrient-packed citrus.
-featured_image: /uploads/4pfoods-blog-images-1900x1000-5-1.png
+featured_image: /uploads/4pfoods-blog-images-1900x1000-6-1.png
 buttons:
 assets:
 tags:

@@ -17,6 +17,9 @@ primary_navigation:
         - label: FAQ
           url: /faq
           alt:
+        - label: Pick Up Sites
+          url: /posts/4p-foods-community-pickup-sites/  
+          alt:
     - label: About Us
       url:
       alt:
@@ -56,7 +59,7 @@ footer_navigation:
   shop_links:
     - label: Shop Now
       link: 'https://shop.4pfoods.com/'
-    - label: How we work
+    - label: How We Work
       link: /how-we-work
     - label: Pick Up Sites
       link: /posts/4p-foods-community-pickup-sites/

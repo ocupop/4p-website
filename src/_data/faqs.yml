@@ -88,7 +88,7 @@
   faqs:
     - question: How do I find out more about your farmers?
       answer_html: >-
-        <p>Check out our <a href="/our-farmers">Farmers page</a>! We&rsquo;re
+        <p>Check out our <a href="/farmers">Farmers page</a>! We&rsquo;re
         always updating it, so stay tuned for more profiles of the many amazing
         farmers, ranchers, and artisans from whom we source.</p>
     - question: What is 4P's mission?
@@ -135,7 +135,7 @@
         Eastern Seaboard who all work with their own vetted networks of small,
         sustainable farmers and work together to increase the variety and supply
         of produce available from this region.</p><p>Read our growing collection
-        of <a href="/our-farmers">farmer profiles</a> for more information about
+        of <a href="/farmers">farmer profiles</a> for more information about
         our food.</p>
     - question: What do you mean by "Good Food"?
       answer_html: >-
@@ -407,7 +407,7 @@
         Eastern Seaboard who all work with their own vetted networks of small,
         sustainable farmers and work together to increase the variety and supply
         of produce available from this region.</p><p>Read our growing collection
-        of <a href="/our-farmers">farmer profiles</a> for more information about
+        of <a href="/farmers">farmer profiles</a> for more information about
         our food and the people behind it.</p>
     - question: Is all the food organic? What about non-GMO?
       answer_html: >-
@@ -422,7 +422,7 @@
         and improves health outcomes and economic security for
         all.</p></blockquote><p>We work with farmers who are good stewards of
         their resources, including land, water, and labor. Our&nbsp;<a
-        href="/our-farmers">farmer profiles</a>&nbsp;are a great place to get
+        href="/farmers">farmer profiles</a>&nbsp;are a great place to get
         more information about each farmer and their growing practices. While we
         embrace a local and regional food system, you can choose to&nbsp;<a
         href="/how-to-shop/">customize</a>&nbsp;your bags to include only local
@@ -549,7 +549,7 @@
         Eastern Seaboard who all work with their own vetted networks of small,
         sustainable farmers and work together to increase the variety and supply
         of produce available from this region.</p><p>Feel free to check out our
-        growing collection of <a href="https://4pfoods.com/our-farmers">farmer
+        growing collection of <a href="https://4pfoods.com/farmers">farmer
         profiles</a> for more information about our food and the people behind
         it.</p>
 ---

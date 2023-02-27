@@ -7,7 +7,7 @@ excerpt: >-
   4P Foods is very excited to offer black garlic from Farmer D! This unique
   product is delicious and very time intensive to make.
 featured_image: /uploads/black-garlic-blog.png
-buttons:
+buttons: Shop Black Garlic
 assets:
 tags:
 published: true
@@ -33,5 +33,3 @@ The aging process also brings out umami. This earthy flavor is great in salad dr
 # **\#6 Black garlic has more antioxidants than raw garlic.**
 
 Black garlic has two to three times more antioxidants than raw garlic. Antioxidants protect your cells from free radicals which play a role in causing conditions like heart disease and cancer. Black garlic is a nice little wellness boost on top of being delicious.
-
-[Shop Black Garlic»](https://shop.4pfoods.com/product/black-garlic){: target="_blank" rel="noopener"}

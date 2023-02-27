@@ -7,7 +7,7 @@ excerpt: >-
   4P Foods is very excited to offer black garlic from Farmer D! This unique
   product is delicious and very time intensive to make.
 featured_image: /uploads/black-garlic-blog.png
-buttons: https://shop.4pfoods.com/product/black-garlic
+buttons:
 assets:
 tags:
 published: true

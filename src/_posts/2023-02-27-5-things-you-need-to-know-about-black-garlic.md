@@ -12,7 +12,7 @@ assets:
 tags:
 published: true
 ---
-4P Foods is very excited to offer black garlic from [Farmer D](https://www.futurapromo.com/farmer-d/)! This unique product is delicious and very time intensive to make.
+4P Foods is very excited to offer black garlic from [Farmer D](https://www.farmer-d.com/){: target="_blank" rel="noopener"}! This unique product is delicious and very time intensive to make.
 
 # **\#1 Black garlic is made from regular ol’ garlic.**
 

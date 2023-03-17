@@ -7,8 +7,10 @@ excerpt: >-
   We are brewing hot, delicious tea made with wild-crafted herbal tea blends
   from Lancaster Farmacy, a small organic farm that specializes in growing
   medicinal herbs.
-featured_image:
+featured_image: /uploads/loose-leaf-tea-blog.png
 buttons:
+  - label: SHOP  LOOSE LEAF TEA
+    link: https://shop.4pfoods.com/summary.php?go=products&search_substring=farmacy
 assets:
 tags:
 published: false

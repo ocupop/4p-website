@@ -10,7 +10,7 @@ excerpt: >-
   Food System Partnership grant in the amount of $992,152 matched by $264,500 in
   partner and philanthropic funding from the Bainum Family Foundation, The Agua
   Fund, and the Danville Regional Foundation.
-featured_image: /uploads/rfsp-grant.png
+featured_image: /img/uploads/posts/rfsp-grant-1.png
 buttons:
 assets:
 tags:

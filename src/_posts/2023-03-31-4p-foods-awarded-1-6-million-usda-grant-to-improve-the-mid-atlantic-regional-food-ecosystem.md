@@ -7,7 +7,7 @@ date: 2023-03-31 09:00:00
 author: 4P Foods
 excerpt: >-
   4P Foods is the recipient of a U.S. Department of Agriculture (USDA) Regional
-  Food System Partnership grant in the amount of $992,152 matched by $264,500 in
+  Food System Partnership grant in the amount of $992,152 matched by $614,500 in
   partner and philanthropic funding from the Bainum Family Foundation, The Agua
   Fund, and the Danville Regional Foundation.
 featured_image: /img/uploads/posts/rfsp-grant-1.png

@@ -8,10 +8,7 @@ excerpt: >-
   plants that do well in the Mid-Atlantic and they start the plants in a
   compost-based potting mix.
 featured_image: /uploads/live-plants-blog.png
-buttons:
-  - label: PRE-ORDER PLANTS
-    link: >-
-      https://docs.google.com/forms/d/e/1FAIpQLSflgZAcUvTfquSxuntgOWTyAUeftDLjz-do9LTg1lgl21yjEA/viewform?usp=sf_link
+buttons: []
 assets:
 tags:
 published: true

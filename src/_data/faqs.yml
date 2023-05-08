@@ -1,4 +1,3 @@
----
 - title: Getting Started
   faqs:
     - question: How does shopping with 4P Foods work?
@@ -88,8 +87,8 @@
   faqs:
     - question: How do I find out more about your farmers?
       answer_html: >-
-        <p>Check out our <a href="/farmers">Farmers page</a>! We&rsquo;re
-        always updating it, so stay tuned for more profiles of the many amazing
+        <p>Check out our <a href="/farmers">Farmers page</a>! We&rsquo;re always
+        updating it, so stay tuned for more profiles of the many amazing
         farmers, ranchers, and artisans from whom we source.</p>
     - question: What is 4P's mission?
       answer_html: >-
@@ -135,8 +134,8 @@
         Eastern Seaboard who all work with their own vetted networks of small,
         sustainable farmers and work together to increase the variety and supply
         of produce available from this region.</p><p>Read our growing collection
-        of <a href="/farmers">farmer profiles</a> for more information about
-        our food.</p>
+        of <a href="/farmers">farmer profiles</a> for more information about our
+        food.</p>
     - question: What do you mean by "Good Food"?
       answer_html: >-
         <p>Here's how we define Good Food:&nbsp;</p><ol><li>provides nourishment
@@ -312,27 +311,29 @@
     - question: Is there a delivery fee?
       answer_html: >-
         <p>Please note that delivery takes time and energy and an amazing
-        delivery team. There is a fee of $8.95 for orders under $85 and $5.95
+        delivery team. There is a fee of $9.95 for orders under $85 and $6.95
         for orders over $85. Since we are awesome humans (and not drones)
-        delivering your food with care, hopefully you&rsquo;ll agree that
-        it&rsquo;s totally worth it.</p><p>Delivery is free at community pick-up
-        sites, where anyone can pick up their bags within a certain pick-up time
-        frame to save C02 and save a few bucks.</p>
+        delivering your food with care, hopefully you’ll agree that it’s totally
+        worth it.</p><p>Delivery is free at <a
+        href="/posts/4p-foods-community-pickup-sites/">community pick-up
+        sites</a>, where anyone can pick up their bags within a certain pick-up
+        time frame to save C02 and save a few bucks.</p>
     - question: What are Community Pick-up Sites and how can I join?
       answer_html: >-
-        <p>We've teamed up with select community centers and local businesses to
-        be pickup points for 4P deliveries. Having your bags dropped off to a
-        pick-up site helps us curb CO2 and helps you save money, as we'll waive
-        the delivery fee on all orders!</p><p>New customers can choose a
-        Community Pickup Site as your delivery location while registering, and
-        anyone can change their delivery location to a 4P Community Pick-up Site
-        (or vis versa) from your 4P account. To see if there are any sites near
-        you, simply log in to your account, click "Account Info," and navigate
-        to the dropdown below &ldquo;Do you want Pickup or Delivery?&rsquo; for
-        a list of participating locations. Just note that you'll need to be able
-        to pickup your bags during their business hours. Don't see a pick-up
-        site near you? <a href="/contact/">Contact us</a> if you know of a place
-        near you that's a good fit!</p>
+        <p>We've teamed up with select <a
+        href="/posts/4p-foods-community-pickup-sites/">community centers and
+        local businesses to be pickup points</a> for 4P deliveries. Having your
+        bags dropped off to a pick-up site helps us curb CO2 and helps you save
+        money, as we'll waive the delivery fee on all orders!</p><p>New
+        customers can choose a Community Pickup Site as your delivery location
+        while registering, and anyone can change their delivery location to a 4P
+        Community Pick-up Site (or vis versa) from your 4P Foods account. To see
+        if there are any sites near you, simply log in to your account, click
+        "Account Info," and navigate to the dropdown below “Do you want Pickup
+        or Delivery?’ for a list of participating locations. Just note that
+        you'll need to be able to pickup your bags during their business hours.
+        Don't see a pick-up site near you? <a href="/contact/">Contact us</a> if
+        you know of a place near you that's a good fit!</p>
     - question: What is my delivery day?
       answer_html: >-
         <p>You should have been notified of your delivery day during the signup
@@ -407,8 +408,8 @@
         Eastern Seaboard who all work with their own vetted networks of small,
         sustainable farmers and work together to increase the variety and supply
         of produce available from this region.</p><p>Read our growing collection
-        of <a href="/farmers">farmer profiles</a> for more information about
-        our food and the people behind it.</p>
+        of <a href="/farmers">farmer profiles</a> for more information about our
+        food and the people behind it.</p>
     - question: Is all the food organic? What about non-GMO?
       answer_html: >-
         <p>Some of it is USDA-certified organic, and some of it is not (not all
@@ -422,8 +423,8 @@
         and improves health outcomes and economic security for
         all.</p></blockquote><p>We work with farmers who are good stewards of
         their resources, including land, water, and labor. Our&nbsp;<a
-        href="/farmers">farmer profiles</a>&nbsp;are a great place to get
-        more information about each farmer and their growing practices. While we
+        href="/farmers">farmer profiles</a>&nbsp;are a great place to get more
+        information about each farmer and their growing practices. While we
         embrace a local and regional food system, you can choose to&nbsp;<a
         href="/how-to-shop/">customize</a>&nbsp;your bags to include only local
         products, for example.</p><p>Our long-term goal is to be 100% supporting
@@ -552,4 +553,3 @@
         growing collection of <a href="https://4pfoods.com/farmers">farmer
         profiles</a> for more information about our food and the people behind
         it.</p>
----

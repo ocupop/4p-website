@@ -21,7 +21,7 @@ It’s easy being green in the spring. Greens emerge from the soil to mark the b
 
 Dandelion greens are red and green leaves that grow on the dandelion plant. Their short season is from late March to June. Dandelion greens have a slightly bitter taste and go great in salads when they are balanced with sweet flavors and salt.&nbsp;
 
-These greens are a great way to start a meal because they help stimulate your appetite and aid in digestion. Try our delicious dandelion greens salad with other in season ingredients.&nbsp;
+These greens are a great way to start a meal because they help stimulate your appetite and aid in digestion. Try our delicious [dandelion greens salad](/recipes/dandelion-greens-salad-with-poached-duck-egg-lunch-recipe/) with other in season ingredients.&nbsp;
 
 # **Ramps**
 

@@ -4,16 +4,11 @@ title: A Letter From 4P Foods Founder
 date: 2023-05-10 15:00:00
 author: Tom McDougall, Founder & CEO of 4P Foods
 excerpt: >-
-  The price of cheap food very rarely (if ever) represents the true costs. The
-  real cost is captured in the degradation of our environment, a growing
-  hunger-obesity crisis, an increase in the number of food-insecure families
-  here at home and around the world, and a climate problem that will tear at the
-  very fabric of our social stability. The federal government and governments
-  around the world recognize the need for an alternative to this linear,
-  extractive food supply chain. The question is, can we collectively build it? 
-  Will we build it? And can we do so in time to avoid catastrophic suffering of
-  all sentient beings at the hands of a system that is long overdue to be
-  reformed, or better yet, outright replaced?
+  The federal government and governments around the world recognize the need for
+  an alternative to this linear, extractive food supply chain. The question is,
+  can we collectively build it?  Will we build it? And can we do so in time to
+  avoid catastrophic suffering of all sentient beings at the hands of a system
+  that is long overdue to be reformed, or better yet, outright replaced?
 featured_image: /uploads/word-from-the-founder.png
 buttons:
   - label: JOIN THE REGENERATIVE FOOD SYSTEM

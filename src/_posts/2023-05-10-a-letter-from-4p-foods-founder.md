@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Letter From 4P Foods Founder
+title: Why my life’s work is food systems change
 date: 2023-05-10 15:00:00
 author: Tom McDougall, Founder & CEO of 4P Foods
 excerpt: >-

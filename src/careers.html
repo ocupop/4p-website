@@ -51,6 +51,7 @@ _assets:
     {% if num_careers > 0 %} 
       {% for object in page.careers %}
       {% assign career = site.careers | where: 'slug', object | first  %}
+      {% if career.published == true %}
       {% if forloop.first %}
       <hr />
       {% endif %}
@@ -62,6 +63,7 @@ _assets:
           <a href="{{ career.url }}" class="btn btn-secondary text-white">Learn More and Apply</a>
         </div>
       </div>
+      {% endif %}
       <hr />
       {% endfor %}
     {% else %}

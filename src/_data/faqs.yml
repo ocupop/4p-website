@@ -52,12 +52,12 @@
         deliveries. So if you get a bag on Wednesday, you&rsquo;ll be billed the
         following weekend. If you skip your order, you won&rsquo;t be billed
         that week.</p>
-    - question: What if I'm allergic to something that's coming in my 4P Bag?
+    - question: What if I'm allergic to something that's coming in my 4P Foods Bag?
       answer_html: >-
-        <p>That&rsquo;s where the customization function comes in! Be sure to
-        login to your account between Saturday afternoon and your order deadline
-        (11:59pm three days before your delivery day) to customize your order
-        and swap out any items you can&rsquo;t enjoy.</p>
+        <p>That’s where the customization function comes in! Be sure to login to
+        your account between Saturday afternoon and your order deadline (11:59pm
+        three days before your delivery day) to customize your order and swap
+        out any items you can’t enjoy.</p>
     - question: What is 4P's mission?
       answer_html: >-
         <p>Our mission is to empower you to transform the food system.</p><p>And
@@ -87,7 +87,7 @@
   faqs:
     - question: How do I find out more about your farmers?
       answer_html: >-
-        <p>Check out our <a href="/farmers">Farmers page</a>! We&rsquo;re always
+        <p>Check out our <a href="/farmers">Farmers page</a>! We’re always
         updating it, so stay tuned for more profiles of the many amazing
         farmers, ranchers, and artisans from whom we source.</p>
     - question: What is 4P's mission?
@@ -118,14 +118,13 @@
     - question: Where do you source your food from?
       answer_html: >-
         <p>The short answer: we source locally and regionally from a network of
-        over 200 small, independent farmers, most of them located in the
-        Mid-Atlantic. Does that mean it&rsquo;s &ldquo;local?&rdquo; That
-        depends on where you live and how you define it, so we often use the
-        term &ldquo;regional&rdquo; to describe our sourcing
+        independent farmers, most of them located in the Mid-Atlantic. Does that
+        mean it’s “local?” That depends on where you live and how you define it,
+        so we often use the term “regional” to describe our sourcing
         practices.</p><p>The longer answer: it depends on the item and the
-        season. Avocados don&rsquo;t grow in the Mid-Atlantic, so we buy them
-        from a fair-trade cooperative in Peru (read more about our sourcing of
-        tropical items on our blog <a
+        season. Avocados don’t grow in the Mid-Atlantic, so we buy them from a
+        fair-trade cooperative in Peru (read more about our sourcing of tropical
+        items on our blog <a
         href="/posts/the-geography-of-good-food/">here</a>). As another example,
         we can offer peak-season strawberries longer by following their season
         up from the Carolinas in early spring through Virginia and beyond into
@@ -195,23 +194,22 @@
         delivery</li><li>11:59 pm on Tuesday for a Friday delivery</li></ul>
     - question: How do I skip an order, or multiple orders at once?
       answer_html: >-
-        <p>To skip once, login to your account and click on &ldquo;My
-        Account&rdquo; in the upper right hand corner and then click on
-        &ldquo;Upcoming Deliveries.&rdquo; You&rsquo;ll see the orders you have
-        scheduled for the next six weeks, including the items and total cost,
-        and you&rsquo;ll also see buttons that allow you to skip or donate each
-        individual order.</p><p>If you choose to skip, you won&rsquo;t be
-        charged for your order that week. If you choose to donate, you will be
-        charged, and your order will be packed up and delivered to one of our
+        <p>To skip once, login to your account and click on “My Account” in the
+        upper right hand corner and then click on “Upcoming Deliveries.” You’ll
+        see the orders you have scheduled for the next six weeks, including the
+        items and total cost, and you’ll also see buttons that allow you to skip
+        or donate each individual order.</p><p>If you choose to skip, you won’t
+        be charged for your order that week. If you choose to donate, you will
+        be charged, and your order will be packed up and delivered to one of our
         food assistance partners, like the <a
         href="/posts/fauquier-community-food-bank/">Fauquier Community Food
         Bank</a>.</p><p>You can skip for a longer period of time by turning on a
-        Vacation Hold. Under &ldquo;My Account&rdquo; click on &ldquo;Delivery
-        Hold&rdquo; and enter your vacation dates - we will skip all deliveries
-        scheduled that fall between the date you entered to leave and the date
-        you entered to return.&nbsp;</p><p>If you need any assistance skipping a
-        delivery, please <a href="/contact/">reach out to us</a> and we'll be
-        happy to help.</p>
+        Vacation Hold. Under “My Account” click on “Delivery Hold” and enter
+        your vacation dates - we will skip all deliveries scheduled that fall
+        between the date you entered to leave and the date you entered to
+        return.&nbsp;</p><p>If you need any assistance skipping a delivery,
+        please <a href="/contact/">reach out to us</a> and we'll be happy to
+        help.</p>
     - question: I only want to order a small amount of dairy or protein--can I do that?
       answer_html: >-
         <p>Select dairy and protein items can be purchased a la carte, including
@@ -227,50 +225,46 @@
         inside!</p>
     - question: How can I tell what’s in my bag while I’m customizing?
       answer_html: >-
-        <p>From the shop, click on &ldquo;What&rsquo;s Inside&rdquo; on any bag
-        image to see what&rsquo;s available for a given week (if there are
-        multiple weeks available, you can switch between them in the dropdown
-        list at the top). Any items highlighted in pale yellow are what&rsquo;s
-        coming in the standard bag that week.</p><p>Once you&rsquo;ve added a
-        bag to your cart, click &ldquo;Customize&rdquo; to go to the Customize
-        page (you can also navigate there from the &ldquo;Upcoming
-        Deliveries&rdquo; page under &ldquo;My Account.&rdquo;) Bags will be
+        <p>From the shop, click on “What’s Inside” on any bag image to see
+        what’s available for a given week (if there are multiple weeks
+        available, you can switch between them in the dropdown list at the top).
+        Any items highlighted in pale yellow are what’s coming in the standard
+        bag that week.</p><p>Once you’ve added a bag to your cart, click
+        “Customize” to go to the Customize page (you can also navigate there
+        from the “Upcoming Deliveries” page under “My Account.”) Bags will be
         pre-packed with the 4P Picks for the Week, which will show up in yellow
         with a green checkmark at the top of the product list. Products you
         remove will uncheck and change from yellow to white, and products you
         add will check and change from white to yellow. You can see a summary of
-        your bag in the list in the &ldquo;What&rsquo;s Inside&rdquo; section on
-        the right in desktop view or at the top in mobile view.</p>
+        your bag in the list in the “What’s Inside” section on the right in
+        desktop view or at the top in mobile view.</p>
     - question: I’m here from your old site—where did the points go?
       answer_html: >-
         <p>We did away with the points system in favor of a setup that requires
         a little less math and offers a lot more flexibility.&nbsp;</p><p>To get
         started, click the shopping bag icon in the upper right and then click
-        &ldquo;Customize.&rdquo;&nbsp;</p><p>For produce and fruit bags, you
-        simply swap items one for one. Use the +/- buttons to change the
-        quantity of each item in the full product list, or click the red
-        &ldquo;x&rdquo; next to an item in the &ldquo;What&rsquo;s Inside&rdquo;
-        section to remove it. Keep an eye on the &ldquo;Items Left to Add&rdquo;
-        box in that section (on the right side of your screen in desktop view or
-        the top of your screen in mobile view) to know how much room is left in
-        your bag. If you need more items that can fit in your bag, you can now
-        add a la carte produce (and pantry, protein, and dairy!) items as needed
-        once you&rsquo;re done customizing.&nbsp;</p><p>For protein and dairy
-        bags, the sky&rsquo;s the limit! From the Customize page, you can add
-        and subtract to your heart&rsquo;s content, but both bags have a minimum
-        price of $20, so be sure to put at least that much in your bag (while
-        you&rsquo;re customizing, you can see your running total in the
-        &ldquo;Bag Price&rdquo; field in the &ldquo;What&rsquo;s Inside&rdquo;
-        section on the right side of your screen in desktop view or the top of
-        your screen in mobile view).</p>
+        “Customize.”&nbsp;</p><p>For produce and fruit bags, you simply swap
+        items one for one. Use the +/- buttons to change the quantity of each
+        item in the full product list, or click the red “x” next to an item in
+        the “What’s Inside” section to remove it. Keep an eye on the “Items Left
+        to Add” box in that section (on the right side of your screen in desktop
+        view or the top of your screen in mobile view) to know how much room is
+        left in your bag. If you need more items that can fit in your bag, you
+        can now add a la carte produce (and pantry, protein, and dairy!) items
+        as needed once you’re done customizing.&nbsp;</p><p>For protein and
+        dairy bags, the sky’s the limit! From the Customize page, you can add
+        and subtract to your heart’s content, but both bags have a minimum price
+        of $20, so be sure to put at least that much in your bag (while you’re
+        customizing, you can see your running total in the “Bag Price” field in
+        the “What’s Inside” section on the right side of your screen in desktop
+        view or the top of your screen in mobile view).</p>
     - question: >-
         It takes me a long time to scroll through all of the options while I’m
         customizing. Is there a quicker way to find what I want?
       answer_html: >-
         <p>Sure is! On the Customize page, click on the product categories under
-        &ldquo;Customize Bag Contents&rdquo; to jump to that type of product
-        (i.e. &ldquo;Fruits&rdquo; in the produce bag or &ldquo;Beef&rdquo; in
-        the protein bag).</p>
+        “Customize Bag Contents” to jump to that type of product (i.e. “Fruits”
+        in the produce bag or “Beef” in the protein bag).</p>
     - question: >-
         I used to get pantry items in my produce bag, but now I don’t see them
         available as swaps. Where did the pantry items go?
@@ -293,10 +287,10 @@
         automatic email or text notification when a driver drops off your
         bags.</p><p>In general, if you signed up for direct home delivery, we
         usually deliver the bags right to your doorstep, or wherever you
-        indicated in your delivery instructions (if we don&rsquo;t deliver to
-        the right place, please <a href="/contact/">get in touch</a>&nbsp;to let
-        us know!).</p><p>For commercial buildings or apartment complexes, we
-        deliver the bags per the building&rsquo;s COVID-19 protocols and your
+        indicated in your delivery instructions (if we don’t deliver to the
+        right place, please <a href="/contact/">get in touch</a>&nbsp;to let us
+        know!).</p><p>For commercial buildings or apartment complexes, we
+        deliver the bags per the building’s COVID-19 protocols and your
         directions. Per our own COVID-19 protocols, all of our drivers wear
         required face masks and gloves--read more about our response to the
         pandemic <a href="/posts/covid-19-response/">here</a>. If your building
@@ -431,7 +425,7 @@
         regenerative agriculture. Regenerative agriculture seeks not only to
         maintain but also to increase soil health, carbon sequestration, and
         biodiversity.</p>
-    - question: What is 4P's Mission?
+    - question: What is 4P Foods' Mission?
       answer_html: >-
         <p>Our mission is to empower you to transform the food system.</p><p>And
         how do we do that, you ask? Every purchase you make with 4P allows you
@@ -442,13 +436,13 @@
         and mid-sized family farmers and artisans not just to survive, but to
         thrive, while also helping ensure that all people have equitable access
         to the Good Food produced by these farmers.</p><p>We believe that Good
-        Food&mdash; food that is traceable, nutritious, accessible, and produced
-        in a system that empowers farmers and sustains the environment&mdash;
-        should be the norm, not the exception, and we actively work to make that
-        vision a reality each and every day. Every purchase with 4P not only
-        supports a growing network of small family farms and artisan producers
-        in the region, but also advances equitable access to fresh healthy food
-        in the communities we serve.</p>
+        Food— food that is traceable, nutritious, accessible, and produced in a
+        system that empowers farmers and sustains the environment— should be the
+        norm, not the exception, and we actively work to make that vision a
+        reality each and every day. Every purchase with 4P not only supports a
+        growing network of small family farms and artisan producers in the
+        region, but also advances equitable access to fresh healthy food in the
+        communities we serve.</p>
     - question: How can I order extra items?
       answer_html: >-
         <p>After you choose your bag(s), head over to the shop to browse that
@@ -486,12 +480,12 @@
         I would love to tell my friends, family, neighbors, etc about 4P Foods.
         Do I get any perks for that?
       answer_html: >-
-        <p>Thank you--we love when 4P members want to spread the word! Refer a
-        friend, and you both get $10 off. From the &ldquo;My Account&rdquo;
-        menu, select &ldquo;Referrals&rdquo; to find your unique referral link.
-        Share this link with friends, family, and colleagues, and for anyone who
-        signs up with this link and makes a purchase, both you and your referee
-        get a $10 credit</p>
+        <p>Thank you--we love when 4P Foods members want to spread the word!
+        Refer a friend, and you both get $10 off. From the “My Account” menu,
+        select “Referrals” to find your unique referral link. Share this link
+        with friends, family, and colleagues, and for anyone who signs up with
+        this link and makes a purchase, both you and your referee get a $10
+        credit.</p>
     - question: Do you have wholesale?
       answer_html: >-
         <p>Yes! Please contact our wholesale team at <a

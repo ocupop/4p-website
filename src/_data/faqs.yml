@@ -87,7 +87,7 @@
   faqs:
     - question: How do I find out more about your farmers?
       answer_html: >-
-        <p>Check out our <a href="/farmers">Farmers page</a>! We&rsquo;re always
+        <p>Check out our <a href="/farmers">Farmers page</a>! We’re always
         updating it, so stay tuned for more profiles of the many amazing
         farmers, ranchers, and artisans from whom we source.</p>
     - question: What is 4P's mission?
@@ -194,23 +194,22 @@
         delivery</li><li>11:59 pm on Tuesday for a Friday delivery</li></ul>
     - question: How do I skip an order, or multiple orders at once?
       answer_html: >-
-        <p>To skip once, login to your account and click on &ldquo;My
-        Account&rdquo; in the upper right hand corner and then click on
-        &ldquo;Upcoming Deliveries.&rdquo; You&rsquo;ll see the orders you have
-        scheduled for the next six weeks, including the items and total cost,
-        and you&rsquo;ll also see buttons that allow you to skip or donate each
-        individual order.</p><p>If you choose to skip, you won&rsquo;t be
-        charged for your order that week. If you choose to donate, you will be
-        charged, and your order will be packed up and delivered to one of our
+        <p>To skip once, login to your account and click on “My Account” in the
+        upper right hand corner and then click on “Upcoming Deliveries.” You’ll
+        see the orders you have scheduled for the next six weeks, including the
+        items and total cost, and you’ll also see buttons that allow you to skip
+        or donate each individual order.</p><p>If you choose to skip, you won’t
+        be charged for your order that week. If you choose to donate, you will
+        be charged, and your order will be packed up and delivered to one of our
         food assistance partners, like the <a
         href="/posts/fauquier-community-food-bank/">Fauquier Community Food
         Bank</a>.</p><p>You can skip for a longer period of time by turning on a
-        Vacation Hold. Under &ldquo;My Account&rdquo; click on &ldquo;Delivery
-        Hold&rdquo; and enter your vacation dates - we will skip all deliveries
-        scheduled that fall between the date you entered to leave and the date
-        you entered to return.&nbsp;</p><p>If you need any assistance skipping a
-        delivery, please <a href="/contact/">reach out to us</a> and we'll be
-        happy to help.</p>
+        Vacation Hold. Under “My Account” click on “Delivery Hold” and enter
+        your vacation dates - we will skip all deliveries scheduled that fall
+        between the date you entered to leave and the date you entered to
+        return.&nbsp;</p><p>If you need any assistance skipping a delivery,
+        please <a href="/contact/">reach out to us</a> and we'll be happy to
+        help.</p>
     - question: I only want to order a small amount of dairy or protein--can I do that?
       answer_html: >-
         <p>Select dairy and protein items can be purchased a la carte, including

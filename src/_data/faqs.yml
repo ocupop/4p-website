@@ -52,12 +52,12 @@
         deliveries. So if you get a bag on Wednesday, you&rsquo;ll be billed the
         following weekend. If you skip your order, you won&rsquo;t be billed
         that week.</p>
-    - question: What if I'm allergic to something that's coming in my 4P Bag?
+    - question: What if I'm allergic to something that's coming in my 4P Foods Bag?
       answer_html: >-
-        <p>That&rsquo;s where the customization function comes in! Be sure to
-        login to your account between Saturday afternoon and your order deadline
-        (11:59pm three days before your delivery day) to customize your order
-        and swap out any items you can&rsquo;t enjoy.</p>
+        <p>That’s where the customization function comes in! Be sure to login to
+        your account between Saturday afternoon and your order deadline (11:59pm
+        three days before your delivery day) to customize your order and swap
+        out any items you can’t enjoy.</p>
     - question: What is 4P's mission?
       answer_html: >-
         <p>Our mission is to empower you to transform the food system.</p><p>And
@@ -225,50 +225,46 @@
         inside!</p>
     - question: How can I tell what’s in my bag while I’m customizing?
       answer_html: >-
-        <p>From the shop, click on &ldquo;What&rsquo;s Inside&rdquo; on any bag
-        image to see what&rsquo;s available for a given week (if there are
-        multiple weeks available, you can switch between them in the dropdown
-        list at the top). Any items highlighted in pale yellow are what&rsquo;s
-        coming in the standard bag that week.</p><p>Once you&rsquo;ve added a
-        bag to your cart, click &ldquo;Customize&rdquo; to go to the Customize
-        page (you can also navigate there from the &ldquo;Upcoming
-        Deliveries&rdquo; page under &ldquo;My Account.&rdquo;) Bags will be
+        <p>From the shop, click on “What’s Inside” on any bag image to see
+        what’s available for a given week (if there are multiple weeks
+        available, you can switch between them in the dropdown list at the top).
+        Any items highlighted in pale yellow are what’s coming in the standard
+        bag that week.</p><p>Once you’ve added a bag to your cart, click
+        “Customize” to go to the Customize page (you can also navigate there
+        from the “Upcoming Deliveries” page under “My Account.”) Bags will be
         pre-packed with the 4P Picks for the Week, which will show up in yellow
         with a green checkmark at the top of the product list. Products you
         remove will uncheck and change from yellow to white, and products you
         add will check and change from white to yellow. You can see a summary of
-        your bag in the list in the &ldquo;What&rsquo;s Inside&rdquo; section on
-        the right in desktop view or at the top in mobile view.</p>
+        your bag in the list in the “What’s Inside” section on the right in
+        desktop view or at the top in mobile view.</p>
     - question: I’m here from your old site—where did the points go?
       answer_html: >-
         <p>We did away with the points system in favor of a setup that requires
         a little less math and offers a lot more flexibility.&nbsp;</p><p>To get
         started, click the shopping bag icon in the upper right and then click
-        &ldquo;Customize.&rdquo;&nbsp;</p><p>For produce and fruit bags, you
-        simply swap items one for one. Use the +/- buttons to change the
-        quantity of each item in the full product list, or click the red
-        &ldquo;x&rdquo; next to an item in the &ldquo;What&rsquo;s Inside&rdquo;
-        section to remove it. Keep an eye on the &ldquo;Items Left to Add&rdquo;
-        box in that section (on the right side of your screen in desktop view or
-        the top of your screen in mobile view) to know how much room is left in
-        your bag. If you need more items that can fit in your bag, you can now
-        add a la carte produce (and pantry, protein, and dairy!) items as needed
-        once you&rsquo;re done customizing.&nbsp;</p><p>For protein and dairy
-        bags, the sky&rsquo;s the limit! From the Customize page, you can add
-        and subtract to your heart&rsquo;s content, but both bags have a minimum
-        price of $20, so be sure to put at least that much in your bag (while
-        you&rsquo;re customizing, you can see your running total in the
-        &ldquo;Bag Price&rdquo; field in the &ldquo;What&rsquo;s Inside&rdquo;
-        section on the right side of your screen in desktop view or the top of
-        your screen in mobile view).</p>
+        “Customize.”&nbsp;</p><p>For produce and fruit bags, you simply swap
+        items one for one. Use the +/- buttons to change the quantity of each
+        item in the full product list, or click the red “x” next to an item in
+        the “What’s Inside” section to remove it. Keep an eye on the “Items Left
+        to Add” box in that section (on the right side of your screen in desktop
+        view or the top of your screen in mobile view) to know how much room is
+        left in your bag. If you need more items that can fit in your bag, you
+        can now add a la carte produce (and pantry, protein, and dairy!) items
+        as needed once you’re done customizing.&nbsp;</p><p>For protein and
+        dairy bags, the sky’s the limit! From the Customize page, you can add
+        and subtract to your heart’s content, but both bags have a minimum price
+        of $20, so be sure to put at least that much in your bag (while you’re
+        customizing, you can see your running total in the “Bag Price” field in
+        the “What’s Inside” section on the right side of your screen in desktop
+        view or the top of your screen in mobile view).</p>
     - question: >-
         It takes me a long time to scroll through all of the options while I’m
         customizing. Is there a quicker way to find what I want?
       answer_html: >-
         <p>Sure is! On the Customize page, click on the product categories under
-        &ldquo;Customize Bag Contents&rdquo; to jump to that type of product
-        (i.e. &ldquo;Fruits&rdquo; in the produce bag or &ldquo;Beef&rdquo; in
-        the protein bag).</p>
+        “Customize Bag Contents” to jump to that type of product (i.e. “Fruits”
+        in the produce bag or “Beef” in the protein bag).</p>
     - question: >-
         I used to get pantry items in my produce bag, but now I don’t see them
         available as swaps. Where did the pantry items go?

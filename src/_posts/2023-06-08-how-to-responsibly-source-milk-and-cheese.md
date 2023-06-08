@@ -7,7 +7,7 @@ excerpt: >-
   4P Foods only works with local dairies, like Shenandoah Valley Family Farms in
   Virginia, that do not practice confined animal operations.  Shop ethically
   sourced dairy products online at 4PFoods.com.
-featured_image: /uploads/dairy-sourcing-blog.png
+featured_image: /img/uploads/posts/dairy-sourcing-blog-1.png
 buttons:
   - label: SHOP DAIRY
     link: https://shop.4pfoods.com/dairyitems

@@ -10,6 +10,9 @@ excerpt: >-
 featured_image: /uploads/4pfoods-blog-images-1900x1000-5.jpg
 buttons:
 assets:
+  - _type: video
+    title: Connecting Farms to Schools Through Food Hubs
+    embed_url: https://youtu.be/folH_VsRiuQ
 tags:
   - 4P Foods
   - Local Food

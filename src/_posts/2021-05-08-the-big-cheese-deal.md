@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Exciting Big Cheese Deal: Bringing Vermont Cheese to Your Dairy Tote'
-date: 2023-07-20 12:00:00
+date: 2023-07-19 12:00:00
 author: 4P Foods
 excerpt: >-
   Small farm–crafted, award-winning Vermont Cheese delivered in your 4P Foods

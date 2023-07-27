@@ -1,0 +1,29 @@
+{% assign featured = page.featured_farmer %}
+
+{% assign featured_farmer = site.farmers | where: 'slug', featured | first %}
+<div 
+  data-cms-editor-link="cloudcannon:#featured_farmer"
+  data-cms-editor-link-style="modal"
+  class="row cms-editor-link">
+  <div class="col-12">
+    <div class="bg-image aspect-16x9" style="background-image: url({{ featured_farmer.featured_image }})"></div>
+    <div class="bg-tan p-4">
+      <div class="row">
+        <div class="col-12">
+          <h4>{{ featured_farmer.title }}</h4>
+          {% if featured_farmer.description %}
+            <p>{{ featured_farmer.description }}</p>
+          {% else %}
+            <p>{{ featured_farmer.content | strip_html | truncatewords: 75 }}</p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <a href="{{ featured_farmer.url }}" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

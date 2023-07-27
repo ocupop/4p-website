@@ -1,0 +1,38 @@
+{% assign all_posts = site.posts %} {% assign featured = all_posts.first %}
+<div class="row mb-3">
+  <div class="col-12">
+    <div class="card bg-transparent">
+      <div class="card-content pin-footer">
+        {% if featured.featured_image %}
+        <div class="card-header p-0">
+          <a 
+            href="{{ featured.url }}"
+            class="bg-image aspect-2x1"
+            style="background-image: url({{ featured.featured_image }})"
+          ></a>
+        </div>
+        {% else %}
+          <div class="card-header d-flex align-items-center justify-content-center border-0 p-4">
+            <img src="/img/logo-vertical.svg" class="w-25" alt="4P Logo">
+          </div>
+          
+        {% endif %}
+
+        <div class="card-body">
+          <div class="content text-left">
+            <h5><a href="{{ featured.url }}" class="text-body">{{ featured.title }}</a></h5>
+            <p>{{ featured.date | date: '%B %d, %Y'}} {% if featured.author %}by {{ featured.author }}{% endif %}</p>
+            {% if featured.excerpt %}
+            <p>{{ featured.excerpt | strip_html | truncatewords: 50 }}</p>
+            {% else %}
+            <p>{{ featured.content | strip_html | truncatewords: 50 }}</p>
+            {% endif %}
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="{{ featured.url }}" class="btn btn-secondary text-white">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

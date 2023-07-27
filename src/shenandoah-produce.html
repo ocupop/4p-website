@@ -1,0 +1,157 @@
+---
+layout: default
+title: Shenandoah Produce
+meta:
+featured_image: /uploads/shenandoah-produce/4P-Shenandoah-header.jpg
+featured_products:
+  - family-veggie-box---medium
+  - friar-tuck-fromage-blanc
+  - grilling-bundle
+assets:
+  - _type: image
+    title: Shenandoah Produce
+    image: /uploads/shenandoah-produce/image-1.jpg
+  - _type: image
+    title: Shenandoah Produce
+    image: /uploads/shenandoah-produce/image-2.jpg
+  - _type: image
+    title: Shenandoah Produce
+    image: /uploads/shenandoah-produce/image-3.jpg
+related_farmers:
+  - whiffletree-farm
+  - south-mountain-creamery
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="editable">
+          <h1>
+            Shenandoah Produce
+          </h1>
+        </div>
+        <p class="editable mb-5">
+          Warrenton, Virginia
+        </p>
+        <img src="{{ page.featured_image }}" class="img-fluid" alt="{{ page.title }} image" />
+      </div>
+    </div>
+  </div>
+</section>
+{% if page.featured_products %}
+<section class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="editable">
+          <h2 class="mb-5">
+            This Weeks Items
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        {% include products/featured-products-grid.html %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="editable">
+          <h2>
+            ABOUT SHENANDOAH PRODUCE
+          </h2>
+        </div>
+        <div class="editable">
+          <p>Shenandoah Produce has always been about creating a community of people who are passionate about eating fresh, healthy food that is grown sustainably in the Shenandoah Valley and Northern Piedmont regions. Shop the Shenandoah Produce product line to have the region&rsquo;s fresh, seasonal produce, meat, dairy, and pantry items delivered direct to your door!</p>
+        </div>
+        <div class="editable">
+          <h2 class="mt-5">
+            Our Story
+          </h2>
+        </div>
+        <div class="editable">
+          <p>Since 2015, Shenandoah Produce has been bringing the farm right to the doorsteps of the local community. Founded under the name of Horse and Buggy, a nod to the region&rsquo;s Amish farmers, Shenandoah Produce was owned and operated by Dean Wadel, himself a farmer and food producer. Looking to expand their sourcing region to offer their customer&rsquo;s more variety, especially in the cold winter months, Shenandoah Produce began partnering with 4P Foods for ethically sourced food from 4P&rsquo;s regional <a href="/posts/good-food-knows-no-boundaries">farm network</a>, like winter Texas grapefruit and early season strawberries from Carolina family farms.</p>
+          <p>After several years of working together, when Dean decided to turn to food production full-time (check out Wadel&rsquo;s Farm Wagon products in our shop!), he entrusted Shenandoah Produce to 4P Foods to carry forward the work of connecting the region&rsquo;s producers and eaters. Today, Shenandoah Produce is proud to be part of the 4P Family, offering all of our customers the opportunity to support and appreciate the incredible farm partners and artisans of the greater Shenandoah Valley and Piedmont regions.</p>
+        </div>
+        <h2 class="editable mt-5">
+          Our Values
+        </h2>
+        <div class="editable">
+          <p>With everything that we do, we seek to:</p>
+          <ul>
+            <li>Help small farmers thrive by paying them fair prices for the fruits (and vegetables, meat, and dairy!) of their hard work and getting their food onto more tables.</li>
+            <li>Protect and regenerate the environment by supporting farmers who are good stewards of the environment and minimizing our own carbon footprint through reusable packaging, comprehensive strategies to avoid food waste, and other strategies.</li>
+            <li>Increase food access for under-resourced or underserved communities, which we do via direct food donations and in-kind logistics and transportation support for food access partners.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="row no-gutters">
+          {% assign images = page.assets | where: '_type', 'image' %} {% assign videos = page.assets | where: '_type',
+              'video' %} {% for image in images %}
+          <div class="col-12">
+            <div class="p-1 mb-3">
+              <div class="bg-image aspect-4x3" style="background-image: url({{ image.image }})"></div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% for video in videos %}
+        <div class="row no-gutters">
+          <div class="col-12">
+            <div class="responsive-iframe aspect-16x9 mb-3">
+              <iframe src="{{ video.embed_url }}"></iframe>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+<section id="eat-local" class="bg-primary text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="editable">
+          <h2>Eat HealthY, Support Local</h2>
+          <p>Each one of our <a href="/farmers">farmers and producers</a> would like to personally thank you for supporting them and the local economy, and we, in turn, would like to thank you for joining us on this journey to bring Good Food from the farm to your door. Look for the Shenandoah Produce icon in our shop!</p>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-2">
+            <img src="/img/Shenandoah-icon-10.svg" class="img-fluid" alt="Shenandoah Logo" />
+          </div>
+          <div class="col-md-6">
+            <a href="https://shop.4pfoods.com/shenandoah-foods" class="btn btn-outline-white editable">See What's Available This Week</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% if page.related_farmers %}
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="editable">
+            <h2>
+              Related Farmers &amp; Producers
+            </h2>
+          </div>
+        </div>
+        <div class="col-lg-4 text-lg-right">
+          <a href="/farmers" class="btn btn-primary">Back to our farmers</a>
+        </div>
+      </div>
+      {% include farmers/farmers-list-related.html %}
+    </div>
+  </section>
+{% endif %}

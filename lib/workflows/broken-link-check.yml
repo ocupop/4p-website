@@ -1,0 +1,18 @@
+on:
+  repository_dispatch:
+    types: ["check-links"]
+
+name: Broken Link Check
+jobs:
+  check:
+    name: Broken Link Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Broken Link Check
+        uses: technote-space/broken-link-checker-action@v2
+        with:
+          TARGET: https://crimson-river.cloudvent.net/ # Move to environment variable
+          RECURSIVE: true
+
+# testing
+# curl -X POST -H "Accept: application/vnd.github.v3+json" -H "authorization: Bearer <token>" https://api.github.com/repos/ocupop/refed.com/dispatches -d '{"event_type": "check-links","client_payload": {"key1": "Hello"}}'

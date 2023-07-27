@@ -1,0 +1,120 @@
+#community-picks {
+  @include media-breakpoint-up(sm) {
+    .card {
+      position: relative;
+      .card-footer {
+        color: $white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba($gray-600, 0.4);
+        h5 {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+#announcement-banner {
+  padding: 0;
+  background: $tan-mid;
+  @include media-breakpoint-up(lg) {
+    background: rgb(96,180,96);
+    background: linear-gradient(90deg, rgba(96,180,96,1) 0%, rgba(96,180,96,1) 50%, rgba(41,41,41,1) 50%, rgba(248,246,238,1) 50%, rgba(248,246,238,1) 100%);
+  }
+  .d-flex {
+    flex-wrap: wrap;
+    @include media-breakpoint-up(lg) {
+      flex-wrap: nowrap;
+    }
+  }
+  
+  .col-right {
+   width: 75%;
+   font-family: $font-family-secondary;
+   font-size: 17px;
+   @include media-breakpoint-down(lg) {
+     padding: 20px;
+     font-size: 14px;
+   }
+  }
+  .col-left {
+    background-color: $primary;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+    &::after {
+      content: '';
+      width: 200vw;
+      background-color: $primary;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -50vw;
+      z-index: 1;
+    }
+    .text-mega {
+      z-index: 100;
+      position: relative;
+      @include media-breakpoint-down(lg) {
+        font-size: 1.7rem;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+      &::after {
+        display: none;
+      }
+    }
+    
+  }
+  .col-left,
+  .col-right {
+    @include media-breakpoint-up(lg) {
+      width: 37.5%;
+    }
+  }
+  
+}
+.badge {
+  width: 25%;
+  padding: 10px;
+  background-color: $tan-mid;
+  border-radius: 50%;
+  @include media-breakpoint-up(lg) {
+    padding: 40px;
+  }
+}
+
+#impact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  .lettuce {
+    position: absolute;
+    left: -8%;
+    top: 0;
+    transform: translateY(-50%);
+    width: 50%;
+    opacity: 0.2;
+    @include media-breakpoint-up(lg) {
+      width: 35%;
+      opacity: 0.3;
+      top: 50%;
+    }
+  }
+  .leaf {
+    position: absolute;
+    right: -10%;
+    bottom: 0;
+    width: 50%;
+    opacity: 0.3;
+    @include media-breakpoint-up(lg) {
+      width: 30%;
+    }
+  }
+
+}

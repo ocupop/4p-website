@@ -1,0 +1,184 @@
+# Site settings
+title: 4P Foods
+email: dev@ocupop.com
+url: 'https://4pfoods.com'
+permalink: pretty
+store_url: 'https://shop.4pfoods.com'
+store_login: '/login'
+store_signup: '/register.php?step=first&viewing_step=first'
+store_giftcards: '/giftcert.php'
+store_featured: '/summary.php?go=products'
+
+fallback_logo: /img/post-fallback.jpg
+
+# Social sharing
+description: 'Local • Easy • Important Choose your bag Whether you are eating for one, or you’re feeding a family, we’ve got just the right size for you. Select your building Convenience is a big deal. That’s why whether you are at work or at home, we’ll deliver right to your building.'
+socialshare:
+  featured_image: img/socialshare.jpg
+  twitter:
+    username: '@4PFoods'
+    image: img/socialshare.jpg
+
+# Google Analytics
+analytics_code: UA-127755766-5
+
+# Search
+# Needs to be added to continuous integration and include farmers configuration
+algolia:
+  application_id: 6I01FP0C7C
+  index_name: Recipes
+  max_record_size: 20000
+  files_to_exclude:
+    - _newsletters/*
+    - _team_members/*
+    - _events/*
+    - _careers/*
+    - _posts/*
+    - _farmers/*
+    - /*.html
+    - _featured_products/*
+
+
+
+# Collections
+collections:
+  team_members:
+    output: true
+    permalink: /team/:path/
+  farmers:
+    output: true
+    permalink: /farmers/:path/
+  events:
+    output: true
+    permalink: /events/:path/
+  careers:
+    output: true
+    permalink: /careers/:path/
+  newsletters:
+    output: true
+  posts:
+    output: true
+    permalink: /posts/:title/
+  featured_products:
+    output: false
+  press:
+    output: false
+  recipes: 
+    output: true
+    permalink: /recipes/:path/
+
+defaults:
+  - scope:
+      type: 'team_members'
+    values:
+      layout: team_member
+      _options:
+        image:
+          uploads_dir: 'img/uploads/team/'
+  - scope:
+      type: 'farmers'
+    values:
+      layout: farmer
+      _options:
+        featured_image:
+          uploads_dir: 'img/uploads/farmers/:title'
+        image:
+          uploads_dir: 'img/uploads/farmers/:title'
+  - scope:
+      type: 'events'
+    values:
+      layout: event
+      _options:
+        featured_image:
+          uploads_dir: 'img/uploads/events/'
+  - scope:
+      type: 'careers'
+    values:
+      layout: careers
+  - scope:
+      type: 'posts'
+    values:
+      layout: post
+      _options:
+        featured_image:
+          uploads_dir: 'img/uploads/posts/'
+      _inputs:
+        excerpt:
+          type: textarea
+  - scope:
+      type: 'newsletters'
+    values:
+      _options:
+        featured_image:
+          uploads_dir: 'img/uploads/newsletters/'
+  - scope:
+      type: 'press'
+    values:
+      _options:
+        featured_image:
+          uploads_dir: 'img/uploads/press/'
+  - scope:
+      type: 'recipes'
+    values:
+      _options:
+        featured_image:
+          uploads_dir: 'img/uploads/recipes/'        
+
+# Build settings
+safe: false
+sass:
+  # style: compressed
+  sass_dir: _scss
+
+# plugins:
+
+# Cloudcannon Configuration
+
+_comments:
+  product_url: 'Ex: /product/apple-fritter-baking-mix or /product/1362'
+
+_options:
+  layout:
+    hidden: true
+  content:
+    format: p h1 h2 h3 h4 h5 h6 pre address div
+    bold: true
+    italic: true
+    link: true
+    numberedlist: true
+    bulletedlist: true
+    subscript: true
+    superscript: true
+    horizontalrule: true
+    right: true
+    left: true
+    center: true
+    image: true
+    embed: true
+  video_desktop_path:
+    uploads_dir: "/uploads/videos/:title"
+  video_mobile_path:
+    uploads_dir: "/uploads/videos/:title"
+  thumbnail_desktop_image:
+    uploads_dir: "/uploads/videos/:title"
+  thumbnail_mobile_image:
+    uploads_dir: "/uploads/videos/:title"
+
+  _block:
+    format: p h1 h2 h3 h4 h5 h6 pre address div
+    bold: true
+    italic: true
+    link: true
+    numberedlist: true
+    bulletedlist: true
+    subscript: true
+    superscript: true
+    horizontalrule: true
+    right: true
+    left: true
+    center: true
+    image: true
+    embed: true
+
+
+placeholder_image: https://via.placeholder.com/1200

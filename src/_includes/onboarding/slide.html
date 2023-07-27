@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="col-lg-6">
+    <div class="content-wrapper text-content">
+      <div class="content">
+        {% assign slide_num = forloop.index %}
+        <span class="mb-0 text-primary h3">{{ slide_num }}.</span>
+        <h2>{{ slide.title }}</h2>
+        {{ slide.description_html }}
+        <div class="accordion mt-4" id="accordion-{{ slide_num }}">
+          {% for instruction in slide.instructions %}
+            <div class="card">
+              <div class="card-header" id="heading-{{ slide_num }}-{{ forloop.index }}">
+                <button 
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapse-{{ slide_num }}-{{ forloop.index }}"
+                  aria-expanded="false"
+                  aria-controls="collapse-{{ slide_num }}-{{ forloop.index }}"
+                  data-video="{{ instruction.video_desktop_path }}"
+                  data-poster="{{ instruction.thumbnail_desktop_image }}"
+                  >
+                  {{ instruction.title }} <i class="ri-add-line"></i><i class="ri-subtract-line"></i>
+                </button>
+              </div>
+              <div id="collapse-{{ slide_num }}-{{ forloop.index }}" class="collapse" aria-labelledby="heading-{{ slide_num }}-{{ forloop.index }}" data-parent="#accordion-{{ slide_num }}">
+                <div class="card-body px-0 pt-0">
+                  {{ instruction.description_html }}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 bg-primary text-white">
+    <div class="content-wrapper">
+      <div class="content text-lg-center">
+        <div class="video-wrapper">
+          <video class="instruction-video" src="{{ slide.video_desktop_path}}" autoplay muted loop controls data-default-video="{{ slide.video_desktop_path }}" poster="{{ slide.thumbnail_desktop_image }}" data-default-poster="{{ slide.thumbnail_desktop_image }}"></video>
+        </div>
+        <p class="mt-3 d-flex align-items-center justify-content-center">Use video controls <i class="ri-fullscreen-fill mx-2"></i> to enter full screen</p>
+      </div>
+    </div>
+  </div>
+</div>
+

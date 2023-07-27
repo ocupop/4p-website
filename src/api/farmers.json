@@ -1,0 +1,16 @@
+---
+layout: none
+permalink: api/farmers
+---
+[
+  {% for farmer in site.farmers %}
+    {
+      "layout": {{ farmer['layout'] | jsonify }},
+      "url": {{ farmer['url'] | jsonify }},
+      "title": {{ farmer['title'] | jsonify }},
+      "date": {{ farmer['date'] | jsonify }},
+      "vendorID": {{ farmer['vendorID'] | jsonify }},
+      "output": {{ farmer['output'] | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

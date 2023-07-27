@@ -1,0 +1,36 @@
+// TODO: Refactor
+
+.product-amount {
+  text-transform: uppercase;
+  font-size: 11px;
+  @include media-breakpoint-up(xl) {
+    font-size: 13px;
+  }
+}
+.product-price {
+  font-weight: 800;
+  color: $gray-600;
+  font-size: 23px;
+}
+
+.product-detail-tag {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: $tan;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.product-card {
+  .card-header {
+    background-color: $tan;
+    border: 0;
+  }
+  .card-body {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+  }
+}

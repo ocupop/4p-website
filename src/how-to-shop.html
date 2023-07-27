@@ -1,0 +1,257 @@
+---
+layout: default
+title: 4P Foods | How to Shop | Grocery Delivery | Support Local Farmers | Shop Small
+meta:
+  - title: >-
+      4P Foods | How to Shop | Grocery Delivery | Support Local Farmers | Shop
+      Small
+    description: >-
+      4P Foods delivers regenerative and locally-sourced food through its online
+      grocery store, wholesale business operations, and institutional
+      partnerships. Learn more.
+    image:
+featured_image: /uploads/4p-foods---web-images.png
+video_embed:
+how_to_shop_guide:
+  - title_html: <h3>Create an Account (or Log In)</h3>
+    description_html: >-
+      <p><strong>If you're brand new to 4P Foods - we'll first need to ensure
+      that we deliver to you.&nbsp;</strong></p><p>Choose pickup or delivery,
+      and please include delivery directions (clear and concise are always
+      appreciated).</p><p>Enter your contact and billing information and you're
+      ready to go shopping.</p><p><u><strong>Still unsure how to sign
+      up?</strong></u> Use our brand new chat service to ask for help!</p>
+  - title_html: <h3>Subscribe to a Tote or Buy A La Carte</h3>
+    description_html: >-
+      <p><strong>Subscribe to get Produce, Protein, Dairy, and Fruit 4P Foods
+      totes sent weekly or monthly. </strong>Or, just buy what you need when you
+      need it!</p><p><strong>For our subscribers</strong>, we'll remind you
+      every delivery that you have food on the way - and you can customize your
+      bag each week.&nbsp;</p><p><strong>Curating your 4P Foods purchases every
+      time you need food?</strong> Our Weekly Harvest newsletter will let you
+      know when to start prepping for your next delivery window!</p>
+  - title_html: <h3>Customize Your 4P Foods Subscription</h3>
+    description_html: >-
+      <p><strong>Each 4P Foods tote comes packed with freshly harvest, in-season
+      selections from the 4P Foods team.</strong></p><p>Every Saturday, the
+      Weekly Harvest email lets you know that the week's fresh harvests are in
+      and it's time to customize! Customize before your deadline (3 days prior
+      to your delivery date by 11:59PM)!</p><p>The initial price of each
+      standard Bag is consistent every week, and the final price will vary based
+      on how you customize your Bags. Info on each Bag's starting price and
+      minimum price can be found <a
+      href="https://shop.4pfoods.com/summary.php?go=products&amp;cat=93&amp;12">in
+      the shop</a>.</p>
+  - title_html: <h3>Shop A La Carte</h3>
+    description_html: >-
+      <p><strong>We have all your pantry, dairy, and daily staples </strong>-
+      locally sourced from farmers and makers in DC, Virginia, Maryland, North
+      Carolina, and the Eastern Seaboard and Mid-Atlantic.</p><p>Grab what you
+      need and add it to your regularly schedule 4P Foods delivery. Or, build
+      your own a la carte bag when you need it. As long as you hit the $30
+      minimum order, you're good to go.&nbsp;</p>
+videos:
+  - title_html:
+    description_html:
+    embed_url:
+    thumbnail_image:
+---
+<section>
+  <div class="container">
+    <div class="row align-items-center mb-5">
+      <div class="col-12 col-lg-6">
+        {% if page.featured_image %}
+          <div class="bg-image aspect-4x3 mb-3 mb-lg-0" style="background-image: url({{ page.featured_image }})"></div>
+        {% endif %}
+      </div>
+      <div class="col-12 col-lg-6">
+        <div>
+          <div class="editable">
+            <h1><strong>Here's How to Shop with 4P Foods</strong></h1>
+            <h3><em>We brought your farmer's market online. Get all your in-season produce harvested direct from local farmers.&nbsp;</em></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {% if page.video_embed %}
+      <div class="row mt-5">
+        <div class="col-12 col-lg-8 mx-lg-auto">
+          <div class="responsive-iframe aspect-16x9">
+            <iframe width="560" height="315" src="{{ page.video_embed }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>
+<section id="how-to-shop-guide">
+  <div class="container">
+    <div class="row">
+      {% for item in page.how_to_shop_guide %}
+        <div class="col-lg-6 mb-5">
+          <div class="row">
+            <div class="col-lg-auto">
+              <div class="circle bg-tan">
+                {{ forloop.index }}
+              </div>
+            </div>
+            <div class="col">
+              <div class="my-3">
+                {{ item.title_html }}
+              </div>
+              {{ item.description_html }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="bg-secondary bg-image aspect-none" style="background-image: url(/img/bg-illustrations/4p-homepage-goodfood-01.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-lg-auto">
+        <div class="editable text-center text-white">
+          <h1 class="text-nocase mb-4"><strong>We Stand 4Ps and Love</strong></h1>
+          <div>
+            <h2>Join our mission to rebuild a regenerative and equitable food system.</h2>
+            <p>&nbsp;</p>
+            <p>Each day, our work at 4P Foods gets us closer to the kind of food system farmers thrive in, soil is regeneratively cared for, animals are treated humanely, and all communities have equitable access to healthy food.&nbsp;</p>
+            <p>Our growing list of partners includes more than 200 farmers who value planet-friendly agricultural practices to provide local, sustainable, high-quality food year-round.</p>
+            <h4><strong>Every day at 4P Foods, we get to:</strong></h4>
+            <ul>
+              <li class="AlignLeft">Increase food access through partnerships with local health institutions, education systems, and grass-roots community groups</li>
+              <li class="AlignLeft">Support local farmers and food producers within a 300 mile radius; and</li>
+              <li class="AlignLeft">Provide direct-to-door grocery delivery to residents and businesses across Washington, DC, Virginia, Maryland, North Carolina, and beyond.</li>
+            </ul>
+            <p class="AlignLeft">Thank you for being a member of the 4P Foods community!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="faqs">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center text-primary mb-5 editable">
+          <h1><strong>Shopping &amp; Delivery FAQS</strong></h1>
+        </div>
+        
+      </div>
+    </div>
+    {% for object in site.data.faqs %}
+      {% assign title = object.title | slugify %}
+      {% if title contains 'shopping' or title contains 'delivery' %}
+      <div class="row mt-5">
+        <div class="col-12">
+          <h2 class="mb-4">{{ object.title }}</h2>
+        </div>
+      </div>
+      <div id="{{ object.title | slugify }}" class="row mb-5">
+        <div class="col-12">
+          <div class="accordion" id="accordion-faq">
+            {% for item in object.faqs %}
+              <div class="card">
+                <div class="card-header py-0" id="heading-{{ forloop.index }}">
+                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
+                    {{ item.question }} <i class="ri-arrow-down-s-fill text-primary"></i>
+                  </button>
+                </div>
+            
+                <div id="collapse-{{ forloop.index }}" class="collapse" aria-labelledby="heading-{{ forloop.index }}" data-parent="#accordion-faq">
+                  <div class="card-body px-0 pt-0">
+                    {{ item.answer_html }}
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="editable text-center">
+          <p><strong>Still have a question? <a href="/contact">Shoot us a note</a></strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="tutorials">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="text-center editable">
+          <h1><strong>Shop Tutorials</strong></h1>
+        </div>
+      </div>
+    </div>
+    {% if page.videos.first.embed_url %}
+      <div class="row">
+        {% for video in page.videos %}
+          <div class="col-lg-4 mb-4">
+            <a href="#" class="bg-image aspect-16x9 video-thumbnail" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ video.embed_url }}" style="background-image: url({{ video.thumbnail_image }})">
+        
+            </a>
+            <h4 class="mt-4">{{ video.title }}</h4>
+            {{ video.description_html }}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    <div class="row">
+      {% for slide in site.data.onboarding.slides %}
+          {% if slide.show_on_how_to_shop %}
+          <div class="col-lg-4 mb-4">
+            <!-- desktop video output-->
+            <a href="#" class="bg-image aspect-16x9 video-thumbnail d-none d-lg-block" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ slide.video_desktop_path }}" style="background-image: url({{ slide.thumbnail_desktop_image }})">
+        
+            </a>
+            <!-- mobile video output -->
+            <a href="#" class="bg-image aspect-16x9 video-thumbnail d-block d-lg-none" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ slide.video_mobile_path }}" style="background-image: url({{ slide.thumbnail_mobile_image }})">
+        
+            </a>
+            <h4 class="mt-4">{{ slide.title }}</h4>
+            {{ slide.description_html }}
+          </div>
+          {% endif %}
+        {% for instruction in slide.instructions %}
+          {% if instruction.show_on_how_to_shop %}
+            <div class="col-lg-4 mb-4">
+              <!-- desktop video output -->
+              <a href="#" class="bg-image aspect-16x9 video-thumbnail d-none d-lg-block" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ instruction.video_desktop_path }}" style="background-image: url({{ instruction.thumbnail_desktop_image }})">
+          
+              </a>
+              <!-- mobile video output -->
+              <a href="#" class="bg-image aspect-16x9 video-thumbnail d-block d-lg-none" data-toggle="modal" data-target="#videoModal" data-thevideo="{{ instruction.video_mobile_path }}" style="background-image: url({{ instruction.thumbnail_mobile_image }})">
+          
+              </a>
+              <h4 class="mt-4">{{ instruction.title }}</h4>
+              {{ instruction.description_html }}
+            </div>
+          {% endif %}  
+        {% endfor %}
+      {% endfor %}
+    </div>
+    
+  </div>
+</section>
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <div>
+          <div class="responsive-iframe aspect-16x9">
+            <iframe width="100%" src=""></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

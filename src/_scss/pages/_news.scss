@@ -1,0 +1,16 @@
+#news-tabs {
+  border-bottom: 0;
+  margin-bottom: 20px;
+  .nav-item {
+    .nav-link {
+      background-color: transparent;
+      opacity: 0.5;
+      &.active {
+        opacity: 1;
+      }
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

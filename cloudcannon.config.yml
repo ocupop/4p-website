@@ -1,0 +1,101 @@
+collections_config:
+  careers:
+    sort:
+      key: posted_date
+      order: desc
+  team_members:
+
+_structures:
+  nav_links:
+    - label: Links
+      icon: link
+      value:
+        label:
+        url:
+        alt:
+        nav_links:
+  meta:
+    - label: Meta Data
+      icon: share
+      value:
+        title:
+        description:
+        image:
+  faqs:
+    - label: FAQ
+      icon: question_answer
+      value:
+        question:
+        answer_html:
+  products:
+    - label: Products
+      icon: add
+      value:
+        name:
+        label:
+        image:
+        link:
+  links:
+    - label: Links
+      icon: link
+      value:
+        url:
+        label:
+        screenshot_image:
+        icon:
+  testimonials:
+    - label: testimonials
+      icon: format_quote
+      value:
+        testimonial_text:
+        name:
+        source:
+  assets:
+    - label: Image
+      icon: insert_photo
+      value:
+        _type: image
+        title:
+        image:
+    - label: Video
+      icon: videocam
+      value:
+        _type: video
+        title:
+        embed_url:
+  images:
+    - label: Image
+      icon: insert_photo
+      value:
+        title:
+        image:
+  hero:
+    - label: Image Carousel
+      icon: insert_photo
+      value:
+        _type: image_carousel
+        images:
+    - label: Image Banner
+      icon: insert_photo
+      value:
+        _type: image_banner
+        images:
+    - label: Text Banner
+      icon: article
+      value:
+        _type: text_banner
+        text_html:
+  videos:
+    - label: Videos
+      icon: videocam
+      value:
+        title:
+        description_html:
+        embed_url:
+  buttons:
+    - label: buttons
+      icon:
+      value:
+        label:
+        link:     
+  

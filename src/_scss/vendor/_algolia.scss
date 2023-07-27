@@ -1,0 +1,32 @@
+.card-hits {
+  .ais-Hits-list {
+    @extend .row;
+    @extend .row-cols-2;
+    list-style-type: none;
+    padding-left: 0;
+    .ais-Hits-item {
+      margin-bottom: 20px;
+      @extend .col;
+      flex-basis: auto;
+      color: $dark;
+      @include media-breakpoint-up(md) {
+        flex-basis: 50%;
+        .card {
+          max-width: 525px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.ais-Pagination-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

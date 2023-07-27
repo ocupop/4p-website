@@ -1,0 +1,89 @@
+---
+layout: page
+title: Careers | 4P Foods | Work With Local Farmers | Regenerative Agriculture
+meta:
+  - title: Careers
+    description: >-
+      Join 4P Foods team that is passionate about providing fresh, high-quality,
+      delicious food to customers in Virginia, Maryland, and D.C.
+    image:
+  - title: Careers | 4P Foods | Work With Local Farmers | Regenerative Agriculture
+    description: >-
+      4P Foods delivers regenerative and locally-sourced food through its online
+      grocery store, wholesale business operations, and institutional
+      partnerships. With a network of 600 local farmsteads, 4P Foods helps make
+      sustainably grown and ethically raised food accessible to residences,
+      businesses, and school systems across Virginia, Maryland, North Carolina,
+      and Washington, D.C.
+    image:
+  - title: Place Holder
+    description: Place Holder
+    image:
+careers:
+  - test
+  - procurement-assistant
+footer_image:
+_assets:
+  - image: /uploads/tom-with-food-donations-2.jpg
+  - image: /uploads/4pfoodsteamphoto-autumnolivefarmstour.jpg
+  - image: /uploads/careers/4p-careers-headerimage-02.jpg
+---
+{% include careers/image-bar.html %}
+<section class="pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-lg-auto text-center">
+        <div class="editable">
+          <h1><strong>Careers at 4P Foods</strong></h1>
+          <h2>Work with people passionate about our planet, food, and the prosperity of all</h2>
+          <div>
+            <p>4P Foods is growing! We are looking for talented humans passionate about improving the food system and helping to heal our planet through regenerative agriculture practice.</p>
+            <p>Don't see anything that fits your skill set?<br />Send us your resume and cover letter to&nbsp;<a href="mailto:xyz@4pfoods.com">j</a><a href="mailto:jobs@4pfoods.com">obs@4pfoods.com</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    {% assign num_careers = page.careers | size %} 
+    {% if num_careers > 0 %} 
+      {% for object in page.careers %}
+      {% assign career = site.careers | where: 'slug', object | first  %}
+      {% if career.published == true %}
+      {% if forloop.first %}
+      <hr />
+      {% endif %}
+      <div data-cms-editor-link="cloudcannon:collections/_careers" data-cms-editor-link-style="modal" class="row">
+        <div class="col-12">
+          <h4>{{ career.title }}</h4>
+          <p><strong>{{ career.location }}</strong> <em>Job posted {{ career.posted_date | date: '%m/%d/%Y' }}</em></p>
+          <p>{{ career.description }}</p>
+          <a href="{{ career.url }}" class="btn btn-secondary text-white">Learn More and Apply</a>
+        </div>
+      </div>
+      {% endif %}
+      <hr />
+      {% endfor %}
+    {% else %}
+    <div class="row">
+      <div class="col-12 col-lg-10 mx-lg-auto text-center">
+        <h4 class="editable">We don't currently have any openings</h4>
+        <div class="editable">
+          <p>
+            If you feel passionate about our mission&mdash;helping small farmers thrive while ensuring that all people
+            have access to Good Food&mdash;and think you have something to add to the team, we'd love to hear from you.
+          </p>
+        </div>
+        <p class="editable">
+          Please send us a brief cover letter and resume at
+          <a href="mailto:jobs@4pfoods.com">jobs@4pfoods.com</a>.
+        </p>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% include careers/volunteer.html %}
+{% include footer-image.html %}

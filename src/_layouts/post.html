@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% if page.featured_image %}
+          <img src="{{ page.featured_image }}" class="img-fluid mb-5" alt="{{ page.title }} image">
+        {% endif %}
+        <div class="editable">
+          <h1>{{ page.title }}</h1>
+        </div>
+
+        <p>{{ page.date | date: '%B %d, %Y'}} {% if page.author %}by {{ page.author }}{% endif %}</p>
+        {{ page.content }}
+        {% if page.buttons %}
+          <div class="d-md-flex">
+            {% for button in page.buttons %}
+              <a href="{{ button.link }}" class="btn btn-primary mr-3 mb-3">{{ button.label }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+<section class="pt-0">
+  <div class="container">
+    <div class="row">
+      {% assign images = page.assets | where: '_type', 'image' %}
+      {% assign videos = page.assets | where: '_type', 'video' %}
+      {% for image in images %}
+      <div class="col-lg-4">
+        <div class="bg-image aspect-4x3" style="background-image: url({{ image.image }})"></div>
+      </div>
+      {% endfor %}
+      </div>
+      {% for video in videos %}
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="responsive-iframe aspect-16x9 mb-3">
+            <iframe src="{{ video.embed_url }}"></iframe>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

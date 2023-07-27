@@ -1,0 +1,15 @@
+---
+layout: none
+permalink: api/events
+---
+[
+{% for event in site.events %}
+  {
+    "layout": {{ event['layout'] | jsonify }},
+    "url": {{ event['url'] | jsonify }},
+    "title": {{ event['title'] | jsonify }},
+    "date": {{ event['date'] | jsonify }},
+    "output": {{ event['output'] | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

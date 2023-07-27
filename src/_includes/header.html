@@ -1,0 +1,105 @@
+<header id="pageHeader">
+  <div class="bg-green-darker d-none d-lg-block">
+    <div class="container">
+      <nav id="usernav" class="navbar navbar-expand-lg">
+        <a href="/wholesale-programs" class="text-uppercase font-weight-bold editable">Interested in Wholesale?</a>
+        <div id="header-notification">
+          {% if site.data.notifications.header_notification.link %}
+            <p class="mb-0 font-weight-bold"><a href="{{ site.data.notifications.header_notification.link }}">{{ site.data.notifications.header_notification.notification_text }}</a></p>
+          {% else %}
+            <p class="mb-0 font-weight-bold">{{ site.data.notifications.header_notification.notification_text }}</p>
+          {% endif %}
+        </div>
+        <div id="secondarynav">
+          <auth-nav>
+            <a href="{{ site.store_url }}/login" class="btn btn-primary storeLink">Login</a>
+          </auth-nav>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="container">
+    <nav id="mainnav" class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="/" title="{{ site.title }}">
+        <img src="/img/logo-wordmark.svg" alt="{{ site.title }}" />
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#primarynav" aria-controls="primarynav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
+        <ul class="nav d-flex align-items-center justify-content-center d-lg-none mb-5">
+          <li class="nav-item mt-3 mt-lg-0">
+            <a href="{{ site.store_url }}" class="btn btn-primary mx-2 storeLink">Shop</a>
+          </li>
+          <li class="nav-item mt-3 mt-lg-0 d-block d-lg-none">
+            <a href="{{ site.store_url }}/login" class="btn btn-primary mx-2 storeLink">Login</a>
+          </li>
+        </ul>
+        <ul class="primary-nav-links navbar-nav ml-auto ">
+          {% for link in site.data.navigation.primary_navigation.navigation %}
+          {% if link.links %}
+            {% assign href_att = 'data-href' %}
+          {% else %}
+            {% assign href_att = 'href' %}
+          {% endif %}
+          {% assign slug = link.label | slugify %}
+
+          <li class="nav-item {% if link.links %}dropdown mega-dropdown{% endif %}{% if page.url contains slug %} active{% endif %}">
+            <a class="nav-link" {% if link.links %}
+                id="#collapse-{{ link.label | slugify }}"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              {% endif %}
+              href="{{ link.url }}"
+              {{ href_att }}="{{ link.url }}">
+              {{ link.label }}
+              <span class="arrow d-inline-block d-lg-none"><i class="ri-arrow-down-s-line"></i></span>
+              <span class="sr-only">(current)</span>
+            </a>
+            {% if link.links %}
+            <div class="dropdown-menu mega-menu v-2 z-depth-1" aria-labelledby="collapse-{{ link.label | slugify }}">
+              <div class="row justify-content-lg-center">
+                {% for link in link.links %}
+                <div class="col-12 col-lg-auto sub-menu mb-lg-0 mb-4">
+                  <a href="{{ link.url }}">{{ link.label }}</a>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+            {% endif %}
+          </li>
+          {% endfor %}
+          <li class="nav-item">
+            <a href="/wholesale-programs" class="text-uppercase font-weight-bold d-block d-lg-none editable link-mobile-wholesale">Are you a Wholesaler?</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav d-none d-lg-block">
+          <li class="nav-item mt-3 mt-lg-0">
+            <a href="{{ site.store_url }}" class="btn btn-primary storeLink">Shop Now</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  {% if site.data.notifications.bar_notification.notification_text %}
+    <div class="d-none d-lg-block bg-tan py-3">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg justify-content-center">
+          <div id="header-notification" class="text-center">
+            {% if site.data.notifications.bar_notification.link %}
+              <p class="mb-0 font-weight-bold"><a href="{{ site.data.notifications.bar_notification.link }}">{{ site.data.notifications.bar_notification.notification_text }}</a>
+              </p>
+            {% else %}
+              <p class="mb-0 font-weight-bold">{{ site.data.notifications.bar_notification.notification_text }}</p>
+            {% endif %}
+          </div>
+        </nav>
+      </div>
+    </div>
+  {% endif %}
+</header>

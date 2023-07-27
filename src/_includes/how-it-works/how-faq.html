@@ -1,0 +1,37 @@
+<section id="how-faq" class="bg-mid">
+  <div class="container">
+    <div class="row">
+      {% assign faqs = '' | split: ',' %}
+      {% for object in site.data.faqs %}
+        {% assign title = object.title | slugify %}
+        {% if title contains 'about' %}
+        {% for faq in object.faqs limit: 4 %}
+          <div class="col-lg-6 mb-3">
+            <div
+              class="bg-gray text-white p-5"
+              data-toggle="collapse"
+              data-target="#collapse-{{ forloop.index }}"
+              aria-expanded="false"
+              aria-controls="collapse-{{ forloop.index }}"
+            >
+              <h5 class="text-uppercase">Question</h5>
+              {{ faq.question }}
+            </div>
+            <div class="collapse bg-primary text-white p-5" id="collapse-{{ forloop.index }}">
+              <h5 class="text-uppercase">Answer</h5>
+              {{ faq.answer_html }}
+            </div>
+          </div>
+        {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="text-center">
+          <a href="/faq" class="btn btn-primary">View All FAQs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Cultivating a Strong Community: Locally-Sourced Food Donations'
+date: 2014-03-17 00:00:00
+author: 4P Foods
+excerpt:
+featured_image: /img/uploads/posts/marthastableheader-1.jpg
+buttons:
+assets:
+tags:
+published: true
+---
+<div class="editable"><p>About 50 years ago, a Georgetown professor interested in addressing poverty in the nation&rsquo;s capital sat down with a priest who had been working to help people on the streets for a lifetime. Their conversations would transform the social service landscape in Washington, DC with the creation of a soup kitchen called <a href="https://www.some.org/">S.O.M.E. (So Others Might Eat</a>), a domestic violence shelter called <a href="https://houseofruth.org/">House of Ruth</a>, and a kitchen to feed and care for the children in DC&rsquo;s notoriously rough and run-down 14th street corridor.</p><p>As that neighborhood has changed and evolved, so has Local Food Bank partners, the non-profit partner to 4P Foods. From its first day of operations with $93 cash on hand, Local Food Bank Partners has expanded to a multi-million dollar force for good in the district. Their mission to provide healthy food, affordable clothing, and quality education so DC residents in need can build a better future aligns nicely with 4P&rsquo;s own vision for the future we need to build.</p><p>Through the generosity of tens of thousands of people and organizations, local food bank partners has served millions of meals to people who might have otherwise gone hungry. But like other organizations responding to hunger, many of the donations for local food bank partners came in the form of processed canned and boxed goods, or &lsquo;non-saleable, but still edible&rsquo; food donations. Any food is good enough when your alternative is no food, but 4P Foods wants to offer a different kind of donation.</p><p>Our 10:1 commitment means that for every 10 boxes we sell, we donate 1 box to local food bank partners. We are not talking about leftovers here. The box we send to local food bank partners is just like the box we send to our subscribers. It is hand picked with the same care, and it is delivered with the same urgency and freshness, on the same day as all of our other subscribers. Not only is it still &ldquo;saleable&rdquo;, it is better than what you can find in most grocery stores.</p><p>4P Foods is working toward a future in which all people have access to high-quality, nutritious food from farms not far from where they live. Our partnership with local food bank partners is what we can do (for now) to make that future a reality. Thank you for being a part of it.</p></div>

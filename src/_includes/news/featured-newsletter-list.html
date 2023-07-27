@@ -1,0 +1,30 @@
+<div class="threesome mt-4">
+  {% assign newsletters = site.newsletters | sort: 'newsletter_date' | reverse %}
+  {% for newsletter in newsletters limit: 3 %}
+  <div class="card bg-transparent">
+    <div class="card-content pin-footer">
+      <div class="card-header">
+        <div class="content">
+          <div class="bg-image aspect-4x3" style="background-image: url({{ newsletter.featured_image | default: site.fallback_logo }})"></div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="content text-left">
+          <h5>{{ newsletter.title }}</h5>
+          {% if newsletter.label %}
+            <p><em>{{ newsletter.label }}</em></p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="card-footer">
+        {% if newsletter.newsletter_link %}
+          <a href="{{ newsletter.newsletter_link }}" class="btn btn-secondary text-white" target="_blank" rel="noopener">See
+          Newsletter</a>
+        {% else %}
+          <a href="{{ newsletter.url }}" class="btn btn-secondary text-white">See Newsletter</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

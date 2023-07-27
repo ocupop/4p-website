@@ -1,0 +1,12 @@
+---
+layout: none
+permalink: api/elements
+---
+[
+{% for element in site.elements %}
+{
+  "slug": {{ element['slug'] | jsonify }},
+  "output": {{ element['output'] | jsonify }}
+}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

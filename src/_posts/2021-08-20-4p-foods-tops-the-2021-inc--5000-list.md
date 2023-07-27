@@ -1,0 +1,13 @@
+---
+layout: post
+title: 4P Foods Is One of the Fastest-Growing Companies in America
+date: 2021-08-20 00:00:00
+author: 4P Foods
+excerpt: "4P Foods ranked No. 432 on Inc. Magazine's annual Inc. 5000 list! The list represents the most successful companies of the American economy’s most dynamic segment—its independent small businesses.\_"
+featured_image: /2021-04-22-4pfoods-earthdaybirthday2021-team-1.jpg
+buttons:
+assets:
+tags:
+published: true
+---
+<div class="editable"><p class="AlignCenter">Thanks to your support in 2020, we ranked No. 432 on Inc. Magazine&rsquo;s annual Inc. 5000 list! The list represents the most successful companies of the American economy&rsquo;s most dynamic segment&mdash;its independent small businesses.&nbsp;</p><p class="AlignCenter">During the darkest days of the pandemic, when grocery store shelves and meat cases were empty, our farmers were open for business. 4P Foods&rsquo; dedicated team kept delivering high-quality, fresh food to families&rsquo; doorsteps. Since 2017, 4P Foods&rsquo; revenue has grown 1,132 percent, and we now serve 4,000 families and 250 food service businesses in the DMV region. In 2020, 4P Foods spent $4 million sourcing Good Food from local and regional growers and producers, a twenty-fold increase over 2017.</p><p>&ldquo;Building one of the fastest-growing companies in America in any year is a remarkable achievement,&rdquo; says Scott Omelianuk, editor-in-chief of Inc. &ldquo;Building one in the crisis we&rsquo;ve lived through is just plain amazing. This kind of accomplishment comes with hard work, smart pivots, great leadership, and the help of a whole lot of people.&rdquo;</p><p>The transparency of our supply chain and dedication to people, planet, prosperity, and purpose means that when 4P Foods succeeds, our partners and customers succeed as well. &ldquo;At 4P Foods, our mission is twofold. First, to help farmers not just to survive, but to thrive. And second, to make sure everyone &mdash; no matter their race, zip code, or income &mdash; has access to that food,&rdquo; stated Founder and CEO Tom McDougall. &ldquo;We strive to lead with purpose&mdash;to advance our mission of ensuring that all people can eat Good Food and all farmers can make a living growing Good Food.&rdquo;&nbsp;</p><p>Thank you for joining 4P Foods on this journey, as we work together to create a more just, equitable, humane, and sustainable food system. Together, we&rsquo;ve accomplished some pretty amazing things... and we are just getting started!</p><p>We&rsquo;re in good company. See who else made the prestigious list: <a href="http://www.inc.com/inc5000">www.inc.com/inc5000</a>.</p></div>

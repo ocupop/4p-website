@@ -1,0 +1,27 @@
+#how-to-shop-guide {
+  h4 {
+    text-transform: none;
+  }
+}
+
+#accordion-faq {
+  .btn-link {
+    &.collapsed {
+      i {
+        transform: rotate(0)
+      }
+    }
+    i {
+      @include transition(0.4s);
+      transform: rotate(180deg);
+    }
+  }
+}
+
+#how-to-shop-testimonials {
+  @include media-breakpoint-down(lg) {
+    .border-right {
+      border: 0 !important;
+    }
+  }
+}

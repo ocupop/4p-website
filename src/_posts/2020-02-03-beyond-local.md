@@ -1,0 +1,13 @@
+---
+layout: post
+title: Why We Source Beyond Local When Food Options Are Limited
+date: 2020-02-03 00:00:00
+author: 4P Foods
+excerpt: 4P Foods offers in season, regional produce.
+featured_image: /img/uploads/aldermanfarmscover.jpg
+buttons:
+assets:
+tags:
+published: true
+---
+<div class="editable"><p>Starting this coming week, 4P Foods will be offering regional produce grown in places where it's in season, even though it's not in season here. We've already included such veggie delights as sweet corn, celery, tomatoes, cucumbers, and eggplants among our selection - and of course, who could forget all the gorgeous&nbsp;<a href="http://4pfoods.com/the-story-of-our-citrus/">citrus fruits</a>?</p><p>Providing these products means we can go beyond local. Unfortunately, DMV produce is not as diverse in the cold months. But we continue to source root vegetables and hardy greens throughout the winter from our VA farmer partners - such as Goldman Farm, Van Dessel Farms, and Double H - when available. But now you can savor the crisp, juicy, and colorful warm-weather crops our area won't be producing for another few months. Think of it as a headstart on the growing season!</p><p>We also get to make friends with new farmers, and our connections with them allow all of us to prosper and thrive. Whether our farmer partners are local or regional, they share the same values, care for the land, and the quality of their products. Through 4P Foods, their fruits and vegetables will reach more tables, we'll be able to carry a wider variety throughout the year, and our members get to enjoy this variety.</p><p>Your food dollars are still helping local farmers, too! We can sell products to other regional food hubs and help our wholesale customers meet minimum orders. Happy Dirt in NC now carries beets from Van Dessel Farms and Valley Farming potatoes because we sent them VA produce when we acquired theirs. Likewise, our partnership with South Carolina food hub GrowFood Carolina (GFC) has provided a new market for small-scale citrus growers and supports GFC's efforts to preserve historic and inherited lands. Whether you're an individual, a family, or a dining establishment, you will benefit from our dynamic network of sustainable growers and distributors - and you'll benefit them, too!</p><p>We're looking forward to sourcing more products from Virginia farmers when their seasons come around, but until then, we're thrilled to be able to enjoy a taste of summer in the middle of the winter. Thank you to all of our farmer partners for the tremendous effort it takes to put&nbsp;<a href="http://4pfoods.com/good-food-knows-no-boundaries/">Good Food</a>&nbsp;on our plates 12 months a year, and thank you to our members for your support!</p></div>

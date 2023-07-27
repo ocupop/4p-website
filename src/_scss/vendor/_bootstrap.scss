@@ -1,0 +1,372 @@
+// Buttons
+.btn {
+  font-family: $headings-font-family;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 0 !important;
+  @include transition(0.3s);
+  &:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+  }
+  &.btn-outline-white {
+    border: 1px solid $white;
+    &:hover {
+      color: $green-dark;
+    }
+  }
+  &.btn-green-dark {
+    background-color: $green-dark;
+  }
+  &.btn-white {
+    background-color: $white;
+    color: $gray-400;
+    &:hover {
+      background-color: $secondary;
+      color: $white;
+      border-color: $secondary;
+    }
+    &.text-dark {
+      &:hover {
+        color: $white !important;
+      }
+    }
+  }
+  &.btn-link {
+    color: $secondary;
+    padding-left: 0;
+    padding-right: 0;
+    &:hover {
+      color: darken($secondary, 15%);
+    }
+  }
+}
+.btn-primary {
+  color: $white !important;
+}
+.btn-lg {
+  border-radius: 0;
+  line-height: 2.6rem;
+  padding: 0.5rem 1.5rem !important;
+}
+
+// Lists
+.list-group {
+  border: 0;
+  margin-bottom: 2rem;
+  .list-group-item {
+    border: 0;
+    border-left: 5px solid $gray-100;
+    @include transition();
+    // TB: This should probably go somewhere else, but is worth talking through where to put this utility class
+    .actions.show-on-hover {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      @include transition(0.75s);
+    }
+    &:hover {
+      border-color: $primary;
+      .actions {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+      }
+    }
+  }
+}
+
+// Carousels
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  font-size: 3rem;
+}
+
+.carousel {
+  &.carousel-feature {
+    .aspect-hero {
+      padding-top: 50%;
+      @include media-breakpoint-up(md) {
+        padding-top: 25%;
+      }
+      @include media-breakpoint-up(lg) {
+        padding-top: 20%;
+      }
+      @include media-breakpoint-up(xl) {
+        padding-top: 15%;
+      }
+
+    }
+    .row {
+      padding-top: 4rem;
+      padding-bottom: 6rem;
+    }
+    h1 {
+      text-transform: none;
+      @include media-breakpoint-down(sm) {
+        font-size: 1.7rem;
+      }
+    }
+    .carousel-controls-wrapper {
+      position: absolute;
+      bottom: 0;
+
+      left: 0;
+      width: 100%;
+      background-color: rgba($black, 0.3);
+      align-items: center;
+      .carousel-control-prev,
+      .carousel-control-next,
+      .carousel-indicators {
+        position: relative;
+        width: auto;
+        top: auto;
+      }
+      .carousel-indicators {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        margin: 0 20px;
+        align-items: center;
+        li {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          margin-left: 15px;
+          margin-right: 15px;
+          background-color: transparent;
+          border: 1px solid $white;
+          &.active {
+            background-color: $white;
+          }
+        }
+      }
+      .carousel-control-prev,
+      .carousel-control-next {
+        font-size: 1.8rem;
+        position: relative;
+      }
+      .carousel-control-prev {
+
+      }
+    }
+     .bg-image {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: rgba($black, 0.25);
+        z-index: 0;
+      }
+    }
+  }
+  &.carousel-testimonials,
+  &.carousel-stats {
+    padding-bottom: 50px;
+    .carousel-indicators {
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      margin: 0 20px;
+      align-items: center;
+      li {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-left: 15px;
+        margin-right: 15px;
+        background-color: transparent;
+        border: 1px solid $white;
+        &.active {
+          background-color: $white;
+        }
+      }
+    }
+    .carousel-control-prev,
+    .carousel-control-next,
+    .carousel-indicators {
+      align-items: flex-end
+    }
+
+  }
+  &.carousel-stats {
+    .carousel-indicators {
+      li {
+        background-color: transparent;
+        border: 1px solid $dark;
+        &.active {
+          background-color: $dark;
+          opacity: 0.5;
+        }
+      }
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+      i {
+        color: $dark;
+      }
+    }
+  }
+}
+
+
+
+// Tabs
+.nav-tabs {
+  border-bottom: 2px solid $tan;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  @include media-breakpoint-down(md) {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .nav-item {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    .nav-link {
+      display: block;
+      padding: 10px 5px;
+      background-color: $tan-dark;
+      border-top-right-radius: 12px;
+      border-top-left-radius: 12px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.25rem;
+      font-weight: 600;
+      border: 0;
+      color: $gray-500;
+      @include media-breakpoint-down(lg) {
+        font-size: 16px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+      }
+      &.active {
+        color: $gray-700;
+        background-color: $tan;
+      }
+      &:hover {
+        background-color: darken($tan-dark, 5%);
+        color: $white;
+      }
+    }
+  }
+}
+
+.tab-content {
+  h4 {
+    font-style: italic;
+    text-transform: capitalize;
+  }
+}
+
+// Cards
+.card {
+  border: 0;
+  background-color: $tan;
+  margin-bottom: 20px;
+  .card-body,
+  .card-footer {
+    border: 0;
+    background-color: transparent;
+  }
+  h5 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 17px;
+    color: $gray-600;
+    margin-bottom: 5px;
+  }
+
+  h6 {
+    font-family: $font-family-secondary;
+    font-style: italic;
+    color: $gray-600;
+    margin-bottom: 20px;
+  }
+}
+
+.card-columns {
+  column-count: 1;
+  @include media-breakpoint-up(lg) {
+    column-count: 2;
+  }
+}
+
+.accordion {
+  .card {
+    background-color: transparent;
+    margin-bottom: 0;
+    border-top: 1px solid $body-color;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .card-header {
+      background-color: transparent;
+      padding-left: 0;
+      padding-right: 0;
+      border-bottom: 0;
+      margin-bottom: 0;
+      .btn-link {
+        color: $body-color;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: none;
+        i {
+          font-size: 25px;
+          position: absolute;
+          right: 0;
+          &.ri-add-line {
+            opacity: 0;
+            @include transition(0.4s);
+          }
+        }
+        &.collapsed {
+          i {
+           &.ri-add-line {
+             opacity: 1;
+           } 
+          }
+        }
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+    &:last-of-type {
+      border-bottom: 1px solid $body-color;
+    }
+  }
+}
+
+.modal {
+  .close {
+    width: 33px;
+    height: 33px;
+    background-color: $white;
+    color: $gray-600;
+    float: none;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    right: -8px;
+    opacity: 1;
+    z-index: 100;
+    @include media-breakpoint-up(lg) {
+      top: -10px;
+      right: -12px;
+    }
+  }
+}

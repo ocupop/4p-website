@@ -1,0 +1,42 @@
+
+{% for hero in page.hero %}
+  {% if hero._type == 'image_carousel' %}
+
+    <div id="carousel-hero" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="false">
+      <div class="carousel-inner">
+        {% for image in hero.images %}
+          <div class="carousel-item {% if forloop.first %}active{% endif %}">
+            <div class="bg-image aspect-2x1" style="background-image: url('{{ image.image }}')"></div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  {% elsif hero._type ==  'image_banner' %}
+
+    <div class="row no-gutters">
+      {% for image in hero.images %}
+        <div class="col-4">
+          <div class="p-1">
+            <div class="bg-image aspect-16x9" style="background-image: url('{{ image.image }}')"></div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+  {% elsif hero._type == 'text_banner' %}
+
+    <section class="bg-primary bg-image aspect-none" style="background-image: url(/img/bg-illustrations/4p-homepage-goodfood-01.jpg)">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-9 mx-lg-auto text-center">
+            <div class="text-mega text-white">
+              {{ hero.text_html }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,101 @@
+---
+layout: default
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.location}}</p>
+        <img src="{{ page.featured_image }}" class="img-fluid" alt="{{ page.title }} image" />
+      </div>
+    </div>
+  </div>
+</section>
+{% if page.featured_products %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {% include products/featured-products-grid.html %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+<section class="py-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {{ page.content }}
+      </div>
+    </div>
+    {% assign categories_size = page.categories | size %} {% if categories_size > 0 %}
+    <div class="row">
+      <div class="col-12">
+        <h4>Farm Categories</h4>
+        <p>
+          {% for category in page.categories %} {{category}}{% unless forloop.last %},{% endunless %} {% endfor %}
+        </p>
+      </div>
+    </div>
+    {% endif %} 
+    {% assign links_size = page.links | size %} {% if links_size > 0 %}
+    <div class="row">
+      <div class="col-12">
+        {% for link in page.links %}
+        <a href="{{ link.url }}" class="btn btn-primary" target="_blank" rel="noopener">{{ link.label }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row no-gutters">
+      {% assign images = page.assets | where: '_type', 'image' %} {% assign videos = page.assets | where: '_type',
+      'video' %} {% for image in images %}
+      <div class="col-lg-4">
+        <div class="p-1">
+          <div class="bg-image aspect-4x3" style="background-image: url({{ image.image }})"></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% for video in videos %}
+    <div class="row no-gutters">
+      <div class="col-12">
+        <div class="responsive-iframe aspect-16x9 mb-3">
+          <iframe src="{{ video.embed_url }}"></iframe>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="row my-5">
+      <div class="col-12">
+        <a href="/farmers" class="btn btn-primary editable">Back to Our Farmers</a>
+      </div>
+    </div>
+  </div>
+  
+</section>
+<!-- add logic to show related farmers-->
+{% if page.related_farmers %}
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2 class="editable">
+            Related Farmers &amp; Producers
+          </h2>
+        </div>
+        <div class="col-lg-4 text-lg-right">
+          <a href="/farmers" class="btn btn-primary">Back to our farmers</a>
+        </div>
+      </div>
+      {% include farmers/farmers-list-related.html %}
+    </div>
+  </section>
+{% endif %}

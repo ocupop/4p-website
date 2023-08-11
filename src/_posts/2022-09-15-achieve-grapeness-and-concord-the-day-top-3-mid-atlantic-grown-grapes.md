@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Achieve Grapeness and Concord the Day: Top 3 Mid-Atlantic Grown Grapes'
-date: 2022-09-15 14:00:00
+date: 2023-08-11 10:00:00
 author: 4P Foods
 excerpt: >-
   The grapes grown by farmers in the Mid-Atlantic are unique to our region.

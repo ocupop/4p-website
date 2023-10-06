@@ -1,0 +1,21 @@
+---
+layout: post
+title: 5 Charming Farms to Visit This Fall
+date: 2023-10-06 00:00:00
+author: 4P Foods
+excerpt: >-
+  Fall is in the air! And our local farm partners aren't just growing and
+  producing; they're open to visitors and ready to sprinkle some autumn magic
+  into our lives. 
+featured_image: /uploads/large-5-farms-to-visit-this-fall.png
+buttons:
+assets:
+tags:
+  - 4P Foods
+  - Agritourism
+  - '2023'
+  - Regenerative Agriculture
+  - U-Pick
+published: true
+---
+<div class="editable"><p>Fall is in the air! And our local farm partners aren't just growing and producing; they're open to visitors and ready to sprinkle some autumn magic into our lives. We've put together a list of farms that are regularly open for apple picking or put on special harvest events.</p><h1><a target="_blank" rel="noopener" href="https://4pfoods.com/farmers/dickie-brothers-orchard/">Dickie Brothers Orchard</a></h1><p>Experience the beauty of nature and support local agriculture at Dickie Brothers Orchard in Roseland, Va. Create fun memories as you pick your own apples when they are perfectly ripe. And that's not all – don't miss out on the excitement of wandering through their pumpkin patch or getting lost in a corn maze. <a target="_blank" rel="noopener" href="https://www.dickiebrothers.com/">Learn more</a>.</p><h1><a target="_blank" rel="noopener" href="https://4pfoods.com/farmers/f-t-valley-farm/">F.T. Valley Farm</a></h1><p>Located in Sperryville, Va., discover the charm of F.T. Valley, where an apple-picking adventure awaits you! With 24 varieties of apples, customers can enjoy early, mid, and late season harvest. F. T. Valley fruit offers extraordinary flavor and texture, and grows on dwarf trees that can be picked easily, no ladder required. Their market is stocked with F. T. Valley’s own grass-fed beef, apple butters, jams, cider, local honey, free-range eggs, and other locally crafted goods. The popular stop attracts hikers who need a little pick-me-up after conquering Old Rag Mountain. <a target="_blank" rel="noopener" href="https://ftvalleyfarm.com/">Learn more</a>.&nbsp;</p><h1><a target="_blank" rel="noopener" href="https://4pfoods.com/farmers/messicks-farm/">Messicks Farm Market</a></h1><p>On a mission to provide fresh, healthy, local foods at a fair price, Messick’s Farm Market in Bealeton, Va., invites you and your friends into their fields to enjoy their Fall Festival. The event includes hayrides, barrel train rides, zip line, candy cannon, bounce pillow, pumpkin patch, corn maze, hay bale structures and so much more! <a target="_blank" rel="noopener" href="https://www.messicksfarmmarket.com/calendar">View the event calendar</a>.&nbsp;</p><h1><a href="https://4pfoods.com/farmers/saunders-brothers-orchard/">Saunders Brothers Orchard</a>&nbsp;</h1><p>Located in beautiful Nelson County, Va., Saunders Brothers is the place to be on Saturday for live music and a fun-filled Kids On The Farm Day. Take a stroll through the orchard and harvest some of the freshest produce around, including delicious pumpkins and gourds. If you are feeling artsy, you can try your hand at pumpkin painting while you soak in the beautiful surroundings. While you're there, visit the onsite farm antique museum. <a target="_blank" rel="noopener" href="https://www.saundersbrothersfarmmarket.com/saturday-events?view=calendar&amp;month=10-2023">View the event calendar</a>.</p><h1><a target="_blank" rel="noopener" href="https://4pfoods.com/farmers/silver-creek-and-seamans-orchard/">Silver Creek and Seamans Orchard</a></h1><p>Mark your calendars for the first and third Saturdays of every October and embark on an adventure to Silver Creek and Seamans Orchard in Tyro, Va. Get ready to indulge in the freshest, most delicious apples hand-picked by you. Explore the cider selection, immerse yourself in the joy of picking your own pumpkins, and navigate through the corn maze. <a target="_blank" rel="noopener" href="https://silvercreekseamansorchards.com/">Learn more</a>.&nbsp;</p></div>

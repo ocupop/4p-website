@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 5 Things You Need To Know About Black Garlic
-date: 2023-12-06 16:00:00
+date: 2024-01-28 09:00:00
 author: 4P Foods
 excerpt: >-
   4P Foods is very excited to offer black garlic from Farmer D! This unique

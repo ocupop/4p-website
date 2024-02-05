@@ -27,11 +27,11 @@ To create black garlic, garlic bulbs are kept at a high humidity and low tempera
 
 # **\#3 Black garlic tastes sweet and tangy.**
 
-The low and slow creation process gives black garlic the texture of a date with a slightly sweet, tangy flavor like balsamic vinegar. This sweet and tangy flavor pairs well with sharp cheddar and other cheeses with more pungent flavor profiles. Try adding black garlic to your [charcuterie board](https://shop.4pfoods.com/product/the-perfect-charcuterie-board) for a unique and delicious item to spread on top of cheese and crackers.
+The low and slow creation process gives black garlic the texture of a date with a slightly sweet, tangy flavor like balsamic vinegar. This sweet and tangy flavor pairs well with sharp cheddar and other cheeses with more pungent flavor profiles. Try adding black garlic to your charcuterie board for a unique and delicious item to spread on top of cheese and crackers.
 
 # **\#4 Black garlic has umami.**
 
-The aging process also brings out umami. This earthy flavor is great in salad dressings, sandwich spreads, marinades, and dipping sauces. Black garlic is also a great addition to some soups like tomato soup.
+The aging process also brings out umami. This earthy flavor is great in salad dressings, sandwich spreads, marinades, dipping sauces, and [this pasta recipe](/recipes/easy-black-garlic-dinner/){: target="_blank" rel="noopener"}. Black garlic is also a great addition to some soups like tomato soup.
 
 # **\#5 Black garlic has more antioxidants than raw garlic.**
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Simple Gardening Tips From A Mid-Atlantic Farmer
-date: 2023-03-29 16:00:00
+date: 2024-04-05 16:00:00
 author: 4P Foods
 excerpt: >-
   As Mid-Atlantic farmers themselves, Lee and her husband select varieties of
@@ -10,14 +10,13 @@ excerpt: >-
 featured_image: /uploads/live-plants-blog.png
 buttons: []
 assets:
-tags:
 published: true
 ---
 4P Foods sat down with Lee O’Neil from [Radical Roots Farm](https://4pfoods.com/farmers/radical-roots-community-farm/), to discuss the starter plants we are bringing into the 4P Foods shop. Lee and her husband own and operate Radical Roots Farm in Keezletown, VA where they grow organic vegetables and educate people on permaculture and sustainable agriculture. They are passionate about helping others grow their own food, and they believe that it helps people build appreciation for what is on their plate.
 
 ### **“It feels really good to help other people garden,” says Lee, Radical Roots Farm.**
 
-As Mid-Atlantic farmers themselves, Lee and her husband select varieties of plants that do well in the Mid-Atlantic and they start the plants in a compost-based potting mix. These certified-organic vegetable and herb starter plants are locally-grown with no fertilizers, so they are set up for success. The plants sprout from seed on Radical Roots Farm and will arrive on your doorstep healthy and ready to be transferred right into the ground or into a pot. Yes, they can be grown in a pot if you do not have garden space!&nbsp;
+As Mid-Atlantic farmers themselves, Lee and her husband select varieties of plants that do well in the Mid-Atlantic and they start the plants in a compost-based potting mix. These certified-organic vegetable and herb starter plants are locally-grown with no fertilizers, so they are set up for success. The plants sprout from seed on Radical Roots Farm and will arrive on your doorstep healthy and ready to be transferred right into the ground or into a pot. Yes, they can be grown in a pot if you do not have garden space!
 
 Here are a few tips from Lee to keep your plants healthy and help them grow delicious produce.
 

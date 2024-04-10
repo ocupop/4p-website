@@ -13,6 +13,7 @@ assets:
 tags:
   - EAT Local Food Act
   - 4P Foods
+  - Local Food
 published: true
 ---
 <div class="editable"></div>

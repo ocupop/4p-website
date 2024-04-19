@@ -1,6 +1,6 @@
 <header id="pageHeader">
   <div class="bg-green-darker d-none d-lg-block">
-    <div class="container">
+    <div class="container-fluid">
       <nav id="usernav" class="navbar navbar-expand-lg">
         <a href="/wholesale-programs" class="text-uppercase font-weight-bold editable">Interested in Wholesale?</a>
         <div id="header-notification">
@@ -18,7 +18,7 @@
       </nav>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <nav id="mainnav" class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="/" title="{{ site.title }}">
         <img src="/img/logo-wordmark.svg" alt="{{ site.title }}" />
@@ -30,7 +30,7 @@
           <span class="icon-bar"></span>
         </span>
       </button>
-      <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
+      <div class="collapse navbar-collapse justify-content-md-start" id="primarynav">
         <ul class="nav d-flex align-items-center justify-content-center d-lg-none mb-5">
           <li class="nav-item mt-3 mt-lg-0">
             <a href="{{ site.store_url }}" class="btn btn-primary mx-2 storeLink">Shop</a>
@@ -39,7 +39,7 @@
             <a href="{{ site.store_url }}/login" class="btn btn-primary mx-2 storeLink">Login</a>
           </li>
         </ul>
-        <ul class="primary-nav-links navbar-nav ml-auto ">
+        <ul class="primary-nav-links navbar-nav">
           {% for link in site.data.navigation.primary_navigation.navigation %}
           {% if link.links %}
             {% assign href_att = 'data-href' %}
@@ -78,9 +78,15 @@
             <a href="/wholesale-programs" class="text-uppercase font-weight-bold d-block d-lg-none editable link-mobile-wholesale">Are you a Wholesaler?</a>
           </li>
         </ul>
-        <ul class="nav navbar-nav d-none d-lg-block">
+        <ul class="nav navbar-nav ml-auto d-none d-lg-flex align-items-center">
           <li class="nav-item mt-3 mt-lg-0">
             <a href="{{ site.store_url }}" class="btn btn-primary storeLink">Shop Now</a>
+          </li>
+          <li class="nav-item mt-3 mt-lg-0 mx-3">
+            <a href="{{ site.store_url }}/cart" class="nav-icon-link"><i class="ri-shopping-cart-2-fill"></i></a>
+          </li>
+          <li class="nav-item mt-3 mt-lg-0">
+            <a href="{{ site.store_url }}/user" class="nav-icon-link"><i class="ri-user-fill"></i></a>
           </li>
         </ul>
       </div>

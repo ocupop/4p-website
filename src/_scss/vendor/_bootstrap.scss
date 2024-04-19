@@ -1,9 +1,9 @@
 // Buttons
 .btn {
-  font-family: $headings-font-family;
+  font-family: $font-family-base;
   text-transform: uppercase;
-  font-weight: 600;
-  border-radius: 0 !important;
+  font-weight: 400;
+  border-radius: 3px; 
   @include transition(0.3s);
   &:focus {
     outline: 0 !important;

@@ -1,5 +1,5 @@
 <header id="pageHeader">
-  <div class="bg-green-darker d-none d-lg-block">
+  <!-- <div class="bg-green-darker d-none d-lg-block">
     <div class="container-fluid">
       <nav id="usernav" class="navbar navbar-expand-lg">
         <a href="/wholesale-programs" class="text-uppercase font-weight-bold editable">Interested in Wholesale?</a>
@@ -17,8 +17,8 @@
         </div>
       </nav>
     </div>
-  </div>
-  <div class="container-fluid">
+  </div> -->
+  <div class="container-fluid bg-light">
     <nav id="mainnav" class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="/" title="{{ site.title }}">
         <img src="/img/logo-wordmark.svg" alt="{{ site.title }}" />
@@ -62,7 +62,7 @@
               <span class="sr-only">(current)</span>
             </a>
             {% if link.links %}
-            <div class="dropdown-menu mega-menu v-2 z-depth-1" aria-labelledby="collapse-{{ link.label | slugify }}">
+            <div class="dropdown-menu mega-menu v-2 z-depth-1 {% if link.sublinks.first.url %}has-sublinks{% endif %}" aria-labelledby="collapse-{{ link.label | slugify }}">
               <div class="row justify-content-lg-center">
                 {% for link in link.links %}
                 <div class="col-12 col-lg-auto sub-menu mb-lg-0 mb-4">
@@ -70,6 +70,17 @@
                 </div>
                 {% endfor %}
               </div>
+              {% if link.sublinks.first.url %}
+                <div class="sublinks-menu">
+                  <div class="row justify-content-lg-center">
+                    {% for link in link.sublinks %}
+                    <div class="col-12 col-lg-auto sub-menu mb-lg-0 mb-4">
+                      <a href="{{ link.url }}">{{ link.label }}</a>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              {% endif %}
             </div>
             {% endif %}
           </li>
@@ -80,7 +91,7 @@
         </ul>
         <ul class="nav navbar-nav ml-auto d-none d-lg-flex align-items-center">
           <li class="nav-item mt-3 mt-lg-0">
-            <a href="{{ site.store_url }}" class="btn btn-primary storeLink">Shop Now</a>
+            <a href="{{ site.store_url }}" class="btn btn-primary storeLink">Shop Groceries</a>
           </li>
           <li class="nav-item mt-3 mt-lg-0 mx-3">
             <a href="{{ site.store_url }}/cart" class="nav-icon-link"><i class="ri-shopping-cart-2-fill"></i></a>

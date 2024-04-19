@@ -1,25 +1,55 @@
 ---
 primary_navigation:
   navigation:
-    - label: How we work
+    - label: Farm Fresh Groceries
       url:
       alt:
       links:
-        - label: How 4P Works
+        - label: How we work
           url: /how-we-work
           alt:
-        - label: How to Shop
-          url: /how-to-shop
+        - label: Meet our Farmers & Makers
+          url: /farmers
           alt:
-        - label: Tutorials
-          url: /how-to-shop/#tutorials
-          alt:
+        - label: Recipes
+          url: /recipes
+          alt:  
         - label: FAQ
           url: /faq
           alt:
         - label: Pick Up Sites
           url: /posts/4p-foods-community-pickup-sites/  
           alt:
+    - label: Wholesale
+      url:
+      alt:
+      links:
+        - label: How Wholesale Works
+          url: /
+          alt:
+        - label: Apply for Wholesale
+          url: /
+          alt:  
+        - label: Procurement Application
+          url: /
+          alt:  
+      sublinks:
+        - label: Restaurants & Grocery
+          url: /
+          alt:
+        - label: Higher Education
+          url: /
+          alt:
+        - label: Healthcare & Corporate
+          url: /
+          alt:
+        - label: Farm to School
+          url: /
+          alt:
+        - label: Food is Medicine
+          url:
+          alt:  
+
     - label: About Us
       url:
       alt:
@@ -33,22 +63,18 @@ primary_navigation:
         - label: Team
           url: /team
           alt:
-        - label: Farmers
-          url: /farmers
-          alt:
+        
         - label: Partners
           url: /partners
           alt:
-    - label: Recipes and More
+    - label: Resources
       url:
       alt:
       links:
         - label: Blog
           url: /blog
           alt:
-        - label: Recipes
-          url: /recipes
-          alt:
+        
         - label: Events
           url: /events
           alt:
@@ -63,12 +89,21 @@ footer_navigation:
       link: /how-we-work
     - label: Pick Up Sites
       link: /posts/4p-foods-community-pickup-sites/
-    - label: Wholesale
-      link: /wholesale
     - label: Referral Programs
       link: /referral-programs
     - label: Gift Cards
       link: /posts/give-the-gift-of-good-food/
+  wholesale_links:
+    - label: Restaurants & Grocery
+      link: /wholesale
+    - label: Higher Education
+      link: /wholesale  
+    - label: Healthcare & Corporate
+      link: /wholesale  
+    - label: Farm to School
+      link: /wholesale  
+    - label: Food is Medicine
+      link: /wholesale  
   about_links:
     - label: About Us
       link: /about
@@ -82,7 +117,7 @@ footer_navigation:
       link: /partners/
     - label: Careers
       link: /careers  
-  enrich_yourself_links:
+  resources_links:
     - label: Blog
       link: /blog
     - label: Recipes

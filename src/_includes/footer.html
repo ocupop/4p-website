@@ -1,9 +1,9 @@
 <footer id="pageFooter" class="bg-green-darker text-white">
   <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-lg-3 mb-3">
-          <h6 class="editable">
+    <div class="container-fluid">
+      <div class="row mx-lg-n5 justify-content-center">
+        <div class="col-sm-6 col-lg-auto mb-3 px-lg-5">
+          <h6 class="editable text-primary">
             Shop
           </h6>
           <ul class="nav flex-column">
@@ -14,8 +14,20 @@
             {% endfor %}
           </ul>
         </div>
-        <div class="col-sm-6 col-lg-3 mb-3">
-          <h6 class="editable">
+        <div class="col-sm-6 col-lg-auto mb-3 px-lg-5">
+          <h6 class="editable text-primary">
+            Wholesale
+          </h6>
+          <ul class="nav flex-column">
+            {% for link in site.data.navigation.footer_navigation.wholesale_links %}
+              <li class="nav-item">
+                <a href="{{ link.link }}" class="nav-link">{{ link.label }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-auto mb-3 px-lg-5">
+          <h6 class="editable text-primary">
             About 4P FOODS
           </h6>
           <ul class="nav flex-column">
@@ -26,20 +38,20 @@
             {% endfor %}
           </ul>
         </div>
-        <div class="col-sm-6 col-lg-3 mb-3">
-          <h6 class="editable">
-            FOOD INSIGHTS
+        <div class="col-sm-6 col-lg-auto mb-3 px-lg-5">
+          <h6 class="editable text-primary">
+            Resources
           </h6>
           <ul class="nav flex-column">
-            {% for link in site.data.navigation.footer_navigation.enrich_yourself_links %}
+            {% for link in site.data.navigation.footer_navigation.resources_links %}
               <li class="nav-item">
                 <a href="{{ link.link }}" class="nav-link">{{ link.label }}</a>
               </li>
             {% endfor %}
           </ul>
         </div>
-        <div class="col-sm-6 col-lg-3 mb-3">
-          <h6 class="editable">
+        <div class="col-sm-6 col-lg-auto mb-3 px-lg-5">
+          <h6 class="editable text-primary">
             Support
           </h6>
           <ul class="nav flex-column">
@@ -49,6 +61,17 @@
               </li>
             {% endfor %}
           </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <a href="/" class="navbar-brand">
+            <img src="/img/4p-foods-logo-color.png" class="img-fluid" alt="4P Foods logo" />
+          </a>
         </div>
       </div>
     </div>
@@ -79,24 +102,14 @@
       </div>
     </div>
   </section>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <a href="/" class="navbar-brand">
-            <img src="/img/4p-foods-logo-color.png" class="img-fluid" alt="4P Foods logo" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+  
   <section class="pt-0">
     <div class="container">
-      <div class="row align-items-center">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-12 col-lg-3">
+          © {{ site.time | date: "%Y" }} 4P Foods
+        </div>
         <div class="col-lg-3">
-          <h6 class="editable">
-            Connect with us
-          </h6>
           <p class="social">
             {% for link in site.data.navigation.footer_navigation.connect_with_us_links %}
             <a href="{{ link.link }}" target="_blank" rel="noopener" class="mr-2">
@@ -104,11 +117,6 @@
             </a>
             {% endfor %}
           </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 text-center">
-          © {{ site.time | date: "%Y" }} 4P Foods
         </div>
       </div>
     </div>

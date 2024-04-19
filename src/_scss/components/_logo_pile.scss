@@ -1,0 +1,7 @@
+.logo-pile {
+  h5 {
+    @include media-breakpoint-down(sm) {
+      font-size: 0.9rem;
+    }
+  }
+}

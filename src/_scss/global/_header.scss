@@ -87,6 +87,11 @@
           display: block;
         }
       }
+      .mega-menu {
+        &.has-sublinks {
+          padding-bottom: 90px;
+        }
+      }
     }
     .nav-link-icon {
       width: 48px;
@@ -96,6 +101,19 @@
       justify-content: center;
       margin-right: 1rem;
     }  
+    .sublinks-menu {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: $primary;
+      padding: 20px 0;
+      .sub-menu {
+        a {
+          color: $white;
+        }
+      } 
+    }
   }
   @include media-breakpoint-up(xl) {
     .dropdown-menu {

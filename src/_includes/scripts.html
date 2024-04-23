@@ -6,7 +6,9 @@
   defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-
+<script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+<script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+<script src="https://unpkg.com/embla-carousel-auto-scroll/embla-carousel-auto-scroll.umd.js"></script>
 <script src="{{ '/js/main.js' | prepend: site.baseurl }}"></script>
 
 <script defer>
@@ -182,4 +184,20 @@
       $('#shop-help-wrapper').removeClass('active');
     })
   })
+  const emblaNode = document.querySelector('.embla')
+  const options = { 
+    loop: true,
+    stopOnMouseEnter: true
+   }
+  const autoScrollOptions = {
+    stopOnMouseEnter: true,
+    stopOnInteraction: false,
+    speed: 1
+  }
+  const autoPlayOptions = {
+    stopOnMouseEnter: true,
+    stopOnInteraction: false
+  }
+  const plugins = [EmblaCarouselAutoplay(autoPlayOptions), EmblaCarouselAutoScroll(autoScrollOptions)]
+  const emblaApi = EmblaCarousel(emblaNode, options, plugins)
 </script>

@@ -11,7 +11,7 @@
   }
 
   .navbar-brand {
-    max-width: 200px;
+    max-width: 600px;
   }
 
   .social {
@@ -30,11 +30,14 @@
         width: 75%;
       }
     }
+    .form-control {
+      border-radius: $border-radius 0 0 $border-radius;
+    }
     .btn {
       width: 40%;
-      // padding-top: 15px;
-      // padding-bottom: 15px;
       color: $white;
+      border-radius: 0 $border-radius $border-radius 0;
+      text-transform: none;
       @include media-breakpoint-up(sm) {
         width: 25%;
       }

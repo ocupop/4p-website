@@ -1,0 +1,13 @@
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  @include media-breakpoint-up(lg) {
+    flex: 0 0 30%;
+    min-width: 0;
+  }
+}

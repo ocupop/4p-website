@@ -10,41 +10,42 @@ meta:
     description: >-
       4P Foods delivers weekly groceries direct from local farmers to
       neighborhoods and businesses in Washington, D.C., Virginia, and Southern
-      Maryland. 
-
-
-      Supporting local farm systems helps improve your food's footprint and
+      Maryland. Supporting local farm systems helps improve your food's footprint and
       access to nutrients.
     image:
-_assets:
-  - image: /uploads/4p-produce-04-22-2020.jpg
-  - image: /uploads/4P-Produce-06.10.20.jpg
-  - image: /uploads/4P-Produce-06.14.20-1024x984.jpg
-  - image: /uploads/4pfoods-cabbage.png
-  - image: /uploads/4pfoods-femalefarmer-tomatoes.png
-  - image: /uploads/4pfoods-peaches.png
-  - image:
-  - image: /uploads/4pfoods-walkthetalk-web.png
-carousel:
-  - title: Remarkable Year for the Regional Food System
-    link:
-      label: READ THE PRESS RELEASE
-      link: >-
-        /posts/remarkable-year-for-4p-foods-and-the-mid-atlantic-regional-food-system/
-    description_html: ''
-    image: /uploads/home-page-remarkable-year-banner.png
-  - title: Farmer D's Heirloom Black Garlic
-    link:
-      label: 5 THINGS YOU NEED TO KNOW
-      link: /posts/5-things-you-need-to-know-about-black-garlic/
-    description_html: ''
-    image: /uploads/black-garlic-blog-2.png
-  - title: Planted, Raised, and Made with Love
-    link:
-      label: How 4P Foods Works
-      link: /how-we-work/
-    description_html: ''
-    image: /uploads/grocery-home-delivery.png
+hero:
+  label: The freshest food in grocery and wholesale
+  title_black_text: Your partner for 
+  title_green_text: farm-to-you food system
+  subtitle:
+  links:
+    - link: /shop
+      label: Shop Farm Fresh Groceries
+    - link: /wholesale
+      label: Wholesale Options  
+slider:
+  show_section: true
+  items: 
+    - image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
+      title_black_text:
+      title_green_text:
+      subtitle:
+    - image:
+      title_black_text: We've tried many meal prep kits and grocery delivery services -
+      title_green_text: nothing compares to the quality of 4P Foods.
+      subtitle: Firstname Lastname
+    - image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
+      title_black_text:
+      title_green_text:
+      subtitle:
+    - image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
+      title_black_text:
+      title_green_text:
+      subtitle:
+    - image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
+      title_black_text:
+      title_green_text:
+      subtitle:      
 image_grid:
   - image: https://placehold.co/600x400
     link: https://www.google.com
@@ -127,44 +128,8 @@ featured_recipes:
   - simple-air-fryer-sweet-potato-fries-side-dish-recipe
 ---
 
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="text-center">
-          <h6 class="editable text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eaque!</h6>
-          <h1>Your partner for<br class="d-none d-lg-block"/> <span class="text-primary">farm-to-you food systems</span> </h1>
-        </div>
-        <div class="d-lg-flex justify-content-center align-items-center">
-          <a href="#" class="btn btn-green-light mx-3">Shop Farm Fresh Groceries</a>
-          <a href="#" class="btn btn-blue-light mx-3">Wholesale Options</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="embla">
-  <div class="embla__container">
-    <div class="embla__slide p-4">
-      <div class="bg-image aspect-4x3 rounded" style="background-image: url(https://placehold.co/600x400?text=slide1)"></div>
-    </div>
-    <div class="embla__slide p-4">
-      <div class="bg-image aspect-4x3 rounded" style="background-image: url(https://placehold.co/600x400?text=slide2)"></div>
-    </div>
-    <div class="embla__slide p-4">
-      <div class="d-flex h-100 align-items-center justify-content-center bg-mid p-4">
-        <p class="text-serif font-weight-bold h4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, neque!</p>
-
-      </div>
-    </div>
-    <div class="embla__slide p-4">
-      <div class="bg-image aspect-4x3 rounded" style="background-image: url(https://placehold.co/600x400?text=slide4)"></div>
-    </div>
-    <div class="embla__slide p-4">
-      <div class="bg-image aspect-4x3 rounded" style="background-image: url(https://placehold.co/600x400?text=slide5)"></div>
-    </div>
-  </div>
-</div>
+{% include hero-text.html item=page.hero %}
+{% include components/slider.html slider=page.slider %}
 <section>
   <div class="container">
     <div class="row mx-lg-n5">

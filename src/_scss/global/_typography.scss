@@ -86,6 +86,10 @@ i {
   font-family: $font-family-base;
 }
 
+.leading-loose {
+  line-height: 1.6;
+}
+
 .text-serif {
   font-family: $font-family-secondary;
   text-transform: none;

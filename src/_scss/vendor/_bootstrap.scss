@@ -260,6 +260,37 @@
   }
 }
 
+.tabs-buttons {
+  border-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  @include media-breakpoint-down(md) {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .nav-item {
+
+    .nav-link {
+      padding: 15px;
+      background-color: transparent;
+      border-radius: $border-radius;
+      text-transform: none;
+      font-weight: 600;
+      font-size: 18px;
+      @include media-breakpoint-down(lg) {
+        border-top-right-radius: $border-radius;
+        border-top-left-radius: $border-radius;
+      }
+      &.active,
+      &:hover {
+        color: $primary;
+        background-color: $mid;
+      }
+    }
+  }
+}
+
 .tab-content {
   h4 {
     font-style: italic;

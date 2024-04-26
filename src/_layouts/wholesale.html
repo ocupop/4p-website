@@ -23,26 +23,60 @@ layout: default
   </div>
 </section>
 {% if page.why_work_with_4p_section.show_section %}
-  <section>
+  <section id="why-work-with-4p">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-8">
-          <h2 class="mb-5">{{ page.why_work_with_4p_section.title | default: 'Why Work With 4P Foods' }}</h2>
-          <div class="lead">
-            {{ page.why_work_with_4p_section.description_html }}
+          <div class="border-left-green">
+            <h2 class="mb-5 pt-5">{{ page.why_work_with_4p_section.title | default: 'Why Work With 4P Foods' }}</h2>
+            <div class="lead">
+              {{ page.why_work_with_4p_section.description_html }}
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-lg-8">
-          
-          {{ page.testimonial_section.quote_html }}
-          <p>{{ page.testimonial_section.author }}</p>
+      {% if page.testimonial_section.quote_html %}
+        <div class="row mt-5 testimonial-row">
+          <div class="col-12 col-lg-8">
+            <div class="bg-mid h-100 p-4 d-flex flex-column justify-content-between">
+              <div class="text-serif font-weight-bold testimonial-quote">{{ page.testimonial_section.quote_html }}</div>
+              <div class="text-right w-50 ml-auto testimonial-author">
+                {% if page.testimonial_section.author %}
+                  <p class="text-primary">{{ page.testimonial_section.author }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="bg-image aspect-4x3 rounded" style="background-image: url({{ page.testimonial_section.image }})"></div>
+          </div>
         </div>
-        <div class="col-12 col-lg-4">
-          <div class="bg-image aspect-16x9 rounded" style="background-image: url({{ page.testimonial_section.image }})"></div>
-        </div>
-      </div>
+      {% endif %}
     </div>
   </section>
 {% endif %}
+{% if page.image_grid.first.image %}
+  <section class="bg-mid">
+    <div class="container">
+      {% include components/logo-pile.html items=page.image_grid %}
+    </div>
+  </section>
+{% endif %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-center">
+          <div class="editable">
+            <h2>Resources</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        {% include wholesale/featured-resources.html items=page.resources_section.featured_posts %}
+      </div>
+    </div>
+  </div>
+</section>

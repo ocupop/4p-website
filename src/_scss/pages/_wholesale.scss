@@ -1,0 +1,21 @@
+#why-work-with-4p {
+  .lead {
+    li {
+      margin-bottom: 2rem;
+      line-height: 1.4;
+    }
+  }
+  .border-left-green {
+    padding-left: 20px;
+    border-left: 10px solid $green;
+  }
+}
+
+.testimonial-quote {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.testimonial-author {
+  font-size: 1rem;
+}

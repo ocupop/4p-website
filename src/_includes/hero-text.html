@@ -1,5 +1,5 @@
 {% assign item = include.item %}
-<section>
+<section class="bg-mid">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -7,17 +7,17 @@
           {% if item.label %}
             <h6 class="text-primary">{{ item.label }}</h6>
           {% endif %}
-          {% if item.title_black_text or item.title_green_text %}
-            <h1>{{ item.title_black_text }}{% if item.title_black_text && item.title_green_text %}<br class="d-none d-lg-block"/> {% endif %} {% if item.title_green_text %}<span class="text-primary">{{ item.title_green_text }}</span>{% endif %} </h1>
+          {% if item.title_html %}
+            {{ item.title_html }}
           {% endif %}
           {% if item.subtitle %}
             <p class="lead">{{ item.subtitle }}</p>
           {% endif %}
         </div>
         {% if item.links.first.link %}
-          <div class="d-lg-flex justify-content-center align-items-center">
+          <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
             {% for link in item.links %}
-              <a href="{{ link.link}}" class="btn {% cycle 'btn-green-light','btn-blue-light'%} mx-3">{{ link.label}}</a>
+              <a href="{{ link.link}}" class="btn {% cycle 'btn-green-light','btn-blue-light'%} mx-3 mb-3 mb-lg-0">{{ link.label}}</a>
             {% endfor %}
           </div>
         {% endif %}

@@ -108,6 +108,16 @@
       width: 100%;
       background: $primary;
       padding: 20px 0;
+      &::before {
+        content: "";
+        background: $primary;
+        width: 200vw;
+        height: 100%;
+        top: 0;
+        display: block;
+        position: absolute;
+        left: -50vw;
+      }
       .sub-menu {
         a {
           color: $white;

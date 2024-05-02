@@ -138,12 +138,14 @@ footer_navigation:
     - label: Privacy Policy
       link: /privacy-policy
   connect_with_us_links:
+    - label: instagram
+      link: 'https://www.instagram.com/4pfoods/'
     - label: facebook
       link: 'https://www.facebook.com/4pfoods/'
     - label: twitter
       link: 'https://twitter.com/4PFoods'
-    - label: instagram
-      link: 'https://www.instagram.com/4pfoods/'
     - label: pinterest
       link: 'https://www.pinterest.ca/4pfoods/'
+    - label: linkedin
+      link: 'https://www.linkedin.com/company/4pfoods/'  
 ---

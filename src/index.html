@@ -15,8 +15,8 @@ meta:
     image:
 hero:
   label: The freshest food in grocery and wholesale
-  title_black_text: Your partner for 
-  title_green_text: farm-to-you food system
+  title_html: <h1>Your farm-to-you 
+    food partner</h1>
   subtitle:
   links:
     - link: /shop
@@ -26,19 +26,19 @@ hero:
 slider:
   show_section: true
   items: 
-    - image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
+    - image: /uploads/homepage-carousel-1.png
+      title_black_text:
+      title_green_text:
+      subtitle:
+    - image: /uploads/homepage-carousel-2.png
       title_black_text:
       title_green_text:
       subtitle:
     - image:
       title_black_text: We've tried many meal prep kits and grocery delivery services -
       title_green_text: nothing compares to the quality of 4P Foods.
-      subtitle: Firstname Lastname
-    - image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
-      title_black_text:
-      title_green_text:
-      subtitle:
-    - image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
+      subtitle: Firstname Lastname  
+    - image: /uploads/homepage-carousel-3.png
       title_black_text:
       title_green_text:
       subtitle:
@@ -46,6 +46,28 @@ slider:
       title_black_text:
       title_green_text:
       subtitle:      
+purpose_section:
+  show_section: true
+  items:
+    - title: Food for individuals, institutions and communities
+      image: /img/icons/icon-veggies.png
+    - title: Strengthening independent farms and supporting local producers
+      image: /img/icons/icon-barn.png
+    - title: Advancing food access and nutrition
+      image: /img/icons/icon-barn.png 
+  stats:
+    - title: $0.66 of every dollar
+      subtitle: vs. $0.15 of every dollar
+      description_html: >-
+        <p>Money you spend with 4P goes to support communities and producers</p>
+    - title: 300 miles on avg.
+      subtitle: vs. 1500 miles on avg.
+      description_html: >-
+        <p>All our food is produced regionally to support local food systems and give you the freshest picks possible</p>
+    - title: 200+ producers
+      subtitle: Real people, not conglomerates
+      description_html: >-
+        <p>Not just a food hub, but an integrated part of the food ecosystem, with connections to families, schools, food banks, hospitals, and more</p>     
 image_grid:
   - image: https://placehold.co/600x400
     link: https://www.google.com
@@ -132,25 +154,39 @@ featured_recipes:
 {% include components/slider.html slider=page.slider %}
 <section>
   <div class="container">
-    <div class="row mx-lg-n5">
-      <div class="col-12 col-lg-6 px-lg-5">
-        <h2 class="text-primary editable">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, a.</h2>
-        <div class="editable lead">  
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quibusdam!.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quibusdam!.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, quibusdam!.</p>
+    <div class="text-center editable">
+      <h2>Purpose-fueled food for the prosperity of our planet and people.</h2>
+    </div>
+  </div>
+</section>
+<section id="bg-ellipse">
+  <div class="container">
+    <div class="row">
+      {% for item in page.purpose_section.items %}
+        <div class="col-12 col-lg-4 text-center">
+          <div class="bg-mid rounded p-4 mb-4 d-inline-block mx-auto">
+            <img src="{{ item.image }}" alt="{{ item.title }}">
+          </div>
+          <h4 class="font-sans-serif">{{ item.title }}</h4>
         </div>
-      </div>
-      <div class="col-12 col-lg-6 px-lg-5">
-        <div class="bg-green text-white h-100 p-5 rounded">
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, alias!</p>
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, alias!</p>
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, alias!</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="bg-primary text-white">
+  <div class="container">
+    <div class="row">
+      {% for item in page.purpose_section.stats %}
+        <div class="col-12 col-lg-4">
+          <div class="p-3 p-lg-4">
+            <h3>{{ item.title }}</h3>
+            <p class="text-green-dark">{{ item.subtitle }}</p>
+            <div class="lead">
+              {{ item.description_html }}
+            </div>
+          </div>
         </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -185,29 +221,6 @@ featured_recipes:
     </div>
   </div>
 </section>
-{% comment %}
-<div class="carousel-inner">
-  {% for item in page.carousel %}
-  <div class="carousel-item {% if forloop.first %}active{% endif %}">
-    <section class="bg-image aspect-hero text-white" style="background-image: url({{ item.image }})">
-      <div class="bg-fill">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="mb-4">
-                <h1>{{ item.title }}</h1>
-              </div>
-              <a href="{{ item.link.link }}" class="btn btn-primary">{{ item.link.label }}</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-  </div>
-  {% endfor %}
-</div>
-{% endcomment %}
 
 
 

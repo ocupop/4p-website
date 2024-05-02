@@ -16,7 +16,7 @@
 
 #mainnav {
   text-align: center;
-  padding: 0;
+  padding: 10px 0;
   @include media-breakpoint-down(lg) {
     padding: 0;
   }
@@ -27,12 +27,22 @@
       height: 32px;
       margin: 8px 0;
     }
+    @include media-breakpoint-down(xl) {
+      width: 150px;
+    }
   }
 
   .btn {
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 0.5rem 1.75rem;
     margin: 0 1.5rem;
+    text-transform: uppercase;
+    @include media-breakpoint-down(lg) {
+      margin: 0 0.5rem;
+      font-size: 14px;
+      padding: 0.5rem 1rem;
+      margin: 0;
+    }
   }
   .navbar-toggler {
     padding: 0;
@@ -128,18 +138,22 @@
     margin: 0 0.75rem;
     text-transform: uppercase;
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 15px;
     color: $black;
-    @include media-breakpoint-down(lg) {
-      font-size: 17px;
+    @include media-breakpoint-down(xl) {
+      font-size: 15px;
       padding: 20px 10px;
+    }
+    @include media-breakpoint-down(lg) {
+      font-size: 14px;
+      padding: 10px 7px;
     }
   }
   .dropdown-menu {
     @include media-breakpoint-down(md) {
       // border: 0;
       text-align: center;
-      margin-top: 10px;
+      margin-top: 20px;
       position: relative !important;
       transform: none !important;
       .dropdown-item {
@@ -189,6 +203,7 @@
         display: block;
         position: absolute;
         left: -50vw;
+        box-shadow: 0 2px 1px -1px rgba($black, 0.2);
       }
 
       > li.nav-item .menu-item,

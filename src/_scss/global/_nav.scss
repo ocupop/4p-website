@@ -22,14 +22,22 @@
   }
   .navbar-brand {
     margin: 0;
-    width: 200px;
     img {
-      height: 32px;
       margin: 8px 0;
     }
     @include media-breakpoint-down(xl) {
-      width: 150px;
+      width: 130px;
     }
+    @include media-breakpoint-up(xl) {
+      width: 200px;
+      margin-right: 25px;
+      img {
+        height: 32px;
+      }
+    }
+    // @include media-breakpoint-up(xxl) {
+    //   margin-right: 50px;
+    // }
   }
 
   .btn {
@@ -39,7 +47,7 @@
     text-transform: uppercase;
     @include media-breakpoint-down(lg) {
       margin: 0 0.5rem;
-      font-size: 14px;
+      font-size: 13px;
       padding: 0.5rem 1rem;
       margin: 0;
     }

@@ -74,6 +74,12 @@ video {
     height: auto;
   }
 
+  &.aspect-lg-auto {
+    @include media-breakpoint-up(lg) {
+      padding-top: 0;
+    }
+  }
+
   &.aspect-none {
     height: auto;
   }
@@ -184,6 +190,12 @@ video {
   top: 0;
   right: 0;
   width: 38%;
+}
+
+.h-lg-100 {
+  @include media-breakpoint-up(lg) {
+    height: 100% !important;
+  }
 }
 
 // Sticky behavior
@@ -409,6 +421,10 @@ video {
   .stat-title {
     font-style: normal;
   }
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 

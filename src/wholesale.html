@@ -12,7 +12,7 @@ meta:
     image:
 hero:
   label:
-  title_html: <h1>Effortlessly fresh wholesale</h1>
+  title_html: <h1><code>Effortlessly fresh wholesale</code></h1>
   subtitle: Source food from 200+ independent regional producers
   links:
     - link: /get-started
@@ -40,35 +40,8 @@ slider:
       title_black_text:
       title_green_text:
       subtitle:   
-tabs:
-  - title: Restaurants & Grocery
-    description_html: >-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas facilis nulla similique deserunt corporis vel obcaecati quod provident? Quidem culpa odit cum numquam esse velit architecto rerum exercitationem quis nihil!</p>         
-    image: https://placehold.co/600x600  
-    link:
-      url: /
-      label:
-  - title: Higher Education
-    description_html: >-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas facilis nulla similique deserunt corporis vel obcaecati quod provident? Quidem culpa odit cum numquam esse velit architecto rerum exercitationem quis nihil!</p>         
-    image: https://placehold.co/600x600  
-    link:
-      url: /
-      label:
-  - title: Healthcare & Corporate
-    description_html: >-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas facilis nulla similique deserunt corporis vel obcaecati quod provident? Quidem culpa odit cum numquam esse velit architecto rerum exercitationem quis nihil!</p>         
-    image: https://placehold.co/600x600  
-    link:
-      url: /
-      label:
-  - title: Farm to School
-    description_html: >-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas facilis nulla similique deserunt corporis vel obcaecati quod provident? Quidem culpa odit cum numquam esse velit architecto rerum exercitationem quis nihil!</p>         
-    image: https://placehold.co/600x600  
-    link:
-      url: /
-      label:
+wholesale_industries:
+  - /wholesale/higher-education
 catalog_categories:
   - title: Fresh seasonal and organic produce
     image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
@@ -78,7 +51,7 @@ catalog_categories:
     image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
   - title: Pantry items from local artisans
     image: /uploads/4pfoods-weeklygroceries-harvestphoto.png  
-
+featured_farmer: /farmers/tallawah-farms
 footer_image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
 ---
 {% include hero-text.html item=page.hero %}
@@ -87,8 +60,8 @@ footer_image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
   <div class="container-fluid">
     <div class="row justify-content-center align-items-center mx-lg-n5">
       <div class="col-12 col-lg-5 px-lg-5">
-        <h2 class="editable">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, accusamus.</h2>
-        <p class="lead editable">lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corporis, perspiciatis error accusantium facere ab minus fuga reprehenderit veniam cumque enim quod minima aut voluptate voluptatibus vel aliquam sit hic.</p>
+        <h2 class="editable">Your partner to build stronger local food systems in the <code>Mid-Atlantic and Eastern Seaboard</code></h2>
+        <p class="lead editable">We work with businesses who want to buy local and offer their customers the best. Whether you’re a fine dining establishment with just a few tables or a school system with hundreds of children to feed, we link you to fresher, more ethical foods at wholesale prices with wholesale ease. </p>
       </div>
       <div class="col-12 col-lg-5 px-lg-5">
         {% include components/image-grid-split-vertical-2.html %}
@@ -101,23 +74,60 @@ footer_image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
     <div class="row">
       <div class="col-12 text-center">
         <div class="editable">
-          <h1>lorem services lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+          <h2>We tailor our services to meet the different needs of every industry wholesale client.</h2>
         </div>
       </div>
     </div>
     <div class="row mt-5">
       <div class="col-12">
-        {% include components/tabs.html item=page.tabs %}
+        {% assign tabs = include.item %}
+        <div>
+          <ul id="{{ page.title }}-tabs" class="nav nav-tabs tabs-buttons">
+            {% for object in page.wholesale_industries %}
+              {% assign item = site.wholesale_industries | where_exp: 'item', 'item.url contains object' | first %}
+              <li class="nav-item">
+                <a class="nav-link {% if forloop.first %}active{% endif %}" id="tab-{{ item.title | slugify }}" data-toggle="tab" href="#{{ item.title | slugify }}" role="tab" aria-controls="{{ item.title | slugify }}" aria-selected="true">{{ item.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="tab-content mt-5">
+          {% for object in page.wholesale_industries %}
+          {% assign item = site.wholesale_industries | where_exp: 'item', 'item.url contains object' | first %}
+            <div id="{{ item.title | slugify }}" role="tabpanel" aria-labelledby="tab-{{ item.title | slugify }}" class="tab-pane fade {% if forloop.first %}show active{% endif %}">
+              <div class="row mx-lg-n4 rounded-lg bg-mid align-items-center">
+                {% if item.featured_image %}
+                  <div class="col-12 col-lg-4 p-4">
+                    <div class="bg-image aspect-1x1 mb-3 rounded-lg" style="background-image: url({{ item.featured_image }})"></div>
+                  </div>
+                {% endif %}
+                <div class="col-12 col-lg-8 p-4">
+                  <div class="d-flex flex-column justify-content-between p-4">
+                    <div>
+                      <h3><strong>{{ item.title }}</strong></h3>
+                      {% if item.summary %}
+                        <p>{{ item.summary }} </p>
+                      {% endif %} 
+                    </div>
+                    <p class="mt-4">
+                      <a href="{{ item.url }}" class="btn btn-green-light">Learn More</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
 </section>
-<section class="bg-light">
+<section class="bg-mid">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
         <div class="editable">
-          <h2>Find what you need - made locally</h2>
+          <h2>Find what you need - <code>made locally</code></h2>
         </div>
         <p>
           <a href="/get-started" class="editable btn btn-blue-light">View Seasonal Catalog</a>
@@ -127,7 +137,7 @@ footer_image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
     <div class="row mt-5 no-gutters">
       {% for item in page.catalog_categories %}
         <div class="col-12 col-lg-3">
-          <div class="text-center bg-mid rounded p-4 h-100 m-1">
+          <div class="text-center bg-tan rounded p-4 h-100 m-1">
             <div class="bg-image aspect-2x1 rounded mb-3 bg-contain bg-transparent" style="background-image: url({{ item.image }})"></div>
             <h4>{{ item.title }}</h4>
           </div>
@@ -140,16 +150,25 @@ footer_image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
   <div class="container">
     <div class="row align-items-center">
       <div class="col-12 col-lg-6 mx-lg-auto text-center">
-        <div class="editable">
+        <div class="editable mb-5">
           <h2>More than 200+ farmers feeding communities across the Mid-Atlantic</h2>
         </div>
-        <a href="/farmers" class="btn btn-light text-dark editable">Meet Our Farmers & Makers</a>
+        <a href="/farmers" class="btn btn-tan editable">Meet Our Farmers & Makers</a>
       </div>
+      {% if page.featured_farmer %}
+        {% assign featured_farmer = site.farmers | where_exp: 'item', 'item.url contains page.featured_farmer' | first %}
+      {% else %}
+        {% assign featured_farmer = site.farmers | first %}
+      {% endif %}
       <div class="col-12 col-lg-6">
-        <div class="bg-image aspect-16x9" style="background-image: url(https://placehold.co/600x400)"></div>
+        {% if featured_farmer.featured_image %}
+          <div class="bg-image aspect-16x9" style="background-image: url({{ featured_farmer.featured_image }})"></div>
+        {% endif %}
         <h6 class="text-green mt-4">4P's Featured Farm</h6>
-        <h3 class="mb-2">Farm Name</h3>
-        <p class="leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        <h3 class="mb-2">{{ featured_farmer.title }}</h3>
+        {% if featured_farmer.description %}
+          <div class="leading-loose">{{ featured_farmer.description }}</div>
+        {% endif %}
       </div>
     </div>
   </div>

@@ -1,8 +1,9 @@
 // Buttons
 .btn {
   font-family: $font-family-base;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 3px; 
+  padding: 10px 25px;
   @include transition(0.3s);
   &:focus {
     outline: 0 !important;
@@ -30,6 +31,15 @@
         color: $white !important;
       }
     }
+  }
+  &.btn-green-light {
+    color: $green-darkest;
+  }
+  &.btn-blue-light {
+    color: $gray-850;
+  }
+  &.btn-tan {
+    color: $gray-900;
   }
   &.btn-link {
     color: $secondary;

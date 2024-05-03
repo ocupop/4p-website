@@ -12,7 +12,7 @@
             <div class="d-flex h-100 align-items-between justify-content-center bg-mid p-4 rounded">
               <div class="d-flex flex-column justify-content-between">
                 {% if item.title_black_text or item.title_green_text %}
-                <p class="text-serif font-weight-bold lead leading-loose">{% if item.title_black_text %}{{ item.title_black_text }}{% endif %}{% if item.title_green_text %} <span class="text-primary">{{ item.title_green_text }}</span>{% endif %}</p>
+                <p class="text-serif font-weight-bold">{% if item.title_black_text %}{{ item.title_black_text }}{% endif %}{% if item.title_green_text %} <span class="text-primary">{{ item.title_green_text }}</span>{% endif %}</p>
                 {% endif %}
                 {% if item.subtitle%}
                   <p class="text-right text-green-dark">{{ item.subtitle }}</p>

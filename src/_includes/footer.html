@@ -1,8 +1,8 @@
 <footer id="pageFooter" class="bg-green-darker text-white">
   <section class="pb-0">
     <div class="container-fluid">
-      <div class="row mx-lg-n5 justify-content-center">
-        <div class="col-sm-6 col-lg-auto mb-3 px-lg-5">
+      <div class="row mx-lg-n5 justify-content-lg-center">
+        <div class="col-sm-6 col-lg-auto mb-3 px-xl-4">
           <h6 class="editable text-primary">
             Shop
           </h6>
@@ -14,7 +14,7 @@
             {% endfor %}
           </ul>
         </div>
-        <div class="col-sm-6 col-lg-auto mb-3 px-lg-5">
+        <div class="col-sm-6 col-lg-auto mb-3 px-3 px-xl-4">
           <h6 class="editable text-primary">
             Wholesale
           </h6>
@@ -26,7 +26,7 @@
             {% endfor %}
           </ul>
         </div>
-        <div class="col-sm-6 col-lg-auto mb-3 px-lg-5">
+        <div class="col-sm-6 col-lg-auto mb-3 px-xl-4">
           <h6 class="editable text-primary">
             About 4P FOODS
           </h6>
@@ -38,7 +38,7 @@
             {% endfor %}
           </ul>
         </div>
-        <div class="col-sm-6 col-lg-auto mb-3 px-lg-5">
+        <div class="col-sm-6 col-lg-auto mb-3 px-xl-4">
           <h6 class="editable text-primary">
             Resources
           </h6>
@@ -50,7 +50,7 @@
             {% endfor %}
           </ul>
         </div>
-        <div class="col-sm-6 col-lg-auto mb-3 px-lg-5">
+        <div class="col-sm-6 col-lg-auto mb-3 px-xl-4">
           <h6 class="editable text-primary">
             Support
           </h6>
@@ -84,7 +84,7 @@
         </div>
         <div class="col-12 col-lg-5 ml-lg-auto">
           <div class="ml-lg-auto">
-            <p class="editable mb-0">
+            <p class="editable text-sm mb-1">
               Email
             </p>
             <!-- Begin Mailchimp Signup Form -->
@@ -108,11 +108,11 @@
   <section class="pt-0">
     <div class="container">
       <div class="row align-items-center justify-content-between">
-        <div class="col-12 col-lg-3">
+        <div class="col-12 col-lg-3 text-center text-lg-left text-sm text-white opacity-50">
           © {{ site.time | date: "%Y" }} 4P Foods
         </div>
         <div class="col-lg-3">
-          <p class="social d-flex align-items-center justify-content-end">
+          <p class="social d-flex align-items-center justify-content-center justify-content-lg-end mt-3 mt-lg-0">
             {% for link in site.data.navigation.footer_navigation.connect_with_us_links %}
             <a href="{{ link.link }}" target="_blank" rel="noopener" class="mr-2">
               <i class="ri-{{link.label }}-fill"></i>

@@ -9,7 +9,7 @@ $gray-600: #808080;
 $gray-700: #707070;
 $gray-800: #4d4d4d;
 $gray-850: #58595c;
-$gray-900: #212529 !default;
+$gray-900: #59554F;
 $black: #000000 !default;
 
 $blue-light: #cfeaeB;
@@ -22,11 +22,14 @@ $orange: #fd7e14 !default;
 $yellow: #f5c938;
 $green-light: #e7f1e2;
 $green: #5fb35f;
+$green-mid: #378437;
 $green-dark: #255B35;
 $green-darker: #265c35;
+$green-darkest: #173A21;
+
 $teal: #14585a;
 $cyan: #71c7c7;
-$tan: #efebe5;
+$tan: #EEEAE2;
 $tan-mid: #f8f6ee;
 $tan-dark: #dedbd3;
 $tan-darker: #b7b4a9;
@@ -61,8 +64,10 @@ $theme-colors: (
   'teal': $teal,
   'green': $green,
   'green-light': $green-light,
+  'green-mid': $green-mid,
   'green-dark': $green-dark,
   'green-darker': $green-darker,
+  'green-darkest': $green-darkest,
   'blue-light': $blue-light
 );
 
@@ -96,6 +101,7 @@ $headings-line-height: 1.3;
 $headings-color: inherit;
 
 $border-radius: 6px;
+$border-radius-lg: 20px;
 
 $grid-breakpoints: (
   xs: 0,

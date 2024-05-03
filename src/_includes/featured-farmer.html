@@ -1,0 +1,27 @@
+<section class="bg-green-dark text-white" style="background-image: url()">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-6 mx-lg-auto text-center">
+        <div class="editable mb-5">
+          <h2>More than 200+ farmers feeding communities across the Mid-Atlantic</h2>
+        </div>
+        <a href="/farmers" class="btn btn-tan editable">Meet Our Farmers & Makers</a>
+      </div>
+      {% if page.featured_farmer %}
+        {% assign featured_farmer = site.farmers | where_exp: 'item', 'item.url contains page.featured_farmer' | first %}
+      {% else %}
+        {% assign featured_farmer = site.farmers | first %}
+      {% endif %}
+      <div class="col-12 col-lg-6">
+        {% if featured_farmer.featured_image %}
+          <div class="bg-image aspect-16x9" style="background-image: url({{ featured_farmer.featured_image }})"></div>
+        {% endif %}
+        <h6 class="text-green mt-4">4P's Featured Farm</h6>
+        <h3 class="mb-2">{{ featured_farmer.title }}</h3>
+        {% if featured_farmer.description %}
+          <div class="leading-loose">{{ featured_farmer.description }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

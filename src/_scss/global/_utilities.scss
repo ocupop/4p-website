@@ -116,6 +116,28 @@ video {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  &.bg-left-center {
+    background-position: left center;
+  }
+  &.bg-right-center {
+    background-position: right center;
+  }
+  &.bg-right-top {
+    background-position: right top;
+  }
+  &.bg-left-top {
+    background-position: left top;
+  }
+  &.bg-left-bottom {
+    background-position: left bottom;
+  }
+  &.bg-40 {
+    background-size: 40%;
+  }
+  &.bg-50 {
+    background-size: 50%;
+  }
 }
 
 .bg-contain {

@@ -3,13 +3,14 @@ layout: default
 ---
 
 <section class="bg-mid">
-  <div class="container">
+  <div class="container position-relative">
+    <img class="wholesale-hero-logo" src="/img/4P-Foods-RGB_logo-color-color.png" alt="4P Foods logo">
     <div class="row align-items-center">
       <div class="col-12 col-lg-5 mb-3 mb-lg-0">
         <div class="bg-image aspect-4x3 rounded" style="background-image: url({{ page.featured_image }})"></div>
       </div>
       <div class="col-12 col-lg-6 ml-lg-auto">
-        <h1>{{ page.title }}</h1>
+        <h1 class="mt-5">{{ page.title }}</h1>
         {% if page.summary %}
           <div class="leading-loose">
             {{ page.summary }}
@@ -23,7 +24,7 @@ layout: default
   </div>
 </section>
 {% if page.why_work_with_4p_section.show_section %}
-  <section id="why-work-with-4p">
+  <section id="why-work-with-4p" class="bg-white bg-image aspect-auto bg-50 bg-right-top" style="background-image: url(/img/bg-illustrations/4P-Illustrations_spinach.png)">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-8">
@@ -58,10 +59,8 @@ layout: default
   </section>
 {% endif %}
 {% if page.image_grid.first.image %}
-  <section class="bg-mid">
-    <div class="container">
-      {% include components/logo-pile.html items=page.image_grid %}
-    </div>
+  <section class="bg-mid py-3">
+    {% include components/logo-pile.html items=page.image_grid %}
   </section>
 {% endif %}
 <section>
@@ -78,6 +77,32 @@ layout: default
     <div class="row">
       <div class="col-12">
         {% include wholesale/featured-resources.html items=page.resources_section.featured_posts %}
+      </div>
+    </div>
+  </div>
+</section>
+{% include featured-farmer.html %}
+<section class="bg-light bg-image bg-40 bg-left-center aspect-none" style="background-image: url(/img/bg-illustrations/4P-Illustrations-07.png)">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <div class="bg-image aspect-16x9" style="background-image: url(https://placehold.co/600x400)"></div>
+      </div>
+      <div class="col-12 col-lg-6 ml-lg-auto">
+        <div>
+          <div class="editable mb-5">
+            <h2>Reach out to our dedicated sales professionals specialized in supplying fresh, local food to your industry</h2>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-5">
+              <a href="#" class="btn btn-green-light">Get Started Today</a>
+            </div>
+            <div class="col-12 col-lg-7 text-sm editable">
+              <p>Have a question? 
+                Reach out to <a href="mailto:sales@4PFoods.com">sales@4PFoods.com</a></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

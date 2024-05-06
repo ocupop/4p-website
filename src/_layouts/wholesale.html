@@ -10,7 +10,7 @@ layout: default
         <div class="bg-image aspect-4x3 rounded" style="background-image: url({{ page.featured_image }})"></div>
       </div>
       <div class="col-12 col-lg-6 ml-lg-auto">
-        <h1 class="mt-5">{{ page.title }}</h1>
+        <h1 class="mt-5 leading-1">{{ page.title }}</h1>
         {% if page.summary %}
           <div class="leading-loose">
             {{ page.summary }}
@@ -82,28 +82,32 @@ layout: default
   </div>
 </section>
 {% include featured-farmer.html %}
-<section class="bg-light bg-image bg-40 bg-left-center aspect-none" style="background-image: url(/img/bg-illustrations/4P-Illustrations-07.png)">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-5">
-        <div class="bg-image aspect-16x9" style="background-image: url(https://placehold.co/600x400)"></div>
-      </div>
-      <div class="col-12 col-lg-6 ml-lg-auto">
-        <div>
-          <div class="editable mb-5">
-            <h2>Reach out to our dedicated sales professionals specialized in supplying fresh, local food to your industry</h2>
-          </div>
-          <div class="row">
-            <div class="col-12 col-lg-5">
-              <a href="#" class="btn btn-green-light">Get Started Today</a>
+{% if page.contact_cta.show_section %}
+  <section class="bg-light bg-image bg-40 bg-left-center aspect-none" style="background-image: url(/img/bg-illustrations/4P-Illustrations-07.png)">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <div class="bg-image aspect-4x3" style="background-image: url({{ page.contact_cta.image | default: '/uploads/wholesale/team.png' }})"></div>
+        </div>
+        <div class="col-12 col-lg-6 ml-lg-auto">
+          <div>
+            <div class="mb-5">
+              <h2>{{ page.contact_cta.title | default: 'Reach out to our dedicated sales professionals specialized in supplying fresh, local food to your industry'}}</h2>
             </div>
-            <div class="col-12 col-lg-7 text-sm editable">
-              <p>Have a question? 
-                Reach out to <a href="mailto:sales@4PFoods.com">sales@4PFoods.com</a></p>
+            <div class="row">
+              <div class="col-12 col-lg-5">
+                <a href="{{ page.contact_cta.link | default: '/contact' }}" class="btn btn-green-light">{{ page.contact_cta.link_label | default: 'Get Started Today' }}</a>
+              </div>
+              <div class="col-12 col-lg-7 text-sm">
+                <div>
+                  {{ page.contact_cta.description_html | default: '<p>Have a question? 
+                  Reach out to <a href="mailto:sales@4PFoods.com">sales@4PFoods.com</a></p>' }}
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+{% endif %}

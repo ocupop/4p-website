@@ -27,17 +27,15 @@ slider:
   show_section: true
   items: 
     - image: /uploads/homepage-carousel-1.png
-      title_black_text:
-      title_green_text:
+      text_html:
       subtitle:
     - image: /uploads/homepage-carousel-2.png
-      title_black_text:
-      title_green_text:
+      text_html:
       subtitle:
     - image:
-      title_black_text: We've tried many meal prep kits and grocery delivery services -
-      title_green_text: nothing compares to the quality of 4P Foods.
-      subtitle: Firstname Lastname  
+      text_html: >- 
+        <p>We've tried many meal prep kits and grocery delivery services - <code>nothing compares to the quality of 4P Foods</code></p>
+      subtitle: Meredith, 4P subscriber
     - image: /uploads/homepage-carousel-3.png
       title_black_text:
       title_green_text:
@@ -68,7 +66,14 @@ purpose_section:
       subtitle: Real people, not conglomerates
       description_html: >-
         <p>Not just a food hub, but an integrated part of the food ecosystem, with connections to families, schools, food banks, hospitals, and more</p>     
-image_grid:
+image_grid_1:
+  - image: /uploads/home-grid-1-1.png
+    alt:
+  - image: /uploads/home-grid-1-2.png
+    alt:
+  - image: /uploads/home-grid-1-3.png
+    alt:
+logo_image_grid:
   - image: https://placehold.co/600x400
     link: https://www.google.com
     label: Somelabel
@@ -86,7 +91,14 @@ image_grid:
     label: Somelabel
   - image: https://placehold.co/600x200
     link: https://www.google.com
-    label: Somelabel          
+    label: Somelabel    
+image_grid_2:
+  - image: /uploads/home-grid-2-1.png
+    alt:
+  - image: /uploads/home-grid-2-2.png
+    alt:
+  - image: /uploads/home-grid-2-3.png
+    alt:    
 testimonials:
   - testimonial_text: >-
       We've tried many meal prep kits and grocery delivery services - nothing
@@ -152,7 +164,7 @@ featured_recipes:
 
 {% include hero-text.html item=page.hero %}
 {% include components/slider.html slider=page.slider %}
-<section>
+<section class="pb-5">
   <div class="container">
     <div class="text-center editable">
       <h2><code><em>Purpose-fueled food</em><br/></code> for the <em>prosperity</em> of our planet and <em>people</em>.</h2>
@@ -194,7 +206,7 @@ featured_recipes:
   <div class="container-fluid">
     <div class="row justify-content-center align-items-center mx-lg-n5">
       <div class="col-12 col-lg-5 px-lg-5">
-        {% include components/image-grid-vertical-image-right.html %}
+        {% include components/image-grid-vertical-image-right.html item=page.image_grid_1 %}
       </div>
       <div class="col-12 col-lg-5 px-lg-5">
         <div class="editable mt-3 mt-lg-0">
@@ -208,7 +220,7 @@ featured_recipes:
     </div>
   </div>
   <div class="container my-5">
-    {% include components/logo-pile.html items=page.image_grid %}
+    {% include components/logo-pile.html items=page.logo_image_grid %}
   </div>
 </section>
 <section class="bg-light bg-image aspect-auto bg-40 bg-left-bottom" style="background-image: url(/img/bg-illustrations/4P-Illustrations_spinach-1.png)">
@@ -221,10 +233,10 @@ featured_recipes:
         <div class="editable lead">
           <p>Take your pick of healthy, ethical and sustainable produce, proteins, and more, for delivery or pickup across DC, Virginia, & Maryland</p>
         </div>
-        <a href="#" class="btn btn-green-light editable">Shop all groceries</a>
+        <a href="{{ site.store_url }}" class="btn btn-green-light">Shop all groceries</a>
       </div>
       <div class="col-12 col-lg-5 px-lg-5">
-        {% include components/image-grid-split-vertical.html %}
+        {% include components/image-grid-split-vertical.html item=page.image_grid_2 %}
       </div>
     </div>
   </div>

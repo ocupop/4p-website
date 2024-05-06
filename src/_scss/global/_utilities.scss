@@ -132,11 +132,17 @@ video {
   &.bg-left-bottom {
     background-position: left bottom;
   }
+  &.bg-30 {
+    background-size: 30%;
+  }
   &.bg-40 {
     background-size: 40%;
   }
   &.bg-50 {
     background-size: 50%;
+  }
+  &.bg-blend-overlay {
+    background-blend-mode: overlay;
   }
 }
 

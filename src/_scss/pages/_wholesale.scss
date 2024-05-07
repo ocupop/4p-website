@@ -1,3 +1,7 @@
+.wholesale-layout {
+
+}
+
 #why-work-with-4p {
   .lead {
     li {
@@ -23,6 +27,10 @@
 
 .wholesale-hero-logo {
   position: absolute;
-  top: -95px;
+  bottom: -80px;
   right: 0;
+  @include media-breakpoint-up(lg) {
+    top: -95px;
+    bottom: auto;
+  }
 }

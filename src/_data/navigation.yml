@@ -35,19 +35,19 @@ primary_navigation:
           alt:  
       sublinks:
         - label: Restaurants & Grocery
-          url: /
+          url: /wholesale/restaurants-grocery
           alt:
         - label: Higher Education
-          url: /
+          url: /wholesale/higher-education
           alt:
         - label: Healthcare & Corporate
-          url: /
+          url: /wholesale/healthcare-corporate
           alt:
         - label: Farm to School
-          url: /
+          url: /wholesale/farm-to-school
           alt:
         - label: Food is Medicine
-          url:
+          url: /wholesale/food-is-medicine
           alt:  
 
     - label: About Us
@@ -63,7 +63,6 @@ primary_navigation:
         - label: Team
           url: /team
           alt:
-        
         - label: Partners
           url: /partners
           alt:
@@ -74,7 +73,6 @@ primary_navigation:
         - label: Blog
           url: /blog
           alt:
-        
         - label: Events
           url: /events
           alt:

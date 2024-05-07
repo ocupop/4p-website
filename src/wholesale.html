@@ -20,31 +20,37 @@ hero:
 slider:
   show_section: true
   items: 
-    - image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
-      title_black_text:
-      title_green_text:
+    - image: /uploads/wholesale-slider-1.png
+      text_html:
       subtitle:
     - image:
-      title_black_text: We've tried many meal prep kits and grocery delivery services -
-      title_green_text: nothing compares to the quality of 4P Foods.
-      subtitle: Firstname Lastname
-    - image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
-      title_black_text:
-      title_green_text:
+      text_html: >-
+        <p>“Feeding kids healthy meals while supporting our local food system <code>has never been so easy</code>”</p>
+      subtitle: School District Food Service manager
+    - image: /uploads/wholesale-slider-2.png
+      text_html:
+      subtitle:
+    - image: /uploads/wholesale-slider-3.png
+      text_html:
       subtitle:
     - image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
-      title_black_text:
-      title_green_text:
-      subtitle:
-    - image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
-      title_black_text:
-      title_green_text:
+      text_html:
       subtitle:   
+image_grid:
+  - image: /uploads/wholesale-grid-1.png
+    link:
+    label:
+  - image: /uploads/wholesale-grid-2.png
+    link:
+    label:
+  - image: /uploads/wholesale-grid-3.png
+    link:      
 wholesale_industries:
   - /wholesale/restaurants-grocery
   - /wholesale/higher-education
   - /wholesale/healthcare-corporate
-  
+  - /wholesale/farm-to-school
+  - /wholesale/food-is-medicine
 catalog_categories:
   - title: Fresh seasonal and organic produce
     image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
@@ -67,7 +73,7 @@ footer_image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
         <p class="lead editable">We work with businesses who want to buy local and offer their customers the best. Whether you’re a fine dining establishment with just a few tables or a school system with hundreds of children to feed, we link you to fresher, more ethical foods at wholesale prices with wholesale ease. </p>
       </div>
       <div class="col-12 col-lg-5 px-lg-5">
-        {% include components/image-grid-split-vertical-2.html %}
+        {% include components/image-grid-split-vertical-2.html item=page.image_grid %}
       </div>
     </div>
   </div>
@@ -81,30 +87,36 @@ footer_image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
         </div>
       </div>
     </div>
-    <div class="row mt-5">
+  </div>
+  <div class="container-fluid">  
+    {% assign tabs = include.item %}
+    <div class="row mt-5 justify-content-center">
+      <div class="col-12 col-xl-10 mx-auto">
+        <ul id="{{ page.title }}-tabs" class="nav nav-tabs tabs-buttons">
+          {% for object in page.wholesale_industries %}
+            {% assign item = site.wholesale_industries | where_exp: 'item', 'item.url contains object' | first %}
+            <li class="nav-item">
+              <a class="nav-link {% if forloop.first %}active{% endif %}" id="tab-{{ item.title | slugify }}" data-toggle="tab" href="#{{ item.title | slugify }}" role="tab" aria-controls="{{ item.title | slugify }}" aria-selected="true">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container"> 
+    <div class="row">
       <div class="col-12">
-        {% assign tabs = include.item %}
-        <div>
-          <ul id="{{ page.title }}-tabs" class="nav nav-tabs tabs-buttons">
-            {% for object in page.wholesale_industries %}
-              {% assign item = site.wholesale_industries | where_exp: 'item', 'item.url contains object' | first %}
-              <li class="nav-item">
-                <a class="nav-link {% if forloop.first %}active{% endif %}" id="tab-{{ item.title | slugify }}" data-toggle="tab" href="#{{ item.title | slugify }}" role="tab" aria-controls="{{ item.title | slugify }}" aria-selected="true">{{ item.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
         <div class="tab-content mt-5">
           {% for object in page.wholesale_industries %}
           {% assign item = site.wholesale_industries | where_exp: 'item', 'item.url contains object' | first %}
             <div id="{{ item.title | slugify }}" role="tabpanel" aria-labelledby="tab-{{ item.title | slugify }}" class="tab-pane fade {% if forloop.first %}show active{% endif %}">
               <div class="row mx-lg-n4 rounded-lg bg-mid align-items-center">
                 {% if item.featured_image %}
-                  <div class="col-12 col-lg-4 p-4">
+                  <div class="col-12 col-lg-4 px-4 pt-4 pb-0 p-lg-4">
                     <div class="bg-image aspect-1x1 mb-3 mb-lg-0 rounded-lg" style="background-image: url({{ item.featured_image }})"></div>
                   </div>
                 {% endif %}
-                <div class="col-12 col-lg-8 p-4">
+                <div class="col-12 col-lg-8 pt-0 px-4 pt-lg-4 p-lg-4">
                   <div class="d-flex flex-column justify-content-between p-4">
                     <div>
                       <h3><strong>{{ item.title }}</strong></h3>
@@ -112,7 +124,7 @@ footer_image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
                         <p>{{ item.summary }} </p>
                       {% endif %} 
                     </div>
-                    <p class="mt-4">
+                    <p class="mt-3 mt-lg-4">
                       <a href="{{ item.url }}" class="btn btn-green-light">Learn More</a>
                     </p>
                   </div>

@@ -1,13 +1,14 @@
+{% assign item = include.item %}
 <div class="image-grid split-vertical">
   <div class="top-row">
-    <div class="bg-image aspect-4x3 rounded" style="background-image: url(https://placehold.co/600x400)"></div>
+    <div class="bg-image aspect-4x3 rounded" style="background-image: url({{ item[0].image }})"></div>
   </div>
   <div class="bottom-row bottom-row-1-2">
     <div class="mr-3">
-      <div class="bg-image aspect-5x7 rounded" style="background-image: url(https://placehold.co/768x400)"></div>
+      <div class="bg-image aspect-5x7 rounded" style="background-image: url({{ item[1].image }})"></div>
     </div>
     <div>
-      <div class="bg-image aspect-4x3 rounded" style="background-image: url(https://placehold.co/600x400)"></div>
+      <div class="bg-image aspect-4x3 rounded" style="background-image: url({{ item[2].image }})"></div>
     </div>
   </div>
 </div>

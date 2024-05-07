@@ -3,27 +3,37 @@
   <meta http-equiv="Content-Language" content="en_US" />
   <meta charset="utf-8" />
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M3ZVLNN');</script>
-<!-- End Google Tag Manager -->
-  <title>{% if page.meta[0].title %}{{ page.meta[0].title | escape }} | 4P Foods{% else %}{{ page.title | escape }} | 4P Foods{% endif %}</title>
+  <script>
+    ;(function (w, d, s, l, i) {
+      w[l] = w[l] || []
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : ''
+      j.async = true
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+      f.parentNode.insertBefore(j, f)
+    })(window, document, 'script', 'dataLayer', 'GTM-M3ZVLNN')
+  </script>
+  <!-- End Google Tag Manager -->
+  <title>
+    {% if page.meta[0].title %}{{ page.meta[0].title | escape }} | 4P Foods{%
+    else %}{{ page.title | escape }} | 4P Foods{% endif %}
+  </title>
   <meta
     name="description"
     content="{% if page.meta[0].description %}{{ page.meta[0].description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
   />
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#2b5797">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#2b5797" />
+  <meta name="theme-color" content="#ffffff" />
 
   {% include socialshare.html %}
 
@@ -33,18 +43,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   />
 
   <!-- Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ '/css/styles.css' | prepend: site.baseurl }}" />
+  <link
+    rel="stylesheet"
+    href="{{ '/css/styles.css' | prepend: site.baseurl }}"
+  />
 
   <!-- Bugherd -->
-  <script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=xwteetpewunwbk7falv63q" async="true"></script>
+  <script
+    type="text/javascript"
+    src="https://www.bugherd.com/sidebarv2.js?apikey=xwteetpewunwbk7falv63q"
+    async="true"
+  ></script>
 
   <!--Analytics-->
-  {% include analytics.html %}
-  {% unless page.show_mailchimp_popup == false %}
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ad164c24986d53694379b9d1a/a3be7d384619c9e02be035374.js");</script>
+  {% include analytics.html %} {% unless page.show_mailchimp_popup == false %}
+  <script id="mcjs">
+    !(function (c, h, i, m, p) {
+      ;(m = c.createElement(h)),
+        (p = c.getElementsByTagName(h)[0]),
+        (m.async = 1),
+        (m.src = i),
+        p.parentNode.insertBefore(m, p)
+    })(
+      document,
+      'script',
+      'https://chimpstatic.com/mcjs-connected/js/users/ad164c24986d53694379b9d1a/a3be7d384619c9e02be035374.js'
+    )
+  </script>
   {% endunless%}
 </head>
 <h1>{{ page.show_mailchimp_popup }}</h1>
+
+<!-- Google Places API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM6xZXlOxYIAc9uiYgufIVKE4mvtkgwkE&libraries=places"></script>

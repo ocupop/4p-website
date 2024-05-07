@@ -48,11 +48,11 @@ purpose_section:
   show_section: true
   items:
     - title: Food for individuals, institutions and communities
-      image: /img/icons/icon-veggies.png
+      image: /img/icons/community-food.svg
     - title: Strengthening independent farms and supporting local producers
-      image: /img/icons/icon-barn.png
+      image: /img/icons/local-producers.svg
     - title: Advancing food access and nutrition
-      image: /img/icons/icon-barn.png 
+      image: /img/icons/food-access.svg
   stats:
     - title: $0.66 of every dollar
       subtitle: vs. $0.15 of every dollar
@@ -176,8 +176,10 @@ featured_recipes:
     <div class="row">
       {% for item in page.purpose_section.items %}
         <div class="col-12 col-lg-4 text-center">
-          <div class="bg-mid rounded p-4 mb-4 d-inline-block mx-auto">
-            <img src="{{ item.image }}" alt="{{ item.title }}">
+          <div class="bg-mid rounded p-3 mb-4 d-inline-block mx-auto d-inline-flex align-items-center justify-content-center">
+            <div>
+              <img src="{{ item.image }}" class="icon-lg" alt="{{ item.title }}">
+            </div>
           </div>
           <p class="font-sans-serif lead">{{ item.title }}</p>
         </div>

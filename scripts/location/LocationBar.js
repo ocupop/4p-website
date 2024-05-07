@@ -19,7 +19,6 @@ const LocationBar = ({ title }) => {
       if (ipLocation) {
         setIsInBounds(checkLocation(ipLocation))
         setBoundHasBeenChecked(true)
-        setIsIpLookup(true)
       }
       console.log(isInBounds)
     }

@@ -1,4 +1,9 @@
 #location-bar {
+  p {
+    @include media-breakpoint-down(lg) {
+      font-size: 0.9rem;
+    }
+  }
   a,
   button {
     text-decoration: underline;

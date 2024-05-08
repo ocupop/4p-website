@@ -45,7 +45,7 @@ const LocationBar = ({ title }) => {
     <>
       {/* User is in Bounds */}
       {isInBounds && boundHasBeenChecked && (
-        <div id='location-bar' className='bg-green-light py-3'>
+        <div id='location-bar' className='bg-green-light p-3'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
             <p className='mb-0'>
               <i class="ri-map-pin-2-fill text-primary mr-2"></i>
@@ -54,7 +54,7 @@ const LocationBar = ({ title }) => {
                 onClick={handleOpen}
                 className='bg-transparent border-0 border-bottom'
               >
-                <strong>your area</strong>
+                your area
               </button>
             </p>
           </div>
@@ -63,7 +63,7 @@ const LocationBar = ({ title }) => {
 
       {/* User checked bounds, but is out of bounds */}
       {!isInBounds && boundHasBeenChecked && (
-        <div id='location-bar' className='bg-mid py-3'>
+        <div id='location-bar' className='bg-mid p-3'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
             <p className='mb-0'>
               <i class="ri-map-pin-2-fill text-warning mr-2"></i>
@@ -82,7 +82,7 @@ const LocationBar = ({ title }) => {
 
       {/* User declined IP lookup (default banner state) */}
       {!isInBounds && !boundHasBeenChecked && (
-        <div id='location-bar' className='bg-mid py-3'>
+        <div id='location-bar' className='bg-mid p-3'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
             <p className='mb-0'>
               <i class="ri-map-pin-2-fill text-primary mr-2"></i>
@@ -100,7 +100,7 @@ const LocationBar = ({ title }) => {
 
       <div
         id='location-drawer'
-        className={`bg-mid p-5 ${drawerOpen ? 'open' : ''}`}>
+        className={`bg-light p-4 p-lg-5 shadow ${drawerOpen ? 'open' : ''}`}>
         <button
           onClick={handleOpen}
           className='bg-transparent border-0 close-drawer'>
@@ -155,7 +155,7 @@ const LocationBar = ({ title }) => {
                 getSuggestionItemProps,
                 loading
               }) => (
-                <div className='relative'>
+                <div className="relative mt-3 mt-lg-5">
                   <label htmlFor="location-search">Address</label>
                   <input
                     {...getInputProps({
@@ -181,7 +181,7 @@ const LocationBar = ({ title }) => {
                 </div>
               )}
             </PlacesAutocomplete>
-            <p class="my-5">4P Foods offers grocery delivery and pick-up in communities across DC, Virginia & Maryland. <a href="/">See our pick-up sites.</a> </p>
+            <p class="my-5">4P Foods offers grocery delivery and pick-up in communities across DC, Virginia & Maryland. <a href="/posts/4p-foods-community-pickup-sites/">See our pick-up sites.</a> </p>
             {/* User is outside of delivery zone, offer an email input */}
             {!isInBounds && (
               <div className='mt-3'>
@@ -197,14 +197,14 @@ const LocationBar = ({ title }) => {
                     <input type="submit" className="btn btn-green-light text-green-dark" />
                   </div>
                 </div>
-                <p>Enter your email to be notified when we deliver to your area</p>
+                <p>Add your email to know when we expand our delivery zone.</p>
               </div>
             )}
           </div>
           <div className="w-100">
-            <div className="text-center mt-5 pb-5 border border-top">
-              <h5>Wholesale Delivery &amp; pickup</h5>
-              <a href="/wholesale" className="btn btn-blue-light btn-block">Explore Wholesale Options</a>
+            <div className="text-center mt-5 py-5 border-top">
+              <h5 class="mb-4">Wholesale Delivery &amp; pickup</h5>
+              <a href="/wholesale" className="btn btn-blue-light btn-block text-decoration-none">Explore Wholesale Options</a>
             </div>
           </div>
         </div>

@@ -62,7 +62,7 @@
               <span class="sr-only">(current)</span>
             </a>
             {% if link.links %}
-            <div class="dropdown-menu mega-menu v-2 z-depth-1 {% if link.sublinks.first.url %}has-sublinks{% endif %}" aria-labelledby="collapse-{{ link.label | slugify }}">
+            <div class="dropdown-menu mega-menu v-2 z-depth-1 {% if link.has_sublinks %}has-sublinks{% endif %}" aria-labelledby="collapse-{{ link.label | slugify }}">
               <div class="row justify-content-lg-center">
                 {% for link in link.links %}
                 <div class="col-12 col-lg-auto sub-menu mb-lg-0 mb-4">
@@ -70,17 +70,19 @@
                 </div>
                 {% endfor %}
               </div>
-              {% if link.sublinks.first.url %}
-                <div class="sublinks-menu">
-                  <div class="row justify-content-lg-center">
-                    {% for link in link.sublinks %}
-                    <div class="col-12 col-lg-auto sub-menu mb-lg-0 mb-4">
-                      <a href="{{ link.url }}">{{ link.label }}</a>
+              {% for link in link.links %}
+                {% if link.sublinks.first.url %}
+                  <div class="sublinks-menu">
+                    <div class="row justify-content-lg-center">
+                      {% for link in link.sublinks %}
+                      <div class="col-12 col-lg-auto sub-menu mb-lg-0 mb-4">
+                        <a href="{{ link.url }}" class="d-flex align-items-center justify-content-center px-lg-3 {% if page.url contains link.url %} active{% endif %}"><img src="{{ link.icon_image }}" class="inline-block mr-1 mr-xl-3" alt="{{ link.label }} icon"><span>{{ link.label }}</span></a>
+                      </div>
+                      {% endfor %}
                     </div>
-                    {% endfor %}
                   </div>
-                </div>
-              {% endif %}
+                {% endif %}
+              {% endfor %}
             </div>
             {% endif %}
           </li>

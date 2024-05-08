@@ -97,97 +97,114 @@ const LocationBar = ({ title }) => {
 
       <div
         id='location-drawer'
-        className={`bg-mid text-center p-5 ${drawerOpen ? 'open' : ''}`}
-      >
+        className={`bg-mid p-5 ${drawerOpen ? 'open' : ''}`}>
         <button
           onClick={handleOpen}
-          className='bg-transparent border-0 close-drawer'
-        >
+          className='bg-transparent border-0 close-drawer'>
           <i className='ri-close-circle-line'></i>
         </button>
+        <div className="d-flex flex-column h-100 justify-content-between align-items-center">
+          <div>
+            <h6 class="text-primary font-weight-bold">Home Grocery Delivery</h6>
+            {/* User is in bounds, by IP lookup */}
+            {isInBounds && boundHasBeenChecked && !address && (
+              <h5>
+                Looks like you’re in our delivery area — but please enter your
+                address just to be sure
+              </h5>
+            )}
 
-        {/* User is in bounds, by IP lookup */}
-        {isInBounds && boundHasBeenChecked && !address && (
-          <h5>
-            Looks like you’re in our delivery area — but please enter your
-            address just to be sure
-          </h5>
-        )}
+            {/* User is in bounds, and looked up by address */}
+            {isInBounds && boundHasBeenChecked && address && (
+              <h5>Groceries incoming! We deliver to your area</h5>
+            )}
 
-        {/* User is in bounds, and looked up by address */}
-        {isInBounds && boundHasBeenChecked && address && (
-          <h5>Groceries incoming! We deliver to your area</h5>
-        )}
+            {/* User is out of bounds and they did an IP Lookup, ask to do a search */}
+            {!isInBounds && !address && (
+              <h5>
+                Looks like you might be outside our delivery area — but please enter
+                your address just to be sure
+              </h5>
+            )}
 
-        {/* User is out of bounds and they did an IP Lookup, ask to do a search */}
-        {!isInBounds && !address && (
-          <h5>
-            Looks like you might be outside our delivery area — but please enter
-            your address just to be sure
-          </h5>
-        )}
+            {/* User is out of bounds and they did an address search */}
+            {!isInBounds && address && (
+              <h5>
+                Sorry! We don’t deliver to your area - learn more about our{' '}
+                <a href=''>pick up options.</a>
+              </h5>
+            )}
 
-        {/* User is out of bounds and they did an address search */}
-        {!isInBounds && address && (
-          <h5>
-            Sorry! We don’t deliver to your area - learn more about our{' '}
-            <a href=''>pick up options.</a>
-          </h5>
-        )}
-
-        {/* 
-            To Test: 
-              Samuel Miller District, VA, USA
-              38.056160, -78.581087
-        */}
-        <PlacesAutocomplete
-          value={address}
-          searchOptions={{ componentRestrictions: { country: ['us'] } }} // region lock to US
-          onChange={handleChange}
-          onSelect={handleSelect}
-        >
-          {({
-            getInputProps,
-            suggestions,
-            getSuggestionItemProps,
-            loading
-          }) => (
-            <div className='relative'>
-              <input
-                {...getInputProps({
-                  placeholder: 'Search Places ...',
-                  className: ''
-                })}
-              />
-              <div className=''>
-                {loading && <div>Loading...</div>}
-                {suggestions.map((suggestion, i) => (
-                  <div
-                    key={i + suggestion.placeId}
-                    {...getSuggestionItemProps(suggestion, {
+            {/* 
+                To Test: 
+                  Samuel Miller District, VA, USA
+                  38.056160, -78.581087
+            */}
+            <PlacesAutocomplete
+              value={address}
+              searchOptions={{ componentRestrictions: { country: ['us'] } }} // region lock to US
+              onChange={handleChange}
+              onSelect={handleSelect}
+            >
+              {({
+                getInputProps,
+                suggestions,
+                getSuggestionItemProps,
+                loading
+              }) => (
+                <div className='relative'>
+                  <label htmlFor="location-search">Address</label>
+                  <input
+                    {...getInputProps({
+                      placeholder: 'Search Places ...',
                       className: ''
                     })}
-                  >
-                    <span key={suggestion.placeId}>
-                      {suggestion.description}
-                    </span>
+                  />
+                  <div className=''>
+                    {loading && <div>Loading...</div>}
+                    {suggestions.map((suggestion, i) => (
+                      <div
+                        key={i + suggestion.placeId}
+                        {...getSuggestionItemProps(suggestion, {
+                          className: ''
+                        })}
+                      >
+                        <span key={suggestion.placeId}>
+                          {suggestion.description}
+                        </span>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
+              )}
+            </PlacesAutocomplete>
+            <p class="my-5">4P Foods offers grocery delivery and pick-up in communities across DC, Virginia & Maryland. <a href="/">See our pick-up sites.</a> </p>
+            {/* User is outside of delivery zone, offer an email input */}
+            {!isInBounds && (
+              <div className='mt-3'>
+                <h5>Outside our delivery zone?</h5>
+                <label htmlFor="email">Email</label>
+                <div class="input-group mb-3">
+                  <input
+                    type='email'
+                    placeholder='Enter Email Address'
+                    className='form-control'
+                  />
+                  <div class="input-group-append">
+                    <input type="submit" className="btn btn-green-light text-green-dark" />
+                  </div>
+                </div>
+                <p>Enter your email to be notified when we deliver to your area</p>
               </div>
-            </div>
-          )}
-        </PlacesAutocomplete>
-        {/* User is outside of delivery zone, offer an email input */}
-        {!isInBounds && (
-          <div className='mt-3'>
-            <h5>Outside our delivery zone?</h5>
-            <input
-              type='email'
-              placeholder='Enter your email to be notified when we deliver to your area'
-              className='form-control'
-            />
+            )}
           </div>
-        )}
+          <div className="w-100">
+            <div className="text-center mt-5 pb-5 border border-top">
+              <h5>Wholesale Delivery &amp; pickup</h5>
+              <a href="/wholesale" className="btn btn-blue-light btn-block">Explore Wholesale Options</a>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )

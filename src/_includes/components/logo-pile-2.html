@@ -1,0 +1,17 @@
+<div class="d-lg-flex flex-wrap align-items-center justify-content-center logo-pile">
+  {% for logo in include.items %}
+    <div class="text-center">
+      {% if logo.link %}<a href="{{logo.link}}" target="_blank">{% endif %}
+        {% if logo.featured_image or logo.image %}
+          <div class="px-3 px-md-4 px-lg-5 py-4">
+            <img src="{{ logo.image | default: logo.featured_image }}" class="img-fluid {% if include.grayscale %}grayscale{% endif %}" alt="{{ logo.label | default: 'Logo'}}">
+          </div>
+        {% else %}
+          <div class="px-3 px-md-4 py-4">
+            <h5 class="text-uppercase text-dark">{{ logo.label }}</h5>
+          </div>  
+        {% endif %}
+      {% if logo.link %}</a>{% endif %}
+    </div>
+  {% endfor %}
+</div>

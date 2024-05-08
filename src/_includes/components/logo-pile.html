@@ -1,5 +1,4 @@
 <div
-  data-cms-editor-link="cloudcannon:{{ include.editor-link }}"
   data-cms-editor-link-style="modal"
   class="row flex-wrap align-items-center justify-content-center cms-editor-link logo-pile">
   {% for logo in include.items %}
@@ -7,7 +6,7 @@
       {% if logo.link %}<a href="{{logo.link}}" target="_blank">{% endif %}
         {% if logo.featured_image or logo.image %}
           <div class="px-3 px-md-4 py-4">
-            <div class="bg-image aspect-{{ include.aspect | default: '1x1' }} bg-contain bg-transparent" style="background-image: url({{ logo.image | default: logo.featured_image }})"></div>
+            <div class="bg-image aspect-{{ include.aspect | default: '1x1' }} bg-contain bg-transparent {% if include.grayscale %}grayscale{% endif %}" style="background-image: url({{ logo.image | default: logo.featured_image }})"></div>
           </div>
         {% else %}
           <div class="px-3 px-md-4 py-4">

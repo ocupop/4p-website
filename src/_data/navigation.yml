@@ -21,34 +21,41 @@ primary_navigation:
           url: /posts/4p-foods-community-pickup-sites/  
           alt:
     - label: Wholesale
-      url:
+      url: /wholesale
       alt:
+      has_sublinks: true
       links:
         - label: How Wholesale Works
           url: /wholesale
           alt:
+          sublinks:
+            - label: Restaurants & Grocery
+              url: /wholesale/restaurants-grocery
+              alt:
+              icon_image: /img/icons/utensils-solid.png
+            - label: Higher Education
+              url: /wholesale/higher-education
+              alt:
+              icon_image: /img/icons/hospital-solid.png
+            - label: Healthcare & Corporate
+              url: /wholesale/healthcare-corporate
+              alt:
+              icon_image: /img/icons/book-solid.png
+            - label: Farm to School
+              url: /wholesale/farm-to-school
+              alt:
+              icon_image: /img/icons/school-solid.png
+            - label: Food is Medicine
+              url: /wholesale/food-is-medicine
+              alt:
+              icon_image: /img/icons/prescription-solid.png
         - label: Apply for Wholesale
           url: /
           alt:  
         - label: Procurement Application
           url: /
           alt:  
-      sublinks:
-        - label: Restaurants & Grocery
-          url: /wholesale/restaurants-grocery
-          alt:
-        - label: Higher Education
-          url: /wholesale/higher-education
-          alt:
-        - label: Healthcare & Corporate
-          url: /wholesale/healthcare-corporate
-          alt:
-        - label: Farm to School
-          url: /wholesale/farm-to-school
-          alt:
-        - label: Food is Medicine
-          url: /wholesale/food-is-medicine
-          alt:  
+        
 
     - label: About Us
       url:

@@ -1,23 +1,4 @@
 <header id="pageHeader">
-  <!-- <div class="bg-green-darker d-none d-lg-block">
-    <div class="container-fluid">
-      <nav id="usernav" class="navbar navbar-expand-lg">
-        <a href="/wholesale-programs" class="text-uppercase font-weight-bold editable">Interested in Wholesale?</a>
-        <div id="header-notification">
-          {% if site.data.notifications.header_notification.link %}
-            <p class="mb-0 font-weight-bold"><a href="{{ site.data.notifications.header_notification.link }}">{{ site.data.notifications.header_notification.notification_text }}</a></p>
-          {% else %}
-            <p class="mb-0 font-weight-bold">{{ site.data.notifications.header_notification.notification_text }}</p>
-          {% endif %}
-        </div>
-        <div id="secondarynav">
-          <auth-nav>
-            <a href="{{ site.store_url }}/login" class="btn btn-primary storeLink">Login</a>
-          </auth-nav>
-        </div>
-      </nav>
-    </div>
-  </div> -->
   <div class="container-fluid bg-light">
     <nav id="mainnav" class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="/" title="{{ site.title }}">
@@ -66,7 +47,7 @@
               <div class="row justify-content-lg-center">
                 {% for link in link.links %}
                 <div class="col-12 col-lg-auto sub-menu mb-lg-0 mb-4">
-                  <a href="{{ link.url }}">{{ link.label }}</a>
+                  <a href="{{ link.url }}" class="{% if page.url contains link.url %} active{% endif %}">{{ link.label }}</a>
                 </div>
                 {% endfor %}
               </div>

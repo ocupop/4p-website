@@ -10,7 +10,10 @@ $gray-700: #707070;
 $gray-800: #4d4d4d;
 $gray-850: #58595c;
 $gray-900: #59554F;
+$black-light: #1F1300;
 $black: #000000 !default;
+
+
 
 $blue-light: #cfeaeB;
 $blue: #97d7d9;
@@ -24,6 +27,7 @@ $green-light: #e7f1e2;
 $green: #5fb35f;
 $green-olive: #6D9173;
 $green-mid: #378437;
+$green-mid-dark: #385140;
 $green-dark: #255B35;
 $green-darker: #265c35;
 $green-darkest: #173A21;
@@ -67,10 +71,12 @@ $theme-colors: (
   'green-light': $green-light,
   'green-mid': $green-mid,
   'green-dark': $green-dark,
+  'green-mid-dark': $green-mid-dark,
   'green-olive': $green-olive,
   'green-darker': $green-darker,
   'green-darkest': $green-darkest,
-  'blue-light': $blue-light
+  'blue-light': $blue-light,
+  'black-light': $black-light
 );
 
 $body-bg: $white;

@@ -45,9 +45,10 @@ const LocationBar = ({ title }) => {
     <>
       {/* User is in Bounds */}
       {isInBounds && boundHasBeenChecked && (
-        <div id='location-bar' className='bg-mid py-3'>
+        <div id='location-bar' className='bg-green-light py-3'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
             <p className='mb-0'>
+              <i class="ri-map-pin-2-fill text-primary mr-2"></i>
               Groceries incoming! We deliver to{' '}
               <button
                 onClick={handleOpen}
@@ -65,14 +66,15 @@ const LocationBar = ({ title }) => {
         <div id='location-bar' className='bg-mid py-3'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
             <p className='mb-0'>
-              Sorry! We don’t deliver to{' '}
+              <i class="ri-map-pin-2-fill text-warning mr-2"></i>
+              Sorry! We don’t deliver to
               <button
                 onClick={handleOpen}
-                className='bg-transparent border-0 border-bottom'
+                className='bg-transparent border-0'
               >
-                <strong>your area</strong>
+                your area
               </button>
-              learn more about our <a href='#'>pick up options</a>.
+              learn more about our <a href="/posts/4p-foods-community-pickup-sites/">pick up options</a>.
             </p>
           </div>
         </div>
@@ -83,12 +85,13 @@ const LocationBar = ({ title }) => {
         <div id='location-bar' className='bg-mid py-3'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
             <p className='mb-0'>
+              <i class="ri-map-pin-2-fill text-primary mr-2"></i>
               Check for grocery delivery in{' '}
               <button
                 onClick={handleOpen}
-                className='bg-transparent border-0 border-bottom'
+                className='bg-transparent border-0'
               >
-                <strong>your area</strong>
+                your area
               </button>
             </p>
           </div>

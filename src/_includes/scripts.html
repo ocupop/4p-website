@@ -1,6 +1,5 @@
 <!-- JS Dependencies -->
-<script
-  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   crossorigin="anonymous"
 ></script>
 <script
@@ -18,9 +17,11 @@
   defer
 ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-<script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
-<script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
-<script src="https://unpkg.com/embla-carousel-auto-scroll/embla-carousel-auto-scroll.umd.js"></script>
+{% if page.url == '/' %}
+  <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+  <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+  <script src="https://unpkg.com/embla-carousel-auto-scroll/embla-carousel-auto-scroll.umd.js"></script>
+{% endif %}
 <script src="{{ '/js/main.js' | prepend: site.baseurl }}"></script>
 
 <script defer>
@@ -197,7 +198,11 @@
       $('#shop-help-wrapper').removeClass('active')
     })
   })
-  const emblaNode = document.querySelector('.embla')
+  
+</script>
+{% if page.url == '/' %}
+<script>
+const emblaNode = document.querySelector('.embla')
   const options = {
     loop: true,
     stopOnMouseEnter: true
@@ -216,4 +221,5 @@
     EmblaCarouselAutoScroll(autoScrollOptions)
   ]
   const emblaApi = EmblaCarousel(emblaNode, options, plugins)
-</script>
+</script>  
+{% endif %}

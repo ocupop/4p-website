@@ -147,7 +147,8 @@
     text-transform: uppercase;
     padding: 10px 20px;
     font-size: 15px;
-    color: $black;
+    color: $green-mid-dark;
+    font-weight: 600;
     @include media-breakpoint-down(xl) {
       font-size: 15px;
       padding: 20px 10px;
@@ -239,6 +240,13 @@
         }
       }
     }
+  }
+}
+
+.nav-icon-link {
+  i {
+    color: $green-dark;
+    font-size: 20px;
   }
 }
 

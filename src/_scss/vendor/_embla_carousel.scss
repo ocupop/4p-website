@@ -6,7 +6,7 @@
 }
 .embla__slide {
   flex: 0 0 100%;
-  p {
+  .slider-subtitle {
     font-size: 1rem;
   }
   @include media-breakpoint-down(lg) {

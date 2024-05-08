@@ -2,9 +2,9 @@
   <section class="pb-0">
     <div class="container-fluid">
       <div class="row mx-lg-n5 justify-content-lg-center">
-        <div class="col-sm-6 col-lg-auto mb-3 px-xl-4">
+        <div class="col-sm-6 col-lg-auto mb-3 px-xl-4 pb-lg-5 footer-nav-col">
           <h6 class="editable text-primary">
-            Shop
+            Shop Groceries
           </h6>
           <ul class="nav flex-column">
             {% for link in site.data.navigation.footer_navigation.shop_links %}
@@ -14,7 +14,7 @@
             {% endfor %}
           </ul>
         </div>
-        <div class="col-sm-6 col-lg-auto mb-3 px-3 px-xl-4">
+        <div class="col-sm-6 col-lg-auto mb-3 px-3 px-xl-4 pb-lg-5 footer-nav-col">
           <h6 class="editable text-primary">
             Wholesale
           </h6>
@@ -26,7 +26,7 @@
             {% endfor %}
           </ul>
         </div>
-        <div class="col-sm-6 col-lg-auto mb-3 px-xl-4">
+        <div class="col-sm-6 col-lg-auto mb-3 px-xl-4 pb-lg-5 footer-nav-col">
           <h6 class="editable text-primary">
             About 4P FOODS
           </h6>
@@ -38,7 +38,7 @@
             {% endfor %}
           </ul>
         </div>
-        <div class="col-sm-6 col-lg-auto mb-3 px-xl-4">
+        <div class="col-sm-6 col-lg-auto mb-3 px-xl-4 pb-lg-5 footer-nav-col">
           <h6 class="editable text-primary">
             Resources
           </h6>
@@ -50,7 +50,7 @@
             {% endfor %}
           </ul>
         </div>
-        <div class="col-sm-6 col-lg-auto mb-3 px-xl-4">
+        <div class="col-sm-6 col-lg-auto mb-3 px-xl-4 pb-lg-5 footer-nav-col">
           <h6 class="editable text-primary">
             Support
           </h6>
@@ -114,7 +114,7 @@
         <div class="col-lg-3">
           <p class="social d-flex align-items-center justify-content-center justify-content-lg-end mt-3 mt-lg-0">
             {% for link in site.data.navigation.footer_navigation.connect_with_us_links %}
-            <a href="{{ link.link }}" target="_blank" rel="noopener" class="mr-2">
+            <a href="{{ link.link }}" target="_blank" rel="noopener" class="mr-2 mr-lg-4">
               <i class="ri-{{link.label }}-fill"></i>
             </a>
             {% endfor %}
@@ -124,3 +124,4 @@
     </div>
   </section>
 </footer>
+

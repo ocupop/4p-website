@@ -20,8 +20,11 @@
       <div class="col-12 col-lg-8 p-4">
         <div class="d-flex flex-column justify-content-between p-4">
           <div>
-            <h3><strong>{{ tab.title }}</strong></h3>
+            <h3 class="text-black-light"><strong>{{ tab.title }}</strong></h3>
             {% if tab.description_html %}
+              <div class="editable text-black-light">
+                {{ tab.description_html }}
+              </div>
               {{ tab.description_html }} 
             {% endif %} 
           </div>

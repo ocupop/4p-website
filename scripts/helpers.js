@@ -201,7 +201,6 @@ export const checkLocation = (bounds) => {
   }
 
   if (!bounds) return false
-  console.log('checking bounds', bounds)
   return kmlFile.features.some((feature) => {
     if (feature.geometry.type === 'Polygon') {
       return isLocationInBounds(bounds, feature.geometry.coordinates)

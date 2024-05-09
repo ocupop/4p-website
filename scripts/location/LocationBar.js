@@ -6,6 +6,7 @@ import PlacesAutocomplete, {
   getLatLng,
   Suggestion
 } from 'react-places-autocomplete'
+import Cookies from 'universal-cookie'
 
 const LocationBar = ({ title }) => {
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -13,14 +14,22 @@ const LocationBar = ({ title }) => {
   const [boundHasBeenChecked, setBoundHasBeenChecked] = useState(false)
   const [address, setAddress] = useState()
 
+  const cookies = new Cookies()
+
   useEffect(() => {
     const asyncInit = async () => {
-      const ipLocation = await getGeoLocationByIp()
-      if (ipLocation) {
-        setIsInBounds(checkLocation(ipLocation))
-        setBoundHasBeenChecked(true)
+      // check if we have a cookie, if we do, get the address
+      const cookieAddress = cookies.get('address')
+      if (cookieAddress) {
+        performAddressLookup(cookieAddress)
+      } else {
+        // if not, do an IP lookup
+        const ipLocation = await getGeoLocationByIp()
+        if (ipLocation) {
+          setIsInBounds(checkLocation(ipLocation))
+          setBoundHasBeenChecked(true)
+        }
       }
-      console.log(isInBounds)
     }
     asyncInit()
   }, [])
@@ -34,11 +43,16 @@ const LocationBar = ({ title }) => {
   }
 
   const handleSelect = async (value) => {
+    performAddressLookup(value)
+  }
+
+  const performAddressLookup = async (value) => {
     setAddress(value)
     const result = await geocodeByAddress(value)
     const latLng = await getLatLng(result[0])
     setIsInBounds(checkLocation([latLng.lat, latLng.lng]))
     setBoundHasBeenChecked(true)
+    cookies.set('address', value, { path: '/' })
   }
 
   return (
@@ -48,7 +62,7 @@ const LocationBar = ({ title }) => {
         <div id='location-bar' className='bg-green-light p-3'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
             <p className='mb-0'>
-              <i class="ri-map-pin-2-fill text-primary mr-2"></i>
+              <i class='ri-map-pin-2-fill text-primary mr-2'></i>
               Groceries incoming! We deliver to{' '}
               <button
                 onClick={handleOpen}
@@ -66,15 +80,16 @@ const LocationBar = ({ title }) => {
         <div id='location-bar' className='bg-mid p-3'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
             <p className='mb-0'>
-              <i class="ri-map-pin-2-fill text-warning mr-2"></i>
+              <i class='ri-map-pin-2-fill text-warning mr-2'></i>
               Sorry! We don’t deliver to
-              <button
-                onClick={handleOpen}
-                className='bg-transparent border-0'
-              >
+              <button onClick={handleOpen} className='bg-transparent border-0'>
                 your area
               </button>
-              learn more about our <a href="/posts/4p-foods-community-pickup-sites/">pick up options</a>.
+              learn more about our{' '}
+              <a href='/posts/4p-foods-community-pickup-sites/'>
+                pick up options
+              </a>
+              .
             </p>
           </div>
         </div>
@@ -85,12 +100,9 @@ const LocationBar = ({ title }) => {
         <div id='location-bar' className='bg-mid p-3'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
             <p className='mb-0'>
-              <i class="ri-map-pin-2-fill text-primary mr-2"></i>
+              <i class='ri-map-pin-2-fill text-primary mr-2'></i>
               Check for grocery delivery in{' '}
-              <button
-                onClick={handleOpen}
-                className='bg-transparent border-0'
-              >
+              <button onClick={handleOpen} className='bg-transparent border-0'>
                 your area
               </button>
             </p>
@@ -100,15 +112,17 @@ const LocationBar = ({ title }) => {
 
       <div
         id='location-drawer'
-        className={`bg-light p-4 p-lg-5 shadow ${drawerOpen ? 'open' : ''}`}>
+        className={`bg-light p-4 p-lg-5 shadow ${drawerOpen ? 'open' : ''}`}
+      >
         <button
           onClick={handleOpen}
-          className='bg-transparent border-0 close-drawer'>
+          className='bg-transparent border-0 close-drawer'
+        >
           <i className='ri-close-circle-line'></i>
         </button>
-        <div className="d-flex flex-column h-100 justify-content-between align-items-center">
+        <div className='d-flex flex-column h-100 justify-content-between align-items-center'>
           <div>
-            <h6 class="text-primary font-weight-bold">Home Grocery Delivery</h6>
+            <h6 class='text-primary font-weight-bold'>Home Grocery Delivery</h6>
             {/* User is in bounds, by IP lookup */}
             {isInBounds && boundHasBeenChecked && !address && (
               <h5>
@@ -125,8 +139,8 @@ const LocationBar = ({ title }) => {
             {/* User is out of bounds and they did an IP Lookup, ask to do a search */}
             {!isInBounds && !address && (
               <h5>
-                Looks like you might be outside our delivery area — but please enter
-                your address just to be sure
+                Looks like you might be outside our delivery area — but please
+                enter your address just to be sure
               </h5>
             )}
 
@@ -155,8 +169,8 @@ const LocationBar = ({ title }) => {
                 getSuggestionItemProps,
                 loading
               }) => (
-                <div className="relative mt-3 mt-lg-5">
-                  <label htmlFor="location-search">Address</label>
+                <div className='relative mt-3 mt-lg-5'>
+                  <label htmlFor='location-search'>Address</label>
                   <input
                     {...getInputProps({
                       placeholder: 'Search Places ...',
@@ -181,30 +195,44 @@ const LocationBar = ({ title }) => {
                 </div>
               )}
             </PlacesAutocomplete>
-            <p class="my-5">4P Foods offers grocery delivery and pick-up in communities across DC, Virginia & Maryland. <a href="/posts/4p-foods-community-pickup-sites/">See our pick-up sites.</a> </p>
+            <p class='my-5'>
+              4P Foods offers grocery delivery and pick-up in communities across
+              DC, Virginia & Maryland.{' '}
+              <a href='/posts/4p-foods-community-pickup-sites/'>
+                See our pick-up sites.
+              </a>{' '}
+            </p>
             {/* User is outside of delivery zone, offer an email input */}
             {!isInBounds && (
               <div className='mt-3'>
                 <h5>Outside our delivery zone?</h5>
-                <label htmlFor="email">Email</label>
-                <div class="input-group mb-3">
+                <label htmlFor='email'>Email</label>
+                <div class='input-group mb-3'>
                   <input
                     type='email'
                     placeholder='Enter Email Address'
                     className='form-control'
                   />
-                  <div class="input-group-append">
-                    <input type="submit" className="btn btn-green-light text-green-dark" />
+                  <div class='input-group-append'>
+                    <input
+                      type='submit'
+                      className='btn btn-green-light text-green-dark'
+                    />
                   </div>
                 </div>
                 <p>Add your email to know when we expand our delivery zone.</p>
               </div>
             )}
           </div>
-          <div className="w-100">
-            <div className="text-center mt-5 py-5 border-top">
-              <h5 class="mb-4">Wholesale Delivery &amp; pickup</h5>
-              <a href="/wholesale" className="btn btn-blue-light btn-block text-decoration-none">Explore Wholesale Options</a>
+          <div className='w-100'>
+            <div className='text-center mt-5 py-5 border-top'>
+              <h5 class='mb-4'>Wholesale Delivery &amp; pickup</h5>
+              <a
+                href='/wholesale'
+                className='btn btn-blue-light btn-block text-decoration-none'
+              >
+                Explore Wholesale Options
+              </a>
             </div>
           </div>
         </div>

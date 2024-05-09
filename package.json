@@ -17,6 +17,7 @@
     "react-instantsearch-dom": "^6.8.3",
     "react-places-autocomplete": "^7.3.0",
     "react-select": "^3.1.1",
+    "universal-cookie": "^7.1.4",
     "use-query-params": "^1.2.3"
   },
   "devDependencies": {

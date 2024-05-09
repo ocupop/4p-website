@@ -466,4 +466,39 @@ video {
   filter: grayscale(1);
 }
 
+.link-arrow {
+  display: flex;
+  align-items: center;
+  i {
+    @include transition(0.3s);
+    margin-left: 10px;
+  }
+  &:hover {
+    i {
+      margin-left: 15px;
+    }
+  }
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  border-top: 20px solid #F2EBE3;
+}
+
+.caret-bottom-center {
+  position: relative;
+  .arrow-down {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0; 
+    height: 0; 
+  }  
+}
+
 

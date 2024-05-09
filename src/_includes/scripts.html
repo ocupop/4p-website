@@ -17,7 +17,7 @@
   defer
 ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
-{% if page.url == '/' %}
+{% if page.url == '/' or page.url == '/wholesale/' %}
   <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
   <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
   <script src="https://unpkg.com/embla-carousel-auto-scroll/embla-carousel-auto-scroll.umd.js"></script>
@@ -200,7 +200,7 @@
   })
   
 </script>
-{% if page.url == '/' %}
+{% if page.url == '/' or page.url == '/wholesale/' %}
 <script>
 const emblaNode = document.querySelector('.embla')
   const options = {
@@ -210,7 +210,7 @@ const emblaNode = document.querySelector('.embla')
   const autoScrollOptions = {
     stopOnMouseEnter: true,
     stopOnInteraction: false,
-    speed: 1
+    speed: 0.6
   }
   const autoPlayOptions = {
     stopOnMouseEnter: true,

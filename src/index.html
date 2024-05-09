@@ -73,25 +73,26 @@ image_grid_1:
     alt:
   - image: /uploads/home-grid-1-3.png
     alt:
-logo_image_grid:
-  - image: https://placehold.co/600x400
-    link: https://www.google.com
-    label: Somelabel
-  - image: https://placehold.co/200x200
-    link: https://www.google.com
-    label: Somelabel
-  - image: https://placehold.co/200x250
-    link: https://www.google.com
-    label: Somelabel
-  - image: https://placehold.co/600x200
-    link: https://www.google.com
-    label: Somelabel
-  - image: https://placehold.co/250x250
-    link: https://www.google.com
-    label: Somelabel
-  - image: https://placehold.co/600x200
-    link: https://www.google.com
-    label: Somelabel    
+logo_grid_section:
+  show_section: true  
+  items:
+    - image: /uploads/wholesale/elon-dining-logo.svg
+      link: 
+      label: Elon Dining
+    - image: /img/logos/healthcare/carlin-clinic-logo.png
+      link: 
+      label: Carilion Clinic
+    - image: /img/logos/school/prince-edward-schools-logo.png
+      link: 
+      label: Prince Edward Schools 
+    - image: /img/logos/healthcare/uva-health-logo.png
+      link: 
+      label: UVA Health 
+    - image: /uploads/wholesale/wake-forest-logo.png
+      link: 
+      label: Wake Forest  
+      
+      
 image_grid_2:
   - image: /uploads/home-grid-2-1.png
     alt:
@@ -172,9 +173,9 @@ featured_recipes:
     </div>
   </div>
 </section>
-<section id="bg-ellipse">
+<section id="bg-ellipse" class="caret-bottom-center">
   <div class="container">
-    <div class="row">
+    <div class="row" data-cms-bind="#purpose_section">
       {% for item in page.purpose_section.items %}
         <div class="col-12 col-lg-4 text-center">
           <div class="bg-mid rounded p-3 mb-4 d-inline-block mx-auto d-inline-flex align-items-center justify-content-center">
@@ -187,16 +188,17 @@ featured_recipes:
       {% endfor %}
     </div>
   </div>
+  <div class="arrow-down"></div>
 </section>
 <section class="bg-primary text-white">
   <div class="container">
-    <div class="row">
+    <div class="row" data-cms-bind="#purpose_section">
       {% for item in page.purpose_section.stats %}
         <div class="col-12 col-lg-4">
           <div class="p-3 p-lg-4">
             <h3 class="mb-1">{{ item.title }}</h3>
-            <p class="text-green-dark">{{ item.subtitle }}</p>
-            <div class="lead">
+            <p class="text-green-dark font-weight-500 mb-4">{{ item.subtitle }}</p>
+            <div class="lead text-green-light">
               {{ item.description_html }}
             </div>
           </div>
@@ -208,7 +210,7 @@ featured_recipes:
 <section class="bg-mid">
   <div class="container-fluid">
     <div class="row justify-content-center align-items-center mx-lg-n5">
-      <div class="col-12 col-lg-5 px-lg-5">
+      <div class="col-12 col-lg-5 px-lg-5 mb-4 mb-lg-0" data-cms-bind="#image_grid_1">
         {% include components/image-grid-vertical-image-right.html item=page.image_grid_1 %}
       </div>
       <div class="col-12 col-lg-5 px-lg-5">
@@ -222,9 +224,12 @@ featured_recipes:
       </div>
     </div>
   </div>
-  <div class="container my-5">
+  <div class="container my-5" data-cms-bind="#logo_image_grid">
     {% include components/logo-pile.html items=page.logo_image_grid %}
   </div>
+  {% if page.logo_grid_section.show_section %}
+    {% include components/logo-pile-2.html items=page.logo_grid_section.items grayscale=true %}
+  {% endif %}
 </section>
 <section class="bg-light bg-image aspect-auto bg-15 bg-left-bottom" style="background-image: url(/img/bg-illustrations/4P-Illustrations_spinach-1.png)">
   <div class="container-fluid">
@@ -238,7 +243,7 @@ featured_recipes:
         </div>
         <a href="{{ site.store_url }}" class="btn btn-green-light">Shop all groceries</a>
       </div>
-      <div class="col-12 col-lg-5 px-lg-5">
+      <div class="col-12 col-lg-5 px-lg-5" data-cms-bind="#image_grid_2">
         {% include components/image-grid-split-vertical.html item=page.image_grid_2 %}
       </div>
     </div>

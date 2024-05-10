@@ -419,3 +419,9 @@
     }
   }
 }
+
+.w-lg-50 {
+  @include media-breakpoint-up(lg) {
+    width: 50%;
+  }
+}

@@ -43,11 +43,13 @@ layout: default
           <div class="col-12 col-lg-8 order-2 order-lg-1 mb-3 mb-lg-0">
             <div class="testimonial-wrapper bg-mid h-100 d-flex flex-column justify-content-between rounded">
               <div class="text-serif font-weight-bold testimonial-quote">{{ page.testimonial_section.quote_html }}</div>
-              <div class="text-right w-50 ml-auto testimonial-author">
-                {% if page.testimonial_section.author %}
-                  <p class="text-green-mid font-weight-600 leading-loose">{{ page.testimonial_section.author }}</p>
-                {% endif %}
+              {% if page.testimonial_section.author %}
+              <div class="row testimonial-author">
+                <div class="col-10 col-lg-7 ml-auto">
+                  <p class="text-right text-green-mid font-weight-600 leading-loose">{{ page.testimonial_section.author }}</p>
+                </div>
               </div>
+              {% endif %}
             </div>
           </div>
           {% if page.testimonial_section.image %}

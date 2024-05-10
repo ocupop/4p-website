@@ -29,15 +29,15 @@
       width: 130px;
     }
     @include media-breakpoint-up(xl) {
-      width: 200px;
-      margin-right: 25px;
+      width: 185px;
+      margin-right: 5px;
       img {
         height: 32px;
       }
     }
-    // @include media-breakpoint-up(xxl) {
-    //   margin-right: 50px;
-    // }
+    @media screen and (min-width: 1400px) {
+      margin-right: 20px;
+    } 
   }
 
   .btn {

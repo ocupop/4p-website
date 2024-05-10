@@ -50,7 +50,7 @@ primary_navigation:
               alt:
               icon_image: /img/icons/prescription-solid.png
         - label: Apply for Wholesale
-          url: /
+          url: https://forms.monday.com/forms/e0e3d79d27f063e676b4c4e940707aac?r=use1
           alt:  
         - label: Procurement Application
           url: /
@@ -100,15 +100,15 @@ footer_navigation:
       link: /posts/give-the-gift-of-good-food/
   wholesale_links:
     - label: Restaurants & Grocery
-      link: /wholesale
+      link: /wholesale/restaurants-grocery
     - label: Higher Education
-      link: /wholesale  
+      link: /wholesale/higher-education
     - label: Healthcare & Corporate
-      link: /wholesale  
+      link: /wholesale/healthcare-corporate
     - label: Farm to School
-      link: /wholesale  
+      link: /wholesale/farm-to-school
     - label: Food is Medicine
-      link: /wholesale  
+      link: /wholesale/food-is-medicine
   about_links:
     - label: About Us
       link: /about

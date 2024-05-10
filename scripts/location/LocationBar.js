@@ -169,7 +169,7 @@ const LocationBar = ({ title }) => {
                 getSuggestionItemProps,
                 loading
               }) => (
-                <div className='relative mt-3 mt-lg-5'>
+                <div className='relative mt-3'>
                   <label htmlFor='location-search'>Address</label>
                   <input
                     {...getInputProps({
@@ -195,7 +195,7 @@ const LocationBar = ({ title }) => {
                 </div>
               )}
             </PlacesAutocomplete>
-            <p class='my-5 font-weight-500 text-normal'>
+            <p class='mt-2 mb-5 font-weight-500 text-normal'>
               4P Foods offers grocery delivery and pick-up in communities across
               DC, Virginia & Maryland.{' '}
               <a href='/posts/4p-foods-community-pickup-sites/'>

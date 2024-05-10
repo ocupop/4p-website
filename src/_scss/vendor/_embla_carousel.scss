@@ -3,6 +3,10 @@
 }
 .embla__container {
   display: flex;
+  min-height: 400px;
+  @include media-breakpoint-up(lg) {
+    min-height: 350px;
+  }
 }
 .embla__slide {
   flex: 0 0 100%;
@@ -11,22 +15,34 @@
   }
   @include media-breakpoint-down(lg) {
     p {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       line-height: 1.2;
     }
+  }
+  @include media-breakpoint-up(md) {
+    flex: 0 0 50%;
   }
   @include media-breakpoint-up(lg) {
     flex: 0 0 35%;
     min-width: 0;
     p {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       line-height: 1.2;
     }
   }
   @include media-breakpoint-up(xl) {
+    flex: 0 0 33%;
+
     p {
       font-size: 1.6rem;
       line-height: 1.4;
     }
   }
+  @media screen and (min-width: 1600px) {
+    flex: 0 0 30%;
+  }
+}
+
+.slider-image {
+  height: 100%;
 }

@@ -5,11 +5,11 @@
       {% for item in slider.items %}
         {% if item.image%}
           <div class="embla__slide p-4">
-            <div class="bg-image aspect-4x3 rounded" style="background-image: url({{ item.image | default: 'https://placehold.co/600x400?text=slide'}})"></div>
+            <div class="bg-image slider-image rounded" style="background-image: url({{ item.image | default: 'https://placehold.co/600x400?text=slide'}})"></div>
           </div>
         {% elsif item.text_html %}
           <div class="embla__slide p-4">
-            <div class="d-flex h-100 align-items-between justify-content-center bg-mid p-3 p-lg-4 p-xl-5 rounded">
+            <div class="d-flex h-100 align-items-between justify-content-center bg-mid p-4 rounded">
               <div class="d-flex flex-column justify-content-between">
                 <div class="text-serif font-weight-bold">{{ item.text_html }}</div>
                 {% if item.subtitle%}

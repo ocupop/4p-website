@@ -27,7 +27,7 @@
           {% else %}
             {% assign href_att = 'href' %}
           {% endif %}
-          {% assign slug = link.label | slugify %}
+          {% assign slug = link.url %}
 
           <li class="nav-item {% if link.links %}dropdown mega-dropdown{% endif %}{% if page.url contains slug %} active{% endif %}">
             <a class="nav-link" {% if link.links %}
@@ -77,10 +77,10 @@
             <a href="{{ site.store_url }}" class="btn btn-primary storeLink">Shop Groceries</a>
           </li>
           <li class="nav-item mt-3 mt-lg-0 mx-3">
-            <a href="{{ site.store_url }}/cart" class="nav-icon-link"><i class="ri-shopping-cart-2-fill"></i></a>
+            <a href="{{ site.store_url }}" class="nav-icon-link"><i class="ri-shopping-cart-2-fill"></i></a>
           </li>
           <li class="nav-item mt-3 mt-lg-0">
-            <a href="{{ site.store_url }}/user" class="nav-icon-link"><i class="ri-user-fill"></i></a>
+            <a href="{{ site.store_url }}/login" class="nav-icon-link"><i class="ri-user-fill"></i></a>
           </li>
         </ul>
       </div>
@@ -102,5 +102,7 @@
       </div>
     </div>
   {% endif %}
-  {% include components/LocationBar.html %}
+  {% if page.url == '/' %}
+    {% include components/LocationBar.html %}
+  {% endif %}
 </header>

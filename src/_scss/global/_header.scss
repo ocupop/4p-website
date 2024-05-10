@@ -6,6 +6,13 @@
   background-color: $white;
   box-shadow: 0 0 10px rgba($black, 0.2);
   z-index: 999;
+  .nav-item {
+    &.active {
+      .nav-link {
+        color: $primary;
+      }
+    }
+  }
   @include media-breakpoint-down(lg) {
     .container {
       max-width: 100%;

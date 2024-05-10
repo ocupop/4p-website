@@ -149,6 +149,9 @@
     font-size: 15px;
     color: $green-mid-dark;
     font-weight: 600;
+    &.active {
+      color: $primary;
+    }
     @include media-breakpoint-down(xl) {
       font-size: 15px;
       padding: 20px 10px;
@@ -245,7 +248,7 @@
 
 .nav-icon-link {
   i {
-    color: $green-dark;
+    color: #8E9D92;
     font-size: 20px;
   }
 }

@@ -195,7 +195,7 @@ const LocationBar = ({ title }) => {
                 </div>
               )}
             </PlacesAutocomplete>
-            <p class='my-5'>
+            <p class='my-5 font-weight-500 text-normal'>
               4P Foods offers grocery delivery and pick-up in communities across
               DC, Virginia & Maryland.{' '}
               <a href='/posts/4p-foods-community-pickup-sites/'>
@@ -220,7 +220,7 @@ const LocationBar = ({ title }) => {
                     />
                   </div>
                 </div>
-                <p>Add your email to know when we expand our delivery zone.</p>
+                <p className="font-weight-500 text-normal">Add your email to know when we expand our delivery zone.</p>
               </div>
             )}
           </div>

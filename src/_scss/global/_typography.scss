@@ -19,7 +19,7 @@ h6 {
 h1,
 .h1 {
   font-weight: 700;
-  letter-spacing: -8px;
+  letter-spacing: -6px;
   @include media-breakpoint-down(md) {
     font-size: 1.8rem;
     letter-spacing: -3px;
@@ -40,7 +40,7 @@ h2,
 h3,
 .h3 {
   font-weight: 700;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
   em {
     font-family: $font-family-secondary;
     font-weight: 700;
@@ -86,6 +86,10 @@ em {
 
 .text-sm {
   font-size: 14px;
+}
+
+.text-normal {
+  font-size: 1rem;
 }
 
 i {

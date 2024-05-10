@@ -8,6 +8,7 @@
   background: $mid;
   z-index: 1000;
   border-radius: 10px 0 0 10px;
+  overflow-y: auto;
   @include transition(0.5s);
   &.open {
     transform: translateX(0);

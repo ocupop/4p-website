@@ -14,13 +14,6 @@ _structures:
         url:
         alt:
         nav_links:
-  meta:
-    - label: Meta Data
-      icon: share
-      value:
-        title:
-        description:
-        image:
   faqs:
     - label: FAQ
       icon: question_answer

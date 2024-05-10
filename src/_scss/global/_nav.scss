@@ -28,6 +28,9 @@
     @include media-breakpoint-down(xl) {
       width: 130px;
     }
+    @include media-breakpoint-up(lg) {
+      margin-right: 15px;
+    }
     @include media-breakpoint-up(xl) {
       width: 185px;
       margin-right: 5px;
@@ -42,7 +45,7 @@
 
   .btn {
     font-size: 1rem;
-    padding: 0.5rem 1.75rem;
+    padding: 0.5rem 1.5rem;
     margin: 0 1.5rem;
     text-transform: uppercase;
     @include media-breakpoint-down(lg) {
@@ -50,6 +53,12 @@
       font-size: 13px;
       padding: 0.5rem 1rem;
       margin: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 0.5rem 1.5rem;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 0.5rem 1.75rem;
     }
   }
   .navbar-toggler {

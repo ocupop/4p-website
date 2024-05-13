@@ -29,7 +29,7 @@
           {% endif %}
           {% assign slug = link.url %}
 
-          <li class="nav-item {% if link.links %}dropdown mega-dropdown{% endif %}{% if page.url contains slug %} active{% endif %}">
+          <li class="nav-item {% if link.links %}dropdown mega-dropdown{% endif %}{% if page.url contains link.url %} active{% endif %}">
             <a class="nav-link" {% if link.links %}
                 id="#collapse-{{ link.label | slugify }}"
                 data-toggle="dropdown"

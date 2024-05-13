@@ -487,4 +487,4 @@
 /impact-blog/ /blog/
 /in-the-news/ /press/
 /community-events/ /events/
-
+/mission /about/mission/

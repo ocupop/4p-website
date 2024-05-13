@@ -2,20 +2,20 @@
 primary_navigation:
   navigation:
     - label: Farm Fresh Groceries
-      url:
+      url: /groceries
       alt:
       links:
         - label: How we work
-          url: /how-we-work
+          url: /groceries/how-we-work
           alt:
         - label: Meet our Farmers & Makers
-          url: /farmers
+          url: /groceries/farmers
           alt:
         - label: Recipes
-          url: /recipes
+          url: /groceries/recipes
           alt:  
         - label: FAQ
-          url: /faq
+          url: /groceries/faq
           alt:
         - label: Pick Up Sites
           url: /posts/4p-foods-community-pickup-sites/  
@@ -53,47 +53,49 @@ primary_navigation:
           url: https://forms.monday.com/forms/e0e3d79d27f063e676b4c4e940707aac?r=use1
           alt:  
         - label: Procurement Application
-          url: /
+          url: https://forms.gle/StrB1GJRik4UnsDv8
           alt:  
         
 
     - label: About Us
-      url:
+      url: /about
       alt:
       links:
         - label: About Us
           url: /about
           alt:
         - label: Mission
-          url: /mission
+          url: /about/mission
           alt:
         - label: Team
-          url: /team
+          url: /about/team
           alt:
         - label: Partners
-          url: /partners
+          url: /about/partners
           alt:
     - label: Resources
-      url:
+      url: /resources
       alt:
       links:
         - label: Blog
-          url: /blog
+          url: /resources/blog
           alt:
         - label: Events
-          url: /events
+          url: /resources/events
           alt:
         - label: Press
-          url: /press
+          url: /resources/press
           alt:
 footer_navigation:
   shop_links:
     - label: Shop Now
       link: 'https://shop.4pfoods.com/'
     - label: How We Work
-      link: /how-we-work
+      link: /about/how-we-work
     - label: Pick Up Sites
       link: /posts/4p-foods-community-pickup-sites/
+    - label: Recipes
+      link: /groceries/recipes  
     - label: Referral Programs
       link: /referral-programs
     - label: Gift Cards
@@ -113,31 +115,29 @@ footer_navigation:
     - label: About Us
       link: /about
     - label: Mission
-      link: /mission
+      link: /about/mission
     - label: Team
-      link: /team  
+      link: /about/team  
     - label: Farm Partners
-      link: /farmers
+      link: /about/farmers
     - label: Food and Community Partners
-      link: /partners/
+      link: /about/partners/
     - label: Careers
       link: /careers  
   resources_links:
     - label: Blog
-      link: /blog
-    - label: Recipes
-      link: /recipes
+      link: /resources/blog
     - label: Events
-      link: /events
+      link: /resources/events
     - label: Press
-      link: /press
+      link: /resources/press
     - label: Food Storage Tips
       link: /posts/4p-foods-storage-tips/  
   support_links:
     - label: Contact Us
       link: /contact
     - label: FAQ
-      link: /faq
+      link: /groceries/faq
     - label: Terms of Service
       link: /terms-of-service
     - label: Privacy Policy

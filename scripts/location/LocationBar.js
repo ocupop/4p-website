@@ -62,7 +62,7 @@ const LocationBar = ({ title }) => {
         <div id='location-bar' className='bg-green-light fade-in p-3'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
             <p className='mb-0'>
-              <i class='ri-map-pin-2-fill text-primary mr-2'></i>
+              <i className='ri-map-pin-2-fill text-primary mr-2'></i>
               Groceries incoming! We deliver to{' '}
               <button
                 onClick={handleOpen}
@@ -80,7 +80,7 @@ const LocationBar = ({ title }) => {
         <div id='location-bar' className='bg-mid p-3 fade-in'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
             <p className='mb-0'>
-              <i class='ri-map-pin-2-fill text-warning mr-2'></i>
+              <i className='ri-map-pin-2-fill text-warning mr-2'></i>
               Sorry! We don’t deliver to
               <button onClick={handleOpen} className='bg-transparent border-0'>
                 your area
@@ -100,7 +100,7 @@ const LocationBar = ({ title }) => {
         <div id='location-bar' className='bg-mid p-3 fade-in'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
             <p className='mb-0'>
-              <i class='ri-map-pin-2-fill text-primary mr-2'></i>
+              <i className='ri-map-pin-2-fill text-primary mr-2'></i>
               Check for grocery delivery in{' '}
               <button onClick={handleOpen} className='bg-transparent border-0'>
                 your area
@@ -122,7 +122,7 @@ const LocationBar = ({ title }) => {
         </button>
         <div className='d-flex flex-column h-100 justify-content-between align-items-center'>
           <div>
-            <h6 class='text-primary font-weight-bold'>Home Grocery Delivery</h6>
+            <h6 className='text-primary font-weight-bold'>Home Grocery Delivery</h6>
             {/* User is in bounds, by IP lookup */}
             {isInBounds && boundHasBeenChecked && !address && (
               <h5 className="fade-in">
@@ -195,7 +195,7 @@ const LocationBar = ({ title }) => {
                 </div>
               )}
             </PlacesAutocomplete>
-            <p class='mt-2 mb-5 font-weight-500 text-normal'>
+            <p className='mt-2 mb-5 font-weight-500 text-normal'>
               4P Foods offers grocery delivery and pick-up in communities across
               DC, Virginia & Maryland.{' '}
               <a href='/posts/4p-foods-community-pickup-sites/'>
@@ -207,13 +207,13 @@ const LocationBar = ({ title }) => {
               <div className="mt-3 fade-in">
                 <h5>Outside our delivery zone?</h5>
                 <label htmlFor='email'>Email</label>
-                <div class='input-group mb-3'>
+                <div className='input-group mb-3'>
                   <input
                     type='email'
                     placeholder='Enter Email Address'
                     className='form-control'
                   />
-                  <div class='input-group-append'>
+                  <div className='input-group-append'>
                     <input
                       type='submit'
                       className='btn btn-green-light text-green-dark'
@@ -226,7 +226,7 @@ const LocationBar = ({ title }) => {
           </div>
           <div className='w-100'>
             <div className='text-center mt-5 py-5 border-top'>
-              <h5 class='mb-4'>Wholesale Delivery &amp; pickup</h5>
+              <h5 className='mb-4'>Wholesale Delivery &amp; pickup</h5>
               <a
                 href='/wholesale'
                 className='btn btn-blue-light btn-block text-decoration-none'

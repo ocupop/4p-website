@@ -47,7 +47,7 @@
               <div class="row justify-content-lg-center">
                 {% for link in link.links %}
                 <div class="col-12 col-lg-auto sub-menu mb-lg-0 mb-4">
-                  <a href="{{ link.url }}" class="{% if page.url contains link.url %} active{% endif %}">{{ link.label }}</a>
+                  <a href="{{ link.url }}" class="{% if page.url contains link.url %} active{% endif %}" {% if link.url contains 'https' %}target="_blank" rel="noreferrer"{% endif %}>{{ link.label }}</a>
                 </div>
                 {% endfor %}
               </div>

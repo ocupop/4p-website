@@ -57,7 +57,7 @@
                     <div class="row no-gutters justify-content-lg-center">
                       {% for link in link.sublinks %}
                       <div class="col-12 col-lg-auto sub-menu mb-lg-0 mb-4">
-                        <a href="{{ link.url }}" class="d-flex align-items-center justify-content-center px-lg-2 px-xl-3 {% if page.url contains link.url %} active{% endif %}"><img src="{{ link.icon_image }}" class="inline-block mr-1 mr-xl-3" alt="{{ link.label }} icon"><span>{{ link.label }}</span></a>
+                        <a href="{{ link.url }}" class="d-flex align-items-center justify-content-center {% if page.url contains link.url %} active{% endif %}"><img src="{{ link.icon_image }}" class="inline-block mr-1 mr-xl-3" alt="{{ link.label }} icon"><span>{{ link.label }}</span></a>
                       </div>
                       {% endfor %}
                     </div>

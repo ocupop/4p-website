@@ -146,27 +146,5 @@
     }
   }
   
-  @include media-breakpoint-down(lg) {
-    .sublinks-menu {
-      background-color: $primary;
-      padding-top: 20px;
-      .sub-menu {
-        a {
-          color: $white;
-          font-size: 0.8rem;
-          padding-left: 5px;
-          padding-right: 5px;
-        }
-      }
-    }
-  }
-  @include media-breakpoint-down(md) {
-    .sublinks-menu {
-      .sub-menu {
-        a {
-          font-size: 0.9rem;
-        }
-      }
-    }
-  }
+  
 }

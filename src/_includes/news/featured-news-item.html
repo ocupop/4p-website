@@ -20,13 +20,15 @@
 
         <div class="card-body">
           <div class="content text-left">
-            <h5><a href="{{ featured.url }}" class="text-body">{{ featured.title }}</a></h5>
+            <h5><a href="{{ featured.url }}" class="text-body text-sans-serif">{{ featured.title }}</a></h5>
             <p>{{ featured.date | date: '%B %d, %Y'}} {% if featured.author %}by {{ featured.author }}{% endif %}</p>
-            {% if featured.excerpt %}
-            <p>{{ featured.excerpt | strip_html | truncatewords: 50 }}</p>
-            {% else %}
-            <p>{{ featured.content | strip_html | truncatewords: 50 }}</p>
-            {% endif %}
+            <div class="text-serif">
+              {% if featured.excerpt %}
+                <p>{{ featured.excerpt | strip_html | truncatewords: 50 }}</p>
+              {% else %}
+                <p>{{ featured.content | strip_html | truncatewords: 50 }}</p>
+              {% endif %}
+            </div>
           </div>
         </div>
         <div class="card-footer">

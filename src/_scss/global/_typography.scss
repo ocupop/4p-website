@@ -54,7 +54,7 @@ h3,
 h4,
 .h4 {
   font-weight: 700;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   em {
     font-family: $font-family-secondary;
     font-weight: 700;
@@ -67,7 +67,7 @@ h4,
 
 h5,
 .h5 {
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   @include media-breakpoint-down(md) {
     letter-spacing: -1px;
   }
@@ -114,6 +114,10 @@ i {
   font-family: $font-family-secondary;
   text-transform: none;
   font-weight: normal;
+}
+
+.text-sans-serif {
+  font-family: $font-family-base;
 }
 
 .font-weight-600 {

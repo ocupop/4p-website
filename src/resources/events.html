@@ -55,11 +55,11 @@ footer_image: /uploads/eg958jag.jpg
           </div>
           <div class="card-body">
             <div class="content text-left">
-              <h5>{{ event.title }}</h5>
+              <h5 class="text-sans-serif font-weight-bold">{{ event.title }}</h5>
               <p class="mb-0">{{ event.event_date | date: '%A'}}</p>
               <p class="mb-0">{{ event.event_date | date: '%B %-d, %Y'}}</p>
               <p><small>{{ event.start_time }}{% if event.end_time %} - {{ event.end_time }}{% endif %}</small></p>
-              <p>{{ event.description }}</p>
+              <p class="text-serif">{{ event.description }}</p>
             </div>
           </div>
           <div class="card-footer">
@@ -105,13 +105,13 @@ footer_image: /uploads/eg958jag.jpg
           </div>
           <div class="card-body">
             <div class="content text-left">
-              <h5>{{ event.title }}</h5>
+              <h5 class="text-sans-serif font-weight-bold">{{ event.title }}</h5>
               <p class="mb-0">{{ event.event_date | date: '%A'}}</p>
               <p class="mb-0">{{ event.event_date | date: '%B %-d, %Y'}}</p>
               {% if event.start_time %}
                 <p><small>{{ event.start_time }}{% if event.end_time %} - {{ event.end_time }}{% endif %}</small></p>
               {% endif %}
-              <p>{{ event.description }}</p>
+              <p class="text-serif">{{ event.description }}</p>
             </div>
           </div>
           <div class="card-footer">

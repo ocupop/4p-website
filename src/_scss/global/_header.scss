@@ -27,6 +27,11 @@
         font-size: 0.9rem;
         text-transform: uppercase;
       }
+      .sublinks-menu {
+        a {
+          color: $white;
+        }
+      }
     }
   }
   @include media-breakpoint-down(md) {

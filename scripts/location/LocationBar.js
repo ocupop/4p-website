@@ -59,7 +59,7 @@ const LocationBar = ({ title }) => {
     <>
       {/* User is in Bounds */}
       {isInBounds && boundHasBeenChecked && (
-        <div id='location-bar' className='bg-green-light p-3'>
+        <div id='location-bar' className='bg-green-light fade-in p-3'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
             <p className='mb-0'>
               <i class='ri-map-pin-2-fill text-primary mr-2'></i>
@@ -77,7 +77,7 @@ const LocationBar = ({ title }) => {
 
       {/* User checked bounds, but is out of bounds */}
       {!isInBounds && boundHasBeenChecked && (
-        <div id='location-bar' className='bg-mid p-3'>
+        <div id='location-bar' className='bg-mid p-3 fade-in'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
             <p className='mb-0'>
               <i class='ri-map-pin-2-fill text-warning mr-2'></i>
@@ -97,7 +97,7 @@ const LocationBar = ({ title }) => {
 
       {/* User declined IP lookup (default banner state) */}
       {!isInBounds && !boundHasBeenChecked && (
-        <div id='location-bar' className='bg-mid p-3'>
+        <div id='location-bar' className='bg-mid p-3 fade-in'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
             <p className='mb-0'>
               <i class='ri-map-pin-2-fill text-primary mr-2'></i>
@@ -125,7 +125,7 @@ const LocationBar = ({ title }) => {
             <h6 class='text-primary font-weight-bold'>Home Grocery Delivery</h6>
             {/* User is in bounds, by IP lookup */}
             {isInBounds && boundHasBeenChecked && !address && (
-              <h5>
+              <h5 className="fade-in">
                 Looks like you’re in our delivery area — but please enter your
                 address just to be sure
               </h5>
@@ -133,12 +133,12 @@ const LocationBar = ({ title }) => {
 
             {/* User is in bounds, and looked up by address */}
             {isInBounds && boundHasBeenChecked && address && (
-              <h5>Groceries incoming! We deliver to your area</h5>
+              <h5 className="fade-in">Groceries incoming! We deliver to your area</h5>
             )}
 
             {/* User is out of bounds and they did an IP Lookup, ask to do a search */}
             {!isInBounds && !address && (
-              <h5>
+              <h5 className="fade-in">
                 Looks like you might be outside our delivery area — but please
                 enter your address just to be sure
               </h5>
@@ -146,7 +146,7 @@ const LocationBar = ({ title }) => {
 
             {/* User is out of bounds and they did an address search */}
             {!isInBounds && address && (
-              <h5>
+              <h5 className="fade-in">
                 Sorry! We don’t deliver to your area - learn more about our{' '}
                 <a href=''>pick up options.</a>
               </h5>
@@ -169,7 +169,7 @@ const LocationBar = ({ title }) => {
                 getSuggestionItemProps,
                 loading
               }) => (
-                <div className='relative mt-3'>
+                <div className='position-relative mt-3'>
                   <label htmlFor='location-search'>Address</label>
                   <input
                     {...getInputProps({
@@ -177,13 +177,13 @@ const LocationBar = ({ title }) => {
                       className: ''
                     })}
                   />
-                  <div className=''>
+                  <div className='autocomplete-wrapper'>
                     {loading && <div>Loading...</div>}
                     {suggestions.map((suggestion, i) => (
                       <div
                         key={i + suggestion.placeId}
                         {...getSuggestionItemProps(suggestion, {
-                          className: ''
+                          className: 'suggestion-item'
                         })}
                       >
                         <span key={suggestion.placeId}>
@@ -204,7 +204,7 @@ const LocationBar = ({ title }) => {
             </p>
             {/* User is outside of delivery zone, offer an email input */}
             {!isInBounds && (
-              <div className='mt-3'>
+              <div className="mt-3 fade-in">
                 <h5>Outside our delivery zone?</h5>
                 <label htmlFor='email'>Email</label>
                 <div class='input-group mb-3'>

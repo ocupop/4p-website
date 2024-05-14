@@ -5,7 +5,7 @@
         <div class="editable mb-3 mb-lg-5">
           <h2>More than 200+ farmers feeding communities across the Mid-Atlantic</h2>
         </div>
-        <a href="/farmers" class="btn btn-tan editable mb-4 mb-lg-0">Meet Our Farmers & Makers</a>
+        <a href="/groceries/farmers" class="btn btn-tan editable mb-4 mb-lg-0">Meet Our Farmers & Makers</a>
       </div>
       {% if page.featured_farmer %}
         {% assign featured_farmer = site.farmers | where_exp: 'item', 'item.url contains page.featured_farmer' | first %}

@@ -178,7 +178,7 @@ const LocationBar = ({ title }) => {
                     })}
                   />
                   <div className='autocomplete-wrapper'>
-                    {loading && <div>Loading...</div>}
+                    {loading && <div className="suggestion-item">Loading...</div>}
                     {suggestions.map((suggestion, i) => (
                       <div
                         key={i + suggestion.placeId}

@@ -14,10 +14,10 @@
       {% endif %}
       <div class="col-12 col-lg-5 ml-lg-auto">
         {% if featured_farmer.featured_image %}
-          <div class="bg-image aspect-16x9 rounded" style="background-image: url({{ featured_farmer.featured_image }})"></div>
+          <a href="{{ featured_farmer.url }}" class="bg-image aspect-16x9 rounded" style="background-image: url({{ featured_farmer.featured_image }})"></a>
         {% endif %}
         <h6 class="text-green mt-4">4P's Featured Farm</h6>
-        <h3 class="mb-2">{{ featured_farmer.title }}</h3>
+        <h3 class="mb-2"><a href="{{ featured_farmer.url }}">{{ featured_farmer.title }}</a></h3>
         {% if featured_farmer.description %}
           <div class="leading-loose text-mid opacity-70">{{ featured_farmer.description }}</div>
         {% endif %}

@@ -23,9 +23,9 @@
       {% endif %}
       <div class="card-body">
         <div class="text-left">
-          <h5><a href="{{ item.url }}" class="text-body text-uppercase font-weight-bold">{{ item.title }}</a></h5>
+          <h5 class="text-sans-serif"><a href="{{ item.url }}" class="text-body text-uppercase font-weight-bold">{{ item.title }}</a></h5>
           <p>{{ item.date | date: '%B %d, %Y'}}</p>
-          <p>{{ item.content | strip_html | truncatewords: 30 }}</p>
+          <p class="text-serif">{{ item.content | strip_html | truncatewords: 30 }}</p>
         </div>
       </div>
       <div class="card-footer">

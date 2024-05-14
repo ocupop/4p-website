@@ -17,7 +17,7 @@
         {% if item.links.first.link %}
           <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center mt-5">
             {% for link in item.links %}
-              <a href="{{ link.link}}" class="btn {% cycle 'btn-green-light','btn-blue-light'%} mx-3 mb-3 mb-lg-0">{{ link.label}}</a>
+              <a href="{{ link.link}}" class="btn {% cycle 'btn-green-light','btn-blue-light'%} mx-3 mb-3 mb-lg-0" {% if link.link contains 'http' %}target="_blank" rel="noreferrer"{% endif %}>{{ link.label}}</a>
             {% endfor %}
           </div>
         {% endif %}

@@ -17,12 +17,12 @@
   </script>
   <!-- End Google Tag Manager -->
   <title>
-    {% if page.meta[0].title %}{{ page.meta[0].title | escape }} | 4P Foods{%
+    {% if page.meta.title %}{{ page.meta.title | escape }} | 4P Foods{%
     else %}{{ page.title | escape }} | 4P Foods{% endif %}
   </title>
   <meta
     name="description"
-    content="{% if page.meta[0].description %}{{ page.meta[0].description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+    content="{% if page.meta.description %}{{ page.meta.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
   />
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,7 +65,7 @@
   </script>
   {% endunless%}
 </head>
-<h1>{{ page.show_mailchimp_popup }}</h1>
+<!-- <h1>{{ page.show_mailchimp_popup }}</h1> -->
 
 <!-- Google Places API -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM6xZXlOxYIAc9uiYgufIVKE4mvtkgwkE&libraries=places"></script>

@@ -61,13 +61,12 @@ const LocationBar = ({ title }) => {
       {isInBounds && boundHasBeenChecked && (
         <div id='location-bar' className='bg-green-light fade-in p-3'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
-            <p className='mb-0'>
+            <p className='mb-0 text-center'>
               <i className='ri-map-pin-2-fill text-primary mr-2'></i>
               Groceries incoming! We deliver to{' '}
               <button
                 onClick={handleOpen}
-                className='bg-transparent border-0 border-bottom'
-              >
+                className='bg-transparent border-0 border-bottom'>
                 your area
               </button>
             </p>
@@ -79,12 +78,13 @@ const LocationBar = ({ title }) => {
       {!isInBounds && boundHasBeenChecked && (
         <div id='location-bar' className='bg-mid p-3 fade-in'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
-            <p className='mb-0'>
+            <p className='mb-0 text-center'>
               <i className='ri-map-pin-2-fill text-warning mr-2'></i>
               Sorry! We don’t deliver to
               <button onClick={handleOpen} className='bg-transparent border-0'>
                 your area
               </button>
+              <br className="d-block d-md-none"/>
               learn more about our{' '}
               <a href='/posts/4p-foods-community-pickup-sites/'>
                 pick up options
@@ -100,7 +100,7 @@ const LocationBar = ({ title }) => {
         <div id='location-bar' className='bg-mid p-3 fade-in'>
           <div className='d-flex w-100 justify-content-center align-items-center'>
             <p className='mb-0'>
-              <i className='ri-map-pin-2-fill text-primary mr-2'></i>
+              <i className='ri-map-pin-2-fill text-primary mr-2 text-center'></i>
               Check for grocery delivery in{' '}
               <button onClick={handleOpen} className='bg-transparent border-0'>
                 your area

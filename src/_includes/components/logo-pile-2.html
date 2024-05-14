@@ -1,6 +1,6 @@
-<div class="d-lg-flex flex-wrap flex-lg-nowrap align-items-center justify-content-center logo-pile">
+<div class="d-flex flex-wrap flex-md-nowrap flex-lg-nowrap align-items-center justify-content-center logo-pile">
   {% for logo in include.items %}
-    <div class="text-center">
+    <div class="text-center logo-wrapper">
       {% if logo.link %}<a href="{{logo.link}}" target="_blank">{% endif %}
         {% if logo.featured_image or logo.image %}
           <div class="px-3 px-md-4 px-lg-5 py-4">

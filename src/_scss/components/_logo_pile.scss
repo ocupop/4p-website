@@ -5,3 +5,9 @@
     }
   }
 }
+
+.logo-wrapper {
+  @include media-breakpoint-down(sm) {
+    width: 50%;
+  }
+}

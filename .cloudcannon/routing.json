@@ -3466,7 +3466,7 @@
       "forced": false
     },
     {
-      "from": "/faq",
+      "from": "/faq/",
       "to": "/groceries/faq/",
       "status": 301,
       "substitutions": false,

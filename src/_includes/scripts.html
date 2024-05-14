@@ -210,11 +210,13 @@ const emblaNode = document.querySelector('.embla')
   const autoScrollOptions = {
     stopOnMouseEnter: true,
     stopOnInteraction: false,
-    speed: 0.6
+    speed: 0.6,
+    startDelay: 0
   }
   const autoPlayOptions = {
     stopOnMouseEnter: true,
-    stopOnInteraction: false
+    stopOnInteraction: false,
+    startDelay: 0
   }
   const plugins = [
     EmblaCarouselAutoplay(autoPlayOptions),

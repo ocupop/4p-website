@@ -3424,42 +3424,42 @@
       "forced": false
     },
     {
-      "from": "/mission",
+      "from": "/mission/",
       "to": "/about/mission/",
       "status": 301,
       "substitutions": false,
       "forced": false
     },
     {
-      "from": "/team",
+      "from": "/team/",
       "to": "/about/team/",
       "status": 301,
       "substitutions": false,
       "forced": false
     },
     {
-      "from": "/partners",
+      "from": "/partners/",
       "to": "/about/partners/",
       "status": 301,
       "substitutions": false,
       "forced": false
     },
     {
-      "from": "/how-we-work",
+      "from": "/how-we-work/",
       "to": "/groceries/how-we-work/",
       "status": 301,
       "substitutions": false,
       "forced": false
     },
     {
-      "from": "/farmers",
+      "from": "/farmers/",
       "to": "/groceries/farmers/",
       "status": 301,
       "substitutions": false,
       "forced": false
     },
     {
-      "from": "/recipes",
+      "from": "/recipes/",
       "to": "/groceries/recipes/",
       "status": 301,
       "substitutions": false,
@@ -3473,21 +3473,21 @@
       "forced": false
     },
     {
-      "from": "/blog",
+      "from": "/blog/",
       "to": "/resources/blog/",
       "status": 301,
       "substitutions": false,
       "forced": false
     },
     {
-      "from": "/events",
+      "from": "/events/",
       "to": "/resources/events/",
       "status": 301,
       "substitutions": false,
       "forced": false
     },
     {
-      "from": "/press",
+      "from": "/press/",
       "to": "/resources/press/",
       "status": 301,
       "substitutions": false,

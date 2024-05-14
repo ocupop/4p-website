@@ -12,13 +12,13 @@
       </div>
       <div class="card-body">
         <div class="content text-left">
-          <h5><a href="{{ post.url }}" class="text-body">{{ post.title }}</a></h5>
+          <h5 class="text-sans-serif"><a href="{{ post.url }}" class="text-body">{{ post.title }}</a></h5>
           <p>{{ post.date | date: '%B %d, %Y'}}</p>
-          <div>
+          <div class="text-serif">
             {% if post.excerpt %}
-              <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+              <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
             {% else %}
-              <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+              <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
             {% endif %}
           </div>
         </div>

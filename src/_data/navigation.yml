@@ -91,7 +91,7 @@ footer_navigation:
     - label: Shop Now
       link: 'https://shop.4pfoods.com/'
     - label: How We Work
-      link: /about/how-we-work/
+      link: /groceries/how-we-work/
     - label: Pick Up Sites
       link: /posts/4p-foods-community-pickup-sites/
     - label: Recipes
@@ -119,7 +119,7 @@ footer_navigation:
     - label: Team
       link: /about/team/
     - label: Farm Partners
-      link: /about/farmers/
+      link: /groceries/farmers/
     - label: Food and Community Partners
       link: /about/partners/
     - label: Careers

@@ -88,7 +88,7 @@ footer_image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
       </div>
     </div>
   </div>
-  <div class="container-fluid" data-cms-bind="#wholesale_industries">  
+  <div class="container-fluid">  
     <div class="row mt-5 justify-content-center">
       <div class="col-12 col-xl-10 mx-auto">
         <ul id="{{ page.title }}-tabs" class="nav nav-tabs tabs-buttons">
@@ -105,7 +105,7 @@ footer_image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
   <div class="container"> 
     <div class="row">
       <div class="col-12">
-        <div class="tab-content mt-5">
+        <div class="tab-content mt-5" data-cms-bind="#wholesale_industries">
           {% for object in page.wholesale_industries %}
           {% assign item = site.wholesale_industries | where_exp: 'item', 'item.url contains object' | first %}
             <div id="{{ item.title | slugify }}" role="tabpanel" aria-labelledby="tab-{{ item.title | slugify }}" class="tab-pane fade {% if forloop.first %}show active{% endif %}">

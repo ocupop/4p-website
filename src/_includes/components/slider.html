@@ -1,6 +1,6 @@
 {% assign slider = include.slider %}
 {% if slider.show_section %}
-  <div class="embla">
+  <div class="embla" data-cms-bind="#slider">
     <div class="embla__container">
       {% for item in slider.items %}
         {% if item.image%}

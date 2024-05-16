@@ -4,8 +4,3 @@ header_notification:
 bar_notification:
   notification_text:
   link:
-homepage_notification:
-  show_notification: true
-  notification_text: Celebrate Earth Day With Us, April 20th
-  subtitle:  Good Food And Home-Grown Fun
-  link: /events/4p-foods-2024-earth-day-celebration/

@@ -43,7 +43,12 @@ slider:
     - image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
       title_black_text:
       title_green_text:
-      subtitle:      
+      subtitle:
+notification:
+  show_notification: true
+  notification_text: Celebrate Earth Day With Us, April 20th
+  subtitle:  Good Food And Home-Grown Fun
+  link: /events/4p-foods-2024-earth-day-celebration/        
 purpose_section:
   show_section: true
   items:
@@ -224,11 +229,10 @@ featured_recipes:
       </div>
     </div>
   </div>
-  <div class="container my-5" data-cms-bind="#logo_image_grid">
-    {% include components/logo-pile.html items=page.logo_image_grid %}
-  </div>
   {% if page.logo_grid_section.show_section %}
-    {% include components/logo-pile-2.html items=page.logo_grid_section.items grayscale=true %}
+    <div class="mt-5" data-cms-bind="#logo_grid_section">
+      {% include components/logo-pile-2.html items=page.logo_grid_section.items grayscale=true %}
+    </div>
   {% endif %}
 </section>
 <section class="bg-light bg-image aspect-auto bg-15 bg-left-bottom" style="background-image: url(/img/bg-illustrations/4P-Illustrations_spinach-1.png)">

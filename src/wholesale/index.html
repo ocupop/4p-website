@@ -88,8 +88,7 @@ footer_image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
       </div>
     </div>
   </div>
-  <div class="container-fluid">  
-    {% assign tabs = include.item %}
+  <div class="container-fluid" data-cms-bind="#wholesale_industries">  
     <div class="row mt-5 justify-content-center">
       <div class="col-12 col-xl-10 mx-auto">
         <ul id="{{ page.title }}-tabs" class="nav nav-tabs tabs-buttons">
@@ -149,7 +148,7 @@ footer_image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
         </p>
       </div>
     </div>
-    <div class="row mt-5 no-gutters">
+    <div class="row mt-5 no-gutters" data-cms-bind="#catalog_categories">
       {% for item in page.catalog_categories %}
         <div class="col-12 col-lg-3">
           <div class="text-center bg-tan rounded p-4 h-100 m-1">

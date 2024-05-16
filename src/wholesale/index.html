@@ -72,7 +72,7 @@ footer_image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
         <h2 class="editable mb-4">Your partner to build stronger local food systems in the <code>Mid-Atlantic and Eastern Seaboard</code></h2>
         <p class="lead leading-loose text-black-light editable">We work with businesses who want to buy local and offer their customers the best. Whether you’re a fine dining establishment with just a few tables or a school system with hundreds of children to feed, we link you to fresher, more ethical foods at wholesale prices with wholesale ease. </p>
       </div>
-      <div class="col-12 col-lg-5 px-lg-5" data-cms-bind="#image-grid">
+      <div class="col-12 col-lg-5 px-lg-5" data-cms-bind="#image_grid">
         {% include components/image-grid-split-vertical-2.html item=page.image_grid %}
       </div>
     </div>
@@ -102,10 +102,10 @@ footer_image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
       </div>
     </div>
   </div>
-  <div class="container"> 
+  <div class="container" data-cms-bind="#wholesale_industries"> 
     <div class="row">
       <div class="col-12">
-        <div class="tab-content mt-5" data-cms-bind="#wholesale_industries">
+        <div class="tab-content mt-5">
           {% for object in page.wholesale_industries %}
           {% assign item = site.wholesale_industries | where_exp: 'item', 'item.url contains object' | first %}
             <div id="{{ item.title | slugify }}" role="tabpanel" aria-labelledby="tab-{{ item.title | slugify }}" class="tab-pane fade {% if forloop.first %}show active{% endif %}">

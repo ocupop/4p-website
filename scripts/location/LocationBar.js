@@ -226,12 +226,12 @@ const LocationBar = ({ title }) => {
           </div>
           <div className='w-100'>
             <div className='text-center mt-5 py-5 border-top'>
-              <h5 className='mb-4'>Wholesale Delivery &amp; pickup</h5>
+              <h5 className='mb-4'>Wholesale Delivery &amp; Pickup</h5>
               <a
                 href='/wholesale'
                 className='btn btn-blue-light btn-block text-decoration-none'
               >
-                Explore Wholesale Options
+                Wholesale Options
               </a>
             </div>
           </div>

@@ -7,6 +7,7 @@ import PlacesAutocomplete, {
   Suggestion
 } from 'react-places-autocomplete'
 import Cookies from 'universal-cookie'
+import CognitoForm from '@tylermenezes/cognitoforms-react';
 
 const LocationBar = ({ title }) => {
   const [drawerOpen, setDrawerOpen] = useState(false)
@@ -206,7 +207,7 @@ const LocationBar = ({ title }) => {
             {!isInBounds && (
               <div className="mt-3 fade-in">
                 <h5>Outside our delivery zone?</h5>
-                <label htmlFor='email'>Email</label>
+                {/* <label htmlFor='email'>Email</label>
                 <div className='input-group mb-3'>
                   <input
                     type='email'
@@ -219,8 +220,54 @@ const LocationBar = ({ title }) => {
                       className='btn btn-green-light text-green-dark'
                     />
                   </div>
-                </div>
+                </div> */}
+                <CognitoForm
+                    formId={146}
+                    accountId={`bbN8iw1MJUqjPe6aHn-_rw`}
+                    css="* { 
+                      .cog-wrapper {
+                        display: flex;
+                        align-items: center;
+                      }
+                      .cog-row {
+                        width: 80%;
+                      }
+
+                      .cog-label {
+                        margin-bottom: 0;
+                      }
+                      .el-input__inner {
+                        margin-bottom: 0 !important;
+                        border-radius: 6px 0 0 6px !important;
+                      }
+
+                      .cog-button {
+                        border-radius: 6px;
+                        border: 2px solid #173A21;
+                        height: 48px;
+                        background-color: #e7f1e2;
+                        color: #255B35 !important;
+                        text-align: center;
+                        vertical-align: middle;
+                        line-height: 1.5;
+                        padding: 10px 25px;
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        margin-top: 0 !important;
+                        border-radius: 0 6px 6px 0;
+                        border-left: 0;
+                      }
+                      .cog-page__navigation {
+                        margin-bottom: -20px !important;
+                        padding-top: 0 !important;
+                      }
+                      .cog-button--navigation {
+                        margin-top: 0;
+                      }
+                    }"
+                  />
                 <p className="font-weight-500 text-normal">Add your email to know when we expand our delivery zone.</p>
+                
               </div>
             )}
           </div>

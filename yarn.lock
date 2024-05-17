@@ -2556,6 +2556,13 @@
     "@turf/invariant" "^6.5.0"
     d3-voronoi "1.1.2"
 
+"@tylermenezes/cognitoforms-react@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@tylermenezes/cognitoforms-react/-/cognitoforms-react-2.1.0.tgz#8942f8811f9765a7216687a432dfe7f05a7a2256"
+  integrity sha512-Anf/83LFebzpYIqo9kF2plKaRhDTO8nfHmJR2ZD3jJrv7hybB4kpfXCBPirASKRFMBLqGgt+PN/08/RkxiLeOQ==
+  dependencies:
+    prop-types "^15.7.2"
+
 "@types/cookie@^0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@types/cookie/-/cookie-0.4.1.tgz#bfd02c1f2224567676c1545199f87c3a861d878d"

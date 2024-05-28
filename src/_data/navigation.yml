@@ -48,11 +48,11 @@ primary_navigation:
               url: /wholesale/food-is-medicine/
               alt:
               icon_image: /img/icons/prescription-solid.png
-        - label: Apply for Wholesale
+        - label: Apply to Purchase Wholesale
           url: >-
             https://forms.monday.com/forms/e0e3d79d27f063e676b4c4e940707aac?r=use1
           alt:
-        - label: Procurement Application
+        - label: Sell to Us
           url: https://forms.gle/StrB1GJRik4UnsDv8
           alt:
     - label: About Us

@@ -1,4 +1,3 @@
----
 primary_navigation:
   navigation:
     - label: Farm Fresh Groceries
@@ -13,12 +12,12 @@ primary_navigation:
           alt:
         - label: Recipes
           url: /groceries/recipes/
-          alt:  
+          alt:
         - label: FAQ
           url: /groceries/faq/
           alt:
         - label: Pick Up Sites
-          url: /posts/4p-foods-community-pickup-sites/  
+          url: /posts/4p-foods-community-pickup-sites/
           alt:
     - label: Wholesale
       url: /wholesale/
@@ -50,13 +49,12 @@ primary_navigation:
               alt:
               icon_image: /img/icons/prescription-solid.png
         - label: Apply for Wholesale
-          url: https://forms.monday.com/forms/e0e3d79d27f063e676b4c4e940707aac?r=use1
-          alt:  
+          url: >-
+            https://forms.monday.com/forms/e0e3d79d27f063e676b4c4e940707aac?r=use1
+          alt:
         - label: Procurement Application
           url: https://forms.gle/StrB1GJRik4UnsDv8
-          alt:  
-        
-
+          alt:
     - label: About Us
       url: /about/
       alt:
@@ -89,7 +87,7 @@ primary_navigation:
 footer_navigation:
   shop_links:
     - label: Shop Now
-      link: 'https://shop.4pfoods.com/'
+      link: https://shop.4pfoods.com/
     - label: How We Work
       link: /groceries/how-we-work/
     - label: Pick Up Sites
@@ -118,9 +116,9 @@ footer_navigation:
       link: /about/mission/
     - label: Team
       link: /about/team/
-    - label: Farm Partners
+    - label: Farmer & Makers
       link: /groceries/farmers/
-    - label: Food and Community Partners
+    - label: Food & Community Partners
       link: /about/partners/
     - label: Careers
       link: /careers/
@@ -132,7 +130,7 @@ footer_navigation:
     - label: Press
       link: /resources/press/
     - label: Food Storage Tips
-      link: /posts/4p-foods-storage-tips/  
+      link: /posts/4p-foods-storage-tips/
   support_links:
     - label: Contact Us
       link: /contact/
@@ -144,13 +142,12 @@ footer_navigation:
       link: /privacy-policy/
   connect_with_us_links:
     - label: instagram
-      link: 'https://www.instagram.com/4pfoods/'
+      link: https://www.instagram.com/4pfoods/
     - label: facebook
-      link: 'https://www.facebook.com/4pfoods/'
+      link: https://www.facebook.com/4pfoods/
     - label: twitter
-      link: 'https://twitter.com/4PFoods'
+      link: https://twitter.com/4PFoods
     - label: pinterest
-      link: 'https://www.pinterest.ca/4pfoods/'
+      link: https://www.pinterest.ca/4pfoods/
     - label: linkedin
-      link: 'https://www.linkedin.com/company/4pfoods/'  
----
+      link: https://www.linkedin.com/company/4pfoods/

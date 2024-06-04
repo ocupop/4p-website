@@ -66,6 +66,7 @@ layout: default
     {% include components/logo-pile-2.html items=page.logo_grid_section.items grayscale=false %}
   </section>
 {% endif %}
+{% if page.resources_section.show_section %}
 <section>
   <div class="container">
     <div class="row">
@@ -84,6 +85,7 @@ layout: default
     </div>
   </div>
 </section>
+{% endif %}
 {% include featured-farmer.html %}
 {% if page.contact_cta.show_section %}
   <section class="bg-light bg-image bg-30 bg-left-bottom aspect-none" style="background-image: url(/img/bg-illustrations/4P-Illustrations-07.png)">

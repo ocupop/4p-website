@@ -1,0 +1,10 @@
+{% assign item = include.item %}
+<div class="image-grid vertical-image-right">
+  <div class="left-col">
+    <div class="bg-image aspect-4x3 rounded mb-3" style="background-image: url({{ item[0].image }})"></div>
+    <div class="bg-image aspect-2x1 rounded ml-5" style="background-image: url({{ item[1].image }})"></div>
+  </div>
+  <div class="right-col">
+    <div class="bg-image aspect-1x2 rounded" style="background-image: url({{ item[2].image }})"></div>
+  </div>
+</div>

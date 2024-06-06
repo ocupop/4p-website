@@ -13,8 +13,8 @@ const Hit = ({ hit }) => {
         ></div>
       </a>
       <div className="card-body">
-        <h4><Highlight attribute="title" hit={hit} tagName="strong" /></h4>
-        <div>
+        <h4 className="text-sans-serif"><Highlight attribute="title" hit={hit} tagName="strong" /></h4>
+        <div className="text-serif">
           <Snippet attribute="content" hit={hit} tagName="strong" />
         </div>
       </div>

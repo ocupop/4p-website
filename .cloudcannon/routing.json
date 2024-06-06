@@ -1,0 +1,3497 @@
+{
+  "routes": [
+    {
+      "from": "/butternut/",
+      "to": "https://docs.google.com/spreadsheets/d/1rqOdRninlWYkOgqjzDAWdKye6GDhjrXZkkBc114gKbI/edit#gid=2053856062",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/api/elements/",
+      "to": "/api/elements.json",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/api/pages/",
+      "to": "/api/pages.json",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/api/farmers/",
+      "to": "/api/farmers.json",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/api/events/",
+      "to": "/api/events.json",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/api/posts/",
+      "to": "/api/posts.json",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/api/team/",
+      "to": "/api/team.json",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/api/careers/",
+      "to": "/api/careers.json",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/get-a-bag/",
+      "to": "/how-to-shop",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/waitlist/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/party/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/introducing-4p-foods-gift-cards-2/",
+      "to": "/posts/give-the-gift-of-good-food/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/give-the-gift-of-good-food/",
+      "to": "/posts/give-the-gift-of-good-food/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/year-in-review-2020/",
+      "to": "/posts/2020-year-in-review/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/wholesale-programs/",
+      "to": "/wholesale/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/4p-foods-storage-tips/",
+      "to": "/posts/4p-foods-storage-tips/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/about-us/",
+      "to": "/about",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/about/our-partners/",
+      "to": "/our-partners",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/about/our-team/",
+      "to": "/our-team",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/careers/delivery-driver-1/our-partners/",
+      "to": "/careers",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/careers/delivery-driver-1/our-team/",
+      "to": "/careers",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/careers/delivery-driver/our-partners/",
+      "to": "/careers",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/careers/delivery-driver/our-team/",
+      "to": "/careers",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/careers/grower-support-specialist/our-partners/",
+      "to": "/careers",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/careers/grower-support-specialist/our-team/",
+      "to": "/careers",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/careers/our-partners/",
+      "to": "/our-partners",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/careers/our-team/",
+      "to": "/our-team",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/careers/shift-supervisor/our-partners/",
+      "to": "/careers",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/careers/shift-supervisor/our-team/",
+      "to": "/careers",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/community-events/our-partners/",
+      "to": "/community-events",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/community-events/our-team/",
+      "to": "/community-events",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/contact/our-partners/",
+      "to": "/contact",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/contact/our-team/",
+      "to": "/contact",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/daynas-gluten-free-recipes-bbq-ribs-and-chicken/",
+      "to": "/posts/recipes/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/events/virtual-tour-of-jl-green-farm/our-partners/",
+      "to": "/events/virtual-tour-of-jl-green-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/events/virtual-tour-of-jl-green-farm/our-team/",
+      "to": "/events/virtual-tour-of-jl-green-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/events/virtual-tour-of-new-day-farms/our-partners/",
+      "to": "/events/virtual-tour-of-new-day-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/events/virtual-tour-of-new-day-farms/our-team/",
+      "to": "/events/virtual-tour-of-new-day-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/events/virtual-tour-of-number1-sons-pickle-factory/our-partners/",
+      "to": "/community-events",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/events/virtual-tour-of-number1-sons-pickle-factory/our-team/",
+      "to": "/community-events",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/events/virtual-tour-with-agriberry-farm--csa/our-partners/",
+      "to": "/events/virtual-tour-with-agriberry-farm--csa/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/events/virtual-tour-with-agriberry-farm--csa/our-team/",
+      "to": "/events/virtual-tour-with-agriberry-farm--csa/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/events/virtual-tour-with-firefly-farms-cheese/our-partners/",
+      "to": "/events/virtual-tour-with-firefly-farms-cheese/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/events/virtual-tour-with-firefly-farms-cheese/our-team/",
+      "to": "/events/virtual-tour-with-firefly-farms-cheese/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/events/virtual-tour-with-together-we-bake/our-partners/",
+      "to": "/events/virtual-tour-with-together-we-bake/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/events/virtual-tour-with-together-we-bake/our-team/",
+      "to": "/events/virtual-tour-with-together-we-bake/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/faq/our-partners/",
+      "to": "/faq",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/faq/our-team/",
+      "to": "/faq",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmer-profile-number-one-sons/",
+      "to": "/farmers/number-1-sons/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmer-profile-whiffletree-farm-in-warrenton-va/",
+      "to": "/farmers/whiffletree-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/100-bowls/our-partners/",
+      "to": "/farmers/100-bowls/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/100-bowls/our-team/",
+      "to": "/farmers/100-bowls/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/agriberry-farm/our-partners/",
+      "to": "/farmers/agriberry-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/agriberry-farm/our-team/",
+      "to": "/farmers/agriberry-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/appalachian-harvest/our-partners/",
+      "to": "/farmers/appalachian-harvest/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/appalachian-harvest/our-team/",
+      "to": "/farmers/appalachian-harvest/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/autumn-olive-farms/our-partners/",
+      "to": "/farmers/autumn-olive-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/autumn-olive-farms/our-team/",
+      "to": "/farmers/autumn-olive-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/ayrshire-farm/our-partners/",
+      "to": "/farmers/ayrshire-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/ayrshire-farm/our-team/",
+      "to": "/farmers/ayrshire-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/back-pocket-provisions/Back%20Pocket%20Provisions/",
+      "to": "/farmers/back-pocket-provisions/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/back-pocket-provisions/our-partners/",
+      "to": "/farmers/back-pocket-provisions/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/back-pocket-provisions/our-team/",
+      "to": "/farmers/back-pocket-provisions/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/bees--trees-farm/our-partners/",
+      "to": "/farmers/bees--trees-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/bees--trees-farm/our-team/",
+      "to": "/farmers/bees--trees-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/bellair-farm/our-partners/",
+      "to": "/farmers/bellair-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/bellair-farm/our-team/",
+      "to": "/farmers/bellair-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/berry-simple-farm/our-partners/",
+      "to": "/farmers/berry-simple-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/berry-simple-farm/our-team/",
+      "to": "/farmers/berry-simple-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/browntown-farms/our-partners/",
+      "to": "/farmers/browntown-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/browntown-farms/our-team/",
+      "to": "/farmers/browntown-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/church-hill-produce/our-partners/",
+      "to": "/farmers/church-hill-produce/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/church-hill-produce/our-team/",
+      "to": "/farmers/church-hill-produce/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/clarks-old-peach-tree-farm/our-partners/",
+      "to": "/farmers/clarks-old-peach-tree-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/clarks-old-peach-tree-farm/our-team/",
+      "to": "/farmers/clarks-old-peach-tree-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/cocoa-compassion/our-partners/",
+      "to": "/farmers/cocoa-compassion/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/cocoa-compassion/our-team/",
+      "to": "/farmers/cocoa-compassion/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/crown-orchard/our-partners/",
+      "to": "/farmers/crown-orchard/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/crown-orchard/our-team/",
+      "to": "/farmers/crown-orchard/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/dickie-brothers-orchard/our-partners/",
+      "to": "/farmers/dickie-brothers-orchard/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/dickie-brothers-orchard/our-team/",
+      "to": "/farmers/dickie-brothers-orchard/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/double-h-farm/our-partners/",
+      "to": "/farmers/double-h-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/double-h-farm/our-team/",
+      "to": "/farmers/double-h-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/dress-it-up-dressing/our-partners/",
+      "to": "/farmers/dress-it-up-dressing/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/dress-it-up-dressing/our-team/",
+      "to": "/farmers/dress-it-up-dressing/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/e3-ranch/our-partners/",
+      "to": "/farmers/e3-ranch/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/e3-ranch/our-team/",
+      "to": "/farmers/e3-ranch/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/ebys-produce/our-partners/",
+      "to": "/farmers/ebys-produce/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/ebys-produce/our-team/",
+      "to": "/farmers/ebys-produce/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/fields-edge-farm/our-partners/",
+      "to": "/farmers/fields-edge-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/fields-edge-farm/our-team/",
+      "to": "/farmers/fields-edge-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/firefly-farms/our-partners/",
+      "to": "/farmers/firefly-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/firefly-farms/our-team/",
+      "to": "/farmers/firefly-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/firsthand-foods/our-partners/",
+      "to": "/farmers/firsthand-foods/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/firsthand-foods/our-team/",
+      "to": "/farmers/firsthand-foods/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/franklin-sustainable-farms/our-partners/",
+      "to": "/farmers/franklin-sustainable-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/franklin-sustainable-farms/our-team/",
+      "to": "/farmers/franklin-sustainable-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/fresh2o-growers/our-partners/",
+      "to": "/farmers/fresh2o-growers/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/fresh2o-growers/our-team/",
+      "to": "/farmers/fresh2o-growers/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/fruitcycle/our-partners/",
+      "to": "/farmers/fruitcycle/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/fruitcycle/our-team/",
+      "to": "/farmers/fruitcycle/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/g--flores-produce/our-partners/",
+      "to": "/farmers/g--flores-produce/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/g--flores-produce/our-team/",
+      "to": "/farmers/g--flores-produce/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/gabriele-rausse-winery/our-partners/",
+      "to": "/farmers/gabriele-rausse-winery/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/gabriele-rausse-winery/our-team/",
+      "to": "/farmers/gabriele-rausse-winery/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/goldman-farm/our-partners/",
+      "to": "/farmers/goldman-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/goldman-farm/our-team/",
+      "to": "/farmers/goldman-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/good-phyte-foods/our-partners/",
+      "to": "/farmers/good-phyte-foods/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/good-phyte-foods/our-team/",
+      "to": "/farmers/good-phyte-foods/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/hamilton-heights-dairy/our-partners/",
+      "to": "/farmers/hamilton-heights-dairy/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/hamilton-heights-dairy/our-team/",
+      "to": "/farmers/hamilton-heights-dairy/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/happy-dirt-east-carolina-organics-1/our-partners/",
+      "to": "/farmers/happy-dirt-east-carolina-organics-1/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/happy-dirt-east-carolina-organics-1/our-team/",
+      "to": "/farmers/happy-dirt-east-carolina-organics-1/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/hartland-natural-farm/our-partners/",
+      "to": "/farmers/hartland-natural-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/hartland-natural-farm/our-team/",
+      "to": "/farmers/hartland-natural-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/heritage-glen-farms-kelly-turkeys-usa/our-partners/",
+      "to": "/farmers/heritage-glen-farms-kelly-turkeys-usa/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/heritage-glen-farms-kelly-turkeys-usa/our-team/",
+      "to": "/farmers/heritage-glen-farms-kelly-turkeys-usa/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/hollands-three-rivers-farm/our-partners/",
+      "to": "/farmers/hollands-three-rivers-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/hollands-three-rivers-farm/our-team/",
+      "to": "/farmers/hollands-three-rivers-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/jl-green-farm/our-partners/",
+      "to": "/farmers/jl-green-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/jl-green-farm/our-team/",
+      "to": "/farmers/jl-green-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/kirby-farms/our-partners/",
+      "to": "/farmers/kirby-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/kirby-farms/our-team/",
+      "to": "/farmers/kirby-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/little-sesame/our-partners/",
+      "to": "/farmers/little-sesame/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/little-sesame/our-team/",
+      "to": "/farmers/little-sesame/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/locksley-farmstead-cheese-co-/our-partners/",
+      "to": "/farmers/locksley-farmstead-cheese-co-/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/locksley-farmstead-cheese-co-/our-team/",
+      "to": "/farmers/locksley-farmstead-cheese-co-/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/malcolms-market-garden/our-partners/",
+      "to": "/farmers/malcolms-market-garden/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/malcolms-market-garden/our-team/",
+      "to": "/farmers/malcolms-market-garden/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/messicks-farm/our-partners/",
+      "to": "/farmers/messicks-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/messicks-farm/our-team/",
+      "to": "/farmers/messicks-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/mocks-greenhouse--farm/our-partners/",
+      "to": "/farmers/mocks-greenhouse--farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/mocks-greenhouse--farm/our-team/",
+      "to": "/farmers/mocks-greenhouse--farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/mountain-view-farm-llc/our-partners/",
+      "to": "/farmers/mountain-view-farm-llc/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/mountain-view-farm-llc/our-team/",
+      "to": "/farmers/mountain-view-farm-llc/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/mt--crawford-creamery/our-partners/",
+      "to": "/farmers/mt--crawford-creamery/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/mt--crawford-creamery/our-team/",
+      "to": "/farmers/mt--crawford-creamery/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/new-communities/our-partners/",
+      "to": "/farmers/new-communities/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/new-communities/our-team/",
+      "to": "/farmers/new-communities/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/new-day-farmstrade/our-partners/",
+      "to": "/farmers/new-day-farmstrade/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/new-day-farmstrade/our-team/",
+      "to": "/farmers/new-day-farmstrade/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/number-1-sons/our-partners/",
+      "to": "/farmers/number-1-sons/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/number-1-sons/our-team/",
+      "to": "/farmers/number-1-sons/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/orange-dot-baking-company/our-partners/",
+      "to": "/farmers/orange-dot-baking-company/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/orange-dot-baking-company/our-team/",
+      "to": "/farmers/orange-dot-baking-company/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/our-partners/",
+      "to": "/our-farmers",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/our-team/",
+      "to": "/our-farmers",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/papa-weavers-pork/our-partners/",
+      "to": "/farmers/papa-weavers-pork/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/papa-weavers-pork/our-team/",
+      "to": "/farmers/papa-weavers-pork/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/phantom-hill-farm/our-partners/",
+      "to": "/farmers/phantom-hill-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/phantom-hill-farm/our-team/",
+      "to": "/farmers/phantom-hill-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/piedmont-progressive-farmers-group/our-partners/",
+      "to": "/farmers/piedmont-progressive-farmers-group/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/piedmont-progressive-farmers-group/our-team/",
+      "to": "/farmers/piedmont-progressive-farmers-group/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/planet-earth-diversified/our-partners/",
+      "to": "/farmers/planet-earth-diversified/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/planet-earth-diversified/our-team/",
+      "to": "/farmers/planet-earth-diversified/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/pratley-farm/our-partners/",
+      "to": "/farmers/pratley-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/pratley-farm/our-team/",
+      "to": "/farmers/pratley-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/queen-of-greens-farm/our-partners/",
+      "to": "/farmers/queen-of-greens/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/queen-of-greens-farm/our-team/",
+      "to": "/farmers/queen-of-greens/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/queen-of-greens-farm/",
+      "to": "/farmers/queen-of-greens/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/radical-roots-community-farm/our-partners/",
+      "to": "/farmers/radical-roots-community-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/radical-roots-community-farm/our-team/",
+      "to": "/farmers/radical-roots-community-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/reese-farm/our-partners/",
+      "to": "/farmers/reese-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/reese-farm/our-team/",
+      "to": "/farmers/reese-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/riverside-produce-farm/our-partners/",
+      "to": "/farmers/riverside-produce-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/riverside-produce-farm/our-team/",
+      "to": "/farmers/riverside-produce-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/riverstone-organic-farm/our-partners/",
+      "to": "/farmers/riverstone-organic-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/riverstone-organic-farm/our-team/",
+      "to": "/farmers/riverstone-organic-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/saunders-brothers-orchard/our-partners/",
+      "to": "/farmers/saunders-brothers-orchard/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/saunders-brothers-orchard/our-team/",
+      "to": "/farmers/saunders-brothers-orchard/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/schuyler-greens-company/our-partners/",
+      "to": "/farmers/schuyler-greens-company/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/schuyler-greens-company/our-team/",
+      "to": "/farmers/schuyler-greens-company/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/seamans-orchard/our-partners/",
+      "to": "/farmers/seamans-orchard/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/seamans-orchard/our-team/",
+      "to": "/farmers/seamans-orchard/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/sensenig-turkey-farm/our-partners/",
+      "to": "/farmers/sensenig-turkey-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/sensenig-turkey-farm/our-team/",
+      "to": "/farmers/sensenig-turkey-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/shenandoah-family-farms/our-partners/",
+      "to": "/farmers/shenandoah-family-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/shenandoah-family-farms/our-team/",
+      "to": "/farmers/shenandoah-family-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/shenandoah-valley-organics-farmer-focus/our-partners/",
+      "to": "/farmers/shenandoah-valley-organics-farmer-focus/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/shenandoah-valley-organics-farmer-focus/our-team/",
+      "to": "/farmers/shenandoah-valley-organics-farmer-focus/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/shepards-hill-farm/our-partners/",
+      "to": "/farmers/shepards-hill-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/shepards-hill-farm/our-team/",
+      "to": "/farmers/shepards-hill-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/singing-earth-produce/our-partners/",
+      "to": "/farmers/singing-earth-produce/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/singing-earth-produce/our-team/",
+      "to": "/farmers/singing-earth-produce/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/south-mountain-creamery/our-partners/",
+      "to": "/farmers/south-mountain-creamery/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/south-mountain-creamery/our-team/",
+      "to": "/farmers/south-mountain-creamery/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/spring-hill-produce/our-partners/",
+      "to": "/farmers/spring-hill-produce/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/spring-hill-produce/our-team/",
+      "to": "/farmers/spring-hill-produce/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/sunflower-flats-farm/our-partners/",
+      "to": "/farmers/sunflower-flats-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/sunflower-flats-farm/our-team/",
+      "to": "/farmers/sunflower-flats-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/sunnyfield-farm/our-partners/",
+      "to": "/farmers/sunnyfield-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/sunnyfield-farm/our-team/",
+      "to": "/farmers/sunnyfield-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/sunnyside-farms/our-partners/",
+      "to": "/farmers/sunnyside-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/sunnyside-farms/our-team/",
+      "to": "/farmers/sunnyside-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/sunrise-farms/our-partners/",
+      "to": "/farmers/sunrise-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/sunrise-farms/our-team/",
+      "to": "/farmers/sunrise-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/superfoods-farm/our-partners/",
+      "to": "/farmers/superfoods-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/superfoods-farm/our-team/",
+      "to": "/farmers/superfoods-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/sweet-valley-farm-dairy/our-partners/",
+      "to": "/farmers/sweet-valley-farm-dairy/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/sweet-valley-farm-dairy/our-team/",
+      "to": "/farmers/sweet-valley-farm-dairy/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/tallawah-farms/our-partners/",
+      "to": "/farmers/tallawah-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/tallawah-farms/our-team/",
+      "to": "/farmers/tallawah-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/the-farm-at-sunnyside/our-partners/",
+      "to": "/farmers/the-farm-at-sunnyside/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/the-farm-at-sunnyside/our-team/",
+      "to": "/farmers/the-farm-at-sunnyside/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/the-wide-net-project/our-partners/",
+      "to": "/farmers/the-wide-net-project/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/the-wide-net-project/our-team/",
+      "to": "/farmers/the-wide-net-project/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/together-we-bake/our-partners/",
+      "to": "/farmers/together-we-bake/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/together-we-bake/our-team/",
+      "to": "/farmers/together-we-bake/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/trickling-springs-creamery/our-partners/",
+      "to": "/farmers/trickling-springs-creamery/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/trickling-springs-creamery/our-team/",
+      "to": "/farmers/trickling-springs-creamery/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/triple-j-organics/our-partners/",
+      "to": "/farmers/triple-j-organics/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/triple-j-organics/our-team/",
+      "to": "/farmers/triple-j-organics/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/truefarms/our-partners/",
+      "to": "/farmers/truefarms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/truefarms/our-team/",
+      "to": "/farmers/truefarms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/underground-greens/our-partners/",
+      "to": "/farmers/underground-greens/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/underground-greens/our-team/",
+      "to": "/farmers/underground-greens/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/valley-farming/our-partners/",
+      "to": "/farmers/valley-farming/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/valley-farming/our-team/",
+      "to": "/farmers/valley-farming/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/van-dessel-farms/our-partners/",
+      "to": "/farmers/van-dessel-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/van-dessel-farms/our-team/",
+      "to": "/farmers/van-dessel-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/vanguard-ranch/our-partners/",
+      "to": "/farmers/vanguard-ranch/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/vanguard-ranch/our-team/",
+      "to": "/farmers/vanguard-ranch/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/virginia-bison-co--at-cibola-farm/our-partners/",
+      "to": "/farmers/virginia-bison-co--at-cibola-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/virginia-bison-co--at-cibola-farm/our-team/",
+      "to": "/farmers/virginia-bison-co--at-cibola-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/virginia-chestnuts/our-partners/",
+      "to": "/farmers/virginia-chestnuts/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/virginia-chestnuts/our-team/",
+      "to": "/farmers/virginia-chestnuts/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/virginia-poultry-growers-cooperative/our-partners/",
+      "to": "/farmers/virginia-poultry-growers-cooperative/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/virginia-poultry-growers-cooperative/our-team/",
+      "to": "/farmers/virginia-poultry-growers-cooperative/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/wadels-farm-wagon/our-partners/",
+      "to": "/farmers/wadels-farm-wagon/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/wadels-farm-wagon/our-team/",
+      "to": "/farmers/wadels-farm-wagon/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/walnut-winds-farm/our-partners/",
+      "to": "/farmers/walnut-winds-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/walnut-winds-farm/our-team/",
+      "to": "/farmers/walnut-winds-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/wayside-produce/our-partners/",
+      "to": "/farmers/wayside-produce/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/wayside-produce/our-team/",
+      "to": "/farmers/wayside-produce/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/wenger-grape-farm/our-partners/",
+      "to": "/farmers/wenger-grape-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/wenger-grape-farm/our-team/",
+      "to": "/farmers/wenger-grape-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/whiffletree-farm/our-partners/",
+      "to": "/farmers/whiffletree-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/whiffletree-farm/our-team/",
+      "to": "/farmers/whiffletree-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/willie-mae-farms/our-partners/",
+      "to": "/farmers/willie-mae-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/willie-mae-farms/our-team/",
+      "to": "/farmers/willie-mae-farms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/witmer-farm/our-partners/",
+      "to": "/farmers/witmer-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/witmer-farm/our-team/",
+      "to": "/farmers/witmer-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/won-shan-mushrooms/our-partners/",
+      "to": "/farmers/won-shan-mushrooms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/won-shan-mushrooms/our-team/",
+      "to": "/farmers/won-shan-mushrooms/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/yoders-farm/__notset__/",
+      "to": "/farmers/yoders-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/yoders-farm/our-partners/",
+      "to": "/farmers/yoders-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/yoders-farm/our-team/",
+      "to": "/farmers/yoders-farm/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/gift-cards/our-partners/",
+      "to": "/posts/give-the-gift-of-good-food/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/gift-cards/our-team/",
+      "to": "/posts/give-the-gift-of-good-food/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/gluten-free-spotlight-easy-homemade-ricotta/",
+      "to": "/posts/recipes/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/how-it-works/our-partners/",
+      "to": "/how-it-works",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/how-it-works/our-team/",
+      "to": "/how-it-works",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/how-to-shop/our-partners/",
+      "to": "/how-to-shop",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/how-to-shop/our-team/",
+      "to": "/how-to-shop",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/how-to-use-the-new-swap-system/",
+      "to": "/how-to-shop",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/if-you-build-it-they-will-come-strengthening-community-food-access/",
+      "to": "/our-impact",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/menuglutenfree/",
+      "to": "s.com/summary.php?go=products&12",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/nats4good-community-grant-awarded-to-4p-foods/mafrac.com",
+      "to": "/posts/the-washington-nationals-youth-baseball-academy-and-4p-foods-invite-the-public-to-participate-in-buy-a-bag-program/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/news/our-partners/",
+      "to": "/news",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/news/our-team/",
+      "to": "/news",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/our-partners/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/our-team/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/test-newsletter/our-partners/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/test-newsletter/our-team/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-2019-5/our-partners/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-2019-5/our-team/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-2019-6/our-partners/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-2019-6/our-team/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-2019-7/our-partners/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-2019-7/our-team/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-newsletter-1/our-partners/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-newsletter-1/our-team/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-newsletter-2/our-partners/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-newsletter-2/our-team/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-newsletter-3/our-partners/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-newsletter-3/our-team/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-newsletter-4/our-partners/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-newsletter-4/our-team/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-newsletter-5/our-partners/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-newsletter-5/our-team/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-newsletter-6/our-partners/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-newsletter-6/our-team/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-newsletter-7/our-partners/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-newsletter-7/our-team/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-newsletter/our-partners/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest-newsletter/our-team/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest/our-partners/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/newsletters/weekly-harvest/our-team/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/our-farmers/our-partners/",
+      "to": "/our-farmers",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/our-farmers/our-team/",
+      "to": "/our-farmers",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/our-impact/our-partners/",
+      "to": "/our-impact",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/our-impact/our-team/",
+      "to": "/our-impact",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/our-partners/our-partners/",
+      "to": "/our-partners",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/our-partners/our-team/",
+      "to": "/our-partners",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/our-team/our-partners/",
+      "to": "/our-team",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/our-team/our-team/",
+      "to": "/our-team",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/partnership-with-local-food-hub/",
+      "to": "/our-partners",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/2020-year-in-review/our-partners/",
+      "to": "/posts/2020-year-in-review/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/2020-year-in-review/our-team/",
+      "to": "/posts/2020-year-in-review/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/4p-foods-local-meat-share-now-available/our-partners/",
+      "to": "/posts/4p-foods-local-meat-share-now-available",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/4p-foods-local-meat-share-now-available/our-team/",
+      "to": "/posts/4p-foods-local-meat-share-now-available",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/4p-foods-storage-tips/our-partners/",
+      "to": "/posts/4p-foods-storage-tips",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/4p-foods-storage-tips/our-team/",
+      "to": "/posts/4p-foods-storage-tips",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/5-reasons-to-have-a-kellybronze-thanksgiving/our-partners/",
+      "to": "/posts/5-reasons-to-have-a-kellybronze-thanksgiving",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/5-reasons-to-have-a-kellybronze-thanksgiving/our-team/",
+      "to": "/posts/5-reasons-to-have-a-kellybronze-thanksgiving",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/a-new-look-for-our-purpose/our-partners/",
+      "to": "/posts/a-new-look-for-our-purpose",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/a-new-look-for-our-purpose/our-team/",
+      "to": "/posts/a-new-look-for-our-purpose",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/beyond-local/our-partners/",
+      "to": "/posts/beyond-local",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/beyond-local/our-team/",
+      "to": "/posts/beyond-local",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/but-citrus-isnt-local-a-word-from-our-founder/our-partners/",
+      "to": "/posts/but-citrus-isnt-local-a-word-from-our-founder",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/but-citrus-isnt-local-a-word-from-our-founder/our-team/",
+      "to": "/posts/but-citrus-isnt-local-a-word-from-our-founder",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/but-salmon-isnt-local-how-the-salmon-made-it-to-your-bag/our-partners/",
+      "to": "/posts/but-salmon-isnt-local-how-the-salmon-made-it-to-your-bag",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/but-salmon-isnt-local-how-the-salmon-made-it-to-your-bag/our-team/",
+      "to": "/posts/but-salmon-isnt-local-how-the-salmon-made-it-to-your-bag",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/coalition-creates-links-to-feed-be-fed/our-partners/",
+      "to": "/posts/coalition-creates-links-to-feed-be-fed",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/coalition-creates-links-to-feed-be-fed/our-team/",
+      "to": "/posts/coalition-creates-links-to-feed-be-fed",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/covid-19-response/__notset__/",
+      "to": "/posts/covid-19-response/__notset__/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/covid-19-response/our-partners/",
+      "to": "/posts/covid-19-response",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/covid-19-response/our-team/",
+      "to": "/posts/covid-19-response",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/culinary-concepts-ab/our-partners/",
+      "to": "/posts/culinary-concepts-ab",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/culinary-concepts-ab/our-team/",
+      "to": "/posts/culinary-concepts-ab",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/donate-to-local-food-hub/our-partners/",
+      "to": "/posts/donate-to-local-food-hub",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/donate-to-local-food-hub/our-team/",
+      "to": "/posts/donate-to-local-food-hub",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/fauquier-community-food-bank/our-partners/",
+      "to": "/posts/fauquier-community-food-bank",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/fauquier-community-food-bank/our-team/",
+      "to": "/posts/fauquier-community-food-bank",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/field-of-greens-affordable-csa-style-market-held-at-the-nats-academy/our-partners/",
+      "to": "/posts/field-of-greens-affordable-csa-style-market-held-at-the-nats-academy",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/field-of-greens-affordable-csa-style-market-held-at-the-nats-academy/our-team/",
+      "to": "/posts/field-of-greens-affordable-csa-style-market-held-at-the-nats-academy",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/fixing-a-broken-system-if-it-is-to-be-it-is-up-to-us/our-partners/",
+      "to": "/posts/fixing-a-broken-system-if-it-is-to-be-it-is-up-to-us",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/fixing-a-broken-system-if-it-is-to-be-it-is-up-to-us/our-team/",
+      "to": "/posts/fixing-a-broken-system-if-it-is-to-be-it-is-up-to-us",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/food-chains-documentary-bonnie-may/our-partners/",
+      "to": "/posts/food-chains-documentary-bonnie-may",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/food-chains-documentary-bonnie-may/our-team/",
+      "to": "/posts/food-chains-documentary-bonnie-may",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/give-the-gift-of-good-food/our-partners/",
+      "to": "/posts/give-the-gift-of-good-food",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/give-the-gift-of-good-food/our-team/",
+      "to": "/posts/give-the-gift-of-good-food",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/good-food-knows-no-boundaries/our-partners/",
+      "to": "/posts/good-food-knows-no-boundaries",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/good-food-knows-no-boundaries/our-team/",
+      "to": "/posts/good-food-knows-no-boundaries",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/guest-blogger-spotlight/our-partners/",
+      "to": "/posts/guest-blogger-spotlight",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/guest-blogger-spotlight/our-team/",
+      "to": "/posts/guest-blogger-spotlight",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/happy-new-year-looking-back-looking-ahead/our-partners/",
+      "to": "/posts/happy-new-year-looking-back-looking-ahead",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/happy-new-year-looking-back-looking-ahead/our-team/",
+      "to": "/posts/happy-new-year-looking-back-looking-ahead",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/harvest-party-at-bees-and-trees-farm/our-partners/",
+      "to": "/posts/harvest-party-at-bees-and-trees-farm",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/harvest-party-at-bees-and-trees-farm/our-team/",
+      "to": "/posts/harvest-party-at-bees-and-trees-farm",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/helpful-cooking-resources-tips-and-tricks/our-partners/",
+      "to": "/posts/helpful-cooking-resources-tips-and-tricks",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/helpful-cooking-resources-tips-and-tricks/our-team/",
+      "to": "/posts/helpful-cooking-resources-tips-and-tricks",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/how-was-it-raised-whats-behind-meat-labels/__notset__/",
+      "to": "/posts/how-was-it-raised-whats-behind-meat-labels/__notset__/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/how-was-it-raised-whats-behind-meat-labels/our-partners/",
+      "to": "/posts/how-was-it-raised-whats-behind-meat-labels",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/how-was-it-raised-whats-behind-meat-labels/our-team/",
+      "to": "/posts/how-was-it-raised-whats-behind-meat-labels",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/inside-look-4p-foods-donation-to-marthas-table/our-partners/",
+      "to": "/posts/inside-look-4p-foods-donation-to-marthas-table",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/inside-look-4p-foods-donation-to-marthas-table/our-team/",
+      "to": "/posts/inside-look-4p-foods-donation-to-marthas-table",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/introducing-4p-foods/our-partners/",
+      "to": "/posts/introducing-4p-foods",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/introducing-4p-foods/our-team/",
+      "to": "/posts/introducing-4p-foods",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/meet-jim-mark/our-partners/",
+      "to": "/posts/meet-jim-mark",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/meet-jim-mark/our-team/",
+      "to": "/posts/meet-jim-mark",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/mid-atlantic-food-port-feasibility-study/our-partners/",
+      "to": "/posts/mid-atlantic-food-port-feasibility-study",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/mid-atlantic-food-port-feasibility-study/our-team/",
+      "to": "/posts/mid-atlantic-food-port-feasibility-study",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/mid-atlantic-food-resilience-and-access-coalition-mafrac/our-partners/",
+      "to": "/posts/mid-atlantic-food-resilience-and-access-coalition-mafrac",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/mid-atlantic-food-resilience-and-access-coalition-mafrac/our-team/",
+      "to": "/posts/mid-atlantic-food-resilience-and-access-coalition-mafrac",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/more-about-our-meats/our-partners/",
+      "to": "/posts/more-about-our-meats",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/more-about-our-meats/our-team/",
+      "to": "/posts/more-about-our-meats",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/nats4good-community-grant/our-partners/",
+      "to": "/posts/nats4good-community-grant",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/nats4good-community-grant/our-team/",
+      "to": "/posts/nats4good-community-grant",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/our-favorite-pick-your-own-apple-orchards/our-partners/",
+      "to": "/posts/our-favorite-pick-your-own-apple-orchards",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/our-favorite-pick-your-own-apple-orchards/our-team/",
+      "to": "/posts/our-favorite-pick-your-own-apple-orchards",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/our-partners/",
+      "to": "/posts",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/our-team/",
+      "to": "/posts",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/partnership-with-bainum-family-foundation/our-partners/",
+      "to": "/posts/partnership-with-bainum-family-foundation",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/partnership-with-bainum-family-foundation/our-team/",
+      "to": "/posts/partnership-with-bainum-family-foundation",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/partnership-with-local-food-hub/our-partners/",
+      "to": "/posts/partnership-with-local-food-hub",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/partnership-with-local-food-hub/our-team/",
+      "to": "/posts/partnership-with-local-food-hub",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/partnership-with-the-path-foundation/our-partners/",
+      "to": "/posts/partnership-with-the-path-foundation",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/partnership-with-the-path-foundation/our-team/",
+      "to": "/posts/partnership-with-the-path-foundation",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/press-release-regional-coalition-mobilizes-to-feed-communities-support-farmers-during-covid-19-pandemic/our-partners/",
+      "to": "/posts/press-release-regional-coalition-mobilizes-to-feed-communities-support-farmers-during-covid-19-pandemic",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/press-release-regional-coalition-mobilizes-to-feed-communities-support-farmers-during-covid-19-pandemic/our-team/",
+      "to": "/posts/press-release-regional-coalition-mobilizes-to-feed-communities-support-farmers-during-covid-19-pandemic",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/recipes/__notset__/",
+      "to": "/posts/recipes/__notset__/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/recipes/our-partners/",
+      "to": "/posts/recipes",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/recipes/our-team/",
+      "to": "/posts/recipes",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/reflections-kara-ellis-marketing-intern/our-partners/",
+      "to": "/posts/reflections-kara-ellis-marketing-intern",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/reflections-kara-ellis-marketing-intern/our-team/",
+      "to": "/posts/reflections-kara-ellis-marketing-intern",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/spring-into-action-with-community-supported-agriculture/__notset__/",
+      "to": "/posts/spring-into-action-with-community-supported-agriculture/__notset__/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/spring-into-action-with-community-supported-agriculture/our-partners/",
+      "to": "/posts/spring-into-action-with-community-supported-agriculture",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/spring-into-action-with-community-supported-agriculture/our-team/",
+      "to": "/posts/spring-into-action-with-community-supported-agriculture",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/strong-community/our-partners/",
+      "to": "/posts/strong-community",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/strong-community/our-team/",
+      "to": "/posts/strong-community",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/thanksgiving-gratitude-for-the-4p-community/our-partners/",
+      "to": "/posts/thanksgiving-gratitude-for-the-4p-community",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/thanksgiving-gratitude-for-the-4p-community/our-team/",
+      "to": "/posts/thanksgiving-gratitude-for-the-4p-community",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/the-geography-of-good-food/our-partners/",
+      "to": "/posts/the-geography-of-good-food",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/the-geography-of-good-food/our-team/",
+      "to": "/posts/the-geography-of-good-food",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/the-story-of-our-citrus/our-partners/",
+      "to": "/posts/the-story-of-our-citrus",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/the-story-of-our-citrus/our-team/",
+      "to": "/posts/the-story-of-our-citrus",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/the-washington-nationals-youth-baseball-academy-and-4p-foods-invite-the-public-to-participate-in-buy-a-bag-program/our-partners/",
+      "to": "/posts/the-washington-nationals-youth-baseball-academy-and-4p-foods-invite-the-public-to-participate-in-buy-a-bag-program",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/the-washington-nationals-youth-baseball-academy-and-4p-foods-invite-the-public-to-participate-in-buy-a-bag-program/our-team/",
+      "to": "/posts/the-washington-nationals-youth-baseball-academy-and-4p-foods-invite-the-public-to-participate-in-buy-a-bag-program",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/we-stand-with-all-of-you-we-stand-against-racism/our-partners/",
+      "to": "/posts/we-stand-with-all-of-you-we-stand-against-racism",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/we-stand-with-all-of-you-we-stand-against-racism/our-team/",
+      "to": "/posts/we-stand-with-all-of-you-we-stand-against-racism",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/what-do-all-those-labels-stand-for/our-partners/",
+      "to": "/posts/what-do-all-those-labels-stand-for",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/what-do-all-those-labels-stand-for/our-team/",
+      "to": "/posts/what-do-all-those-labels-stand-for",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/whats-in-the-winter-bag/our-partners/",
+      "to": "/posts/whats-in-the-winter-bag",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/whats-in-the-winter-bag/our-team/",
+      "to": "/posts/whats-in-the-winter-bag",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/privacy-policy/our-partners/",
+      "to": "/privacy-policy",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/privacy-policy/our-team/",
+      "to": "/privacy-policy",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/producer-profile-the-rock-barn-in-nelson-county-va/",
+      "to": "/news",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/referral-programs/our-partners/",
+      "to": "/referral-programs",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/referral-programs/our-team/",
+      "to": "/referral-programs",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/shenandoah-produce/our-partners/",
+      "to": "/shenandoah-produce",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/shenandoah-produce/our-team/",
+      "to": "/shenandoah-produce",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/abbey-gleason/our-partners/",
+      "to": "/team/abbey-gleason",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/abbey-gleason/our-team/",
+      "to": "/team/abbey-gleason",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/alicia-mitchell/our-partners/",
+      "to": "/team/alicia-mitchell",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/alicia-mitchell/our-team/",
+      "to": "/team/alicia-mitchell",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/bonnie-may/our-partners/",
+      "to": "/team/bonnie-may",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/bonnie-may/our-team/",
+      "to": "/team/bonnie-may",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/breyonna-horsley/our-partners/",
+      "to": "/team/breyonna-horsley",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/breyonna-horsley/our-team/",
+      "to": "/team/breyonna-horsley",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/brian-wachira/our-partners/",
+      "to": "/team/brian-wachira",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/brian-wachira/our-team/",
+      "to": "/team/brian-wachira",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/brooke-kinsey/our-partners/",
+      "to": "/team/brooke-kinsey",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/brooke-kinsey/our-team/",
+      "to": "/team/brooke-kinsey",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/carlisle-wilkinson/our-partners/",
+      "to": "/team/carlisle-wilkinson",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/carlisle-wilkinson/our-team/",
+      "to": "/team/carlisle-wilkinson",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/curtis-sowers/our-partners/",
+      "to": "/team/curtis-sowers",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/curtis-sowers/our-team/",
+      "to": "/team/curtis-sowers",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/david-bubba-weller/our-partners/",
+      "to": "/team/david-bubba-weller",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/david-bubba-weller/our-team/",
+      "to": "/team/david-bubba-weller",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/devon-byrne/our-partners/",
+      "to": "/team/devon-byrne",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/devon-byrne/our-team/",
+      "to": "/team/devon-byrne",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/emily-tucker/our-partners/",
+      "to": "/team/emily-tucker",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/emily-tucker/our-team/",
+      "to": "/team/emily-tucker",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/erin-caricofe/our-partners/",
+      "to": "/team/erin-caricofe",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/erin-caricofe/our-team/",
+      "to": "/team/erin-caricofe",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/hortense-brent/our-partners/",
+      "to": "/team/hortense-brent",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/hortense-brent/our-team/",
+      "to": "/team/hortense-brent",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/jennifer-beckman/our-partners/",
+      "to": "/team/jennifer-beckman",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/jennifer-beckman/our-team/",
+      "to": "/team/jennifer-beckman",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/john-ferguson/our-partners/",
+      "to": "/team/john-ferguson",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/john-ferguson/our-team/",
+      "to": "/team/john-ferguson",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/john-shepard/our-partners/",
+      "to": "/team/john-shepard",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/john-shepard/our-team/",
+      "to": "/team/john-shepard",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/jon-wolf/our-partners/",
+      "to": "/team/jon-wolf",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/jon-wolf/our-team/",
+      "to": "/team/jon-wolf",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/justin-white/our-partners/",
+      "to": "/team/justin-white",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/justin-white/our-team/",
+      "to": "/team/justin-white",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/kerry-trenor/our-partners/",
+      "to": "/team/kerry-trenor",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/kerry-trenor/our-team/",
+      "to": "/team/kerry-trenor",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/kris-schumacher/our-partners/",
+      "to": "/team/kris-schumacher",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/kris-schumacher/our-team/",
+      "to": "/team/kris-schumacher",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/margaret-grace-gratten/our-partners/",
+      "to": "/team/margaret-grace-gratten",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/margaret-grace-gratten/our-team/",
+      "to": "/team/margaret-grace-gratten",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/natalie-vandenburgh/our-partners/",
+      "to": "/team/natalie-vandenburgh",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/natalie-vandenburgh/our-team/",
+      "to": "/team/natalie-vandenburgh",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/nate-osborne/our-partners/",
+      "to": "/team/nate-osborne",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/nate-osborne/our-team/",
+      "to": "/team/nate-osborne",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/raquel-burgess/our-partners/",
+      "to": "/team/raquel-burgess",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/raquel-burgess/our-team/",
+      "to": "/team/raquel-burgess",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/riley-dulin/our-partners/",
+      "to": "/team/riley-dulin",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/riley-dulin/our-team/",
+      "to": "/team/riley-dulin",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/rod-crawford/our-partners/",
+      "to": "/team/rod-crawford",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/rod-crawford/our-team/",
+      "to": "/team/rod-crawford",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/sandy-tribendis/our-partners/",
+      "to": "/team/sandy-tribendis",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/sandy-tribendis/our-team/",
+      "to": "/team/sandy-tribendis",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/sean-roberts/our-partners/",
+      "to": "/team/sean-roberts",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/sean-roberts/our-team/",
+      "to": "/team/sean-roberts",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/tara-eavey/our-partners/",
+      "to": "/team/tara-eavey",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/tara-eavey/our-team/",
+      "to": "/team/tara-eavey",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/tom-mcdougall/our-partners/",
+      "to": "/team/tom-mcdougall",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/tom-mcdougall/our-team/",
+      "to": "/team/tom-mcdougall",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/tyler-bruder/our-partners/",
+      "to": "/team/tyler-bruder",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/tyler-bruder/our-team/",
+      "to": "/team/tyler-bruder",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/terms-of-service/our-partners/",
+      "to": "/terms-of-service",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/terms-of-service/our-team/",
+      "to": "/terms-of-service",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/the-story-of-our-citrus/",
+      "to": "/posts/the-story-of-our-citrus/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/triple-j-organics-farmer-profile/",
+      "to": "/farmers/triple-j-organics/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/weekly-newsletters/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/whats-in-the-winter-bag/",
+      "to": "/posts/whats-in-the-winter-bag/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/wholesale-programs/our-partners/",
+      "to": "/wholesale",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/wholesale-programs/our-team/",
+      "to": "/wholesale",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/beyond-local-produce/",
+      "to": "/posts/beyond-local/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/citrus-isnt-local-word-founder/",
+      "to": "/posts/but-citrus-isnt-local-a-word-from-our-founder/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/food-access-programs/our-partners/",
+      "to": "/our-impact",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/food-access-programs/our-team/",
+      "to": "/our-impact",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/giving-back-fauquier-community-food-bank/",
+      "to": "/news",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/good-food-knows-no-boundaries/",
+      "to": "/posts/good-food-knows-no-boundaries/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/guest-blogger-spotlight/",
+      "to": "/posts/guest-blogger-spotlight/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/legal/our-partners/",
+      "to": "/terms-of-service",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/legal/our-team/",
+      "to": "/terms-of-service",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/news/",
+      "to": "/blog/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/how-it-works/",
+      "to": "/how-we-work/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/our-team/",
+      "to": "/team/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/our-partners/",
+      "to": "/partners/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/our-farmers/",
+      "to": "/farmers/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/impact-blog/",
+      "to": "/blog/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/in-the-news/",
+      "to": "/press/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/community-events/",
+      "to": "/events/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/mission/",
+      "to": "/about/mission/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/team/",
+      "to": "/about/team/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/partners/",
+      "to": "/about/partners/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/how-we-work/",
+      "to": "/groceries/how-we-work/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/farmers/",
+      "to": "/groceries/farmers/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/recipes/",
+      "to": "/groceries/recipes/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/faq/",
+      "to": "/groceries/faq/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/blog/",
+      "to": "/resources/blog/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/events/",
+      "to": "/resources/events/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/press/",
+      "to": "/resources/press/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    }
+  ]
+}

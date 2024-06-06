@@ -1,0 +1,91 @@
+#location-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  width: 100%;
+  height: 100%;
+  background: $mid;
+  z-index: 1000;
+  border-radius: 10px 0 0 10px;
+  overflow-y: auto;
+  @include transition(0.5s);
+  &.open {
+    transform: translateX(0);
+  }
+  @include media-breakpoint-up(md) {
+    width: 80%;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 33%;
+    min-width: 600px;
+  }
+  h5 {
+    font-weight: 600;
+    font-size: 24px;
+    color: $green-darkest;
+  }
+
+  a {
+    color: $black-light;
+    text-decoration: underline;
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 14px;
+    color: $green-olive;
+  }
+  input[type="text"],
+  input[type="email"]{
+    border: 2px solid $green-darkest;
+    border-radius: $border-radius;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: $dark;
+    height: 48px;
+    line-height: 48px;
+  }
+
+  .input-group {
+    input[type="email"] {
+      border-radius: $border-radius 0 0 $border-radius;
+      margin-bottom: 0;
+    }
+    input[type="submit"] {
+      border-radius: 0 $border-radius $border-radius 0;
+      border: 2px solid $green-darkest;
+      border-left: 0;
+      height: 48px;
+    }
+  }
+}
+
+.close-drawer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: $dark;
+  font-size: 2rem;
+}
+
+.autocomplete-wrapper {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background: $mid;
+  border-radius: $border-radius;
+  z-index: 1000;
+  padding: 0;
+  @include transition(0.5s);
+}
+
+.suggestion-item {
+  padding: 10px 15px;
+  &:hover {
+    cursor: pointer;
+    background: $tan-dark;
+  }
+}

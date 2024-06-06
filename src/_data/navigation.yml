@@ -1,114 +1,153 @@
----
 primary_navigation:
   navigation:
-    - label: How we work
-      url:
+    - label: Farm Fresh Groceries
+      url: /groceries/
       alt:
       links:
-        - label: How 4P Works
-          url: /how-we-work
+        - label: How we work
+          url: /groceries/how-we-work/
           alt:
-        - label: How to Shop
-          url: /how-to-shop
+        - label: Meet our Farmers & Makers
+          url: /groceries/farmers/
           alt:
-        - label: Tutorials
-          url: /how-to-shop/#tutorials
+        - label: Recipes
+          url: /groceries/recipes/
           alt:
         - label: FAQ
-          url: /faq
+          url: /groceries/faq/
           alt:
         - label: Pick Up Sites
-          url: /posts/4p-foods-community-pickup-sites/  
+          url: /posts/4p-foods-community-pickup-sites/
+          alt:
+    - label: Wholesale
+      url: /wholesale/
+      alt:
+      has_sublinks: true
+      links:
+        - label: How Wholesale Works
+          url: /wholesale/
+          alt:
+          sublinks:
+            - label: Restaurants & Grocery
+              url: /wholesale/restaurants-grocery/
+              alt:
+              icon_image: /img/icons/utensils-solid.png
+            - label: Higher Education
+              url: /wholesale/higher-education/
+              alt:
+              icon_image: /img/icons/hospital-solid.png
+            - label: Healthcare & Corporate
+              url: /wholesale/healthcare-corporate/
+              alt:
+              icon_image: /img/icons/book-solid.png
+            - label: Farm to School
+              url: /wholesale/farm-to-school/
+              alt:
+              icon_image: /img/icons/school-solid.png
+            - label: Food is Medicine
+              url: /wholesale/food-is-medicine/
+              alt:
+              icon_image: /img/icons/prescription-solid.png
+        - label: Apply to Purchase Wholesale
+          url: >-
+            https://forms.monday.com/forms/e0e3d79d27f063e676b4c4e940707aac?r=use1
+          alt:
+        - label: Sell to Us
+          url: https://forms.gle/StrB1GJRik4UnsDv8
           alt:
     - label: About Us
-      url:
+      url: /about/
       alt:
       links:
         - label: About Us
-          url: /about
+          url: /about/
           alt:
         - label: Mission
-          url: /mission
+          url: /about/mission/
           alt:
         - label: Team
-          url: /team
-          alt:
-        - label: Farmers
-          url: /farmers
+          url: /about/team/
           alt:
         - label: Partners
-          url: /partners
+          url: /about/partners/
           alt:
-    - label: Recipes and More
-      url:
+    - label: Resources
+      url: /resources/
       alt:
       links:
         - label: Blog
-          url: /blog
-          alt:
-        - label: Recipes
-          url: /recipes
+          url: /resources/blog/
           alt:
         - label: Events
-          url: /events
+          url: /resources/events/
           alt:
         - label: Press
-          url: /press
+          url: /resources/press/
           alt:
 footer_navigation:
   shop_links:
     - label: Shop Now
-      link: 'https://shop.4pfoods.com/'
+      link: https://shop.4pfoods.com/
     - label: How We Work
-      link: /how-we-work
+      link: /groceries/how-we-work/
     - label: Pick Up Sites
       link: /posts/4p-foods-community-pickup-sites/
-    - label: Wholesale
-      link: /wholesale
+    - label: Recipes
+      link: /groceries/recipes/
     - label: Referral Programs
-      link: /referral-programs
+      link: /referral-programs/
     - label: Gift Cards
       link: /posts/give-the-gift-of-good-food/
+  wholesale_links:
+    - label: Restaurants & Grocery
+      link: /wholesale/restaurants-grocery/
+    - label: Higher Education
+      link: /wholesale/higher-education/
+    - label: Healthcare & Corporate
+      link: /wholesale/healthcare-corporate/
+    - label: Farm to School
+      link: /wholesale/farm-to-school/
+    - label: Food is Medicine
+      link: /wholesale/food-is-medicine/
   about_links:
     - label: About Us
-      link: /about
+      link: /about/
     - label: Mission
-      link: /mission
+      link: /about/mission/
     - label: Team
-      link: /team  
-    - label: Farm Partners
-      link: /farmers
-    - label: Food and Community Partners
-      link: /partners/
+      link: /about/team/
+    - label: Farmer & Makers
+      link: /groceries/farmers/
+    - label: Food & Community Partners
+      link: /about/partners/
     - label: Careers
-      link: /careers  
-  enrich_yourself_links:
+      link: /careers/
+  resources_links:
     - label: Blog
-      link: /blog
-    - label: Recipes
-      link: /recipes
+      link: /resources/blog/
     - label: Events
-      link: /events
+      link: /resources/events/
     - label: Press
-      link: /press
+      link: /resources/press/
     - label: Food Storage Tips
-      link: /posts/4p-foods-storage-tips/  
+      link: /posts/4p-foods-storage-tips/
   support_links:
     - label: Contact Us
-      link: /contact
+      link: /contact/
     - label: FAQ
-      link: /faq
+      link: /groceries/faq/
     - label: Terms of Service
-      link: /terms-of-service
+      link: /terms-of-service/
     - label: Privacy Policy
-      link: /privacy-policy
+      link: /privacy-policy/
   connect_with_us_links:
-    - label: facebook
-      link: 'https://www.facebook.com/4pfoods/'
-    - label: twitter
-      link: 'https://twitter.com/4PFoods'
     - label: instagram
-      link: 'https://www.instagram.com/4pfoods/'
+      link: https://www.instagram.com/4pfoods/
+    - label: facebook
+      link: https://www.facebook.com/4pfoods/
+    - label: twitter
+      link: https://twitter.com/4PFoods
     - label: pinterest
-      link: 'https://www.pinterest.ca/4pfoods/'
----
+      link: https://www.pinterest.ca/4pfoods/
+    - label: linkedin
+      link: https://www.linkedin.com/company/4pfoods/

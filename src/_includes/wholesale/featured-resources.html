@@ -1,0 +1,37 @@
+{% assign items = include.items %}
+<div class="threesome mt-5">
+  {% for object in items %}
+  {% assign item = site.posts | where_exp: 'item', 'item.url contains object' | first %}
+  <div class="card bg-transparent">
+    <div class="card-content pin-footer">
+      {% if item.featured_image %}
+      <div class="card-header">
+        <div class="content">
+          <a
+            href="{{ item.url }}"
+            class="bg-image aspect-4x3"
+            style="background-image: url({{ item.featured_image }})"
+          ></a>
+        </div>
+      </div>
+      {% else %}
+      <div class="card-header">
+        <div class="content">
+          <a href="{{ item.url }}" class="bg-image aspect-4x3" style="background-image: url(/img/post-fallback.jpg)"></a>
+        </div>
+      </div>
+      {% endif %}
+      <div class="card-body">
+        <div class="text-left">
+          <h5 class="text-sans-serif"><a href="{{ item.url }}" class="text-body text-uppercase font-weight-bold">{{ item.title }}</a></h5>
+          <p>{{ item.date | date: '%B %d, %Y'}}</p>
+          <p class="text-serif">{{ item.content | strip_html | truncatewords: 30 }}</p>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a href="{{ item.url }}" class="btn btn-secondary text-white">Read More</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

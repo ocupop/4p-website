@@ -283,7 +283,7 @@ const LocationBar = ({ title }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </>
   )
 }

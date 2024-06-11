@@ -1,0 +1,124 @@
+---
+layout: page
+title: Community Events
+meta:
+footer_image: /uploads/4p-foods-events.png
+---
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 mx-lg-auto text-center">
+        <div class="editable">
+          <h1>Event with 4P Foods</h1>
+          <h2>Food, Friends, and Fun!</h2>
+        </div>
+        <div class="editable">
+          <p>Check here for opportunities to get to know the 4P Foods team, farmers, and members and learn more about Good Food at events that highlight the bounty of our regional food system.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="pt-0">
+  <div class="container">
+    {% assign events = site.events | sort: 'event_date' %} 
+
+    {% assign upcoming_events = '' | split:"," %} 
+    {% assign past_events = '' | split: ',' %} 
+    {% for event in events %} 
+      {% assign now = 'now' | date: '%s' | plus: 0 %} 
+      {% assign event_start = event.event_date | date: '%s' | plus: 0 | default: site.time | date: '%s' | plus: 0 %} 
+      {% if event_start >= now %} 
+        {% assign upcoming_events = upcoming_events | push: event %} 
+      {% endif %} 
+      {% if event_start <= now %} 
+        {% assign past_events = past_events | push: event %} 
+      {% endif %} 
+    {% endfor %} 
+    {% assign num_upcoming_events = upcoming_events | size %} {% if num_upcoming_events > 0 %}
+    <div data-cms-editor-link="cloudcannon:collections/_events" data-cms-editor-link-style="modal" class="threesome mt-4">
+      {% for event in upcoming_events reversed%}
+      <div class="card bg-transparent">
+        <div class="card-content pin-footer">
+          <div class="card-header">
+            <div class="content">
+              {% if event.featured_image %}
+                <a href="{{ event.url }}" class="bg-image aspect-1x1" style="background-image: url({{ event.featured_image }})">
+                </a>
+              {% else %}
+                <img src="/img/4p-foods-logo-color.png" class="img-fluid" alt="4P logo" />
+              {% endif %}
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="content text-left">
+              <h5>{{ event.title }}</h5>
+              <p class="mb-0">{{ event.event_date | date: '%A'}}</p>
+              <p class="mb-0">{{ event.event_date | date: '%B %-d, %Y'}}</p>
+              <p><small>{{ event.start_time }}{% if event.end_time %} - {{ event.end_time }}{% endif %}</small></p>
+              <p>{{ event.description }}</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="{{ event.url }}" class="btn btn-secondary text-white">Read More</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="editable">
+          <h4>Check back soon for upcoming events</h4>
+          <p>or take a look through some of our past events below</p>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% assign num_past_events = past_events | size %} 
+{% if num_past_events > 0 %}
+<section>
+  <div class="container">
+    <hr />
+    <div class="row">
+      <div class="col-12">
+        <div class="editable">
+          <h2>Past Events</h2>
+        </div>
+      </div>
+    </div>
+    <div data-cms-editor-link="cloudcannon:collections/_events" data-cms-editor-link-style="modal" class="threesome mt-4">
+      {% for event in past_events reversed %}
+      <div class="card bg-transparent">
+        <div class="card-content pin-footer">
+          <div class="card-header">
+            <div class="content">
+              <a href="{{ event.url }}" class="bg-image aspect-1x1" style="background-image: url({{ event.featured_image | default: 'https://via.placeholder.com/800x500'}})">
+              </a>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="content text-left">
+              <h5>{{ event.title }}</h5>
+              <p class="mb-0">{{ event.event_date | date: '%A'}}</p>
+              <p class="mb-0">{{ event.event_date | date: '%B %-d, %Y'}}</p>
+              {% if event.start_time %}
+                <p><small>{{ event.start_time }}{% if event.end_time %} - {{ event.end_time }}{% endif %}</small></p>
+              {% endif %}
+              <p>{{ event.description }}</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="{{ event.url }}" class="btn btn-secondary text-white">Read More</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% include footer-image.html %}

@@ -10,11 +10,11 @@
     <div class="bg-tan p-4">
       <div class="row">
         <div class="col-12">
-          <h4 class="text-sans-serif">{{ featured_farmer.title }}</h4>
+          <h4>{{ featured_farmer.title }}</h4>
           {% if featured_farmer.description %}
-            <p class="text-serif">{{ featured_farmer.description }}</p>
+            <p>{{ featured_farmer.description }}</p>
           {% else %}
-            <p class="text-serif">{{ featured_farmer.content | strip_html | truncatewords: 75 }}</p>
+            <p>{{ featured_farmer.content | strip_html | truncatewords: 75 }}</p>
           {% endif %}
         </div>
       </div>

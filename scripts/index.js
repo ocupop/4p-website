@@ -1,12 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import SearchBar from './search/SearchBar'
-import LocationBar from './location/LocationBar'
 import { storeLinks } from './helpers'
 
 const COMPONENTS = {
-  SearchBar,
-  LocationBar
+  SearchBar
 }
 
 function renderComponentInElement(el) {

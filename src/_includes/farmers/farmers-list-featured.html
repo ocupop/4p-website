@@ -12,11 +12,11 @@
           style="background-image: url({{ farmer.featured_image }})"
         ></div>
         <div class="card-body">
-          <h4 class="text-sans-serif">{{ farmer.title }}</h4>
+          <h4>{{ farmer.title }}</h4>
           {% if farmer.description %}
-          <p class="text-serif">{{ farmer.description | truncatewords: 30}}</p>
+          <p>{{ farmer.description }}</p>
           {% else %}
-          <p class="text-serif">{{ farmer.content | strip_html | truncatewords: 30 }}</p>
+          <p>{{ farmer.content | strip_html | truncatewords: 35 }}</p>
           {% endif %}
         </div>
         <div class="card-footer bg-transparent">

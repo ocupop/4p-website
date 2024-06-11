@@ -1,10 +1,9 @@
 // Buttons
 .btn {
-  font-family: $font-family-base;
+  font-family: $headings-font-family;
+  text-transform: uppercase;
   font-weight: 600;
-  border-radius: 3px; 
-  padding: 10px 25px;
-  font-size: 1.1rem;
+  border-radius: 0 !important;
   @include transition(0.3s);
   &:focus {
     outline: 0 !important;
@@ -33,15 +32,6 @@
       }
     }
   }
-  &.btn-green-light {
-    color: $green-darkest;
-  }
-  &.btn-blue-light {
-    color: $gray-850;
-  }
-  &.btn-tan {
-    color: $gray-900;
-  }
   &.btn-link {
     color: $secondary;
     padding-left: 0;
@@ -58,11 +48,6 @@
   border-radius: 0;
   line-height: 2.6rem;
   padding: 0.5rem 1.5rem !important;
-}
-
-.btn-xl {
-  line-height: 4rem;
-  font-size: 2.25rem;
 }
 
 // Lists
@@ -275,40 +260,6 @@
   }
 }
 
-.tabs-buttons {
-  border-bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  @include media-breakpoint-down(md) {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .nav-item {
-
-    .nav-link {
-      padding: 15px;
-      background-color: transparent;
-      border-radius: $border-radius;
-      text-transform: none;
-      font-weight: 600;
-      font-size: 18px;
-      @include media-breakpoint-down(lg) {
-        border-top-right-radius: $border-radius;
-        border-top-left-radius: $border-radius;
-      }
-      @include media-breakpoint-up(lg ) {
-        white-space: nowrap;
-      }
-      &.active,
-      &:hover {
-        color: $primary;
-        background-color: $mid;
-      }
-    }
-  }
-}
-
 .tab-content {
   h4 {
     font-style: italic;
@@ -328,6 +279,9 @@
   }
   h5 {
     text-transform: uppercase;
+    font-weight: 800;
+    font-size: 17px;
+    color: $gray-600;
     margin-bottom: 5px;
   }
 
@@ -414,11 +368,5 @@
       top: -10px;
       right: -12px;
     }
-  }
-}
-
-.w-lg-50 {
-  @include media-breakpoint-up(lg) {
-    width: 50%;
   }
 }

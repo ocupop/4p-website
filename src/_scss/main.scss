@@ -6,23 +6,16 @@
 @import "global/utilities";
 @import "global/base";
 @import "global/layout";
-@import "global/header";
-@import "global/footer";
 @import "global/nav";
 @import "global/typography";
 @import "global/animations";
 @import "global/forms";
-@import "global/cards";
-@import "global/icons";
 
 // Components
 @import "components/modal";
 @import "components/product";
 @import "components/onboarding";
-@import "components/location_bar";
-@import "components/location_drawer";
-@import "components/image_grid";
-@import "components/logo_pile";
+
 
 // Pages
 @import "pages/home";
@@ -32,13 +25,9 @@
 @import "pages/news";
 @import "pages/newsletter";
 @import "pages/shenandoah_produce";
-@import "pages/wholesale";
 
 // Vendor Overrides
 @import "vendor/bootstrap";
 @import "vendor/cognito";
 @import "vendor/cloudcannon";
 @import "vendor/algolia";
-@import "vendor/embla_carousel";
-@import "vendor/chatra";
-@import "vendor/mailchimp_popup";

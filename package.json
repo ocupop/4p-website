@@ -5,20 +5,15 @@
   "version": "0.1.0",
   "author": "Ocupop Developer <dev@ocupop.com>",
   "dependencies": {
-    "@turf/turf": "^6.5.0",
-    "@tylermenezes/cognitoforms-react": "^2.1.0",
     "algoliasearch": "^4.8.4",
     "bootstrap": "^4.4.1",
     "concurrently": "^5.1.0",
-    "formik": "^2.4.6",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-instantsearch": "^6.8.3",
     "react-instantsearch-dom": "^6.8.3",
-    "react-places-autocomplete": "^7.3.0",
     "react-select": "^3.1.1",
-    "universal-cookie": "^7.1.4",
     "use-query-params": "^1.2.3"
   },
   "devDependencies": {

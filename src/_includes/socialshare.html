@@ -1,4 +1,4 @@
-{% assign meta = page.meta %}
+{% assign meta = page.meta[0] %}
 <meta property="og:title" content="{% if meta.title %}{{ meta.title }}{% else %}{{ page.title | default: site.title }}{% endif %}" />
 <meta property="og:description" content="{{ meta.description | default: site.description }}" />
 <meta property="og:type" content="website" />

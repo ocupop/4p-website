@@ -1,0 +1,36 @@
+.image-grid {
+  display: grid;
+  grid-gap: 1rem;
+  &.vertical-image-right {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    .right-col {
+      align-content: end;
+    }
+  }
+  &.split-vertical {
+    grid-template-rows: 1fr;
+    .top-row {
+      justify-items: center;
+      padding-right: 3rem;
+      padding-left: 3rem;
+    }
+    .bottom-row-1-2 {
+      // use for when left image col is 1/3 width
+      display: grid;
+      grid-template-columns: 1.3fr 1.7fr;
+    }
+    .bottom-row-2-1 {
+      // use for when left image col is 2/3 width
+      display: grid;
+      grid-template-columns: 1.8fr 1.2fr;
+    }
+    .left-col {
+
+    }
+    .right-col {
+
+    }
+  }
+}

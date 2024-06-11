@@ -1,24 +1,5 @@
 <header id="pageHeader">
-  <div class="bg-green-darker d-none d-lg-block">
-    <div class="container">
-      <nav id="usernav" class="navbar navbar-expand-lg">
-        <a href="/wholesale-programs" class="text-uppercase font-weight-bold editable">Interested in Wholesale?</a>
-        <div id="header-notification">
-          {% if site.data.notifications.header_notification.link %}
-            <p class="mb-0 font-weight-bold"><a href="{{ site.data.notifications.header_notification.link }}">{{ site.data.notifications.header_notification.notification_text }}</a></p>
-          {% else %}
-            <p class="mb-0 font-weight-bold">{{ site.data.notifications.header_notification.notification_text }}</p>
-          {% endif %}
-        </div>
-        <div id="secondarynav">
-          <auth-nav>
-            <a href="{{ site.store_url }}/login" class="btn btn-primary storeLink">Login</a>
-          </auth-nav>
-        </div>
-      </nav>
-    </div>
-  </div>
-  <div class="container">
+  <div class="container-fluid bg-light">
     <nav id="mainnav" class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="/" title="{{ site.title }}">
         <img src="/img/logo-wordmark.svg" alt="{{ site.title }}" />
@@ -30,7 +11,7 @@
           <span class="icon-bar"></span>
         </span>
       </button>
-      <div class="collapse navbar-collapse justify-content-md-end" id="primarynav">
+      <div class="collapse navbar-collapse justify-content-md-start" id="primarynav">
         <ul class="nav d-flex align-items-center justify-content-center d-lg-none mb-5">
           <li class="nav-item mt-3 mt-lg-0">
             <a href="{{ site.store_url }}" class="btn btn-primary mx-2 storeLink">Shop</a>
@@ -39,16 +20,16 @@
             <a href="{{ site.store_url }}/login" class="btn btn-primary mx-2 storeLink">Login</a>
           </li>
         </ul>
-        <ul class="primary-nav-links navbar-nav ml-auto ">
+        <ul class="primary-nav-links navbar-nav">
           {% for link in site.data.navigation.primary_navigation.navigation %}
           {% if link.links %}
             {% assign href_att = 'data-href' %}
           {% else %}
             {% assign href_att = 'href' %}
           {% endif %}
-          {% assign slug = link.label | slugify %}
+          {% assign slug = link.url %}
 
-          <li class="nav-item {% if link.links %}dropdown mega-dropdown{% endif %}{% if page.url contains slug %} active{% endif %}">
+          <li class="nav-item {% if link.links %}dropdown mega-dropdown{% endif %}{% if page.url contains link.url %} active{% endif %}">
             <a class="nav-link" {% if link.links %}
                 id="#collapse-{{ link.label | slugify }}"
                 data-toggle="dropdown"
@@ -62,25 +43,44 @@
               <span class="sr-only">(current)</span>
             </a>
             {% if link.links %}
-            <div class="dropdown-menu mega-menu v-2 z-depth-1" aria-labelledby="collapse-{{ link.label | slugify }}">
+            <div class="dropdown-menu mega-menu v-2 z-depth-1 {% if link.has_sublinks %}has-sublinks{% endif %}" aria-labelledby="collapse-{{ link.label | slugify }}">
               <div class="row justify-content-lg-center">
                 {% for link in link.links %}
                 <div class="col-12 col-lg-auto sub-menu mb-lg-0 mb-4">
-                  <a href="{{ link.url }}">{{ link.label }}</a>
+                  <a href="{{ link.url }}" class="{% if page.url == link.url %} active{% endif %}" {% if link.url contains 'https' %}target="_blank" rel="noreferrer"{% endif %}>{{ link.label }}</a>
                 </div>
                 {% endfor %}
               </div>
+              {% for link in link.links %}
+                {% if link.sublinks.first.url %}
+                  <div class="sublinks-menu">
+                    <div class="row no-gutters justify-content-lg-center">
+                      {% for link in link.sublinks %}
+                      <div class="col-12 col-lg-auto sub-menu mb-lg-0 mb-4">
+                        <a href="{{ link.url }}" class="d-flex align-items-center justify-content-center {% if page.url == link.url %} active{% endif %}"><img src="{{ link.icon_image }}" class="inline-block mr-1 mr-xl-3" alt="{{ link.label }} icon"><span>{{ link.label }}</span></a>
+                      </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
             </div>
             {% endif %}
           </li>
           {% endfor %}
           <li class="nav-item">
-            <a href="/wholesale-programs" class="text-uppercase font-weight-bold d-block d-lg-none editable link-mobile-wholesale">Are you a Wholesaler?</a>
+            <a href="/wholesale" class="text-uppercase font-weight-bold d-block d-lg-none editable link-mobile-wholesale">Are you a Wholesaler?</a>
           </li>
         </ul>
-        <ul class="nav navbar-nav d-none d-lg-block">
+        <ul class="nav navbar-nav ml-auto d-none d-lg-flex align-items-center">
           <li class="nav-item mt-3 mt-lg-0">
-            <a href="{{ site.store_url }}" class="btn btn-primary storeLink">Shop Now</a>
+            <a href="{{ site.store_url }}" class="btn btn-primary storeLink">Shop Groceries</a>
+          </li>
+          <li class="nav-item mt-3 mt-lg-0 mx-3">
+            <a href="{{ site.store_url }}" class="nav-icon-link"><i class="ri-shopping-cart-2-fill"></i></a>
+          </li>
+          <li class="nav-item mt-3 mt-lg-0">
+            <a href="{{ site.store_url }}/login" class="nav-icon-link"><i class="ri-user-fill"></i></a>
           </li>
         </ul>
       </div>
@@ -101,5 +101,8 @@
         </nav>
       </div>
     </div>
+  {% endif %}
+  {% if page.url == '/' %}
+    {% include components/LocationBar.html %}
   {% endif %}
 </header>

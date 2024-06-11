@@ -1,0 +1,198 @@
+---
+layout: page
+title: Wholesale  | Farm to Table Food Distributor | Buy Direct from Farmers
+meta:
+  title: >-
+    4P Foods | Food Distributor | Wholesale Produce, Ethical Meat, Poultry, and
+    Pork 
+  description: >-
+    4P Foods source-identifies, wholesale food delivery for restaurants,
+    grocers, food co-ops, and community access organizations.  We deliver to
+    Washington, D.C., Virginia, Maryland, and North Carolina.
+  image:
+hero:
+  label:
+  title_html: <h1><code>Effortlessly fresh wholesale</code></h1>
+  subtitle: Source food from 200+ independent regional producers
+  links:
+    - link: https://forms.monday.com/forms/e0e3d79d27f063e676b4c4e940707aac?r=use1
+      label: Get Started
+slider:
+  show_section: true
+  items:
+    - image: /uploads/wholesale-slider-1.png
+      text_html:
+      subtitle:
+    - image:
+      text_html: >-
+        <p>“Feeding kids healthy meals while supporting our local food system
+        <code>has never been so easy</code>”</p>
+      subtitle: School District Food Service manager
+    - image: /uploads/wholesale-slider-2.png
+      text_html:
+      subtitle:
+    - image: /uploads/wholesale-slider-3.png
+      text_html:
+      subtitle:
+    - image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
+      text_html:
+      subtitle:
+image_grid:
+  - image: /uploads/wholesale-grid-1.png
+    alt:
+  - image: /uploads/wholesale-grid-2.png
+    alt:
+  - image: /uploads/wholesale-grid-3.png
+    alt:
+wholesale_industries:
+  - /wholesale/restaurants-grocery
+  - /wholesale/higher-education
+  - /wholesale/healthcare-corporate
+  - /wholesale/farm-to-school
+  - /wholesale/food-is-medicine
+catalog_categories:
+  - title: Fresh seasonal and organic produce
+    image: /img/icons/produce-products.svg
+  - title: Ethically and pasture-raised meat
+    image: /img/icons/grass-fed-beef.svg
+  - title: Local and grass-fed dairy
+    image: /img/icons/dariy-products.svg
+  - title: Pantry items from local artisans
+    image: /img/icons/pantry-items.svg
+featured_farmer: /farmers/tallawah-farms
+footer_image: /uploads/4pfoods-weeklygroceries-harvestphoto.png
+---
+{% include hero-text.html item=page.hero %}
+{% include components/slider.html slider=page.slider %}
+<section class="bg-light caret-bottom-center">
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center mx-lg-n5">
+      <div class="col-12 col-lg-5 px-lg-5">
+        <h2 class="editable mb-4">
+          Support local producers and build a stronger, more resilient<code>&nbsp;food system in the Mid-Atlantic</code>
+        </h2>
+        <p class="lead leading-loose text-black-light editable">
+          If you want values-based sourcing for your business, we can help. We connect you to our large network of independent farmers and makers to bring you the best food from our region.
+        </p>
+      </div>
+      <div class="col-12 col-lg-5 px-lg-5" data-cms-bind="#image_grid">
+        {% include components/image-grid-split-vertical-2.html item=page.image_grid %}
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-9 mx-lg-auto text-center">
+        <div class="editable">
+          <h2>We tailor our services to meet the specific needs of every industry wholesale client.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">  
+    <div class="row mt-5 justify-content-center">
+      <div class="col-12 col-xl-10 mx-auto">
+        <ul id="{{ page.title }}-tabs" class="nav nav-tabs tabs-buttons">
+          {% for object in page.wholesale_industries %}
+            {% assign item = site.wholesale_industries | where_exp: 'item', 'item.url contains object' | first %}
+            <li class="nav-item">
+              <a class="nav-link {% if forloop.first %}active{% endif %}" id="tab-{{ item.title | slugify }}" data-toggle="tab" href="#{{ item.title | slugify }}" role="tab" aria-controls="{{ item.title | slugify }}" aria-selected="true">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container"> 
+    <div class="row">
+      <div class="col-12">
+        <div class="tab-content mt-5">
+          {% for object in page.wholesale_industries %}
+          {% assign item = site.wholesale_industries | where_exp: 'item', 'item.url contains object' | first %}
+            <div id="{{ item.title | slugify }}" role="tabpanel" aria-labelledby="tab-{{ item.title | slugify }}" class="tab-pane fade {% if forloop.first %}show active{% endif %}">
+              <div class="row mx-lg-n4 rounded-lg bg-mid align-items-center">
+                {% if item.featured_image %}
+                  <div class="col-12 col-lg-4 px-4 pt-4 pb-0 p-lg-4">
+                    <div class="bg-image aspect-1x1 mb-3 mb-lg-0 rounded-lg" style="background-image: url({{ item.featured_image }})"></div>
+                  </div>
+                {% endif %}
+                <div class="col-12 col-lg-8 pt-0 px-4 pt-lg-4 p-lg-4">
+                  <div class="d-flex flex-column justify-content-between p-4">
+                    <div>
+                      <h3><strong>{{ item.title }}</strong></h3>
+                      {% if item.summary %}
+                        <p>{{ item.summary }} </p>
+                      {% endif %} 
+                    </div>
+                    <p class="mt-3 mt-lg-4">
+                      <a href="{{ item.url }}" class="btn btn-green-light">Learn More</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-mid">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="editable">
+          <h2>Find what you need - <code>made locally</code></h2>
+        </div>
+        <p class="mt-4">
+          <a href="{{ site.store_url }}" class="btn btn-blue-light">View Seasonal Catalog</a>
+        </p>
+      </div>
+    </div>
+    <div class="row mt-5 no-gutters" data-cms-bind="#catalog_categories">
+      {% for item in page.catalog_categories %}
+        <div class="col-12 col-lg-3">
+          <div class="text-center bg-tan rounded p-4 h-100 m-1">
+            <div class="bg-image aspect-2x1 rounded mb-3 bg-contain bg-transparent" style="background-image: url({{ item.image }})"></div>
+            <h5>{{ item.title }}</h5>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- <section class="bg-light">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="text-center editable">
+          <h1><strong>Ready to buy from local, regional, ethical, or climate-first farmers and artisans?</strong></h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-6 mb-4">
+        <div class="editable">
+          <h4>Purchase Wholesale from 4P Foods</h4>
+          <h6>We work with universities, school systems, restaurants, grocery stores/markets, food co-ops, community access organization, and other wholesale buyers.&nbsp;</h6>
+          <hr />
+          <p><strong>Does this sound like you?</strong> Please provide us with your information via the form below and we'll be in touch!</p>
+        </div>
+        <a href="https://wkf.ms/3TshTqo" target="_blank" rel="noreferrer" class="editable btn btn-primary">WHOLESALER APPLICATION</a>
+      </div>
+      <div class="col-12 col-lg-6 mb-4">
+        <div class="editable">
+          <h4>Sell Your Goods to 4P Foods</h4>
+          <h6>We are always looking to expand our farmer and artisan partnerships that align with our mission and vision.&nbsp;</h6>
+          <p>&nbsp;</p>
+          <hr />
+          <p>Contact our Procurement Team by completing the vendor application form below.</p>
+        </div>
+        <a href="https://forms.gle/StrB1GJRik4UnsDv8" target="_blank" rel="noreferrer" class="editable btn btn-primary">PROCUREMENT APPLICATION</a>
+      </div>
+    </div>
+  </div>
+</section> -->

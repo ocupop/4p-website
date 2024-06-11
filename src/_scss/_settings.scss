@@ -9,9 +9,13 @@ $gray-600: #808080;
 $gray-700: #707070;
 $gray-800: #4d4d4d;
 $gray-850: #58595c;
-$gray-900: #212529 !default;
+$gray-900: #59554F;
+$black-light: #1F1300;
 $black: #000000 !default;
 
+
+
+$blue-light: #cfeaeB;
 $blue: #97d7d9;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
@@ -19,12 +23,18 @@ $pink: #e83e8c !default;
 $red: #dc3545 !default;
 $orange: #fd7e14 !default;
 $yellow: #f5c938;
+$green-light: #e7f1e2;
 $green: #5fb35f;
-$green-dark: #255b35;
+$green-olive: #6D9173;
+$green-mid: #378437;
+$green-mid-dark: #385140;
+$green-dark: #255B35;
 $green-darker: #265c35;
+$green-darkest: #173A21;
+
 $teal: #14585a;
 $cyan: #71c7c7;
-$tan: #efebe5;
+$tan: #EEEAE2;
 $tan-mid: #f8f6ee;
 $tan-dark: #dedbd3;
 $tan-darker: #b7b4a9;
@@ -36,8 +46,8 @@ $info: $blue;
 $warning: $yellow !default;
 $danger: $red !default;
 $lighter: $gray-100;
-$light: $gray-300;
-$mid: $gray-600;
+$light: #FFFCF9;
+$mid: #F8F4F0;
 $dark: $gray-800;
 
 $theme-colors: (
@@ -52,18 +62,25 @@ $theme-colors: (
   'dark': $dark,
   'white': $white,
   'black': $black,
-  'body': $gray-600,
+  'body': $black,
   'gray': $gray-700,
   'tan': $tan,
   'tan-dark': $tan-dark,
   'teal': $teal,
   'green': $green,
+  'green-light': $green-light,
+  'green-mid': $green-mid,
   'green-dark': $green-dark,
-  'green-darker': $green-darker
+  'green-mid-dark': $green-mid-dark,
+  'green-olive': $green-olive,
+  'green-darker': $green-darker,
+  'green-darkest': $green-darkest,
+  'blue-light': $blue-light,
+  'black-light': $black-light
 );
 
 $body-bg: $white;
-$body-color: $gray-600;
+$body-color: $black;
 
 $font-family-base: 'Montserrat', sans-serif;
 $font-family-secondary: 'Spectral', serif;
@@ -79,25 +96,26 @@ $font-weight-bold: 700 !default;
 $font-weight-base: $font-weight-normal !default;
 $line-height-base: 1.5 !default;
 
-$h1-font-size: 1.969rem;
-$h2-font-size: 1.656rem;
-$h3-font-size: 1.656rem;
-$h4-font-size: 1.344rem;
-$h5-font-size: 1.344rem;
+$h1-font-size: 4.4rem;
+$h2-font-size: 3rem;
+$h3-font-size: 2.5rem;
+$h4-font-size: 1.7rem;
+$h5-font-size: 1.4rem;
 $h6-font-size: 1rem;
 
-$headings-font-family: $font-family-base;
+$headings-font-family: $font-family-secondary;
 $headings-font-weight: 400;
-$headings-line-height: 1.5rem;
+$headings-line-height: 1.3;
 $headings-color: inherit;
 
-$border-radius: 0;
+$border-radius: 6px;
+$border-radius-lg: 20px;
 
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
-  lg: 992px,
+  lg: 1024px,
   xl: 1200px
 ) !default;
 

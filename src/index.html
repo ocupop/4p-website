@@ -1,50 +1,111 @@
 ---
-layout: page
+layout: homepage
 title: >-
   Home | Online Farmers Market | Local CSA | Washington, DC | Virginia |
   Maryland 
 meta:
-  - title: >-
-      4P Foods | Weekly Grocery Delivery | Local CSA | Washington, DC | Virginia
-      | Maryland 
-    description: >-
-      4P Foods delivers weekly groceries direct from local farmers to
-      neighborhoods and businesses in Washington, D.C., Virginia, and Southern
-      Maryland. 
-
-
-      Supporting local farm systems helps improve your food's footprint and
-      access to nutrients.
-    image:
-_assets:
-  - image: /uploads/4p-produce-04-22-2020.jpg
-  - image: /uploads/4P-Produce-06.10.20.jpg
-  - image: /uploads/4P-Produce-06.14.20-1024x984.jpg
-  - image: /uploads/4pfoods-cabbage.png
-  - image: /uploads/4pfoods-femalefarmer-tomatoes.png
-  - image: /uploads/4pfoods-peaches.png
-  - image:
-  - image: /uploads/4pfoods-walkthetalk-web.png
-carousel:
-  - title: Website Refresh Coming Soon
-    link:
-      label: LEARN MORE
-      link: /events/website-refresh/
-    description_html: ''
-    image: /uploads/website-refresh.png
-  - title: Delivering Local Food As Medicine
-    link:
-      label: MORE ABOUT FLiPRX
-      link: >-
-        /posts/delivering-local-food-as-medicine-children-s-national-fliprx-program/
-    description_html: ''
-    image: /uploads/food-is-medicine-home-page.png
-  - title: Planted, Raised, and Made with Love
-    link:
-      label: How 4P Foods Works
-      link: /how-we-work/
-    description_html: ''
-    image: /uploads/grocery-home-delivery.png
+  title: >-
+    4P Foods | Weekly Grocery Delivery | Local CSA | Washington, DC | Virginia |
+    Maryland 
+  description: >-
+    4P Foods delivers weekly groceries direct from local farmers to
+    neighborhoods and businesses in Washington, D.C., Virginia, and Southern
+    Maryland. Supporting local farm systems helps improve your food's footprint
+    and access to nutrients.
+  image:
+hero:
+  label: Connecting your community to local farms
+  title_html: <h1>Your partner for  <code>farm-to-you</code><br /> fresh food</h1>
+  subtitle:
+  links:
+    - link: https://shop.4pfoods.com/summary.php?go=products
+      label: Shop Farm Fresh Groceries
+    - link: /wholesale
+      label: Wholesale Options
+slider:
+  show_section: true
+  items:
+    - image: >-
+        /uploads/saunders-brothers-orchard-peaches-peach-tree-4p-foods-may-2024.jpg
+      text_html:
+      subtitle:
+    - image: /uploads/archlynn-goldman-inn-at-little-washington-strawberries.jpeg
+      text_html:
+      subtitle:
+    - image: /uploads/4pfoods-bag-tote-sink.jpg
+      text_html: <p></p>
+      subtitle:
+    - image: /uploads/4p-foods-truck-alex-loading-4p-foods-truck-april-2024.png
+      title_black_text:
+      title_green_text:
+      subtitle:
+    - image: /uploads/eggs-dozen-local-whiffletreefarm.jpg
+      title_black_text:
+      title_green_text:
+      subtitle:
+notification:
+  show_notification: false
+  notification_text: Celebrate Earth Day With Us, April 20th
+  subtitle: Good Food And Home-Grown Fun
+  link: /events/4p-foods-2024-earth-day-celebration/
+purpose_section:
+  show_section: true
+  items:
+    - title: Food for individuals, institutions and communities
+      image: /img/icons/community-food.svg
+    - title: Strengthening independent farms and supporting local producers
+      image: /img/icons/local-producers.svg
+    - title: Advancing food access and nutrition
+      image: /img/icons/food-access.svg
+  stats:
+    - title: $0.66 of every dollar
+      subtitle: vs. $0.15 of every dollar
+      description_html: >-
+        <p>You spend with 4P Foods goes back to support our farmers and makers.
+        The national average is only $ .15 of every dollar.</p><p><br /></p>
+    - title: $27 million
+      subtitle: into rural economies
+      description_html: >-
+        <p>In the past 10 years, 4P Foods has cultivated a distribution network
+        and established a community of partners to help farmers meet demand.</p>
+    - title: 200+ producers
+      subtitle: in the Mid-Atlantic region
+      description_html: >-
+        <p>Alongside our partners, we strive to increase healthy food in
+        communities, improve health outcomes, and support regional farms.<br
+        /></p>
+image_grid_1:
+  - image: /uploads/wakeforestuniversity-localproducesign-4pfoods-produce.jpg
+    alt:
+  - image: /uploads/4pfoods-truck-vinthillwarehouse-blurredbackground-1.png
+    alt:
+  - image: /uploads/imagejpeg-0.jpg
+    alt:
+logo_grid_section:
+  show_section: true
+  items:
+    - image: /uploads/wholesale/elon-dining-logo.svg
+      link:
+      label: Elon Dining
+    - image: /uploads/d-c-central-kitchen.png
+      link:
+      label: DC Central Kitchen
+    - image: /img/logos/school/prince-edward-schools-logo.png
+      link:
+      label: Prince Edward Schools
+    - image: /uploads/deacon-dining-logo.png
+      link:
+      label: Wake Forest
+    - image: /uploads/inova-logo.png
+      link:
+      label: ''
+image_grid_2:
+  - image: /uploads/saundersbrothersorchard-peachinhandfarmer-2.jpg
+    alt:
+  - image: /uploads/4p-foods-open-bag-with-lettuce-tomatoes-kale-apples.png
+    alt:
+  - image: /uploads/20210410-bokchoybaby-ginger.jpg
+    alt:
 testimonials:
   - testimonial_text: >-
       We've tried many meal prep kits and grocery delivery services - nothing
@@ -104,270 +165,93 @@ testimonials:
 featured_recipes:
   - hotdog-with-chili-and-cheddar-cheese-dinner-recipe
 ---
-<div id="carousel-home" class="carousel-feature carousel slide mb-5" data-ride="carousel">
-  <div class="carousel-inner">
-    {% for item in page.carousel %}
-    <div class="carousel-item {% if forloop.first %}active{% endif %}">
-      <section class="bg-image aspect-hero text-white" style="background-image: url({{ item.image }})">
-        <div class="bg-fill">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="mb-4">
-                  <h1>{{ item.title }}</h1>
-                </div>
-                <a href="{{ item.link.link }}" class="btn btn-primary">{{ item.link.label }}</a>
-              </div>
+{% include hero-text.html item=page.hero %}
+{% include components/slider.html slider=page.slider %}
+{% include home/homepage-notification.html %}
+<section class="pb-5">
+  <div class="container">
+    <div class="text-center editable">
+      <h2><code>Purpose-fueled</code><em><code> </code></em><code>food<br /></code> for the prosperity of our planet and people.</h2>
+    </div>
+  </div>
+</section>
+<section id="bg-ellipse" class="caret-bottom-center">
+  <div class="container">
+    <div class="row" data-cms-bind="#purpose_section">
+      {% for item in page.purpose_section.items %}
+        <div class="col-12 col-lg-4 text-center">
+          <div class="bg-mid rounded p-3 mb-4 d-inline-block mx-auto d-inline-flex align-items-center justify-content-center">
+            <div>
+              <img src="{{ item.image }}" class="icon-lg" alt="{{ item.title }}" />
+            </div>
+          </div>
+          <p class="font-sans-serif lead">{{ item.title }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="arrow-down"></div>
+</section>
+<section class="bg-primary text-white">
+  <div class="container">
+    <div class="row" data-cms-bind="#purpose_section">
+      {% for item in page.purpose_section.stats %}
+        <div class="col-12 col-lg-4">
+          <div class="p-3 pt-lg-4 px-lg-4 pb-lg-0">
+            <h3 class="mb-1">{{ item.title }}</h3>
+            <p class="text-green-dark font-weight-500 mb-4">{{ item.subtitle }}</p>
+            <div class="lead text-green-light">
+              {{ item.description_html }}
             </div>
           </div>
         </div>
-
-      </section>
+      {% endfor %}
     </div>
-    {% endfor %}
   </div>
-  <div class="carousel-controls-wrapper">
-    <div class="container">
-      <div class="d-flex">
-        <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
-          <i class="ri-arrow-left-s-line"></i>
-          <span class="sr-only">Previous</span>
+</section>
+<section class="bg-mid">
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center mx-lg-n5">
+      <div class="col-12 col-lg-5 px-lg-5 mb-4 mb-lg-0" data-cms-bind="#image_grid_1">
+        {% include components/image-grid-vertical-image-right.html item=page.image_grid_1 %}
+      </div>
+      <div class="col-12 col-lg-5 px-lg-5">
+        <div class="editable mt-3 mt-lg-0">
+          <h2>Trustworthy farm-to-table options to<code>&nbsp;fuel your business</code></h2>
+        </div>
+        <div class="editable lead mb-4">
+          <p>We offer wholesale prices and convenience, with food from a dedicated network of local and regional food producers.</p>
+        </div>
+        <a href="/wholesale" class="btn btn-blue-light editable">
+          Wholesale Options
         </a>
-        <ol class="carousel-indicators">
-          {% for item in page.carousel %}
-          <li data-target="#carousel-home" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}"></li>
-          {% endfor %}
-        </ol>
-        <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
-          <i class="ri-arrow-right-s-line"></i>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </div>
   </div>
-</div>
+  {% if page.logo_grid_section.show_section %}
+    <div class="mt-5" data-cms-bind="#logo_grid_section">
+      {% include components/logo-pile-2.html items=page.logo_grid_section.items grayscale=false %}
+    </div>
+  {% endif %}
+</section>
+<section class="bg-light bg-image aspect-auto bg-15 bg-left-bottom" style="background-image: url(/img/bg-illustrations/4P-Illustrations_spinach-1.png)">
+  <div class="container-fluid">
+    <div class="row justify-content-center align-items-center mx-lg-n5">
+      <div class="col-12 col-lg-5 px-lg-5 mb-4 mb-lg-0">
+        <div class="editable">
+          <h2>From independent farmers,&nbsp;<code>direct to your door</code></h2>
+        </div>
+        <div class="editable lead mb-4">
+          <p>Take your pick of healthy, ethical and sustainable produce, proteins, and more, for delivery or pickup across DC, Virginia, & Maryland</p>
+        </div>
+        <a href="{{ site.store_url }}" class="btn btn-green-light">Shop All Groceries</a>
+      </div>
+      <div class="col-12 col-lg-5 px-lg-5" data-cms-bind="#image_grid_2">
+        {% include components/image-grid-split-vertical.html item=page.image_grid_2 %}
+      </div>
+    </div>
+  </div>
+</section>
 
 
-<section id="featured-collections">
-  <div class="container">
-    <div class="row mb-3">
-      <div class="col-lg-8">
-        <div class="editable">
-          <h1><strong>Weekly Groceries Delivered From Independent Farmers - to DC, VA, &amp; MD</strong></h1>
-        </div>
-        <div class="editable">
-          <h5 class="mb-lg-5">4P Foods delivers in-season produce sourced from independent farmers we know and trust in Washington, DC, Virginia, Maryland, and through the Eastern Seaboard and MidAtlantic.&nbsp;<br /><br />Sign up today for your first 4P Foods tote!</h5>
-        </div>
-      </div>
-      <div class="col-lg-4 text-lg-right">
-        <a href="https://shop.4pfoods.com/register.php?step=first&viewing_step=first" class="btn btn-primary btn-lg editable storeLink" rel="noopener" target="_blank">SIGN UP</a>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        {% include products/featured-products-grid.html editor-link="#featured_products" %}
-      </div>
-    </div>
-  </div>
-</section>
-<section id="how-it-works">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-8">
-        <div class="editable">
-          <h1><strong>How We Work</strong></h1>
-        </div>
-        <div class="editable">
-          <h4>Sign up. Customize. Repeat.</h4>
-          <h6>We deliver to Washington, D.C., Northern Virginia, and Southern Maryland.&nbsp;</h6>
-        </div>
-      </div>
-      <div class="col-12 col-lg-4 text-lg-right">
-        <a href="https://shop.4pfoods.com/register.php?step=first&viewing_step=first" class="btn btn-secondary text-white editable" rel="noopener" target="_blank">CREATE AN ACCOUNT</a>
-      </div>
-    </div>
-    <div class="row justify-content-between text-center mt-lg-5">
-      <div class="col-12 col-md-4">
-        <div class="m-3 arrow arrow-right-green">
-          <img alt="Farm Icon" class="img-fluid mx-4 w-50 mb-3 editable" src="/uploads/signup-3.png" width="203" />
-          <div class="editable">
-            <h4>
-              <strong>1. Pick Your Tote(s)</strong>
-            </h4>
-          </div>
-          <div class="editable">
-            <p>&nbsp;</p>
-            <h6><strong>Choose how to get your groceries.</strong></h6>
-            <p>Small, medium, large totes.<br />Veggie, dairy, or proteins.<br />Or, just shop for what you need!<br /><br />We tote-ally get your dietary requirement and schedule.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="m-3 arrow arrow-right-green">
-          <img alt="Food Icon" class="img-fluid mx-4 w-50 mb-3 editable" src="/uploads/customize-2.png" width="202" />
-          <div class="editable">
-            <h4><strong> 2. Add What You Need </strong></h4>
-          </div>
-          <div class="editable">
-            <p>&nbsp;</p>
-            <h6><strong>Customize your 4P Foods tote or trust our in-season picks.</strong></h6>
-            <p>Try a new veggie or fruit or swap in food you already know and love!</p>
-            <p>We also have the staples you need: eggs, milk, cookies - all lovingly sourced from farmers and makers we know and trust.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="m-3">
-          <img alt="Delivery Icon" class="img-fluid mx-4 w-50 mb-3 editable" src="/uploads/deliver.png" width="202" />
-          <div class="editable">
-            <h4>
-              <strong>3. Delivered Weekly</strong>
-            </h4>
-          </div>
-          <div class="editable">
-            <p>&nbsp;</p>
-            <h6><strong>Get your 4P Foods grocery tote weekly, bi-weekly, or once a month.</strong></h6>
-            <p>We deliver right to your doorstep or community pick up point.</p>
-            <p>Change frequency of delivery, pause for travel, or cancel as needed!&nbsp;</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- {% include home/how-tabs.html %} -->
-<section class="bg-green-dark bg-image aspect-none" style="background-image: url(/img/bg-illustrations/4p-homepage-button-02.jpg)">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <a href="https://shop.4pfoods.com" class="btn btn-outline-white btn-lg editable">Start Shopping 4P</a>
-      </div>
-    </div>
-  </div>
-</section>
-{% include home/home-testimonials.html %}
-<div class="row no-gutters">
-  <div class="col-4">
-    <div class="p-1">
-      <div class="bg-image aspect-16x9 cms-editor-link" style="background-image: url('{{ page._assets[3].image }}')" data-cms-editor-link="cloudcannon:#_assets[3].image" data-cms-editor-link-style="modal"></div>
-    </div>
-  </div>
-  <div class="col-4">
-    <div class="p-1">
-      <div class="bg-image aspect-16x9 cms-editor-link" style="background-image: url('{{ page._assets[4].image }}')" data-cms-editor-link="cloudcannon:#_assets[4].image" data-cms-editor-link-style="modal"></div>
-    </div>
-  </div>
-  <div class="col-4">
-    <div class="p-1">
-      <div class="bg-image aspect-16x9 cms-editor-link" style="background-image: url('{{ page._assets[5].image }}')" data-cms-editor-link="cloudcannon:#_assets[5].image" data-cms-editor-link-style="modal"></div>
-    </div>
-  </div>
-</div>
-<section class="bg-tan">
-  <div class="container">
-    <div class="row align-items-center justify-content-center">
 
-      <div class="col-lg-6">
-        <div class="row align-items-center">
-          <div class="col-6 col-lg-4">
-            <img class="img-fluid editable" alt="Farmer icon" src="/uploads/600-farmers.png" width="203" />
-          </div>
-          <div class="col-12 col-lg-8">
-            <p class="editable mb-0">
-              We support more than 600 independent farmers in the region.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="row align-items-center">
-          <div class="col-6 col-lg-4">
-            <img class="img-fluid editable" alt="Food icon" src="/uploads/7500-lbs-of-food.png" width="203" />
-          </div>
-          <div class="col-12 col-lg-8">
-            <p class="editable mb-0">
-              Every month, we deliver more 7,500 pounds of food into underserved communities across DC, MD, and VA.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="impact" class="bg-gray text-white overflow-hidden">
-  <img class="lettuce" src="/img/bg-illustrations/illustrations_cabbage.svg" alt="Cabbage Graphic" />
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-12 col-lg-3">
-        <div class="editable">
-          <h1 class="text-capitalize"><strong>How We Are Different</strong></h1>
-        </div>
-      </div>
-      <div class="col-12 col-lg-9">
-        <p class="lead editable mb-3">
-          <em>Our mission at 4P Foods is to connect all people and communities to regional farmers and responsibly sourced food.&nbsp;</em>
-        </p>
-        <div class="editable mb-3">
-          <p>Each day, our work at 4P Foods gets us closer to the kind of food system farmers thrive in, soil is regeneratively cared for, animals are treated humanely, and all communities have equitable access to healthy food.</p>
-        </div>
-        <a href="/our-impact" class="btn btn-primary mt-4 editable">Find out more</a>
-      </div>
-    </div>
-  </div>
-  <img class="leaf" src="/img/bg-illustrations/4P-Illustrations_spinach.svg" alt="Spinach graphic" />
-</section>
-
-<section>
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-12 col-lg-8">
-        <div class="editable">
-          <h1><strong>The Monthly 4P Foods Harvest</strong></h1>
-          <h2>
-            <font face="Spectral, serif"><span style="font-weight: 400; text-transform: capitalize;">Our insights on Farming, Food, News, and more</span></font>
-          </h2>
-        </div>
-        <div class="editable">
-          
-        </div>
-      </div>
-      <div class="col-lg-4 text-lg-right">
-        <a href="/blog" class="btn btn-primary editable">read OUR Blog</a>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <div class="editable">
-        <h3><strong>Featured Post</strong></h3>
-      </div>
-    </div>
-  </div>
-</div>
-{% include news/featured-news.html %}
-<div data-cms-editor-link="cloudcannon:#_assets[7].image" data-cms-editor-link-style="modal" class="bg-image aspect-4x1 cms-editor-link" style="background-image: url({{ page._assets[7].image }})">
-</div>
-<section id="tryUsToday">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <a href="https://shop.4pfoods.com/register.php?step=first&viewing_step=first" class="btn btn-primary btn-block editable">START TODAY! COMmITMENT FREE.</a>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="bg-tan">
-  <div class="container">
-    <div class="row align-items-center mb-5">
-      <div class="col-12 col-lg-8">
-        <h3>Featured Recipes</h3>
-      </div>
-      <div class="col-12 col-lg-4 text-lg-right">
-        <a href="/recipes" class="btn btn-secondary text-white btn-lg editable">See OUR Recipes</a>
-      </div>
-    </div>
-    {% include recipes/recipes-list-featured.html %}
-  </div>
-</section>

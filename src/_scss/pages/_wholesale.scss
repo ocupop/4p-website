@@ -1,0 +1,42 @@
+.wholesale-layout {
+
+}
+
+#why-work-with-4p {
+  .lead {
+    li {
+      margin-bottom: 2rem;
+      line-height: 1.4;
+      color: $black-light;
+      letter-spacing: -0.96px;
+    }
+  }
+  .border-left-green {
+    padding-left: 40px;
+    border-left: 7px solid $green;
+  }
+}
+
+.testimonial-wrapper {
+  padding: 2rem;
+}
+
+.testimonial-quote {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  font-size: 1rem;
+}
+
+.wholesale-hero-logo {
+  position: absolute;
+  bottom: -70px;
+  right: -20px;
+  @include media-breakpoint-up(lg) {
+    top: -115px;
+    bottom: auto;
+  }
+}

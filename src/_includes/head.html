@@ -72,7 +72,23 @@
       'https://chimpstatic.com/mcjs-connected/js/users/ad164c24986d53694379b9d1a/a3be7d384619c9e02be035374.js'
     )
   </script>
-  {% endunless%}
+  {% endunless %}
+  {% if page.layout == 'recipe' %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Recipe",
+        "name": "{{ page.title }}",
+        "image": "{{ site.url }}{{ page.featured_image }}"
+      },
+        "author": {
+        "@type": "Person",
+        "name": "{{ page.author}}"
+      },
+        "description": "{{ page.description_html | truncate: 200 | strip_html }}",
+    </script>
+
+  {% endif %}
 </head>
 <!-- <h1>{{ page.show_mailchimp_popup }}</h1> -->
 

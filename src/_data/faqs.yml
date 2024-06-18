@@ -47,10 +47,9 @@
         <strong>11:59 pm on Tuesday</strong> for a Friday delivery.&nbsp;</p>
     - question: How does billing work? Do I pay upfront?
       answer_html: >-
-        <p>We do our billing every Saturday for the prior week&rsquo;s
-        deliveries. So if you get a bag on Wednesday, you&rsquo;ll be billed the
-        following weekend. If you skip your order, you won&rsquo;t be billed
-        that week.</p>
+        <p>We do our billing every Sunday for the prior week’s deliveries. So if
+        you get a bag on Wednesday, you’ll be billed the following weekend. If
+        you skip your order, you won’t be billed that week.</p>
     - question: What if I'm allergic to something that's coming in my 4P Foods Bag?
       answer_html: >-
         <p>That’s where the customization function comes in! Be sure to login to

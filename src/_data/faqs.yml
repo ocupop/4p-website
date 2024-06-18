@@ -4,20 +4,19 @@
       answer_html: >-
         <p>We are your one-stop shop for local, regional, sustainable, and
         ethical produce, protein, dairy, pantry, and more (what we call "Good
-        Food"). There are two ways to shop: <a target="_blank" rel="noopener"
-        href="https://shop.4pfoods.com/summary.php?go=products&amp;cat=93&amp;12">4P
-        Bags</a> and a la carte.</p><p>4P Bags come in four types: Produce,
-        Protein, Dairy, and Fruit. Each of them will come "pre-packed" with 4P's
-        Picks for that week, and then you can customize them by taking out or
-        adding items to get just what you want. It doesn't matter how many items
-        you have in a Bag, so long as you hit the minimum for that Bag, which
-        you'll see in the description.</p><p>You can order a Bag once to try it
-        out, but our recommendation is to set up a recurring order so that you
-        can be sure to have your fridge, freezer, and pantry stocked every week.
-        You can always add on a la carte items, skip as often as you need, or
-        cancel altogether with no penalty.</p><p>You can also order fully a la
-        carte without a 4P Bag (don't worry, your order will still come packed
-        in one of our lovely insulated reusable bags).</p>
+        Food"). There are two ways to shop: <a
+        href="https://shop.4pfoods.com/summary.php?go=products&amp;cat=93&amp;12"
+        target="_blank" rel="noopener">4P Bags</a> and a la carte.</p><p>4P Bags
+        come in three types: Produce, Protein, and Dairy. Each of them will come
+        "pre-packed" with 4P's Picks for that week, and then you can customize
+        them by taking out or adding items to get just what you want.</p><p>You
+        can order a Bag once to try it out, but our recommendation is to set up
+        a recurring order so that you can be sure to have your fridge, freezer,
+        and pantry stocked every week. You can always add on a la carte items,
+        skip as often as you need, or cancel altogether with no
+        penalty.</p><p>You can also order fully a la carte without a 4P Bag
+        (don't worry, your order will still come packed in one of our lovely
+        insulated reusable bags).</p>
     - question: How will I find out what food you have each week?
       answer_html: >-
         <p>Each Saturday we update our online shop with what&rsquo;s fresh that
@@ -48,10 +47,9 @@
         <strong>11:59 pm on Tuesday</strong> for a Friday delivery.&nbsp;</p>
     - question: How does billing work? Do I pay upfront?
       answer_html: >-
-        <p>We do our billing every Saturday for the prior week&rsquo;s
-        deliveries. So if you get a bag on Wednesday, you&rsquo;ll be billed the
-        following weekend. If you skip your order, you won&rsquo;t be billed
-        that week.</p>
+        <p>We do our billing every Sunday for the prior week’s deliveries. So if
+        you get a bag on Wednesday, you’ll be billed the following weekend. If
+        you skip your order, you won’t be billed that week.</p>
     - question: What if I'm allergic to something that's coming in my 4P Foods Bag?
       answer_html: >-
         <p>That’s where the customization function comes in! Be sure to login to
@@ -171,18 +169,16 @@
         bags.</li></ol>
     - question: How do I know if my order is “done”?
       answer_html: >-
-        <p>There&rsquo;s no checkout button on your shopping cart. As long as
-        you hit the $30 order minimum, you&rsquo;re good to
-        go.&nbsp;</p><p>However, there <em>is</em> a &ldquo;Save&rdquo; button
-        you need to click to finish the customizing process for a 4P bag. If
-        you&rsquo;re here from our old site, that&rsquo;s an important change to
-        note!</p><p>Whenever you make changes to your order (including adding or
-        removing items or customizing a bag), you&rsquo;ll get a confirmation
-        email. When you change a recurring order, you&rsquo;ll get emails for
-        the future deliveries, as well. If you don&rsquo;t want to get a
-        confirmation email every time, you can hit &ldquo;Unsubscribe&rdquo; at
-        the bottom of the email to update your email preferences for different
-        types of emails.</p>
+        <p>There’s no checkout button on your shopping cart. As long as you hit
+        the $30 order minimum, you’re good to go.&nbsp;</p><p>However, there
+        <em>is</em> a “Save” button you need to click to finish the customizing
+        process for a 4P bag.</p><p>Whenever you make changes to your order
+        (including adding or removing items or customizing a bag), you’ll get a
+        confirmation email. When you change a recurring order, you’ll get emails
+        for the future deliveries, as well. If you don’t want to get a
+        confirmation email every time, you can hit “Unsubscribe” at the bottom
+        of the email to update your email preferences for different types of
+        emails.</p>
     - question: When is the order deadline each week?
       answer_html: >-
         <p><strong>The deadline to make any customizations to your 4P order is a
@@ -215,14 +211,8 @@
         <p>Select dairy and protein items can be purchased a la carte, including
         eggs and butter. Take a look through the Dairy &amp; Eggs and Protein
         sections of the shop to see what is available to add to your
-        cart.&nbsp;</p><p>Dairy and protein bags have $20 minimums, so if you
-        customize one of those bags to be less than $20 worth of products,
-        you&rsquo;ll still be charged $20. With a wide and ever-growing
-        selection of products and flexible order frequencies (one-time, every
-        week, every other week, monthly), $20 shouldn&rsquo;t be too hard to
-        hit!</p><p>To access our full rotating inventory for Dairy (including
-        our selection of cheese), shop for a Dairy Bag and customize what's
-        inside!</p>
+        cart.&nbsp;</p><p>All orders must meet the $30 minimum to be
+        delivered.</p>
     - question: How can I tell what’s in my bag while I’m customizing?
       answer_html: >-
         <p>From the shop, click on “What’s Inside” on any bag image to see

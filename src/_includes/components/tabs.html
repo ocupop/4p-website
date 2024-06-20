@@ -1,0 +1,41 @@
+{% assign tabs = include.item %}
+<div>
+  <ul id="{{ page.title }}-tabs" class="nav nav-tabs tabs-buttons">
+    {% for tab in tabs %}
+      <li class="nav-item">
+        <a class="nav-link {% if forloop.first %}active{% endif %}" id="tab-{{ tab.title | slugify }}" data-toggle="tab" href="#{{ tab.title | slugify }}" role="tab" aria-controls="{{ tab.title | slugify }}" aria-selected="true">{{ tab.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+<div class="tab-content mt-5">
+  {% for tab in tabs %}
+  <div id="{{ tab.title | slugify }}" role="tabpanel" aria-labelledby="tab-{{ tab.title | slugify }}" class="tab-pane fade {% if forloop.first %}show active{% endif %}">
+    <div class="row mx-lg-n4 rounded bg-mid align-items-center">
+      {% if tab.image %}
+        <div class="col-12 col-lg-4 p-4">
+          <div class="bg-image aspect-1x1 mb-3 rounded" style="background-image: url({{ tab.image }})"></div>
+        </div>
+      {% endif %}
+      <div class="col-12 col-lg-8 p-4">
+        <div class="d-flex flex-column justify-content-between p-4">
+          <div>
+            <h3 class="text-black-light"><strong>{{ tab.title }}</strong></h3>
+            {% if tab.description_html %}
+              <div class="editable text-black-light">
+                {{ tab.description_html }}
+              </div>
+              {{ tab.description_html }} 
+            {% endif %} 
+          </div>
+          {% if tab.link %}
+            <p>
+              <a href="{{ tab.link.url }}" class="btn btn-green-light">{{ tab.link.label | default: 'Learn More'}}</a>
+            </p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

@@ -23,7 +23,7 @@ footer_image: /uploads/2013-07-strawberry-box-va-xx.JPG
       <div class="col-12">
         <ul class="nav">
           {% for object in site.data.faqs %}
-            <li>
+            <li class="mb-2">
               <a href="#{{ object.title | slugify }}" class="btn btn-primary mr-3">{{ object.title }}</a>
             </li>
           {% endfor %}

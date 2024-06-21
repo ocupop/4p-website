@@ -260,7 +260,7 @@
 .accordion {
   > .card {
     overflow: hidden;
-
+    border-radius: 0;
     &:not(:last-of-type) {
       border-bottom: 0;
       @include border-bottom-radius(0);

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Responsibly Source Milk And Cheese
-date: 2023-06-08 11:00:00
+date: 2024-06-18 11:00:00
 author: 4P Foods
 excerpt: >-
   4P Foods only works with local dairies, like Shenandoah Valley Family Farms in

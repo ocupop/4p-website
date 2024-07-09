@@ -9,7 +9,7 @@
   {% elsif layout.footer_image %}
   <div class="bg-image aspect-4x1" style="background-image: url({{ layout.footer_image }})"></div>
   {% endif %}
-  {% unless page.title == '4P Wholesale' %}
+  {% comment %}
   <section id="tryUsToday" class="bg-primary bg-image aspect-none"
     style="background-image: url({{ '/img/bg-illustrations/4p-homepage-goodfood-01.jpg' }})">
     <div class="container">
@@ -21,5 +21,5 @@
       </div>
     </div>
   </section>
-  {% endunless %}
+  {% endcomment %}
 {% endunless %}

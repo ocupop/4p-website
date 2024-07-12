@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 5 Summer Melons You Need To Know
-date: 2023-08-23 16:30:00
+date: 2024-07-12 12:30:00
 author: 4P Foods
 excerpt: >-
   4P Foods sources melons from Mid-Atlantic growers. This means we have fresh

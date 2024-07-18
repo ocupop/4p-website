@@ -21,4 +21,6 @@ In the past 10 years, 4P Foods has built this model into a scalable enterprise. 
 
 ##### This has resulted in sales across multiple channels that put  $27M into rural economies across the Mid-Atlantic region.
 
-##### <div class="editable"></div>
+&nbsp;
+
+#####

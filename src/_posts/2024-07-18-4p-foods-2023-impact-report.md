@@ -9,6 +9,10 @@ buttons:
   - label: READ THE FULL REPORT
     link: https://docsend.com/view/j6txsvd6t5jf8me3
 assets:
+tags:
+  - 4P Foods
+  - '2023'
+  - Food System
 published: false
 ---
 4P Foods is delivering purpose-fueled food for the prosperity of our planet and people. Each day, our work at 4P Foods gets us closer to an equitable, regional food system. With a growing network of partners we are building a system in which: farmers are creating generational wealth; soil is regeneratively nourished; animals are treated humanely; and all communities have equal access to healthy food. We prioritize traditionally marginalized communities on both ends of the pipeline: assisting socially disadvantaged farmers and producers to access markets; and bringing food insecure communities fresh, healthy, planet-friendly and local produce, meat, dairy, and shelf stable products.

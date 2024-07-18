@@ -6,6 +6,8 @@ author: 4P Foods
 excerpt: Celebrating 10 years of building a new food system.
 featured_image: /uploads/2023-impact-report-blog-header.png
 buttons:
+  - label: READ THE REPORT
+    link: https://docsend.com/view/j6txsvd6t5jf8me3
 assets:
 published: false
 ---

@@ -8,7 +8,9 @@ layout: default
         {% if page.featured_image %}
           <img src="{{ page.featured_image }}" class="img-fluid mb-5" alt="{{ page.title }} image" />
         {% endif %}
-        <div class="editable"><h1>{{ page.title }}</h1></div>
+        <div class="editable">
+          <h1>{{ page.title }}</h1>
+        </div>
 
         <p>{{ page.date | date: '%B %d, %Y'}} {% if page.author %}by {{ page.author }}{% endif %}</p>
         {{ page.content }}

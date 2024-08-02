@@ -8,7 +8,7 @@ excerpt: >-
   sites. Our pick-up sites provide 4P Foods’ customers with a place to gather
   their weekly harvest that reduces their grocery bill with free delivery! View
   a full list of our convenient pick-up locations across the DMV.
-featured_image:
+featured_image: /uploads/pick-up-sites.png
 buttons:
   - label: SIGN UP NOW
     link: https://shop.4pfoods.com/login

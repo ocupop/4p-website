@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 5 Easy Weeknight Dinners To Try This Fall
-date: 2024-08-06 16:30:00
+date: 2023-09-12 16:30:00
 author: 4P Foods
 excerpt: >-
   With school back in session and vacations winding down, it can feel like

@@ -54,3 +54,17 @@ Enter mating disruption! This alternative pest control uses synthetic sex pherom
 This Integrated Pest Management pilot is groundbreaking and has the potential to drastically reduce pesticide usage on brassicas vegetables, which is a huge win for sustainable farming practices and a step closer to regenerative management of these vegetables.
 
 [Learn more about the pilot here.](https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/ENTO/ento-571/ENTO-571.pdf){: target="_blank" rel="noopener"}
+
+## More Regenerative Products
+
+### Patagonia Provisions
+
+Patagonia Provisions is bringing top quality regenerative products to people around the world, and we just couldn’t miss out on putting these exciting products in the [4P Foods shop](https://shop.4pfoods.com/summary.php?go=products&amp;search_substring=patagonia){: target="_blank" rel="noopener"}. Their products include tinned fish from community-based fisheries that use short-set gill nets that are checked every few hours to keep by-catch minimal and pasta made with a perennial wheat-like grain called Kernza. This is the first ever Regenerative Organic Certified® pasta.
+
+### ORIGIN Cheese
+
+At ORIGIN, superior dairy starts with regenerative farming practices where soil health leads to nutritious green pastures and heritage breeds produce rich milk that is better for humans, better for biodiversity and better for the environment. ORIGIN Cheese is regenerative, organic, and handcrafted from 100% A2 milk exclusively from pasture raised Guernsey cows.
+
+## What is Regenerative Organic Certified?
+
+Overseen by the Regenerative Organic Alliance, Regenerative Organic Certified® uses the USDA Certified Organic standard as a baseline. To build on that baseline of Organic, they then add in the criteria for their 3 pillars: Soil Health & Land Management, Animal Welfare, and Farmer & Worker Fairness. [Read more about their framework here.](https://regenorganic.org/wp-content/uploads/2023/03/Regenerative-Organic-Certified-Framework.pdf){: target="_blank" rel="noopener"}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'A Changing Landscape: Regenerative Agriculture'
-date: 2024-08-14 09:00:00
+date: 2024-08-14 08:49:00
 author: 4P Foods
 excerpt: >-
   Regenerative agriculture is a growing and changing landscape that can include
@@ -11,7 +11,7 @@ buttons:
   - label: READ THE FULL REPORT
     link: https://docsend.com/view/j6txsvd6t5jf8me3
 assets:
-published: false
+published: true
 ---
 <div class="editable"></div>
 

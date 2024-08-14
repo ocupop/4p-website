@@ -38,3 +38,19 @@ Through their management in of their grasslands, savannas, riparian areas, and w
 In 2023 they were verified through Savory’s Ecological Outcome Verification program giving them the data to continue to regenerate the land and build soil health. The Robinia Institue, a Savory Institute hub, located in Wingina, VA will continue to monitor Kinloch Farm’s land health. Find out more about Kinloch Farms regenerative practices on their website: [kinlochfarm.com/regenerative-management](https://kinlochfarm.com/regenerative-management/){: target="_blank" rel="noopener"}.
 
 In the 4P Foods shop, you can find Kinloch Farm’s [regeneratively raised beef](https://shop.4pfoods.com/summary.php?go=products&amp;search_substring=kinloch){: target="_blank" rel="noopener"} and their convenient frozen meals made using quality ingredients.
+
+## What is Ecological Outcome Verified?
+
+From the Savory Institute, [Ecological Outcome Verified](https://savory.global/eov/){: target="_blank" rel="noopener"} (EOV) provides a holistic assessment of ecosystem health. EOV works on two time scales: annually and every five years. So, it is time consuming and a commitment to achieve this verification. Every year an EOV monitor comes out and assesses qualitative aboveground indicators like bare ground and biodiversity. Then at the five year mark, plant diversity metrics, water infiltration, and soil data are collected. Soil samples tested for soil carbon and water-holding capacity. This data provides actionable insights that give farmers and ranchers the ability to promote regeneration year-over-year.
+
+# A Step Closer to Regenerative Management
+
+Archlynn Farm is changing the landscape in Charlotte County, Va. Archlynn Farm was able to cut their pesticide usage by 90% by partnering with Virginia Tech to implement new technology to disrupt the mating season of the Diamondback Moth.
+
+The Diamondback Moth is a destructive pest of brassicas vegetables. Larvae of the moth feed on the leaves of crops like Brussel sprouts and collard greens creating holes and reducing crop yield. Diamondback Moth populations also tend to develop resistance to insecticides, so innovative ways to manage this pest is needed.
+
+Enter mating disruption! This alternative pest control uses synthetic sex pheromone to prevent males moths from finding and mating with females.
+
+This Integrated Pest Management pilot is groundbreaking and has the potential to drastically reduce pesticide usage on brassicas vegetables, which is a huge win for sustainable farming practices and a step closer to regenerative management of these vegetables.
+
+[Learn more about the pilot here.](https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/ENTO/ento-571/ENTO-571.pdf){: target="_blank" rel="noopener"}

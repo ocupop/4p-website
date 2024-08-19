@@ -11,7 +11,10 @@ excerpt: >-
 featured_image: /uploads/5-easy-weeknight-dinners-3.png
 buttons:
 assets:
-published: false
+tags:
+  - recipe
+  - 4P Foods
+published: true
 ---
 <div class="editable"></div>
 

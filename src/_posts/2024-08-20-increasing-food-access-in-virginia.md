@@ -59,3 +59,15 @@ Deliveries for the LFPA program from 4P Foods to LEAP started in July of 2023 an
 # Local Food Purchasing Assistance Program Story Map
 
 Using LFPA funds, the Virginia Department of Agriculture and Consumer Services awarded sub-grants to agencies across Virginia with the capacity to procure foods from local sources and then deliver that food to those that need it. This program connected a number of community partners to build resilience and promote equity in the food system. James Madison University students captured the impact of LFPA in a story map that showed the many connections across the commonwealth. [View the story map.](https://storymaps.arcgis.com/stories/963794d0125a40e28ae9ae15ec7a9da2 "LFPA Story Map"){: target="_blank" rel="noopener"}
+
+&nbsp;
+
+# Sourcing Locally for Food Access
+
+Meet Brick Goldman from Goldman Farm and the Southside Virginia Fruit and Vegetable Producers Association. In partnership with 4P Foods and the Federation of Virginia Food Banks, the Southside Virginia Fruit & Vegetable Producers Association has been providing local fruits and vegetables to food banks in the region.
+
+The Southside Virginia Vegetable and Fruit Producers Association is an organization that promotes and encourages improvements in produce and value-added products grown in Southside Virginia. The association works to develop partnerships that improve the production and marketing of local produce and support the community. Brick Goldman of Goldman Farm is a founding member of the Southside Virginia Vegetable and Fruit Producers Association. Brick Goldman is known as a community leader, especially among fellow farmers. He was awarded 4P Foods Farmer of the Year for 2023 thanks to his outstanding quality of produce.
+
+“They’ve raved about the vegetables we bring them because they’re super fresh,” explains Brick Goldman of Goldman Farm in Cullen, VA. “We pick them one day and then, for the most part, they get them the next day.”
+
+Due to a growing demand for local produce through programs like LFPA and the Virginia Farm to School program, the Southside Virginia Vegetable and Fruit Producers Association is expanding their produce storage space. In 2023, they received grants from the tobacco commission and the USDA to help fund the building of a new facility. The 4P Foods team was able to visit the new site with Brick Goldman.

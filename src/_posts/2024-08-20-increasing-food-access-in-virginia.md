@@ -11,8 +11,10 @@ excerpt: >-
   grown by local and regional farmers.
 featured_image: /uploads/increasing-food-access-blog.png
 buttons:
+  - label: READ THE FULL IMPACT REPORT
+    link: https://docsend.com/view/j6txsvd6t5jf8me3
 assets:
-published: false
+published: true
 ---
 <div class="editable"></div>
 

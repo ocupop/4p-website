@@ -6,7 +6,7 @@ author: 4P Foods
 excerpt: >-
   4P Foods has a special delivery day for Thanksgiving turkeys, holiday hams,
   and a modified schedule for the week of Thanksgiving.
-featured_image: /uploads/modified-thanksgiving-delivery-schedule.png
+featured_image: /uploads/modified-thanksgiving-delivery-schedule-1.png
 buttons:
 assets:
 tags:

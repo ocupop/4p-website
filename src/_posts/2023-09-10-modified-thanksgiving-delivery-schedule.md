@@ -6,7 +6,7 @@ author: 4P Foods
 excerpt: >-
   4P Foods has a special delivery day for Thanksgiving turkeys, holiday hams,
   and a modified schedule for the week of Thanksgiving.
-featured_image: /uploads/modified-thanksgiving-delivery-schedule.png
+featured_image: /uploads/modified-thanksgiving-delivery-schedule-1.png
 buttons:
 assets:
 tags:
@@ -14,11 +14,15 @@ published: true
 ---
 4P Foods has a special delivery day for Thanksgiving preorder items and a modified schedule for the week of Thanksgiving.
 
+&nbsp;
+
 #### **Thanksgiving Turkey & Holiday Ham Delivery**
 
 ##### **Sunday, November 24**
 
 KellyBronze turkeys, J&L Green Farm turkeys, White Oak Pastures ham, Garret Valley Farm ham, and Chrysalis Vineyard wine will be delivered on **Sunday, November 24**. This is a special delivery day just for Thanksgiving preorder items.
+
+&nbsp;
 
 #### **Modified Thanksgiving Week Grocery Delivery Schedule**
 
@@ -45,3 +49,5 @@ This is to make sure you get all of the delicious side dish essentials you need 
 * 4P Foods tote to arrive on **Wednesday, November 27**<br>
 
   <div class="editable"></div>
+
+  &nbsp;

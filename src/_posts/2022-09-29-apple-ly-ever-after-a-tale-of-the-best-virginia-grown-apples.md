@@ -6,7 +6,7 @@ author: '4P Foods '
 excerpt: >-
   The great weather conditions in Virginia make it a prime state to grow apples.
   Read on to find out which varieties are best for eating and baking.
-featured_image: /uploads/appleblog-12applesof-virginia---ig-post-blog-banner.png
+featured_image: /img/uploads/posts/virginia-grown-apples.png
 buttons:
 assets:
 tags:

@@ -13,6 +13,7 @@ featured_image: /uploads/farm-to-school-impact-report.png
 buttons:
 assets:
 tags:
+  - Farm to School
 published: false
 ---
 <div class="editable"></div>

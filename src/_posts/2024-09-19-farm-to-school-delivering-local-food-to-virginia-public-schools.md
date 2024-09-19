@@ -14,7 +14,7 @@ buttons:
 assets:
 tags:
   - Farm to School
-published: false
+published: true
 ---
 <div class="editable"></div>
 

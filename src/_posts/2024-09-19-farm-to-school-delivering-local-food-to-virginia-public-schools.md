@@ -22,13 +22,17 @@ published: true
 
 Farm to School programs make school meals an opportunity to fuel kids’ curiosity and interest in the local food system! Find out more at [4PFoods.com/wholesale/farm-to-school](https://4pfoods.com/wholesale/farm-to-school/){: target="_blank" rel="noopener"}.
 
+&nbsp;
+
 ##### "4P Foods is the bridge between us and the local Virginia Farmers. The partnership makes sense for all involved, as they can connect the growers to the schools through purchasing and delivering fresh produce and meats. The items we receive each week are picked from the fields within days of delivery so it’s guaranteed to be fresher, more nutritious – not to mention tastier. We are also helping put dollars back into the local economy,” says Bruce Davis, Prince Edward County Public Schools
 
-# Connecting farms to schools through food hubs.
+&nbsp;
+
+## Connecting farms to schools through food hubs
 
 Founder & CEO of 4P Foods Tom McDougall and 4P Foods Special Programs Manager Devon Byrne are interviewed about the importance Virginia's Farm to School program and 4P Foods role in that program as a food hub. [Watch the video](https://www.doe.virginia.gov/programs-services/school-operations-support-services/school-nutrition/programs-promotions-and-initiatives/virginia-farm-to-school "Farm to School VDOE"){: target="_blank" rel="noopener"}to find out how farms and schools are connected through food hubs.
 
-# Virginia orchards providing fruit for Virginia Public Schools
+## Virginia orchards providing fruit for Virginia Public Schools
 
 Saunders Brothers Orchard is a fourth generation family farm in Piney River, VA. The farm began in 1915 as a cattle farm when 5 brothers decided to pool their resources and form a partnership. With the coming of the Great Depression, money became tight and the brothers discovered that peaches were selling for good prices. Although most were forced to take jobs elsewhere, three brothers maintained the family farm through farm helpers and sharecroppers, pitching in themselves during harvest time.
 
@@ -38,7 +42,7 @@ Saunders Brothers Orchard provided apples to Virginia Public Schools in 4P Foods
 
 For Farm to School Month 2023, Marshall Saunders of Saunders Brothers Orchard and 4P Foods Founder and CEO Tom McDougall visited Annandale Terrace Elementary School to talk [sourcing locally for school cafeterias with Fairfax County Public School officials and USDA Secretary Tom Vilsack.](https://www.fcps.edu/news/annandale-terrace-shows-learning-garden-revamped-lunch-menu-usda-secretary-vilsack){: target="_blank" rel="noopener"}
 
-# Partnering with regional processors
+## Partnering with regional processors
 
 Recognizing the need to have shelf stable and processed food available to our customers year round, 4P is building out partnerships with proximate processing plants that can meet our growing scale.
 

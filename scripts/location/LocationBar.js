@@ -87,7 +87,7 @@ const LocationBar = ({ title }) => {
               </button>
               <br className="d-block d-md-none"/>
               learn more about our{' '}
-              <a href='/posts/4p-foods-community-pickup-sites/'>
+              <a href='/posts/why-sign-up-for-a-4p-foods-pick-up-site-free-delivery/'>
                 pick up options
               </a>
               .
@@ -199,7 +199,7 @@ const LocationBar = ({ title }) => {
             <p className='mt-2 mb-5 font-weight-500 text-normal'>
               4P Foods offers grocery delivery and pick-up in communities across
               DC, Virginia & Maryland.{' '}
-              <a href='/posts/4p-foods-community-pickup-sites/'>
+              <a href='/posts/why-sign-up-for-a-4p-foods-pick-up-site-free-delivery/'>
                 See our pick-up sites.
               </a>{' '}
             </p>

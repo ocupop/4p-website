@@ -1,7 +1,8 @@
 <div class="row">
   <div class="col-12">
     <div class="responsive-card-deck cards-lg-2 cards-md-2 mt-4">
-      {% for slug in page.related_farmers %} {% assign farm = site.farmers | where: 'slug', slug | first %}
+      {% for object in page.related_farmers %} 
+      {% assign farm = site.farmers | where_exp: 'item', 'item.url contains object' | first %}
 
       <div class="card bg-transparent">
         <div

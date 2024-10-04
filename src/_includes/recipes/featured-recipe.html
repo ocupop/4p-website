@@ -1,6 +1,7 @@
 {% assign featured = page.featured_recipe %}
 
-{% assign featured_recipe = site.recipes | where: 'slug', featured | first %}
+{% assign featured_recipe = site.recipes | where_exp: 'item', 'item.url contains featured' | first %}
+
 <div 
   data-cms-editor-link="cloudcannon:#featured_recipe"
   data-cms-editor-link-style="modal"

@@ -5,7 +5,8 @@
       data-cms-editor-link-style="modal"
       class="responsive-card-deck cards-lg-2 cards-md-2 mt-4 cms-editor-link">
       {% for object in page.farmers %}
-      {% assign farmer = site.farmers | where: 'slug', object | first %}
+      {% assign farmer = site.farmers | where_exp: 'item', 'item.url contains object' | first %}
+      
       <div class="card bg-transparent">
         <div
           class="bg-image aspect-4x3"

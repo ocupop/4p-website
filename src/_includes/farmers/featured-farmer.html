@@ -1,6 +1,7 @@
 {% assign featured = page.featured_farmer %}
 
-{% assign featured_farmer = site.farmers | where: 'slug', featured | first %}
+{% assign featured_farmer = site.farmers | where_exp: 'item', 'item.url contains featured' | first %}
+
 <div 
   data-cms-editor-link="cloudcannon:#featured_farmer"
   data-cms-editor-link-style="modal"

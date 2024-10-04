@@ -20,7 +20,7 @@ published: true
 
 ##### **Sunday, November 24**
 
-KellyBronze turkeys, J&L Green Farm turkeys, White Oak Pastures ham, Garret Valley Farm ham, and Chrysalis Vineyard wine will be delivered on **Sunday, November 24**. This is a special delivery day just for Thanksgiving preorder items.
+KellyBronze turkeys, J&L Green Farm turkeys, and Chrysalis Vineyard wine will be delivered on **Sunday, November 24**. This is a special delivery day just for Thanksgiving preorder items.
 
 &nbsp;
 

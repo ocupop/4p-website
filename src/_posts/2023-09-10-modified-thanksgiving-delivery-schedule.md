@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modified Thanksgiving Delivery Schedule
-date: 2023-09-10 00:00:00
+date: 2024-09-23 00:00:00
 author: 4P Foods
 excerpt: >-
   4P Foods has a special delivery day for Thanksgiving turkeys, holiday hams,

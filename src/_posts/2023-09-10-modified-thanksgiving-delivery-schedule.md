@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modified Thanksgiving Delivery Schedule
-date: 2023-09-10 00:00:00
+date: 2024-09-23 00:00:00
 author: 4P Foods
 excerpt: >-
   4P Foods has a special delivery day for Thanksgiving turkeys, holiday hams,
@@ -20,7 +20,7 @@ published: true
 
 ##### **Sunday, November 24**
 
-KellyBronze turkeys, J&L Green Farm turkeys, White Oak Pastures ham, Garret Valley Farm ham, and Chrysalis Vineyard wine will be delivered on **Sunday, November 24**. This is a special delivery day just for Thanksgiving preorder items.
+KellyBronze turkeys, J&L Green Farm turkeys, and Chrysalis Vineyard wine will be delivered on **Sunday, November 24**. This is a special delivery day just for Thanksgiving preorder items.
 
 &nbsp;
 

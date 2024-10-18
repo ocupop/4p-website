@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Roast a Pie Pumpkin and Get Delicious Pumpkin Puree
-date: 2022-11-08 08:00:00
+date: 2024-10-18 08:00:00
 author: 4P Foods
 excerpt: >-
   Also known as a sugar pumpkin, pie pumpkins have sweet and dense flesh

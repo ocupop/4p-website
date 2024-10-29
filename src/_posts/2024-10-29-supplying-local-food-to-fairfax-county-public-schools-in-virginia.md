@@ -11,7 +11,7 @@ featured_image: /uploads/supplying-local-food-to-fairfax-county-public-schools-i
 buttons:
 assets:
 tags:
-published: false
+published: true
 ---
 <div class="editable"></div>
 

@@ -17,8 +17,6 @@ published: true
 ---
 Across 4P Foods’ delivery area, we have conveniently located community pick-up sites. Our pick-up sites provide 4P Foods’ customers with a place to gather their weekly harvest that reduces their grocery bill with free delivery! View a full list of our convenient pick-up locations across the DMV:
 
-#
-
 # **Washington, D.C.**
 
 #### **YMCA Anthony Bowen**
@@ -71,7 +69,7 @@ Across 4P Foods’ delivery area, we have conveniently located community pick-up
 * Delivery Day: Thursday
 * Instructions: After receiving your delivery text message, pick up at the front desk between 5AM to 7PM.
 
-#
+  &nbsp;
 
 # **Central Virginia**
 
@@ -81,23 +79,15 @@ Across 4P Foods’ delivery area, we have conveniently located community pick-up
 * Delivery Day: Wednesday
 * Instructions: After receiving your delivery text message, pick up in the taproom between 12-5pm.
 
-#### **4P Foods' Ivy Warehouse**
-
-* Location: 556 Dettor Road, Charlottesville, VA 22903
-* Delivery Day: Wednesday
-* Instructions: After receiving your delivery text message, pick up on between 8:15AM-3:45PM. If no one is on the loading dock to retrieve your bag, please enter the trailer and someone will assist you.
+  &nbsp;
 
 #### **IX Art Park**
 
 * Location: 522 2nd Street Southeast, Charlottesville, VA 22902
 * Delivery Day: Thursday
-* Instructions: After receiving your delivery text message, pick up your 4P Foods tote from inside the shed by the Three Notch'd Brewery loading docks. You will need to email community@4pfoods.com for the shed lock code once this is selected as your pick-up location.
+* Instructions: After receiving your delivery text message, pick up your 4P Foods tote from inside the shed by the Three Notch’d Brewery loading docks. You will need to email community@4pfoods.com for the shed lock code once this is selected as your pick-up location.
 
-#### **Rockfish Valley Community Center**
-
-* Location: 190 Rockfish School Lane, Afton, VA 22920
-* Delivery Day: Thursday
-* Instructions: After receiving your delivery text message, pick up your 4P Bag(s) from the **Auditorium** (the large room near the front (south) entrance to the building) . The time to pick up will be between **11am-8pm.**
+  ####
 
 # **Maryland**
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 8 Sandwiches to Make with Regenerative and Pasture-Raised Products
-date: 2024-01-24 11:30:00
+date: 2025-01-09 11:30:00
 author: 4P Foods
 excerpt: >-
   We now have locally baked bread available in the 4P Foods shop! To celebrate

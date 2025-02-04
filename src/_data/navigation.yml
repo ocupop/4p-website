@@ -96,8 +96,6 @@ footer_navigation:
       link: /groceries/recipes/
     - label: Referral Programs
       link: /referral-programs/
-    - label: Gift Cards
-      link: /posts/give-the-gift-of-good-food/
   wholesale_links:
     - label: Restaurants & Grocery
       link: /wholesale/restaurants-grocery/
@@ -145,9 +143,5 @@ footer_navigation:
       link: https://www.instagram.com/4pfoods/
     - label: facebook
       link: https://www.facebook.com/4pfoods/
-    - label: twitter
-      link: https://twitter.com/4PFoods
-    - label: pinterest
-      link: https://www.pinterest.ca/4pfoods/
     - label: linkedin
       link: https://www.linkedin.com/company/4pfoods/

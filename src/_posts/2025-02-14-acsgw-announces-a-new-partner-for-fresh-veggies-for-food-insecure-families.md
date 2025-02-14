@@ -15,7 +15,7 @@ published: false
 ---
 <div class="editable"></div>
 
-"We are honored to partner with ACSGW to help bridge the food insecurity gap and nourish families in the community. Through our collaboration with John and his team, we’ve created a program that connects local growers—and their seasonal produce—with households in need. It’s a win-win for farmers and families alike!" -Devon Byrne,
+“We are honored to partner with ACSGW to help bridge the food insecurity gap and nourish families in the community. Through our collaboration with John and his team, we’ve created a program that connects local growers—and their seasonal produce—with households in need. It’s a win-win for farmers and families alike!” -Devon Byrne, 4P Foods Food Is Medicine Account Manager
 
 ![Adventist Community Service of Greater Washington  Logo](/uploads/unnamed.png "Adventist Community Service of Greater Washington Logo"){: width="1600" height="376"}
 

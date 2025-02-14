@@ -7,7 +7,7 @@ excerpt: >-
   Adventist Community Services of Greater Washington announces a new partnership
   with 4P Foods to provide food insecure families in the Takoma Park East Silver
   Spring community. 
-featured_image:
+featured_image: /uploads/acsgw.png
 buttons:
 assets:
 tags:

@@ -11,7 +11,7 @@ featured_image: /uploads/acsgw.png
 buttons:
 assets:
 tags:
-published: false
+published: true
 ---
 <div class="editable"></div>
 

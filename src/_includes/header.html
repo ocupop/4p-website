@@ -74,13 +74,7 @@
         </ul>
         <ul class="nav navbar-nav ml-auto d-none d-lg-flex align-items-center">
           <li class="nav-item mt-3 mt-lg-0">
-            <a href="{{ site.store_url }}" class="btn btn-primary storeLink">Shop Groceries</a>
-          </li>
-          <li class="nav-item mt-3 mt-lg-0 mx-3">
-            <a href="{{ site.store_url }}" class="nav-icon-link"><i class="ri-shopping-cart-2-fill"></i></a>
-          </li>
-          <li class="nav-item mt-3 mt-lg-0">
-            <a href="{{ site.store_url }}/login" class="nav-icon-link"><i class="ri-user-fill"></i></a>
+            <a href="/wholesale/" class="btn btn-primary">Shop Wholesale</a>
           </li>
         </ul>
       </div>
@@ -101,8 +95,5 @@
         </nav>
       </div>
     </div>
-  {% endif %}
-  {% if page.url == '/' %}
-    {% include components/LocationBar.html %}
   {% endif %}
 </header>

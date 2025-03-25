@@ -1,12 +1,13 @@
-.homepage-layout {
-  #pageContent {
-    overflow: hidden;
-    padding-top: 100px;
-    @include media-breakpoint-up(xl) {
-      padding-top: 130px;
-    }
-  }
-}
+// styles for when location banner is in use
+// .homepage-layout {
+//   #pageContent {
+//     overflow: hidden;
+//     padding-top: 100px;
+//     @include media-breakpoint-up(xl) {
+//       padding-top: 130px;
+//     }
+//   }
+// }
 
 #pageContent {
   overflow: hidden;

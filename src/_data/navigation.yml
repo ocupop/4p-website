@@ -62,9 +62,6 @@ primary_navigation:
         - label: Blog
           url: /resources/blog/
           alt:
-        - label: Events
-          url: /resources/events/
-          alt:
         - label: Press
           url: /resources/press/
           alt:

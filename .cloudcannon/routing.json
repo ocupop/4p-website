@@ -3492,6 +3492,20 @@
       "status": 301,
       "substitutions": false,
       "forced": false
+    },
+    {
+      "from": "/groceries/how-we-work",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
+    },
+    {
+      "from": "/posts/why-sign-up-for-a-4p-foods-pick-up-site-free-delivery/",
+      "to": "/",
+      "status": 301,
+      "substitutions": false,
+      "forced": false
     }
   ]
 }

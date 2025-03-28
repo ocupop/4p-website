@@ -2,11 +2,11 @@
 layout: homepage
 title: >-
   Home | Online Farmers Market | Local CSA | Washington, DC | Virginia |
-  Maryland 
+  Maryland
 meta:
   title: >-
     4P Foods | Weekly Grocery Delivery | Local CSA | Washington, DC | Virginia |
-    Maryland 
+    Maryland
   description: >-
     4P Foods delivers weekly groceries direct from local farmers to
     neighborhoods and businesses in Washington, D.C., Virginia, and Southern
@@ -18,8 +18,6 @@ hero:
   title_html: <h1>Your partner for  <code>farm-to-you</code><br /> fresh food</h1>
   subtitle:
   links:
-    - link: https://shop.4pfoods.com/summary.php?go=products
-      label: Shop Farm Fresh Groceries
     - link: /wholesale
       label: Wholesale Options
 slider:
@@ -141,7 +139,7 @@ testimonials:
     source: Yelp
   - testimonial_text: >-
       We ate well this year, and lost weight! Great for pandemic, but even
-      better for long term shift of eating local in season. 
+      better for long term shift of eating local in season.
     name: Janet
     source: Instagram
   - testimonial_text: >-
@@ -168,13 +166,16 @@ featured_recipes:
     simple-sweet-potato-and-kale-grain-bowl-with-sesame-tahini-dressing-lunch-recipe
   - simple-air-fryer-sweet-potato-fries-side-dish-recipe
 ---
-{% include hero-text.html item=page.hero %}
-{% include components/slider.html slider=page.slider %}
-{% include home/homepage-notification.html %}
+
+{% include hero-text.html item=page.hero %} {% include components/slider.html
+slider=page.slider %} {% include home/homepage-notification.html %}
 <section class="pb-5">
   <div class="container">
     <div class="text-center editable">
-      <h2><code>Purpose-fueled</code><em><code> </code></em><code>food<br /></code> for the prosperity of our planet and people.</h2>
+      <h2>
+        <code>Purpose-fueled</code><em><code> </code></em
+        ><code>food<br /></code> for the prosperity of our planet and people.
+      </h2>
     </div>
   </div>
 </section>
@@ -182,14 +183,20 @@ featured_recipes:
   <div class="container">
     <div class="row" data-cms-bind="#purpose_section">
       {% for item in page.purpose_section.items %}
-        <div class="col-12 col-lg-4 text-center">
-          <div class="bg-mid rounded p-3 mb-4 d-inline-block mx-auto d-inline-flex align-items-center justify-content-center">
-            <div>
-              <img src="{{ item.image }}" class="icon-lg" alt="{{ item.title }}" />
-            </div>
+      <div class="col-12 col-lg-4 text-center">
+        <div
+          class="bg-mid rounded p-3 mb-4 d-inline-block mx-auto d-inline-flex align-items-center justify-content-center"
+        >
+          <div>
+            <img
+              src="{{ item.image }}"
+              class="icon-lg"
+              alt="{{ item.title }}"
+            />
           </div>
-          <p class="font-sans-serif lead">{{ item.title }}</p>
         </div>
+        <p class="font-sans-serif lead">{{ item.title }}</p>
+      </div>
       {% endfor %}
     </div>
   </div>
@@ -199,15 +206,15 @@ featured_recipes:
   <div class="container">
     <div class="row" data-cms-bind="#purpose_section">
       {% for item in page.purpose_section.stats %}
-        <div class="col-12 col-lg-4">
-          <div class="p-3 pt-lg-4 px-lg-4 pb-lg-0">
-            <h3 class="mb-1">{{ item.title }}</h3>
-            <p class="text-green-dark font-weight-500 mb-4">{{ item.subtitle }}</p>
-            <div class="lead text-green-light">
-              {{ item.description_html }}
-            </div>
-          </div>
+      <div class="col-12 col-lg-4">
+        <div class="p-3 pt-lg-4 px-lg-4 pb-lg-0">
+          <h3 class="mb-1">{{ item.title }}</h3>
+          <p class="text-green-dark font-weight-500 mb-4">
+            {{ item.subtitle }}
+          </p>
+          <div class="lead text-green-light">{{ item.description_html }}</div>
         </div>
+      </div>
       {% endfor %}
     </div>
   </div>
@@ -215,15 +222,26 @@ featured_recipes:
 <section class="bg-mid">
   <div class="container-fluid">
     <div class="row justify-content-center align-items-center mx-lg-n5">
-      <div class="col-12 col-lg-5 px-lg-5 mb-4 mb-lg-0" data-cms-bind="#image_grid_1">
-        {% include components/image-grid-vertical-image-right.html item=page.image_grid_1 %}
+      <div
+        class="col-12 col-lg-5 px-lg-5 mb-4 mb-lg-0"
+        data-cms-bind="#image_grid_1"
+      >
+        {% include components/image-grid-vertical-image-right.html
+        item=page.image_grid_1 %}
       </div>
       <div class="col-12 col-lg-5 px-lg-5">
         <div class="editable mt-3 mt-lg-0">
-          <h2>Trustworthy farm-to-table options to<code>&nbsp;fuel your business</code></h2>
+          <h2>
+            Trustworthy farm-to-table options to<code
+              >&nbsp;fuel your business</code
+            >
+          </h2>
         </div>
         <div class="editable lead mb-4">
-          <p>We offer wholesale prices and convenience, with food from a dedicated network of local and regional food producers.</p>
+          <p>
+            We offer wholesale prices and convenience, with food from a
+            dedicated network of local and regional food producers.
+          </p>
         </div>
         <a href="/wholesale" class="btn btn-blue-light editable">
           Wholesale Options
@@ -232,29 +250,9 @@ featured_recipes:
     </div>
   </div>
   {% if page.logo_grid_section.show_section %}
-    <div class="mt-5" data-cms-bind="#logo_grid_section">
-      {% include components/logo-pile-2.html items=page.logo_grid_section.items grayscale=false %}
-    </div>
+  <div class="mt-5" data-cms-bind="#logo_grid_section">
+    {% include components/logo-pile-2.html items=page.logo_grid_section.items
+    grayscale=false %}
+  </div>
   {% endif %}
 </section>
-<section class="bg-light bg-image aspect-auto bg-15 bg-left-bottom" style="background-image: url(/img/bg-illustrations/4P-Illustrations_spinach-1.png)">
-  <div class="container-fluid">
-    <div class="row justify-content-center align-items-center mx-lg-n5">
-      <div class="col-12 col-lg-5 px-lg-5 mb-4 mb-lg-0">
-        <div class="editable">
-          <h2>From independent farmers,&nbsp;<code>direct to your door</code></h2>
-        </div>
-        <div class="editable lead mb-4">
-          <p>Take your pick of healthy, ethical and sustainable produce, proteins, and more, for delivery or pickup across DC, Virginia, & Maryland</p>
-        </div>
-        <a href="{{ site.store_url }}" class="btn btn-green-light">Shop All Groceries</a>
-      </div>
-      <div class="col-12 col-lg-5 px-lg-5" data-cms-bind="#image_grid_2">
-        {% include components/image-grid-split-vertical.html item=page.image_grid_2 %}
-      </div>
-    </div>
-  </div>
-</section>
-
-
-

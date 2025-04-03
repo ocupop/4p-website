@@ -1,17 +1,17 @@
 ---
 layout: homepage
 title: >-
-  Home | Online Farmers Market | Local CSA | Washington, DC | Virginia |
+  Home | Wholesale Food Distributor | Food Hub | Washington, DC | Virginia |
   Maryland
 meta:
   title: >-
-    4P Foods | Weekly Grocery Delivery | Local CSA | Washington, DC | Virginia |
-    Maryland
+    4P Foods | Wholesale Food Distributor | Food Hub | Washington, DC | Virginia
+    | Maryland
   description: >-
-    4P Foods delivers weekly groceries direct from local farmers to
-    neighborhoods and businesses in Washington, D.C., Virginia, and Southern
-    Maryland. Supporting local farm systems helps improve your food's footprint
-    and access to nutrients.
+    4P Foods delivers food from local, regional, and regenerative farms to
+    businesses in Washington, D.C., Virginia, and Southern Maryland. Connecting
+    your community to local farms and purpose-fueled food for the prosperity of
+    our planet and people.
   image:
 hero:
   label: Connecting your community to local farms
@@ -166,15 +166,13 @@ featured_recipes:
     simple-sweet-potato-and-kale-grain-bowl-with-sesame-tahini-dressing-lunch-recipe
   - simple-air-fryer-sweet-potato-fries-side-dish-recipe
 ---
-
 {% include hero-text.html item=page.hero %} {% include components/slider.html
 slider=page.slider %} {% include home/homepage-notification.html %}
 <section class="pb-5">
   <div class="container">
     <div class="text-center editable">
       <h2>
-        <code>Purpose-fueled</code><em><code> </code></em
-        ><code>food<br /></code> for the prosperity of our planet and people.
+        <code>Purpose-fueled</code><em><code> </code></em><code>food<br /></code> for the prosperity of our planet and people.
       </h2>
     </div>
   </div>
@@ -184,15 +182,9 @@ slider=page.slider %} {% include home/homepage-notification.html %}
     <div class="row" data-cms-bind="#purpose_section">
       {% for item in page.purpose_section.items %}
       <div class="col-12 col-lg-4 text-center">
-        <div
-          class="bg-mid rounded p-3 mb-4 d-inline-block mx-auto d-inline-flex align-items-center justify-content-center"
-        >
+        <div class="bg-mid rounded p-3 mb-4 d-inline-block mx-auto d-inline-flex align-items-center justify-content-center">
           <div>
-            <img
-              src="{{ item.image }}"
-              class="icon-lg"
-              alt="{{ item.title }}"
-            />
+            <img src="{{ item.image }}" class="icon-lg" alt="{{ item.title }}" />
           </div>
         </div>
         <p class="font-sans-serif lead">{{ item.title }}</p>
@@ -222,19 +214,14 @@ slider=page.slider %} {% include home/homepage-notification.html %}
 <section class="bg-mid">
   <div class="container-fluid">
     <div class="row justify-content-center align-items-center mx-lg-n5">
-      <div
-        class="col-12 col-lg-5 px-lg-5 mb-4 mb-lg-0"
-        data-cms-bind="#image_grid_1"
-      >
+      <div class="col-12 col-lg-5 px-lg-5 mb-4 mb-lg-0" data-cms-bind="#image_grid_1">
         {% include components/image-grid-vertical-image-right.html
         item=page.image_grid_1 %}
       </div>
       <div class="col-12 col-lg-5 px-lg-5">
         <div class="editable mt-3 mt-lg-0">
           <h2>
-            Trustworthy farm-to-table options to<code
-              >&nbsp;fuel your business</code
-            >
+            Trustworthy farm-to-table options to<code>&nbsp;fuel your business</code>
           </h2>
         </div>
         <div class="editable lead mb-4">

@@ -111,13 +111,15 @@
         more cases of any one item it’s best to submit your order 7 business
         days in advance of the designated delivery day to assure we can get the
         quantity desired.</p>
-    - question: What items require pre-order?
+    - question: What items are available for preorder?
       answer_html: >-
-        <p>Perishable items require pre order. Chicken, pork, beef, turkey,
-        cheese, milk, herbs, fresh pasta, kombucha kegs, and salsa are items
-        that we bring in our warehouse on an as needed basis. Please reach out
-        to <a href="mailto:sales@4pfoods.com">sales@4pfoods.com</a> for a
-        detailed pre-ordering schedule.</p>
+        <p>There are a handful of items on our list (chicken, milks, cheese,
+        salsa, beef, etc) that we do not store in our warehouse, and instead
+        order it fresh from the producers each week. Those items require about a
+        week lead time for us to order it from them, then send it out to you.
+        We'll be around to remind you when the deadlines are for any specific
+        pre order items you're interested in. The Pre-order items are marked on
+        the Wholesale Availability List with their schedule. </p>
     - question: ' Is there an order minimum?'
       answer_html: >-
         <p>Yes, 4P Foods does have an order minimum. Contact&nbsp;<a

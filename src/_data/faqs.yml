@@ -67,101 +67,22 @@
         the pre order schedule/deadlines is to set up standing orders. We can
         set you up to automatically receive the items you most frequently order
         by the case every week without having to regularly ask for them.</p>
-- title: Delivery
-  faqs:
-    - question: How does delivery work?
-      answer_html: >-
-        <p>All of our deliveries are contactless, and you should receive an
-        automatic email or text notification when a driver drops off your
-        bags.</p><p>In general, if you signed up for direct home delivery, we
-        usually deliver the bags right to your doorstep, or wherever you
-        indicated in your delivery instructions (if we don’t deliver to the
-        right place, please <a href="/contact/">get in touch</a>&nbsp;to let us
-        know!).</p><p>For commercial buildings or apartment complexes, we
-        deliver the bags per the building’s protocols and your
-        directions.</p><p>In an effort to maximize delivery efficiency and
-        minimize contact during the busiest hours of the day, your delivery may
-        arrive as early as 7:00AM and as late as 8:00PM.&nbsp;</p>
-    - question: Is there a delivery fee?
-      answer_html: >-
-        <p>Please note that delivery takes time and energy and an amazing
-        delivery team. There is a fee of $9.95 for orders under $85 and $6.95
-        for orders over $85. Since we are awesome humans (and not drones)
-        delivering your food with care, hopefully you’ll agree that it’s totally
-        worth it.</p><p>Delivery is free at <a
-        href="/posts/4p-foods-community-pickup-sites/">community pick-up
-        sites</a>, where anyone can pick up their bags within a certain pick-up
-        time frame to save C02 and save a few bucks.</p>
-    - question: What are Community Pick-up Sites and how can I join?
-      answer_html: >-
-        <p>We've teamed up with select <a
-        href="/posts/why-sign-up-for-a-4p-foods-pick-up-site-free-delivery/">community
-        centers and local businesses to be pickup points</a> for 4P deliveries.
-        Having your bags dropped off to a pick-up site helps us curb CO2 and
-        helps you save money, as we'll waive the delivery fee on all
-        orders!</p><p>New customers can choose a Community Pickup Site as your
-        delivery location while registering, and anyone can change their
-        delivery location to a 4P Community Pick-up Site (or vis versa) from
-        your 4P Foods account. To see if there are any sites near you, simply
-        log in to your account, click "Account Info," and navigate to the
-        dropdown below “Do you want Pickup or Delivery?’ for a list of
-        participating locations. Just note that you'll need to be able to pickup
-        your bags during their business hours. Don't see a pick-up site near
-        you? <a href="/contact/">Contact us</a> if you know of a place near you
-        that's a good fit!</p>
-    - question: What is my delivery day?
-      answer_html: >-
-        <p>You should have been notified of your delivery day during the signup
-        process, but if you’re unsure, you can login into your account, click on
-        “My Account” in the upper right hand corner, then click on “Upcoming
-        Deliveries” to see all of your upcoming delivery dates. Any general news
-        or changes in deliveries will be communicated to you directly and/or
-        will be included in the weekly newsletter.</p><p>If you’re still
-        unsure,&nbsp;<a href="/contact/">reach out</a>&nbsp;and we'll be happy
-        to assist you!</p>
-    - question: Will the food stay fresh after it is delivered?
-      answer_html: >-
-        <p>You will receive an email or text notification when a driver drops
-        off your bags. We deliver our food in insulated packaging to keep
-        everything cold. We'd recommend picking up and unpacking your bags as
-        soon as you can, but as long as you can do so within a few hours (or
-        longer in cooler weather), you should be fine. We take all the packaging
-        back to sanitize and reuse, so please set out your empties on delivery
-        day for our driver to swap out.</p>
-    - question: What if something in my delivery is missing or damaged?
-      answer_html: >-
-        <p>If you receive any disappointing items, or if anything is missing,
-        please let us know! We’ll gladly try to correct whatever happened,
-        whether through a credit or an extra item in your next
-        delivery.</p><p>We do our best to closely manage inventory so that we
-        have enough for all orders but not so much that anything goes to waste.
-        If we ever run out of an item or it becomes unavailable after you have
-        placed your order, we'll do our best to notify you in advance so you can
-        let us know what you’d like instead. If we're unable get in touch in
-        time, we’ll issue you a credit for the missing item (or send you a
-        substitute item in select circumstances, i.e. pack gala apples as a
-        substitute for stayman apples, if out of stock).</p>
 - title: About Us
   faqs:
-    - question: How are you different than other online food delivery services?
+    - question: What is 4P Foods' mission?
       answer_html: >-
-        <p>We bring the freshest, highest-quality produce, meat, dairy, and
-        pantry goods right to your doorstep from farmers and producers in the
-        Mid-Atlantic region (and <a
-        href="/posts/whats-in-the-winter-bag/">sometimes beyond</a>) who <a
-        href="/posts/good-food-knows-no-boundaries/">share our values of Good
-        Food</a>. With 4P, you are voting with your fork for a more sustainable
-        and equitable food system for everyone.</p><p>Our produce offerings vary
-        with the seasons. In the Spring, you’ll see asparagus and strawberries.
-        In the summer, tomatoes and sweet corn. Autumn equals apples and leafy
-        greens. And in the Winter, it’s a mix of local greenhouse-grown produce
-        like lettuce and storage crops like butternut squash, artisan goods from
-        local makers, and fruits and vegetables from farmers further
-        south.&nbsp;</p><p>Year-round, we offer great local meats and dairy from
-        animals raised on open pasture and treated with dignity throughout their
-        lives, as well as delicious pantry goods like pastas, jams, and more
-        made by local artisans. We also aim to curb waste by packaging food in
-        eco-friendly totes that are returned and reused.</p>
+        <p>Our mission is to empower you to transform the food system.</p><p>And
+        how do we do that, you ask? Every purchase you make with 4P allows you
+        to live your values and support small and mid-sized family farmers and
+        artisans by giving them access to new markets, while also helping ensure
+        that all people have equitable access to the food produced by these
+        farmers.</p><p>We believe food that is source identified and produced in
+        a system that empowers farmers and regenerates the earth should be the
+        norm, not the exception, and we actively work to make that vision a
+        reality each and every day. Every purchase with 4P not only supports a
+        growing network of small family farms and artisan producers in the
+        region, but also advances equitable access to fresh healthy food in the
+        communities we serve.</p>
     - question: Where do you source your food from?
       answer_html: >-
         <p>The short answer: we source locally and regionally from a network of

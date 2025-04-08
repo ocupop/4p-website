@@ -83,17 +83,13 @@
         pick-up time frame to save C02 and save a few bucks.</p>
 - title: Wholesale
   faqs:
-    - question: How do I place an order?
-      answer_html: >-
-        <p>Fill out our <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLScusQRsgq6UrI3H-7ULJUV3G41ED3P6D10_qvhY5u7PgPbVQg/viewform">Wholesale
-        Contact Form</a>, so our sales team can assist you.&nbsp;</p>
     - question: What is available to order?
       answer_html: >-
-        <p>We carry produce, dairy, protein (chicken, beef, turkey tofu, &amp;
-        pork), pantry items, and beverages too! Please reach out to <a
-        href="mailto:sales@4pfoods.com">sales@4pfoods.com</a> for our detailed
-        availability list.</p>
+        <p>Our Wholesale Availability List has a detailed look at our full
+        selection of regionally and responsibly sourced food. Once you are a
+        customer you will have access to our Availability List.</p><p>You will
+        also receive a weekly email with featured products and updates from 4P
+        Foods.</p>
     - question: What are the order deadlines?
       answer_html: >-
         <p>For items that we stock in our warehouse regularly (vegetables,
@@ -113,26 +109,12 @@
         We'll be around to remind you when the deadlines are for any specific
         pre order items you're interested in. The Pre-order items are marked on
         the Wholesale Availability List with their schedule. </p>
-    - question: ' Is there an order minimum?'
+    - question: Can I set up recurring orders?
       answer_html: >-
-        <p>Yes, 4P Foods does have an order minimum. Contact&nbsp;<a
-        href="mailto:sales@4pfoods.com">sales@4pfoods.com</a>&nbsp;for more
-        details.</p>
-    - question: Where do you source your food from?
-      answer_html: >-
-        <p>We source locally and regionally from a network of over 200
-        small-to-mid-sized, independent farmers.</p><p>Why source regionally?
-        For example, by sourcing regionally and using a network of other food
-        hubs, we can offer peak-season strawberries longer by following their
-        season up from the Carolinas in early spring through Virginia and beyond
-        into mid-summer.</p><p>4P is a founding member of the Eastern Food Hub
-        Collaborative, a network of other food hubs like us up and down the
-        Eastern Seaboard who all work with their own vetted networks of small,
-        sustainable farmers and work together to increase the variety and supply
-        of produce available from this region.</p><p>Feel free to check out our
-        growing collection of <a href="https://4pfoods.com/farmers">farmer
-        profiles</a> for more information about our food and the people behind
-        it.</p>
+        <p>Yes! We love recurring orders! A great way to avoid worrying about
+        the pre order schedule/deadlines is to set up standing orders. We can
+        set you up to automatically receive the items you most frequently order
+        by the case every week without having to regularly ask for them.</p>
 - title: Delivery
   faqs:
     - question: How does delivery work?

@@ -20,31 +20,19 @@
         />Place your order by email to <a
         href="mailto:sales@4PFoods.com">sales@4PFoods.com</a> or by calling
         (434) 244-3276.</p>
-    - question: How will I find out what food you have each week?
+    - question: What markets do you serve?
       answer_html: >-
-        <p>Each Saturday we update our online shop with what&rsquo;s fresh that
-        week and send a Weekly Harvest Newsletter straight to your inbox, making
-        it simple to decide what you want to order and plan what you&rsquo;ll
-        cook for the week. We also include storage tips, recipe ideas, and
-        highlights from our farmers and partners.&nbsp;</p><p>If you&rsquo;ve
-        signed up and are not receiving the email newsletter, be sure to check
-        your spam or promotions folder, and then please <a href="/contact/">get
-        in touch with us</a>&nbsp;so we can look into it.</p>
-    - question: How does billing work? Do I pay upfront?
+        <p>4P Foods services a wide range of customer types including Small and
+        Large Grocery Stores, Restaurants, Caterers, Senior Living Facilities,
+        Hospitals, Corporate Dining, Community Supported Agriculture (CSA’s),
+        Universities, K12 Schools, Food Access Organizations, and Food Is
+        Medicine Programs.</p>
+    - question: What areas do you serve?
       answer_html: >-
-        <p>We do our billing every Sunday for the prior week’s deliveries. So if
-        you get a bag on Wednesday, you’ll be billed the following weekend. If
-        you skip your order, you won’t be billed that week.</p>
-    - question: Is there a delivery fee?
-      answer_html: >-
-        <p>Please note that delivery takes time and energy and an amazing
-        delivery team. There is a fee of $9.95 for orders under $85 and $6.95
-        for orders over $85. Since we are awesome humans (and not drones)
-        delivering your food with care, hopefully you’ll agree that it’s totally
-        worth it.</p><p>Delivery is free at <a
-        href="https://4pfoods.com/posts/why-sign-up-for-a-4p-foods-pick-up-site-free-delivery/">community
-        pick-up sites</a>, where anyone can pick up their bags within a certain
-        pick-up time frame to save C02 and save a few bucks.</p>
+        <p>4P currently serves customers throughout western, northern, central
+        (including tidewater area) and southwest VA, Washington, DC, Maryland,
+        and North Carolina. Please inquire with our wholesale sales team if we
+        come to your location!</p>
 - title: Wholesale
   faqs:
     - question: What is available to order?

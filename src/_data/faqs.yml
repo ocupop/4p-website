@@ -1,5 +1,16 @@
 - title: Getting Started
   faqs:
+    - question: How do I start shopping with 4P Foods?
+      answer_html: >-
+        <p>Fill out our <a
+        href="https://forms.monday.com/forms/e0e3d79d27f063e676b4c4e940707aac?r=use1"
+        title="Wholesale Inquiry Form" target="_blank" rel="noopener">Wholesale
+        Inquiry Form</a>, so our sales team can assist you. Once you've
+        submitted your inquiry form, a member of our sales team will contact you
+        to go over how wholesale ordering works at 4P Foods. They will cover how
+        we can best serve you based on what products we offer, our delivery
+        days, and our order minimums. Get started here to set up an account with
+        us.</p>
     - question: How does shopping with 4P Foods work?
       answer_html: >-
         <p>Each week we have a fresh selection of seasonal produce listed on our
@@ -19,50 +30,11 @@
         signed up and are not receiving the email newsletter, be sure to check
         your spam or promotions folder, and then please <a href="/contact/">get
         in touch with us</a>&nbsp;so we can look into it.</p>
-    - question: Is there a minimum commitment or signup fee?
-      answer_html: >-
-        <p>Nope! There is no minimum commitment and no tricky sign-up policy.
-        Our minimum order is $30 + delivery fee. You can order once to give us a
-        try, or sign up for a recurring subscription and still cancel anytime
-        before your skip deadline with no fees! If you were anything less than
-        satisfied with your order, please do&nbsp;<a href="/contact/">get in
-        touch</a> with our member experience team first so that we can try to
-        make things right.</p>
-    - question: If I sign up for a subscription, can I skip orders?
-      answer_html: >-
-        <p>Absolutely. You always have the ability to skip individual orders, or
-        place a delivery hold for a certain period of time. All we ask is that
-        you skip any upcoming deliveries ahead of the 2-day cut-off period,
-        during which time we finalize orders with farmers. The cut-off begins at
-        <strong>11:59 pm on Sunday</strong> for a Wednesday delivery,
-        <strong>11:59 pm on Monday</strong> for a Thursday delivery, and
-        <strong>11:59 pm on Tuesday</strong> for a Friday delivery.&nbsp;</p>
     - question: How does billing work? Do I pay upfront?
       answer_html: >-
         <p>We do our billing every Sunday for the prior week’s deliveries. So if
         you get a bag on Wednesday, you’ll be billed the following weekend. If
         you skip your order, you won’t be billed that week.</p>
-    - question: What if I'm allergic to something that's coming in my 4P Foods Bag?
-      answer_html: >-
-        <p>That’s where the customization function comes in! Be sure to login to
-        your account between Saturday afternoon and your order deadline (11:59pm
-        three days before your delivery day) to customize your order and swap
-        out any items you can’t enjoy.</p>
-    - question: What is 4P's mission?
-      answer_html: >-
-        <p>Our mission is to empower you to transform the food system.</p><p>And
-        how do we do that, you ask? Every purchase you make with 4P allows you
-        to live your values and support small and mid-sized family farmers and
-        artisans by giving them access to new markets, while also helping ensure
-        that all people have equitable access to the Good Food produced by these
-        farmers.</p><p>We believe that Good Food&mdash; food that is traceable,
-        nutritious, accessible, and produced in a system that empowers farmers
-        and sustains the environment&mdash; should be the norm, not the
-        exception, and we actively work to make that vision a reality each and
-        every day. Every purchase with 4P not only supports a growing network of
-        small family farms and artisan producers in the region, but also
-        advances equitable access to fresh healthy food in the communities we
-        serve.</p>
     - question: Is there a delivery fee?
       answer_html: >-
         <p>Please note that delivery takes time and energy and an amazing

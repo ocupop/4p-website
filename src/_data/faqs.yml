@@ -99,27 +99,6 @@
         title="Meet our farmers and makers" target="_blank"
         rel="noopener">farmer profiles</a> for more information about our food
         and the people behind it.</p>
-    - question: Is all the food organic? What about non-GMO?
-      answer_html: >-
-        <p>Some of it is USDA-certified organic, and some of it is not (not all
-        farmers who use organic practices choose to get certified). While
-        certifications are certainly important, what is most important to us
-        is&nbsp;<a href="/posts/good-food-knows-no-boundaries/">Good
-        Food</a>.</p><blockquote><p>Good Food provides nourishment and enables
-        people to thrive, is equitably accessible to everyone in the region, is
-        produced in a manner that is environmentally regenerative, comes from a
-        supply chain in which every being is treated with respect and dignity,
-        and improves health outcomes and economic security for
-        all.</p></blockquote><p>We work with farmers who are good stewards of
-        their resources, including land, water, and labor. Our&nbsp;<a
-        href="/farmers">farmer profiles</a>&nbsp;are a great place to get more
-        information about each farmer and their growing practices. While we
-        embrace a local and regional food system, you can choose to&nbsp;<a
-        href="/how-to-shop/">customize</a>&nbsp;your bags to include only local
-        products, for example.</p><p>Our long-term goal is to be 100% supporting
-        regenerative agriculture. Regenerative agriculture seeks not only to
-        maintain but also to increase soil health, carbon sequestration, and
-        biodiversity.</p>
     - question: How do I find out more about the farmers and makers?
       answer_html: >-
         <p>Check out our <a href="https://4pfoods.com/groceries/farmers/"
@@ -127,42 +106,3 @@
         rel="noopener">farmers and makers page</a>! We’re always updating it, so
         stay tuned for more profiles of the many amazing farmers, ranchers, and
         artisans from whom we source.</p>
-    - question: How do you  address racial equity in the food system?
-      answer_html: >-
-        <p>Right off the bat, we want to acknowledge that the food system has
-        traditionally done a lot of harm to BIPOC communities, from colonization
-        to slavery to the poor treatment of immigrant farm laborers. We are
-        intentionally working to increase our sourcing from BIPOC farmers and to
-        center equity in our daily work as a company. You can read more about
-        racial injustice in the food system and 4P&rsquo;s response in this <a
-        href="/posts/we-stand-with-all-of-you-we-stand-against-racism/">letter
-        from our founder &amp; CEO</a>, Tom McDougall.</p>
-    - question: Where do you source your food from?
-      answer_html: >-
-        <p>The short answer: we source locally and regionally from a network of
-        independent farmers, most of them located in the Mid-Atlantic. Does that
-        mean it’s “local?” That depends on where you live and how you define it,
-        so we often use the term “regional” to describe our sourcing
-        practices.</p><p>The longer answer: it depends on the item and the
-        season. Avocados don’t grow in the Mid-Atlantic, so we buy them from a
-        fair-trade cooperative in Peru (read more about our sourcing of tropical
-        items on our blog <a
-        href="/posts/the-geography-of-good-food/">here</a>). As another example,
-        we can offer peak-season strawberries longer by following their season
-        up from the Carolinas in early spring through Virginia and beyond into
-        mid-summer. 4P is a founding member of the Eastern Food Hub
-        Collaborative, a network of other food hubs like us up and down the
-        Eastern Seaboard who all work with their own vetted networks of small,
-        sustainable farmers and work together to increase the variety and supply
-        of produce available from this region.</p><p>Read our growing collection
-        of <a href="/farmers">farmer profiles</a> for more information about our
-        food.</p>
-    - question: What do you mean by "Good Food"?
-      answer_html: >-
-        <p>Here's how we define Good Food:&nbsp;</p><ol><li>provides nourishment
-        and enables people to thrive.</li><li>is equitably accessible to
-        everyone in our region, regardless of income, race, or zip
-        code.</li><li>is produced in a manner that is environmentally
-        regenerative.</li><li>comes from a supply chain in which every being is
-        treated with respect and dignity.</li><li>improves health outcomes and
-        economic security for all.</li></ol>

@@ -101,15 +101,16 @@
         DC</p><p>Wednesday: Charlottesville, Valley,
         Roanoke&nbsp;</p><p>Thursday: Charlottesville, Richmond</p><p>Friday:
         Charlottesville, DC</p>
-    - question: >-
-        What are the order cut off times to receive products on my next delivery
-        day?
+    - question: What are the order deadlines?
       answer_html: >-
-        <p>For items that we stock in our warehouse regularly (produce, pantry
-        &amp; frozen items) we request you get orders in by 1pm the day before
-        your scheduled delivery. There are a handful of perishable items that we
-        do not stock regularly in our warehouse that require about a week of
-        lead time for us to pre-order and then send out to you.</p>
+        <p>For items that we stock in our warehouse regularly (vegetables,
+        pantry &amp; frozen items) the order deadline is 12pm the business day
+        prior. We kindly request our customers not to submit order changes
+        (cancellations or add ons) after the order deadline (noon the business
+        day prior) to ensure fulfillment of orders.  If you plan to order 4 or
+        more cases of any one item it’s best to submit your order 7 business
+        days in advance of the designated delivery day to assure we can get the
+        quantity desired.</p>
     - question: What items require pre-order?
       answer_html: >-
         <p>Perishable items require pre order. Chicken, pork, beef, turkey,
@@ -117,7 +118,7 @@
         that we bring in our warehouse on an as needed basis. Please reach out
         to <a href="mailto:sales@4pfoods.com">sales@4pfoods.com</a> for a
         detailed pre-ordering schedule.</p>
-    - question: " Is there an order minimum?"
+    - question: ' Is there an order minimum?'
       answer_html: >-
         <p>Yes, 4P Foods does have an order minimum. Contact&nbsp;<a
         href="mailto:sales@4pfoods.com">sales@4pfoods.com</a>&nbsp;for more
@@ -165,19 +166,20 @@
     - question: What are Community Pick-up Sites and how can I join?
       answer_html: >-
         <p>We've teamed up with select <a
-        href="/posts/why-sign-up-for-a-4p-foods-pick-up-site-free-delivery/">community centers and
-        local businesses to be pickup points</a> for 4P deliveries. Having your
-        bags dropped off to a pick-up site helps us curb CO2 and helps you save
-        money, as we'll waive the delivery fee on all orders!</p><p>New
-        customers can choose a Community Pickup Site as your delivery location
-        while registering, and anyone can change their delivery location to a 4P
-        Community Pick-up Site (or vis versa) from your 4P Foods account. To see
-        if there are any sites near you, simply log in to your account, click
-        "Account Info," and navigate to the dropdown below “Do you want Pickup
-        or Delivery?’ for a list of participating locations. Just note that
-        you'll need to be able to pickup your bags during their business hours.
-        Don't see a pick-up site near you? <a href="/contact/">Contact us</a> if
-        you know of a place near you that's a good fit!</p>
+        href="/posts/why-sign-up-for-a-4p-foods-pick-up-site-free-delivery/">community
+        centers and local businesses to be pickup points</a> for 4P deliveries.
+        Having your bags dropped off to a pick-up site helps us curb CO2 and
+        helps you save money, as we'll waive the delivery fee on all
+        orders!</p><p>New customers can choose a Community Pickup Site as your
+        delivery location while registering, and anyone can change their
+        delivery location to a 4P Community Pick-up Site (or vis versa) from
+        your 4P Foods account. To see if there are any sites near you, simply
+        log in to your account, click "Account Info," and navigate to the
+        dropdown below “Do you want Pickup or Delivery?’ for a list of
+        participating locations. Just note that you'll need to be able to pickup
+        your bags during their business hours. Don't see a pick-up site near
+        you? <a href="/contact/">Contact us</a> if you know of a place near you
+        that's a good fit!</p>
     - question: What is my delivery day?
       answer_html: >-
         <p>You should have been notified of your delivery day during the signup

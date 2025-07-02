@@ -13,7 +13,7 @@ featured_image: /uploads/senior-centers-blog-post.png
 buttons:
 assets:
 tags:
-published: false
+published: true
 ---
 <div class="editable"></div>
 
@@ -41,4 +41,4 @@ We’re incredibly grateful to Encompass Community Supports and our partners for
 
 Because good food is not a privilege. It’s a prescription for a better future.
 
-If you're curious to learn more about Food Is Medicine, support an existing program, or start your own Produce Prescription Program, please reach out to Devon Byrne at devon@4pfoods.com.<br>
+If you’re curious to learn more about Food Is Medicine, support an existing program, or start your own Produce Prescription Program, please reach out to Devon Byrne at devon@4pfoods.com.<br>

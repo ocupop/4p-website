@@ -14,7 +14,7 @@ featured_image: /uploads/2024-blog-images-1900x1000.png
 buttons:
 assets:
 tags:
-published: false
+published: true
 ---
 <div class="editable"></div>
 

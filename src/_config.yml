@@ -26,7 +26,7 @@ analytics_code: UA-127755766-5
 # Needs to be added to continuous integration and include farmers configuration
 algolia:
   application_id: 6I01FP0C7C
-  index_name: Recipes
+  index_name: Farmers
   max_record_size: 20000
   files_to_exclude:
     - _newsletters/*
@@ -34,7 +34,7 @@ algolia:
     - _events/*
     - _careers/*
     - _posts/*
-    - _farmers/*
+    - _recipes/*
     - /*.html
     - _featured_products/*
 

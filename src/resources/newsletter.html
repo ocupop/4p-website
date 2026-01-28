@@ -34,7 +34,7 @@ meta:
               <p class="mb-0">Written by: {{ newsletter.author }}</p>
             {% endif %}
           </small>
-          <p class="mt-3">{{ newsletter.description | truncatewords: 60}}</p>
+          <p class="mt-3">{{ newsletter.excerpt | truncatewords: 60}}</p>
           <a href="{{ newsletter.newsletter_link }}" class="btn btn-primary" target="_blank" rel="noopener">View Newsletter</a>
         </div>
       </div>

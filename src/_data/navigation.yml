@@ -68,6 +68,9 @@ primary_navigation:
         - label: Recipes
           url: /groceries/recipes/
           alt:
+        - label: Newsletter
+          url: /resources/newsletter/
+          alt:
 footer_navigation:
   wholesale_links:
     - label: Restaurants & Grocery
@@ -102,6 +105,8 @@ footer_navigation:
       link: /resources/press/
     - label: Recipes
       link: /groceries/recipes/
+    - label: Newsletter
+      link: /resources/newsletter
     - label: Food Storage Tips
       link: /posts/4p-foods-storage-tips/
   support_links:

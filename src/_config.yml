@@ -55,7 +55,7 @@ collections:
     output: true
     permalink: /careers/:path/
   newsletters:
-    output: true
+    output: false
   posts:
     output: true
     permalink: /posts/:title/

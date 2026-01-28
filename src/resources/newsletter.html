@@ -20,7 +20,7 @@ meta:
 <section>
   <div class="container">
     {% assign newsletters = site.newsletters %}
-    {% for newsletter in newsletters reversed %}
+    {% for newsletter in newsletters | sort: "newsletter_date" | reversed %}
       <div class="row align-items-center mb-5">
         <div class="col-lg-4">
           <a href="{{ newsletter.newsletter_link }}" class="bg-image aspect-4x3 mb-3 mb-lg-0" style="background-image: url({{ newsletter.featured_image }})" target="_blank" rel="noopener"></a>

@@ -19,23 +19,23 @@ meta:
 </section>
 <section>
   <div class="container">
-    {% assign press = site.press | sort: 'press_date' %}
-    {% for press in press reversed %}
+    {% assign newsletters = site.newsletters %}
+    {% for newsletter in newsletters reversed %}
       <div class="row align-items-center mb-5">
         <div class="col-lg-4">
-          <a href="{{ press.link }}" class="bg-image aspect-4x3 mb-3 mb-lg-0" style="background-image: url({{ press.featured_image }})" target="_blank" rel="noopener"></a>
+          <a href="{{ newsletter.newsletter_link }}" class="bg-image aspect-4x3 mb-3 mb-lg-0" style="background-image: url({{ newsletter.featured_image }})" target="_blank" rel="noopener"></a>
         </div>
         <div class="col-lg-8">
-          <h4><a href="{{ press.link}}" target="_blank" rel="noopener" class="text-body">{{ press.title }}</a></h4>
+          <h4><a href="{{ newsletter.newsletter_link}}" target="_blank" rel="noopener" class="text-body">{{ newsletter.title }}</a></h4>
           <small>
-            <p class="mb-0">{% if press.source %}{{ press.source }} | {% endif %}{{ press.press_date | date: '%B %-d, %Y'}}</p>
+            <p class="mb-0">{% if newsletter.source %}{{ newsletter.source }} | {% endif %}{{ newsletter.newsletter_date | date: '%B %-d, %Y'}}</p>
         
-            {% if press.author %}
-              <p class="mb-0">Written by: {{ press.author }}</p>
+            {% if newsletter.author %}
+              <p class="mb-0">Written by: {{ newsletter.author }}</p>
             {% endif %}
           </small>
-          <p class="mt-3">{{ press.description | truncatewords: 60}}</p>
-          <a href="{{ press.link }}" class="btn btn-primary" target="_blank" rel="noopener">View Article</a>
+          <p class="mt-3">{{ newsletter.description | truncatewords: 60}}</p>
+          <a href="{{ newsletter.newsletter_link }}" class="btn btn-primary" target="_blank" rel="noopener">View Newsletter</a>
         </div>
       </div>
     {% endfor %}
